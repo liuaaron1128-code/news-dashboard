@@ -1,0 +1,122 @@
+[
+  {
+    "date": "2026-05-18",
+    "defconLevel": 3,
+    "overallRisk": 63,
+    "alertLabel": "HIGH ALERT",
+    "alertColor": "orange",
+    "summary": "美股估值持續處於歷史高位，CAPE 與 Buffett Indicator 均達 EXTREME 等級。短期市場情緒偏樂觀（貪婪），但基本面支撐已明顯透支。投資人應降低高估值股票比重，增加防禦性配置。",
+    "indicators": [
+      {
+        "id": "cape",
+        "name": "Shiller CAPE",
+        "fullName": "周期調整本益比（Shiller P/E）",
+        "value": "40.9x",
+        "numericValue": 40.9,
+        "riskScore": 80,
+        "level": "EXTREME",
+        "historicalAvg": "17x",
+        "currentVsAvg": "+140%",
+        "benchmark": "點網泡沫峰值 44.2x（2000年）",
+        "description": "以過去 10 年平均盈餘計算的本益比，目前 40.9 倍遠超歷史均值 17 倍，僅次於 2000 年科技泡沫高點。",
+        "implication": "股市被嚴重高估，未來 10 年預期年報酬率可能低於 3%。"
+      },
+      {
+        "id": "buffett",
+        "name": "Buffett Indicator",
+        "fullName": "股市總市值 / GDP 比率",
+        "value": "219%",
+        "numericValue": 219,
+        "riskScore": 89,
+        "level": "EXTREME",
+        "historicalAvg": "85%",
+        "currentVsAvg": "+158%",
+        "benchmark": "巴菲特警戒線 100%",
+        "description": "全美股市總市值占 GDP 的比率達 219%，遠超巴菲特所說「超過 100% 就在玩火」的警戒線。",
+        "implication": "巴菲特本人目前現金持有率創歷史新高，為隱性看空信號。"
+      },
+      {
+        "id": "pe",
+        "name": "S&P 500 P/E",
+        "fullName": "標普 500 本益比",
+        "value": "27x",
+        "numericValue": 27,
+        "riskScore": 48,
+        "level": "HIGH",
+        "historicalAvg": "16x",
+        "currentVsAvg": "+69%",
+        "benchmark": "合理區間 15-20x",
+        "description": "基於未來 12 個月預期盈餘，目前 27 倍高於歷史均值，但因 AI 獲利預期強烈，市場給予更高溢價。",
+        "implication": "若 AI 獲利兌現不及預期，本益比壓縮風險顯著。"
+      },
+      {
+        "id": "yield_curve",
+        "name": "殖利率曲線",
+        "fullName": "美債 10年 - 2年殖利率差",
+        "value": "+0.10%",
+        "numericValue": 0.1,
+        "riskScore": 46,
+        "level": "HIGH",
+        "historicalAvg": "+1.5%",
+        "currentVsAvg": "-93%",
+        "benchmark": "負值（倒掛）= 衰退信號",
+        "description": "殖利率曲線趨平接近零，歷史上此形態後 12-18 個月內有 75% 機率出現衰退。",
+        "implication": "雖已從深度倒掛回升，但趨平形態仍暗示經濟放緩風險。"
+      },
+      {
+        "id": "fear_greed",
+        "name": "Fear & Greed",
+        "fullName": "CNN 恐懼貪婪指數",
+        "value": "63 / 貪婪",
+        "numericValue": 63,
+        "riskScore": 43,
+        "level": "MODERATE",
+        "historicalAvg": "50",
+        "currentVsAvg": "+26%",
+        "benchmark": "極度貪婪 >80 = 警戒",
+        "description": "市場目前偏貪婪，但尚未達到歷史泡沫高峰時的「極度貪婪」水位（>80）。",
+        "implication": "情緒面可能在短期提供支撐，但需警惕突發事件導致情緒急轉直下。"
+      },
+      {
+        "id": "vix",
+        "name": "VIX 恐慌指數",
+        "fullName": "CBOE 波動率指數（VIX）",
+        "value": "18",
+        "numericValue": 18,
+        "riskScore": 35,
+        "level": "MODERATE",
+        "historicalAvg": "20",
+        "currentVsAvg": "-10%",
+        "benchmark": ">30 = 市場恐慌",
+        "description": "VIX 18 顯示市場情緒相對平靜，投資人對短期波動的預期偏低。低 VIX 通常是市場自滿的信號。",
+        "implication": "低波動環境容易醞釀突發性拋售，應避免過度使用槓桿。"
+      }
+    ],
+    "actionRecommendations": [
+      {
+        "priority": "立即",
+        "level": "high",
+        "action": "降低高本益比科技股比重",
+        "detail": "CAPE 40.9x 代表未來 10 年預期年化報酬率僅約 2-3%，不如持有短期美債。建議減少純估值驅動的科技持倉。"
+      },
+      {
+        "priority": "本月",
+        "level": "medium",
+        "action": "增加防禦性資產至 25-30%",
+        "detail": "黃金（5-10%）、短天期美債（10-15%）、現金（5-10%）。美中談判緩和雖短期利多，但結構性高估值風險未解除。"
+      },
+      {
+        "priority": "持續",
+        "level": "low",
+        "action": "監控 FOMC 與 PCE 數據",
+        "detail": "降息若如期在 9 月啟動，可適度提高風險資產比重。但若 PCE 超預期，需重新評估。"
+      }
+    ],
+    "historicalComparisons": [
+      { "period": "現在", "cape": 40.9, "buffett": 219, "result": "?" },
+      { "period": "2000 點網泡沫", "cape": 44.2, "buffett": 159, "result": "S&P -49%" },
+      { "period": "2008 金融海嘯", "cape": 27.2, "buffett": 110, "result": "S&P -56%" },
+      { "period": "2022 升息修正", "cape": 38.3, "buffett": 193, "result": "S&P -25%" }
+    ]
+  }
+]
