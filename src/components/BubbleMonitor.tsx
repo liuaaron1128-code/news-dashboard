@@ -4,6 +4,133 @@ import { useState } from 'react'
 import { BubbleSnapshot, BubbleIndicator } from '@/types/bubble'
 import { ChevronDown, ChevronUp, AlertTriangle, TrendingUp, Shield } from 'lucide-react'
 
+const ZONE_BANDS = [
+  { min: 0,  max: 30,  fill: '#dcfce7', label: '安全',  labelColor: '#16a34a' },
+  { min: 30, max: 45,  fill: '#fef9c3', label: '中度',  labelColor: '#ca8a04' },
+  { min: 45, max: 60,  fill: '#ffedd5', label: '警戒',  labelColor: '#ea580c' },
+  { min: 60, max: 75,  fill: '#fee2e2', label: '危險',  labelColor: '#dc2626' },
+  { min: 75, max: 100, fill: '#fecaca', label: '極端',  labelColor: '#991b1b' },
+]
+
+function scoreColor(score: number) {
+  if (score >= 75) return '#ef4444'
+  if (score >= 60) return '#f97316'
+  if (score >= 45) return '#f59e0b'
+  if (score >= 30) return '#eab308'
+  return '#22c55e'
+}
+
+function RiskTrendChart({ history }: { history: BubbleSnapshot[] }) {
+  const sorted = [...history].sort((a, b) => a.date.localeCompare(b.date))
+  if (sorted.length === 0) return null
+
+  const W = 360, H = 160
+  const PAD = { left: 28, right: 14, top: 16, bottom: 26 }
+  const cW = W - PAD.left - PAD.right
+  const cH = H - PAD.top - PAD.bottom
+
+  const yOf = (score: number) => PAD.top + cH - (score / 100) * cH
+  const xOf = (i: number) =>
+    sorted.length === 1 ? PAD.left + cW / 2 : PAD.left + (i / (sorted.length - 1)) * cW
+
+  const pts = sorted.map((s, i) => ({
+    x: xOf(i),
+    y: yOf(s.overallRisk),
+    score: s.overallRisk,
+    date: s.date.slice(5),
+  }))
+
+  const pathD = pts.map((p, i) => `${i === 0 ? 'M' : 'L'}${p.x.toFixed(1)},${p.y.toFixed(1)}`).join(' ')
+
+  // X-axis: show first, last, and up to 3 evenly-spaced labels
+  const labelIdxs = new Set<number>()
+  labelIdxs.add(0)
+  labelIdxs.add(sorted.length - 1)
+  if (sorted.length > 4) {
+    const step = Math.floor(sorted.length / 3)
+    for (let i = step; i < sorted.length - 1; i += step) labelIdxs.add(i)
+  }
+
+  const latest = pts[pts.length - 1]
+  const lineColor = scoreColor(latest.score)
+
+  return (
+    <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-4">
+      <div className="flex items-center justify-between mb-3">
+        <div className="flex items-center gap-2">
+          <TrendingUp size={15} className="text-blue-500" />
+          <span className="text-sm font-semibold text-slate-700">風險分趨勢</span>
+        </div>
+        <span className="text-xs text-slate-400">近 {sorted.length} 個交易日</span>
+      </div>
+
+      <svg viewBox={`0 0 ${W} ${H}`} width="100%" className="overflow-visible">
+        {/* Zone bands */}
+        {ZONE_BANDS.map((z) => (
+          <rect
+            key={z.min}
+            x={PAD.left} y={yOf(z.max)}
+            width={cW} height={yOf(z.min) - yOf(z.max)}
+            fill={z.fill}
+          />
+        ))}
+
+        {/* Grid lines + Y labels */}
+        {[0, 30, 45, 60, 75, 100].map((v) => (
+          <g key={v}>
+            <line x1={PAD.left} y1={yOf(v)} x2={PAD.left + cW} y2={yOf(v)}
+              stroke="#cbd5e1" strokeWidth={v === 0 ? 1 : 0.5} strokeDasharray={v === 0 ? '' : '3,3'} />
+            <text x={PAD.left - 4} y={yOf(v)} fill="#94a3b8" fontSize="8.5"
+              textAnchor="end" dominantBaseline="middle">{v}</text>
+          </g>
+        ))}
+
+        {/* Trend line */}
+        {pts.length > 1 && (
+          <path d={pathD} fill="none" stroke={lineColor} strokeWidth="2.5"
+            strokeLinecap="round" strokeLinejoin="round" />
+        )}
+
+        {/* Dots */}
+        {pts.map((p, i) => {
+          const isLatest = i === pts.length - 1
+          return (
+            <g key={i}>
+              {isLatest && <circle cx={p.x} cy={p.y} r={9} fill={scoreColor(p.score)} opacity={0.15} />}
+              <circle cx={p.x} cy={p.y} r={isLatest ? 5 : 3}
+                fill={scoreColor(p.score)} stroke="white" strokeWidth="1.5" />
+              {isLatest && (
+                <text x={p.x} y={p.y - 13} fill={scoreColor(p.score)} fontSize="11"
+                  fontWeight="bold" textAnchor="middle" dominantBaseline="auto">
+                  {p.score}
+                </text>
+              )}
+            </g>
+          )
+        })}
+
+        {/* X-axis labels */}
+        {pts.map((p, i) =>
+          labelIdxs.has(i) ? (
+            <text key={i} x={p.x} y={PAD.top + cH + 14} fill="#94a3b8"
+              fontSize="8.5" textAnchor="middle">{p.date}</text>
+          ) : null
+        )}
+      </svg>
+
+      {/* Legend */}
+      <div className="flex items-center justify-center gap-3 mt-1 flex-wrap">
+        {ZONE_BANDS.map((z) => (
+          <div key={z.min} className="flex items-center gap-1">
+            <div className="w-2 h-2 rounded-sm" style={{ backgroundColor: z.fill, border: '1px solid #e2e8f0' }} />
+            <span className="text-[10px]" style={{ color: z.labelColor }}>{z.label}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  )
+}
+
 const DEFCON_CONFIG: Record<number, { label: string; bg: string; text: string; border: string }> = {
   1: { label: 'DEFCON 1 — EXTREME', bg: 'bg-red-700', text: 'text-white', border: 'border-red-700' },
   2: { label: 'DEFCON 2 — CRITICAL', bg: 'bg-red-500', text: 'text-white', border: 'border-red-500' },
@@ -90,7 +217,7 @@ function IndicatorCard({ item }: { item: BubbleIndicator }) {
   )
 }
 
-export default function BubbleMonitor({ data }: { data: BubbleSnapshot }) {
+export default function BubbleMonitor({ data, history }: { data: BubbleSnapshot; history: BubbleSnapshot[] }) {
   const defcon = DEFCON_CONFIG[data.defconLevel]
 
   return (
@@ -120,6 +247,9 @@ export default function BubbleMonitor({ data }: { data: BubbleSnapshot }) {
         </div>
         <p className="text-sm text-slate-700 leading-relaxed">{data.summary}</p>
       </div>
+
+      {/* Risk Trend Chart */}
+      <RiskTrendChart history={history} />
 
       {/* Indicators Grid */}
       <div>

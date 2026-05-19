@@ -273,7 +273,7 @@ export default function Home() {
         )}
 
         {tab === 'bubble' && (
-          <BubbleMonitor data={latestBubble} />
+          <BubbleMonitor data={latestBubble} history={bubbles} />
         )}
 
         <div className="text-center text-slate-400 text-[11px] mt-8 pb-6">
