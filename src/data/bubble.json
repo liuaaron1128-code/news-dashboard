@@ -1,5 +1,145 @@
 [
   {
+    "date": "2026-05-19",
+    "defconLevel": 2,
+    "overallRisk": 68,
+    "alertLabel": "DEFCON 2 — CRITICAL",
+    "alertColor": "red",
+    "summary": "市場估值進入歷史最危險區間之一。Shiller CAPE 40.93 距 2000 年網路泡沫峰值（44.2x）僅 8%；巴菲特指標 231% 已超越 2000 年（159%）與 2022 年（193%），改寫歷史紀錄。VIX 17.82、Fear & Greed 落在貪婪區，估值極端高+波動率極端低的組合是典型頭部訊號。殖利率曲線仍 +0.5% 正斜率是唯一緩衝，但長期報酬展望已是負值（未來 8 年年化 -1.1%）。",
+    "indicators": [
+      {
+        "id": "cape",
+        "name": "CAPE",
+        "fullName": "Shiller CAPE Ratio",
+        "value": "40.93x",
+        "numericValue": 40.93,
+        "riskScore": 88,
+        "level": "EXTREME",
+        "historicalAvg": "17x",
+        "currentVsAvg": "+141%",
+        "benchmark": "歷史均值約 17x；> 35x 進入危險區",
+        "description": "十年週期調整本益比，平滑景氣循環的長線估值指標。",
+        "implication": "距 2000 年網路泡沫峰值僅 8%，長期年化報酬展望被嚴重壓縮。"
+      },
+      {
+        "id": "buffett",
+        "name": "Buffett",
+        "fullName": "巴菲特指標（總市值/GDP）",
+        "value": "231.15%",
+        "numericValue": 231.15,
+        "riskScore": 92,
+        "level": "EXTREME",
+        "historicalAvg": "85%",
+        "currentVsAvg": "+172%",
+        "benchmark": "歷史均值約 85%；> 150% 高度警戒",
+        "description": "美股總市值除以 GDP，巴菲特最偏好的單一估值指標。",
+        "implication": "已超越所有歷史紀錄（含 2000、2022），改寫紀錄。"
+      },
+      {
+        "id": "pe",
+        "name": "S&P P/E",
+        "fullName": "S&P 500 本益比",
+        "value": "26.97x",
+        "numericValue": 26.97,
+        "riskScore": 65,
+        "level": "HIGH",
+        "historicalAvg": "16x",
+        "currentVsAvg": "+69%",
+        "benchmark": "歷史均值約 16x；> 25x 偏貴",
+        "description": "S&P 500 過去 12 個月每股盈餘的本益比。",
+        "implication": "比 20 年均值 16.5 高出 64%，獲利成長壓力越來越大。"
+      },
+      {
+        "id": "yield_curve",
+        "name": "殖利率曲線",
+        "fullName": "美國公債殖利率曲線 10Y-2Y",
+        "value": "+0.50%",
+        "numericValue": 0.5,
+        "riskScore": 30,
+        "level": "LOW",
+        "historicalAvg": "+1.5%",
+        "currentVsAvg": "10Y 4.59%、2Y 4.09%，正斜率但偏平",
+        "benchmark": "正斜率為正常；倒掛（負值）為衰退信號",
+        "description": "10 年期 vs 2 年期公債利差，深度倒掛預告衰退。",
+        "implication": "曲線回正但仍偏平；近期未發出立即衰退訊號。"
+      },
+      {
+        "id": "fear_greed",
+        "name": "Fear&Greed",
+        "fullName": "CNN 恐懼貪婪指數",
+        "value": "63",
+        "numericValue": 63,
+        "riskScore": 55,
+        "level": "HIGH",
+        "historicalAvg": "50",
+        "currentVsAvg": "+13（落在貪婪區）",
+        "benchmark": "0=極度恐懼；100=極度貪婪；> 75 過熱警戒",
+        "description": "CNN 七項市場情緒指標合成的綜合分數。",
+        "implication": "情緒落在貪婪區，搭配極端估值是頭部典型組合。"
+      },
+      {
+        "id": "vix",
+        "name": "VIX",
+        "fullName": "CBOE 波動率指數",
+        "value": "17.82",
+        "numericValue": 17.82,
+        "riskScore": 35,
+        "level": "LOW",
+        "historicalAvg": "20",
+        "currentVsAvg": "-11%（略低於均值）",
+        "benchmark": "< 15 過度自滿；> 30 市場恐懼",
+        "description": "S&P 500 選擇權隱含的未來 30 天波動率。",
+        "implication": "市場對風險定價極度自滿，常為重大頭部前的訊號。"
+      }
+    ],
+    "actionRecommendations": [
+      {
+        "priority": "立即",
+        "level": "high",
+        "action": "降美股部位至 ≤50%",
+        "detail": "動用獲利了結釋出 15-25% 現金部位，並把停損線拉緊到追蹤 -8%。優先減碼最貴的純科技與七雄重複曝險。"
+      },
+      {
+        "priority": "本月",
+        "level": "medium",
+        "action": "現金移入防禦資產",
+        "detail": "分批把現金移入 1-3 個月期國庫券（殖利率約 4%+）；配置 5-10% 黃金或低波動 ETF（USMV、SPLV）以降低 Beta。"
+      },
+      {
+        "priority": "持續監控",
+        "level": "low",
+        "action": "鎖定三項頭部訊號",
+        "detail": "① 殖利率曲線由 +0.5% 走平再次倒掛；② VIX 突破 25 後站穩；③ Fear & Greed 連兩週 > 75。任一觸發再降一階。"
+      }
+    ],
+    "historicalComparisons": [
+      {
+        "period": "現在",
+        "cape": 40.93,
+        "buffett": 231,
+        "result": "?"
+      },
+      {
+        "period": "2000 網路泡沫",
+        "cape": 44.2,
+        "buffett": 159,
+        "result": "S&P -49%"
+      },
+      {
+        "period": "2008 金融海嘯",
+        "cape": 27.2,
+        "buffett": 110,
+        "result": "S&P -56%"
+      },
+      {
+        "period": "2022 升息修正",
+        "cape": 38.3,
+        "buffett": 193,
+        "result": "S&P -25%"
+      }
+    ]
+  },
+  {
     "date": "2026-05-18",
     "defconLevel": 3,
     "overallRisk": 63,
@@ -113,10 +253,30 @@
       }
     ],
     "historicalComparisons": [
-      { "period": "現在", "cape": 40.9, "buffett": 219, "result": "?" },
-      { "period": "2000 點網泡沫", "cape": 44.2, "buffett": 159, "result": "S&P -49%" },
-      { "period": "2008 金融海嘯", "cape": 27.2, "buffett": 110, "result": "S&P -56%" },
-      { "period": "2022 升息修正", "cape": 38.3, "buffett": 193, "result": "S&P -25%" }
+      {
+        "period": "現在",
+        "cape": 40.9,
+        "buffett": 219,
+        "result": "?"
+      },
+      {
+        "period": "2000 點網泡沫",
+        "cape": 44.2,
+        "buffett": 159,
+        "result": "S&P -49%"
+      },
+      {
+        "period": "2008 金融海嘯",
+        "cape": 27.2,
+        "buffett": 110,
+        "result": "S&P -56%"
+      },
+      {
+        "period": "2022 升息修正",
+        "cape": 38.3,
+        "buffett": 193,
+        "result": "S&P -25%"
+      }
     ]
   }
 ]
