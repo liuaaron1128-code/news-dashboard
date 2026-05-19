@@ -1,16 +1,459 @@
 [
   {
+    "date": "2026-05-19",
+    "weekday": "週二",
+    "coreJudgment": "今日市場主軸是「地緣降溫但風險溢價未退、利率回升壓抑風險資產、AI 敘事面臨第一次嚴肅測試」。Trump 取消對伊朗攻擊讓油價自高點回落，但 Hormuz 海峽仍未恢復通行——這意味著通膨頂部尚未確認，Fed 進一步寬鬆的窗口被迫延後。美 10 年期殖利率攀至 4.61%（一年新高），同步壓著科技股、加密貨幣與長天期資產。本週最大單一事件是週三 NVIDIA 財報，這是 AI 資本支出敘事的真正壓力測試；若指引不及預期，記憶體股的「需求見頂」恐慌會擴大為整體 AI 基建估值重估。業務面，金管會將 AI Agent 納入金融業 AI 指引、台灣 1 月 AI 基本法已實施——這對金融客戶是強制性合規成本，也是顧問費窗口。",
+    "sourceCount": 25,
+    "marketSnapshot": [
+      {
+        "label": "台股加權指數",
+        "value": "40,891.82",
+        "change": "+280.54 (+0.68%)",
+        "positive": true
+      },
+      {
+        "label": "S&P 500",
+        "value": "7,403.05",
+        "change": "-5.18 (-0.07%)",
+        "positive": false
+      },
+      {
+        "label": "NASDAQ",
+        "value": "26,090.73",
+        "change": "-134.41 (-0.51%)",
+        "positive": false
+      },
+      {
+        "label": "美元/台幣",
+        "value": "31.59",
+        "change": "+0.07 (+0.22%)",
+        "positive": false
+      },
+      {
+        "label": "BTC",
+        "value": "$76,902",
+        "change": "-$464 (-0.60%)",
+        "positive": false
+      },
+      {
+        "label": "ETH",
+        "value": "$2,115.84",
+        "change": "-$22.71 (-1.06%)",
+        "positive": false
+      },
+      {
+        "label": "美10年債",
+        "value": "4.61%",
+        "change": "+14 bps (一年新高)",
+        "positive": null
+      }
+    ],
+    "news": [
+      {
+        "id": "2026-05-19-001",
+        "grade": "🔴",
+        "category": "宏觀政策",
+        "title": "美 10Y 殖利率攀 4.61% 一年新高，市場質疑「利率寬鬆敘事」",
+        "background": "Fed 在 4/28-29 FOMC 以 8-4 罕見分裂維持基準利率於 3.5-3.75%，是 1992/10 以來最大規模反對票。Powell 主席任期 5/15 屆滿，續任董事，Treasury Secretary Bessent 主導繼任者甄選。",
+        "what": "美 10Y 殖利率本週一觸及 4.61%，比 5/14 大漲 14 個基點，創一年新高。直接推升因素：伊朗局勢溢價部分解除、油價維持 WTI $103-107 高檔，Fed 內部鴿派降息壓力被中東通膨上行風險抵消。FOMC 4 月會議紀要將於本週三公布——Powell 任內最後一次。",
+        "meaning": "(1) 為何現在：地緣風險溢價部分解除但油價未回到衝突前水位，市場理解為「停滯性通膨風險」——殖利率重新定價的是「Fed 無法立即降息」的事實。(2) 短期影響：4.6% 的長端殖利率對高 PE AI/半導體股是直接壓力；同步吸走機構資金（BTC ETF 昨日 -$648M）。(3) 中期結構：Powell 即將離任、Bessent 主導下任甄選，市場將開始定價「政治化的 Fed」風險溢價，這會永久墊高 term premium。(4) 市場可能誤讀：很多人會解讀為「Iran 取消後的 risk-on」，但實際上殖利率上升、加密下跌、晶片股下跌，是典型「stagflation lite」反應。",
+        "business": "金融業客戶的利率敏感性測試模型需重新校準——10Y 衝到 4.6% 而 Fed Funds 仍 3.5-3.75%，曲線結構正在變化。對銀行客戶來說是 NIM 擴張的窗口；對保險業是負債折現率正向調整。立即可推銷「利率情境壓力測試 + Azure 量化分析模型」顧問案。",
+        "investment": "美股科技、台股 AI 股短期承壓 1-2 週，等 NVIDIA 財報定錨。建議：美國基金維持核心持股、本週不加碼；台灣基金避開高 PE AI 概念股、增配金融族群（受惠 NIM）。加密貨幣降低權重 5-10%。房地產：殖利率上升意味台灣房貸利率調整壓力延長至 2026 Q4。",
+        "triggers": [
+          "若 10Y 突破 4.75% → 重新評估所有成長股估值、降低台股 AI 股權重",
+          "若 FOMC 4 月紀要（5/20）顯示鴿派分歧加劇 → BTC、黃金、長債可能反彈，2 天內加碼"
+        ],
+        "watchpoints": [],
+        "sources": [
+          "Federal Reserve H.15",
+          "CNBC",
+          "TheStreet",
+          "Bloomberg",
+          "FOMC 4 月聲明"
+        ]
+      },
+      {
+        "id": "2026-05-19-002",
+        "grade": "🔴",
+        "category": "地緣政治",
+        "title": "Trump 取消對伊朗攻擊，油價回落但海峽未通——通膨頂部尚未確認",
+        "background": "2026 年伊朗戰爭已進入第 81 天。美國自 4/13 開始封鎖伊朗港口、施壓伊朗重開 Hormuz 海峽。Hormuz 承擔全球約 20% 原油運輸，自衝突以來實質中斷。",
+        "what": "Trump 5/18 宣布應海灣盟友（沙、卡、阿聯酋）請求，取消原訂週二（5/19）對伊朗的軍事打擊，理由為「嚴肅談判正在進行」。巴基斯坦擔任美伊間接談判仲介。WTI 從週一 $107 回落至週二接近 $103，但仍遠高於衝突前。德黑蘭聲明「不會投降」。",
+        "meaning": "(1) 為何現在：美國內油價飆升推高通膨、戰爭民意支持率持續下滑；海灣國家擔心戰事擴大波及能源出口。(2) 短期影響：油價回落會讓市場錯誤假設「通膨壓力解除」，但 Hormuz 未通——油價底部仍在 $90-100 區間。(3) 中期結構：Trump「以戰促和」策略 → 4-8 週內每次談判進展/破裂引爆油價跳動 5-8%。(4) 市場可能誤讀：交易「和平協議」買進風險資產，但解決關鍵是海峽復通，不是是否取消單次打擊——這是過早慶祝。",
+        "business": "製造業客戶（特別有海外供應鏈、油運成本敏感者）面臨 Q2 毛利壓縮——「供應鏈韌性 AI 模擬」顧問需求高峰。可優先聯繫客戶 CFO/COO，提案 Azure 上的供應鏈情境模擬與 Copilot for Operations 部署。",
+        "investment": "短期油價波動 5-8% 區間將持續 4-8 週。能源 ETF 視為波動工具非趨勢交易。台灣航運、塑化短期賣壓但若海峽 30 天內復通會強勁反彈。加密：地緣降溫對 BTC 中性偏正但被殖利率上升壓制。全球基金持有不動，待海峽復通信號出現再加碼歐日股。",
+        "triggers": [
+          "若伊朗宣布 Hormuz 復通 → WTI 跌至 $80-85，全球風險資產 risk-on，加碼科技與新興市場",
+          "若 7 天內談判破裂、美國重啟攻擊 → 油價回升 $115+，加碼黃金、減碼台股電子"
+        ],
+        "watchpoints": [],
+        "sources": [
+          "TIME",
+          "Al Jazeera",
+          "NPR",
+          "Reuters"
+        ]
+      },
+      {
+        "id": "2026-05-19-003",
+        "grade": "🔴",
+        "category": "市場動態",
+        "title": "記憶體晶片「需求見頂」恐慌擴散，三星、SK Hynix 同步走弱",
+        "background": "2026 起 AI HBM 帶動記憶體大漲：SK Hynix Q1 創紀錄獲利、Micron DRAM ASP 季增 32%。HBM 已佔 DRAM wafer 23%。但週一 Micron 美股盤中急跌，引發亞洲跟進。",
+        "what": "南韓週二（5/19）開盤，三星 -1.25%、SK Hynix -1.85%，主因「memory peak-out」疑慮。同步 NASDAQ 週一收 -0.51%、費半弱勢。本週三 NVIDIA 公布財報（市場共識營收 $78B、EPS $1.77）——AI 資本支出敘事的真正壓力測試。",
+        "meaning": "(1) 為何現在：經過 2025 H2 至 2026 Q1 的瘋狂上漲（SK Hynix 9x），市場開始質疑超大規模雲廠商 2026 H2 capex 是否放緩。(2) 短期影響：記憶體是「AI 基建的最末梢需求指標」，先轉弱再傳到晶圓代工通常是循環見頂早期信號。(3) 中期結構：這不是基本面崩盤，而是估值合理化——NVIDIA 5/20 若給出 Q3 指引 ≥ $90B，恐慌 48 小時消散；若不及預期，半導體鏈估值砍 15-20%。(4) 市場誤讀：以為是「基本面轉弱」——實際是「定價過度後的健康回檔」。",
+        "business": "製造業客戶（記憶體封裝、PCB、被動元件）需立即「需求情境壓力測試」——基於不同 hyperscaler capex 假設（樂觀/中性/悲觀）建模 2026 H2 訂單。Power Platform + Azure Synapse 是現成解決方案。優先接觸 3-5 家記憶體供應鏈客戶 CFO，提供 6 週快速導入專案。",
+        "investment": "台股：短期避開記憶體模組（南亞科、華邦電、群聯）與 HBM 設備鏈，等 NVIDIA 後再評估。長線：核心 AI 部位（台積電、聯發科）若恐慌賣壓拉回 5%+ 是加碼機會。美國基金：本週前不加碼 NVDA、AMD、AVGO。",
+        "triggers": [
+          "若 NVIDIA 5/20 財報指引 Q3 ≥ $90B → AI 鏈估值疑慮解除，台股 AI 股加碼 5-8%",
+          "若 NVIDIA 指引 ≤ $82B 或下修毛利率 → 半導體鏈估值砍 15-20%，立即減碼台股電子"
+        ],
+        "watchpoints": [],
+        "sources": [
+          "Seoul Economic Daily",
+          "CNBC",
+          "Fortune",
+          "TradingKey"
+        ]
+      },
+      {
+        "id": "2026-05-19-004",
+        "grade": "🔴",
+        "category": "加密貨幣",
+        "title": "Bitcoin 現貨 ETF 單日淨流出 $648M，機構資金撤退",
+        "background": "2026 初以來美國現貨 BTC ETF 累積大幅吸金，BTC 5 月初一度突破 $81,000。本週開始機構出現大規模撤離。",
+        "what": "5/18 美國 12 檔現貨 BTC ETF 全數淨流出，總計 -$648.64M，2026 以來最大單日撤資之一。BlackRock IBIT 領跌 -$448M、ARK ARKB -$110M。BTC 從 $79K 跌至 $76,902，ETH 跌至 $2,115（單週 -6.95%）。觸發：CLARITY Act 進參院 + 10Y 殖利率 4.61% 吸走機構資金。",
+        "meaning": "(1) 為何現在：CLARITY Act 原本是利多但 sell the news；4.6% 無風險殖利率對機構是降低高波動資產比重的明確訊號。(2) 短期影響：BTC 跌破 $75K 將觸發演算法清算（估 $1.5-2B 多頭），可能瞬間下探 $70K。(3) 中期結構：BTC ETF 機構化兩面刃——資金大進也代表大出更迅速。BTC 已從「散戶 FOMO」進化為「與美債高度負相關的機構資產」。(4) 市場誤讀：「ETF 流出 = 牛市結束」是過度反應——若 10Y 轉折下行、監管明朗化，下半年機構資金會重新回流。",
+        "business": "—",
+        "investment": "加密部位：本週減碼 5-10%，等 BTC 跌至 $72-75K 區間且出現多頭吞噬訊號再加回。短期不持有 ETH。觀察 BlackRock IBIT 連 3 日是否轉為淨流入——這是機構情緒最即時指標。",
+        "triggers": [
+          "若 BTC 跌破 $72,000 → 啟動短期止損、避免槓桿曝險",
+          "若 CLARITY Act 5/22 前通過參院 + ETF 連 2 日淨流入 → 分批回補至原配置"
+        ],
+        "watchpoints": [],
+        "sources": [
+          "Coinfomania",
+          "CoinTelegraph",
+          "99bitcoins",
+          "SEC",
+          "CryptoTimes"
+        ]
+      },
+      {
+        "id": "2026-05-19-005",
+        "grade": "🟠",
+        "category": "宏觀政策",
+        "title": "Fed 4 票分裂、Powell 任期屆滿，貨幣政策步入「政治化」過渡期",
+        "background": "Powell 5/15 任期屆滿，續任董事。Bessent 主導下任主席甄選。",
+        "what": "4/29 FOMC 維持基準 3.5-3.75% 不變，但 8-4 罕見分裂——Miran 主張降息、Hammack/Kashkari/Logan 反對寬鬆偏向措辭，1992/10 以來最大反對票。短名單據傳含 Kevin Hassett、Kevin Warsh。本週三 5/20 公布 4 月紀要——Powell 任內最後一次。",
+        "meaning": "",
+        "business": "金融客戶「總體假設」模組需納入「Fed 政治化情境」——建議 Azure OpenAI 做總體經濟情境模擬。",
+        "investment": "美元短期偏弱（政治化 Fed → 較弱信譽），美 10Y 居高（term premium 上升）。黃金中期偏多。",
+        "triggers": [],
+        "watchpoints": [
+          "5/20 FOMC 4 月會議紀要（鴿派 vs 鷹派分歧細節）",
+          "Trump 下任 Fed 主席提名時點"
+        ],
+        "sources": [
+          "Federal Reserve",
+          "Bloomberg",
+          "Fox Business",
+          "The Hill"
+        ]
+      },
+      {
+        "id": "2026-05-19-006",
+        "grade": "🟠",
+        "category": "AI科技",
+        "title": "NVIDIA 5/20 財報為本週最大事件——AI 資本支出敘事的壓力測試",
+        "background": "Blackwell Ultra GB300 NVL72 已於 Microsoft Azure（4,600 套至大規模生產叢集）、CoreWeave、Oracle Cloud 部署，2026 預計出貨 60,000 套機櫃。",
+        "what": "共識本季營收 $78B、EPS $1.77。重點在 Q3 (FY27) 指引——≥$90B 則 AI 敘事再續一年；≤$82B 則整個半導體鏈估值重新洗牌。同週 Walmart（5/21）、Target、Home Depot 公布財報——消費端真實溫度計。",
+        "meaning": "",
+        "business": "對 AI 顧問業務是關鍵指標——NVDA 指引強，企業 AI 預算解凍訊號明確，H2 顧問案爆量起點。",
+        "investment": "整體 AI 部位（NVDA、台積電、ASML、SMCI）財報前不加碼也不減碼。財報後 48 小時定方向。",
+        "triggers": [],
+        "watchpoints": [
+          "NVIDIA Q3 (FY27) 營收指引（>$90B / 82-90B / <$82B）",
+          "毛利率指引（共識 73-74%，<72% 是預警）",
+          "Walmart 同店銷售（消費韌性）"
+        ],
+        "sources": [
+          "IndexBox",
+          "Yahoo Finance",
+          "Parameter",
+          "NVIDIA"
+        ]
+      },
+      {
+        "id": "2026-05-19-007",
+        "grade": "🟠",
+        "category": "AI科技",
+        "title": "微軟 365 Copilot 推 3 年 SKU、Microsoft-OpenAI 新合作架構",
+        "background": "4/27 微軟與 OpenAI 公布合作關係下一階段：微軟仍是 OpenAI 主要雲端夥伴，但 OpenAI 現可在任何雲服務客戶部署產品。",
+        "what": "5/1 微軟在 CSP 推出 M365 Copilot 3 年期 SKU，與 E3/E5 對齊——標誌「長期、深度」企業 Copilot 部署階段。Gartner 預估 2026 企業 Copilot 跨領域使用使 M365 客單價較 AI 前翻倍。同期微軟推出自研 MAI-Transcribe-1，降低對 OpenAI 依賴。",
+        "meaning": "",
+        "business": "顧問業務關鍵盤勢轉折：3 年 SKU 意味客戶從「試點」轉「全面導入」，readiness、deployment、adoption、governance 顧問費機會至少倍增。立即更新台灣金融、製造客戶的 3 年 Copilot 規劃書，鎖定 2026 H2 簽約窗口。",
+        "investment": "MSFT 中期看好，但短期受高殖利率壓制。可分批於拉回 5%+ 時加碼美國基金軟體權重。",
+        "triggers": [],
+        "watchpoints": [
+          "微軟在台灣金融客戶簽下首單 Copilot 3 年合約時點",
+          "微軟自研 MAI 模型在 Copilot 內滲透率"
+        ],
+        "sources": [
+          "Microsoft Learn",
+          "Microsoft Blog",
+          "OpenAI"
+        ]
+      },
+      {
+        "id": "2026-05-19-008",
+        "grade": "🟠",
+        "category": "台灣政策",
+        "title": "金管會將 AI Agent、AI 風險分類納入金融業 AI 指引",
+        "background": "金管會 2024/06 公布「金融業運用 AI 指引」（六大原則），台灣《AI 基本法》於 2026/01 正式施行，FSC 須依風險分類框架訂定金融業 AI 子規範。",
+        "what": "彭金隆主委 5/7 立法院財委會報告，將把「可程式化 AI」、「代理 AI（AI Agent）」、「AI 風險分類」納入金融業 AI 指引修訂。同時 FSC 已完成 RWA 代幣化（國內債、外國債、基金）概念驗證；台銀聯合 8 家行完成跨行鏈上黃金代幣清算實證。",
+        "meaning": "",
+        "business": "金融業客戶今年最大顧問機會——AI Agent 監管框架到位前的 6-9 個月窗口，每家機構都需要：(1) AI 治理盤點、(2) 風險分類映射、(3) 模型可解釋性審計、(4) Agent 沙盒環境建置。立即可規劃「金管會 AI 指引合規衝刺包」，鎖定 14 家公股+主要民營銀行。",
+        "investment": "台灣金融股短期中性——合規成本增加，但同步開啟 RWA 代幣化、跨行清算等新業務動能。",
+        "triggers": [],
+        "watchpoints": [
+          "修訂版金融業 AI 指引正式公告時點（預估 Q3 2026）",
+          "首家銀行採用 AI Agent 應用案例（信貸審核 / 客服）"
+        ],
+        "sources": [
+          "金管會",
+          "Epoch Times",
+          "Baker McKenzie"
+        ]
+      },
+      {
+        "id": "2026-05-19-009",
+        "grade": "🟠",
+        "category": "房地產",
+        "title": "央行第二戶房貸成數放寬至 6 成，信用管制首度鬆動",
+        "background": "央行自 2024/09 第七波選擇性信用管制以來，不動產貸款占放款比重由 37.6% 高點降至 36.0%。連 8 次（2025-2026）維持利率不變。",
+        "what": "央行 3/19 理監事會宣布，自 3/20 起自然人第二戶購屋貸款成數由 50% 上調至 60%，為第七波信用管制以來首次鬆動。2026 起銀行不動產貸款總量管制回歸各行內部控管。利率政策維持不變。",
+        "meaning": "",
+        "business": "—",
+        "investment": "房地產：短線情緒回暖、買盤觀望紓解，但結構性轉折仍待利率方向確認。台灣房貸利率因 Fed 持平 + 美 10Y 上升，2026 全年無降息空間，房價將呈「量平價修」格局。持有自住部位不動，投資型房產維持觀望、不加碼。",
+        "triggers": [],
+        "watchpoints": [
+          "第二戶房貸申辦量月增（4-5 月數據）",
+          "央行 6 月理監事會是否進一步鬆動"
+        ],
+        "sources": [
+          "央行",
+          "財訊",
+          "Yahoo 自由地產",
+          "HouseFeel"
+        ]
+      },
+      {
+        "id": "2026-05-19-010",
+        "grade": "🟠",
+        "category": "客戶產業",
+        "title": "台積電亞利桑那 P3 上樑、2nm 量產提前至 2027 年",
+        "background": "台積電累計於亞利桑那投資 $165B，規劃 6 廠 + 2 封裝 + 1 R&D。Q1 2026 美廠單季獲利 NT$188 億，已超越 2025 全年獲利。",
+        "what": "5/5 台積電鳳凰城 P3 廠上樑，主體結構完工。三廠合計可望於 2027 量產 2nm 與 A16，較原規劃 2028 提前一年。4nm 良率已與台灣廠相當。AI/HPC 佔 Q1 2026 營收 61%，2026 全年營收成長目標上調至 30%+（美元計價），capex $56B。",
+        "meaning": "",
+        "business": "對製造業客戶是地緣多元化的明確案例——台廠在美設廠、智慧製造能力外移，「離岸 + 在地化」雙軌部署需求帶動 Power Platform、IoT/MES、AI 預測性維護等顧問需求。",
+        "investment": "台積電（2330.TW、TSM）中長期核心持股維持。短期等 NVIDIA 財報定錨後再評估加碼。美國基金中半導體權重保留。",
+        "triggers": [],
+        "watchpoints": [
+          "P3 廠 2026 H2 設備進駐進度",
+          "2nm 首批客戶（Apple、NVIDIA、AMD）量產時點"
+        ],
+        "sources": [
+          "經濟日報",
+          "鉅亨網",
+          "數位時代",
+          "遠見"
+        ]
+      },
+      {
+        "id": "2026-05-19-011",
+        "grade": "🟠",
+        "category": "宏觀政策",
+        "title": "Hormuz 海峽未通、WTI 維持 $103-107 高檔，通膨頂部尚未確認",
+        "background": "Hormuz 海峽承擔全球約 20% 原油運輸。自 4/13 起實質中斷，引發油價飆升。",
+        "what": "WTI 週二接近 $103（自週一 $107 回落），但仍遠高於衝突前 $70-80。IEA 5 月報告下修全球需求預估，但供給端風險主導價格。Trump 取消攻擊後油市「鬆口氣」回落，但海峽未通仍將支撐底部 $90-100。",
+        "meaning": "",
+        "business": "製造業、塑化業客戶 H1 2026 毛利仍面臨壓力。可推銷「能源成本動態定價模型」顧問案。",
+        "investment": "全球基金中能源 ETF 視為對沖部位（5% 上限），非趨勢交易。台股航運、塑化短期賣壓。",
+        "triggers": [],
+        "watchpoints": [
+          "Hormuz 海峽復通時點",
+          "OPEC+ 6 月會議是否增產"
+        ],
+        "sources": [
+          "IEA",
+          "CNN Business",
+          "TradingEconomics",
+          "OilPrice"
+        ]
+      },
+      {
+        "id": "2026-05-19-012",
+        "grade": "🟡",
+        "category": "AI科技",
+        "title": "EU AI Act 高風險系統強制執行倒數，8/2 後罰則啟動",
+        "background": "歐盟 AI Act 自 2026/08/02 起對多數高風險 AI 系統強制執行核心義務。",
+        "what": "罰款上限：禁止性 AI 實踐 EUR 35M 或全球營收 7%、其他違規 EUR 15M 或 3%、提供誤導資訊 EUR 7.5M 或 1%。雖客戶以台灣為主，但有歐盟業務或歐盟客戶資料的金融、製造、醫療客戶在範圍內。",
+        "meaning": "Q3 2026 起，金融、醫療、HR 等高風險 AI 應用需提供 conformity assessment、技術文件、人類監督機制。這對顧問業務是「EU AI Act 合規健檢」顧問案的入場時機，可優先掃描客戶中有歐盟資料流的標的（如台達電、和泰、富邦金歐洲分行）。時間框架：3-6 個月內必須完成首輪盤點。",
+        "business": "",
+        "investment": "",
+        "triggers": [],
+        "watchpoints": [],
+        "sources": [
+          "EU AI Act 官方",
+          "DLA Piper",
+          "Compliance and Risks"
+        ]
+      },
+      {
+        "id": "2026-05-19-013",
+        "grade": "🟡",
+        "category": "客戶產業",
+        "title": "FDA 放寬 AI 臨床決策支援軟體監管，醫療 AI 商業化加速",
+        "background": "FDA 於 2026/01/06 發布 CDS 指引修訂，降低低風險 AI 與穿戴裝置的監管力度。",
+        "what": "只要 AI 提供單一臨床建議、醫生能獨立審查邏輯與資料來源，即可享執法裁量空間。同時要求 AI/生成式 AI 對資料輸入、邏輯、推論需更透明。FDA 並推出「AI 加速早期臨床試驗試點計畫」，回應截止 5/29。",
+        "meaning": "台灣醫療客戶（醫學中心、醫療 AI 新創）可加速採用 Azure OpenAI + Healthcare data services 部署輔助診斷工具。「FDA 合規友善」的低風險產品 6-12 個月內會大量上市。建議優先聯繫和信、長庚、慈濟、北榮 IT/CIO，提案「臨床決策支援 AI 試點」3-6 個月專案。",
+        "business": "",
+        "investment": "",
+        "triggers": [],
+        "watchpoints": [],
+        "sources": [
+          "FDA",
+          "Federal Register",
+          "Orrick",
+          "Faegre Drinker"
+        ]
+      },
+      {
+        "id": "2026-05-19-014",
+        "grade": "🟡",
+        "category": "宏觀政策",
+        "title": "中國 LPR 連 11 個月不動、PBOC 維持「結構性工具」優先",
+        "background": "中國 1 年期 LPR 維持 3.0%、5 年期 3.5%，連 11 個月不變。",
+        "what": "中東衝突使能源價格上行緩解了通縮壓力，給 PBOC 推遲大規模寬鬆的理由。PBOC 偏好結構性工具而非全面降息。",
+        "meaning": "若 H2 2026 中國消費需求未見起色，PBOC 可能在 Q3-Q4 啟動定向 RRR 或結構性工具。對台灣供應鏈：中國終端需求仍弱，製造業客戶不應預期中國訂單反彈。對全球基金：中國 A 股維持低配。",
+        "business": "",
+        "investment": "",
+        "triggers": [],
+        "watchpoints": [],
+        "sources": [
+          "CNBC",
+          "Bloomberg",
+          "PBOC"
+        ]
+      },
+      {
+        "id": "2026-05-19-015",
+        "grade": "🟠",
+        "category": "市場動態",
+        "title": "本週財報週重點：Walmart、Target、Home Depot 消費溫度計",
+        "background": "美國零售旺季前的本週是 Q1 (Jan-Apr) 財報集中發布期。",
+        "what": "週三 Home Depot、Target、Lowe's、TJX、Analog Devices；週四 Walmart、Deere、Workday、Ross Stores、NetEase。Walmart 同店銷售是判斷美國中產消費韌性最關鍵指標——關稅成本是否轉嫁、消費降級程度。",
+        "meaning": "",
+        "business": "若 Walmart 同店銷售年增 <2%，表示美國消費降溫——對台灣製造業客戶 H2 接單預期需下調。",
+        "investment": "美國基金：避免在零售財報前加碼。台股零售供應鏈（如儒鴻、聚陽）跟著 Walmart 走向。",
+        "triggers": [],
+        "watchpoints": [
+          "Walmart 同店銷售年增率（>3% 強 / 1-3% 中 / <1% 弱）",
+          "Target 庫存周轉率（消費端真實需求）"
+        ],
+        "sources": [
+          "Kiplinger",
+          "MarketScreener",
+          "Yahoo Finance"
+        ]
+      }
+    ],
+    "weeklyEvents": [
+      {
+        "date": "05/20 週三",
+        "event": "FOMC 4 月會議紀要公布",
+        "meaning": "Powell 任內最終紀要，鴿/鷹分歧細節決定殖利率短期方向"
+      },
+      {
+        "date": "05/20 週三盤後",
+        "event": "NVIDIA FY26 Q1 財報",
+        "meaning": "Q3 指引是 AI 鏈估值的單一最大變數"
+      },
+      {
+        "date": "05/20 週三",
+        "event": "Home Depot、Target、Lowe's、TJX、Analog Devices 財報",
+        "meaning": "美國中產消費溫度計"
+      },
+      {
+        "date": "05/21 週四",
+        "event": "Walmart、Deere、Workday、NetEase 財報",
+        "meaning": "Walmart 同店銷售決定消費基調"
+      },
+      {
+        "date": "05/22 週五",
+        "event": "Markit 5 月 PMI 初值（美/歐/日）",
+        "meaning": "製造業擴張/收縮分水嶺"
+      },
+      {
+        "date": "05/29 週四",
+        "event": "FDA AI 臨床試驗計畫意見截止",
+        "meaning": "醫療 AI 客戶推案窗口"
+      },
+      {
+        "date": "全週",
+        "event": "Hormuz 海峽通行狀態",
+        "meaning": "油價底部位置、通膨頂部判斷"
+      }
+    ]
+  },
+  {
     "date": "2026-05-18",
     "weekday": "週一",
     "coreJudgment": "美股週末消息面整體偏正向，美中貿易談判出現突破跡象帶動風險情緒回升，台股今日預計跟漲開高。Fed 官員週末發言偏鴿，降息預期小幅提前。對你的投資組合而言，美國基金與全球基金短期方向偏多；BTC 受流動性預期改善站上 10 萬美元關卡，值得關注。",
     "marketSnapshot": [
-      { "label": "台股加權指數", "value": "22,340", "change": "+1.2%", "positive": true },
-      { "label": "S&P 500", "value": "5,892", "change": "+0.8%", "positive": true },
-      { "label": "NASDAQ", "value": "19,104", "change": "+1.1%", "positive": true },
-      { "label": "美元／台幣", "value": "31.42", "change": "-0.3%", "positive": true },
-      { "label": "BTC", "value": "$102,450", "change": "+3.2%", "positive": true },
-      { "label": "ETH", "value": "$3,820", "change": "+2.7%", "positive": true },
-      { "label": "美10年債殖利率", "value": "4.32%", "change": "-0.04%", "positive": true }
+      {
+        "label": "台股加權指數",
+        "value": "22,340",
+        "change": "+1.2%",
+        "positive": true
+      },
+      {
+        "label": "S&P 500",
+        "value": "5,892",
+        "change": "+0.8%",
+        "positive": true
+      },
+      {
+        "label": "NASDAQ",
+        "value": "19,104",
+        "change": "+1.1%",
+        "positive": true
+      },
+      {
+        "label": "美元／台幣",
+        "value": "31.42",
+        "change": "-0.3%",
+        "positive": true
+      },
+      {
+        "label": "BTC",
+        "value": "$102,450",
+        "change": "+3.2%",
+        "positive": true
+      },
+      {
+        "label": "ETH",
+        "value": "$3,820",
+        "change": "+2.7%",
+        "positive": true
+      },
+      {
+        "label": "美10年債殖利率",
+        "value": "4.32%",
+        "change": "-0.04%",
+        "positive": true
+      }
     ],
     "news": [
       {
@@ -27,7 +470,12 @@
           "若 90 天內結構性談判出現重大分歧 → 需重新評估科技股持倉",
           "若美方恢復對半導體設備的出口限制 → 台積電供應鏈將再度承壓"
         ],
-        "sources": ["Reuters", "WSJ", "Bloomberg", "Financial Times"]
+        "sources": [
+          "Reuters",
+          "WSJ",
+          "Bloomberg",
+          "Financial Times"
+        ]
       },
       {
         "id": "20260518-02",
@@ -43,7 +491,12 @@
           "若 Q3 台灣上線時程延後 → 競爭對手有搶先佈局的機會",
           "若 Google 宣布 Workspace AI 跟進大幅降價 → 企業客戶議價空間擴大，需提前鎖定長期合約"
         ],
-        "sources": ["TechCrunch", "Bloomberg", "數位時代", "INSIDE"]
+        "sources": [
+          "TechCrunch",
+          "Bloomberg",
+          "數位時代",
+          "INSIDE"
+        ]
       },
       {
         "id": "20260518-03",
@@ -58,7 +511,11 @@
           "5 月 28 日 PCE 數據：若核心 PCE 高於 2.5%，降息預期將反轉",
           "6 月 FOMC 會議聲明措辭是否出現明確鴿派轉向"
         ],
-        "sources": ["Reuters", "CNBC", "Bloomberg"]
+        "sources": [
+          "Reuters",
+          "CNBC",
+          "Bloomberg"
+        ]
       },
       {
         "id": "20260518-04",
@@ -73,7 +530,11 @@
           "本週台積電是否維持外資買超前三大個股",
           "台幣若突破 31.0，央行是否啟動干預"
         ],
-        "sources": ["經濟日報", "MoneyDJ", "鉅亨網"]
+        "sources": [
+          "經濟日報",
+          "MoneyDJ",
+          "鉅亨網"
+        ]
       },
       {
         "id": "20260518-05",
@@ -88,7 +549,11 @@
           "BTC 能否在 $100,000 以上收週線，確認突破有效性",
           "ETF 資金流入是否持續 3 天以上"
         ],
-        "sources": ["CoinDesk", "The Block", "Bloomberg"]
+        "sources": [
+          "CoinDesk",
+          "The Block",
+          "Bloomberg"
+        ]
       },
       {
         "id": "20260518-06",
@@ -103,7 +568,11 @@
           "立法院審查進度與修正幅度",
           "數位部何時發布施行細則與合規標準"
         ],
-        "sources": ["數位時代", "工商時報", "關鍵評論網"]
+        "sources": [
+          "數位時代",
+          "工商時報",
+          "關鍵評論網"
+        ]
       },
       {
         "id": "20260518-07",
@@ -118,7 +587,11 @@
           "Q3 央行理監事會議是否正式宣布調整",
           "北市建案成交量是否在 6 月出現回溫"
         ],
-        "sources": ["工商時報", "今周刊", "MoneyDJ"]
+        "sources": [
+          "工商時報",
+          "今周刊",
+          "MoneyDJ"
+        ]
       },
       {
         "id": "20260518-08",
@@ -133,7 +606,11 @@
           "5 月 29 日歐元區 CPI 初值是否維持 2.2% 以下",
           "6 月 5 日 ECB 利率決議"
         ],
-        "sources": ["Reuters", "Financial Times", "ECB官方"]
+        "sources": [
+          "Reuters",
+          "Financial Times",
+          "ECB官方"
+        ]
       },
       {
         "id": "20260518-09",
@@ -148,7 +625,11 @@
           "AI 基本法草案審查進度（影響金融業合規採購時程）",
           "Q2 金融業 IT 採購招標公告數量"
         ],
-        "sources": ["數位部", "工商時報", "天下雜誌"]
+        "sources": [
+          "數位部",
+          "工商時報",
+          "天下雜誌"
+        ]
       },
       {
         "id": "20260518-10",
@@ -163,7 +644,11 @@
           "本週 Nvidia 是否公布 Q1 財報超預期（預計 5 月 28 日）",
           "費城半導體指數是否突破前高"
         ],
-        "sources": ["Bloomberg", "CNBC", "Reuters"]
+        "sources": [
+          "Bloomberg",
+          "CNBC",
+          "Reuters"
+        ]
       },
       {
         "id": "20260518-11",
@@ -177,7 +662,10 @@
         "business": "若 Gemini Ultra 2.0 在企業應用上的實際表現確實優於 GPT-5，部分客戶可能要求評估 Google Cloud 方案。建議提前了解 Azure 與 Google Cloud 的差異化定位，準備應對客戶詢問。",
         "investment": "—",
         "triggers": [],
-        "sources": ["TechCrunch", "Ars Technica"]
+        "sources": [
+          "TechCrunch",
+          "Ars Technica"
+        ]
       },
       {
         "id": "20260518-12",
@@ -191,7 +679,10 @@
         "business": "若台灣半導體廠在印度設廠成真，台灣本地的 AI 導入需求可能因人才外移而略受影響，但同時也代表跨國企業的數位轉型顧問需求將擴大。",
         "investment": "長期觀察，目前對投資組合無直接影響。若形成趨勢，全球基金中印度市場部位將受益。",
         "triggers": [],
-        "sources": ["Nikkei Asia", "Reuters"]
+        "sources": [
+          "Nikkei Asia",
+          "Reuters"
+        ]
       },
       {
         "id": "20260518-13",
@@ -205,15 +696,39 @@
         "business": "—",
         "investment": "若日圓走強，全球基金中的日本股票部位可能因匯率因素受壓（日圓強 = 日股以美元計出口競爭力下降）。目前為早期訊號，需持續觀察。",
         "triggers": [],
-        "sources": ["Nikkei Asia", "Reuters", "Bloomberg"]
+        "sources": [
+          "Nikkei Asia",
+          "Reuters",
+          "Bloomberg"
+        ]
       }
     ],
     "weeklyEvents": [
-      { "date": "05/20 週三", "event": "台灣 4 月出口訂單", "meaning": "反映 AI 伺服器需求是否持續強勁，直接影響台灣基金走向" },
-      { "date": "05/21 週四", "event": "美國初領失業金人數", "meaning": "勞動市場強弱影響 Fed 降息時程判斷" },
-      { "date": "05/22 週四", "event": "Nvidia Q1 財報（預估）", "meaning": "AI 算力需求是否持續超預期，影響美國基金科技股板塊" },
-      { "date": "05/28 週三", "event": "美國 PCE 物價指數", "meaning": "Fed 最重視的通膨指標，直接決定 9 月降息機率" },
-      { "date": "06/05 週五", "event": "ECB 利率決議", "meaning": "預期降息 25bp，若符合將支撐全球股市" }
+      {
+        "date": "05/20 週三",
+        "event": "台灣 4 月出口訂單",
+        "meaning": "反映 AI 伺服器需求是否持續強勁，直接影響台灣基金走向"
+      },
+      {
+        "date": "05/21 週四",
+        "event": "美國初領失業金人數",
+        "meaning": "勞動市場強弱影響 Fed 降息時程判斷"
+      },
+      {
+        "date": "05/22 週四",
+        "event": "Nvidia Q1 財報（預估）",
+        "meaning": "AI 算力需求是否持續超預期，影響美國基金科技股板塊"
+      },
+      {
+        "date": "05/28 週三",
+        "event": "美國 PCE 物價指數",
+        "meaning": "Fed 最重視的通膨指標，直接決定 9 月降息機率"
+      },
+      {
+        "date": "06/05 週五",
+        "event": "ECB 利率決議",
+        "meaning": "預期降息 25bp，若符合將支撐全球股市"
+      }
     ],
     "sourceCount": 28
   }
