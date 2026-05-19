@@ -2,49 +2,49 @@
   {
     "date": "2026-05-19",
     "weekday": "週二",
-    "coreJudgment": "今日市場主軸是「地緣降溫但風險溢價未退、利率回升壓抑風險資產、AI 敘事面臨第一次嚴肅測試」。Trump 取消對伊朗攻擊讓油價自高點回落，但 Hormuz 海峽仍未恢復通行——這意味著通膨頂部尚未確認，Fed 進一步寬鬆的窗口被迫延後。美 10 年期殖利率攀至 4.61%（一年新高），同步壓著科技股、加密貨幣與長天期資產。本週最大單一事件是週三 NVIDIA 財報，這是 AI 資本支出敘事的真正壓力測試；若指引不及預期，記憶體股的「需求見頂」恐慌會擴大為整體 AI 基建估值重估。業務面，金管會將 AI Agent 納入金融業 AI 指引、台灣 1 月 AI 基本法已實施——這對金融客戶是強制性合規成本，也是顧問費窗口。",
-    "sourceCount": 25,
+    "coreJudgment": "今天市場的真正主題只有一個——停滯性通膨已不再是風險情境，而是基準情境。Hormuz 海峽事實上封閉近三個月，Brent 站穩 $110，4 月 CPI 跳到 3.8%，10 年期殖利率衝破 4.6%；Kevin Warsh 在「最分裂的 54-45」票數下接任 Fed 主席，6/17 首戰要在「白宮逼降息、市場逼升息」之間選邊。Trump 暫緩攻伊只是 2-3 天延後，不是和平協議。業務面：金管會「AI 管 AI」框架剛端上桌，金融客戶今年 AI Agent 預算將從 PoC 轉 production，是 Microsoft 體系的甜蜜點。投資面：今天不是抄底日，是控風險日，AI 龍頭 + 台灣 PMI 受益鏈是少數避風港，現金與短債比重應上調。",
+    "sourceCount": 35,
     "marketSnapshot": [
       {
         "label": "台股加權指數",
         "value": "40,891.82",
-        "change": "+280.54 (+0.68%)",
+        "change": "+0.68%（5/18 收盤）",
         "positive": true
       },
       {
         "label": "S&P 500",
-        "value": "7,403.05",
-        "change": "-5.18 (-0.07%)",
+        "value": "7,353.61",
+        "change": "-0.67%（三連跌）",
         "positive": false
       },
       {
         "label": "NASDAQ",
-        "value": "26,090.73",
-        "change": "-134.41 (-0.51%)",
+        "value": "25,870.71",
+        "change": "-0.84%",
         "positive": false
       },
       {
         "label": "美元/台幣",
-        "value": "31.59",
-        "change": "+0.07 (+0.22%)",
-        "positive": false
+        "value": "31.316",
+        "change": "-0.05%",
+        "positive": true
       },
       {
         "label": "BTC",
-        "value": "$76,902",
-        "change": "-$464 (-0.60%)",
+        "value": "$76,565",
+        "change": "-0.60%",
         "positive": false
       },
       {
         "label": "ETH",
-        "value": "$2,115.84",
-        "change": "-$22.71 (-1.06%)",
+        "value": "$2,116",
+        "change": "-0.50%",
         "positive": false
       },
       {
         "label": "美10年債",
         "value": "4.61%",
-        "change": "+14 bps (一年新高)",
+        "change": "+14 bps（16月新高）",
         "positive": null
       }
     ],
@@ -52,358 +52,370 @@
       {
         "id": "2026-05-19-001",
         "grade": "🔴",
-        "category": "宏觀政策",
-        "title": "美 10Y 殖利率攀 4.61% 一年新高，市場質疑「利率寬鬆敘事」",
-        "background": "Fed 在 4/28-29 FOMC 以 8-4 罕見分裂維持基準利率於 3.5-3.75%，是 1992/10 以來最大規模反對票。Powell 主席任期 5/15 屆滿，續任董事，Treasury Secretary Bessent 主導繼任者甄選。",
-        "what": "美 10Y 殖利率本週一觸及 4.61%，比 5/14 大漲 14 個基點，創一年新高。直接推升因素：伊朗局勢溢價部分解除、油價維持 WTI $103-107 高檔，Fed 內部鴿派降息壓力被中東通膨上行風險抵消。FOMC 4 月會議紀要將於本週三公布——Powell 任內最後一次。",
-        "meaning": "(1) 為何現在：地緣風險溢價部分解除但油價未回到衝突前水位，市場理解為「停滯性通膨風險」——殖利率重新定價的是「Fed 無法立即降息」的事實。(2) 短期影響：4.6% 的長端殖利率對高 PE AI/半導體股是直接壓力；同步吸走機構資金（BTC ETF 昨日 -$648M）。(3) 中期結構：Powell 即將離任、Bessent 主導下任甄選，市場將開始定價「政治化的 Fed」風險溢價，這會永久墊高 term premium。(4) 市場可能誤讀：很多人會解讀為「Iran 取消後的 risk-on」，但實際上殖利率上升、加密下跌、晶片股下跌，是典型「stagflation lite」反應。",
-        "business": "金融業客戶的利率敏感性測試模型需重新校準——10Y 衝到 4.6% 而 Fed Funds 仍 3.5-3.75%，曲線結構正在變化。對銀行客戶來說是 NIM 擴張的窗口；對保險業是負債折現率正向調整。立即可推銷「利率情境壓力測試 + Azure 量化分析模型」顧問案。",
-        "investment": "美股科技、台股 AI 股短期承壓 1-2 週，等 NVIDIA 財報定錨。建議：美國基金維持核心持股、本週不加碼；台灣基金避開高 PE AI 概念股、增配金融族群（受惠 NIM）。加密貨幣降低權重 5-10%。房地產：殖利率上升意味台灣房貸利率調整壓力延長至 2026 Q4。",
+        "category": "地緣政治",
+        "title": "Trump 暫緩攻伊「2-3 天」｜油價站穩 $110，Hormuz 仍封鎖",
+        "background": "自 2/28 美以聯合「Epic Fury」行動以來，伊朗於 3/4 宣布封鎖 Hormuz，已逾兩個半月；超過 1,550 艘船舶、22,500 名船員受困，全球四大航商已全面停航。Brent 從戰前 $70 飆至 $110。",
+        "what": "Trump 於 5/18 在 Truth Social 宣布，在卡達、沙烏地、阿聯酋三國領袖請求下，暫緩原定週二攻伊行動，理由是「與伊朗有非常重大的討論」。伊朗透過巴基斯坦中介遞交修改條件。Trump 用語為「先暫緩一段時間，或許永遠，但也可能只是一陣子」，措辭刻意模糊。Brent 早盤僅微漲 0.7% 至 $110.05——市場顯然不買單。",
+        "meaning": "第一，這不是停火，是兩三天的窗口，市場若把它定價為和平折扣將會二次受傷。第二，Trump 同步表示「美軍隨時可在 moment's notice 重啟」，把選擇權留在自己手上，這是談判戰術不是政策轉向。第三，即便伊朗讓步，Hormuz 解封、煉廠重建、保險費率回落，最快也是 Q4 才能反映在油價——能源結構性高通膨已成事實。第四，市場最可能誤讀的是把「Trump 暫緩」當成「風險解除」買股票，海灣三國居中協調本身就證明區域不穩定。",
+        "business": "製造業客戶供應鏈韌性 / 能源避險的 AI 模型需求會被強化，可從 Power Platform + Azure Digital Twin 切入做能源用量預測與替代採購情境模擬。金融客戶的市場風險 VaR 模型須重新校準至「Hormuz 持續封閉」基準。",
+        "investment": "短期：能源股、油服、保險再保（受惠運費保費），台灣油電燃氣指標股是少數的多頭題材。中期減碼：航運、塑化（原料成本）、台灣輸入型通膨敏感的內需股。避免單壓地緣賭注。",
         "triggers": [
-          "若 10Y 突破 4.75% → 重新評估所有成長股估值、降低台股 AI 股權重",
-          "若 FOMC 4 月紀要（5/20）顯示鴿派分歧加劇 → BTC、黃金、長債可能反彈，2 天內加碼"
+          "若 Trump 在 48 小時內再發攻擊命令 → Brent 直奔 $130，台股壓回 40,000 以下",
+          "若伊朗同意 IAEA 復檢 + Hormuz 局部開放 → Brent 回測 $95，10Y 殖利率回 4.3%"
         ],
         "watchpoints": [],
         "sources": [
-          "Federal Reserve H.15",
+          "CBS News",
+          "Washington Post",
           "CNBC",
-          "TheStreet",
-          "Bloomberg",
-          "FOMC 4 月聲明"
+          "Times of Israel",
+          "Wikipedia 2026 Hormuz Crisis",
+          "Dallas Fed"
         ]
       },
       {
         "id": "2026-05-19-002",
         "grade": "🔴",
-        "category": "地緣政治",
-        "title": "Trump 取消對伊朗攻擊，油價回落但海峽未通——通膨頂部尚未確認",
-        "background": "2026 年伊朗戰爭已進入第 81 天。美國自 4/13 開始封鎖伊朗港口、施壓伊朗重開 Hormuz 海峽。Hormuz 承擔全球約 20% 原油運輸，自衝突以來實質中斷。",
-        "what": "Trump 5/18 宣布應海灣盟友（沙、卡、阿聯酋）請求，取消原訂週二（5/19）對伊朗的軍事打擊，理由為「嚴肅談判正在進行」。巴基斯坦擔任美伊間接談判仲介。WTI 從週一 $107 回落至週二接近 $103，但仍遠高於衝突前。德黑蘭聲明「不會投降」。",
-        "meaning": "(1) 為何現在：美國內油價飆升推高通膨、戰爭民意支持率持續下滑；海灣國家擔心戰事擴大波及能源出口。(2) 短期影響：油價回落會讓市場錯誤假設「通膨壓力解除」，但 Hormuz 未通——油價底部仍在 $90-100 區間。(3) 中期結構：Trump「以戰促和」策略 → 4-8 週內每次談判進展/破裂引爆油價跳動 5-8%。(4) 市場可能誤讀：交易「和平協議」買進風險資產，但解決關鍵是海峽復通，不是是否取消單次打擊——這是過早慶祝。",
-        "business": "製造業客戶（特別有海外供應鏈、油運成本敏感者）面臨 Q2 毛利壓縮——「供應鏈韌性 AI 模擬」顧問需求高峰。可優先聯繫客戶 CFO/COO，提案 Azure 上的供應鏈情境模擬與 Copilot for Operations 部署。",
-        "investment": "短期油價波動 5-8% 區間將持續 4-8 週。能源 ETF 視為波動工具非趨勢交易。台灣航運、塑化短期賣壓但若海峽 30 天內復通會強勁反彈。加密：地緣降溫對 BTC 中性偏正但被殖利率上升壓制。全球基金持有不動，待海峽復通信號出現再加碼歐日股。",
+        "category": "宏觀政策",
+        "title": "10Y 殖利率破 4.61%｜美股三連跌｜停滯性通膨已從風險變現實",
+        "background": "4 月 CPI 年增 3.8%，是 2023 年 5 月以來最高，核心 CPI 2.8%。能源年增 17.9%、汽油年增 28.4%。實質薪資年減 0.3%。Moody's 已於 2025/5 把美主權評等降至 Aa1。",
+        "what": "5/18 美 10 年期殖利率盤中觸 4.613%，較 5/14 跳升 14 bps，創 16 個月新高。S&P 500 收 7,353.61（-0.67%），NASDAQ 收 25,870.71（-0.84%），均為三連跌。這次賣壓不是科技股引導，而是長端利率引導的整體殺估值——典型的「股債齊跌」停滯通膨型態。",
+        "meaning": "第一，Hormuz 封閉造成的油價高原已透過 4 月 CPI 完全傳導，5、6 月 CPI 將續走高，市場開始把「年內降息」從基本情境中拿掉。第二，這是結構而非循環——地緣風險、財政赤字（聯邦債務 GDP 比 2035 將達 134%）、AI 資本支出三股力量同時推高名目殖利率，傳統「壞消息就買債」反射動作正在失效。第三，估值面，S&P 500 在 4.6% 利率下合理本益比上限 19-20 倍，目前約 22 倍，還有 10% 估值壓縮空間。第四，市場可能誤讀「Warsh 上任就會降息」，但今天的殖利率走勢正是市場對此預期的反向投票。",
+        "business": "金融客戶利率風險管理需求暴增，特別是壽險業的 ALM 模型急需重新校準。可推 Azure ML + Synapse 做動態折現率情境分析，是今年最容易立案的 AI 案場。",
+        "investment": "美股：減碼長存續期成長股，加碼防禦型自由現金流穩定的科技龍頭（MSFT/GOOG/AAPL）。台股：油電燃氣、紡織相對抗跌，AI 鏈仍有業績支撐。債券：短端 2 年期 ~4% 提供吸引力，不要追長端。",
         "triggers": [
-          "若伊朗宣布 Hormuz 復通 → WTI 跌至 $80-85，全球風險資產 risk-on，加碼科技與新興市場",
-          "若 7 天內談判破裂、美國重啟攻擊 → 油價回升 $115+，加碼黃金、減碼台股電子"
+          "若 10Y 殖利率突破 5% → S&P 500 將測 7,000 支撐，主動減碼至少 20%",
+          "若 5/20 NVDA 財報優於預期且指引上修 → 半導體類股仍可獨善其身"
         ],
         "watchpoints": [],
         "sources": [
-          "TIME",
-          "Al Jazeera",
-          "NPR",
-          "Reuters"
+          "CNBC",
+          "CNN",
+          "BLS",
+          "TheStreet",
+          "Federal Reserve H.15",
+          "Moody's"
         ]
       },
       {
         "id": "2026-05-19-003",
         "grade": "🔴",
-        "category": "市場動態",
-        "title": "記憶體晶片「需求見頂」恐慌擴散，三星、SK Hynix 同步走弱",
-        "background": "2026 起 AI HBM 帶動記憶體大漲：SK Hynix Q1 創紀錄獲利、Micron DRAM ASP 季增 32%。HBM 已佔 DRAM wafer 23%。但週一 Micron 美股盤中急跌，引發亞洲跟進。",
-        "what": "南韓週二（5/19）開盤，三星 -1.25%、SK Hynix -1.85%，主因「memory peak-out」疑慮。同步 NASDAQ 週一收 -0.51%、費半弱勢。本週三 NVIDIA 公布財報（市場共識營收 $78B、EPS $1.77）——AI 資本支出敘事的真正壓力測試。",
-        "meaning": "(1) 為何現在：經過 2025 H2 至 2026 Q1 的瘋狂上漲（SK Hynix 9x），市場開始質疑超大規模雲廠商 2026 H2 capex 是否放緩。(2) 短期影響：記憶體是「AI 基建的最末梢需求指標」，先轉弱再傳到晶圓代工通常是循環見頂早期信號。(3) 中期結構：這不是基本面崩盤，而是估值合理化——NVIDIA 5/20 若給出 Q3 指引 ≥ $90B，恐慌 48 小時消散；若不及預期，半導體鏈估值砍 15-20%。(4) 市場誤讀：以為是「基本面轉弱」——實際是「定價過度後的健康回檔」。",
-        "business": "製造業客戶（記憶體封裝、PCB、被動元件）需立即「需求情境壓力測試」——基於不同 hyperscaler capex 假設（樂觀/中性/悲觀）建模 2026 H2 訂單。Power Platform + Azure Synapse 是現成解決方案。優先接觸 3-5 家記憶體供應鏈客戶 CFO，提供 6 週快速導入專案。",
-        "investment": "台股：短期避開記憶體模組（南亞科、華邦電、群聯）與 HBM 設備鏈，等 NVIDIA 後再評估。長線：核心 AI 部位（台積電、聯發科）若恐慌賣壓拉回 5%+ 是加碼機會。美國基金：本週前不加碼 NVDA、AMD、AVGO。",
+        "category": "宏觀政策",
+        "title": "Kevin Warsh 接任 Fed 主席｜54-45 史上最分裂｜6/17 首戰即考試",
+        "background": "Powell 任期 5/15 屆滿。Warsh 為 2006-2011 年 Fed 理事，鷹派背景但 Trump 期待他降息。4 月 FOMC 以 8-4 大幅分歧投票按兵不動，Miran 主張降息，3 位理事反對「鴿派指引」入聲明。",
+        "what": "5/13 參議院 54-45 票通過 Warsh，是 Fed 主席提名史上最接近的票數差距。Warsh 受訪明確表示「會用自己的判斷，不接白宮命令」。首次主持 FOMC 為 6/16-17。市場對 6 月會議定價：維持不變機率 62%、升息 25bps 機率 24%、降息 25bps 機率僅 14%。",
+        "meaning": "第一，Warsh 面對「就職即兩難」——白宮要降息救財政、市場要升息控通膨、FOMC 內部 4 票反對放鬆。第二，他過去主張「真實利率不能長期為負」，當前 3.5-3.75% 對應 3.8% 通膨，真實利率僅約 0%——技術上反而支持升息。第三，市場若 6/17 看到「按兵不動 + 拿掉鴿派指引」將是利空中的利空。第四，最可能的誤讀是把他當 Trump 橡皮圖章——但 54-45 票數差距已逼他用獨立性立威。",
+        "business": "對金融客戶的政策研究、利率前瞻服務需求飆升——可包裝「Warsh 時代 FOMC 解讀」訂閱型 AI 研究服務，搭 Azure OpenAI 做即時聲明文本分析。",
+        "investment": "6/17 前風險預算下調至 70%，現金留 15-20% 應變。美元：若 Warsh 釋鷹 DXY 反彈至 102，台幣壓回 32+；若釋鴿 DXY 跌破 99 為弱勢美元主升段。",
         "triggers": [
-          "若 NVIDIA 5/20 財報指引 Q3 ≥ $90B → AI 鏈估值疑慮解除，台股 AI 股加碼 5-8%",
-          "若 NVIDIA 指引 ≤ $82B 或下修毛利率 → 半導體鏈估值砍 15-20%，立即減碼台股電子"
+          "若 6/17 升息 + 移除鴿派指引 → S&P 500 修正 7-10%，台股回測 38,500",
+          "若 6/17 降息 25bps → 短線科技股急漲但 10Y 衝 5%，最終仍是負面"
         ],
         "watchpoints": [],
         "sources": [
-          "Seoul Economic Daily",
           "CNBC",
-          "Fortune",
-          "TradingKey"
+          "NPR",
+          "Washington Post",
+          "Motley Fool",
+          "USNews"
         ]
       },
       {
         "id": "2026-05-19-004",
-        "grade": "🔴",
-        "category": "加密貨幣",
-        "title": "Bitcoin 現貨 ETF 單日淨流出 $648M，機構資金撤退",
-        "background": "2026 初以來美國現貨 BTC ETF 累積大幅吸金，BTC 5 月初一度突破 $81,000。本週開始機構出現大規模撤離。",
-        "what": "5/18 美國 12 檔現貨 BTC ETF 全數淨流出，總計 -$648.64M，2026 以來最大單日撤資之一。BlackRock IBIT 領跌 -$448M、ARK ARKB -$110M。BTC 從 $79K 跌至 $76,902，ETH 跌至 $2,115（單週 -6.95%）。觸發：CLARITY Act 進參院 + 10Y 殖利率 4.61% 吸走機構資金。",
-        "meaning": "(1) 為何現在：CLARITY Act 原本是利多但 sell the news；4.6% 無風險殖利率對機構是降低高波動資產比重的明確訊號。(2) 短期影響：BTC 跌破 $75K 將觸發演算法清算（估 $1.5-2B 多頭），可能瞬間下探 $70K。(3) 中期結構：BTC ETF 機構化兩面刃——資金大進也代表大出更迅速。BTC 已從「散戶 FOMO」進化為「與美債高度負相關的機構資產」。(4) 市場誤讀：「ETF 流出 = 牛市結束」是過度反應——若 10Y 轉折下行、監管明朗化，下半年機構資金會重新回流。",
-        "business": "—",
-        "investment": "加密部位：本週減碼 5-10%，等 BTC 跌至 $72-75K 區間且出現多頭吞噬訊號再加回。短期不持有 ETH。觀察 BlackRock IBIT 連 3 日是否轉為淨流入——這是機構情緒最即時指標。",
-        "triggers": [
-          "若 BTC 跌破 $72,000 → 啟動短期止損、避免槓桿曝險",
-          "若 CLARITY Act 5/22 前通過參院 + ETF 連 2 日淨流入 → 分批回補至原配置"
+        "grade": "🟠",
+        "category": "市場動態",
+        "title": "NVIDIA 週三財報｜AI 交易的「真理時刻」",
+        "background": "5/20 美股盤後 NVDA 公布 FY26 Q1，市場共識營收 $78B、EPS $1.77，同日 FOMC 4 月會議紀要也發布。",
+        "what": "Vera Rubin NVL72 平台已開始出貨，Anthropic、OpenAI、SpaceXAI、Oracle 為首批客戶。Microsoft 確認在 Fairwater AI Superfactory 大規模部署。Vera CPU 號稱代理 AI 推論「成本只有十分之一」，企業資料查詢快 3 倍。Foxconn 持有全球 AI 伺服器機架 40% 市佔，2026 美國週產能 2,000 機架。",
+        "meaning": "",
+        "business": "Vera Rubin 上市意味客戶可拿到「成本／token 大幅下降」的訴求點，重新評估金融、醫療客戶的 Azure OpenAI 用量定價策略。",
+        "investment": "NVDA 是今年 S&P 500 漲跌的單一最大變數。若 Q2 指引落在 $82B+ → 半導體類股獨立行情；若指引平淡 → 整體成長股二次殺估值。台股代工鏈（鴻海、台達電、緯穎、廣達）為次受惠族群。",
+        "triggers": [],
+        "watchpoints": [
+          "5/20 23:00 台北時間 NVDA 財報指引（重點看 Q2 毛利率是否守 75%）",
+          "5/21 02:00 台北時間 FOMC 4 月會議紀要"
         ],
-        "watchpoints": [],
         "sources": [
-          "Coinfomania",
-          "CoinTelegraph",
-          "99bitcoins",
-          "SEC",
-          "CryptoTimes"
+          "IndexBox",
+          "MarketScreener",
+          "Forex.com",
+          "NVIDIA Newsroom",
+          "Azure Blog"
         ]
       },
       {
         "id": "2026-05-19-005",
         "grade": "🟠",
-        "category": "宏觀政策",
-        "title": "Fed 4 票分裂、Powell 任期屆滿，貨幣政策步入「政治化」過渡期",
-        "background": "Powell 5/15 任期屆滿，續任董事。Bessent 主導下任主席甄選。",
-        "what": "4/29 FOMC 維持基準 3.5-3.75% 不變，但 8-4 罕見分裂——Miran 主張降息、Hammack/Kashkari/Logan 反對寬鬆偏向措辭，1992/10 以來最大反對票。短名單據傳含 Kevin Hassett、Kevin Warsh。本週三 5/20 公布 4 月紀要——Powell 任內最後一次。",
+        "category": "AI科技",
+        "title": "微軟 Copilot 三年合約 + Agent 365 GA｜企業 AI 進入「鎖客模式」",
+        "background": "5/1 微軟在 CSP 通路推出 Copilot 三年期合約，最低折扣門檻從 1,500 授權降至 1,000，直接對準中型企業。",
+        "what": "Microsoft 365 E7「Frontier Suite」與 Agent 365 已 GA，整合 E5 + Copilot + Agent 365 為單一 SKU。Work IQ API 公開預覽，支援 A2A 通訊與跨組織情境共享。Gartner 預測 2026 年底 40% 企業應用將內嵌任務型 AI Agent（2025 年 < 5%）。",
         "meaning": "",
-        "business": "金融客戶「總體假設」模組需納入「Fed 政治化情境」——建議 Azure OpenAI 做總體經濟情境模擬。",
-        "investment": "美元短期偏弱（政治化 Fed → 較弱信譽），美 10Y 居高（term premium 上升）。黃金中期偏多。",
+        "business": "這是你今年最重要的提案籌碼。所有手上 E3/E5 客戶都該被約進來談「3 年合約 + Agent 365」的鎖客方案，至少能搶到 12-18 個月的競爭優勢。請業務團隊本週前完成 Top 30 客戶 TAM 重算。",
+        "investment": "MSFT 是 AI 主題裡最確定的「收費型」標的——比 NVDA 耐震，比 OpenAI 可投資。建議納入長期核心持股，回檔 $480 以下為加碼點。",
         "triggers": [],
         "watchpoints": [
-          "5/20 FOMC 4 月會議紀要（鴿派 vs 鷹派分歧細節）",
-          "Trump 下任 Fed 主席提名時點"
+          "5/21 微軟 Build 2026（5/19-22）AI 主題演講內容",
+          "6 月 Copilot Studio Wave 1 全功能釋出時程"
         ],
         "sources": [
-          "Federal Reserve",
-          "Bloomberg",
-          "Fox Business",
-          "The Hill"
+          "Microsoft Learn",
+          "Microsoft Copilot Blog",
+          "Redmondmag"
         ]
       },
       {
         "id": "2026-05-19-006",
         "grade": "🟠",
-        "category": "AI科技",
-        "title": "NVIDIA 5/20 財報為本週最大事件——AI 資本支出敘事的壓力測試",
-        "background": "Blackwell Ultra GB300 NVL72 已於 Microsoft Azure（4,600 套至大規模生產叢集）、CoreWeave、Oracle Cloud 部署，2026 預計出貨 60,000 套機櫃。",
-        "what": "共識本季營收 $78B、EPS $1.77。重點在 Q3 (FY27) 指引——≥$90B 則 AI 敘事再續一年；≤$82B 則整個半導體鏈估值重新洗牌。同週 Walmart（5/21）、Target、Home Depot 公布財報——消費端真實溫度計。",
+        "category": "台灣政策",
+        "title": "金管會「AI 管 AI」三大方向｜你業務的天降禮物",
+        "background": "彭金隆主委 5/7 立院財委會報告，正式公布金融業 AI 監理三大方向，預計年底前修指引。",
+        "what": "(1) 可程式化 AI（AI 管 AI）：銀行用 AI 做信用評分時，要有第二個 AI 監測偏誤；(2) AI Agent 監理：目標導向、多步驟執行的代理式 AI 將納入規範；(3) AI 風險分級：從原則式走向分級治理。台灣銀行業正聯手打造本土金融 LLM，最快 2026 年底上線。",
         "meaning": "",
-        "business": "對 AI 顧問業務是關鍵指標——NVDA 指引強，企業 AI 預算解凍訊號明確，H2 顧問案爆量起點。",
-        "investment": "整體 AI 部位（NVDA、台積電、ASML、SMCI）財報前不加碼也不減碼。財報後 48 小時定方向。",
+        "business": "這是 Microsoft Power Platform + Azure AI Foundry + Purview 三件套的最完美場景。本週內把「金管會三大方向對應產品圖譜」做成提案 deck，金融客戶從合規驅動而非業務驅動，案場確定性極高。",
+        "investment": "金融科技類股（玉山金、中信金、富邦金）的 AI 投資被視為合規必須而非選擇，IT 預算今年將顯著上調。",
         "triggers": [],
         "watchpoints": [
-          "NVIDIA Q3 (FY27) 營收指引（>$90B / 82-90B / <$82B）",
-          "毛利率指引（共識 73-74%，<72% 是預警）",
-          "Walmart 同店銷售（消費韌性）"
+          "6 月底前金管會「AI 指引修訂草案」是否公布",
+          "台灣銀行業 FinLLM 年底上線進度"
         ],
         "sources": [
-          "IndexBox",
-          "Yahoo Finance",
-          "Parameter",
-          "NVIDIA"
+          "金管會",
+          "經濟日報",
+          "聯合新聞網",
+          "IEK",
+          "大紀元"
         ]
       },
       {
         "id": "2026-05-19-007",
         "grade": "🟠",
-        "category": "AI科技",
-        "title": "微軟 365 Copilot 推 3 年 SKU、Microsoft-OpenAI 新合作架構",
-        "background": "4/27 微軟與 OpenAI 公布合作關係下一階段：微軟仍是 OpenAI 主要雲端夥伴，但 OpenAI 現可在任何雲服務客戶部署產品。",
-        "what": "5/1 微軟在 CSP 推出 M365 Copilot 3 年期 SKU，與 E3/E5 對齊——標誌「長期、深度」企業 Copilot 部署階段。Gartner 預估 2026 企業 Copilot 跨領域使用使 M365 客單價較 AI 前翻倍。同期微軟推出自研 MAI-Transcribe-1，降低對 OpenAI 依賴。",
+        "category": "客戶產業",
+        "title": "台灣 4 月製造業 PMI 60.3｜4 年新高｜戰爭拉貨 + AI 雙引擎",
+        "background": "CIER 4 月 PMI 60.3%，較 3 月 +4.9 個百分點，2021/9 以來最快擴張速度，連 7 月擴張。電子暨光學產業 67.5% 最強。",
+        "what": "主要驅動力：(1) 美伊戰事提前拉貨、(2) 出口強勁、(3) 電子產業 AI 需求。TSMC 已在 NT$2,240，距 5/7 歷史高點 NT$2,345 僅 4.5%，AI + HPC 佔 Q1 營收 61%。Foxconn Q1 營收 $66.6B，AI 伺服器年增 30%。",
         "meaning": "",
-        "business": "顧問業務關鍵盤勢轉折：3 年 SKU 意味客戶從「試點」轉「全面導入」，readiness、deployment、adoption、governance 顧問費機會至少倍增。立即更新台灣金融、製造客戶的 3 年 Copilot 規劃書，鎖定 2026 H2 簽約窗口。",
-        "investment": "MSFT 中期看好，但短期受高殖利率壓制。可分批於拉回 5%+ 時加碼美國基金軟體權重。",
+        "business": "製造客戶供應鏈韌性需求極高（戰爭、關稅雙重壓力），可主推「智慧供應鏈雙城備援」案場，整合 Azure Logistics + Power BI。",
+        "investment": "短期：台股 AI 鏈、PCB、ABF 載板仍是相對強勢族群。中期注意：PMI 提前拉貨意味 Q3 可能出現庫存反噬，目前是賣強不買弱階段。",
         "triggers": [],
         "watchpoints": [
-          "微軟在台灣金融客戶簽下首單 Copilot 3 年合約時點",
-          "微軟自研 MAI 模型在 Copilot 內滲透率"
+          "5 月 PMI（6 月初公布）是否續升或回落到 55-58 區間",
+          "TSMC 6 月月營收（可驗證拉貨是否延續）"
         ],
         "sources": [
-          "Microsoft Learn",
-          "Microsoft Blog",
-          "OpenAI"
+          "中華經濟研究院",
+          "中時",
+          "DigitTimes",
+          "Outlook Business"
         ]
       },
       {
         "id": "2026-05-19-008",
         "grade": "🟠",
-        "category": "台灣政策",
-        "title": "金管會將 AI Agent、AI 風險分類納入金融業 AI 指引",
-        "background": "金管會 2024/06 公布「金融業運用 AI 指引」（六大原則），台灣《AI 基本法》於 2026/01 正式施行，FSC 須依風險分類框架訂定金融業 AI 子規範。",
-        "what": "彭金隆主委 5/7 立法院財委會報告，將把「可程式化 AI」、「代理 AI（AI Agent）」、「AI 風險分類」納入金融業 AI 指引修訂。同時 FSC 已完成 RWA 代幣化（國內債、外國債、基金）概念驗證；台銀聯合 8 家行完成跨行鏈上黃金代幣清算實證。",
+        "category": "宏觀政策",
+        "title": "ECB 維持利率 2% + 中東戰事推升通膨至 2.6%",
+        "background": "ECB 4/30 維持三大利率（主再融資 2.15%、存款便利 2%）。",
+        "what": "Lagarde 明確表示中東戰爭把 2026 通膨上修至 2.6%。Bloomberg 調查經濟學家預期 6 月、9 月各升息 25bps。歐元區「上行通膨風險 + 下行成長風險同時加劇」，已是教科書級停滯性通膨。",
         "meaning": "",
-        "business": "金融業客戶今年最大顧問機會——AI Agent 監管框架到位前的 6-9 個月窗口，每家機構都需要：(1) AI 治理盤點、(2) 風險分類映射、(3) 模型可解釋性審計、(4) Agent 沙盒環境建置。立即可規劃「金管會 AI 指引合規衝刺包」，鎖定 14 家公股+主要民營銀行。",
-        "investment": "台灣金融股短期中性——合規成本增加，但同步開啟 RWA 代幣化、跨行清算等新業務動能。",
+        "business": "歐洲跨國客戶的 ESG + 能源轉型 AI 案場將被加速，因為 Hormuz 危機證明能源組合需要重構。",
+        "investment": "歐元偏強利好台灣對歐出口商。歐股短期受壓但 6 月升息預期消化後可能反彈。",
         "triggers": [],
         "watchpoints": [
-          "修訂版金融業 AI 指引正式公告時點（預估 Q3 2026）",
-          "首家銀行採用 AI Agent 應用案例（信貸審核 / 客服）"
+          "6/4 ECB 利率決議",
+          "5 月歐元區 HICP 通膨數據"
         ],
         "sources": [
-          "金管會",
-          "Epoch Times",
-          "Baker McKenzie"
+          "ECB",
+          "Bloomberg",
+          "Euronews",
+          "Central Banking"
         ]
       },
       {
         "id": "2026-05-19-009",
         "grade": "🟠",
         "category": "房地產",
-        "title": "央行第二戶房貸成數放寬至 6 成，信用管制首度鬆動",
-        "background": "央行自 2024/09 第七波選擇性信用管制以來，不動產貸款占放款比重由 37.6% 高點降至 36.0%。連 8 次（2025-2026）維持利率不變。",
-        "what": "央行 3/19 理監事會宣布，自 3/20 起自然人第二戶購屋貸款成數由 50% 上調至 60%，為第七波信用管制以來首次鬆動。2026 起銀行不動產貸款總量管制回歸各行內部控管。利率政策維持不變。",
+        "title": "台灣央行 7 連凍 + 房貸量年減 25.5%｜選擇性信用管制延續",
+        "background": "央行 12 月理監事會 7 連凍，重貼現率 2.000%。第七波選擇性信用管制延續。",
+        "what": "2026 前兩月新房貸金額年減 25.5%（2025 年已減 33.9%）。2 月五大銀行房貸利率 2.322%（年增 8bps）。房價指數 Q4 25 降至 163.25（Q3 168.73）。2026 全年預期「量平價盤」，但區域分化加劇。",
         "meaning": "",
         "business": "—",
-        "investment": "房地產：短線情緒回暖、買盤觀望紓解，但結構性轉折仍待利率方向確認。台灣房貸利率因 Fed 持平 + 美 10Y 上升，2026 全年無降息空間，房價將呈「量平價修」格局。持有自住部位不動，投資型房產維持觀望、不加碼。",
+        "investment": "避免追逐六都新案，二手屋因買盤稀薄議價空間擴大至 8-12%。建商股（華固、興富發）短期承壓，但 REITs 因利率高原期反而有相對吸引力。",
         "triggers": [],
         "watchpoints": [
-          "第二戶房貸申辦量月增（4-5 月數據）",
-          "央行 6 月理監事會是否進一步鬆動"
+          "6/19 央行第二季理監事會（信用管制是否續壓）",
+          "5 月六都建物買賣移轉棟數"
         ],
         "sources": [
-          "央行",
-          "財訊",
-          "Yahoo 自由地產",
-          "HouseFeel"
+          "中央銀行",
+          "MacroMicro",
+          "Global Property Guide",
+          "Taiwan News"
         ]
       },
       {
         "id": "2026-05-19-010",
         "grade": "🟠",
-        "category": "客戶產業",
-        "title": "台積電亞利桑那 P3 上樑、2nm 量產提前至 2027 年",
-        "background": "台積電累計於亞利桑那投資 $165B，規劃 6 廠 + 2 封裝 + 1 R&D。Q1 2026 美廠單季獲利 NT$188 億，已超越 2025 全年獲利。",
-        "what": "5/5 台積電鳳凰城 P3 廠上樑，主體結構完工。三廠合計可望於 2027 量產 2nm 與 A16，較原規劃 2028 提前一年。4nm 良率已與台灣廠相當。AI/HPC 佔 Q1 2026 營收 61%，2026 全年營收成長目標上調至 30%+（美元計價），capex $56B。",
+        "category": "加密貨幣",
+        "title": "Bitcoin ETF 連續淨流入 + 穩定幣 GENIUS Act 已落地",
+        "background": "5/4 比特幣 ETF 單日淨流入 $532M，IBIT $335M，FBTC $185M。4 月全月淨流入 $2.44B，2026 年迄今最高。",
+        "what": "SEC 3 月底已批准比特幣 ETF 期權交易——institutional risk managers 期盼的 covered call、protective put、delta-hedging 已可實施。穩定幣 GENIUS Act 已立法通過，建立發行人執照、儲備資產規範。CLARITY Act 預計年中通過。",
         "meaning": "",
-        "business": "對製造業客戶是地緣多元化的明確案例——台廠在美設廠、智慧製造能力外移，「離岸 + 在地化」雙軌部署需求帶動 Power Platform、IoT/MES、AI 預測性維護等顧問需求。",
-        "investment": "台積電（2330.TW、TSM）中長期核心持股維持。短期等 NVIDIA 財報定錨後再評估加碼。美國基金中半導體權重保留。",
+        "business": "金融客戶若有客戶資產配置業務，須開始評估數位資產託管 + 風險引擎的 AI 化方案，這是未來 12 個月的明確趨勢。",
+        "investment": "BTC 短期受高殖利率壓制（流動性收縮），但 ETF 機構配置 + 法規清晰是中期結構性多頭基礎。$72K 為強支撐，跌破則殺至 $65K；站穩則重新攻 $85K。",
         "triggers": [],
         "watchpoints": [
-          "P3 廠 2026 H2 設備進駐進度",
-          "2nm 首批客戶（Apple、NVIDIA、AMD）量產時點"
+          "5 月 BTC ETF 月流入是否續創高",
+          "CLARITY Act 立法時程"
         ],
         "sources": [
-          "經濟日報",
-          "鉅亨網",
-          "數位時代",
-          "遠見"
+          "BYDFi",
+          "The Block",
+          "CoinGlass",
+          "SEC"
         ]
       },
       {
         "id": "2026-05-19-011",
-        "grade": "🟠",
-        "category": "宏觀政策",
-        "title": "Hormuz 海峽未通、WTI 維持 $103-107 高檔，通膨頂部尚未確認",
-        "background": "Hormuz 海峽承擔全球約 20% 原油運輸。自 4/13 起實質中斷，引發油價飆升。",
-        "what": "WTI 週二接近 $103（自週一 $107 回落），但仍遠高於衝突前 $70-80。IEA 5 月報告下修全球需求預估，但供給端風險主導價格。Trump 取消攻擊後油市「鬆口氣」回落，但海峽未通仍將支撐底部 $90-100。",
-        "meaning": "",
-        "business": "製造業、塑化業客戶 H1 2026 毛利仍面臨壓力。可推銷「能源成本動態定價模型」顧問案。",
-        "investment": "全球基金中能源 ETF 視為對沖部位（5% 上限），非趨勢交易。台股航運、塑化短期賣壓。",
-        "triggers": [],
-        "watchpoints": [
-          "Hormuz 海峽復通時點",
-          "OPEC+ 6 月會議是否增產"
-        ],
-        "sources": [
-          "IEA",
-          "CNN Business",
-          "TradingEconomics",
-          "OilPrice"
-        ]
-      },
-      {
-        "id": "2026-05-19-012",
         "grade": "🟡",
         "category": "AI科技",
-        "title": "EU AI Act 高風險系統強制執行倒數，8/2 後罰則啟動",
-        "background": "歐盟 AI Act 自 2026/08/02 起對多數高風險 AI 系統強制執行核心義務。",
-        "what": "罰款上限：禁止性 AI 實踐 EUR 35M 或全球營收 7%、其他違規 EUR 15M 或 3%、提供誤導資訊 EUR 7.5M 或 1%。雖客戶以台灣為主，但有歐盟業務或歐盟客戶資料的金融、製造、醫療客戶在範圍內。",
-        "meaning": "Q3 2026 起，金融、醫療、HR 等高風險 AI 應用需提供 conformity assessment、技術文件、人類監督機制。這對顧問業務是「EU AI Act 合規健檢」顧問案的入場時機，可優先掃描客戶中有歐盟資料流的標的（如台達電、和泰、富邦金歐洲分行）。時間框架：3-6 個月內必須完成首輪盤點。",
+        "title": "Anthropic Claude Opus 4.7 GA + 競爭路徑曝光",
+        "background": "",
+        "what": "Anthropic 4/16 推 Opus 4.7，承認落後內部未公開的「Mythos」——這是 AI 模型公司首次坦承「最強模型尚未釋出」。AWS、GCP、Microsoft 已全面上架。定價維持每百萬輸入 $5/輸出 $25。",
+        "meaning": "企業 AI 進入「多模型路由」時代，Azure 在這個賽道因同時代理 OpenAI 與 Anthropic 而擁有結構優勢。客戶提案應從「單一模型」轉「模型編排」邏輯。",
         "business": "",
         "investment": "",
         "triggers": [],
         "watchpoints": [],
         "sources": [
-          "EU AI Act 官方",
-          "DLA Piper",
-          "Compliance and Risks"
+          "Anthropic",
+          "GitHub Blog",
+          "AWS",
+          "CNBC",
+          "Axios"
+        ]
+      },
+      {
+        "id": "2026-05-19-012",
+        "grade": "🟡",
+        "category": "台灣政策",
+        "title": "EU AI Act 8 月 2 日全面執行倒數｜Brussels Effect 已生效",
+        "background": "",
+        "what": "8/2/2026 EU AI Act 全面執行，違規最高罰 €35M 或全球營收 7%。Microsoft、Google、OpenAI 等 26 家已簽 GPAI Code of Practice。歐洲 AI Office 已在執法 X、Meta。",
+        "meaning": "即便台灣客戶不在歐盟，跨國銀行、製藥客戶將強制全球統一合規框架——這是 Purview + Azure Compliance 的硬性需求。Q3 起會看到第一波合規驅動的 AI 治理案場湧入。",
+        "business": "",
+        "investment": "",
+        "triggers": [],
+        "watchpoints": [],
+        "sources": [
+          "European Commission",
+          "Axis Intelligence",
+          "Legal Nodes"
         ]
       },
       {
         "id": "2026-05-19-013",
         "grade": "🟡",
         "category": "客戶產業",
-        "title": "FDA 放寬 AI 臨床決策支援軟體監管，醫療 AI 商業化加速",
-        "background": "FDA 於 2026/01/06 發布 CDS 指引修訂，降低低風險 AI 與穿戴裝置的監管力度。",
-        "what": "只要 AI 提供單一臨床建議、醫生能獨立審查邏輯與資料來源，即可享執法裁量空間。同時要求 AI/生成式 AI 對資料輸入、邏輯、推論需更透明。FDA 並推出「AI 加速早期臨床試驗試點計畫」，回應截止 5/29。",
-        "meaning": "台灣醫療客戶（醫學中心、醫療 AI 新創）可加速採用 Azure OpenAI + Healthcare data services 部署輔助診斷工具。「FDA 合規友善」的低風險產品 6-12 個月內會大量上市。建議優先聯繫和信、長庚、慈濟、北榮 IT/CIO，提案「臨床決策支援 AI 試點」3-6 個月專案。",
+        "title": "醫療 AI：80% 高層認可，50% 仍卡在試點｜Colorado AI Act 已生效",
+        "background": "",
+        "what": "Deloitte 2026 報告：80%+ 醫療高層認為 GenAI/Agentic AI 有顯著價值，但僅少數規模化。Ambient Clinical Documentation 是少數已成熟採用的應用。Colorado AI Act 已要求高風險決策必須揭露 AI 使用、年度影響評估、反偏誤控制。保險公司不為 AI 輔助醫療給付，是最大採用瓶頸。",
+        "meaning": "醫療客戶今年的 AI 預算分配將從「臨床診斷」轉「行政效率與合規」，這對 Microsoft Dragon Copilot + Power Automate 是明確的甜蜜點。",
         "business": "",
         "investment": "",
         "triggers": [],
         "watchpoints": [],
         "sources": [
-          "FDA",
-          "Federal Register",
-          "Orrick",
-          "Faegre Drinker"
+          "ACL Digital",
+          "Manatt Health",
+          "AHA",
+          "Harvard Gazette"
         ]
       },
       {
         "id": "2026-05-19-014",
         "grade": "🟡",
-        "category": "宏觀政策",
-        "title": "中國 LPR 連 11 個月不動、PBOC 維持「結構性工具」優先",
-        "background": "中國 1 年期 LPR 維持 3.0%、5 年期 3.5%，連 11 個月不變。",
-        "what": "中東衝突使能源價格上行緩解了通縮壓力，給 PBOC 推遲大規模寬鬆的理由。PBOC 偏好結構性工具而非全面降息。",
-        "meaning": "若 H2 2026 中國消費需求未見起色，PBOC 可能在 Q3-Q4 啟動定向 RRR 或結構性工具。對台灣供應鏈：中國終端需求仍弱，製造業客戶不應預期中國訂單反彈。對全球基金：中國 A 股維持低配。",
+        "category": "客戶產業",
+        "title": "保險業 AI Agent 進入生產｜美國 NAIC 監理工具年底入法",
+        "background": "",
+        "what": "71% 保險高層將 AI 列為首要議題（IIS 2026），全球保險 AI 市場 2026 預估 $13.4B、CAGR 30%+。NAIC 的 AI Systems Evaluation Tool 已由 12 州試點，預期 2026 秋季全國採用。",
+        "meaning": "台灣壽險與產險客戶將同步跟進，Q4 將是壽險 AI 治理工具標案高峰期。可預先準備「NAIC 框架對應 Azure AI Foundry」對照地圖。",
         "business": "",
         "investment": "",
         "triggers": [],
         "watchpoints": [],
         "sources": [
-          "CNBC",
-          "Bloomberg",
-          "PBOC"
+          "Risk & Insurance",
+          "NAIC",
+          "Wiley",
+          "Fenwick"
         ]
       },
       {
         "id": "2026-05-19-015",
-        "grade": "🟠",
-        "category": "市場動態",
-        "title": "本週財報週重點：Walmart、Target、Home Depot 消費溫度計",
-        "background": "美國零售旺季前的本週是 Q1 (Jan-Apr) 財報集中發布期。",
-        "what": "週三 Home Depot、Target、Lowe's、TJX、Analog Devices；週四 Walmart、Deere、Workday、Ross Stores、NetEase。Walmart 同店銷售是判斷美國中產消費韌性最關鍵指標——關稅成本是否轉嫁、消費降級程度。",
-        "meaning": "",
-        "business": "若 Walmart 同店銷售年增 <2%，表示美國消費降溫——對台灣製造業客戶 H2 接單預期需下調。",
-        "investment": "美國基金：避免在零售財報前加碼。台股零售供應鏈（如儒鴻、聚陽）跟著 Walmart 走向。",
+        "grade": "🟡",
+        "category": "宏觀政策",
+        "title": "中國 LPR 11 連凍 + 出口超預期｜PBOC「先觀望戰局」",
+        "background": "",
+        "what": "1Y LPR 維持 3.0%、5Y LPR 3.5%，第 11 個月不動。PBOC 維持「支持性、適度寬鬆」基調但實際按兵不動，原因是「上行通膨已侵蝕降息空間」。",
+        "meaning": "北京若至 6 月仍不動，意味中國定價中東戰爭為「中長期常態」，對台灣兩岸供應鏈意味更大的「戰爭情境下的供應分流」訂單，台廠製造業 PMI 高景氣有結構性支撐。",
+        "business": "",
+        "investment": "",
         "triggers": [],
-        "watchpoints": [
-          "Walmart 同店銷售年增率（>3% 強 / 1-3% 中 / <1% 弱）",
-          "Target 庫存周轉率（消費端真實需求）"
-        ],
+        "watchpoints": [],
         "sources": [
-          "Kiplinger",
-          "MarketScreener",
-          "Yahoo Finance"
+          "Bloomberg China",
+          "CNBC",
+          "World Bank",
+          "China Daily"
         ]
       }
     ],
     "weeklyEvents": [
       {
-        "date": "05/20 週三",
-        "event": "FOMC 4 月會議紀要公布",
-        "meaning": "Powell 任內最終紀要，鴿/鷹分歧細節決定殖利率短期方向"
+        "date": "05/19 週二",
+        "event": "Trump 攻伊延期截止日",
+        "meaning": "若再發攻擊令，油價直奔 $130"
       },
       {
-        "date": "05/20 週三盤後",
-        "event": "NVIDIA FY26 Q1 財報",
-        "meaning": "Q3 指引是 AI 鏈估值的單一最大變數"
+        "date": "05/19-22",
+        "event": "Microsoft Build 2026",
+        "meaning": "Agent 365、Work IQ 完整路線圖；業務提案彈藥"
       },
       {
-        "date": "05/20 週三",
-        "event": "Home Depot、Target、Lowe's、TJX、Analog Devices 財報",
-        "meaning": "美國中產消費溫度計"
+        "date": "05/20 週三 22:00",
+        "event": "NVDA FY26 Q1 財報",
+        "meaning": "AI 交易勝負關鍵；指引 $82B+ 為續強門檻"
+      },
+      {
+        "date": "05/21 週四 02:00",
+        "event": "FOMC 4 月會議紀要",
+        "meaning": "看內部對降息門檻表述，預測 Warsh 首戰風向"
       },
       {
         "date": "05/21 週四",
-        "event": "Walmart、Deere、Workday、NetEase 財報",
-        "meaning": "Walmart 同店銷售決定消費基調"
+        "event": "Walmart、Deere 財報",
+        "meaning": "消費韌性 vs 工業需求二元訊號"
       },
       {
         "date": "05/22 週五",
-        "event": "Markit 5 月 PMI 初值（美/歐/日）",
-        "meaning": "製造業擴張/收縮分水嶺"
+        "event": "5 月密大消費信心初值",
+        "meaning": "通膨預期是否突破 4.5%"
       },
       {
-        "date": "05/29 週四",
-        "event": "FDA AI 臨床試驗計畫意見截止",
-        "meaning": "醫療 AI 客戶推案窗口"
+        "date": "06/04 週四",
+        "event": "ECB 利率決議",
+        "meaning": "是否提前釋出 6 月升息訊號"
       },
       {
-        "date": "全週",
-        "event": "Hormuz 海峽通行狀態",
-        "meaning": "油價底部位置、通膨頂部判斷"
+        "date": "06/16-17",
+        "event": "Warsh 首場 FOMC",
+        "meaning": "年內最大政策變數"
+      },
+      {
+        "date": "08/02",
+        "event": "EU AI Act 全面執行",
+        "meaning": "跨國客戶合規驅動案場啟動"
       }
     ]
   },
