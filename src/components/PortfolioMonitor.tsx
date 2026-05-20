@@ -18,8 +18,10 @@ interface ETFData {
 }
 interface PortfolioData { snapshotDate: string; etfs: ETFData[]; funds: FundData[] }
 
-const portfolio = portfolioRaw as PortfolioData
-const analyses = analysisData as PortfolioAnalysis[]
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const portfolio = (portfolioRaw as any) as PortfolioData
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const analyses = (analysisData as any) as PortfolioAnalysis[]
 
 function calcPaymentsSince(contract: DCAContract, since: Date, today: Date): number {
   if (contract.status === 'paused') return 0
@@ -86,6 +88,7 @@ export default function PortfolioMonitor() {
   const latest = analyses[0] as PortfolioAnalysis | undefined
 
   const computed = useMemo(() => {
+    const now = new Date()
     const snapshotDate = new Date(portfolio.snapshotDate)
     let totalInvestedTWD = 0
     let totalMonthly = 0
@@ -93,13 +96,13 @@ export default function PortfolioMonitor() {
     const fundRows = portfolio.funds.map(fund => {
       let addedSince = 0
       for (const c of fund.contracts) {
-        const p = calcPaymentsSince(c, snapshotDate, today)
+        const p = calcPaymentsSince(c, snapshotDate, now)
         addedSince += p * c.monthlyAmount
       }
       const invested = fund.snapshot.invested + addedSince
       const monthly = calcMonthlyDCA(fund)
-      const todayDCA = getDCAToday(fund, today)
-      const upcoming = getUpcomingDCA(fund, today)
+      const todayDCA = getDCAToday(fund, now)
+      const upcoming = getUpcomingDCA(fund, now)
       const analysis = latest?.funds.find(f => f.code === fund.code)
 
       if (fund.currency === 'TWD') totalInvestedTWD += invested
@@ -118,7 +121,6 @@ export default function PortfolioMonitor() {
       .sort((a, b) => a.contract.daysUntil - b.contract.daysUntil)
 
     return { totalInvestedTWD, totalMonthly, fundRows, etfRows, todayPayments, upcomingAll }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [latest])
 
   const totalInvested = latest?.summary.totalInvested ?? computed.totalInvestedTWD
