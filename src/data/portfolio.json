@@ -1,4 +1,17 @@
 {
+  "snapshotDate": "2026-05-20",
+  "etfs": [
+    {
+      "code": "00878",
+      "name": "國泰永續高股息ETF",
+      "shortName": "00878",
+      "exchange": "TSE",
+      "shares": 21000,
+      "avgCost": null,
+      "icon": "💰",
+      "color": "#FF9500"
+    }
+  ],
   "funds": [
     {
       "code": "042131",
@@ -9,6 +22,11 @@
       "icon": "🏥",
       "color": "#007AFF",
       "isTISA": false,
+      "snapshot": {
+        "invested": 3000,
+        "units": null,
+        "avgNAV": null
+      },
       "contracts": [
         {
           "id": "2025042210945",
@@ -23,12 +41,17 @@
     {
       "code": "106024",
       "name": "摩根士丹利美國增長基金 A",
-      "shortName": "摩根士丹利美國增長",
+      "shortName": "摩根美國增長",
       "currency": "USD",
       "category": "股票型-美國成長",
       "icon": "📈",
       "color": "#AF52DE",
       "isTISA": false,
+      "snapshot": {
+        "invested": 0,
+        "units": null,
+        "avgNAV": null
+      },
       "contracts": [
         {
           "id": "2025106078780",
@@ -49,42 +72,17 @@
       "icon": "🌱",
       "color": "#34C759",
       "isTISA": true,
+      "snapshot": {
+        "invested": 41000,
+        "units": 3420.1,
+        "avgNAV": 11.99
+      },
       "contracts": [
-        {
-          "id": "2026ALI327730",
-          "startDate": "2026-04-28",
-          "paymentDay": 14,
-          "monthlyAmount": 1000,
-          "status": "active"
-        },
-        {
-          "id": "2025ALI244697",
-          "startDate": "2025-08-26",
-          "paymentDay": 5,
-          "monthlyAmount": 1000,
-          "status": "active"
-        },
-        {
-          "id": "2025ALI244698",
-          "startDate": "2025-08-26",
-          "paymentDay": 19,
-          "monthlyAmount": 1000,
-          "status": "active"
-        },
-        {
-          "id": "2025ALI244490",
-          "startDate": "2025-08-25",
-          "paymentDay": 26,
-          "monthlyAmount": 1000,
-          "status": "active"
-        },
-        {
-          "id": "2025ALI242146",
-          "startDate": "2025-08-11",
-          "paymentDay": 12,
-          "monthlyAmount": 1000,
-          "status": "active"
-        }
+        { "id": "2026ALI327730", "startDate": "2026-04-28", "paymentDay": 14, "monthlyAmount": 1000, "status": "active" },
+        { "id": "2025ALI244697", "startDate": "2025-08-26", "paymentDay": 5,  "monthlyAmount": 1000, "status": "active" },
+        { "id": "2025ALI244698", "startDate": "2025-08-26", "paymentDay": 19, "monthlyAmount": 1000, "status": "active" },
+        { "id": "2025ALI244490", "startDate": "2025-08-25", "paymentDay": 26, "monthlyAmount": 1000, "status": "active" },
+        { "id": "2025ALI242146", "startDate": "2025-08-11", "paymentDay": 12, "monthlyAmount": 1000, "status": "active" }
       ]
     },
     {
@@ -96,15 +94,30 @@
       "icon": "🎯",
       "color": "#FF9500",
       "isTISA": false,
+      "snapshot": {
+        "invested": 30000,
+        "units": 2089.9,
+        "avgNAV": 14.35
+      },
       "contracts": [
-        {
-          "id": "2025BRI002558",
-          "startDate": "2025-08-29",
-          "paymentDay": 3,
-          "monthlyAmount": 3000,
-          "status": "active"
-        }
+        { "id": "2025BRI002558", "startDate": "2025-08-29", "paymentDay": 3, "monthlyAmount": 3000, "status": "active" }
       ]
+    },
+    {
+      "code": "CSI104",
+      "name": "國泰泰享退系列2039目標日期組合基金R",
+      "shortName": "國泰退休2039",
+      "currency": "TWD",
+      "category": "混合型-目標退休2039",
+      "icon": "🏦",
+      "color": "#FF6B35",
+      "isTISA": false,
+      "snapshot": {
+        "invested": 126000,
+        "units": 7302.8,
+        "avgNAV": 17.2537
+      },
+      "contracts": []
     },
     {
       "code": "CSI132",
@@ -112,52 +125,21 @@
       "shortName": "國泰退休2049",
       "currency": "TWD",
       "category": "混合型-目標退休2049",
-      "icon": "🏦",
+      "icon": "🏛️",
       "color": "#5AC8FA",
       "isTISA": true,
+      "snapshot": {
+        "invested": 32000,
+        "units": 1450.1,
+        "avgNAV": 22.0674
+      },
       "contracts": [
-        {
-          "id": "2025CSI101493",
-          "startDate": "2025-12-01",
-          "paymentDay": 1,
-          "monthlyAmount": 1000,
-          "status": "active"
-        },
-        {
-          "id": "2025CSI101494",
-          "startDate": "2025-12-01",
-          "paymentDay": 6,
-          "monthlyAmount": 1000,
-          "status": "active"
-        },
-        {
-          "id": "2025CSI101495",
-          "startDate": "2025-12-01",
-          "paymentDay": 11,
-          "monthlyAmount": 1000,
-          "status": "active"
-        },
-        {
-          "id": "2025CSI101496",
-          "startDate": "2025-12-01",
-          "paymentDay": 16,
-          "monthlyAmount": 1000,
-          "status": "active"
-        },
-        {
-          "id": "2025CSI101497",
-          "startDate": "2025-12-01",
-          "paymentDay": 21,
-          "monthlyAmount": 1000,
-          "status": "active"
-        },
-        {
-          "id": "2025CSI101498",
-          "startDate": "2025-12-01",
-          "paymentDay": 26,
-          "monthlyAmount": 1000,
-          "status": "active"
-        }
+        { "id": "2025CSI101493", "startDate": "2025-12-01", "paymentDay": 1,  "monthlyAmount": 1000, "status": "active" },
+        { "id": "2025CSI101494", "startDate": "2025-12-01", "paymentDay": 6,  "monthlyAmount": 1000, "status": "active" },
+        { "id": "2025CSI101495", "startDate": "2025-12-01", "paymentDay": 11, "monthlyAmount": 1000, "status": "active" },
+        { "id": "2025CSI101496", "startDate": "2025-12-01", "paymentDay": 16, "monthlyAmount": 1000, "status": "active" },
+        { "id": "2025CSI101497", "startDate": "2025-12-01", "paymentDay": 21, "monthlyAmount": 1000, "status": "active" },
+        { "id": "2025CSI101498", "startDate": "2025-12-01", "paymentDay": 26, "monthlyAmount": 1000, "status": "active" }
       ]
     },
     {
@@ -169,21 +151,14 @@
       "icon": "🌐",
       "color": "#5856D6",
       "isTISA": true,
+      "snapshot": {
+        "invested": 1000,
+        "units": 87.8,
+        "avgNAV": 11.39
+      },
       "contracts": [
-        {
-          "id": "2026FSI015161",
-          "startDate": "2026-04-28",
-          "paymentDay": 8,
-          "monthlyAmount": 1000,
-          "status": "active"
-        },
-        {
-          "id": "2026FSI015162",
-          "startDate": "2026-04-28",
-          "paymentDay": 18,
-          "monthlyAmount": 1000,
-          "status": "active"
-        }
+        { "id": "2026FSI015161", "startDate": "2026-04-28", "paymentDay": 8,  "monthlyAmount": 1000, "status": "active" },
+        { "id": "2026FSI015162", "startDate": "2026-04-28", "paymentDay": 18, "monthlyAmount": 1000, "status": "active" }
       ]
     },
     {
@@ -195,35 +170,16 @@
       "icon": "🇹🇼",
       "color": "#FF3B30",
       "isTISA": true,
+      "snapshot": {
+        "invested": 3000,
+        "units": 51.6,
+        "avgNAV": 58.14
+      },
       "contracts": [
-        {
-          "id": "2026YUI152733",
-          "startDate": "2026-04-28",
-          "paymentDay": 2,
-          "monthlyAmount": 1000,
-          "status": "active"
-        },
-        {
-          "id": "2026YUI152734",
-          "startDate": "2026-04-28",
-          "paymentDay": 9,
-          "monthlyAmount": 1000,
-          "status": "active"
-        },
-        {
-          "id": "2026YUI152735",
-          "startDate": "2026-04-28",
-          "paymentDay": 17,
-          "monthlyAmount": 1000,
-          "status": "active"
-        },
-        {
-          "id": "2026YUI152737",
-          "startDate": "2026-04-28",
-          "paymentDay": 24,
-          "monthlyAmount": 1000,
-          "status": "active"
-        }
+        { "id": "2026YUI152733", "startDate": "2026-04-28", "paymentDay": 2,  "monthlyAmount": 1000, "status": "active" },
+        { "id": "2026YUI152734", "startDate": "2026-04-28", "paymentDay": 9,  "monthlyAmount": 1000, "status": "active" },
+        { "id": "2026YUI152735", "startDate": "2026-04-28", "paymentDay": 17, "monthlyAmount": 1000, "status": "active" },
+        { "id": "2026YUI152737", "startDate": "2026-04-28", "paymentDay": 24, "monthlyAmount": 1000, "status": "active" }
       ]
     }
   ]
