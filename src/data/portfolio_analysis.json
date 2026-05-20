@@ -12,12 +12,28 @@
       "note": "NAV 資料取自用戶確認之 2026-05-20 現值截圖；00878 市價 27.06（2026-05-20），成本 445,500（21,000 × 21.2143）。CSI132 含今日（5/21）定扣 1,000 元。"
     },
     "dcaToday": [
-      { "date": "2026-05-21", "code": "CSI132", "amount": 1000 }
+      {
+        "date": "2026-05-21",
+        "code": "CSI132",
+        "amount": 1000
+      }
     ],
     "dcaUpcoming": [
-      { "date": "2026-05-24", "code": "YUI117", "amount": 1000 },
-      { "date": "2026-05-26", "code": "ALI099", "amount": 1000 },
-      { "date": "2026-05-26", "code": "CSI132", "amount": 1000 }
+      {
+        "date": "2026-05-24",
+        "code": "YUI117",
+        "amount": 1000
+      },
+      {
+        "date": "2026-05-26",
+        "code": "ALI099",
+        "amount": 1000
+      },
+      {
+        "date": "2026-05-26",
+        "code": "CSI132",
+        "amount": 1000
+      }
     ],
     "funds": [
       {
@@ -85,7 +101,7 @@
         "navDate": "2026-05-20",
         "estimatedValue": 991,
         "returnAmount": -9,
-        "returnPercent": -0.90,
+        "returnPercent": -0.9,
         "riskLevel": "high",
         "allocation": 0.4,
         "riskNotes": "第一金全球大趨勢 NAV 確認 11.29（2026-05-20），小幅虧損 -9 元（-0.90%）。持倉極小（1,000 元），每月定扣 2,000 元（2 筆，2026-04-28 起），建議維持小額續扣以時間攤平。"
@@ -130,15 +146,14 @@
   },
   {
     "date": "2026-05-20",
-    "generatedAt": "2026-05-20T14:53:35Z",
+    "generatedAt": "2026-05-20T22:13:28Z",
     "summary": {
       "totalInvested": 233000,
-      "estimatedValue": 720269.0,
+      "estimatedValue": null,
       "returnAmount": null,
       "returnPercent": null,
-      "overallRisk": "high",
-      "monthlyDCA": 20000,
-      "note": "僅CSI104(淨值止於2026-01-29)與00878(21,000股)取得估值；其餘5檔台幣基金即時淨值來源無法連線，設為null未採計，故estimatedValue為不完整部分加總。"
+      "overallRisk": "medium",
+      "monthlyDCA": 20000
     },
     "dcaToday": [],
     "dcaUpcoming": [
@@ -166,36 +181,21 @@
     "funds": [
       {
         "code": "CSI104",
-        "name": "國泰泰享退系列2039目標日期組合基金",
+        "name": "國泰退休2039",
         "totalInvested": 126000,
-        "paymentsCount": 0,
-        "nav": 20.8152,
-        "navDate": "2026-01-29",
-        "navStale": true,
-        "estimatedValue": 152009.0,
-        "returnAmount": 26009.0,
-        "returnPercent": 20.64,
-        "riskLevel": "high",
-        "allocation": 54.1,
-        "riskNotes": "全組合最大持倉（126,000 TWD，佔台幣基金54%）。目標退休2039屬股債混合，今日泡沫指數DEFCON 2、CAPE 41.6x為史上次高，股票端估值風險極高；同時30年期美債殖利率破5.19%、10年期4.68%，債券端面臨存續期間損失，形成股債雙殺壓力。淨值20.8152僅取得至2026-01-29，已逾近四個月未更新，估值與報酬僅供參考、非當日真實水準。建議列為重點監控但不因短線波動贖回。"
-      },
-      {
-        "code": "ALI099",
-        "name": "安聯四季成長組合基金",
-        "totalInvested": 41000,
         "paymentsCount": 0,
         "nav": null,
         "navDate": null,
         "estimatedValue": null,
         "returnAmount": null,
         "returnPercent": null,
-        "riskLevel": "high",
-        "allocation": 17.6,
-        "riskNotes": "組合型股票基金，第二大持倉。DEFCON 2環境下股票型基金一律提升一級至high，當前CAPE史上次高、巴菲特指標231%破紀錄，下檔賠率極不對稱。今日未能取得即時淨值（資料源無法連線），估值暫缺。每月定扣5,000元持續中，除非極端風險否則維持原扣款節奏、以時間分散進場成本。"
+        "riskLevel": "medium",
+        "allocation": 15.7,
+        "riskNotes": "最大基金持倉（126,000 TWD），目標退休 2039 屬中後期配置，股債相對均衡。今日市場 10 年債殖利率回落至 4.32% 且 Fed 偏鴿，對其債券部位有利；股票部位受美中關稅暫緩與風險情緒回升帶動偏多。雖整體估值處 EXTREME 等級（CAPE 40.9x），但此基金股債混合結構提供緩衝，維持 medium。仍須留意 90 天談判破裂的尾部風險。"
       },
       {
         "code": "CSI132",
-        "name": "國泰泰享退系列2049目標日期組合基金",
+        "name": "國泰退休2049",
         "totalInvested": 32000,
         "paymentsCount": 0,
         "nav": null,
@@ -203,13 +203,27 @@
         "estimatedValue": null,
         "returnAmount": null,
         "returnPercent": null,
-        "riskLevel": "high",
-        "allocation": 13.7,
-        "riskNotes": "目標退休2049距退休年限長、股票部位高，DEFCON 2下風險升至high。殖利率破5%對其債券配置與股票估值同步不利。今日淨值無法取得，估值暫缺。每月定扣6,000元（6筆），長天期目標基金最適合續扣攤平，建議維持不動。"
+        "riskLevel": "medium",
+        "allocation": 4.0,
+        "riskNotes": "目標退休 2049，距離期限尚遠，股票權重高於 CSI104。短線受惠於美股反彈與降息預期提前，但對極端估值修正的敏感度較高。每月 6,000 TWD 定扣（6 筆），是組合中扣款頻率最高者，可平滑進場成本。明日（21 日）有 1,000 TWD 扣款，請留意帳戶餘額。"
+      },
+      {
+        "code": "ALI099",
+        "name": "安聯四季成長",
+        "totalInvested": 41000,
+        "paymentsCount": 0,
+        "nav": null,
+        "navDate": null,
+        "estimatedValue": null,
+        "returnAmount": null,
+        "returnPercent": null,
+        "riskLevel": "medium",
+        "allocation": 5.1,
+        "riskNotes": "多元成長型基金，今日風險情緒回升（台股 +1.2%、S&P +0.8%）對其偏多。每月 5,000 TWD 分 5 筆扣款，分散進場時點，降低單日波動衝擊。極端估值環境下上檔空間受限，但分散配置使其風險可控，維持 medium。"
       },
       {
         "code": "BRI023",
-        "name": "貝萊德享退休系列2050目標日期組合基金",
+        "name": "貝萊德退休2050",
         "totalInvested": 30000,
         "paymentsCount": 0,
         "nav": null,
@@ -217,13 +231,13 @@
         "estimatedValue": null,
         "returnAmount": null,
         "returnPercent": null,
-        "riskLevel": "high",
-        "allocation": 12.9,
-        "riskNotes": "目標到期2050，生命週期策略股票部位偏高。升息與停滯性通膨情境對股債雙邊不利，DEFCON 2下提升至high。僅查得2023年舊淨值(11.96)，無法代表現值，故設為null不採計。每月定扣3,000元維持，長線退休部位不建議因短線停扣。"
+        "riskLevel": "medium",
+        "allocation": 3.7,
+        "riskNotes": "目標退休 2050，股票權重高、長期投資屬性。Fed 偏鴿、9 月降息機率升至 68%，對長天期資產評價有利；殖利率回落亦支撐其債券部位。雖美股估值 EXTREME，但 30 年投資期間可承受短期波動，維持 medium。每月 3,000 TWD 定扣中。"
       },
       {
         "code": "FSI069",
-        "name": "第一金全球大趨勢基金",
+        "name": "第一金全球大趨勢",
         "totalInvested": 1000,
         "paymentsCount": 0,
         "nav": null,
@@ -231,13 +245,13 @@
         "estimatedValue": null,
         "returnAmount": null,
         "returnPercent": null,
-        "riskLevel": "high",
-        "allocation": 0.4,
-        "riskNotes": "全球趨勢型基金，多偏科技/AI主題，今晚NVIDIA FY27 Q1財報與FOMC會議紀要為雙引爆點，事件風險集中、估值偏貴，標記high。持倉極小（1,000元）影響有限。每月定扣2,000元剛起步（2026-04-28新設），建議財報後再觀察趨勢，現階段維持小額續扣。"
+        "riskLevel": "medium-high",
+        "allocation": 0.1,
+        "riskNotes": "全球趨勢主題型，科技與成長股權重高。今日 Microsoft Build 發布 Copilot Wave 3、Azure 降價 40% 為科技板塊利多，短線偏多；但主題型基金對 AI 獲利不如預期的修正風險最敏感，加上 CAPE 40.9x 的極端估值，標記 medium-high。部位僅 1,000 TWD，影響有限，每月 2,000 TWD 持續加碼。"
       },
       {
         "code": "YUI117",
-        "name": "元大台灣卓越50ETF連結基金",
+        "name": "元大台灣50",
         "totalInvested": 3000,
         "paymentsCount": 0,
         "nav": null,
@@ -245,33 +259,44 @@
         "estimatedValue": null,
         "returnAmount": null,
         "returnPercent": null,
-        "riskLevel": "high",
-        "allocation": 1.3,
-        "riskNotes": "連結0050、追蹤台灣大型權值股，半導體權重高。昨日台股重挫716點(-1.75%)收40,175，今晚NVDA財報直接牽動台積電與台股權值，短線波動risk偏high。今日僅取得0050 ETF市價92.50元，與本連結基金淨值（快照約58元）尺度不同、不可直接套用，故淨值設null。每月定扣4,000元維持。"
+        "riskLevel": "medium",
+        "allocation": 0.4,
+        "riskNotes": "追蹤台灣大型股，與台股連動高。美中關稅暫緩（145%→30%）帶動半導體需求回升預期，台股今日開高領漲，短線偏多。風險觸發點為「美方恢復半導體設備出口限制」，將直接衝擊台積電供應鏈與本基金。維持 medium，每月 4,000 TWD 定扣。"
       },
       {
         "code": "00878",
         "name": "國泰永續高股息ETF",
         "totalInvested": null,
         "paymentsCount": 0,
-        "nav": 27.06,
-        "navDate": "2026-05-20",
-        "estimatedValue": 568260.0,
+        "nav": 27.02,
+        "navDate": "2026-05-19",
+        "estimatedValue": 567420,
         "returnAmount": null,
         "returnPercent": null,
-        "riskLevel": "high",
-        "allocation": null,
-        "riskNotes": "直接持有21,000股，今日市價27.06元，市值約568,260元。昨日(5/19)已除息、本季配息0.66元為歷史新高(6/12發放)，故價格已反映除息。台股重挫且今晚NVDA財報牽動權值，短線risk偏high；惟高股息ETF具現金流與相對抗波動特性。建議續抱領息，不在DEFCON 2高位加碼。"
+        "riskLevel": "medium",
+        "allocation": 70.9,
+        "riskNotes": "組合中市值最大單一資產（21,000 股 × 27.02 = 567,420 TWD，約占 70.9%）。高股息 ETF 屬防禦性質，在估值 EXTREME 環境下相對抗跌；殖利率回落與台股反彈雙重支撐。但高度集中於台股，若台股因半導體出口限制等利空回檔，將顯著影響整體組合市值。維持 medium，建議留意配息與成分股調整。"
       }
     ],
     "alerts": [
-      "泡沫指數 DEFCON 2（CRITICAL，總風險68.6）：CAPE 41.6x史上次高、巴菲特指標231%破紀錄，所有股票型基金提升一級風險。",
-      "停滯性通膨定價：30年期美債殖利率盤中破5.19%(近19年最高)、10年期4.68%，目標退休型(CSI104/CSI132/BRI023)面臨股債雙殺。",
-      "今晚NVIDIA FY27 Q1財報＋凌晨FOMC會議紀要為雙引爆點，直接牽動AI/科技(FSI069)與台股權值(YUI117/00878)。",
-      "最大持倉CSI104(126,000元/54%)淨值僅止於2026-01-29，估值非當日真實水準，請特別留意。"
+      {
+        "level": "warning",
+        "message": "市場估值處 EXTREME 等級（CAPE 40.9x、Buffett Indicator 219%，泡沫指數 overallRisk 63 / HIGH ALERT），雖 DEFCON 維持 3，仍須提高警覺，避免追高加碼。"
+      },
+      {
+        "level": "info",
+        "message": "明日（5/21）CSI132 國泰退休2049 有 1,000 TWD 定期定額扣款，請確認帳戶餘額充足。"
+      },
+      {
+        "level": "info",
+        "message": "今日（5/20）無定期定額扣款。"
+      },
+      {
+        "level": "info",
+        "message": "台幣基金（6 檔）今日淨值無法自動取得，本次估值與報酬以 null 呈現，未捏造數據；00878 採 5/19 盤中價 27.02 估算。"
+      }
     ],
-    "marketContext": "2026-05-20：市場正式為停滯性通膨定價。昨夜美30年期公債殖利率盤中破5.19%、創近19年新高，10年期升至4.68%；美股三大指數三連跌(S&P 7,353 -0.67%)，台股重挫716點(-1.75%)收40,175，台幣貶至31.59。Brent原油站上$111，伊朗地緣風險未解。泡沫指數DEFCON 2(CRITICAL)，總風險68.6，CAPE 41.6x為史上次高、巴菲特指標231%破歷史紀錄，估值面亮紅燈但VIX僅18、市場高度自滿，下檔賠率極不對稱。今晚NVIDIA財報與FOMC紀要將定調AI行情與利率路徑。",
-    "recommendation": "在DEFCON 2與殖利率破5%的雙重壓力下，採『續抱定扣、不加碼、留現金』策略。1) 五檔台幣定期定額(ALI099/CSI132/BRI023/FSI069/YUI117，月扣20,000元)維持原節奏，以時間分散攤平，勿因短線恐慌停扣或贖回。2) 最大持倉CSI104(54%)為股債混合，今日同時承受高估值與升息存續期間風險，列重點監控；其淨值資料已逾4個月未更新，建議盡快確認真實現值。3) 暫停的042131(醫療，防禦性較佳)可於今晚NVDA財報與FOMC方向明朗後分批恢復；106024(美國成長)對殖利率最敏感，維持暫停勿接刀。4) 今日(20日)無扣款；最近一筆為5/21 CSI132，提醒確認帳戶餘額。5) 系統提醒：六檔台幣基金中五檔即時淨值來源(MoneyDJ等)目前無法連線，本報告估值僅涵蓋CSI104(舊淨值)與00878，整體報酬待淨值補齊後再評估。",
-    "dataQualityNote": "即時淨值資料源(MoneyDJ/cnyes/各投信)於本次執行環境無法連線(HTTP 403)，僅能透過搜尋取得部分數值。ALI099/BRI023/CSI132/FSI069/YUI117 即時淨值未取得，依規範設為null未捏造。"
+    "marketContext": "市場背景取自 2026-05-18 最新簡報。核心判斷偏正向：美中於日內瓦達成 90 天關稅暫緩協議（美方關稅 145%→30%、中方暫停稀土管制），帶動全球風險情緒回升；Fed 官員週末發言偏鴿，9 月降息機率升至 68%，美 10 年債殖利率回落至 4.32%。Microsoft Build 2026 發布 Copilot Wave 3 並將 Azure OpenAI 降價 40%，利多美國與全球科技板塊。台股加權今日預計開高（前一交易日 +1.2%，22,340 點），S&P 500 +0.8%、NASDAQ +1.1%。然而泡沫儀表板顯示 overallRisk 63（HIGH ALERT）、DEFCON 3，CAPE 40.9x 與 Buffett Indicator 219% 均達 EXTREME，基本面支撐已透支。短期消息面利多與長期估值風險並存。",
+    "recommendation": "整體風險評為 medium：近期消息面（關稅緩和、降息預期、科技利多）支撐風險資產，且 DEFCON 維持 3（非 1-2），無須中斷定期定額；建議所有 active 定扣維持不動，以平滑成本。但估值已達 EXTREME，不建議單筆追高加碼。組合最大暴險為 00878（市值約 567,420 TWD，占比約 71%）與台股連動的 YUI117，須緊盯半導體出口限制等台股利空觸發點；最大基金持倉 CSI104（126,000 TWD）股債均衡、受惠殖利率回落，風險可控。已暫停基金：106024（純美國成長）建議維持暫停以規避估值壓縮風險；042131（醫療健康，防禦性）可評估恢復，作為極端估值環境下的避險配置。今日無扣款，明日 5/21 CSI132 將扣 1,000 TWD，請確認餘額。"
   }
 ]
