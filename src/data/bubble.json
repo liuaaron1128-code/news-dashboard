@@ -1,5 +1,145 @@
 [
   {
+    "date": "2026-05-20",
+    "defconLevel": 2,
+    "overallRisk": 68.6,
+    "alertLabel": "DEFCON 2 — CRITICAL",
+    "alertColor": "red",
+    "summary": "估值面已亮紅燈：CAPE 41.6x 為史上第二高，僅次於 2000 年網路泡沫頂峰；巴菲特指標 231% 突破歷史紀錄，遠超 2000 與 2022 年水準。最大風險來源是估值而非情緒或流動性——殖利率曲線仍正斜率、VIX 僅 18、Fear & Greed 61 屬溫和貪婪。市場在極端昂貴價位上維持高度自滿，下檔風險賠率極度不對稱。",
+    "indicators": [
+      {
+        "id": "cape",
+        "name": "CAPE",
+        "fullName": "Shiller CAPE Ratio",
+        "value": "41.6x",
+        "numericValue": 41.6,
+        "riskScore": 90,
+        "level": "EXTREME",
+        "historicalAvg": "17x",
+        "currentVsAvg": "+145%",
+        "benchmark": "歷史均值約 17x；> 35x 進入危險區",
+        "description": "席勒週期調整本益比，以10年通膨調整後盈餘平滑估值。",
+        "implication": "41.6x 為史上第二高，僅次於 2000 年的 44.2x，長期報酬預期極低。"
+      },
+      {
+        "id": "buffett",
+        "name": "Buffett",
+        "fullName": "巴菲特指標（總市值/GDP）",
+        "value": "231.2%",
+        "numericValue": 231.2,
+        "riskScore": 92,
+        "level": "EXTREME",
+        "historicalAvg": "85%",
+        "currentVsAvg": "+172%",
+        "benchmark": "歷史均值約 85%；> 150% 高度警戒",
+        "description": "美股總市值對 GDP 的比率，衡量股市相對實體經濟的規模。",
+        "implication": "231% 已突破歷史紀錄，超越 2000 年 159% 與 2022 年 193%，估值與經濟基本面嚴重脫節。"
+      },
+      {
+        "id": "pe",
+        "name": "S&P P/E",
+        "fullName": "S&P 500 本益比",
+        "value": "26.8x",
+        "numericValue": 26.8,
+        "riskScore": 65,
+        "level": "HIGH",
+        "historicalAvg": "16x",
+        "currentVsAvg": "+68%",
+        "benchmark": "歷史均值約 16x；> 25x 偏貴",
+        "description": "標普500指數的當期本益比。",
+        "implication": "26.8x 高於 20 年均值 16.5x，需強勁獲利成長才能支撐。"
+      },
+      {
+        "id": "yield_curve",
+        "name": "殖利率曲線",
+        "fullName": "美國公債殖利率曲線 10Y-2Y",
+        "value": "+0.54%",
+        "numericValue": 0.54,
+        "riskScore": 30,
+        "level": "LOW",
+        "historicalAvg": "+1.5%",
+        "currentVsAvg": "正斜率但偏平，低於歷史均值",
+        "benchmark": "正斜率為正常；倒掛（負值）為衰退信號",
+        "description": "10年期與2年期公債殖利率差，衡量衰退風險。",
+        "implication": "+0.54% 維持正斜率，2024 年下半年已脫離倒掛，短期未發出衰退信號。"
+      },
+      {
+        "id": "fear_greed",
+        "name": "Fear&Greed",
+        "fullName": "CNN 恐懼貪婪指數",
+        "value": "61",
+        "numericValue": 61,
+        "riskScore": 55,
+        "level": "HIGH",
+        "historicalAvg": "50",
+        "currentVsAvg": "偏貪婪",
+        "benchmark": "0=極度恐懼；100=極度貪婪；> 75 過熱警戒",
+        "description": "綜合七項市場情緒指標的合成分數。",
+        "implication": "61 屬溫和貪婪，情緒尚未過熱，但搭配極端估值顯示自滿。"
+      },
+      {
+        "id": "vix",
+        "name": "VIX",
+        "fullName": "CBOE 波動率指數",
+        "value": "18.17",
+        "numericValue": 18.17,
+        "riskScore": 35,
+        "level": "LOW",
+        "historicalAvg": "20",
+        "currentVsAvg": "略低於均值",
+        "benchmark": "< 15 過度自滿；> 30 市場恐懼",
+        "description": "標普500選擇權隱含的近月波動率預期。",
+        "implication": "18.17 偏低，市場對下檔風險缺乏戒心，與估值風險形成反差。"
+      }
+    ],
+    "actionRecommendations": [
+      {
+        "priority": "立即",
+        "level": "high",
+        "action": "降低高估值曝險",
+        "detail": "減碼高 Beta 與高本益比成長股，提高現金與短債部位至可接受上限。"
+      },
+      {
+        "priority": "本月",
+        "level": "medium",
+        "action": "分散估值風險",
+        "detail": "分批將部分獲利轉入價值股、非美市場與實質資產。"
+      },
+      {
+        "priority": "持續監控",
+        "level": "low",
+        "action": "觀察轉折信號",
+        "detail": "盯緊殖利率曲線是否倒掛、VIX 是否突破 25、財報獲利能否支撐 26x 本益比。"
+      }
+    ],
+    "historicalComparisons": [
+      {
+        "period": "現在",
+        "cape": 41.6,
+        "buffett": 231,
+        "result": "?"
+      },
+      {
+        "period": "2000 網路泡沫",
+        "cape": 44.2,
+        "buffett": 159,
+        "result": "S&P -49%"
+      },
+      {
+        "period": "2008 金融海嘯",
+        "cape": 27.2,
+        "buffett": 110,
+        "result": "S&P -56%"
+      },
+      {
+        "period": "2022 升息修正",
+        "cape": 38.3,
+        "buffett": 193,
+        "result": "S&P -25%"
+      }
+    ]
+  },
+  {
     "date": "2026-05-19",
     "defconLevel": 2,
     "overallRisk": 69,
