@@ -1,14 +1,15 @@
 [
   {
     "date": "2026-05-20",
-    "generatedAt": "2026-05-20T14:51:09Z",
+    "generatedAt": "2026-05-20T14:53:35Z",
     "summary": {
       "totalInvested": 233000,
-      "estimatedValue": null,
+      "estimatedValue": 720269.0,
       "returnAmount": null,
       "returnPercent": null,
       "overallRisk": "high",
-      "monthlyDCA": 20000
+      "monthlyDCA": 20000,
+      "note": "僅CSI104(淨值止於2026-01-29)與00878(21,000股)取得估值；其餘5檔台幣基金即時淨值來源無法連線，設為null未採計，故estimatedValue為不完整部分加總。"
     },
     "dcaToday": [],
     "dcaUpcoming": [
@@ -35,41 +36,24 @@
     ],
     "funds": [
       {
-        "code": "ALI099",
-        "name": "安聯四季成長",
-        "totalInvested": 41000,
-        "units": 3420.1,
-        "avgNav": 11.99,
-        "paymentsCount": 0,
-        "nav": null,
-        "navDate": null,
-        "estimatedValue": null,
-        "returnAmount": null,
-        "returnPercent": null,
-        "riskLevel": "high",
-        "riskNotes": "多元成長型基金，股票部位偏重。DEFCON 2 下整體股票型風險提升一級，由 medium 升至 high。今晚 NVDA 財報與 FOMC 紀要為短線變數，估值極端昂貴使下檔風險不對稱。每月 5,000 元定扣（5 筆）持續，逢高分批仍可平滑成本，惟不宜額外加碼。"
-      },
-      {
-        "code": "BRI023",
-        "name": "貝萊德退休2050",
-        "totalInvested": 30000,
-        "units": 2089.9,
-        "avgNav": 14.35,
-        "paymentsCount": 0,
-        "nav": null,
-        "navDate": null,
-        "estimatedValue": null,
-        "returnAmount": null,
-        "returnPercent": null,
-        "riskLevel": "high",
-        "riskNotes": "2050 目標退休型，距退休尚遠故股票權重高，對 DEFCON 2 與全球股市修正敏感。30Y 殖利率破 5.19% 將同時壓抑其債券部位，股債雙殺風險上升。長期持有者時間站在這邊，但短線回檔壓力明顯。每月 3,000 元定扣維持不動即可。"
-      },
-      {
         "code": "CSI104",
-        "name": "國泰退休2039",
+        "name": "國泰泰享退系列2039目標日期組合基金",
         "totalInvested": 126000,
-        "units": 7302.8,
-        "avgNav": 17.2537,
+        "paymentsCount": 0,
+        "nav": 20.8152,
+        "navDate": "2026-01-29",
+        "navStale": true,
+        "estimatedValue": 152009.0,
+        "returnAmount": 26009.0,
+        "returnPercent": 20.64,
+        "riskLevel": "high",
+        "allocation": 54.1,
+        "riskNotes": "全組合最大持倉（126,000 TWD，佔台幣基金54%）。目標退休2039屬股債混合，今日泡沫指數DEFCON 2、CAPE 41.6x為史上次高，股票端估值風險極高；同時30年期美債殖利率破5.19%、10年期4.68%，債券端面臨存續期間損失，形成股債雙殺壓力。淨值20.8152僅取得至2026-01-29，已逾近四個月未更新，估值與報酬僅供參考、非當日真實水準。建議列為重點監控但不因短線波動贖回。"
+      },
+      {
+        "code": "ALI099",
+        "name": "安聯四季成長組合基金",
+        "totalInvested": 41000,
         "paymentsCount": 0,
         "nav": null,
         "navDate": null,
@@ -77,14 +61,13 @@
         "returnAmount": null,
         "returnPercent": null,
         "riskLevel": "high",
-        "riskNotes": "最大持倉（126,000 元，佔比逾五成），需特別關注。2039 目標退休型債券權重較高，殖利率破 5%、19 年新高直接衝擊其債券估值，為今日核心風險點。雖無定扣加碼壓力，但部位集中度高，建議續抱不動、避免在殖利率未止穩前調整。"
+        "allocation": 17.6,
+        "riskNotes": "組合型股票基金，第二大持倉。DEFCON 2環境下股票型基金一律提升一級至high，當前CAPE史上次高、巴菲特指標231%破紀錄，下檔賠率極不對稱。今日未能取得即時淨值（資料源無法連線），估值暫缺。每月定扣5,000元持續中，除非極端風險否則維持原扣款節奏、以時間分散進場成本。"
       },
       {
         "code": "CSI132",
-        "name": "國泰退休2049",
+        "name": "國泰泰享退系列2049目標日期組合基金",
         "totalInvested": 32000,
-        "units": 1450.1,
-        "avgNav": 22.0674,
         "paymentsCount": 0,
         "nav": null,
         "navDate": null,
@@ -92,14 +75,27 @@
         "returnAmount": null,
         "returnPercent": null,
         "riskLevel": "high",
-        "riskNotes": "2049 目標退休型，股票權重高於 2039，DEFCON 2 下股票風險升一級。升息與殖利率上行同時壓抑股債，短線承壓。每月 6,000 元定扣（6 筆）為組合中最密集，持續扣款可有效攤平極端波動，維持不動。21 日、26 日各有一筆扣款。"
+        "allocation": 13.7,
+        "riskNotes": "目標退休2049距退休年限長、股票部位高，DEFCON 2下風險升至high。殖利率破5%對其債券配置與股票估值同步不利。今日淨值無法取得，估值暫缺。每月定扣6,000元（6筆），長天期目標基金最適合續扣攤平，建議維持不動。"
+      },
+      {
+        "code": "BRI023",
+        "name": "貝萊德享退休系列2050目標日期組合基金",
+        "totalInvested": 30000,
+        "paymentsCount": 0,
+        "nav": null,
+        "navDate": null,
+        "estimatedValue": null,
+        "returnAmount": null,
+        "returnPercent": null,
+        "riskLevel": "high",
+        "allocation": 12.9,
+        "riskNotes": "目標到期2050，生命週期策略股票部位偏高。升息與停滯性通膨情境對股債雙邊不利，DEFCON 2下提升至high。僅查得2023年舊淨值(11.96)，無法代表現值，故設為null不採計。每月定扣3,000元維持，長線退休部位不建議因短線停扣。"
       },
       {
         "code": "FSI069",
-        "name": "第一金全球大趨勢",
+        "name": "第一金全球大趨勢基金",
         "totalInvested": 1000,
-        "units": 87.8,
-        "avgNav": 11.39,
         "paymentsCount": 0,
         "nav": null,
         "navDate": null,
@@ -107,14 +103,13 @@
         "returnAmount": null,
         "returnPercent": null,
         "riskLevel": "high",
-        "riskNotes": "全球趨勢主題型，科技/成長股權重高，對今晚 NVDA 財報與 AI 行情定調高度敏感。DEFCON 2 與科技板塊事件風險疊加，標記 high。部位僅 1,000 元、影響有限，每月 2,000 元定扣剛起步，逢回檔布局成本反而有利，維持扣款。"
+        "allocation": 0.4,
+        "riskNotes": "全球趨勢型基金，多偏科技/AI主題，今晚NVIDIA FY27 Q1財報與FOMC會議紀要為雙引爆點，事件風險集中、估值偏貴，標記high。持倉極小（1,000元）影響有限。每月定扣2,000元剛起步（2026-04-28新設），建議財報後再觀察趨勢，現階段維持小額續扣。"
       },
       {
         "code": "YUI117",
-        "name": "元大台灣50",
+        "name": "元大台灣卓越50ETF連結基金",
         "totalInvested": 3000,
-        "units": 51.6,
-        "avgNav": 58.14,
         "paymentsCount": 0,
         "nav": null,
         "navDate": null,
@@ -122,62 +117,62 @@
         "returnAmount": null,
         "returnPercent": null,
         "riskLevel": "high",
-        "riskNotes": "台股大型權值股代表，今日台股重摔 716 點（-1.75%）收 40,175，直接受創，標記 high。台積電權重高，與 NVDA 財報及 AI 供應鏈高度連動。部位小（3,000 元），每月 4,000 元定扣於下跌中買進有利攤平，維持不動。24 日有一筆扣款。"
-      },
-      {
-        "code": "00878",
-        "name": "國泰永續高股息ETF",
-        "totalInvested": null,
-        "units": 21000,
-        "avgNav": null,
-        "paymentsCount": 0,
-        "nav": 27.06,
-        "navDate": "2026-05-20",
-        "estimatedValue": 568260,
-        "returnAmount": null,
-        "returnPercent": null,
-        "riskLevel": "high",
-        "riskNotes": "持有 21,000 股，今日參考價 27.06 元，估計市值約 568,260 元，為實際市值最大的台股部位。台股重摔 716 點與高殖利率環境雙重壓力：殖利率上行使高股息標的相對吸引力下降。標記 high，惟高股息防禦性與配息現金流可緩衝波動，建議續抱領息、不追高。"
+        "allocation": 1.3,
+        "riskNotes": "連結0050、追蹤台灣大型權值股，半導體權重高。昨日台股重挫716點(-1.75%)收40,175，今晚NVDA財報直接牽動台積電與台股權值，短線波動risk偏high。今日僅取得0050 ETF市價92.50元，與本連結基金淨值（快照約58元）尺度不同、不可直接套用，故淨值設null。每月定扣4,000元維持。"
       },
       {
         "code": "042131",
-        "name": "貝萊德世界健康科學 A2 (USD,已暫停)",
+        "name": "貝萊德世界健康科學基金 A2 (USD)",
         "totalInvested": 3000,
-        "units": null,
-        "avgNav": null,
         "paymentsCount": 0,
+        "currency": "USD",
         "nav": 70.53,
         "navDate": "2026-05-18",
         "estimatedValue": null,
         "returnAmount": null,
         "returnPercent": null,
         "riskLevel": "medium",
-        "riskNotes": "美元計價、定扣已暫停。最新 NAV 70.53 USD（5/18，單日 -0.58%），52 週區間 63.95–77.15。醫療健康於停滯性通膨中相對防禦，風險低於純科技成長，標記 medium。美股修正下短線仍有壓力，但若考慮恢復扣款，此類防禦性板塊優先於美國成長型。"
+        "allocation": null,
+        "riskNotes": "已暫停扣款的美元醫療健康基金。最新淨值USD 70.53(2026-05-18)，單日-0.58%，52週區間63.95~77.15、目前處中段。醫療具防禦性，在DEFCON 2高估值環境下相對抗跌，列medium。持有單位資料缺漏故無法估算市值。鑑於估值風險高、醫療類股提供防禦性，可評估在NVDA財報與市場方向明朗後分批恢復扣款。"
       },
       {
         "code": "106024",
-        "name": "摩根美國增長 A (USD,已暫停)",
+        "name": "摩根士丹利美國增長基金 A (USD)",
         "totalInvested": 0,
-        "units": null,
-        "avgNav": null,
         "paymentsCount": 0,
+        "currency": "USD",
         "nav": null,
         "navDate": null,
         "estimatedValue": null,
         "returnAmount": null,
         "returnPercent": null,
         "riskLevel": "high",
-        "riskNotes": "美元計價、已暫停且投入為 0。美國成長型重押科技/AI，對今晚 NVDA 財報與殖利率破 5% 的估值殺手最為敏感，標記 high。在 DEFCON 2 與極端估值下，現階段不建議恢復扣款，待 NVDA 指引與殖利率止穩再評估。"
+        "allocation": null,
+        "riskNotes": "已暫停且投入為0的美國成長型基金。美股三大指數三連跌、S&P 7,353(-0.67%)，成長股對殖利率破5%極度敏感，標記high。今晚NVDA財報與FOMC紀要前不宜進場接刀，建議維持暫停、待估值修正或殖利率回落再評估恢復。"
+      },
+      {
+        "code": "00878",
+        "name": "國泰永續高股息ETF",
+        "totalInvested": null,
+        "paymentsCount": 0,
+        "nav": 27.06,
+        "navDate": "2026-05-20",
+        "estimatedValue": 568260.0,
+        "returnAmount": null,
+        "returnPercent": null,
+        "riskLevel": "high",
+        "allocation": null,
+        "riskNotes": "直接持有21,000股，今日市價27.06元，市值約568,260元。昨日(5/19)已除息、本季配息0.66元為歷史新高(6/12發放)，故價格已反映除息。台股重挫且今晚NVDA財報牽動權值，短線risk偏high；惟高股息ETF具現金流與相對抗波動特性。建議續抱領息，不在DEFCON 2高位加碼。"
       }
     ],
     "alerts": [
-      "泡沫指數 DEFCON 2（CRITICAL，68.6）：估值極端昂貴，CAPE 41.6x、巴菲特指標 231% 破紀錄，所有股票型基金風險上調一級。",
-      "美 30Y 殖利率盤中破 5.19%（19 年新高）、10Y 4.68%：目標退休型 BRI023/CSI104/CSI132 之債券部位承壓，股債雙殺風險。",
-      "台股重摔 716 點（-1.75%）收 40,175：YUI117、00878 直接受創標記 high。",
-      "今晚 NVIDIA FY27 Q1 財報＋FOMC 4 月紀要：AI 行情定調時刻，FSI069 與美股成長型高度敏感。",
-      "提醒：本週 21、24、26 日各有定扣，請確認台幣帳戶餘額；今日（20 日）無扣款。"
+      "泡沫指數 DEFCON 2（CRITICAL，總風險68.6）：CAPE 41.6x史上次高、巴菲特指標231%破紀錄，所有股票型基金提升一級風險。",
+      "停滯性通膨定價：30年期美債殖利率盤中破5.19%(近19年最高)、10年期4.68%，目標退休型(CSI104/CSI132/BRI023)面臨股債雙殺。",
+      "今晚NVIDIA FY27 Q1財報＋凌晨FOMC會議紀要為雙引爆點，直接牽動AI/科技(FSI069)與台股權值(YUI117/00878)。",
+      "最大持倉CSI104(126,000元/54%)淨值僅止於2026-01-29，估值非當日真實水準，請特別留意。"
     ],
-    "marketContext": "DEFCON 2（CRITICAL，泡沫指數 68.6）：估值面紅燈，CAPE 41.6x 史上第二高、巴菲特指標 231% 破紀錄，但 VIX 僅 18、Fear&Greed 61，下檔賠率極不對稱。昨夜美 30Y 殖利率盤中破 5.19%（19 年新高）、10Y 升至 4.68%，美股三連跌、台股重摔 716 點（-1.75%）收 40,175，停滯性通膨被正式定價。今晚 NVIDIA FY27 Q1 財報與 FOMC 4 月紀要為兩大引爆點；Brent 站 $111、中東風險未解。",
-    "recommendation": "在 DEFCON 2、殖利率破 5% 與 NVDA 財報前夜的環境下，採『防禦為主、不接刀』策略：1) 現有定期定額（每月 20,000 元）維持不動，於下跌中持續攤平成本，但不額外加碼或單筆進場；2) 最大持倉 CSI104（126,000 元）部位集中且受殖利率衝擊，續抱不調整，待殖利率止穩再評估；3) 已暫停的 USD 基金中，042131 醫療健康屬防禦性、優於 106024 美國成長型，惟現階段兩者皆不建議恢復扣款，待今晚 NVDA 指引與 FOMC 紀要明朗後再決定；4) 00878 高股息續抱領息、不追高；保留現金與短債部位以待估值回歸。"
+    "marketContext": "2026-05-20：市場正式為停滯性通膨定價。昨夜美30年期公債殖利率盤中破5.19%、創近19年新高，10年期升至4.68%；美股三大指數三連跌(S&P 7,353 -0.67%)，台股重挫716點(-1.75%)收40,175，台幣貶至31.59。Brent原油站上$111，伊朗地緣風險未解。泡沫指數DEFCON 2(CRITICAL)，總風險68.6，CAPE 41.6x為史上次高、巴菲特指標231%破歷史紀錄，估值面亮紅燈但VIX僅18、市場高度自滿，下檔賠率極不對稱。今晚NVIDIA財報與FOMC紀要將定調AI行情與利率路徑。",
+    "recommendation": "在DEFCON 2與殖利率破5%的雙重壓力下，採『續抱定扣、不加碼、留現金』策略。1) 五檔台幣定期定額(ALI099/CSI132/BRI023/FSI069/YUI117，月扣20,000元)維持原節奏，以時間分散攤平，勿因短線恐慌停扣或贖回。2) 最大持倉CSI104(54%)為股債混合，今日同時承受高估值與升息存續期間風險，列重點監控；其淨值資料已逾4個月未更新，建議盡快確認真實現值。3) 暫停的042131(醫療，防禦性較佳)可於今晚NVDA財報與FOMC方向明朗後分批恢復；106024(美國成長)對殖利率最敏感，維持暫停勿接刀。4) 今日(20日)無扣款；最近一筆為5/21 CSI132，提醒確認帳戶餘額。5) 系統提醒：六檔台幣基金中五檔即時淨值來源(MoneyDJ等)目前無法連線，本報告估值僅涵蓋CSI104(舊淨值)與00878，整體報酬待淨值補齊後再評估。",
+    "dataQualityNote": "即時淨值資料源(MoneyDJ/cnyes/各投信)於本次執行環境無法連線(HTTP 403)，僅能透過搜尋取得部分數值。ALI099/BRI023/CSI132/FSI069/YUI117 即時淨值未取得，依規範設為null未捏造。"
   }
 ]
