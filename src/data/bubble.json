@@ -5,7 +5,7 @@
     "overallRisk": 68.6,
     "alertLabel": "DEFCON 2 — CRITICAL",
     "alertColor": "red",
-    "summary": "估值面已亮紅燈：CAPE 41.6x 為史上第二高，僅次於 2000 年網路泡沫頂峰；巴菲特指標 231% 突破歷史紀錄，遠超 2000 與 2022 年水準。最大風險來源是估值而非情緒或流動性——殖利率曲線仍正斜率、VIX 僅 18、Fear & Greed 61 屬溫和貪婪。市場在極端昂貴價位上維持高度自滿，下檔風險賠率極度不對稱。",
+    "summary": "當前市場估值處於歷史極端水位：CAPE 41.6x 僅次於 2000 年網路泡沫頂峰，巴菲特指標 229.6% 更創史上新高。估值與基本面嚴重背離，市值膨脹速度遠超實體經濟。短線情緒仍偏自滿、殖利率曲線雖回正暫無立即衰退信號，但「高估值＋低波動＋投資人貪婪」正是泡沫後期最典型的危險組合。",
     "indicators": [
       {
         "id": "cape",
@@ -18,22 +18,22 @@
         "historicalAvg": "17x",
         "currentVsAvg": "+145%",
         "benchmark": "歷史均值約 17x；> 35x 進入危險區",
-        "description": "席勒週期調整本益比，以10年通膨調整後盈餘平滑估值。",
-        "implication": "41.6x 為史上第二高，僅次於 2000 年的 44.2x，長期報酬預期極低。"
+        "description": "經週期調整的本益比，以過去十年通膨調整後盈餘平滑短期波動，衡量長線估值。",
+        "implication": "41.6x 僅次於 2000 年網路泡沫頂峰（44.2x），長線預期報酬極低、回檔風險高。"
       },
       {
         "id": "buffett",
         "name": "Buffett",
         "fullName": "巴菲特指標（總市值/GDP）",
-        "value": "231.2%",
-        "numericValue": 231.2,
+        "value": "229.6%",
+        "numericValue": 229.6,
         "riskScore": 92,
         "level": "EXTREME",
         "historicalAvg": "85%",
-        "currentVsAvg": "+172%",
+        "currentVsAvg": "+170%",
         "benchmark": "歷史均值約 85%；> 150% 高度警戒",
-        "description": "美股總市值對 GDP 的比率，衡量股市相對實體經濟的規模。",
-        "implication": "231% 已突破歷史紀錄，超越 2000 年 159% 與 2022 年 193%，估值與經濟基本面嚴重脫節。"
+        "description": "全美上市公司總市值相對 GDP 的比率，衡量股市相對實體經濟的規模。",
+        "implication": "229.6% 創歷史新高，股市規模遠超實體經濟，估值與基本面嚴重背離。"
       },
       {
         "id": "pe",
@@ -46,8 +46,8 @@
         "historicalAvg": "16x",
         "currentVsAvg": "+68%",
         "benchmark": "歷史均值約 16x；> 25x 偏貴",
-        "description": "標普500指數的當期本益比。",
-        "implication": "26.8x 高於 20 年均值 16.5x，需強勁獲利成長才能支撐。"
+        "description": "S&P 500 當前股價相對每股盈餘的比率，衡量市場整體估值水準。",
+        "implication": "26.8x 明顯高於歷史均值，市場為成長預期付出溢價，容錯空間有限。"
       },
       {
         "id": "yield_curve",
@@ -58,38 +58,38 @@
         "riskScore": 30,
         "level": "LOW",
         "historicalAvg": "+1.5%",
-        "currentVsAvg": "正斜率但偏平，低於歷史均值",
+        "currentVsAvg": "低於常態正斜率",
         "benchmark": "正斜率為正常；倒掛（負值）為衰退信號",
-        "description": "10年期與2年期公債殖利率差，衡量衰退風險。",
-        "implication": "+0.54% 維持正斜率，2024 年下半年已脫離倒掛，短期未發出衰退信號。"
+        "description": "10 年期與 2 年期公債殖利率差，傳統衰退領先指標。",
+        "implication": "+0.54% 已回正、暫無立即衰退信號，但斜率偏平、近期曾數度倒掛，需持續觀察。"
       },
       {
         "id": "fear_greed",
         "name": "Fear&Greed",
         "fullName": "CNN 恐懼貪婪指數",
-        "value": "61",
-        "numericValue": 61,
+        "value": "60",
+        "numericValue": 60.0,
         "riskScore": 55,
         "level": "HIGH",
         "historicalAvg": "50",
-        "currentVsAvg": "偏貪婪",
+        "currentVsAvg": "+20%",
         "benchmark": "0=極度恐懼；100=極度貪婪；> 75 過熱警戒",
-        "description": "綜合七項市場情緒指標的合成分數。",
-        "implication": "61 屬溫和貪婪，情緒尚未過熱，但搭配極端估值顯示自滿。"
+        "description": "綜合七項市場情緒指標的投資人情緒溫度計。",
+        "implication": "60 落在「貪婪」區，投資人偏樂觀，與高估值同步形成警訊。"
       },
       {
         "id": "vix",
         "name": "VIX",
         "fullName": "CBOE 波動率指數",
-        "value": "18.17",
-        "numericValue": 18.17,
+        "value": "18.0",
+        "numericValue": 18.0,
         "riskScore": 35,
         "level": "LOW",
         "historicalAvg": "20",
-        "currentVsAvg": "略低於均值",
+        "currentVsAvg": "-10%",
         "benchmark": "< 15 過度自滿；> 30 市場恐懼",
-        "description": "標普500選擇權隱含的近月波動率預期。",
-        "implication": "18.17 偏低，市場對下檔風險缺乏戒心，與估值風險形成反差。"
+        "description": "由 S&P 500 選擇權隱含的未來 30 天預期波動度，俗稱恐懼指數。",
+        "implication": "18.0 處於偏低區間，市場波動預期溫和，反映短線自滿、未對高估值定價風險。"
       }
     ],
     "actionRecommendations": [
@@ -97,26 +97,26 @@
         "priority": "立即",
         "level": "high",
         "action": "降低高估值曝險",
-        "detail": "減碼高 Beta 與高本益比成長股，提高現金與短債部位至可接受上限。"
+        "detail": "減持高估值成長股與美股大盤部位，提高現金與短債緩衝。"
       },
       {
         "priority": "本月",
         "level": "medium",
-        "action": "分散估值風險",
-        "detail": "分批將部分獲利轉入價值股、非美市場與實質資產。"
+        "action": "分散與紀律",
+        "detail": "分批調整資產配置，增加防禦型／價值型與非美市場分散，設定停利停損紀律。"
       },
       {
         "priority": "持續監控",
         "level": "low",
-        "action": "觀察轉折信號",
-        "detail": "盯緊殖利率曲線是否倒掛、VIX 是否突破 25、財報獲利能否支撐 26x 本益比。"
+        "action": "追蹤關鍵閾值",
+        "detail": "監控 CAPE 是否突破 44（破前高）、殖利率曲線是否再度倒掛、VIX 是否驟升脫離自滿區。"
       }
     ],
     "historicalComparisons": [
       {
         "period": "現在",
         "cape": 41.6,
-        "buffett": 231,
+        "buffett": 230,
         "result": "?"
       },
       {
