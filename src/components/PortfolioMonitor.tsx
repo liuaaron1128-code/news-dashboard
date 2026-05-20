@@ -229,20 +229,30 @@ export default function PortfolioMonitor() {
       {latest?.alerts && latest.alerts.length > 0 && (
         <div className="mx-4 mb-4 space-y-2">
           {latest.alerts.map((alert, i) => {
-            const styles = {
+            const alertStyles = {
               danger:  { Icon: AlertTriangle, bg: '#FEF2F2', border: '#FECACA', text: '#DC2626', icon: '#DC2626' },
               warning: { Icon: AlertTriangle, bg: '#FFFBEB', border: '#FDE68A', text: '#92400E', icon: '#D97706' },
               info:    { Icon: Info,          bg: '#EFF6FF', border: '#BFDBFE', text: '#1E40AF', icon: '#3B82F6' },
             }
-            const s = styles[alert.level] || styles.info
+            // Support both string alerts and {level, title, detail} object alerts
+            const isString = typeof alert === 'string'
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            const a = alert as any
+            const level = isString ? 'info' : (a.level || 'info')
+            const s = alertStyles[level as keyof typeof alertStyles] || alertStyles.info
             const { Icon } = s
+            const text = isString ? alert as string : (a.title ? `${a.title}${a.detail ? ' — ' + a.detail : ''}` : (a.detail || ''))
             return (
               <div key={i} className="rounded-xl p-3 border" style={{ background: s.bg, borderColor: s.border }}>
                 <div className="flex items-start gap-2">
                   <Icon size={14} style={{ color: s.icon, marginTop: 2, flexShrink: 0 }} />
-                  <div>
-                    <div className="text-[13px] font-bold" style={{ color: s.text }}>{alert.title}</div>
-                    <div className="text-[12px] mt-0.5" style={{ color: s.text, opacity: 0.8 }}>{alert.detail}</div>
+                  <div className="text-[13px]" style={{ color: s.text, lineHeight: 1.5 }}>
+                    {isString ? text : (
+                      <>
+                        {a.title && <div className="font-bold">{a.title}</div>}
+                        {a.detail && <div className="mt-0.5 opacity-80 text-[12px]">{a.detail}</div>}
+                      </>
+                    )}
                   </div>
                 </div>
               </div>
