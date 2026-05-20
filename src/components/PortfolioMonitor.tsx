@@ -110,10 +110,10 @@ export default function PortfolioMonitor() {
       return { fund, invested, addedSince, monthly, todayDCA, upcoming, analysis }
     })
 
-    const etfRows = portfolio.etfs.map(etf => ({
-      etf,
-      analysis: latest?.funds.find(f => f.code === etf.code),
-    }))
+    const etfRows = portfolio.etfs.map(etf => {
+      if (etf.avgCost !== null) totalInvestedTWD += etf.shares * etf.avgCost
+      return { etf, analysis: latest?.funds.find(f => f.code === etf.code) }
+    })
 
     const todayPayments = fundRows.flatMap(r => r.todayDCA.map(c => ({ fund: r.fund, contract: c })))
     const upcomingAll = fundRows
@@ -123,7 +123,7 @@ export default function PortfolioMonitor() {
     return { totalInvestedTWD, totalMonthly, fundRows, etfRows, todayPayments, upcomingAll }
   }, [latest])
 
-  const totalInvested = latest?.summary.totalInvested ?? computed.totalInvestedTWD
+  const totalInvested = computed.totalInvestedTWD
   const estValue = latest?.summary.estimatedValue ?? null
   const returnAmt = estValue !== null ? estValue - totalInvested : null
   const returnPct = returnAmt !== null && totalInvested > 0 ? (returnAmt / totalInvested) * 100 : null
