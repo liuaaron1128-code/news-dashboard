@@ -1,13 +1,14 @@
 'use client'
 
 import { useState, useMemo } from 'react'
-import { Search, Calendar, ChevronLeft, ChevronRight, Newspaper, BarChart2, SlidersHorizontal, X } from 'lucide-react'
+import { Search, Calendar, ChevronLeft, ChevronRight, Newspaper, BarChart2, TrendingUp, X } from 'lucide-react'
 import briefingsData from '@/data/briefings.json'
 import bubbleData from '@/data/bubble.json'
 import { DailyBriefing, Grade, Category, NewsItem } from '@/types/news'
 import { BubbleSnapshot } from '@/types/bubble'
 import MarketSnapshot from '@/components/MarketSnapshot'
 import NewsCard from '@/components/NewsCard'
+import PortfolioMonitor from '@/components/PortfolioMonitor'
 import BubbleMonitor from '@/components/BubbleMonitor'
 
 const briefings = briefingsData as DailyBriefing[]
@@ -32,7 +33,7 @@ const CATEGORIES: { label: string; value: Category | 'all' }[] = [
   { label: '🏭 客戶產業', value: '客戶產業' },
 ]
 
-type Tab = 'news' | 'bubble'
+type Tab = 'news' | 'bubble' | 'portfolio'
 
 export default function Home() {
   const [tab, setTab] = useState<Tab>('news')
@@ -106,6 +107,17 @@ export default function Home() {
               <span className="bg-orange-100 text-orange-700 text-[11px] font-bold px-1.5 py-0.5 rounded-full">
                 {latestBubble.overallRisk}
               </span>
+            </button>
+            <button
+              onClick={() => setTab('portfolio')}
+              className={`flex items-center gap-1.5 px-4 py-2.5 text-sm font-semibold border-b-2 transition-all ${
+                tab === 'portfolio'
+                  ? 'border-green-600 text-green-700'
+                  : 'border-transparent text-slate-500'
+              }`}
+            >
+              <TrendingUp size={14} />
+              投資組合
             </button>
           </div>
         </div>
@@ -274,6 +286,9 @@ export default function Home() {
 
         {tab === 'bubble' && (
           <BubbleMonitor data={latestBubble} history={bubbles} />
+        )}
+        {tab === 'portfolio' && (
+          <PortfolioMonitor />
         )}
 
         <div className="text-center text-slate-400 text-[11px] mt-8 pb-6">
