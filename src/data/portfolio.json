@@ -14,56 +14,6 @@
   ],
   "funds": [
     {
-      "code": "042131",
-      "name": "貝萊德世界健康科學基金 A2 美元",
-      "shortName": "貝萊德健康科學",
-      "currency": "USD",
-      "category": "股票型-醫療健康",
-      "icon": "🏥",
-      "color": "#007AFF",
-      "isTISA": false,
-      "snapshot": {
-        "invested": 3000,
-        "units": null,
-        "avgNAV": null
-      },
-      "contracts": [
-        {
-          "id": "2025042210945",
-          "startDate": "2025-09-30",
-          "paymentDay": 28,
-          "monthlyAmount": 3000,
-          "status": "paused",
-          "confirmedPayments": 1
-        }
-      ]
-    },
-    {
-      "code": "106024",
-      "name": "摩根士丹利美國增長基金 A",
-      "shortName": "摩根美國增長",
-      "currency": "USD",
-      "category": "股票型-美國成長",
-      "icon": "📈",
-      "color": "#AF52DE",
-      "isTISA": false,
-      "snapshot": {
-        "invested": 0,
-        "units": null,
-        "avgNAV": null
-      },
-      "contracts": [
-        {
-          "id": "2025106078780",
-          "startDate": "2025-08-11",
-          "paymentDay": 15,
-          "monthlyAmount": 3000,
-          "status": "paused",
-          "confirmedPayments": 0
-        }
-      ]
-    },
-    {
       "code": "ALI099",
       "name": "安聯四季成長組合基金-TISA類型-新臺幣",
       "shortName": "安聯四季成長",

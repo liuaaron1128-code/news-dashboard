@@ -1,5 +1,134 @@
 [
   {
+    "date": "2026-05-21",
+    "generatedAt": "2026-05-21T00:00:00Z",
+    "summary": {
+      "totalInvested": 679500,
+      "estimatedValue": 857979,
+      "returnAmount": 178479,
+      "returnPercent": 26.27,
+      "overallRisk": "high",
+      "monthlyDCA": 20000,
+      "note": "NAV 資料取自用戶確認之 2026-05-20 現值截圖；00878 市價 27.06（2026-05-20），成本 445,500（21,000 × 21.2143）。CSI132 含今日（5/21）定扣 1,000 元。"
+    },
+    "dcaToday": [
+      { "date": "2026-05-21", "code": "CSI132", "amount": 1000 }
+    ],
+    "dcaUpcoming": [
+      { "date": "2026-05-24", "code": "YUI117", "amount": 1000 },
+      { "date": "2026-05-26", "code": "ALI099", "amount": 1000 },
+      { "date": "2026-05-26", "code": "CSI132", "amount": 1000 }
+    ],
+    "funds": [
+      {
+        "code": "CSI104",
+        "name": "國泰泰享退系列2039目標日期組合基金",
+        "totalInvested": 126000,
+        "paymentsCount": 0,
+        "nav": 23.18,
+        "navDate": "2026-05-20",
+        "estimatedValue": 169297,
+        "returnAmount": 43297,
+        "returnPercent": 34.36,
+        "riskLevel": "high",
+        "allocation": 53.8,
+        "riskNotes": "全組合最大持倉（126,000 TWD，佔台幣基金 53.8%）。NAV 確認 23.18（2026-05-20），較快照均值 17.2537 上漲 34.4%，帳面獲利 43,297 元。目標退休2039股債混合，DEFCON 2 環境下仍列高風險；持倉大、獲利豐厚，可考慮設定停利警戒線（如報酬率達 40% 則評估分批贖回），未達前不建議主動操作。"
+      },
+      {
+        "code": "ALI099",
+        "name": "安聯四季成長組合基金",
+        "totalInvested": 41000,
+        "paymentsCount": 0,
+        "nav": 13.84,
+        "navDate": "2026-05-20",
+        "estimatedValue": 47334,
+        "returnAmount": 6334,
+        "returnPercent": 15.45,
+        "riskLevel": "high",
+        "allocation": 17.5,
+        "riskNotes": "安聯四季成長 NAV 確認 13.84（2026-05-20），帳面獲利 6,334 元（+15.45%）。每月定扣 5,000 元（5 筆合約），組合型股票基金在 DEFCON 2 環境下列高風險；續扣策略以時間攤平，除非極端行情否則不建議停扣。"
+      },
+      {
+        "code": "CSI132",
+        "name": "國泰泰享退系列2049目標日期組合基金",
+        "totalInvested": 33000,
+        "paymentsCount": 1,
+        "nav": 24.97,
+        "navDate": "2026-05-20",
+        "estimatedValue": 36211,
+        "returnAmount": 3211,
+        "returnPercent": 9.73,
+        "riskLevel": "high",
+        "allocation": 14.1,
+        "riskNotes": "國泰退休2049 NAV 確認 24.97（2026-05-20），今日（5/21）已扣款 1,000 元，合計投入 33,000 元，帳面獲利 3,211 元（+9.73%）。每月定扣 6,000 元（6 筆），長天期目標基金最適合續扣攤平，建議維持不動。"
+      },
+      {
+        "code": "BRI023",
+        "name": "貝萊德享退休系列2050目標日期組合基金",
+        "totalInvested": 30000,
+        "paymentsCount": 0,
+        "nav": 15.78,
+        "navDate": "2026-05-20",
+        "estimatedValue": 32978,
+        "returnAmount": 2978,
+        "returnPercent": 9.93,
+        "riskLevel": "high",
+        "allocation": 12.8,
+        "riskNotes": "貝萊德退休2050 NAV 確認 15.78（2026-05-20），帳面獲利 2,978 元（+9.93%）。目標到期2050生命週期策略，每月定扣 3,000 元維持；DEFCON 2 下列高風險，長線退休部位不建議因短線波動停扣。"
+      },
+      {
+        "code": "FSI069",
+        "name": "第一金全球大趨勢基金",
+        "totalInvested": 1000,
+        "paymentsCount": 0,
+        "nav": 11.29,
+        "navDate": "2026-05-20",
+        "estimatedValue": 991,
+        "returnAmount": -9,
+        "returnPercent": -0.90,
+        "riskLevel": "high",
+        "allocation": 0.4,
+        "riskNotes": "第一金全球大趨勢 NAV 確認 11.29（2026-05-20），小幅虧損 -9 元（-0.90%）。持倉極小（1,000 元），每月定扣 2,000 元（2 筆，2026-04-28 起），建議維持小額續扣以時間攤平。"
+      },
+      {
+        "code": "YUI117",
+        "name": "元大台灣卓越50ETF連結基金",
+        "totalInvested": 3000,
+        "paymentsCount": 0,
+        "nav": 56.36,
+        "navDate": "2026-05-20",
+        "estimatedValue": 2908,
+        "returnAmount": -92,
+        "returnPercent": -3.07,
+        "riskLevel": "high",
+        "allocation": 1.3,
+        "riskNotes": "元大台灣50連結基金 NAV 確認 56.36（2026-05-20），小幅虧損 -92 元（-3.07%）。連結 0050 追蹤台灣大型權值股，每月定扣 4,000 元（4 筆）維持，長期持有攤平。"
+      },
+      {
+        "code": "00878",
+        "name": "國泰永續高股息ETF",
+        "totalInvested": null,
+        "paymentsCount": 0,
+        "nav": 27.06,
+        "navDate": "2026-05-20",
+        "estimatedValue": 568260,
+        "returnAmount": 122760,
+        "returnPercent": 27.56,
+        "riskLevel": "medium",
+        "allocation": null,
+        "riskNotes": "直接持有 21,000 股，市價確認 27.06 元（2026-05-20），市值 568,260 元，成本 445,500 元（21,000 × 21.2143），帳面獲利 122,760 元（+27.56%）。昨日（5/19）已除息，本季配息 0.66 元（6/12 發放），高股息ETF具現金流特性，建議續抱領息，DEFCON 2 環境不加碼。"
+      }
+    ],
+    "alerts": [
+      "今日（5/21）CSI132 定期定額 1,000 元，請確認帳戶餘額充足。",
+      "所有主力持倉帳面獲利：CSI104 +43,297（+34.4%）、ALI099 +6,334（+15.5%）、CSI132 +3,211（+9.7%）、BRI023 +2,978（+9.9%）、00878 +122,760（+27.6%）。",
+      "00878 昨日（5/19）除息，本季配息 0.66 元（6/12 發放），繼續持有等待入帳。",
+      "DEFCON 2 環境仍持續，維持『續抱定扣、不加碼』策略；CSI104 為最大持倉，建議設定停利警戒線。"
+    ],
+    "marketContext": "2026-05-21：NAV 資料以用戶確認之 2026-05-20 現值截圖為準。六檔台幣基金帳面均呈正報酬，CSI104（國泰退休2039）表現最佳（+34.36%）；FSI069 和 YUI117 因持倉小、起步晚，略有小幅虧損但金額極小。整體 TWD 基金投入 234,000 元（含 CSI132 今日定扣），加上 00878 成本 445,500 元，總成本 679,500 元；估計總市值 857,979 元，帳面獲利 178,479 元（+26.3%）。市場環境持續 DEFCON 2，每日分析將在每早 06:10 自動更新最新NAV及市場狀況。",
+    "recommendation": "1) 今日確認 CSI132 定期定額 1,000 元已成功扣款（每月 21 日）。2) 五檔定期定額（ALI099/CSI132/BRI023/FSI069/YUI117，月扣 20,000 元）全數維持，以時間分散進場成本。3) 最大持倉 CSI104（53.8%，帳面獲利 43,297 元 / +34.4%），可考慮設定停利警戒線（例如報酬率達 40% 則評估分批贖回），目前不主動操作。4) 00878 於 6/12 領到本季股息（0.66 元 × 21,000 股 = 13,860 元）後，評估是否維持不動或少量加碼。5) 近 7 日定扣：5/24 YUI117 1,000、5/26 ALI099 1,000、5/26 CSI132 1,000，共 3,000 元，請確認帳戶餘額。"
+  },
+  {
     "date": "2026-05-20",
     "generatedAt": "2026-05-20T14:53:35Z",
     "summary": {
@@ -119,36 +248,6 @@
         "riskLevel": "high",
         "allocation": 1.3,
         "riskNotes": "連結0050、追蹤台灣大型權值股，半導體權重高。昨日台股重挫716點(-1.75%)收40,175，今晚NVDA財報直接牽動台積電與台股權值，短線波動risk偏high。今日僅取得0050 ETF市價92.50元，與本連結基金淨值（快照約58元）尺度不同、不可直接套用，故淨值設null。每月定扣4,000元維持。"
-      },
-      {
-        "code": "042131",
-        "name": "貝萊德世界健康科學基金 A2 (USD)",
-        "totalInvested": 3000,
-        "paymentsCount": 0,
-        "currency": "USD",
-        "nav": 70.53,
-        "navDate": "2026-05-18",
-        "estimatedValue": null,
-        "returnAmount": null,
-        "returnPercent": null,
-        "riskLevel": "medium",
-        "allocation": null,
-        "riskNotes": "已暫停扣款的美元醫療健康基金。最新淨值USD 70.53(2026-05-18)，單日-0.58%，52週區間63.95~77.15、目前處中段。醫療具防禦性，在DEFCON 2高估值環境下相對抗跌，列medium。持有單位資料缺漏故無法估算市值。鑑於估值風險高、醫療類股提供防禦性，可評估在NVDA財報與市場方向明朗後分批恢復扣款。"
-      },
-      {
-        "code": "106024",
-        "name": "摩根士丹利美國增長基金 A (USD)",
-        "totalInvested": 0,
-        "paymentsCount": 0,
-        "currency": "USD",
-        "nav": null,
-        "navDate": null,
-        "estimatedValue": null,
-        "returnAmount": null,
-        "returnPercent": null,
-        "riskLevel": "high",
-        "allocation": null,
-        "riskNotes": "已暫停且投入為0的美國成長型基金。美股三大指數三連跌、S&P 7,353(-0.67%)，成長股對殖利率破5%極度敏感，標記high。今晚NVDA財報與FOMC紀要前不宜進場接刀，建議維持暫停、待估值修正或殖利率回落再評估恢復。"
       },
       {
         "code": "00878",
