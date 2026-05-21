@@ -37,6 +37,11 @@ export interface BubbleSnapshot {
   alertLabel: string
   alertColor: AlertColor
   summary: string
+  marketState?: string
+  marketStateLabel?: string
+  bubbleRiskScore?: number
+  crisisRiskScore?: number
+  deleveragingRiskScore?: number
   indicators: BubbleIndicator[]
   actionRecommendations: ActionRecommendation[]
   historicalComparisons: HistoricalComparison[]

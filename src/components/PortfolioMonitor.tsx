@@ -84,7 +84,7 @@ function RiskBadge({ level }: { level: string }) {
 
 export default function PortfolioMonitor() {
   const today = new Date()
-  const todayStr = today.toISOString().slice(0, 10)
+  const todayStr = today.toLocaleDateString('sv', { timeZone: 'Asia/Taipei' })
   const latest = analyses[0] as PortfolioAnalysis | undefined
 
   const computed = useMemo(() => {

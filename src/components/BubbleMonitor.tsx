@@ -248,6 +248,56 @@ export default function BubbleMonitor({ data, history }: { data: BubbleSnapshot;
         <p className="text-sm text-slate-700 leading-relaxed">{data.summary}</p>
       </div>
 
+      {/* Market State + 3 Risk Scores */}
+      {(data.marketState || data.bubbleRiskScore !== undefined) && (
+        <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-4">
+          <div className="flex items-center gap-2 mb-3">
+            <Shield size={16} className="text-indigo-500" />
+            <span className="text-sm font-semibold text-slate-700">跨資產風險矩陣</span>
+          </div>
+          {data.marketState && (
+            <div className="mb-4 flex items-center gap-3">
+              <div className="w-10 h-10 rounded-xl bg-indigo-100 flex items-center justify-center text-lg font-black text-indigo-700 flex-shrink-0">
+                {data.marketState}
+              </div>
+              <div>
+                <div className="text-xs text-slate-400 mb-0.5">市場狀態分類</div>
+                <div className="text-sm font-bold text-slate-800">{data.marketStateLabel ?? `狀態 ${data.marketState}`}</div>
+              </div>
+            </div>
+          )}
+          <div className="space-y-3">
+            {data.bubbleRiskScore !== undefined && (
+              <div>
+                <div className="flex justify-between items-center mb-1">
+                  <span className="text-xs font-medium text-slate-600">泡沫風險指數</span>
+                  <span className="text-xs font-bold" style={{ color: scoreColor(data.bubbleRiskScore) }}>{data.bubbleRiskScore} / 100</span>
+                </div>
+                <RiskBar score={data.bubbleRiskScore} />
+              </div>
+            )}
+            {data.crisisRiskScore !== undefined && (
+              <div>
+                <div className="flex justify-between items-center mb-1">
+                  <span className="text-xs font-medium text-slate-600">金融危機風險指數</span>
+                  <span className="text-xs font-bold" style={{ color: scoreColor(data.crisisRiskScore) }}>{data.crisisRiskScore} / 100</span>
+                </div>
+                <RiskBar score={data.crisisRiskScore} />
+              </div>
+            )}
+            {data.deleveragingRiskScore !== undefined && (
+              <div>
+                <div className="flex justify-between items-center mb-1">
+                  <span className="text-xs font-medium text-slate-600">去槓桿風險指數</span>
+                  <span className="text-xs font-bold" style={{ color: scoreColor(data.deleveragingRiskScore) }}>{data.deleveragingRiskScore} / 100</span>
+                </div>
+                <RiskBar score={data.deleveragingRiskScore} />
+              </div>
+            )}
+          </div>
+        </div>
+      )}
+
       {/* Risk Trend Chart */}
       <RiskTrendChart history={history} />
 
