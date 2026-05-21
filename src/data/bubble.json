@@ -1,6 +1,6 @@
 [
   {
-    "date": "2026-05-20",
+    "date": "2026-05-21",
     "defconLevel": 2,
     "overallRisk": 68.6,
     "alertLabel": "DEFCON 2 — CRITICAL",
@@ -137,7 +137,12 @@
         "buffett": 193,
         "result": "S&P -25%"
       }
-    ]
+    ],
+    "marketState": "C",
+    "marketStateLabel": "泡沫後期",
+    "bubbleRiskScore": 82,
+    "crisisRiskScore": 43,
+    "deleveragingRiskScore": 50
   },
   {
     "date": "2026-05-19",
