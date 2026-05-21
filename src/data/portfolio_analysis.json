@@ -1,5 +1,165 @@
 [
   {
+    "date": "2026-05-22",
+    "generatedAt": "2026-05-22T06:15:07+08:00",
+    "summary": {
+      "totalInvested": 679500,
+      "estimatedValue": null,
+      "returnAmount": null,
+      "returnPercent": null,
+      "overallRisk": "high",
+      "monthlyDCA": 20000
+    },
+    "dcaToday": [],
+    "dcaUpcoming": [
+      {
+        "code": "YUI117",
+        "date": "2026-05-24",
+        "amount": 1000
+      },
+      {
+        "code": "ALI099",
+        "date": "2026-05-26",
+        "amount": 1000
+      },
+      {
+        "code": "CSI132",
+        "date": "2026-05-26",
+        "amount": 1000
+      }
+    ],
+    "funds": [
+      {
+        "code": "CSI104",
+        "name": "國泰泰享退2039",
+        "totalInvested": 126000,
+        "paymentsCount": 0,
+        "nav": null,
+        "navDate": null,
+        "estimatedValue": null,
+        "returnAmount": null,
+        "returnPercent": null,
+        "avgNav": 17.2537,
+        "units": 7302.8,
+        "riskLevel": "high",
+        "riskNotes": "目標日期組合基金，股票暴露約七成並含全球債券，在市場狀態C（泡沫後期）下同時承受股市估值偏高與長債殖利率上行的雙重壓力。今日因 MoneyDJ／基富通等淨值來源遭執行環境網路白名單封鎖（403），無法取得 CSI104 對應級別的可靠淨值，故暫不計算報酬，買入均價 17.25 為比較基準。泡沫風險 82 分顯示股票部位回檔風險偏高，去槓桿 50 分代表全球債券部位在美 10 年殖利率攻 4.67%、市場改定價 Fed 升息的環境下淨值承壓。此為最大持倉（126,000），市場狀態已達 C 級應特別關注；維持持有但暫緩任何單筆加碼，待泡沫分回落至 70 以下或地緣停火訊號出現再評估。",
+        "allocation": null
+      },
+      {
+        "code": "ALI099",
+        "name": "安聯四季成長",
+        "totalInvested": 41000,
+        "paymentsCount": 0,
+        "nav": null,
+        "navDate": null,
+        "estimatedValue": null,
+        "returnAmount": null,
+        "returnPercent": null,
+        "avgNav": 11.99,
+        "units": 3420.1,
+        "riskLevel": "medium",
+        "riskNotes": "多元股債混合配置，對利率敏感，在去槓桿環境中相對單一股票型穩定，但停滯性通膨同時壓抑股、債兩端表現。網路來源受限無法確認 ALI099 對應級別淨值（搜尋到的 20 元以上為不同級別），故報酬暫掛 null，均價 11.99 為基準。泡沫 82＋去槓桿 50 的組合對其債券部位不利，但混合屬性可緩衝股市回檔，金融危機分 43 尚屬中性。維持五張小額定期定額（每月 5,000）以分散買點，逢淨值明顯回檔反而是平均成本良機，無須暫停。",
+        "allocation": null
+      },
+      {
+        "code": "CSI132",
+        "name": "國泰泰享退2049(TISA)",
+        "totalInvested": 33000,
+        "paymentsCount": 1,
+        "nav": null,
+        "navDate": null,
+        "estimatedValue": null,
+        "returnAmount": null,
+        "returnPercent": null,
+        "avgNav": 22.0674,
+        "units": 1450.1,
+        "riskLevel": "high",
+        "riskNotes": "與 CSI104 同系列但到期更遠、存續期更長，對長端殖利率上行最敏感，目前正逢美債殖利率 16 個月新高的逆風。淨值來源封鎖無法取得可靠數字，均價 22.07 為基準，本月已於 5/21 新增一筆 1,000 扣款。泡沫 82 顯示其股票成長部位估值偏貴，去槓桿 50 代表長債部位淨值波動加大，形成雙重承壓。TISA 為長期退休帳戶、時間站在這邊；維持每月 6,000 定扣，市場狀態 C 的回檔對長期投資人是累積單位的機會，不調整。",
+        "allocation": null
+      },
+      {
+        "code": "BRI023",
+        "name": "貝萊德享退2050",
+        "totalInvested": 30000,
+        "paymentsCount": 0,
+        "nav": null,
+        "navDate": null,
+        "estimatedValue": null,
+        "returnAmount": null,
+        "returnPercent": null,
+        "avgNav": 14.35,
+        "units": 2089.9,
+        "riskLevel": "high",
+        "riskNotes": "全部七檔中股票暴露最高、存續期最長，對殖利率上升最敏感，是當前停滯性通膨交易下最脆弱的部位。搜尋到的同系列 A 類型淨值 10.72 與均價 14.35 級別不符、無法確認，報酬暫掛 null。泡沫 82＋殖利率攻 4.67% 直接打擊其長債與成長股雙重曝險，去槓桿 50 放大波動，此基金風險評為 high。維持每月 3,000 定扣但列為最須警戒標的；若金融危機分升破 60 或 Fed 確認轉向升息，考慮暫停加碼。",
+        "allocation": null
+      },
+      {
+        "code": "FSI069",
+        "name": "第一金全球大趨勢",
+        "totalInvested": 1000,
+        "paymentsCount": 0,
+        "nav": null,
+        "navDate": null,
+        "estimatedValue": null,
+        "returnAmount": null,
+        "returnPercent": null,
+        "avgNav": 11.39,
+        "units": 87.8,
+        "riskLevel": "high",
+        "riskNotes": "全球趨勢股票型，科技／AI 權重高，在泡沫後期（狀態 C、泡沫分 82）為理論上回檔幅度最大的類別。搜尋到「第一金全球大趨勢」NAV 49.5 與均價 11.39 不符（疑為不同級別／統計），無法採用，報酬暫掛 null。AI 敘事雖未受油價直接衝擊（今日核心判斷指企業 AI 落地仍加速），但泡沫 82 意味估值已高、對市場情緒逆轉高度敏感。持倉極小（1,000），維持每月 2,000 定扣以小額參與 AI 主題；嚴設紀律，泡沫分破 85 或那斯達克轉空時暫緩加碼。",
+        "allocation": null
+      },
+      {
+        "code": "YUI117",
+        "name": "元大台灣50",
+        "totalInvested": 3000,
+        "paymentsCount": 0,
+        "nav": null,
+        "navDate": null,
+        "estimatedValue": null,
+        "returnAmount": null,
+        "returnPercent": null,
+        "avgNav": 58.14,
+        "units": 51.6,
+        "riskLevel": "high",
+        "riskNotes": "追蹤台灣 50 指數，與台股大盤及外資動向高度連動，台股近日連 3 黑、債殺油漲的停滯性通膨交易使其直接承壓。搜尋到的元大台灣 50 相關淨值（95.59）與均價 58.14 級別不符、無法確認，報酬暫掛 null。泡沫 82 反映台股（尤其權值 AI 半導體）估值偏高，外資若因美債殖利率走高而續賣超將直接壓低指數。維持每月 4,000（四筆）定扣分散買點；密切關注外資動向與台幣匯率，若指數急殺反而加速累積單位，不停扣。",
+        "allocation": null
+      },
+      {
+        "code": "00878",
+        "name": "國泰永續高股息ETF",
+        "totalInvested": 445500,
+        "paymentsCount": 0,
+        "nav": 27.55,
+        "navDate": "2026-05-21",
+        "estimatedValue": 578550,
+        "returnAmount": 133050,
+        "returnPercent": 29.87,
+        "avgNav": 21.2143,
+        "units": 21000,
+        "riskLevel": "medium",
+        "riskNotes": "台股高股息 ETF，受殖利率環境與台股走勢雙重影響，在升息預期升溫時高股息資產的相對吸引力可能下降。現價約 27.55（5/21），相對均價 21.21 報酬約 +29.9%，為組合中表現最穩健、且唯一可確認市值的部位。泡沫 82 下其防禦性與股息現金流提供緩衝，但去槓桿 50 與殖利率走高使其與債券型資產競爭、評價面受抑。作為組合壓艙石可續抱領息；無定扣合約，若想提高防禦比例可在台股回檔時分批加碼此檔。",
+        "allocation": null
+      }
+    ],
+    "alerts": [
+      {
+        "level": "warning",
+        "message": "資料來源受限：本次因執行環境網路白名單限制，MoneyDJ／基富通／Yahoo 等淨值來源全數回傳 403，6 檔台幣基金無法取得對應級別的可靠淨值，報酬暫以 null 呈現；僅 00878（交易所掛牌）取得現價 27.55。"
+      },
+      {
+        "level": "danger",
+        "message": "停滯性通膨警示：伊朗戰爭推升 Brent 至 112.93、美 10 年殖利率攻 4.67%（16 個月高），市場改定價 Fed 升息，長存續期退休基金（BRI023／CSI132／CSI104）淨值面臨明顯壓力。"
+      },
+      {
+        "level": "warning",
+        "message": "DEFCON 2／泡沫風險 82：建議暫停對成長型部位的單筆加碼，維持既有定期定額紀律即可。"
+      }
+    ],
+    "marketContext": "市場狀態 C（泡沫後期）、整體風險 68.6/100、DEFCON 2；泡沫風險 82、金融危機 43、去槓桿 50。今日主導敘事為伊朗戰爭引發的能源衝擊（Brent 112.93、荷莫茲海峽近乎封鎖、約 20% 原油供給中斷），推升通膨預期、美 10 年殖利率攻 4.67% 並使市場改定價 Fed 升息——典型停滯性通膨交易（股黑、債殺、油漲）。對 Aaron 的組合：長存續期退休基金（BRI023／CSI132／CSI104，合計約 18.9 萬，占比最重）受殖利率上行衝擊最大；全球股票型 FSI069 受泡沫後期回檔風險；台股部位 YUI117／00878 受外資動向與升息預期壓抑；唯 00878 高股息與混合型 ALI099 相對抗震。整體風險上調至 high。",
+    "recommendation": "在市場狀態 C＋DEFCON 2＋泡沫 82 的環境下，採『維持定扣紀律、暫停單筆加碼、提高現金緩衝』三原則。具體：(1) 所有定期定額照常執行，市場回檔正是降低平均成本的時機，不停扣；(2) 暫緩對最大持倉 CSI104 及長存續期 BRI023 的任何單筆加碼，待泡沫分回落 <70 或地緣停火；(3) BRI023 列為最高警戒，若金融危機分破 60 或 Fed 確認升息則暫停加碼；(4) 新增閒置資金優先保留現金，或加碼防禦性 00878 而非成長股；(5) 緊盯三觸發點——Brent 油價、美 10 年殖利率是否站穩 4.67% 上方、以色列是否動手；任一惡化則風險資產同步殺，停火則為最強反彈催化。"
+  },
+  {
     "date": "2026-05-21",
     "generatedAt": "2026-05-21T00:00:00Z",
     "summary": {
