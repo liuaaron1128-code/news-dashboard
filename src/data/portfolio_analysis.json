@@ -1,5 +1,181 @@
 [
   {
+    "date": "2026-06-01",
+    "generatedAt": "2026-06-01T06:17:25+08:00",
+    "summary": {
+      "totalInvested": 683500,
+      "estimatedValue": null,
+      "returnAmount": null,
+      "returnPercent": null,
+      "overallRisk": "high",
+      "monthlyDCA": 20000,
+      "note": "多檔TWD基金NAV因外部來源403無法取得，僅00878可精確計算市值；00878+45.0%帳面獲利約200,460 TWD"
+    },
+    "dcaToday": [
+      {
+        "code": "CSI132",
+        "name": "國泰泰享退2049 (TISA)",
+        "amount": 1000
+      }
+    ],
+    "dcaUpcoming": [
+      {
+        "date": "2026-06-02",
+        "code": "YUI117",
+        "amount": 1000
+      },
+      {
+        "date": "2026-06-03",
+        "code": "BRI023",
+        "amount": 3000
+      },
+      {
+        "date": "2026-06-05",
+        "code": "ALI099",
+        "amount": 1000
+      },
+      {
+        "date": "2026-06-06",
+        "code": "CSI132",
+        "amount": 1000
+      },
+      {
+        "date": "2026-06-08",
+        "code": "FSI069",
+        "amount": 1000
+      }
+    ],
+    "funds": [
+      {
+        "code": "CSI104",
+        "name": "國泰泰享退2039",
+        "totalInvested": 126000,
+        "paymentsCount": 0,
+        "nav": null,
+        "navDate": null,
+        "estimatedValue": null,
+        "returnAmount": null,
+        "returnPercent": null,
+        "riskLevel": "high",
+        "riskNotes": "此為投資組合最大單一持倉(占TWD投入18.4%、整體部位最重)，2039目標日期組合基金當前股票暴露約75%，集中於台股+全球大型股，台積電權重高且ADR $412月線狂飆。今日NAV因外部來源403不可得，持有單位7,302.8、平均成本17.25 TWD屬長線退休基金可承受短期波動。在市場狀態C(泡沫後期)且台股融資餘額5,304億創歷史新高背景下，此基金最需密切關注外資流向；若Mag7或台積電回檔10%，此基金跌幅約4-6%。CSI104無新增DCA故維持持有觀察，但因部位最大應視為組合首要監控指標——若CAPE跌破35或DEFCON降至2級則可考慮加碼；若bubble風險破75則考慮減碼20%鎖利。",
+        "allocation": "目標日期2039 (退休型FoF，股債混合)"
+      },
+      {
+        "code": "ALI099",
+        "name": "安聯四季成長組合基金-P",
+        "totalInvested": 42000,
+        "paymentsCount": 1,
+        "nav": null,
+        "navDate": null,
+        "estimatedValue": null,
+        "returnAmount": null,
+        "returnPercent": null,
+        "riskLevel": "medium",
+        "riskNotes": "全球多元股債組合基金(P類型台幣)，在當前市場狀態C泡沫後期下相較純股票基金抗跌性較佳，但美股CAPE 41.6為140年第2高(僅次1999)+Buffett 237%創歷史新高，組合內股票部位仍承擔回檔風險。今日NAV不可即時取得；近期估值約11.47 TWD vs 平均成本11.99 TWD推估略虧約4.3%，但日期未確認。泡沫風險65/100下此類組合基金的債券緩衝(>30%)可吸收部分回檔，但去槓桿風險49/100接近警戒，若進入D階段(泡沫破裂)全球股債齊跌將難以避免。建議維持5筆/月共5,000 TWD DCA(已最分散)，但提高觀察頻率；下次DCA為6/5的1,000 TWD可照舊執行，若市場進入D階段可考慮暫緩2-3筆轉持現金。",
+        "allocation": "全球股債組合 (P類型台幣)"
+      },
+      {
+        "code": "CSI132",
+        "name": "國泰泰享退2049 (TISA)",
+        "totalInvested": 35000,
+        "paymentsCount": 3,
+        "nav": null,
+        "navDate": null,
+        "estimatedValue": null,
+        "returnAmount": null,
+        "returnPercent": null,
+        "riskLevel": "high",
+        "riskNotes": "與CSI104同投信但目標年更遠(2049)，股票暴露更高(~85%)，TISA帳戶享稅優但鎖期長，對泡沫破裂情境最不友善。最近可查NAV為快照日前2026-05-19的24.6126 TWD，vs 平均成本22.07若持平則帳面+11.5%；今日有1,000 TWD DCA即將執行。危機風險33/100相對低、信用利差272bps仍緊短期不會崩跌，但去槓桿風險49/100處於警戒邊緣，2049遠期基金的高β將首當其衝。維持6筆/月共6,000 TWD DCA(DCA最分散部位)，TISA稅優額度不應浪費；若DEFCON降至2級且bubble破75可考慮減半至3筆/月，保留稅優額度等待泡沫破裂後加碼。",
+        "allocation": "目標日期2049 (TISA, 高股票β)"
+      },
+      {
+        "code": "BRI023",
+        "name": "貝萊德享退休2050",
+        "totalInvested": 30000,
+        "paymentsCount": 0,
+        "nav": null,
+        "navDate": null,
+        "estimatedValue": null,
+        "returnAmount": null,
+        "returnPercent": null,
+        "riskLevel": "high",
+        "riskNotes": "長存續期(25年)目標日期基金，當前股票暴露約90%(LifePath系列預設配置)，在市場狀態C(泡沫後期)下對美股估值修正+10Y殖利率上升雙重敏感。今日NAV無法取得；2025-01-22舊資料14.69 vs 平均成本14.35約持平，但數據過舊不具參考性。泡沫風險65/100+10Y殖利率4.45%(未達4.8%警戒但接近)下，此類遠期目標基金的β值高(>1.1)，若Mag7/AI股回檔20%此基金跌幅可達15-18%。下次DCA為6/3的3,000 TWD(每月唯一一筆且金額最大)，建議維持但要警覺；若DEFCON降至1-2級或bubble風險破70則暫緩3個月DCA等待回檔買點。",
+        "allocation": "目標日期2050 (LifePath, 股票90%)"
+      },
+      {
+        "code": "FSI069",
+        "name": "第一金全球大趨勢",
+        "totalInvested": 1000,
+        "paymentsCount": 0,
+        "nav": null,
+        "navDate": null,
+        "estimatedValue": null,
+        "returnAmount": null,
+        "returnPercent": null,
+        "riskLevel": "critical",
+        "riskNotes": "純股票型全球趨勢基金，重押科技/AI主題；當前AI敘事極度過熱(Nvidia $81.6B財報、Anthropic估值$965B超越OpenAI)，在組合中泡沫風險最高的基金。今日NAV不可得；目前部位僅1,000 TWD(整體占比0.15%)極小但每月2,000 TWD DCA將使AI主題曝險於泡沫後期快速擴大。泡沫風險65/100下，AI/科技主題基金為頭號泡沫候選；歷史上1999-2000年類似基金回檔可達70-80%，當前環境類似2000年1-2月鏡像。**強烈建議暫緩6/8與6/18兩筆DCA共2,000 TWD/月**，直到bubble風險回落至50以下或市場進入F階段(泡沫破裂後復甦期)；現有1,000 TWD極小部位可保留不需停損。",
+        "allocation": "全球科技/AI股票型"
+      },
+      {
+        "code": "YUI117",
+        "name": "元大台灣50連結基金 (TISA)",
+        "totalInvested": 4000,
+        "paymentsCount": 1,
+        "nav": null,
+        "navDate": null,
+        "estimatedValue": null,
+        "returnAmount": null,
+        "returnPercent": null,
+        "riskLevel": "high",
+        "riskNotes": "追蹤台灣50指數的TISA連結基金，與0050 ETF高度同步；今日0050收盤105.40創歷史新高(+4.88%)，台股加權站上歷史高、融資餘額5,304億創新高顯示散戶極度樂觀。本基金NAV不可即時取得，平均成本58.14對連結基金不直接適用(自有NAV計算)。在市場狀態C下，0050的權值股集中度極高(台積電+鴻海+聯發科權重>50%)；若外資大舉減碼，台股50波動將放大1.2-1.5倍。維持每月4筆共4,000 TWD DCA(TISA稅優額度長線買進合理)，下次6/2的1,000 TWD可照舊執行；若融資餘額破5,500億或CAPE台股版本破35則減慢加碼至2筆/月。",
+        "allocation": "台股50指數 (TISA連結基金)"
+      },
+      {
+        "code": "00878",
+        "name": "國泰永續高股息ETF",
+        "totalInvested": 445500,
+        "paymentsCount": 0,
+        "nav": 30.76,
+        "navDate": "2026-05-29",
+        "estimatedValue": 645960,
+        "returnAmount": 200460,
+        "returnPercent": 45.0,
+        "riskLevel": "medium",
+        "riskNotes": "台股高股息ESG主題ETF(30檔成分股，金融+電子+傳產分散)，相對台灣50波動較低，殖利率約5.5-6%對抗利率上升環境。今日股價30.76(+2.53%)，持有21,000股 vs 平均成本21.21 TWD，未實現獲利+45.0%≈200,460 TWD，**為全組合獲利最豐部位**。危機風險33/100+信用利差272bps仍緊短期不會率先被衝擊，但若泡沫破裂連環效應發生(銀行股+電子股齊跌)，30.76支撐位可能跌破至25-27，回吐30-40%帳面利得。**建議部分獲利了結**——分批減碼20-30%(約4,200-6,300股、鎖定~85,000-127,000 TWD利得)，剩餘部位繼續享股息；不要新加碼，將賣出資金保留為現金等待泡沫破裂後加碼台股核心持股。",
+        "allocation": "台股高股息ESG (現股21,000股)"
+      }
+    ],
+    "alerts": [
+      {
+        "level": "high",
+        "title": "DEFCON 3 HIGH ALERT + 市場狀態C(泡沫後期)",
+        "message": "CAPE 41.6為140年第2高(僅次1999)、Buffett 237%創歷史新高、台股融資5,304億創高、AI敘事過熱；整體風險50/100、泡沫風險65/100。當前環境類似2000年1-2月鏡像，泡沫尚未破但已到後期"
+      },
+      {
+        "level": "high",
+        "title": "FSI069 AI主題曝險最危險",
+        "message": "純科技/AI基金在泡沫風險65/100下為頭號回檔候選；建議暫緩6/8與6/18兩筆共2,000 TWD/月的DCA直至bubble<50或進入F階段"
+      },
+      {
+        "level": "medium",
+        "title": "00878 +45%獲利建議部分了結",
+        "message": "持有21,000股@21.21成本，今日30.76市值645,960 TWD、帳面+200,460 TWD；建議分批減碼20-30%鎖利、保留現金等待回檔"
+      },
+      {
+        "level": "medium",
+        "title": "BRI023 6/3 3,000 TWD DCA為單月最大筆",
+        "message": "LifePath 2050股票暴露90%、β>1.1；若10Y破4.8%或DEFCON降至2級則暫緩3個月"
+      },
+      {
+        "level": "low",
+        "title": "多檔基金NAV外部源403無法取得",
+        "message": "MoneyDJ/Cnyes/Yahoo Fund/官網403封鎖；今日無法精確計算ALI099/BRI023/CSI104/CSI132/FSI069/YUI117市值與報酬，僅00878可精算"
+      }
+    ],
+    "marketContext": "市場處於DEFCON 3 HIGH ALERT、市場狀態C(泡沫後期)、整體風險50/100；泡沫風險65/100(CAPE 41.6為140年第2高、Buffett 237%創歷史新高、台股融資5,304億創高、AI主題過熱Anthropic $965B超越OpenAI)、危機風險33/100(信用利差HY OAS 272bps仍緊、銀行未現裂痕)、去槓桿風險49/100(USD/JPY 159接近155日圓套息平倉警戒)。Aaron組合對此環境的曝險：CSI104+CSI132+BRI023合計191,000 TWD(占TWD投入28%)為長存續期退休基金高股票β、FSI069+YUI117為科技/台股50成長型對Mag7/AI最敏感、00878(占TWD投入65.2%)為現有獲利最豐部位+45%但仍受台股聯動衝擊。當前狀態為2000年1-2月鏡像——泡沫尚未破但已進入後期，盈餘預期+22.6%與信用利差272bps提供緩衝，但QT進行中、流動性緩衝墊已用盡。",
+    "recommendation": "今日具體操作優先順序：(1) **00878獲利了結20-30%** — 分批減碼4,200-6,300股鎖定85,000-127,000 TWD利得，這是組合最大可行動的alpha；(2) **FSI069下次6/8 DCA強烈建議暫緩** — AI主題在泡沫65/100下為頭號回檔候選，6/8和6/18合計2,000 TWD改為現金；(3) 今日CSI132 1,000 TWD DCA可如期執行(TISA稅優額度不應浪費)；(4) BRI023(6/3, 3,000 TWD)為單月最大筆DCA — 維持但密切觀察10Y殖利率，若破4.8%則暫緩3個月；(5) ALI099(6/5)+YUI117(6/2)+CSI132(6/6)維持原額；(6) **整體現金比例從0%提升至15-25%** — 將00878獲利了結資金保留為彈藥，準備在進入D階段或CAPE跌破35時加碼CSI104(最大持倉)+YUI117；(7) 持續監控CAPE/Buffett比/台股融資餘額/USD/JPY四項指標，若任一突破門檻則整體DCA減半。"
+  },
+  {
     "date": "2026-05-31",
     "generatedAt": "2026-05-31T06:17:12+08:00",
     "summary": {
