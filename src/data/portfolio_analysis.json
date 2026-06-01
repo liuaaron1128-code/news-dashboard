@@ -1,5 +1,186 @@
 [
   {
+    "date": "2026-06-02",
+    "generatedAt": "2026-06-02T06:15:46+08:00",
+    "summary": {
+      "totalInvested": 684500,
+      "estimatedValue": 1006939,
+      "returnAmount": 323439,
+      "returnPercent": 47.32,
+      "overallRisk": "high",
+      "monthlyDCA": 20000,
+      "note": "estimatedValue 不含 FSI069（NAV 來源 403，無法取得），其他 6 檔均有 NAV"
+    },
+    "dcaToday": [
+      {
+        "code": "YUI117",
+        "amount": 1000,
+        "paymentDay": 2
+      }
+    ],
+    "dcaUpcoming": [
+      {
+        "code": "BRI023",
+        "amount": 3000,
+        "paymentDay": 3,
+        "date": "2026-06-03"
+      },
+      {
+        "code": "ALI099",
+        "amount": 1000,
+        "paymentDay": 5,
+        "date": "2026-06-05"
+      },
+      {
+        "code": "CSI132",
+        "amount": 1000,
+        "paymentDay": 6,
+        "date": "2026-06-06"
+      },
+      {
+        "code": "FSI069",
+        "amount": 1000,
+        "paymentDay": 8,
+        "date": "2026-06-08"
+      },
+      {
+        "code": "YUI117",
+        "amount": 1000,
+        "paymentDay": 9,
+        "date": "2026-06-09"
+      }
+    ],
+    "funds": [
+      {
+        "code": "CSI104",
+        "name": "國泰泰享退2039目標日期組合基金",
+        "totalInvested": 126000,
+        "paymentsCount": 0,
+        "nav": 24.3124,
+        "navDate": "2026-05-28",
+        "estimatedValue": 177549,
+        "returnAmount": 51549,
+        "returnPercent": 40.91,
+        "riskLevel": "high",
+        "riskNotes": "最大持倉（占 TWD 帳戶 18%），目標日期 2039 屬中後段 glide path，仍維持約 60-65% 股票暴露，主要曝險為全球大型股 + 台股。今日 NAV 24.3124（5/28）vs 平均成本 17.2537，浮盈 +40.91%，已是非常大的未實現獲利。市場狀態 C「泡沫後期」、bubbleRisk 73、deleveragingRisk 57，美股 CAPE 41.33（140 年第二高）疊加 FINRA 融資餘額 $1.30T 歷史新高，這檔基金最大尾部風險在 TSMC/NVDA 財測 miss 與美股估值修正同步發生時，單日跌幅可能 -3 至 -5%。建議：暫不主動加碼（無 DCA 合約即代表自然鎖定），若 NAV 跌破 23.0 視為觸發點，準備分批獲利了結 20-30% 以鎖住浮盈，等待 marketState 回到 B 再重新建倉。",
+        "allocation": 18.4
+      },
+      {
+        "code": "ALI099",
+        "name": "安聯四季成長組合基金 P 類型(台幣)",
+        "totalInvested": 42000,
+        "paymentsCount": 1,
+        "nav": 21.99,
+        "navDate": "2026-05-29",
+        "estimatedValue": 76208,
+        "returnAmount": 34208,
+        "returnPercent": 81.45,
+        "riskLevel": "high",
+        "riskNotes": "全球多元組合型（股債混合），P 類型 1 年績效 +33.68% 反映今年股債雙漲行情，但浮盈 +81.45% 顯示帳齡較久、累積獲利已非常豐厚。當前市場狀態 C，組合型基金理論上應發揮分散效果，惟 10Y 美債殖利率 4.44%、HY OAS 僅 2.72% 過度樂觀，債券端 cushion 已被壓縮。今日 5 筆 DCA 合約（每月 5,000）仍積極累積，但在 bubbleRisk 73 環境下持續高位定扣等於拉高平均成本。建議：5 筆合約保留 3 筆主力（日 5/12/19），暫停日 14、26 兩筆以降月扣至 3,000；若 marketState 升至 D 則全部暫停。",
+        "allocation": 4.2
+      },
+      {
+        "code": "CSI132",
+        "name": "國泰泰享退2049目標日期組合基金 (TISA)",
+        "totalInvested": 35000,
+        "paymentsCount": 3,
+        "nav": 24.6126,
+        "navDate": "2026-05-19",
+        "estimatedValue": 38691,
+        "returnAmount": 3691,
+        "returnPercent": 10.54,
+        "riskLevel": "high",
+        "riskNotes": "TISA 帳戶長存續期（2049 目標），目前 glide path 股票權重應在 80% 以上，對全球股市估值修正最敏感。NAV 24.6126（5/19，較舊）vs 平均成本 22.0674，浮盈僅 +10.54%（因近期才大量買入），意味成本墊高在估值頂部。bubbleRisk 73 + 美股 CAPE 41 + Buffett 235.9% 雙頂點，此基金未來 12 個月若遇 mean reversion，淨值回落 -15 至 -20% 並非極端情境。建議：TISA 稅務優惠是長線優勢，6 筆 DCA（月扣 6,000）不全停，但建議暫停日 1、6、26 三筆降至月扣 3,000；保留日 11、16、21（避開月初月末波動加大時段），若 DEFCON 升至 2 則全暫停。",
+        "allocation": 4.2
+      },
+      {
+        "code": "BRI023",
+        "name": "貝萊德享退休系列2050目標日期組合基金 A",
+        "totalInvested": 30000,
+        "paymentsCount": 0,
+        "nav": 18.01,
+        "navDate": "2026-05-06",
+        "estimatedValue": 37639,
+        "returnAmount": 7639,
+        "returnPercent": 25.46,
+        "riskLevel": "high",
+        "riskNotes": "2050 目標日期最長存續期，glide path 股票權重應 85%+ 全球股票（美股權重高），對美股估值與利率雙敏感。NAV 18.01（5/6 較舊，今日實際應更高）vs 平均成本 14.35，浮盈 +25.46%。當前美股估值極端（CAPE 41.33，140 年第二高），加上 USD/JPY 159.26 接近 carry trade 警戒線，若日圓 unwind 發生，全球美股部位將同步承壓。6/17 Warsh 首戰 FOMC 為近月關鍵事件。建議：日 3 的 NT$3,000 DCA 明日（6/3）扣款維持，但若 6/17 FOMC 後 marketState 升至 D，則暫停此檔 DCA 並重新評估全球股票權重。",
+        "allocation": 3.4
+      },
+      {
+        "code": "FSI069",
+        "name": "第一金全球大趨勢基金",
+        "totalInvested": 1000,
+        "paymentsCount": 0,
+        "nav": null,
+        "navDate": null,
+        "estimatedValue": null,
+        "returnAmount": null,
+        "returnPercent": null,
+        "riskLevel": "high",
+        "riskNotes": "全球趨勢/科技類股票型基金，AI 敘事與半導體曝險最高，今日 NAV 來源 403 無法取得（MoneyDJ/Fubon 均封鎖 WebFetch），需手動於第一金投信官網確認。在 bubbleRisk 73、美股 CAPE 41、AAII bull 46% 的環境下，此類「主題型科技基金」是泡沫破裂時跌幅最大的類別之一（歷史可比：2000 年科網基金跌 -60%）。當前持倉僅 NT$1,000 試水，曝險可控。建議：日 8、18 兩筆 DCA 維持（每月 2,000）作為紀律性累積，但若 marketState 升至 D 或 TSMC/NVDA 出現財測 miss，立即暫停。",
+        "allocation": 0.1
+      },
+      {
+        "code": "YUI117",
+        "name": "元大台灣卓越50ETF連結基金 A 不配息(台幣)",
+        "totalInvested": 5000,
+        "paymentsCount": 2,
+        "nav": 59.35,
+        "navDate": "2026-05-22",
+        "estimatedValue": 5062,
+        "returnAmount": 62,
+        "returnPercent": 1.25,
+        "riskLevel": "high",
+        "riskNotes": "追蹤 0050（台灣 50 指數），TSMC 權重約 50%，純台股大型權值股曝險。NAV 59.35（5/22）vs 平均成本 58.14，浮盈僅 +1.25%（剛建倉，DCA 累積中）。台股 44,732 點、外資史上第五大買超 NT$669.8 億，AI 主升段尚未結束但「PCE 3.8% + 6/17 Warsh FOMC」雙重風險逼近。bubbleRisk 73 + 半導體單一個股集中度，意味 TSMC 法說 miss 或 NVDA 財報 miss 將同時放大此檔跌幅。今日剛扣 NT$1,000（日 2），下次日 9（6/9）。建議：4 筆 DCA 維持（紀律累積），但若 TSMC 跌破 1,400 元或台股單日 -3% 以上，啟動暫停日 17、24 兩筆。",
+        "allocation": 0.7
+      },
+      {
+        "code": "00878",
+        "name": "國泰永續高股息ETF",
+        "totalInvested": 445500,
+        "paymentsCount": 0,
+        "nav": 31.99,
+        "navDate": "2026-06-01",
+        "estimatedValue": 671790,
+        "returnAmount": 226290,
+        "returnPercent": 50.79,
+        "riskLevel": "high",
+        "riskNotes": "最大單一持倉（占 TWD 帳戶 65%），台股高股息 ETF，前 30 大成分股集中金融 + 電子高息股。今日 6/1 收 31.99（+4.0%）vs 平均成本 21.2143，浮盈 +50.79%（NT$226,290 未實現獲利），是整體組合最大獲利來源。06/12 配息 0.66 元創歷史新高，殖利率仍具吸引力，但 50% 浮盈在 marketState C 環境下風險不對稱：上行空間有限（殖利率壓縮），下行空間大（台股估值修正 + 升息預期延後）。建議：DCA 無，但因部位過大（占比 65%），考慮分批獲利了結 10-15%（賣出約 2,100-3,150 股鎖 NT$22,600-33,900 獲利），把現金部位拉到 5-8%，待 marketState 回 B 或 00878 回到 28 元以下再重新加碼。",
+        "allocation": 65.0
+      }
+    ],
+    "alerts": [
+      {
+        "level": "high",
+        "title": "市場狀態 C 泡沫後期 + 整體組合浮盈 +47%",
+        "message": "bubbleRiskScore 73/100、美股 CAPE 41.33（140 年第二高）、Buffett 235.9% 雙頂點，組合浮盈集中於 00878（+50.79%、NT$226K）與 CSI104（+40.91%、NT$51K），未實現獲利已達 NT$323K（+47.32%）。在估值極端高位下，獲利保護優先級高於再加碼。"
+      },
+      {
+        "level": "high",
+        "title": "00878 占比 65% — 集中度風險過高",
+        "message": "單一標的 NT$671,790 估計市值 / TWD 帳戶 NT$1,006,939 = 66.7%，遠超合理單一標的上限 30-40%。台股若遇 TSMC 財測 miss、美股估值修正、Hormuz 突發中斷等任一事件，組合單日跌幅可能 -3 至 -5%。"
+      },
+      {
+        "level": "medium",
+        "title": "6/17 Warsh 首戰 FOMC + 5/30 PCE 3.8% 雙重風險",
+        "message": "今日 ISM 製造業 PMI 22:00 公布（跌破 50 觸發降息預期上升），但若 6/17 FOMC 鷹派意外（Warsh 新任主席首戰立場未知），10Y 殖利率可能急升 +20-30bp，BRI023、CSI132、CSI104 等長存續期目標日期基金將同步承壓。"
+      },
+      {
+        "level": "medium",
+        "title": "FSI069 NAV 無法取得",
+        "message": "MoneyDJ / Fubon 等淨值來源 WebFetch 全部 403，需手動至第一金投信官網 (fsitc.com.tw) 查證最新 NAV。目前持倉僅 NT$1,000，影響可忽略，但需建立替代資料源（建議使用鉅亨買基金 A03061 或 Yahoo 奇摩股市）。"
+      },
+      {
+        "level": "low",
+        "title": "今日 DCA — YUI117 NT$1,000 已扣款",
+        "message": "6/2 完成元大台灣 50 連結基金 NT$1,000 定期定額。明日 6/3 將扣 BRI023 NT$3,000（貝萊德 2050），6/5 扣 ALI099 NT$1,000。"
+      }
+    ],
+    "marketContext": "市場狀態 C「泡沫後期」、DEFCON 3 高度警戒、整體風險分 55/100；三大子指數：bubbleRiskScore 73/100（高）、crisisRiskScore 34/100（中低）、deleveragingRiskScore 57/100（中高）。關鍵指標：美股 CAPE 41.33（140 年第二高、僅次 1999）、Buffett 235.9%（超均值 +44.2%）、FINRA 融資餘額 $1.30T（歷史新高）、AAII bull 46%、AI 泡沫敘事盛行。但信用市場 HY OAS 僅 2.72% 極窄、VIX 15.32 自滿、銀行未現裂痕——典型「泡沫後期」樣貌，破裂催化劑尚未浮現。對 Aaron 組合的具體含義：(1) TWD 帳戶 65% 集中於 00878 高股息 ETF（單一台股風險過大），任何台股回檔事件（TSMC 財測 miss、外資轉賣、6/17 FOMC 鷹派）都將直接衝擊；(2) 兩檔國泰目標日期（CSI104+CSI132 合計 NT$216K）與一檔貝萊德 2050（BRI023）合計 NT$254K，全部對美股估值修正高度敏感，且長存續期對殖利率上升脆弱；(3) FSI069 雖部位小，但屬主題型科技基金，泡沫破裂時跌幅最大。整體 +47.32% 浮盈（NT$323K）已達豐厚水位，下行不對稱性升高。",
+    "recommendation": "今日（6/2）操作方向：『防禦優先，分批落袋』。具體三步驟：(1) 立即執行：00878 賣出 2,100-3,150 股（10-15%），鎖定 NT$22,600-33,900 浮盈，把單一標的占比從 65% 降至 55-58%，現金部位拉到 NT$60-100K（5-10%）；(2) DCA 調整：ALI099 月扣 5,000 降至 3,000（暫停日 14、26 兩筆）、CSI132 月扣 6,000 降至 3,000（保留日 11、16、21），整體月扣從 NT$20,000 降至 NT$14,000 釋放 NT$6,000/月現金累積；(3) 觸發條件：若 6/17 FOMC 後 marketState 升至 D，或美股 CAPE 跌破 38 起跌，全部 DCA 暫停並再賣出 00878 10-15%。今日 ISM PMI 22:00 公布為短期關鍵，跌破 50 對組合反而短期利多（降息預期上升），但僅是延後而非取消結構風險。FSI069 NAV 來源失效需手動查證，並建議改用鉅亨買基金 A03061 為主來源。"
+  },
+  {
     "date": "2026-06-01",
     "generatedAt": "2026-06-01T06:17:25+08:00",
     "summary": {
