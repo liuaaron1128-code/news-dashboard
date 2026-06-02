@@ -1,5 +1,198 @@
 [
   {
+    "date": "2026-06-03",
+    "generatedAt": "2026-06-03T06:16:29+08:00",
+    "summary": {
+      "totalInvested": 687500,
+      "estimatedValue": 914287.13,
+      "returnAmount": 226787.13,
+      "returnPercent": 32.99,
+      "overallRisk": "high",
+      "monthlyDCA": 20000,
+      "navCoverage": "4/7 (CSI104/CSI132/FSI069 R類NAV暫缺，總值含這3檔以投入成本為placeholder)"
+    },
+    "dcaToday": [
+      {
+        "code": "BRI023",
+        "name": "貝萊德2050 R類",
+        "amount": 3000,
+        "status": "executed"
+      }
+    ],
+    "dcaUpcoming": [
+      {
+        "date": "2026-06-05",
+        "code": "ALI099",
+        "amount": 1000
+      },
+      {
+        "date": "2026-06-06",
+        "code": "CSI132",
+        "amount": 1000
+      },
+      {
+        "date": "2026-06-08",
+        "code": "FSI069",
+        "amount": 1000
+      },
+      {
+        "date": "2026-06-09",
+        "code": "YUI117",
+        "amount": 1000
+      }
+    ],
+    "funds": [
+      {
+        "code": "CSI104",
+        "name": "國泰泰享退2039 R類",
+        "totalInvested": 126000,
+        "paymentsCount": 0,
+        "monthlyDCA": 0,
+        "snapshotUnits": 7302.8,
+        "averageCost": 17.2537,
+        "nav": null,
+        "navDate": null,
+        "estimatedValue": null,
+        "returnAmount": null,
+        "returnPercent": null,
+        "riskLevel": "high",
+        "riskNotes": "最大持們126,000 TWD（占TWD組合最重，靜態暴露無DCA），目標日期2039、股票配置約70%，全球+台灣分散，是組合穩定性的關鍵核心。R類即時NAV暫無法確認，需透過國泰投信官網或鉅亨網手動查詢（A類於5/28為24.31，較2月底20.37上漲約19%反映AI行情拉抬）。當前市場狀態C泡沫風險70/100下，美股CAPE 41.33史上第二高 + 台股融資餘額5,304億創新高的雙泡沫，對這個最大暴露衝擊最大；DCA已停扣，等於靜態承擔泡沫破裂風險。建議若市場狀態升至D或泡沫風險>75，分批減持10-20%降低集中度，落袋為安；現階段密切監控USD/JPY 159.37是否突破160觸發套利平倉。",
+        "allocation": null
+      },
+      {
+        "code": "ALI099",
+        "name": "安聯四季成長 TISA",
+        "totalInvested": 42000,
+        "paymentsCount": 1,
+        "monthlyDCA": 5000,
+        "snapshotUnits": 3420.1,
+        "averageCost": 11.99,
+        "nav": 10.95,
+        "navDate": "2026-05",
+        "estimatedValue": 38450.09,
+        "returnAmount": -3549.91,
+        "returnPercent": -8.45,
+        "riskLevel": "medium",
+        "riskNotes": "全球股債組合基金，多元配置降低單一市場風險，於當前市場狀態C泡沫後期環境中，混合配置提供較好的下檔緩衝。今日NAV約10.95 vs 平均成本11.99，報酬率約-8.7%，績效落後同期純股票型基金，反映其較保守配置在多頭行情中的相對劣勢但同時也降低泡沫破裂的單向風險。泡沫風險70/100、去槓桿風險51/100下，組合內債券部位可在去槓桿啟動時提供保護，惟股票部位仍受美股估值極端（CAPE 41.33）影響。建議維持每月5,000元定期定額分5次扣款分散時間風險，若報酬率惡化至-15%以下再評估是否暫停加碼，當前帳面虧損為DCA攤平最佳時機之一。",
+        "allocation": null
+      },
+      {
+        "code": "CSI132",
+        "name": "國泰泰享退2049 R類",
+        "totalInvested": 35000,
+        "paymentsCount": 3,
+        "monthlyDCA": 6000,
+        "snapshotUnits": 1450.1,
+        "averageCost": 22.0674,
+        "nav": null,
+        "navDate": null,
+        "estimatedValue": null,
+        "returnAmount": null,
+        "returnPercent": null,
+        "riskLevel": "high",
+        "riskNotes": "TISA帳戶長期持們、目標日期2049、存續期最長、股票暴露最高（約90%），是組合中對泡沫破裂最敏感資產，但同時擁有20年以上時間buffer。R類即時NAV暫無法取得（3/27 R類報21.6476、A類5/19達24.6126），需從鉅亨網或國泰官網手動查詢。泡沫風險70/100環境下這類成長導向退休基金短期下檔風險高，但長期配置邏輯成立——20年期能消化任何中期回檔。6筆DCA分散在每月1/6/11/16/21/26日，分散度極佳，建議維持紀律性扣款不受短期市場干擾，這正是TISA設計的核心優勢。",
+        "allocation": null
+      },
+      {
+        "code": "BRI023",
+        "name": "貝萊德2050 R類",
+        "totalInvested": 33000,
+        "paymentsCount": 1,
+        "monthlyDCA": 3000,
+        "snapshotUnits": 2089.9,
+        "averageCost": 14.35,
+        "nav": 16.05,
+        "navDate": "2026-05",
+        "estimatedValue": 36542.9,
+        "returnAmount": 3542.9,
+        "returnPercent": 10.74,
+        "riskLevel": "high",
+        "riskNotes": "目標日期2050、股票配置約85-90%、長存續期使其對殖利率上升敏感度極高，30Y美債5.02%的長端利率壓力為主要風險來源。今日NAV約16.05 vs 平均成本14.35，報酬率約+11.8%，受惠於AI行情帶動的全球股票上漲，獲利已具規模。泡沫風險70/100環境下脆弱性最高：股債雙重風險+USD/JPY逼近160可能觸發日圓套利平倉的連鎖效應，本基金為最脆弱資產之一。今日扣款3,000元已如期執行，建議當前每月3,000元DCA上限不再上調，若市場狀態升至D或泡沫風險>75，考慮暫緩DCA至少3個月並評估是否獲利了結20-30%。",
+        "allocation": null
+      },
+      {
+        "code": "FSI069",
+        "name": "第一金全球大趨勢",
+        "totalInvested": 1000,
+        "paymentsCount": 0,
+        "monthlyDCA": 2000,
+        "snapshotUnits": 87.8,
+        "averageCost": 11.39,
+        "nav": null,
+        "navDate": null,
+        "estimatedValue": null,
+        "returnAmount": null,
+        "returnPercent": null,
+        "riskLevel": "high",
+        "riskNotes": "全球股票主題型基金，科技/AI暴露高，於泡沫後期是高風險中的高風險（CAPE 41.33史上第二高，主要由科技股拉抬）。即時NAV暫無法取得，需透過第一金投信官網或銀行平台查詢，當前1,000 TWD暴露極低不構成組合風險。在泡沫風險70+DEFCON 3 HIGH ALERT環境下，純股票型且科技集中的基金最脆弱，若AI敘事破口（Microsoft Build後續、台積電3nm訂單調整）或USD/JPY突破160，跌幅可能達20-30%。每月2,000元DCA分2次扣款（8日、18日），可繼續執行作為紀律性建倉，但禁止額外大額加碼，等市場狀態降至D以下再積極投入。",
+        "allocation": null
+      },
+      {
+        "code": "YUI117",
+        "name": "元大台灣50 TISA連結基金",
+        "totalInvested": 5000,
+        "paymentsCount": 2,
+        "monthlyDCA": 4000,
+        "snapshotUnits": 51.6,
+        "averageCost": 58.14,
+        "nav": 63.84,
+        "navDate": "2026-06-01",
+        "estimatedValue": 5294.14,
+        "returnAmount": 294.14,
+        "returnPercent": 5.88,
+        "riskLevel": "high",
+        "riskNotes": "追蹤0050 ETF的TISA連結基金，純台股大型權值股暴露，台積電（占0050權重約55%）股價為決定性因素。今日NAV 63.84 vs 平均成本58.14，報酬率約+9.8%，與台股單日飆681點、AI行情強勢同步。台股融資餘額5,304億創歷史新高+美股CAPE 41.33雙泡沫共振下，這檔基金對台股回檔最直接敏感，若AI拉抬力道破口，跌幅恐達25-40%。每月4,000元DCA分4次扣款（2/9/17/24日）分散度佳，TISA帳戶長期持有合理，但若市場狀態升至D或泡沫風險>75，應暫停加碼並考慮減碼20%。",
+        "allocation": null
+      },
+      {
+        "code": "00878",
+        "name": "國泰永續高股息ETF",
+        "totalInvested": 445500,
+        "paymentsCount": 0,
+        "monthlyDCA": 0,
+        "snapshotUnits": 21000,
+        "averageCost": 21.2143,
+        "nav": 32.0,
+        "navDate": "2026-06-02",
+        "estimatedValue": 672000.0,
+        "returnAmount": 226500.0,
+        "returnPercent": 50.84,
+        "riskLevel": "high",
+        "riskNotes": "台股高股息ETF（21,000股），TTM殖利率7.74%吸引人，但本質仍是台股大盤暴露，與大盤走勢相關性高。今日股價32.00 vs 平均成本21.2143，報酬率+50.84%獲利已極為豐厚（約+226,500 TWD），6/12除息0.66元為次催化劑。台股融資餘額創新高+30Y美債5.02%偏高的雙重壓力下，高股息ETF的價差vs息差風險回報比正在惡化——獲利不落袋、靠殖利率彌補的cushion越來越薄。**強烈建議考慮分批獲利了結20-30%（約4,000-6,000股）落袋為安**，保留核心部位繼續領息，將獲利轉至現金或短債部位等待泡沫破裂後低點再進場。",
+        "allocation": null
+      }
+    ],
+    "alerts": [
+      {
+        "level": "critical",
+        "title": "美股CAPE 41.33 史上第二高",
+        "detail": "僅次1999網路泡沫頂峰，搭配台股融資餘額5,304億創新高 + Margin Debt $1.25兆同創新高，雙泡沫共振，但VIX/HY OAS/銀行壓力全部冰冷，典型『最後的平靜』。"
+      },
+      {
+        "level": "critical",
+        "title": "USD/JPY 159.37 逼近160關鍵套利平倉觸發點",
+        "detail": "突破160恐觸發日圓套利平倉連鎖效應（類似2024/8月微型版），對全球股票尤其長存續期退休基金（BRI023/CSI132）衝擊最大。"
+      },
+      {
+        "level": "high",
+        "title": "00878獲利+50.84% 強烈建議分批獲利了結20-30%",
+        "detail": "持有21,000股累積帳面獲利約+226,500元，當前台股泡沫+30Y美債5.02%壓力下，建議分批了結4,000-6,000股落袋為安，保留核心部位繼續領息（6/12除息0.66元）。"
+      },
+      {
+        "level": "high",
+        "title": "CSI104最大持們126,000元為靜態暴露",
+        "detail": "無DCA合約，市場狀態C下整檔承擔泡沫破裂風險，建議若市場狀態升至D或泡沫風險>75分批減持10-20%。"
+      },
+      {
+        "level": "medium",
+        "title": "今日BRI023 DCA 3000元已執行",
+        "detail": "本月扣款按計畫進行，但建議勿再上調月扣金額，密切觀察NAV後續走勢。"
+      }
+    ],
+    "marketContext": "今日市場處於狀態C（泡沫後期），整體風險51/100、DEFCON 3 HIGH ALERT；泡沫風險指數70/100（高風險區）、金融危機風險29/100（低）、去槓桿風險51/100（中性偏緊）。核心訊號：(1) 美股CAPE 41.33史上第二高僅次1999網路泡沫頂峰、Fwd P/E 21.2、Excess CAPE Yield僅1.32%；(2) 台股融資餘額5,304億 + 美國Margin Debt $1.25兆同創歷史新高；(3) HY OAS≈長期均值、IG OAS僅80bps極窄、KRE+28% YoY銀行健康，典型『最後的平靜』；(4) USD/JPY 159.37逼近160關鍵套利平倉觸發點。對Aaron組合的具體含義：總投入687,500 TWD中00878（445,500元，64.8%）+CSI104（126,000元，18.3%）合計83%集中在台股單一市場，泡沫破裂時無分散保護；BRI023+CSI132（共68,000元）為長存續期股票型，對殖利率上升+泡沫風險雙重敏感；唯有ALI099（42,000元組合型）提供有限緩衝。catalyst可能來自USD/JPY突破160、6/17 FOMC dot plot鷹派調整、或下半年AI資本支出敘事破口。",
+    "recommendation": "【優先級1 立即執行】00878獲利+50.84%強烈建議分批了結20-30%（約4,000-6,000股），轉至現金或短債等待泡沫破裂低點再進場；落袋為安是當前泡沫後期最重要動作。【優先級2 觀察】CSI104最大持們126,000元靜態暴露需密切監控，若市場狀態升至D或泡沫風險>75即啟動分批減碼10-20%。【優先級3 維持紀律】今日BRI023 3,000元已扣款執行；其他DCA合約（ALI099、CSI132、FSI069、YUI117 共17,000元/月）繼續按既定節奏，特別是TISA帳戶長期持有不受短期市場干擾。【優先級4 禁止加碼】FSI069與YUI117是純股票型最脆弱資產，當前環境禁止額外大額加碼，僅維持DCA。【觸發條件】若以下任一發生則啟動全面減碼預案：(a) 泡沫風險指數>75；(b) USD/JPY突破160；(c) 市場狀態升至D-F；(d) HY OAS快速擴大>100bps（信用利差打破『最後平靜』）。今日董事長定位：能源/通膨/利率風險累積中，組合需控管而非追擊。"
+  },
+  {
     "date": "2026-06-02",
     "generatedAt": "2026-06-02T06:15:46+08:00",
     "summary": {
