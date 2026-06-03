@@ -1,5 +1,172 @@
 [
   {
+    "date": "2026-06-04",
+    "generatedAt": "2026-06-04T06:15:01+08:00",
+    "summary": {
+      "totalInvested": 687500,
+      "estimatedValue": 995839.99,
+      "returnAmount": 309339.99,
+      "returnPercent": 45.06,
+      "overallRisk": "high",
+      "monthlyDCA": 20000,
+      "pricedAssetsCount": 6,
+      "totalAssetsCount": 7,
+      "note": "FSI069 NAV未取得，估值/報酬僅基於可定價6檔資產"
+    },
+    "dcaToday": [],
+    "dcaUpcoming": [
+      {
+        "date": "2026-06-05",
+        "code": "ALI099",
+        "amount": 1000
+      },
+      {
+        "date": "2026-06-06",
+        "code": "CSI132",
+        "amount": 1000
+      },
+      {
+        "date": "2026-06-08",
+        "code": "FSI069",
+        "amount": 1000
+      },
+      {
+        "date": "2026-06-09",
+        "code": "YUI117",
+        "amount": 1000
+      },
+      {
+        "date": "2026-06-11",
+        "code": "CSI132",
+        "amount": 1000
+      }
+    ],
+    "funds": [
+      {
+        "code": "CSI104",
+        "name": "國泰退休2039",
+        "totalInvested": 126000,
+        "paymentsCount": 0,
+        "nav": 24.3124,
+        "navDate": "2026-05-28",
+        "estimatedValue": 177548.59,
+        "returnAmount": 51548.59,
+        "returnPercent": 40.91,
+        "riskLevel": "high",
+        "riskNotes": "國泰泰享退2039目標日期組合基金，股票暴露約66%（含ETF 45%）+ 債券20%，全球+台灣分散；本檔126,000 TWD為最大持們，是組合中總風險暴露最重的單一資產。現淨值24.3124 vs 平均成本17.2537，帳面報酬+40.9%（市價177,553），於市場狀態C泡沫後期估值已過度延伸。在bubbleRiskScore=70、deleveragingRiskScore=55環境下，此基金股票配置最易承受美股回檔；若S&P 500從7,609高點回撤10-15%，本檔可能拉低5-8%。建議立即啟動部分獲利了結（建議賣出20-30%單位，鎖定40%報酬），剩餘部位設定觸發停損（淨值跌破22為觀察、20為減碼）；本檔無新DCA，無需暫停。",
+        "allocation": null
+      },
+      {
+        "code": "ALI099",
+        "name": "安聯四季成長",
+        "totalInvested": 42000,
+        "paymentsCount": 1,
+        "nav": 11.47,
+        "navDate": "2026-06-03",
+        "estimatedValue": 40228.55,
+        "returnAmount": -1771.45,
+        "returnPercent": -4.22,
+        "riskLevel": "medium",
+        "riskNotes": "安聯四季成長組合基金(P類)，全球股債混合多元配置，相對台股單一市場較為分散；現淨值11.47 vs 平均成本11.99，帳面報酬約-4.3%（估值40,229 vs 投入42,000），是組合中唯一虧損部位。市場狀態C下美股泡沫風險高（bubbleRiskScore=70），但本檔多元配置與債券緩衝可吸收部分股市衝擊；deleveragingRiskScore=55表示去槓桿壓力升溫，債券配置在Fed 6/16維持利率前可能持續弱勢。每月5,000 TWD DCA分5筆扣款屬最佳分散，建議維持定期定額不變；明日6/5即有1,000 TWD扣款，泡沫後期低於平均成本的攤平有助降低長期持有成本。",
+        "allocation": null
+      },
+      {
+        "code": "CSI132",
+        "name": "國泰退休2049",
+        "totalInvested": 35000,
+        "paymentsCount": 3,
+        "nav": 24.6126,
+        "navDate": "2026-05-19",
+        "estimatedValue": 38690.73,
+        "returnAmount": 3690.73,
+        "returnPercent": 10.54,
+        "riskLevel": "high",
+        "riskNotes": "國泰泰享退2049目標日期組合基金（TISA帳戶），與CSI104結構相似但年期更長故股票暴露更高（約75%）、存續期更長，對殖利率與股市同步敏感。現淨值24.6126 vs 平均成本22.0674，帳面報酬+11.5%（估值約38,691）。市場狀態C+bubbleRiskScore=70環境下，本檔對美股回檔的β較CSI104更高；deleveragingRiskScore=55代表去槓桿風險升溫，長存續期債券對Fed 6/16決議與BOJ可能升息至1%的事件特別敏感。每月6,000 TWD DCA分6筆扣款是組合中分散最佳者，TISA稅優帳戶長期持有合適，建議維持DCA不變，但本週重大事件前不額外加碼一次性資金。",
+        "allocation": null
+      },
+      {
+        "code": "BRI023",
+        "name": "貝萊德退休2050",
+        "totalInvested": 33000,
+        "paymentsCount": 1,
+        "nav": 18.22,
+        "navDate": "2026-05-06",
+        "estimatedValue": 41077.98,
+        "returnAmount": 8077.98,
+        "returnPercent": 24.48,
+        "riskLevel": "high",
+        "riskNotes": "貝萊德享退休2050目標日期組合基金，長存續期+高股票暴露（約85%），對全球殖利率上升最為敏感。現淨值約18.22（5/6 數據，較舊）vs 平均成本14.35，帳面報酬約+27%（估值約41,079）。市場狀態C+bubbleRiskScore=70+deleveragingRiskScore=55三重壓力下，本檔對Fed 6/16利率決議、BOJ可能升息至1%、ECB 6/11升25bps三大事件的同時暴露最高；10Y殖利率4.46%若突破4.75%將直接侵蝕本檔估值3-5%。每月3,000 TWD DCA單筆扣款集中度高（每月3日），建議維持DCA但考慮分拆為多筆；現有獲利建議部分鎖定（賣出15-20%），等本週央行三日連環變盤後再決定加碼。",
+        "allocation": null
+      },
+      {
+        "code": "FSI069",
+        "name": "第一金全球大趨勢",
+        "totalInvested": 1000,
+        "paymentsCount": 0,
+        "nav": null,
+        "navDate": null,
+        "estimatedValue": null,
+        "returnAmount": null,
+        "returnPercent": null,
+        "riskLevel": "high",
+        "riskNotes": "第一金全球大趨勢基金為股票型全球趨勢基金，科技/AI暴露度高，在當前『AI敘事行情』中受惠最大但泡沫破裂風險也最大。今日NAV未能取得（資料來源失敗），無法計算精確估值；以平均成本11.39估算估值約1,000 TWD。市場狀態C+bubbleRiskScore=70直接對應本檔最大風險：CAPE 41.44接近2000網路泡沫等級、Microsoft 6/2 Build 2026推出7個MAI模型對OpenAI戰略脫鉤代表AI鏈成員洗牌、Strategy拋售比特幣顯示AI對流動性的虹吸已開始反轉。每月2,000 TWD DCA分兩筆（8日、18日），現持有極輕（1,000 TWD），建議維持DCA作為AI趨勢觀察部位但不額外加碼；若bubbleRiskScore突破80應立即暫停DCA。",
+        "allocation": null
+      },
+      {
+        "code": "YUI117",
+        "name": "元大台灣50",
+        "totalInvested": 5000,
+        "paymentsCount": 2,
+        "nav": 63.84,
+        "navDate": "2026-06-01",
+        "estimatedValue": 5294.14,
+        "returnAmount": 294.14,
+        "returnPercent": 5.88,
+        "riskLevel": "high",
+        "riskNotes": "元大台灣卓越50ETF連結基金，直接追蹤台股權值股，受台積電、鴻海等外資籌碼影響大。現淨值63.84（6/1）vs 平均成本58.14，帳面報酬約+9.8%（估值約5,292）。市場狀態C下台股雖未直接列入美股泡沫指標，但台股與費半連動係數高（台積電佔台灣50約45%權重），bubbleRiskScore=70對應的美股科技股回檔將立即拖累台股；deleveragingRiskScore=55+10Y殖利率4.46%代表外資若獲利了結將首先撤離台股權值股。每月4,000 TWD DCA分4筆扣款已分散，建議維持DCA；本檔尚屬輕倉（5,000 TWD），可作為核心建倉部位但本週央行決議前不額外加碼。",
+        "allocation": null
+      },
+      {
+        "code": "00878",
+        "name": "國泰永續高股息ETF",
+        "totalInvested": 445500,
+        "paymentsCount": 0,
+        "nav": 33.0,
+        "navDate": "2026-06-03",
+        "estimatedValue": 693000.0,
+        "returnAmount": 247500.0,
+        "returnPercent": 55.56,
+        "riskLevel": "medium",
+        "riskNotes": "國泰永續高股息ETF，台股高股息策略偏防禦性，受殖利率環境與台股大盤雙重影響，近4季殖利率約7.74%提供穩定現金流緩衝。現股價33.00（6/3）vs 平均成本21.2143，帳面報酬約+55.6%（市值693,000），是組合中報酬率最高且金額最大的部位之一。市場狀態C下，本ETF防禦特性相對抗跌（高股息族群於泡沫破裂期通常先於成長股止跌），且6/12即將除息0.66元提供短期現金流；但deleveragingRiskScore=55環境下若台股整體回撤超過15%，高股息仍會受拖累。建議維持持有並把握除息（保留至6/12），考慮獲利了結25-30%（約5,000-6,000股）鎖定50%以上報酬，並將獲利轉入現金部位或低風險基金；無DCA契約，現金管理彈性大。",
+        "allocation": null
+      }
+    ],
+    "alerts": [
+      {
+        "level": "warning",
+        "title": "DEFCON 3 — 泡沫後期 (Market State C)",
+        "message": "整體風險51/100，bubbleRiskScore=70（接近極值），CAPE 41.44逼近2000網路泡沫水準，融資餘額1.30兆美元創新高；信用利差仍極窄(HY OAS 272bp)代表風險定價尚未啟動，下行波動可能極快。"
+      },
+      {
+        "level": "warning",
+        "title": "本週央行三日連環變盤 (6/11-6/17)",
+        "message": "ECB 6/11預期升25bps、Fed 6/16會議市場99.4%押注維持3.50-3.75%、BOJ 6/17內部6:3分裂可能升息至1%；事件密集前避免一次性加碼，DCA維持。"
+      },
+      {
+        "level": "critical",
+        "title": "CSI104最大持們獲利已達+40.9%",
+        "message": "126,000 TWD投入，現估值約177,553，建議獲利了結20-30%單位鎖定報酬，是本次最高優先級風險管理動作。"
+      },
+      {
+        "level": "info",
+        "title": "00878股息保護 + 高浮盈",
+        "message": "+55.6%帳面報酬，6/12除息0.66元前持有；建議除息後賣出25-30%股數(5,000-6,000股)鎖定報酬，現金等待回檔機會。"
+      }
+    ],
+    "marketContext": "整體市場狀態C（泡沫後期），overallRisk=51/100，DEFCON 3（HIGH ALERT）：bubbleRiskScore=70接近極值（CAPE 41.44、Buffett 237.8%、融資餘額1.30兆美元歷史新高），crisisRiskScore=27仍低（HY OAS僅272bp，信用市場過度自滿），deleveragingRiskScore=55代表去槓桿壓力中等偏高（Fed $6.66T QT持續、10Y殖利率4.46%、30Y 4.98%）。對Aaron組合的具體含義：(1) CSI104+CSI132+BRI023三檔目標日期基金合計約佔65%且皆為股債混合長存續期，對美股回檔與殖利率突破4.75%最敏感；(2) FSI069+YUI117股票型直接暴露於泡沫破裂風險，bubbleRiskScore=70已觸及『股票型基金risk升至high』的內部紅線；(3) 00878高股息ETF浮盈+55.6%且具備6/12除息保護，是組合中最佳的『獲利鎖定 + 防禦轉換』候選；(4) 本週6/11-6/17央行三日連環變盤（ECB→Fed→BOJ）為短期最大波動催化劑。",
+    "recommendation": "今日(6/4)無DCA扣款，明日(6/5)ALI099扣款1,000維持原案。基於市場狀態C+bubbleRiskScore=70已觸及紅線，建議本週執行四項具體動作：【一、高優先】CSI104獲利了結20-30%（賣出約1,460-2,190單位，鎖定+40.9%報酬約20,000-30,000 TWD），停損觸發設於淨值22以下；【二、高優先】00878等待6/12除息後賣出25-30%股數（約5,000-6,000股、鎖定報酬約130,000-156,000 TWD），將現金留作回檔資金；【三、中優先】BRI023獲利了結15-20%單位（鎖定+27%報酬），長存續期對本週BOJ可能升息事件最為脆弱；【四、低優先】DCA全部維持不變（月扣20,000為分散買進泡沫後期建倉的最佳工具），但本週6/11-6/17央行三日連環變盤前『不要』額外一次性加碼。執行後組合現金比例可由0%提升至約25-30%，達成「鎖定獲利 + 保留泡沫破裂時的逢低買進子彈」的雙重目標。"
+  },
+  {
     "date": "2026-06-03",
     "generatedAt": "2026-06-03T06:16:29+08:00",
     "summary": {
