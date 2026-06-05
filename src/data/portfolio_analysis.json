@@ -1,5 +1,197 @@
 [
   {
+    "date": "2026-06-06",
+    "generatedAt": "2026-06-06T06:14:24+08:00",
+    "summary": {
+      "totalInvested": 689500,
+      "estimatedValue": null,
+      "returnAmount": null,
+      "returnPercent": null,
+      "overallRisk": "high",
+      "monthlyDCA": 20000
+    },
+    "dcaToday": [
+      {
+        "code": "CSI132",
+        "amount": 1000,
+        "name": "國泰泰享退2049"
+      }
+    ],
+    "dcaUpcoming": [
+      {
+        "code": "FSI069",
+        "day": 8
+      },
+      {
+        "code": "YUI117",
+        "day": 9
+      },
+      {
+        "code": "CSI132",
+        "day": 11
+      },
+      {
+        "code": "ALI099",
+        "day": 12
+      },
+      {
+        "code": "ALI099",
+        "day": 14
+      },
+      {
+        "code": "CSI132",
+        "day": 16
+      },
+      {
+        "code": "YUI117",
+        "day": 17
+      },
+      {
+        "code": "FSI069",
+        "day": 18
+      },
+      {
+        "code": "ALI099",
+        "day": 19
+      },
+      {
+        "code": "CSI132",
+        "day": 21
+      },
+      {
+        "code": "YUI117",
+        "day": 24
+      },
+      {
+        "code": "ALI099",
+        "day": 26
+      },
+      {
+        "code": "CSI132",
+        "day": 26
+      }
+    ],
+    "funds": [
+      {
+        "code": "CSI104",
+        "name": "國泰泰享退2039目標日期",
+        "totalInvested": 126000,
+        "paymentsCount": 0,
+        "nav": null,
+        "navDate": null,
+        "estimatedValue": null,
+        "returnAmount": null,
+        "returnPercent": null,
+        "riskLevel": "high",
+        "riskNotes": "你的最大持股（126,000 TWD，佔組合約18.3%）— 目標日期型混合基金，2039退休配置股票暴露約65-70%，台股+全球均衡。市場狀態C「泡沫後期」+泡沫風險67/100下，最大尾部風險在「加密爆倉→科技股→台積電→台股AI鏈」的傳導鏈被觸發，CSI104的台股配置直接命中。HY OAS 300bp處2007年最緊水位、過度自滿訊號（風險未被定價），一旦信用利差快速擴張，組合基金內全球股票部位將同步重定價。具體操作：保持現有持股不動，但本月起停止任何單筆加碼意願；若bubbleRiskScore>75或marketState升至D，分批贖回20%降至約100,000 TWD部位。",
+        "allocation": null
+      },
+      {
+        "code": "ALI099",
+        "name": "安聯四季成長組合基金",
+        "totalInvested": 43000,
+        "paymentsCount": 2,
+        "nav": 11.47,
+        "navDate": "2026-06-05",
+        "estimatedValue": 41229.0,
+        "returnAmount": -1771.0,
+        "returnPercent": -4.12,
+        "riskLevel": "medium",
+        "riskNotes": "多元股債混合配置（FoF結構），今日NAV 11.47 vs 平均成本11.99，含息報酬約-4.1%（小幅虧損 -1771 TWD）。在DEFCON 3「泡沫後期」階段，此類四季成長型FoF因內含債券部位（受惠於10Y-2Y +41bp正常曲線）+ 全球分散，是組合中最防禦的非ETF部位。去槓桿風險53/100對其影響較BRI023小，因平均存續期較短。具體操作：5檔DCA合約（5/12/14/19/26扣款日）維持不動，總月扣5,000 TWD；若整體市場進入D狀態（泡沫破裂），此基金通常跌幅僅為純股票型60-70%，可作為現金部位的替代。",
+        "allocation": null
+      },
+      {
+        "code": "CSI132",
+        "name": "國泰泰享退2049目標日期",
+        "totalInvested": 36000,
+        "paymentsCount": 4,
+        "nav": null,
+        "navDate": null,
+        "estimatedValue": null,
+        "returnAmount": null,
+        "returnPercent": null,
+        "riskLevel": "high",
+        "riskNotes": "TISA帳戶持股，2049退休目標日期型股票暴露最高（約80%+），長存續期讓它對股市修正最敏感。市場狀態C下，泡沫風險67、去槓桿風險53雙重壓力，且美股估值5/5 EXTREME（CAPE 40.72 vs 均值17、Buffett指標228%），組合內全球股票部位面臨最大重定價風險。但TISA有稅務優惠+鎖定期，DCA本身就是平滑成本工具。具體操作：今日是6日扣款日（1,000 TWD），維持6檔月扣不動（月扣6,000 TWD）— TISA因稅務優惠不宜中斷，反而越是C/D狀態越要繼續DCA；只在marketState達E（崩盤啟動）時，可考慮暫停下月扣款一次。",
+        "allocation": null
+      },
+      {
+        "code": "BRI023",
+        "name": "貝萊德享退休2050目標日期",
+        "totalInvested": 33000,
+        "paymentsCount": 1,
+        "nav": null,
+        "navDate": null,
+        "estimatedValue": null,
+        "returnAmount": null,
+        "returnPercent": null,
+        "riskLevel": "high",
+        "riskNotes": "存續期最長（25年退休目標）的目標日期基金，股票暴露最高（85%+），對殖利率上升與股市估值雙重敏感。當前30Y美債4.99%、Powell卸任Warsh接任Fed主席，6/16-17首場FOMC定價97.8%按兵不動——但若Warsh鷹派表態（其歷史立場），長存續期資產面臨補跌風險。BlackRock全球配置 vs 美股估值100/100 EXTREME，是組合中最直接暴露於美股泡沫的部位。具體操作：1檔月扣3,000 TWD（每月3日），維持不動但不增碼；本月加入FOMC觀察清單，若Warsh表現比預期鷹派、或bubbleRiskScore突破75，立刻暫停下月扣款。",
+        "allocation": null
+      },
+      {
+        "code": "FSI069",
+        "name": "第一金全球大趨勢",
+        "totalInvested": 1000,
+        "paymentsCount": 0,
+        "nav": null,
+        "navDate": null,
+        "estimatedValue": null,
+        "returnAmount": null,
+        "returnPercent": null,
+        "riskLevel": "high",
+        "riskNotes": "全球趨勢型股票基金，科技/AI暴露最高，是組合中泡沫破裂風險最大的部位。今晨briefing「Broadcom AI營收年增143%但未上調全年目標→AI過度定價的第一聲提醒」+ Nasdaq收黑、資金從AI晶片巨擘流出至防禦類股，是此基金的直接利空訊號。美股估值5/5 EXTREME + 加密已先行去槓桿（BTC -3.94%、ETF流出$3.58B），下個就是科技股。具體操作：目前部位僅1,000 TWD（最小持股），2檔月扣（8/18日）4月才開始尚未首扣，月扣2,000 TWD。當前市場狀態下，建議暫緩這2檔下月扣款（或改為延後啟動），等到marketState退回B或bubbleRiskScore<55再恢復；若已扣則接受並列入觀察。",
+        "allocation": null
+      },
+      {
+        "code": "YUI117",
+        "name": "元大台灣50 TISA連結",
+        "totalInvested": 5000,
+        "paymentsCount": 2,
+        "nav": null,
+        "navDate": null,
+        "estimatedValue": null,
+        "returnAmount": null,
+        "returnPercent": null,
+        "riskLevel": "high",
+        "riskNotes": "追蹤0050指數（昨日2026-06-05收104.15、+1.84%），與台股大盤同步。台股5月狂飆4,700點FOMC FOMO訊號 + TSMC同日宣布產能多年難滿足AI需求（雙刃劍：短多但泡沫深化），且台股AI鏈是「加密爆倉→科技股→台積電→台股AI鏈」傳導終點。YUI117為TISA帳戶不可隨意調整，DCA是核心策略。具體操作：4檔月扣（2/9/17/24日）共4,000 TWD維持不動，因TISA稅務優惠+DCA在波動市場才是優勢；但若台股突破歷史新高並出現極端FOMO訊號（如散戶融資餘額爆量），可考慮暫停下月一檔扣款（如17日那檔）作為防禦。",
+        "allocation": null
+      },
+      {
+        "code": "00878",
+        "name": "國泰永續高股息ETF",
+        "totalInvested": 445500.0,
+        "paymentsCount": 0,
+        "nav": 32.32,
+        "navDate": "2026-06-05",
+        "estimatedValue": 678720.0,
+        "returnAmount": 233220.0,
+        "returnPercent": 52.35,
+        "riskLevel": "medium",
+        "riskNotes": "今日股價32.32 vs 平均成本21.2143，未實現報酬+52.4%（含息部分加總則更高，約+233,220 TWD未實現收益），是組合中表現最強的部位。高股息ETF防禦性高於成長股，但在bubbleRiskScore 67 + deleveragingRiskScore 53環境下仍面臨估值修正風險：若台股下跌15-20%，00878通常跌幅約8-12%。今晨briefing提到「資金正從AI晶片巨擘流出至金融、醫療、地產等防禦類股」，正是00878受惠類股。具體操作：21,000股繼續持有（不加碼也不賣出），收息再投入；若股價突破35（+8.3%）可考慮分批獲利了結20% (約4,200股)，鎖定獲利並提高現金部位；若回測到28以下（-13%）再考慮加碼。",
+        "allocation": null
+      }
+    ],
+    "alerts": [
+      {
+        "type": "market_state",
+        "severity": "warning",
+        "message": "市場處於C「泡沫後期」+DEFCON 3。美股CAPE 40.72逼近2000年網路泡沫、Buffett 228%，bubbleRiskScore 67/100。組合內CSI104（最大持股）、BRI023、CSI132、FSI069、YUI117 共5檔受影響。"
+      },
+      {
+        "type": "fomc_event",
+        "severity": "info",
+        "message": "Warsh主持6/16-17首場FOMC，市場定價按兵不動97.8%，但若鷹派表態，BRI023等長存續期基金面臨補跌風險。"
+      },
+      {
+        "type": "ai_overvaluation",
+        "severity": "warning",
+        "message": "Broadcom AI營收+143%但未上調全年目標→「AI過度定價」首訊號。FSI069（全球大趨勢，AI暴露最高）與YUI117（台股AI鏈傳導終點）需特別關注。"
+      }
+    ],
+    "marketContext": "市場狀態C「泡沫後期」、DEFCON 3 HIGH ALERT、overallRisk 50/100（bubbleRiskScore 67、crisisRiskScore 29、deleveragingRiskScore 53）。美股估值面5/5 EXTREME（CAPE 40.72逼近2000網路泡沫、Buffett指標228%歷史新高），但信用利差HY OAS 300bp仍處2007年最緊水位—典型「估值極端高+風險未被定價」的後期分歧結構。加密貨幣已先行進入主動去槓桿（BTC -3.94%、ETF流出$3.58B、F&G=12極度恐懼），最大傳導鏈為「加密爆倉→科技股→台積電→台股AI鏈」，組合內CSI104（最大持股，台股+全球配置）、YUI117（台灣50）、FSI069（全球科技趨勢）位於傳導鏈終點，承受最大尾部風險；ALI099（混合FoF）與00878（高股息）為相對防禦部位。USD/JPY 159.91逼近160套利平倉警戒線，Warsh 6/16-17主持首場FOMC為下一個關鍵事件窗口。",
+    "recommendation": "今日具體行動：(1) CSI132今日6日扣款1,000 TWD維持執行—TISA基於稅務優惠不可中斷；(2) 暫停心理上的「加碼衝動」，本月所有單筆加碼一律凍結，直到bubbleRiskScore回落至<55或marketState退回B；(3) 監控6/16-17 FOMC—若Warsh鷹派表態，立刻暫停BRI023下月扣款；(4) 00878若漲破35可分批獲利了結20%（約4,200股）鎖定獲利、提高現金部位至約8-10%組合；(5) FSI069目前1,000 TWD部位最小、未首扣，建議暫緩2檔下月扣款（8/18日），等候泡沫指數回落再啟動；(6) 持續觀察「加密→科技股→台積電→台股」傳導鏈是否啟動—若00878或YUI117單日下跌>3%且伴隨外資賣超，視為傳導鏈啟動訊號，立刻全面暫停所有DCA一個月並轉現金。"
+  },
+  {
     "date": "2026-06-05",
     "generatedAt": "2026-06-05T06:13:53+08:00",
     "summary": {
