@@ -1,5 +1,196 @@
 [
   {
+    "date": "2026-06-08",
+    "generatedAt": "2026-06-08T06:15:27+08:00",
+    "summary": {
+      "totalInvested": 690500,
+      "estimatedValue": null,
+      "returnAmount": null,
+      "returnPercent": null,
+      "overallRisk": "high",
+      "monthlyDCA": 20000,
+      "marketState": "D",
+      "marketStateLabel": "泡沫破裂初期",
+      "defconLevel": 2,
+      "bubbleRiskScore": 70,
+      "crisisRiskScore": 47,
+      "deleveragingRiskScore": 68,
+      "overallRiskScore": 61
+    },
+    "dcaToday": [
+      {
+        "code": "FSI069",
+        "name": "第一金全球大趨勢",
+        "amount": 1000,
+        "status": "executed"
+      }
+    ],
+    "dcaUpcoming": [
+      {
+        "date": "2026-06-09",
+        "code": "YUI117",
+        "amount": 1000
+      },
+      {
+        "date": "2026-06-11",
+        "code": "CSI132",
+        "amount": 1000
+      },
+      {
+        "date": "2026-06-12",
+        "code": "ALI099",
+        "amount": 1000
+      },
+      {
+        "date": "2026-06-14",
+        "code": "ALI099",
+        "amount": 1000
+      }
+    ],
+    "funds": [
+      {
+        "code": "CSI104",
+        "name": "國泰退休2039",
+        "totalInvested": 126000,
+        "units": 7302.8,
+        "avgNav": 17.2537,
+        "monthlyDCA": 0,
+        "nav": null,
+        "navDate": null,
+        "estimatedValue": null,
+        "returnAmount": null,
+        "returnPercent": null,
+        "riskLevel": "high",
+        "riskNotes": "目標日期2039組合基金、股票暴露約70%（台灣+全球），是組合內第二大持有部位（占18.2%），在當前D狀態（泡沫破裂初期）下面臨台股與美股雙重壓力。平均成本17.25，台指期夜盤崩跌3006點史上最大、台積電ADR-6.69%意味週一開盤後預估帳面短期回吐3-5%，債券部位（約30%）提供緩衝。泡沫風險70/100與去槓桿風險68/100同時偏高，本基金股票部位首當其衝，但組合型結構抗跌性優於純股票基金。操作：本基金無DCA合約、不需主動加碼；維持持有，等待6/11 CPI與6/17 FOMC定向；觸發條件：若台指失守42,000支撐並無反彈跡象，考慮減碼5-10%。",
+        "allocation": 18.2
+      },
+      {
+        "code": "ALI099",
+        "name": "安聯四季成長",
+        "totalInvested": 43000,
+        "units": 3420.1,
+        "avgNav": 11.99,
+        "monthlyDCA": 5000,
+        "nav": null,
+        "navDate": null,
+        "estimatedValue": null,
+        "returnAmount": null,
+        "returnPercent": null,
+        "riskLevel": "medium",
+        "riskNotes": "多元配置組合型基金（股債混合TISA級別），在去槓桿環境中相對抗跌，但DEFCON 2警戒下全球風險偏好同步下降仍會帶來壓力。平均成本11.99，每月5筆DCA共5,000元，下次扣款6/12（1,000元）。在去槓桿風險68/100環境下，組合型基金的多元化特性提供保護，預估本月跌幅可控制在2-4%。操作：維持5筆DCA不需暫停，這是組合內穩定的核心配置；觸發條件：若overallRisk升至75以上（DEFCON 1）或台股失守40,000，考慮暫停6/19、6/26兩筆扣款保留現金。",
+        "allocation": 6.2
+      },
+      {
+        "code": "CSI132",
+        "name": "國泰退休2049",
+        "totalInvested": 36000,
+        "units": 1450.1,
+        "avgNav": 22.0674,
+        "monthlyDCA": 6000,
+        "nav": null,
+        "navDate": null,
+        "estimatedValue": null,
+        "returnAmount": null,
+        "returnPercent": null,
+        "riskLevel": "high",
+        "riskNotes": "TISA帳戶、長存續期2049目標日期基金，股票暴露超過80%（高於CSI104），對市場崩跌最敏感。平均成本22.07相對偏高，意味先前在市場高點時段建倉，當前修正幅度更大；今日無扣款，6/11為下次扣款日。泡沫風險70/100對此基金特別嚴重，CAPE 39.8歷史第二高的2000年式類比意味本月可能下跌5-8%；但TISA具節稅優勢且為長期20年期商品，短期波動不影響投資邏輯。操作：維持6筆DCA共6,000元/月不變，反而是長期攤平好時機；觸發條件：若市場狀態升至E（崩潰中）或單月跌幅超10%，可選擇性暫停3筆（6/16、6/21、6/26）避免單月過度集中買入。",
+        "allocation": 5.2
+      },
+      {
+        "code": "BRI023",
+        "name": "貝萊德退休2050",
+        "totalInvested": 33000,
+        "units": 2089.9,
+        "avgNav": 14.35,
+        "monthlyDCA": 3000,
+        "nav": null,
+        "navDate": null,
+        "estimatedValue": null,
+        "returnAmount": null,
+        "returnPercent": null,
+        "riskLevel": "high",
+        "riskNotes": "長存續期目標日期2050組合基金，對殖利率上升最敏感的股債混合產品，存續期長達25年以上。平均成本14.35，美10Y殖利率4.55%已接近4.8%警戒線僅25bp，債券部位將承壓；股票部位也面臨美股估值極端（Buffett 219-237%）的修正壓力。5月非農172K打掉Fed降息幻想、所有主要投行已撤回2026降息預測，本基金可能是組合中本月最弱表現者之一，預估跌幅3-6%。操作：本月3,000元扣款已於6/3執行；觸發條件：若6/11核心CPI≥3.0%或10Y突破4.8%，立即暫停7月扣款；若Warsh在6/17 FOMC轉鴿，反而是加速加碼時點。",
+        "allocation": 4.8
+      },
+      {
+        "code": "FSI069",
+        "name": "第一金全球大趨勢",
+        "totalInvested": 2000,
+        "units": 87.8,
+        "avgNav": 11.39,
+        "monthlyDCA": 2000,
+        "nav": null,
+        "navDate": null,
+        "estimatedValue": null,
+        "returnAmount": null,
+        "returnPercent": null,
+        "riskLevel": "high",
+        "riskNotes": "全球趨勢型股票基金，科技/AI暴露高，在當前泡沫後期是組合中最脆弱資產，但部位極小（占比0.3%）影響整體可控。平均成本11.39，今日（6/8）正進行1,000元扣款（這是8日合約），下次扣款6/18。Broadcom Q3 AI晶片指引$16B不及預期$17.2B戳破「AI capex永遠超預期」敘事，費半單日-10.3%（2020/3以來最深）、NASDAQ-4.18%，本基金科技權重高將完整承受這波殺估值。操作：今日扣款已執行無法逆轉；強烈建議暫停6/18第二筆扣款等待AI敘事重定價；觸發條件：若NASDAQ跌破24,000或費半再跌10%，可考慮全面暫停雙筆DCA。",
+        "allocation": 0.3
+      },
+      {
+        "code": "YUI117",
+        "name": "元大台灣50",
+        "totalInvested": 5000,
+        "units": 51.6,
+        "avgNav": 58.14,
+        "monthlyDCA": 4000,
+        "nav": null,
+        "navDate": null,
+        "estimatedValue": null,
+        "returnAmount": null,
+        "returnPercent": null,
+        "riskLevel": "high",
+        "riskNotes": "追蹤台灣50指數的ETF連結基金，受台股直接影響，外資動向與台積電權重為關鍵。平均成本58.14，6/5台股加權-1.33%、夜盤期指崩跌3006點史上最大，意味6/8開盤後台股50成分股將集體承壓；台積電ADR -6.69%週一恐見跌破42,500。本基金與台股直接連動，本週預估跌幅3-5%；但4筆DCA分佈在2/9/17/24日剛好涵蓋本月低點，為攤平好時機。操作：明日（6/9）1,000元扣款依計畫執行，6/17、6/24兩筆維持；觸發條件：若台股守住42,000支撐並回升，加速加碼；若跌破40,000，仍維持DCA（長期投資邏輯不變）。",
+        "allocation": 0.7
+      },
+      {
+        "code": "00878",
+        "name": "國泰永續高股息ETF",
+        "totalInvested": 445500,
+        "units": 21000,
+        "avgNav": 21.2143,
+        "monthlyDCA": 0,
+        "nav": 32.32,
+        "navDate": "2026-06-05",
+        "estimatedValue": 678720,
+        "returnAmount": 233220,
+        "returnPercent": 52.35,
+        "riskLevel": "medium",
+        "riskNotes": "組合內最大單一部位（占64.5%）、台股高股息ETF。6/5收盤32.32元（-1.10%），未實現獲利+52.4%（+233,220元，市值約678,720元），平均成本21.21遠低於現價、利潤緩衝厚實，是組合中最強勢的資產。高股息ETF在「Fed不降息」場景下具相對優勢（殖利率題材+價值股輪動受惠），但泡沫破裂初期市場全面risk-off仍會拖累；台股若跌破42,000，本ETF短期可能回測30元（仍有40%+獲利空間）。**操作建議**：因部位過於集中且已大幅獲利，建議分批了結10-20%（約2,100-4,200股）轉現金，鎖定報酬同時保留主部位享受台股長線。觸發條件：若32元失守，加速減碼至18,000股；若反彈至33元以上，可分批了結獲利保留現金以待修正後加碼。",
+        "allocation": 64.5
+      }
+    ],
+    "alerts": [
+      {
+        "level": "critical",
+        "message": "DEFCON 2 — CRITICAL：市場狀態D（泡沫破裂初期），overallRisk 61/100、bubbleRisk 70/100、deleveragingRisk 68/100"
+      },
+      {
+        "level": "critical",
+        "message": "台股6/5夜盤期指崩跌3006點（史上最大），台積電ADR-6.69%、費半-10.3%，週一(6/8)開盤後台股部位承壓"
+      },
+      {
+        "level": "high",
+        "message": "00878佔組合64.5%（成本445,500、未實現+52.35%）、建議分批了結10-20%鎖定獲利"
+      },
+      {
+        "level": "high",
+        "message": "FSI069今日(6/8)1,000元扣款已執行；強烈建議暫停6/18第二筆扣款等待AI敘事重定價"
+      },
+      {
+        "level": "medium",
+        "message": "關鍵事件：6/11 CPI（核心≥3.0%為警戒）、6/16-17 FOMC（Warsh首主席）"
+      },
+      {
+        "level": "medium",
+        "message": "基金NAV來源(MoneyDJ/Fundrich/yesfund)全部回應403，今日無法估算基金市值"
+      }
+    ],
+    "marketContext": "全球資本市場進入 DEFCON 2 CRITICAL 警戒，市場狀態 D（泡沫破裂初期）：overallRisk 61/100、bubbleRiskScore 70/100（美股CAPE 39.8為歷史第二高僅次1999、Buffett 219-237%）、deleveragingRiskScore 68/100（加密ETF連12天淨流出$3.58B、BTC跌破$62K、$1.5B爆倉）、crisisRiskScore 47/100。台股6/5夜盤期指崩跌3,006點（史上最大）、台積電ADR -6.69%、費半 -10.3%（2020/3以來最深），週一(6/8)開盤後組合內所有台股相關部位（00878+YUI117+CSI104≈576,500元、佔組合83.5%）將首當其衝；美元/日圓160.20突破155警戒（日圓套利平倉風險升高）、美10Y 4.48%（距4.8%警戒僅32bp）、5月非農172K打掉Fed降息幻想（所有主要投行已撤回2026降息預測），長存續期基金（BRI023、CSI132）同步承壓。對Aaron組合（總投入690,500元）的三大威脅：(1)00878（佔64.5%）若失守32元觸發進一步減持風險、(2)CSI104+CSI132（合計23.4%）股票部位面臨2000年式估值修正、(3)FSI069科技/AI暴露即使部位小亦為最脆弱資產。",
+    "recommendation": "今日（6/8 週一）核心判斷：**這是壓力測試而非賣點**，但00878部位過於集中（64.5%）、獲利保護是當務之急。具體行動：(1) **立即評估00878獲利了結** — ETF已獲利+52.35%、可分批了結10-20%（約2,100-4,200股）將現金部位提升至10-15%，鎖定報酬同時保留主部位享受台股長線；(2) **FSI069**今日1,000元扣款已執行無法逆轉，但強烈建議暫停6/18第二筆扣款等待AI敘事重定價（Broadcom $16B指引戳破AI capex永遠超預期敘事）；(3) **BRI023**若6/11 CPI核心≥3.0%或10Y突破4.8%警戒，立即暫停7月3,000元扣款；(4) 其餘DCA（ALI099 5筆/月、CSI132 6筆/月、YUI117 4筆/月）維持原計畫，這些屬長線定期定額部位，當前修正反而為攤平機會；(5) **本週決策關鍵事件**：6/11 CPI核心年增率（≥3.0%為殖利率突破4.6%警戒）、6/16-17 FOMC（Warsh首次主持FOMC，若硬扛降息可能重啟科技股反彈、美元急貶2-3%）。觸發強化減碼條件：若整體風險升至75以上（DEFCON 1）或台股跌破40,000無反彈，啟動全面DCA暫停與股票部位減碼20-30%。"
+  },
+  {
     "date": "2026-06-07",
     "generatedAt": "2026-06-07T06:13:50+08:00",
     "summary": {
