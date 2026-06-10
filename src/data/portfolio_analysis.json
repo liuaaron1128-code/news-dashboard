@@ -1,5 +1,199 @@
 [
   {
+    "date": "2026-06-11",
+    "generatedAt": "2026-06-11T06:15:49+08:00",
+    "summary": {
+      "totalInvested": 692500,
+      "estimatedValue": null,
+      "returnAmount": null,
+      "returnPercent": null,
+      "overallRisk": "high",
+      "monthlyDCA": 20000
+    },
+    "dcaToday": [
+      {
+        "code": "CSI132",
+        "name": "國泰退休2049",
+        "amount": 1000,
+        "paymentDay": 11
+      }
+    ],
+    "dcaUpcoming": [
+      {
+        "date": "2026-06-12",
+        "code": "ALI099",
+        "name": "安聯四季成長",
+        "amount": 1000
+      },
+      {
+        "date": "2026-06-14",
+        "code": "ALI099",
+        "name": "安聯四季成長",
+        "amount": 1000
+      },
+      {
+        "date": "2026-06-16",
+        "code": "CSI132",
+        "name": "國泰退休2049",
+        "amount": 1000
+      },
+      {
+        "date": "2026-06-17",
+        "code": "YUI117",
+        "name": "元大台灣50",
+        "amount": 1000
+      },
+      {
+        "date": "2026-06-18",
+        "code": "FSI069",
+        "name": "第一金全球大趨勢",
+        "amount": 1000
+      }
+    ],
+    "funds": [
+      {
+        "code": "CSI104",
+        "name": "國泰退休2039",
+        "totalInvested": 126000,
+        "paymentsCount": 0,
+        "nav": null,
+        "navDate": null,
+        "avgNav": 17.2537,
+        "units": 7302.8,
+        "estimatedValue": null,
+        "returnAmount": null,
+        "returnPercent": null,
+        "riskLevel": "high",
+        "riskNotes": "目標日期2039組合基金為投組最大持股（佔本金18.2%），股票配置約65-70%、債券30-35%，雙重暴露於台股與全球股市。今日無NAV資料、無法計算即時報酬，但平均成本17.25已建立完整部位。當前市場狀態C（泡沫後期）+泡沫風險分67高位、去槓桿風險分56中高，目標日期基金內部的全球股票部位將同步承受美股估值修正壓力，債券部位則因6月FOMC可能轉鷹+CPI回升至3.8%承壓。建議：作為長期退休帳戶維持持有，不需主動加碼但也不必減碼；嚴密關注若市場跌破關鍵支撐、危機分數突破60則考慮分批入場攤平。",
+        "allocation": "stock-bond-mixed"
+      },
+      {
+        "code": "ALI099",
+        "name": "安聯四季成長",
+        "totalInvested": 43000,
+        "paymentsCount": 2,
+        "nav": null,
+        "navDate": null,
+        "avgNav": 11.99,
+        "units": 3420.1,
+        "estimatedValue": null,
+        "returnAmount": null,
+        "returnPercent": null,
+        "riskLevel": "medium",
+        "riskNotes": "多元配置型基金（股債混合+多元資產），相對股票型基金抗跌性高，在去槓桿風險分56中高的環境下表現相對穩健。今日無即時NAV，但平均成本11.99維持。5月20日至今已新增2,000 TWD（兩次扣款：6/5與5/26），下次扣款6/12。當前市場狀態C+泡沫風險67對混合型衝擊有限，但若日圓160+套利平倉觸發系統性風險，多元資產仍會聯動承壓。建議：維持現有5條DCA每月5,000 TWD不變，作為穩定核心。若DEFCON升至2再考慮暫緩加碼。",
+        "allocation": "multi-asset"
+      },
+      {
+        "code": "CSI132",
+        "name": "國泰退休2049",
+        "totalInvested": 37000,
+        "paymentsCount": 5,
+        "nav": null,
+        "navDate": null,
+        "avgNav": 22.0674,
+        "units": 1450.1,
+        "estimatedValue": null,
+        "returnAmount": null,
+        "returnPercent": null,
+        "riskLevel": "high",
+        "riskNotes": "TISA帳戶長存續期目標日期基金（25年到期），與CSI104同類但股票暴露更高（約75-80%），對應市場敏感度最大。今日扣款1,000 TWD（6/11），月扣款6,000 TWD為投組最高頻次。當前泡沫風險分67高位+去槓桿風險分56，長存續期基金在美股估值（CAPE 39.92已逼近2000年水位）回調時跌幅將超越大盤。建議：今日扣款正常執行，但若CPI意外+FOMC轉鷹引發10年債回4.7%，可考慮將每月6筆DCA調整為4筆以增加現金緩衝；長期視角下仍是最佳長線複利工具。",
+        "allocation": "target-date-long"
+      },
+      {
+        "code": "BRI023",
+        "name": "貝萊德退休2050",
+        "totalInvested": 33000,
+        "paymentsCount": 1,
+        "nav": null,
+        "navDate": null,
+        "avgNav": 14.35,
+        "units": 2089.9,
+        "estimatedValue": null,
+        "returnAmount": null,
+        "returnPercent": null,
+        "riskLevel": "high",
+        "riskNotes": "貝萊德2050目標日期組合基金，最長存續期（24年），股票暴露最高（80%+），對殖利率上升與股市修正最敏感。今日無NAV，平均成本14.35。5/20以來新增1次扣款3,000 TWD（6/3），下次7/3。市場狀態C+泡沫風險67+CAPE 39.92的組合對長存續期股票型基金衝擊最大；同時去槓桿風險分56，Margin Debt $1.30T+53% YoY創歷史新高，一旦觸發強制平倉，全球退休基金普遍承壓。建議：維持每月3,000 TWD扣款，但設定停損預警——若NAV跌破12.5（虧損14%）需重新評估；當前可作為長線配置但不擴大部位。",
+        "allocation": "target-date-long"
+      },
+      {
+        "code": "FSI069",
+        "name": "第一金全球大趨勢",
+        "totalInvested": 2000,
+        "paymentsCount": 1,
+        "nav": null,
+        "navDate": null,
+        "avgNav": 11.39,
+        "units": 87.8,
+        "estimatedValue": null,
+        "returnAmount": null,
+        "returnPercent": null,
+        "riskLevel": "high",
+        "riskNotes": "全球趨勢股票型基金，重壓科技/AI/半導體等成長題材，對泡沫風險最敏感，是組合中波動最大的部位。今日無NAV，平均成本11.39。5/20後新增1次扣款（6/8），下次6/18。當前泡沫風險分67高位+美股Buffett指標232%+AI七雄已現修正壓力+台股6/9 V型反彈籌碼未洗清，全球趨勢基金處於最大不對稱風險。SpaceX IPO可能是頂部供給信號、5/31美對NVIDIA中國子公司外圍交易管制收緊將重塑AI晶片貿易路徑。建議：暫緩加碼，下次6/18扣款照常但金額已小（1,000 TWD/月）影響可控；若DEFCON升至2-1則暫停所有FSI069扣款，等待泡沫破裂後重新進場。",
+        "allocation": "global-thematic-equity"
+      },
+      {
+        "code": "YUI117",
+        "name": "元大台灣50",
+        "totalInvested": 6000,
+        "paymentsCount": 3,
+        "nav": null,
+        "navDate": null,
+        "avgNav": 58.14,
+        "units": 51.6,
+        "estimatedValue": null,
+        "returnAmount": null,
+        "returnPercent": null,
+        "riskLevel": "high",
+        "riskNotes": "追蹤台灣50指數，受台股權重股（台積電佔比近50%）直接影響，外資動向為關鍵。今日無NAV，平均成本58.14（已是相對高點）。5/20後新增3次扣款（6/2、6/9、6/17未到），月扣款4,000 TWD。當前台股6/8出現單日-3.31%、AI鏈率先轉弱、Hormuz復通+Iran-Israel停火後V型反彈但籌碼未洗清；泡沫風險分67+台美AI晶片管制升級對台積電直接構成壓力。建議：DCA週期密集（4條扣款）可發揮平均成本效果，繼續執行；但避免一次性大額加碼；密切關注外資動向，若連續5日大幅賣超則考慮暫停部分DCA。",
+        "allocation": "taiwan-equity-index"
+      },
+      {
+        "code": "00878",
+        "name": "國泰永續高股息ETF",
+        "totalInvested": 445500,
+        "paymentsCount": 0,
+        "nav": 31.83,
+        "navDate": "2026-06-10",
+        "avgNav": 21.2143,
+        "units": 21000,
+        "estimatedValue": 668430,
+        "returnAmount": 222930,
+        "returnPercent": 50.04,
+        "riskLevel": "medium",
+        "riskNotes": "台股高股息ETF，現價31.83 vs 平均成本21.21，目前帳面報酬約+50%（含息估計），是組合中表現最強且最大未實現獲利部位。2026 Q2配發0.66元創單季新高（年化殖利率約7.5%）、6/12股息入帳。當前市場狀態C+泡沫風險67對高股息ETF衝擊較小（成分股集中傳產+金融+電子優質配息股），但若美股大跌引發台股系統性下殺仍會聯動。去槓桿風險分56中高，需注意若外資轉為連續賣超將壓抑漲幅。建議：作為防禦型配息資產維持持有；若帳面獲利目標達+60%可考慮分批獲利了結（賣出20-30%）以鎖定獲利並增加現金部位準備危機後的低點布局。",
+        "allocation": "taiwan-dividend-etf"
+      }
+    ],
+    "alerts": [
+      {
+        "level": "high",
+        "type": "bubble_late_stage",
+        "title": "市場狀態 C（泡沫後期）+ DEFCON 3 — 高度警戒",
+        "message": "整體風險分53、泡沫風險分67（CAPE 39.92已逼近2000年網路泡沫水位、Buffett指標232%）、去槓桿風險分56（Margin Debt $1.30T、+53% YoY 歷史新高）。距離正式破裂僅一個催化劑之遙。"
+      },
+      {
+        "level": "high",
+        "type": "fed_pivot_hawkish",
+        "title": "6/16-17 Warsh 首場 FOMC 可能轉鷹",
+        "message": "今晚 5月CPI 公布為關鍵；若CPI超預期，10年債可能回升4.7%，FSI069、YUI117、BRI023、CSI132 等股票暴露高的部位將首當其衝。"
+      },
+      {
+        "level": "medium",
+        "type": "taiwan_tech_chain_weakness",
+        "title": "亞洲AI鏈率先轉弱、台股單日-3.31%",
+        "message": "5/31美對NVIDIA中國子公司外圍交易管制收緊，台灣已研擬跟進。YUI117 與 00878 中的台積電權重直接受壓。"
+      },
+      {
+        "level": "medium",
+        "type": "carry_trade_unwinding",
+        "title": "日圓160+套利平倉風險",
+        "message": "若JPY碰觸160並引發套利平倉，全球流動性將遭受衝擊，所有風險資產（特別是長存續期 CSI132、BRI023）連帶受壓。"
+      }
+    ],
+    "marketContext": "今日市場狀態 C（泡沫後期）、DEFCON 3 HIGH ALERT、整體風險分 53/100。三大關鍵指數：泡沫風險 67/100（美股 CAPE 39.92 已逼近 2000 年網路泡沫水位、Buffett 指標 232%、Margin Debt 1.30T 創歷史新高且 YoY +53%）；金融危機風險 35/100（信用利差仍極緊 HY OAS 2.76%、銀行體系健康但日圓 160+ 套利平倉為最大不對稱風險）；去槓桿風險 56/100（高槓桿一旦解開即觸發強制平倉螺旋）。對 Aaron 7 檔資產的具體含義：(1) CSI104（最大持股 18.2%）與 CSI132、BRI023 等長存續期目標日期基金，股票部位將在美股估值修正中承壓，但配置在 2039-2050 退休帳戶可承受短期波動；(2) FSI069 全球趨勢與 YUI117 台灣 50 為純股票暴露，受 AI 鏈轉弱+5/31 NVIDIA 中國子公司外圍管制收緊雙重壓力，風險最高；(3) ALI099 多元配置與 00878 高股息 ETF 為相對防禦部位；(4) 6 月最大事件——今晚 5 月 CPI（共識 +4.2% YoY、核心 +2.9%）與 6/16-17 Warsh 首場 FOMC，若 CPI 超預期將鎖死鷹派、10 年債回 4.7%、AI 七雄再修正。距離正式破裂僅一個催化劑之遙，但「催化劑出現前」仍是配息收入+DCA 平均成本最後窗口。",
+    "recommendation": "今日具體行動方向（市場狀態C+DEFCON 3 應對策略）：[1] 今日 CSI132 扣款 1,000 TWD 照常執行——長存續期退休帳戶不應因短期波動暫停；[2] 未來 7 天 ALI099/CSI132/YUI117/FSI069 共 5 筆扣款（合計 5,000 TWD）全部維持，繼續發揮 DCA 攤平效果；[3] 不擴大任何加碼：當前不適合單筆大額進場，特別是 FSI069 全球趨勢與 YUI117 台灣 50；[4] 00878 已有約 +50% 帳面報酬，6/12 股息入帳後若帳面達 +60% 可考慮分批獲利了結 20-30%（賣出 4,000-6,000 股）以鎖定獲利、累積現金為危機後的低點佈局做準備；[5] 監控觸發條件——今晚 5 月 CPI 若 >+4.3%（超預期）、台股若連續 3 日跌幅超 2%、JPY 觸及 160、HY OAS 突破 3.5%、DEFCON 升至 2，任一觸發應立即暫停 FSI069 與 YUI117 扣款並評估減持高股票暴露部位；[6] CSI104（最大持股無 DCA）維持不動，作為長期核心；[7] 持續觀察 6/16-17 Warsh FOMC 結果作為下一週重大調整時點。"
+  },
+  {
     "date": "2026-06-10",
     "generatedAt": "2026-06-10T06:17:52+08:00",
     "summary": {
