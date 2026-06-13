@@ -1,5 +1,172 @@
 [
   {
+    "date": "2026-06-14",
+    "generatedAt": "2026-06-14T06:15:21+08:00",
+    "summary": {
+      "totalInvested": 694500,
+      "estimatedValue": 921401,
+      "returnAmount": 226901,
+      "returnPercent": 32.67,
+      "overallRisk": "high",
+      "monthlyDCA": 20000
+    },
+    "dcaToday": [
+      {
+        "code": "ALI099",
+        "amount": 1000,
+        "name": "安聯四季成長"
+      }
+    ],
+    "dcaUpcoming": [
+      {
+        "code": "CSI132",
+        "amount": 1000,
+        "date": "2026-06-16",
+        "name": "國泰退休2049"
+      },
+      {
+        "code": "FSI069",
+        "amount": 1000,
+        "date": "2026-06-18",
+        "name": "第一金全球大趨勢"
+      },
+      {
+        "code": "ALI099",
+        "amount": 1000,
+        "date": "2026-06-19",
+        "name": "安聯四季成長"
+      }
+    ],
+    "funds": [
+      {
+        "code": "CSI104",
+        "name": "國泰退休2039",
+        "totalInvested": 126000,
+        "paymentsCount": 0,
+        "nav": null,
+        "navDate": null,
+        "estimatedValue": null,
+        "returnAmount": null,
+        "returnPercent": null,
+        "riskLevel": "high",
+        "riskNotes": "目標日期型基金，股票占比約70%（全球+台股混配），對美股估值極高+台股短期噴出後脆弱性高度敏感。本檔126,000 TWD為組合次大暴露（占TWD基金部位51%），歷史平均成本17.25在累積期估算約+18%報酬已大幅實現。當前泡沫風險指數65/100、美股估值5/5（CAPE 41.6史上次高），加上6/17 FOMC前夕鷹派落差風險，對長存續期股票配置直接衝擊。建議：本檔無DCA合約，維持不加碼，設定軟性停利於+25%並密切關注FOMC後外資台股動向。",
+        "allocation": null
+      },
+      {
+        "code": "ALI099",
+        "name": "安聯四季成長 TISA",
+        "totalInvested": 45000,
+        "paymentsCount": 4,
+        "nav": 14.52,
+        "navDate": "2026-04-30",
+        "estimatedValue": 53660,
+        "returnAmount": 8660,
+        "returnPercent": 19.24,
+        "riskLevel": "medium",
+        "riskNotes": "多元股債混合配置，理論上對泡沫期具防禦力，但去槓桿風險指數43/100顯示QT持續+USD/JPY破155警戒下，股債估值同步壓縮風險升高。最新淨值14.52（2026/4/30，略為過時）對應平均成本11.99約+21%報酬，反映泡沫後期高位累積收益。今日(6/14)有1,000 TWD扣款照常進行；組合基金易出現「淨值黏滯但下行同步」現象。建議：維持每月5,000 DCA作為組合波動平滑器，惟若報酬回吐至+15%以下需重新檢視多元配置是否仍具防禦力。",
+        "allocation": null
+      },
+      {
+        "code": "CSI132",
+        "name": "國泰退休2049 TISA",
+        "totalInvested": 37000,
+        "paymentsCount": 5,
+        "nav": null,
+        "navDate": null,
+        "estimatedValue": null,
+        "returnAmount": null,
+        "returnPercent": null,
+        "riskLevel": "high",
+        "riskNotes": "長存續期目標日期基金（投資期2049），比CSI104股票暴露更高，對當前泡沫風險65/100敏感度為組合中前段班。本檔每月6,000 DCA為組合中最大DCA金額，泡沫後期維持定額具「攤平成本+捕捉未來重設」雙重意義。然而美股估值5/5+台股噴出1,019點脆弱性下，短期月扣可能買在頭部前夕。建議：維持6,000/月 DCA（時間框架是優勢），若6/17 FOMC鷹派觸發跌幅>10%視為加碼信號；反之若繼續噴出>10%可考慮暫停其中1-2筆扣款保留現金。",
+        "allocation": null
+      },
+      {
+        "code": "BRI023",
+        "name": "貝萊德退休2050",
+        "totalInvested": 33000,
+        "paymentsCount": 1,
+        "nav": null,
+        "navDate": null,
+        "estimatedValue": null,
+        "returnAmount": null,
+        "returnPercent": null,
+        "riskLevel": "high",
+        "riskNotes": "全組合中存續期最長、股票暴露最高，對泡沫破裂與10Y殖利率4.49%上行雙重敏感。今日USD/JPY 160.25已破155警戒，套利平倉風險升高將直接衝擊全球股票（本基金核心暴露），且5月CPI 4.2%三年新高顯示通膨黏性仍是Fed刺。當前淨值不可得，假設於成本附近，30,000 TWD快照投入大部分時間在2025下半年高位區間。建議：每月3,000 DCA可維持但分散風險，6/17 FOMC前不額外加碼，留意USD/JPY若繼續上行至162-163可能觸發風險偏好驟降。",
+        "allocation": null
+      },
+      {
+        "code": "FSI069",
+        "name": "第一金全球大趨勢",
+        "totalInvested": 2000,
+        "paymentsCount": 1,
+        "nav": null,
+        "navDate": null,
+        "estimatedValue": null,
+        "returnAmount": null,
+        "returnPercent": null,
+        "riskLevel": "critical",
+        "riskNotes": "股票型全球趨勢基金，對科技/AI主題敏感度最高，正是當前泡沫風險65/100主要集中區（SpaceX IPO $1.8T機構投機+Margin Debt $1.28T紀錄+CAPE 41.6史上次高）。每月2,000 DCA金額較小、絕對暴險可控，但今日briefing指出「Microsoft × KPMG 27萬人部署Agent 365」是AI噴出題材轉折性訊號，短期動能仍在但泡沫後期主題基金常出現「噴出後V型崩落」。建議：維持2,000/月 DCA但設定報酬達+30%即減碼一半，列為組合中最高風險警戒檔，特別關注6/17 FOMC後是否觸發納指明顯回檔。",
+        "allocation": null
+      },
+      {
+        "code": "YUI117",
+        "name": "元大台灣50",
+        "totalInvested": 6000,
+        "paymentsCount": 3,
+        "nav": 60.87,
+        "navDate": "2026-06-10",
+        "estimatedValue": 6141,
+        "returnAmount": 141,
+        "returnPercent": 2.35,
+        "riskLevel": "high",
+        "riskNotes": "直接追蹤台灣50指數（連結基金A不配息），受台股+外資雙重影響。最新淨值60.87 (2026/6/10) vs 平均成本58.14約+4.7%報酬，新加3,000 DCA於高位附近未顯著盈虧。本週台股噴出1,019點是『美伊停火預期』+『噴出交易』地緣風險溢價暴力釋放，當前外資三大法人動向是關鍵變數。在泡沫風險65/100+單日噴出後脆弱性下，建議維持4,000/月 DCA但暫不額外加碼，密切關注6/18台灣央行理監事會與外資進出，若FOMC後台股回檔>8%再考慮一次性加碼。",
+        "allocation": null
+      },
+      {
+        "code": "00878",
+        "name": "國泰永續高股息ETF",
+        "totalInvested": 445500,
+        "paymentsCount": 0,
+        "nav": 31.6,
+        "navDate": "2026-06-11",
+        "estimatedValue": 663600,
+        "returnAmount": 218100,
+        "returnPercent": 48.96,
+        "riskLevel": "high",
+        "riskNotes": "組合中最大絕對暴險（成本445,500 TWD，占整體64%），屬高股息防禦類，在去槓桿風險43/100的環境中相對穩健，但任何重大下行皆會以絕對金額重創總資產。當前股價31.60 (2026/6/11) vs 成本21.21約+49%獲利（推估市值約663K，未實現獲利約218K），泡沫後期此類已實現巨額帳面獲利的高股息ETF具強烈『停利優先』誘惑。建議：當前無DCA合約自然停止加碼，考慮在32元上方分3批設定停利5,000-10,000股以鎖定30-50K獲利並提高現金水位，維持10-15K股核心部位；若6/17 FOMC後出現>10%回檔再低吸重建。",
+        "allocation": null
+      }
+    ],
+    "alerts": [
+      {
+        "level": "high",
+        "message": "6/17 FOMC前夕，市場狀態C（泡沫後期），DEFCON 3 / 整體風險46，組合中64%曝險集中在00878（445K），需考慮分批停利鎖定泡沫期報酬"
+      },
+      {
+        "level": "high",
+        "message": "泡沫風險指數65/100、美股估值5/5（CAPE 41.6史上次高、Buffett 232.6%、Margin Debt $1.28T紀錄），FSI069全球趨勢/AI主題列為critical警戒"
+      },
+      {
+        "level": "medium",
+        "message": "USD/JPY 160.25已破155警戒，套利平倉風險升高，將直接衝擊BRI023、CSI132、FSI069等全球股票暴險"
+      },
+      {
+        "level": "medium",
+        "message": "00878未實現獲利約+49%（推估+218K），建議32元上方分批停利5,000-10,000股，提高組合現金水位至10-15%"
+      },
+      {
+        "level": "low",
+        "message": "CSI104（126K，最大基金部位）2026/2/28後無最新淨值資料，建議透過國泰投信或基富通APP確認近期報酬狀況"
+      },
+      {
+        "level": "low",
+        "message": "今日(6/14週六)ALI099扣款1,000 TWD照常進行；下週CSI132(6/16)、FSI069(6/18)、ALI099(6/19)定額扣款均在FOMC前後"
+      }
+    ],
+    "marketContext": "當前市場狀態C（泡沫後期），DEFCON 3 / 整體風險46/100，三大風險指數：泡沫風險65/100（美股估值5/5、Shiller CAPE 41.6史上次高、Buffett指標232.6%史上最高、Margin Debt $1.28T紀錄、SpaceX IPO $1.8T極度投機）；金融危機風險27/100（HY OAS 2.76%極窄、銀行健康、ISM雙位數擴張、EPS +23.2%，無立即崩潰觸發點）；去槓桿風險43/100（USD/JPY 160.25破155警戒、QT持續溫和、10Y 4.49%警戒下）。對Aaron組合（總投入約694K，6檔TWD基金+1檔00878 ETF）而言：(1) 00878 64%絕對暴險受台股估值與殖利率雙重影響，已實現+49%帳面獲利需開始分批鎖定；(2) CSI104（126K，18%）為長存續期股票暴險，最易受6/17 FOMC鷹派落差衝擊；(3) FSI069+CSI132+BRI023全球股票/長存續期合計約72K，對泡沫破裂與USD/JPY套利平倉雙重敏感。組合整體風險評估升至high，建議進入『泡沫後期最後關卡』的分批停利+提高現金水位模式。",
+    "recommendation": "今日6/14週六，6/17 FOMC即將登場為『泡沫後期最後一關』雙重壓力測試。具體操作優先級：(1) [立即執行] 00878未實現+49%顯著超漲且占組合64%曝險過度集中，建議週一開盤32元上方分3批設定停利5,000-10,000股，鎖定30-50K獲利，保留10-15K股核心部位；(2) [週一前完成] FSI069全球趨勢/AI主題列為critical警戒，若達+30%報酬即減碼一半，FOMC前不額外加碼；(3) [維持不變] CSI132維持6,000/月最大DCA（長存續期受惠未來重設），ALI099維持5,000/月作為波動平滑器，今日扣款1,000 TWD照常；(4) [FOMC後決策] 若6/17鷹派觸發台股/美股回檔>10%，CSI104、YUI117、BRI023為再加碼首選，分散3-4週分批進場；(5) [現金水位] 透過(1)分批停利將組合現金水位拉高至10-15%（約70-100K TWD），備戰7-9月可能的『泡沫後期最終噴出→修正』雙路徑情境；(6) [監控指標] 持續觀察USD/JPY是否突破162、外資台股單周淨賣超是否>300億、HY OAS是否升破3.5%。"
+  },
+  {
     "date": "2026-06-13",
     "generatedAt": "2026-06-13T06:15:30+08:00",
     "summary": {
