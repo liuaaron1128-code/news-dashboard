@@ -1,5 +1,276 @@
 [
   {
+    "date": "2026-06-15",
+    "defconLevel": 3,
+    "overallRisk": 53,
+    "alertLabel": "DEFCON 3 — HIGH ALERT",
+    "alertColor": "orange",
+    "summary": "美股估值已逼近dot-com峰值(CAPE 40.06/Buffett 231.7%)、Margin Debt 創紀錄$1.30T，但信用、銀行、波動率仍未爆——典型泡沫後期結構；本週6/16-17 FOMC (Warsh首場)為關鍵壓力測試。USD/JPY 160突破155警戒；6/4 Nasdaq -4.18%晶片股集中拋售已是廣度警訊。",
+    "marketState": "C",
+    "marketStateLabel": "泡沫後期",
+    "bubbleRiskScore": 67,
+    "crisisRiskScore": 33,
+    "deleveragingRiskScore": 57,
+    "indicators": [
+      {
+        "id": "m1_liquidity",
+        "name": "流動性",
+        "fullName": "全球流動性 Global Liquidity",
+        "value": "2/5",
+        "numericValue": 2.0,
+        "riskScore": 40,
+        "level": "MODERATE",
+        "historicalAvg": "Fed QT $25B/月",
+        "currentVsAvg": "縮表中",
+        "benchmark": "風險分40/100 (2/5)",
+        "description": "Fed $6.71T QT中, M2 $22.69T擴張, RRP <$1B",
+        "implication": "見儀表板燈號"
+      },
+      {
+        "id": "m2_yield",
+        "name": "美債利率",
+        "fullName": "美債殖利率曲線 Treasury Yield Curve",
+        "value": "2/5",
+        "numericValue": 2.0,
+        "riskScore": 40,
+        "level": "MODERATE",
+        "historicalAvg": "10Y-2Y正常",
+        "currentVsAvg": "未達4.8警戒",
+        "benchmark": "風險分40/100 (2/5)",
+        "description": "10Y 4.49% / 2Y 4.09% / 30Y 4.97% / 10-2 +40bp",
+        "implication": "見儀表板燈號"
+      },
+      {
+        "id": "m3_credit",
+        "name": "信用風險",
+        "fullName": "信用風險 Credit Stress",
+        "value": "1/5",
+        "numericValue": 1.0,
+        "riskScore": 20,
+        "level": "LOW",
+        "historicalAvg": "HY OAS<350寬鬆",
+        "currentVsAvg": "285bp",
+        "benchmark": "風險分20/100 (1/5)",
+        "description": "HY OAS 285bp / IG 80bp / BBB 100bp",
+        "implication": "見儀表板燈號"
+      },
+      {
+        "id": "m4_banking",
+        "name": "銀行壓力",
+        "fullName": "銀行金融壓力 Banking Stress",
+        "value": "1/5",
+        "numericValue": 1.0,
+        "riskScore": 20,
+        "level": "LOW",
+        "historicalAvg": "KRE接近52w高",
+        "currentVsAvg": "健康",
+        "benchmark": "風險分20/100 (1/5)",
+        "description": "KRE $71.64 接近52週高 $74.08",
+        "implication": "見儀表板燈號"
+      },
+      {
+        "id": "m5_fx",
+        "name": "美元匯率",
+        "fullName": "美元匯率 Dollar FX",
+        "value": "3/5",
+        "numericValue": 3.0,
+        "riskScore": 60,
+        "level": "HIGH",
+        "historicalAvg": "DXY <108正常",
+        "currentVsAvg": "JPY警戒",
+        "benchmark": "風險分60/100 (3/5)",
+        "description": "DXY 99.75 / USD/TWD 31.63 / USD/JPY 160.18",
+        "implication": "見儀表板燈號"
+      },
+      {
+        "id": "m6_us_equity",
+        "name": "美股估值",
+        "fullName": "美股估值泡沫 US Equity Bubble",
+        "value": "5/5",
+        "numericValue": 5.0,
+        "riskScore": 100,
+        "level": "EXTREME",
+        "historicalAvg": "CAPE均值17x",
+        "currentVsAvg": "極端高估",
+        "benchmark": "風險分100/100 (5/5)",
+        "description": "Shiller CAPE 40.06 / Buffett 231.7% / Fwd PE 21x",
+        "implication": "見儀表板燈號"
+      },
+      {
+        "id": "m7_breadth",
+        "name": "美股廣度",
+        "fullName": "美股廣度趨勢 Market Breadth",
+        "value": "3/5",
+        "numericValue": 3.0,
+        "riskScore": 60,
+        "level": "HIGH",
+        "historicalAvg": ">200MA<50%惡化",
+        "currentVsAvg": "集中度警訊",
+        "benchmark": "風險分60/100 (3/5)",
+        "description": "6/4 Nasdaq -4.18% 晶片股集中拋售",
+        "implication": "見儀表板燈號"
+      },
+      {
+        "id": "m8_taiwan",
+        "name": "台股風險",
+        "fullName": "台股泡沫風險 Taiwan Equity",
+        "value": "4/5",
+        "numericValue": 4.0,
+        "riskScore": 80,
+        "level": "EXTREME",
+        "historicalAvg": "外資淨買超",
+        "currentVsAvg": "空單7萬口",
+        "benchmark": "風險分80/100 (4/5)",
+        "description": "加權45,677 / 外資期空近7萬口 / 正乖離歷史高",
+        "implication": "見儀表板燈號"
+      },
+      {
+        "id": "m9_crypto",
+        "name": "加密貨幣",
+        "fullName": "加密泡沫去槓桿 Crypto Bubble",
+        "value": "3/5",
+        "numericValue": 3.0,
+        "riskScore": 60,
+        "level": "HIGH",
+        "historicalAvg": "MVRV<2正常",
+        "currentVsAvg": "已局部爆倉",
+        "benchmark": "風險分60/100 (3/5)",
+        "description": "BTC $64K / 6/3 F&G=12 / ETF流出$519M",
+        "implication": "見儀表板燈號"
+      },
+      {
+        "id": "m10_contagion",
+        "name": "跨資產",
+        "fullName": "跨資產相關傳染 Cross-Asset",
+        "value": "2/5",
+        "numericValue": 2.0,
+        "riskScore": 40,
+        "level": "MODERATE",
+        "historicalAvg": "資產分散有效",
+        "currentVsAvg": "正常",
+        "benchmark": "風險分40/100 (2/5)",
+        "description": "股債負相關仍存, 黃金避險仍有效",
+        "implication": "見儀表板燈號"
+      },
+      {
+        "id": "m11_leverage",
+        "name": "槓桿籌碼",
+        "fullName": "槓桿籌碼 Leverage Positioning",
+        "value": "4/5",
+        "numericValue": 4.0,
+        "riskScore": 80,
+        "level": "EXTREME",
+        "historicalAvg": "Margin不超過1.2T",
+        "currentVsAvg": "紀錄高位",
+        "benchmark": "風險分80/100 (4/5)",
+        "description": "Margin Debt $1.30T 紀錄高 / 負信用 -$871B",
+        "implication": "見儀表板燈號"
+      },
+      {
+        "id": "m12_vola",
+        "name": "波動率",
+        "fullName": "波動率避險 Volatility",
+        "value": "2/5",
+        "numericValue": 2.0,
+        "riskScore": 40,
+        "level": "MODERATE",
+        "historicalAvg": "VIX 15-20正常",
+        "currentVsAvg": "19.44",
+        "benchmark": "風險分40/100 (2/5)",
+        "description": "VIX 19.44 中性偏低 (MOVE資料缺口)",
+        "implication": "見儀表板燈號"
+      },
+      {
+        "id": "m13_macro",
+        "name": "景氣盈餘",
+        "fullName": "景氣盈餘 Macro Earnings",
+        "value": "1/5",
+        "numericValue": 1.0,
+        "riskScore": 20,
+        "level": "LOW",
+        "historicalAvg": "PMI>50擴張",
+        "currentVsAvg": "強健",
+        "benchmark": "風險分20/100 (1/5)",
+        "description": "ISM Services 54.5 / Q2 EPS +19.9% / CY26 $331",
+        "implication": "見儀表板燈號"
+      },
+      {
+        "id": "m14_behavior",
+        "name": "泡沫行為",
+        "fullName": "泡沫行為 Bubble Behavior",
+        "value": "2/5",
+        "numericValue": 2.0,
+        "riskScore": 40,
+        "level": "MODERATE",
+        "historicalAvg": "F&G<60理性",
+        "currentVsAvg": "散戶已悲觀(反指標)",
+        "benchmark": "風險分40/100 (2/5)",
+        "description": "CNN F&G 33-34 (恐慌) / AAII 熊 75%",
+        "implication": "見儀表板燈號"
+      },
+      {
+        "id": "m15_events",
+        "name": "重大事件",
+        "fullName": "事件黑天鵝 Event Shock",
+        "value": "3/5",
+        "numericValue": 3.0,
+        "riskScore": 60,
+        "level": "HIGH",
+        "historicalAvg": "無重大事件",
+        "currentVsAvg": "FOMC本週",
+        "benchmark": "風險分60/100 (3/5)",
+        "description": "6/16-17 FOMC Warsh首場 / 6/10 CPI已出",
+        "implication": "見儀表板燈號"
+      }
+    ],
+    "actionRecommendations": [
+      {
+        "priority": "立即監控",
+        "level": "high",
+        "action": "6/17 FOMC + Warsh首場記者會",
+        "detail": "觀察點陣圖、語氣鷹鴿、CPI後10Y反應；HY OAS若破350bp、VIX破25、USD/JPY破162即升級"
+      },
+      {
+        "priority": "本月策略",
+        "level": "medium",
+        "action": "降股權beta+保護性PUT",
+        "detail": "泡沫後期歷史平均仍可走3-9個月，但夏普比急遽劣化；提高現金10-15%，買虛值PUT保護"
+      },
+      {
+        "priority": "風險升級條件",
+        "level": "low",
+        "action": "觸發條件",
+        "detail": "HY OAS破350bp/VIX破25/S&P跌破200MA/USD/JPY破162任一即升級DEFCON 2"
+      }
+    ],
+    "historicalComparisons": [
+      {
+        "period": "現在",
+        "cape": 40.06,
+        "buffett": 232,
+        "result": "?"
+      },
+      {
+        "period": "2000 網路泡沫",
+        "cape": 44.2,
+        "buffett": 159,
+        "result": "S&P -49%"
+      },
+      {
+        "period": "2008 金融海嘯",
+        "cape": 27.2,
+        "buffett": 110,
+        "result": "S&P -56%"
+      },
+      {
+        "period": "2022 升息修正",
+        "cape": 38.3,
+        "buffett": 193,
+        "result": "S&P -25%"
+      }
+    ]
+  },
+  {
     "date": "2026-06-13",
     "defconLevel": 3,
     "overallRisk": 46,
