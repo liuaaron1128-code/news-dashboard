@@ -1,5 +1,276 @@
 [
   {
+    "date": "2026-06-17",
+    "defconLevel": 3,
+    "overallRisk": 45,
+    "alertLabel": "DEFCON 3 — HIGH ALERT",
+    "alertColor": "orange",
+    "summary": "美股估值（CAPE 40.72/Buffett 234%）逼近2000年峰值，Margin Debt $1.42T史上新高且年增+53.7%是典型頂部特徵；但信用利差(HY OAS 2.71%)極窄、銀行健康、企業盈餘上修(+18%)，金融管道尚未出現裂縫。最大風險：日圓套利(USD/JPY 160.4)與AI Capex/營收巨大缺口($400B vs $100B)。",
+    "marketState": "C",
+    "marketStateLabel": "泡沫後期",
+    "bubbleRiskScore": 65,
+    "crisisRiskScore": 22,
+    "deleveragingRiskScore": 47,
+    "indicators": [
+      {
+        "id": "m1_liquidity",
+        "name": "流動性",
+        "fullName": "全球流動性 Global Liquidity",
+        "value": "2/5",
+        "numericValue": 2.0,
+        "riskScore": 40,
+        "level": "MODERATE",
+        "historicalAvg": "全球M2趨勢",
+        "currentVsAvg": "Fed BS $6.66T/M2 $22.80T/RRP <$1B",
+        "benchmark": "風險分40/100（2/5）",
+        "description": "Fed資產負債表、M2、逆回購、TGA",
+        "implication": "Fed仍在QT，但RRP已乾涸；流動性緩衝薄但尚未緊縮"
+      },
+      {
+        "id": "m2_yield",
+        "name": "美債利率",
+        "fullName": "美債殖利率曲線 Treasury Yield Curve",
+        "value": "1/5",
+        "numericValue": 1.0,
+        "riskScore": 20,
+        "level": "LOW",
+        "historicalAvg": "10Y-2Y>0%正常",
+        "currentVsAvg": "10Y 4.47%/2Y 4.17%/+30bp",
+        "benchmark": "風險分20/100（1/5）",
+        "description": "2Y/10Y/30Y殖利率、10Y-2Y利差、實質利率",
+        "implication": "曲線正常化(+30bp)、10Y 4.47%尚未進入警戒區"
+      },
+      {
+        "id": "m3_credit",
+        "name": "信用風險",
+        "fullName": "信用風險 Credit Stress",
+        "value": "0/5",
+        "numericValue": 0.0,
+        "riskScore": 0,
+        "level": "SAFE",
+        "historicalAvg": "HY OAS<3.5%寬鬆",
+        "currentVsAvg": "HY OAS 2.71%/IG ~80bp",
+        "benchmark": "風險分0/100（0/5）",
+        "description": "HY OAS、IG OAS、HYG、JNK",
+        "implication": "HY OAS 2.71%極度寬鬆 - 信用市場對風險完全無視，反差警訊"
+      },
+      {
+        "id": "m4_banking",
+        "name": "銀行壓力",
+        "fullName": "銀行金融壓力 Banking Stress",
+        "value": "1/5",
+        "numericValue": 1.0,
+        "riskScore": 20,
+        "level": "LOW",
+        "historicalAvg": "KRE vs S&P",
+        "currentVsAvg": "KRE +9%/XLF +11.3% YTD",
+        "benchmark": "風險分20/100（1/5）",
+        "description": "KRE、銀行CDS、SOFR-OIS",
+        "implication": "KRE +9% YTD、XLF +11.3%，銀行系統健康"
+      },
+      {
+        "id": "m5_fx",
+        "name": "美元匯率",
+        "fullName": "美元匯率 Dollar FX",
+        "value": "2/5",
+        "numericValue": 2.0,
+        "riskScore": 40,
+        "level": "MODERATE",
+        "historicalAvg": "DXY 100-104正常",
+        "currentVsAvg": "DXY ~99/USDJPY 160.4/USDTWD ~31.6",
+        "benchmark": "風險分40/100（2/5）",
+        "description": "DXY、USD/JPY、USD/TWD",
+        "implication": "USD/JPY 160.4突破155警戒線，日圓套利風險升高"
+      },
+      {
+        "id": "m6_us_equity",
+        "name": "美股估值",
+        "fullName": "美股估值泡沫 US Equity Bubble",
+        "value": "5/5",
+        "numericValue": 5.0,
+        "riskScore": 100,
+        "level": "EXTREME",
+        "historicalAvg": "CAPE均值17x",
+        "currentVsAvg": "CAPE 40.72/Buffett 234%/FwdPE 25.7",
+        "benchmark": "風險分100/100（5/5）",
+        "description": "Shiller CAPE、Buffett、Forward P/E、ERP",
+        "implication": "CAPE 40.72歷史第2高，Buffett 234%遠超180%極度高估線"
+      },
+      {
+        "id": "m7_breadth",
+        "name": "美股廣度",
+        "fullName": "美股廣度趨勢 Market Breadth",
+        "value": "3/5",
+        "numericValue": 3.0,
+        "riskScore": 60,
+        "level": "HIGH",
+        "historicalAvg": ">200MA>60%健康",
+        "currentVsAvg": "S&P 9.7%>200MA/64%>50MA",
+        "benchmark": "風險分60/100（3/5）",
+        "description": ">200MA%、RSP/SPY、IWM、SOXX",
+        "implication": "集中度極高，Mag7佔S&P 32%，RSP/SPY落後16%"
+      },
+      {
+        "id": "m8_taiwan",
+        "name": "台股風險",
+        "fullName": "台股泡沫風險 Taiwan Equity",
+        "value": "3/5",
+        "numericValue": 3.0,
+        "riskScore": 60,
+        "level": "HIGH",
+        "historicalAvg": "外資淨買超",
+        "currentVsAvg": "TAIEX 45,070/外資+1,859億",
+        "benchmark": "風險分60/100（3/5）",
+        "description": "加權指數、外資買賣超、融資餘額、台幣",
+        "implication": "加權指數45,070創高、外資連3買，但融資餘額需密切觀察"
+      },
+      {
+        "id": "m9_crypto",
+        "name": "加密貨幣",
+        "fullName": "加密泡沫去槓桿 Crypto Bubble",
+        "value": "2/5",
+        "numericValue": 2.0,
+        "riskScore": 40,
+        "level": "MODERATE",
+        "historicalAvg": "MVRV<2正常",
+        "currentVsAvg": "BTC $66.3K/OI -4.55%/Liq $198M",
+        "benchmark": "風險分40/100（2/5）",
+        "description": "BTC/ETH、Funding Rate、OI、MVRV、爆倉",
+        "implication": "BTC $66.3K整理，6月初F&G僅12曾出現去槓桿，已稍緩"
+      },
+      {
+        "id": "m10_contagion",
+        "name": "跨資產",
+        "fullName": "跨資產相關傳染 Cross-Asset",
+        "value": "2/5",
+        "numericValue": 2.0,
+        "riskScore": 40,
+        "level": "MODERATE",
+        "historicalAvg": "資產分散有效",
+        "currentVsAvg": "股漲債穩幣盤整",
+        "benchmark": "風險分40/100（2/5）",
+        "description": "股債幣相關性、黃金、美元避險",
+        "implication": "股債幣未同步下跌，避險仍有效，集中度為主要弱點"
+      },
+      {
+        "id": "m11_leverage",
+        "name": "槓桿籌碼",
+        "fullName": "槓桿籌碼 Leverage Positioning",
+        "value": "4/5",
+        "numericValue": 4.0,
+        "riskScore": 80,
+        "level": "EXTREME",
+        "historicalAvg": "AAII牛市<40%",
+        "currentVsAvg": "Margin Debt $1.42T 月+8.5% 年+53.7%",
+        "benchmark": "風險分80/100（4/5）",
+        "description": "Margin Debt、台股融資、AAII",
+        "implication": "Margin Debt $1.42T史上新高、年+53.7%=1929/2000/2021頂部特徵"
+      },
+      {
+        "id": "m12_vola",
+        "name": "波動率",
+        "fullName": "波動率避險 Volatility",
+        "value": "1/5",
+        "numericValue": 1.0,
+        "riskScore": 20,
+        "level": "LOW",
+        "historicalAvg": "VIX 15-20正常",
+        "currentVsAvg": "VIX 16.20/F&G 41",
+        "benchmark": "風險分20/100（1/5）",
+        "description": "VIX、VVIX、MOVE、P/C Ratio",
+        "implication": "VIX 16.20<20過度自滿，但F&G 41恐懼，內外背離"
+      },
+      {
+        "id": "m13_macro",
+        "name": "景氣盈餘",
+        "fullName": "景氣盈餘 Macro Earnings",
+        "value": "1/5",
+        "numericValue": 1.0,
+        "riskScore": 20,
+        "level": "LOW",
+        "historicalAvg": "PMI>50擴張",
+        "currentVsAvg": "ISM Mfg 54/Svc 54.5/EPS +18%",
+        "benchmark": "風險分20/100（1/5）",
+        "description": "ISM PMI、非農、S&P500 EPS",
+        "implication": "ISM雙超54擴張、S&P EPS 2026 +18%，獲利紮實"
+      },
+      {
+        "id": "m14_behavior",
+        "name": "泡沫行為",
+        "fullName": "泡沫行為 Bubble Behavior",
+        "value": "4/5",
+        "numericValue": 4.0,
+        "riskScore": 80,
+        "level": "EXTREME",
+        "historicalAvg": "F&G<60理性",
+        "currentVsAvg": "F&G 41/IPO $225B/AI Capex $400B",
+        "benchmark": "風險分80/100（4/5）",
+        "description": "Fear&Greed、IPO熱度、散戶情緒",
+        "implication": "IPO規模$225B上修，AI Capex/營收缺口$300B為核心隱憂"
+      },
+      {
+        "id": "m15_events",
+        "name": "重大事件",
+        "fullName": "事件黑天鵝 Event Shock",
+        "value": "2/5",
+        "numericValue": 2.0,
+        "riskScore": 40,
+        "level": "MODERATE",
+        "historicalAvg": "無重大事件",
+        "currentVsAvg": "今日FOMC+新主席首場",
+        "benchmark": "風險分40/100（2/5）",
+        "description": "FOMC、CPI/PCE、台積電/NVIDIA財報、地緣政治",
+        "implication": "今日FOMC+新主席Warsh首場記者會，市場與點陣圖背離為最大引信"
+      }
+    ],
+    "actionRecommendations": [
+      {
+        "priority": "立即監控",
+        "level": "high",
+        "action": "今日FOMC點陣圖與Warsh首場記者會",
+        "detail": "政策落差是泡沫後期最大引信；97%機率不動，但dot plot方向與市場預期差距為焦點"
+      },
+      {
+        "priority": "本月策略",
+        "level": "medium",
+        "action": "減碼Mag7+提高現金與短債+對沖日圓",
+        "detail": "USD/JPY 162為關鍵防線；維持台積電核心但分批獲利了結"
+      },
+      {
+        "priority": "風險升級條件",
+        "level": "low",
+        "action": "HY OAS>3.5% + VIX>22 + Margin Debt月減5%",
+        "detail": "任一觸發即升至DEFCON 2/狀態D（泡沫破裂初期）"
+      }
+    ],
+    "historicalComparisons": [
+      {
+        "period": "現在 (2026-06-17)",
+        "cape": 40.72,
+        "buffett": 234,
+        "result": "?"
+      },
+      {
+        "period": "2000 網路泡沫",
+        "cape": 44.2,
+        "buffett": 159,
+        "result": "S&P -49%"
+      },
+      {
+        "period": "2008 金融海嘯",
+        "cape": 27.2,
+        "buffett": 110,
+        "result": "S&P -56%"
+      },
+      {
+        "period": "2022 升息修正",
+        "cape": 38.3,
+        "buffett": 193,
+        "result": "S&P -25%"
+      }
+    ]
+  },
+  {
     "date": "2026-06-16",
     "defconLevel": 3,
     "overallRisk": 52,
