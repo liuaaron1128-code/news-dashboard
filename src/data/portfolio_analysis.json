@@ -1,5 +1,174 @@
 [
   {
+    "date": "2026-06-19",
+    "generatedAt": "2026-06-19T06:17:03+08:00",
+    "summary": {
+      "totalInvested": 698500,
+      "estimatedValue": 975928,
+      "returnAmount": 277428,
+      "returnPercent": 39.72,
+      "overallRisk": "medium",
+      "monthlyDCA": 20000
+    },
+    "dcaToday": [
+      {
+        "code": "ALI099",
+        "amount": 1000,
+        "name": "安聯四季成長 (TISA)"
+      }
+    ],
+    "dcaUpcoming": [
+      {
+        "date": "2026-06-21",
+        "code": "CSI132",
+        "amount": 1000,
+        "name": "國泰泰享退2049 (TISA)"
+      },
+      {
+        "date": "2026-06-24",
+        "code": "YUI117",
+        "amount": 1000,
+        "name": "元大台灣50連結 (TISA)"
+      },
+      {
+        "date": "2026-06-26",
+        "code": "ALI099",
+        "amount": 1000,
+        "name": "安聯四季成長 (TISA)"
+      },
+      {
+        "date": "2026-06-26",
+        "code": "CSI132",
+        "amount": 1000,
+        "name": "國泰泰享退2049 (TISA)"
+      }
+    ],
+    "funds": [
+      {
+        "code": "CSI104",
+        "name": "國泰泰享退系列2039目標日期組合基金",
+        "totalInvested": 126000,
+        "paymentsCount": 0,
+        "nav": null,
+        "navDate": null,
+        "estimatedValue": null,
+        "returnAmount": null,
+        "returnPercent": null,
+        "riskLevel": "high",
+        "riskNotes": "全組合最大持股（126,000 TWD，占比 18% 全組、占基金部位 56%），目標2039期約13年存續期，全球股票配置約70%疊加投資級債20%。今日因資料來源未刷新無法即時掌握 NAV，但5月觀察值較平均成本 17.25 高出約 6-7%。當前美股 Shiller CAPE 40 為史上第二高（僅次於2000）、Mag7 佔比 35%、信用利差仍寬鬆，bubbleRiskScore 55/100 已將股票權重風險具體放大；CSI104 全球股票暴露使其對美股回檔極度敏感。建議：暫不加碼且不贖回，但需特別關注，如美股 Shiller CAPE 突破 42 或 HY OAS 突破 3.5%（目前 2.71%）即啟動降低權重程序。",
+        "allocation": "global_target_date_2039"
+      },
+      {
+        "code": "ALI099",
+        "name": "安聯四季成長組合基金 (TISA)",
+        "totalInvested": 46000,
+        "paymentsCount": 5,
+        "nav": 14.52,
+        "navDate": "2026-06-04",
+        "estimatedValue": 54659.85,
+        "returnAmount": 8659.85,
+        "returnPercent": 18.83,
+        "riskLevel": "medium",
+        "riskNotes": "多元資產組合型基金（股債混合），對單一資產類別曝險最低，是組合中防禦性最高的部位。NAV 14.52 (6/4) vs 平均成本 11.99，快照部位回報 +21.1%，加上 5 月後 5 張共 5,000 TWD 定扣後總投入 46,000、估計值約 54,660。當前 deleveragingRiskScore 45/100、10Y 4.49% 對股債組合構成温和壓力，但 HY OAS 緊縮 2.71% 與 Fed 暫不升息使其下檔風險受限。建議：維持 5 張共 5,000 TWD/月 定期定額不變，為組合中的核心穩定器。",
+        "allocation": "multi_asset_balanced"
+      },
+      {
+        "code": "CSI132",
+        "name": "國泰泰享退系列2049目標日期組合基金 (TISA)",
+        "totalInvested": 38000,
+        "paymentsCount": 6,
+        "nav": 24.6126,
+        "navDate": "2026-05-19",
+        "estimatedValue": 41690.73,
+        "returnAmount": 3690.73,
+        "returnPercent": 9.71,
+        "riskLevel": "medium-high",
+        "riskNotes": "TISA 帳戶長存續期目標日期基金（約23年），股票配置高達85%以上，對美股泡沫風險最敏感。NAV 24.6126 (5/19) vs 平均成本 22.0674，快照部位回報 +11.5%，6 月 DCA 已執行 6 次共 6,000 TWD，總投入 38,000、估計值 41,691。當前 bubbleRiskScore 55、美股估值 80/100 EXTREME、Mag7 集中度極高，Warsh 鷹派首秀使長存續期資產面臨估值壓縮風險。建議：因 TISA 稅務優惠維持 6 張 6,000 TWD/月 定扣（不適合斷扣），但如 marketState 升至 C 級或 bubbleRiskScore 突破 65 即考慮暫停。",
+        "allocation": "global_target_date_2049"
+      },
+      {
+        "code": "BRI023",
+        "name": "貝萊德享退休系列2050目標日期組合基金 (R類型)",
+        "totalInvested": 33000,
+        "paymentsCount": 1,
+        "nav": 15.87,
+        "navDate": "2026-05-06",
+        "estimatedValue": 36166.71,
+        "returnAmount": 3166.71,
+        "returnPercent": 9.6,
+        "riskLevel": "high",
+        "riskNotes": "存續期最長（約24年）的目標日期基金，股票權重 90%+ 且 BlackRock 配置策略偏重美股龍頭股，對美股泡沫破裂影響最大。R類型 NAV 15.87 (5/6 偏舊) vs 平均成本 14.35，快照部位回報 +10.6%。當前美股 Shiller CAPE 40、FINRA Margin Debt $1.30T 創新高（+53% YoY）、Fed 點陣圖暗示 2026 或升息（dot plot），長存續期基金估值對殖利率上升極敏感（10Y 4.49% 已壓力中）。建議：維持 3,000 TWD/月 但密切關注，如 deleveragingRiskScore 突破 55 或 30Y 殖利率突破 5.0%（現 4.93%）即考慮減半或暫停加碼。",
+        "allocation": "global_target_date_2050"
+      },
+      {
+        "code": "FSI069",
+        "name": "第一金全球大趨勢基金",
+        "totalInvested": 3000,
+        "paymentsCount": 2,
+        "nav": null,
+        "navDate": null,
+        "estimatedValue": null,
+        "returnAmount": null,
+        "returnPercent": null,
+        "riskLevel": "high",
+        "riskNotes": "全球股票型主題基金，重押 AI / Mag7 / 科技創新題材，是組合中對泡沫風險最敏感的基金。今日 NAV 資料來源不可得，但組合特性使其與 NASDAQ（昨日 +3.07%）高度連動。當前 Shiller CAPE 40 史上第二高、Mag7 佔 S&P 35%、FINRA Margin Debt $1.30T 三重警訊疊加，bubbleRiskScore 55 主要由美股估值貢獻（4/5 EXTREME）。建議：總曝險僅 3,000 TWD（佔 0.4%）暫無系統風險，可維持 2 張 2,000 TWD/月 累積成本，但如 NASDAQ 單日下跌 5% 以上或 VIX 突破 25 即考慮暫停。",
+        "allocation": "global_equity_thematic_AI"
+      },
+      {
+        "code": "YUI117",
+        "name": "元大台灣卓越50ETF連結基金 (TISA)",
+        "totalInvested": 7000,
+        "paymentsCount": 4,
+        "nav": 64.74,
+        "navDate": "2026-06-17",
+        "estimatedValue": 7340.58,
+        "returnAmount": 340.58,
+        "returnPercent": 4.87,
+        "riskLevel": "medium-high",
+        "riskNotes": "追蹤 0050 元大台灣50指數（台股大型權值股），台積電 + 鴻海等 Mag7 鏈受惠股佔比高，與美股 AI 鏈高度連動。NAV 64.74 (6/17) vs 平均成本 58.14，快照部位回報 +11.4%。USD/TWD 31.55 新台幣偏升對外資流入正面、但 DXY 100.72 升至高點疊加 BTC ETF 連 4 週淨流出 54 億美元顯示風險偏好邊際轉弱。當前台股加權 44,500 區間整理，瑞士法人對 AI 鏈買盤未停但散戶情緒分裂。建議：維持 4 張 4,000 TWD/月 定扣（TISA 稅務優惠不應斷），台股短期偏震盪向上，但如 DXY 突破 102 或外資連續週淨流出 > $500M 即提高戒備。",
+        "allocation": "tw_largecap_etf"
+      },
+      {
+        "code": "00878",
+        "name": "國泰永續高股息ETF",
+        "totalInvested": 445500,
+        "paymentsCount": 0,
+        "nav": 33.67,
+        "navDate": "2026-06-18",
+        "estimatedValue": 707070,
+        "returnAmount": 261570,
+        "returnPercent": 58.71,
+        "riskLevel": "medium",
+        "riskNotes": "組合中已實現收益最高的部位（21,000 股 × $33.67 = 707,070 TWD vs 成本 445,500，+58.7% / 報酬 +261,570），Q2 配息 0.66 元創新高、年化殖利率約 7.5%。漲幅顯著表示估值已偏延伸（從 21.21 元拉升至 33.67 元），對單一台股回檔風險升高。當前台股 44,500 區間整理、台幣偏升（31.55）對配息實質報酬正向；HY OAS 2.71% 緊縮使台股高股息相對美債吸引力強。建議：不加碼但持續持有領息（年化殖利率 7%+ 為堅實 cushion），如台股加權跌破 42,000 或日 K 線跌破 50 日均線即可分批落袋部分獲利（如 10-20%）。",
+        "allocation": "tw_high_dividend_etf"
+      }
+    ],
+    "alerts": [
+      {
+        "level": "info",
+        "title": "00878 報酬 +58.7%，估值已偏延伸",
+        "detail": "21,000 股已累積 +261,570 TWD 未實現獲利。Q2 配息 0.66 元創掛牌新高、年化殖利率 7.5%。建議建立分批落袋機制：台股加權跌破 42,000 或 00878 跌破 50 日均線時實現 10-20% 獲利，保留主要部位繼續領息。"
+      },
+      {
+        "level": "warning",
+        "title": "美股估值風險 80/100 EXTREME — 全球股票基金面臨壓縮",
+        "detail": "Shiller CAPE 40 為史上第二高、Mag7 佔 35%、FINRA Margin Debt $1.30T 創新高（+53% YoY）。CSI104（126,000 TWD 最大持股）、BRI023、CSI132、FSI069 共 200,000 TWD（佔 TWD 基金 86%）暴露於美股泡沫風險。Fed Warsh 鷹派首秀（6/17 點陣圖）加劇長存續期資產壓縮。"
+      },
+      {
+        "level": "info",
+        "title": "今日 DCA：ALI099 1,000 TWD",
+        "detail": "未來 7 天還有 CSI132 (6/21)、YUI117 (6/24)、ALI099+CSI132 (6/26) 共 4,000 TWD 定扣執行。"
+      },
+      {
+        "level": "warning",
+        "title": "NAV 資料缺失：CSI104（最大持股）、FSI069",
+        "detail": "MoneyDJ / FundRich / Yahoo 等台灣基金網站今日均回應 403 Forbidden，CSI104 和 FSI069 的最新 NAV 無法即時取得。建議用戶手動查詢 cathaysite.com.tw（CSI104）與 fsitc.com.tw（FSI069）官網確認，特別是 CSI104 佔組合最大權重需密切追蹤。"
+      }
+    ],
+    "marketContext": "市場狀態 B（泡沫升溫）、DEFCON 4 — MODERATE、整體風險 42/100。三大子指標：bubbleRiskScore 55/100、crisisRiskScore 26/100、deleveragingRiskScore 45/100。核心矛盾：美股 Shiller CAPE 40（史上第二高）+ FINRA Margin Debt $1.30T（+53% YoY）疊加 Fed 6/17 鷹派轉向 → 構成估值壓縮風險；但 HY OAS 2.71% 信用利差緊縮、銀行系統健康（KRE YTD +9%）、企業 EPS +21% → 系統性危機條件尚未形成。對 Aaron 組合的具體含義：(1) 約 28% 為台股 ETF（00878 + YUI117）受台股 + 美股 AI 鏈雙重影響、目前 +58% / +11% 報酬已具 cushion；(2) 約 47% 為全球目標日期基金（CSI104/132 + BRI023 + FSI069）對美股泡沫高度敏感，是組合最大下檔風險來源；(3) 約 7% 為多元配置型（ALI099）為防禦性穩定器。",
+    "recommendation": "今日操作建議（市場狀態 B 泡沫升溫、DEFCON 4 中度警戒）：(1) 維持所有定期定額不變 — 今日 ALI099 1,000 TWD 定扣執行、未來 7 日另有 4,000 TWD（CSI132/YUI117/ALI099），DCA 是泡沫升溫期的主要紀律工具。(2) 暫不主動加碼任何單筆投入 — 特別是 CSI104（126,000 TWD 最大持股）、FSI069（AI/Mag7 主題）、BRI023（最長存續期）三檔對美股泡沫高敏感。(3) 設定明確降風險觸發點：A. 美股 Shiller CAPE 突破 42 或 HY OAS 突破 3.5%（現 2.71%）→ 暫停 BRI023/FSI069 加碼；B. 30Y 殖利率突破 5.0%（現 4.93%）→ 全球目標日期基金減半 DCA；C. 00878 跌破 50 日均線或台股加權跌破 42,000 → 分批實現 10-20% 獲利。(4) 持續監控：DXY > 102 預示新興市場壓力、USD/JPY > 162 套利平倉風險、VIX > 25 系統性恐慌啟動點。當前風險升溫但未到斷扣級別，DCA + 觀察為核心策略。"
+  },
+  {
     "date": "2026-06-18",
     "generatedAt": "2026-06-18T06:15:36+08:00",
     "summary": {
@@ -4934,160 +5103,5 @@
     ],
     "marketContext": "2026-05-21：NAV 資料以用戶確認之 2026-05-20 現值截圖為準。六檔台幣基金帳面均呈正報酬，CSI104（國泰退休2039）表現最佳（+34.36%）；FSI069 和 YUI117 因持倉小、起步晚，略有小幅虧損但金額極小。整體 TWD 基金投入 234,000 元（含 CSI132 今日定扣），加上 00878 成本 445,500 元，總成本 679,500 元；估計總市值 857,979 元，帳面獲利 178,479 元（+26.3%）。市場環境持續 DEFCON 2，每日分析將在每早 06:10 自動更新最新NAV及市場狀況。",
     "recommendation": "1) 今日確認 CSI132 定期定額 1,000 元已成功扣款（每月 21 日）。2) 五檔定期定額（ALI099/CSI132/BRI023/FSI069/YUI117，月扣 20,000 元）全數維持，以時間分散進場成本。3) 最大持倉 CSI104（53.8%，帳面獲利 43,297 元 / +34.4%），可考慮設定停利警戒線（例如報酬率達 40% 則評估分批贖回），目前不主動操作。4) 00878 於 6/12 領到本季股息（0.66 元 × 21,000 股 = 13,860 元）後，評估是否維持不動或少量加碼。5) 近 7 日定扣：5/24 YUI117 1,000、5/26 ALI099 1,000、5/26 CSI132 1,000，共 3,000 元，請確認帳戶餘額。"
-  },
-  {
-    "date": "2026-05-20",
-    "generatedAt": "2026-05-20T22:13:28Z",
-    "summary": {
-      "totalInvested": 233000,
-      "estimatedValue": null,
-      "returnAmount": null,
-      "returnPercent": null,
-      "overallRisk": "medium",
-      "monthlyDCA": 20000
-    },
-    "dcaToday": [],
-    "dcaUpcoming": [
-      {
-        "date": "2026-05-21",
-        "code": "CSI132",
-        "amount": 1000
-      },
-      {
-        "date": "2026-05-24",
-        "code": "YUI117",
-        "amount": 1000
-      },
-      {
-        "date": "2026-05-26",
-        "code": "ALI099",
-        "amount": 1000
-      },
-      {
-        "date": "2026-05-26",
-        "code": "CSI132",
-        "amount": 1000
-      }
-    ],
-    "funds": [
-      {
-        "code": "CSI104",
-        "name": "國泰退休2039",
-        "totalInvested": 126000,
-        "paymentsCount": 0,
-        "nav": null,
-        "navDate": null,
-        "estimatedValue": null,
-        "returnAmount": null,
-        "returnPercent": null,
-        "riskLevel": "medium",
-        "allocation": 15.7,
-        "riskNotes": "最大基金持倉（126,000 TWD），目標退休 2039 屬中後期配置，股債相對均衡。今日市場 10 年債殖利率回落至 4.32% 且 Fed 偏鴿，對其債券部位有利；股票部位受美中關稅暫緩與風險情緒回升帶動偏多。雖整體估值處 EXTREME 等級（CAPE 40.9x），但此基金股債混合結構提供緩衝，維持 medium。仍須留意 90 天談判破裂的尾部風險。"
-      },
-      {
-        "code": "CSI132",
-        "name": "國泰退休2049",
-        "totalInvested": 32000,
-        "paymentsCount": 0,
-        "nav": null,
-        "navDate": null,
-        "estimatedValue": null,
-        "returnAmount": null,
-        "returnPercent": null,
-        "riskLevel": "medium",
-        "allocation": 4.0,
-        "riskNotes": "目標退休 2049，距離期限尚遠，股票權重高於 CSI104。短線受惠於美股反彈與降息預期提前，但對極端估值修正的敏感度較高。每月 6,000 TWD 定扣（6 筆），是組合中扣款頻率最高者，可平滑進場成本。明日（21 日）有 1,000 TWD 扣款，請留意帳戶餘額。"
-      },
-      {
-        "code": "ALI099",
-        "name": "安聯四季成長",
-        "totalInvested": 41000,
-        "paymentsCount": 0,
-        "nav": null,
-        "navDate": null,
-        "estimatedValue": null,
-        "returnAmount": null,
-        "returnPercent": null,
-        "riskLevel": "medium",
-        "allocation": 5.1,
-        "riskNotes": "多元成長型基金，今日風險情緒回升（台股 +1.2%、S&P +0.8%）對其偏多。每月 5,000 TWD 分 5 筆扣款，分散進場時點，降低單日波動衝擊。極端估值環境下上檔空間受限，但分散配置使其風險可控，維持 medium。"
-      },
-      {
-        "code": "BRI023",
-        "name": "貝萊德退休2050",
-        "totalInvested": 30000,
-        "paymentsCount": 0,
-        "nav": null,
-        "navDate": null,
-        "estimatedValue": null,
-        "returnAmount": null,
-        "returnPercent": null,
-        "riskLevel": "medium",
-        "allocation": 3.7,
-        "riskNotes": "目標退休 2050，股票權重高、長期投資屬性。Fed 偏鴿、9 月降息機率升至 68%，對長天期資產評價有利；殖利率回落亦支撐其債券部位。雖美股估值 EXTREME，但 30 年投資期間可承受短期波動，維持 medium。每月 3,000 TWD 定扣中。"
-      },
-      {
-        "code": "FSI069",
-        "name": "第一金全球大趨勢",
-        "totalInvested": 1000,
-        "paymentsCount": 0,
-        "nav": null,
-        "navDate": null,
-        "estimatedValue": null,
-        "returnAmount": null,
-        "returnPercent": null,
-        "riskLevel": "medium-high",
-        "allocation": 0.1,
-        "riskNotes": "全球趨勢主題型，科技與成長股權重高。今日 Microsoft Build 發布 Copilot Wave 3、Azure 降價 40% 為科技板塊利多，短線偏多；但主題型基金對 AI 獲利不如預期的修正風險最敏感，加上 CAPE 40.9x 的極端估值，標記 medium-high。部位僅 1,000 TWD，影響有限，每月 2,000 TWD 持續加碼。"
-      },
-      {
-        "code": "YUI117",
-        "name": "元大台灣50",
-        "totalInvested": 3000,
-        "paymentsCount": 0,
-        "nav": null,
-        "navDate": null,
-        "estimatedValue": null,
-        "returnAmount": null,
-        "returnPercent": null,
-        "riskLevel": "medium",
-        "allocation": 0.4,
-        "riskNotes": "追蹤台灣大型股，與台股連動高。美中關稅暫緩（145%→30%）帶動半導體需求回升預期，台股今日開高領漲，短線偏多。風險觸發點為「美方恢復半導體設備出口限制」，將直接衝擊台積電供應鏈與本基金。維持 medium，每月 4,000 TWD 定扣。"
-      },
-      {
-        "code": "00878",
-        "name": "國泰永續高股息ETF",
-        "totalInvested": null,
-        "paymentsCount": 0,
-        "nav": 27.02,
-        "navDate": "2026-05-19",
-        "estimatedValue": 567420,
-        "returnAmount": null,
-        "returnPercent": null,
-        "riskLevel": "medium",
-        "allocation": 70.9,
-        "riskNotes": "組合中市值最大單一資產（21,000 股 × 27.02 = 567,420 TWD，約占 70.9%）。高股息 ETF 屬防禦性質，在估值 EXTREME 環境下相對抗跌；殖利率回落與台股反彈雙重支撐。但高度集中於台股，若台股因半導體出口限制等利空回檔，將顯著影響整體組合市值。維持 medium，建議留意配息與成分股調整。"
-      }
-    ],
-    "alerts": [
-      {
-        "level": "warning",
-        "message": "市場估值處 EXTREME 等級（CAPE 40.9x、Buffett Indicator 219%，泡沫指數 overallRisk 63 / HIGH ALERT），雖 DEFCON 維持 3，仍須提高警覺，避免追高加碼。"
-      },
-      {
-        "level": "info",
-        "message": "明日（5/21）CSI132 國泰退休2049 有 1,000 TWD 定期定額扣款，請確認帳戶餘額充足。"
-      },
-      {
-        "level": "info",
-        "message": "今日（5/20）無定期定額扣款。"
-      },
-      {
-        "level": "info",
-        "message": "台幣基金（6 檔）今日淨值無法自動取得，本次估值與報酬以 null 呈現，未捏造數據；00878 採 5/19 盤中價 27.02 估算。"
-      }
-    ],
-    "marketContext": "市場背景取自 2026-05-18 最新簡報。核心判斷偏正向：美中於日內瓦達成 90 天關稅暫緩協議（美方關稅 145%→30%、中方暫停稀土管制），帶動全球風險情緒回升；Fed 官員週末發言偏鴿，9 月降息機率升至 68%，美 10 年債殖利率回落至 4.32%。Microsoft Build 2026 發布 Copilot Wave 3 並將 Azure OpenAI 降價 40%，利多美國與全球科技板塊。台股加權今日預計開高（前一交易日 +1.2%，22,340 點），S&P 500 +0.8%、NASDAQ +1.1%。然而泡沫儀表板顯示 overallRisk 63（HIGH ALERT）、DEFCON 3，CAPE 40.9x 與 Buffett Indicator 219% 均達 EXTREME，基本面支撐已透支。短期消息面利多與長期估值風險並存。",
-    "recommendation": "整體風險評為 medium：近期消息面（關稅緩和、降息預期、科技利多）支撐風險資產，且 DEFCON 維持 3（非 1-2），無須中斷定期定額；建議所有 active 定扣維持不動，以平滑成本。但估值已達 EXTREME，不建議單筆追高加碼。組合最大暴險為 00878（市值約 567,420 TWD，占比約 71%）與台股連動的 YUI117，須緊盯半導體出口限制等台股利空觸發點；最大基金持倉 CSI104（126,000 TWD）股債均衡、受惠殖利率回落，風險可控。已暫停基金：106024（純美國成長）建議維持暫停以規避估值壓縮風險；042131（醫療健康，防禦性）可評估恢復，作為極端估值環境下的避險配置。今日無扣款，明日 5/21 CSI132 將扣 1,000 TWD，請確認餘額。"
   }
 ]
