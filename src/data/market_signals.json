@@ -16,8 +16,10 @@
   ],
   "relativeValue": [],
   "riskIndicators": [],
+  "macro": [],
   "globalYields": [],
   "policyRates": [],
+  "sectors": [],
   "bondYields": [
     { "id": "us3m", "region": "美國", "name": "3 個月國庫券", "yield": 5.0, "changeBps": 0, "percentile5y": 90, "signal": "極高" },
     { "id": "us5y", "region": "美國", "name": "5 年期公債", "yield": 4.3, "changeBps": 0, "percentile5y": 80, "signal": "偏高" },

@@ -78,6 +78,29 @@ function Section({ title, subtitle, children }: { title: string; subtitle?: stri
   )
 }
 
+function EquityList({ items }: { items: { id: string; region: string; name: string; price: number | null; ytd: number | null; return1y: number | null; cagr3y: number | null; cagr5y: number | null }[] }) {
+  return (
+    <div className="space-y-2.5">
+      {items.map((e) => (
+        <div key={e.id} className="bg-white border border-slate-200 rounded-2xl shadow-sm p-3">
+          <div className="flex items-center justify-between mb-2">
+            <div>
+              <span className="text-[13px] font-bold text-slate-900">{e.name}</span>
+              <span className="text-[11px] text-slate-400 ml-2">{e.region} · {fmtNum(e.price)}</span>
+            </div>
+          </div>
+          <div className="grid grid-cols-4 gap-2">
+            <ReturnCell label="YTD" value={e.ytd} />
+            <ReturnCell label="近 1 年" value={e.return1y} />
+            <ReturnCell label="3 年化" value={e.cagr3y} />
+            <ReturnCell label="5 年化" value={e.cagr5y} />
+          </div>
+        </div>
+      ))}
+    </div>
+  )
+}
+
 export default function MarketSignals() {
   return (
     <div className="pb-8">
@@ -140,6 +163,13 @@ export default function MarketSignals() {
         </Section>
       )}
 
+      {/* Macro backdrop */}
+      {signals.macro.length > 0 && (
+        <Section title="總體經濟背景" subtitle="通膨、就業、成長與央行流動性——決定報酬環境的底盤。">
+          <MetricList items={signals.macro} />
+        </Section>
+      )}
+
       {/* Bond yields */}
       {signals.bondYields.length > 0 && (
         <div className="mb-5">
@@ -188,28 +218,16 @@ export default function MarketSignals() {
 
       {/* Equity annualized returns */}
       {signals.equityReturns.length > 0 && (
-        <div className="mb-5">
-          <div className="text-sm font-bold text-slate-800 mb-1">全球股市年化報酬（CAGR）</div>
-          <p className="text-[11px] text-slate-400 mb-3">各國大盤指數的年化報酬，可與上方殖利率對比評估相對吸引力。</p>
-          <div className="space-y-2.5">
-            {signals.equityReturns.map((e) => (
-              <div key={e.id} className="bg-white border border-slate-200 rounded-2xl shadow-sm p-3">
-                <div className="flex items-center justify-between mb-2">
-                  <div>
-                    <span className="text-[13px] font-bold text-slate-900">{e.name}</span>
-                    <span className="text-[11px] text-slate-400 ml-2">{e.region} · {fmtNum(e.price)}</span>
-                  </div>
-                </div>
-                <div className="grid grid-cols-4 gap-2">
-                  <ReturnCell label="YTD" value={e.ytd} />
-                  <ReturnCell label="近 1 年" value={e.return1y} />
-                  <ReturnCell label="3 年化" value={e.cagr3y} />
-                  <ReturnCell label="5 年化" value={e.cagr5y} />
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
+        <Section title="全球股市年化報酬（CAGR）" subtitle="各國大盤指數的年化報酬，可與上方殖利率對比評估相對吸引力。">
+          <EquityList items={signals.equityReturns} />
+        </Section>
+      )}
+
+      {/* US sectors */}
+      {signals.sectors.length > 0 && (
+        <Section title="美股類股輪動（年化報酬）" subtitle="比較各產業的相對強弱，看資金流向哪裡。">
+          <EquityList items={signals.sectors} />
+        </Section>
       )}
 
       {/* Other assets */}

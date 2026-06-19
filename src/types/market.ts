@@ -61,9 +61,11 @@ export interface MarketSignals {
   headline: SignalHeadline[]
   relativeValue: Metric[]
   riskIndicators: Metric[]
+  macro: Metric[]
   bondYields: BondYield[]
   globalYields: Metric[]
   policyRates: Metric[]
   equityReturns: EquityReturn[]
+  sectors: EquityReturn[]
   otherAssets: OtherAsset[]
 }
