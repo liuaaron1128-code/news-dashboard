@@ -8,6 +8,7 @@ on:
 
 permissions:
   contents: write
+  models: read
 
 # Avoid overlapping runs racing on the same file.
 concurrency:
@@ -35,10 +36,10 @@ jobs:
       - name: Fetch supplementary sources (Taiwan flows, sentiment)
         run: node scripts/fetch-extras.mjs
 
-      - name: Generate AI commentary
+      - name: Generate AI commentary (GitHub Models — free, built-in token)
         run: node scripts/generate-commentary.mjs
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Commit if changed
         run: |

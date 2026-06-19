@@ -1,10 +1,10 @@
 {
   "date": "2026-06-19",
   "headline": "等待 AI 每日解讀首次生成",
-  "topConcern": "尚未產生今日評論——GitHub Actions 於每日 04:00 接 Claude API 自動生成。",
+  "topConcern": "尚未產生今日評論——GitHub Actions 於每日 04:00 透過 GitHub Models 自動生成。",
   "bullets": [
     "此卡片會彙整當天的新聞、泡沫分數與市場訊號，輸出白話結論。",
-    "設定 ANTHROPIC_API_KEY 後，首次排程執行即會替換為即時內容。"
+    "使用 GitHub Actions 內建的 GITHUB_TOKEN，免費、不需額外金鑰，首次排程執行即會替換為即時內容。"
   ],
   "crossSignals": [],
   "confidence": "low",

@@ -67,7 +67,7 @@ export default function MorningCard() {
         )}
 
         {commentary.placeholder && (
-          <div className="text-[10px] text-slate-400 mt-2">尚未生成即時解讀（設定 ANTHROPIC_API_KEY 後每日 04:00 自動更新）</div>
+          <div className="text-[10px] text-slate-400 mt-2">尚未生成即時解讀（每日 04:00 由 GitHub Models 自動更新）</div>
         )}
       </div>
 
