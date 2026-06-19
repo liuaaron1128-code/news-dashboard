@@ -12,6 +12,7 @@ import BubbleMonitor from '@/components/BubbleMonitor'
 import MarketSignals from '@/components/MarketSignals'
 import MorningCard from '@/components/MorningCard'
 import DecisionPanel from '@/components/DecisionPanel'
+import BusinessDigest from '@/components/BusinessDigest'
 
 const briefings = briefingsData as DailyBriefing[]
 const bubbles = bubbleData as BubbleSnapshot[]
@@ -297,6 +298,9 @@ export default function Home() {
                 </div>
               </div>
             )}
+
+            {/* Business & entrepreneurship */}
+            <BusinessDigest />
           </>
         )}
 

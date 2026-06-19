@@ -42,13 +42,18 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Fetch business & startup digest (Hacker News + GitHub Models)
+        run: node scripts/fetch-business.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Commit if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add src/data/market_signals.json src/data/signals_history.json \
                   src/data/taiwan_flows.json src/data/sentiment.json \
-                  src/data/commentary.json
+                  src/data/commentary.json src/data/business.json
           if git diff --staged --quiet; then
             echo "No changes to commit."
           else

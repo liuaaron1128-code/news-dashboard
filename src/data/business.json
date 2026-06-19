@@ -1,0 +1,18 @@
+{
+  "asOf": "2026-06-19",
+  "source": "Hacker News + GitHub Models",
+  "stories": [],
+  "founderStory": {
+    "title": "等待每日生成",
+    "body": "創業故事與創辦人心法會在每日 04:00 由 GitHub Models 自動生成（免費、使用 GitHub Actions 內建權限，不需額外金鑰）。",
+    "takeaways": []
+  },
+  "caseStudy": {
+    "company": "—",
+    "title": "等待每日生成",
+    "body": "商業模式拆解會在每日 04:00 自動生成。",
+    "points": []
+  },
+  "industryInsights": [],
+  "placeholder": true
+}
