@@ -1,8 +1,9 @@
 {
-  "generatedAt": "2026-06-19T14:12:13.752Z",
+  "generatedAt": "2026-06-19T15:21:32.432Z",
   "asOf": "2026-06-19",
   "source": "Yahoo Finance + FRED",
   "synthesis": {
+    "engine": "rule",
     "regime": {
       "label": "Risk-on，但屬晚週期（高實質利率）",
       "tone": "caution",
@@ -19,15 +20,15 @@
       },
       {
         "theme": "風險胃納",
-        "text": "VIX 16.82（平穩）、高收益債利差 2.63%（偏低）、金融壓力 -0.77 → 信用與波動極度平穩、無系統性壓力，偏 risk-on。"
+        "text": "VIX 16.76（平穩）、高收益債利差 2.63%（偏低）、金融壓力 -0.77 → 信用與波動極度平穩、無系統性壓力，偏 risk-on。"
       },
       {
         "theme": "股市與輪動",
-        "text": "近 1 年領先 KOSPI +204%、台股加權 +107.8%、日經 225 +85.1%；落後 Sensex -5.6%、IDX Composite -11.4%。美股由 科技 領軍、必需消費 墊後。"
+        "text": "近 1 年領先 KOSPI +205%、台股加權 +107.8%、日經 225 +82.7%；落後 Sensex -5.6%、IDX Composite -11.4%。美股由 科技 領軍、必需消費 墊後。"
       },
       {
         "theme": "股債相對價值",
-        "text": "股息殖利率 1.05%。高實質利率下，偏貴的股市估值承壓。"
+        "text": "ERP 股債溢酬 -1.39%（偏低、股票相對債券不划算）；S&P500 本益比 32.2 倍、股息殖利率 1.05%。高實質利率下，偏貴的股市估值承壓。"
       }
     ]
   },
@@ -42,16 +43,43 @@
       "detail": "處於近 5 年區間第 91 百分位，無風險年化報酬偏高。股票須提供更高的預期報酬才划算，對成長股與長天期資產形成壓力。"
     },
     {
+      "id": "erp",
+      "icon": "⚖️",
+      "title": "股債風險溢酬 (ERP)",
+      "value": "-1.39%",
+      "tag": "無溢酬",
+      "tagLevel": "high",
+      "detail": "S&P500 盈餘殖利率 3.1% − 10Y 4.5%；越低代表股票相對債券越不划算"
+    },
+    {
+      "id": "spx5y",
+      "icon": "📈",
+      "title": "S&P 500 近 5 年年化報酬",
+      "value": "+12.2%",
+      "tag": "高於長期均值",
+      "tagLevel": "high",
+      "detail": "美股大盤近 5 年年化 12.2%、近 1 年 25.4%。"
+    },
+    {
       "id": "gold",
       "icon": "🥇",
       "title": "黃金近 1 年報酬",
       "value": "+23.8%",
       "tag": "避險需求",
       "tagLevel": "high",
-      "detail": "黃金近 1 年 23.8%、近 5 年年化 —%，常反映通膨與避險情緒。"
+      "detail": "黃金近 1 年 23.8%、近 5 年年化 18.5%，常反映通膨與避險情緒。"
     }
   ],
   "relativeValue": [
+    {
+      "id": "erp",
+      "label": "股債風險溢酬 (ERP)",
+      "value": -1.39,
+      "unit": "%",
+      "signal": "無溢酬",
+      "signalLevel": "high",
+      "note": "S&P500 盈餘殖利率 3.1% − 10Y 4.5%；越低代表股票相對債券越不划算"
+    },
     {
       "id": "real10y",
       "label": "10Y 實質殖利率 (TIPS)",
@@ -107,6 +135,13 @@
       "note": "Fed 偏好的衰退指標；負值代表倒掛"
     },
     {
+      "id": "pe",
+      "label": "S&P 500 本益比 (trailing)",
+      "value": 32.2,
+      "unit": "倍",
+      "note": "越高代表股市估值越貴"
+    },
+    {
       "id": "divy",
       "label": "S&P 500 股息殖利率",
       "value": 1.05,
@@ -118,7 +153,7 @@
     {
       "id": "vix",
       "label": "VIX 波動率指數",
-      "value": 16.82,
+      "value": 16.76,
       "unit": "",
       "signal": "中性",
       "signalLevel": "neutral",
@@ -390,13 +425,6 @@
       "value": 2.25,
       "unit": "%",
       "note": "更新於 2026-06-19"
-    },
-    {
-      "id": "boj",
-      "label": "日本央行 BOJ 政策利率",
-      "value": 0.3,
-      "unit": "%",
-      "note": "更新於 2023-12-01"
     }
   ],
   "equityReturns": [
@@ -408,7 +436,7 @@
       "ytd": 9.4,
       "return1y": 25.4,
       "cagr3y": 19.4,
-      "cagr5y": null
+      "cagr5y": 12.2
     },
     {
       "id": "ndq",
@@ -418,7 +446,7 @@
       "ytd": 14.1,
       "return1y": 35.7,
       "cagr3y": 24.7,
-      "cagr5y": null
+      "cagr5y": 13.4
     },
     {
       "id": "dji",
@@ -428,7 +456,7 @@
       "ytd": 6.6,
       "return1y": 22.3,
       "cagr3y": 14.6,
-      "cagr5y": null
+      "cagr5y": 8.8
     },
     {
       "id": "rut",
@@ -438,87 +466,87 @@
       "ytd": 18.8,
       "return1y": 41,
       "cagr3y": 16.7,
-      "cagr5y": null
+      "cagr5y": 5.4
     },
     {
       "id": "sx5e",
       "region": "歐元區",
       "name": "Euro Stoxx 50",
-      "price": 6320.72,
-      "ytd": 6.7,
-      "return1y": 21.6,
-      "cagr3y": 13.2,
-      "cagr5y": null
+      "price": 6314.03,
+      "ytd": 6.6,
+      "return1y": 21.5,
+      "cagr3y": 13.1,
+      "cagr5y": 9
     },
     {
       "id": "dax",
       "region": "德國",
       "name": "DAX",
-      "price": 25050.93,
-      "ytd": 2.1,
+      "price": 25033.94,
+      "ytd": 2,
       "return1y": 8.6,
       "cagr3y": 15.6,
-      "cagr5y": null
+      "cagr5y": 9.9
     },
     {
       "id": "ftse",
       "region": "英國",
       "name": "FTSE 100",
-      "price": 10371.59,
-      "ytd": 4.2,
-      "return1y": 18,
-      "cagr3y": 11,
-      "cagr5y": null
+      "price": 10361.97,
+      "ytd": 4.1,
+      "return1y": 17.9,
+      "cagr3y": 10.9,
+      "cagr5y": 8
     },
     {
       "id": "cac",
       "region": "法國",
       "name": "CAC 40",
-      "price": 8454.73,
-      "ytd": 3.2,
-      "return1y": 11.9,
+      "price": 8440.97,
+      "ytd": 3,
+      "return1y": 11.7,
       "cagr3y": 4.9,
-      "cagr5y": null
+      "cagr5y": 5
     },
     {
       "id": "ibex",
       "region": "西班牙",
       "name": "IBEX 35",
-      "price": 19403.5,
+      "price": 19396,
       "ytd": 10.9,
-      "return1y": 41.2,
+      "return1y": 41.1,
       "cagr3y": 27.2,
-      "cagr5y": null
+      "cagr5y": 16.5
     },
     {
       "id": "aex",
       "region": "荷蘭",
       "name": "AEX",
-      "price": 1080.86,
-      "ytd": 11.7,
-      "return1y": 18.9,
+      "price": 1079.97,
+      "ytd": 11.6,
+      "return1y": 18.8,
       "cagr3y": 12,
-      "cagr5y": null
+      "cagr5y": 8.3
     },
     {
       "id": "smi",
       "region": "瑞士",
       "name": "SMI",
-      "price": 13771,
-      "ytd": 4,
+      "price": 13766.14,
+      "ytd": 3.9,
       "return1y": 16,
       "cagr3y": 6.8,
-      "cagr5y": null
+      "cagr5y": 2.8
     },
     {
       "id": "n225",
       "region": "日本",
       "name": "日經 225",
-      "price": 71250.06,
-      "ytd": 37.5,
-      "return1y": 85.1,
-      "cagr3y": 28.8,
-      "cagr5y": null
+      "price": 71053.49,
+      "ytd": 37.1,
+      "return1y": 82.7,
+      "cagr3y": 28.6,
+      "cagr5y": 20.5
     },
     {
       "id": "hsi",
@@ -554,11 +582,11 @@
       "id": "kospi",
       "region": "南韓",
       "name": "KOSPI",
-      "price": 9052.42,
-      "ytd": 110.1,
-      "return1y": 204,
+      "price": 9063.84,
+      "ytd": 110.3,
+      "return1y": 205,
       "cagr3y": 51.4,
-      "cagr5y": null
+      "cagr5y": 22.8
     },
     {
       "id": "sensex",
@@ -568,7 +596,7 @@
       "ytd": -9.8,
       "return1y": -5.6,
       "cagr3y": 6.7,
-      "cagr5y": null
+      "cagr5y": 7.9
     },
     {
       "id": "jkse",
@@ -578,7 +606,7 @@
       "ytd": -29.4,
       "return1y": -11.4,
       "cagr3y": -2.6,
-      "cagr5y": null
+      "cagr5y": 0.6
     },
     {
       "id": "sti",
@@ -588,7 +616,7 @@
       "ytd": 11.5,
       "return1y": 33.3,
       "cagr3y": 17,
-      "cagr5y": null
+      "cagr5y": 10.7
     },
     {
       "id": "asx",
@@ -598,37 +626,37 @@
       "ytd": 2.1,
       "return1y": 4.5,
       "cagr3y": 6.9,
-      "cagr5y": null
+      "cagr5y": 4.3
     },
     {
       "id": "tsx",
       "region": "加拿大",
       "name": "S&P/TSX",
-      "price": 34953.02,
+      "price": 34940.9,
       "ytd": 9.6,
-      "return1y": 31.9,
+      "return1y": 31.8,
       "cagr3y": 20.6,
-      "cagr5y": null
+      "cagr5y": 11.6
     },
     {
       "id": "mxx",
       "region": "墨西哥",
       "name": "IPC",
-      "price": 67893.21,
-      "ytd": 5.8,
-      "return1y": 21.1,
-      "cagr3y": 7.3,
-      "cagr5y": null
+      "price": 67619.41,
+      "ytd": 5.4,
+      "return1y": 20.6,
+      "cagr3y": 7.2,
+      "cagr5y": 6.1
     },
     {
       "id": "bvsp",
       "region": "巴西",
       "name": "Bovespa",
-      "price": 167869.19,
-      "ytd": 4.6,
-      "return1y": 21,
-      "cagr3y": 11.9,
-      "cagr5y": null
+      "price": 168479.19,
+      "ytd": 4.9,
+      "return1y": 21.5,
+      "cagr3y": 12,
+      "cagr5y": 5.4
     }
   ],
   "sectors": [
@@ -640,7 +668,7 @@
       "ytd": 32.7,
       "return1y": 58.5,
       "cagr3y": 30.3,
-      "cagr5y": null
+      "cagr5y": 21.7
     },
     {
       "id": "xlc",
@@ -650,7 +678,7 @@
       "ytd": -6.4,
       "return1y": 5.8,
       "cagr3y": 19.1,
-      "cagr5y": null
+      "cagr5y": 6.7
     },
     {
       "id": "xly",
@@ -660,7 +688,7 @@
       "ytd": -1,
       "return1y": 11.4,
       "cagr3y": 12.1,
-      "cagr5y": null
+      "cagr5y": 6.2
     },
     {
       "id": "xlp",
@@ -670,7 +698,7 @@
       "ytd": 7.2,
       "return1y": 3.6,
       "cagr3y": 3.7,
-      "cagr5y": null
+      "cagr5y": 3.8
     },
     {
       "id": "xlf",
@@ -680,7 +708,7 @@
       "ytd": -2.5,
       "return1y": 6.7,
       "cagr3y": 16.8,
-      "cagr5y": null
+      "cagr5y": 8.3
     },
     {
       "id": "xlv",
@@ -690,7 +718,7 @@
       "ytd": -3.9,
       "return1y": 12.1,
       "cagr3y": 4.2,
-      "cagr5y": null
+      "cagr5y": 3.7
     },
     {
       "id": "xli",
@@ -700,7 +728,7 @@
       "ytd": 14.5,
       "return1y": 27.2,
       "cagr3y": 19.7,
-      "cagr5y": null
+      "cagr5y": 12.3
     },
     {
       "id": "xle",
@@ -710,7 +738,7 @@
       "ytd": 17.8,
       "return1y": 22.1,
       "cagr3y": 10,
-      "cagr5y": null
+      "cagr5y": 14.7
     },
     {
       "id": "xlb",
@@ -720,7 +748,7 @@
       "ytd": 12.3,
       "return1y": 19.1,
       "cagr3y": 8.2,
-      "cagr5y": null
+      "cagr5y": 4.8
     },
     {
       "id": "xlu",
@@ -730,7 +758,7 @@
       "ytd": 3.7,
       "return1y": 11.1,
       "cagr3y": 10,
-      "cagr5y": null
+      "cagr5y": 6.8
     },
     {
       "id": "xlre",
@@ -740,7 +768,7 @@
       "ytd": 8.6,
       "return1y": 4.8,
       "cagr3y": 5.2,
-      "cagr5y": null
+      "cagr5y": -0.5
     }
   ],
   "otherAssets": [
@@ -748,62 +776,62 @@
       "id": "gold",
       "name": "黃金",
       "icon": "🥇",
-      "price": 4169.6,
+      "price": 4169.8,
       "ytd": -3.4,
       "return1y": 23.8,
-      "cagr5y": null
+      "cagr5y": 18.5
     },
     {
       "id": "silver",
       "name": "白銀",
       "icon": "🥈",
-      "price": 64.76,
-      "ytd": -8.2,
-      "return1y": 80,
-      "cagr5y": null
+      "price": 64.73,
+      "ytd": -8.3,
+      "return1y": 79.9,
+      "cagr5y": 20
     },
     {
       "id": "copper",
       "name": "銅",
       "icon": "🟤",
-      "price": 6.345,
-      "ytd": 12.5,
-      "return1y": 31.5,
-      "cagr5y": null
+      "price": 6.3285,
+      "ytd": 12.2,
+      "return1y": 31.1,
+      "cagr5y": 8.6
     },
     {
       "id": "wti",
       "name": "WTI 原油",
       "icon": "🛢️",
-      "price": 76.13,
-      "ytd": 32.8,
-      "return1y": 1.6,
-      "cagr5y": null
+      "price": 76.25,
+      "ytd": 33,
+      "return1y": 1.8,
+      "cagr5y": 0.7
     },
     {
       "id": "brent",
       "name": "Brent 原油",
       "icon": "🛢️",
-      "price": 79.98,
-      "ytd": 31.7,
-      "return1y": 3.9,
-      "cagr5y": null
+      "price": 80.12,
+      "ytd": 31.9,
+      "return1y": 4,
+      "cagr5y": 1.4
     },
     {
       "id": "natgas",
       "name": "天然氣",
       "icon": "🔥",
-      "price": 3.216,
+      "price": 3.217,
       "ytd": -11.1,
       "return1y": -16.4,
-      "cagr5y": null
+      "cagr5y": 0.2
     },
     {
       "id": "btc",
       "name": "比特幣",
       "icon": "₿",
-      "price": 62995.1,
-      "ytd": -29,
+      "price": 63050.13,
+      "ytd": -28.9,
       "return1y": -39.8,
       "cagr5y": 12.1
     },
@@ -811,46 +839,46 @@
       "id": "eth",
       "name": "以太幣",
       "icon": "Ξ",
-      "price": 1696.32,
-      "ytd": -43.5,
-      "return1y": -32.7,
-      "cagr5y": -4.9
+      "price": 1702.08,
+      "ytd": -43.3,
+      "return1y": -32.5,
+      "cagr5y": -4.8
     },
     {
       "id": "dxy",
       "name": "美元指數",
       "icon": "💵",
-      "price": 100.81,
+      "price": 100.75,
       "ytd": 2.4,
       "return1y": 2.1,
-      "cagr5y": null
+      "cagr5y": 1.9
     },
     {
       "id": "eurusd",
       "name": "歐元/美元",
       "icon": "🇪🇺",
-      "price": 1.1464,
-      "ytd": -2.4,
-      "return1y": -0.4,
-      "cagr5y": null
+      "price": 1.1474,
+      "ytd": -2.3,
+      "return1y": -0.3,
+      "cagr5y": -0.7
     },
     {
       "id": "usdjpy",
       "name": "美元/日圓",
       "icon": "🇯🇵",
-      "price": 161.29,
+      "price": 161.23,
       "ytd": 2.9,
-      "return1y": 11.1,
-      "cagr5y": null
+      "return1y": 11,
+      "cagr5y": 7.9
     },
     {
       "id": "gbpusd",
       "name": "英鎊/美元",
       "icon": "🇬🇧",
-      "price": 1.3215,
-      "ytd": -1.9,
-      "return1y": -1.9,
-      "cagr5y": null
+      "price": 1.323,
+      "ytd": -1.8,
+      "return1y": -1.8,
+      "cagr5y": -0.9
     },
     {
       "id": "usdcny",
@@ -859,16 +887,16 @@
       "price": 6.7681,
       "ytd": -3.3,
       "return1y": -5.8,
-      "cagr5y": null
+      "cagr5y": 1
     },
     {
       "id": "usdtwd",
       "name": "美元/台幣",
       "icon": "🇹🇼",
-      "price": 31.611,
+      "price": 31.626,
       "ytd": 1,
       "return1y": 6.9,
-      "cagr5y": null
+      "cagr5y": 2.6
     }
   ]
 }

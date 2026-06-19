@@ -1,15 +1,15 @@
 [
   {
     "date": "2026-06-19",
-    "us10y": 4.5,
-    "us2y": null,
-    "curve10y2y": null,
-    "erp": null,
-    "pe": null,
-    "vix": null,
-    "spx": null,
-    "gold": null,
-    "btc": null,
-    "dxy": null
+    "us10y": 4.49,
+    "us2y": 4.2,
+    "curve10y2y": 0.27,
+    "erp": -1.39,
+    "pe": 32.2,
+    "vix": 16.76,
+    "spx": 7500.58,
+    "gold": 4169.8,
+    "btc": 63050.13,
+    "dxy": 100.75
   }
 ]

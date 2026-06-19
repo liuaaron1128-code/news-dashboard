@@ -3,9 +3,21 @@
   "source": "TWSE OpenAPI",
   "date": null,
   "items": [
-    { "id": "foreign", "label": "外資及陸資", "netBuy": null },
-    { "id": "trust", "label": "投信", "netBuy": null },
-    { "id": "dealer", "label": "自營商", "netBuy": null }
+    {
+      "id": "foreign",
+      "label": "外資及陸資",
+      "netBuy": null
+    },
+    {
+      "id": "trust",
+      "label": "投信",
+      "netBuy": null
+    },
+    {
+      "id": "dealer",
+      "label": "自營商",
+      "netBuy": null
+    }
   ],
   "placeholder": true
 }

@@ -1,7 +1,64 @@
 {
   "asOf": "2026-06-19",
   "source": "Hacker News + GitHub Models",
-  "stories": [],
+  "stories": [
+    {
+      "id": "48583928",
+      "title": "I found 10k GitHub repositories distributing Trojan malware",
+      "url": "https://orchidfiles.com/github-repositories-distributing-malware/",
+      "points": 876,
+      "kind": "top"
+    },
+    {
+      "id": "48583356",
+      "title": ".gitignore Isn't the only way to ignore files in Git",
+      "url": "https://nelson.cloud/.gitignore-isnt-the-only-way-to-ignore-files-in-git/",
+      "points": 476,
+      "kind": "top"
+    },
+    {
+      "id": "48591348",
+      "title": "Show HN: Are You in the Weights?",
+      "url": "https://www.intheweights.com/",
+      "points": 408,
+      "kind": "top"
+    },
+    {
+      "id": "48583606",
+      "title": "CS 6120: Advanced Compilers: The Self-Guided Online Course (2020)",
+      "url": "https://www.cs.cornell.edu/courses/cs6120/2025fa/self-guided/",
+      "points": 403,
+      "kind": "top"
+    },
+    {
+      "id": "3742902",
+      "title": "Show HN: This up votes itself",
+      "url": "http://news.ycombinator.com/vote?for=3742902&dir=up&whence=%6e%65%77%65%73%74",
+      "points": 3531,
+      "kind": "show"
+    },
+    {
+      "id": "46205632",
+      "title": "Show HN: Gemini Pro 3 imagines the HN front page 10 years from now",
+      "url": "https://dosaygo-studio.github.io/hn-front-page-2035/news",
+      "points": 3346,
+      "kind": "show"
+    },
+    {
+      "id": "48499898",
+      "title": "Foreign business owners are scrambling to raise capital to stay in Japan",
+      "url": "https://tokyopaladin.substack.com/p/foreign-business-owners-are-scrambling",
+      "points": 97,
+      "kind": "funding"
+    },
+    {
+      "id": "48576901",
+      "title": "Apple to Raise Prices Due to Memory Chip Crunch",
+      "url": "https://www.wsj.com/tech/apple-price-increases-memory-supply-199845b1",
+      "points": 40,
+      "kind": "funding"
+    }
+  ],
   "founderStory": {
     "title": "等待每日生成",
     "body": "創業故事與創辦人心法會在每日 04:00 由 GitHub Models 自動生成（免費、使用 GitHub Actions 內建權限，不需額外金鑰）。",
