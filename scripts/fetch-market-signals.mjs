@@ -179,6 +179,40 @@ async function fetchReturns(list, keep = {}) {
   return rows
 }
 
+// Best-effort Taiwan 10Y government bond yield.
+// TPEx / CBC block data-center IPs (403) and the exact OpenAPI path could not be
+// confirmed offline, so this tries a few plausible official endpoints, logs the
+// raw response so the first real GitHub Actions run reveals the true schema/IP
+// access, and falls back to null (the UI then shows "待補").
+async function fetchTaiwan10Y() {
+  const candidates = [
+    'https://www.tpex.org.tw/openapi/v1/tpex_govbond_yield',
+    'https://www.tpex.org.tw/openapi/v1/bond_govbond_yield_curve',
+    'https://www.tpex.org.tw/openapi/v1/gov_bond_indicative_yield',
+  ]
+  for (const url of candidates) {
+    try {
+      const res = await fetch(url, { headers: { 'User-Agent': UA, Accept: 'application/json' } })
+      if (!res.ok) { console.warn(`TW10Y ${url}: HTTP ${res.status}`); continue }
+      const txt = await res.text()
+      console.log(`TW10Y ${url} OK — sample: ${txt.slice(0, 400)}`)
+      let data
+      try { data = JSON.parse(txt) } catch { continue }
+      const arr = Array.isArray(data) ? data : data?.data || []
+      for (const row of arr) {
+        const s = JSON.stringify(row)
+        if (/10\s*年|10Y|10-?year/i.test(s)) {
+          const nums = (s.match(/[0-9]+\.[0-9]+/g) || []).map(Number).filter((n) => n > 0 && n < 10)
+          if (nums.length) return { value: nums[0], note: 'TPEx 官方資料（自動解析，首次請人工核對）' }
+        }
+      }
+      console.warn('TW10Y: fetched but could not locate a 10Y yield in payload')
+      return null
+    } catch (e) { console.warn(`TW10Y ${url} failed: ${e.message}`) }
+  }
+  return null
+}
+
 async function main() {
   const usYield = {} // id -> yield value
 
@@ -320,7 +354,9 @@ async function main() {
       console.log(`${g.id}: ${last.value}`)
     } catch (e) { console.warn(`${g.id} failed: ${e.message}`) }
   }
-  globalYields.push({ id: 'tw10y', label: '台灣 10Y 公債', value: null, unit: '%', note: '免費資料源暫無，待補' })
+  const tw = await fetchTaiwan10Y().catch(() => null)
+  if (tw) globalYields.push({ id: 'tw10y', label: '台灣 10Y 公債', value: round(tw.value, 2), unit: '%', note: tw.note })
+  else globalYields.push({ id: 'tw10y', label: '台灣 10Y 公債', value: null, unit: '%', note: '官方源未能自動抓取，待補' })
 
   // ---- Policy rates ----
   const policyRates = []
