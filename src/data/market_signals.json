@@ -1,0 +1,29 @@
+{
+  "generatedAt": "2026-06-19T00:00:00.000Z",
+  "asOf": "2026-06-19",
+  "source": "初始化資料（等待 GitHub Actions 首次自動更新）",
+  "placeholder": true,
+  "headline": [
+    {
+      "id": "us10y",
+      "icon": "🏦",
+      "title": "美國 10 年期公債殖利率",
+      "value": "4.50%",
+      "tag": "偏高",
+      "tagLevel": "high",
+      "detail": "處於近 5 年區間高檔，無風險年化報酬偏高，股票須提供更高的預期報酬才划算。（首次自動更新後將替換為即時數據）"
+    }
+  ],
+  "bondYields": [
+    { "id": "us3m", "region": "美國", "name": "3 個月國庫券", "yield": 5.0, "changeBps": 0, "percentile5y": 90, "signal": "極高" },
+    { "id": "us5y", "region": "美國", "name": "5 年期公債", "yield": 4.3, "changeBps": 0, "percentile5y": 80, "signal": "偏高" },
+    { "id": "us10y", "region": "美國", "name": "10 年期公債", "yield": 4.5, "changeBps": 0, "percentile5y": 85, "signal": "偏高" },
+    { "id": "us30y", "region": "美國", "name": "30 年期公債", "yield": 4.7, "changeBps": 0, "percentile5y": 85, "signal": "偏高" }
+  ],
+  "equityReturns": [
+    { "id": "spx", "region": "美國", "name": "S&P 500", "price": null, "ytd": null, "return1y": null, "cagr3y": null, "cagr5y": null }
+  ],
+  "otherAssets": [
+    { "id": "gold", "name": "黃金", "icon": "🥇", "price": null, "ytd": null, "return1y": null, "cagr5y": null }
+  ]
+}

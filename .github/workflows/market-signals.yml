@@ -1,0 +1,40 @@
+name: Update market signals
+
+on:
+  schedule:
+    # 23:00 UTC == 07:00 台北 (UTC+8)
+    - cron: '0 23 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# Avoid overlapping runs racing on the same file.
+concurrency:
+  group: market-signals
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Fetch market signals
+        run: node scripts/fetch-market-signals.mjs
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add src/data/market_signals.json
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore: update market signals ($(date -u +%Y-%m-%d))"
+            git push
+          fi

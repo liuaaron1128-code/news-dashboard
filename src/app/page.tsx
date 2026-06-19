@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useMemo } from 'react'
-import { Search, Calendar, ChevronLeft, ChevronRight, Newspaper, BarChart2, X } from 'lucide-react'
+import { Search, Calendar, ChevronLeft, ChevronRight, Newspaper, BarChart2, Activity, X } from 'lucide-react'
 import briefingsData from '@/data/briefings.json'
 import bubbleData from '@/data/bubble.json'
 import { DailyBriefing, Grade, Category, NewsItem } from '@/types/news'
@@ -9,6 +9,7 @@ import { BubbleSnapshot } from '@/types/bubble'
 import MarketSnapshot from '@/components/MarketSnapshot'
 import NewsCard from '@/components/NewsCard'
 import BubbleMonitor from '@/components/BubbleMonitor'
+import MarketSignals from '@/components/MarketSignals'
 
 const briefings = briefingsData as DailyBriefing[]
 const bubbles = bubbleData as BubbleSnapshot[]
@@ -32,7 +33,7 @@ const CATEGORIES: { label: string; value: Category | 'all' }[] = [
   { label: '🏭 客戶產業', value: '客戶產業' },
 ]
 
-type Tab = 'news' | 'bubble'
+type Tab = 'news' | 'bubble' | 'signals'
 
 export default function Home() {
   const [tab, setTab] = useState<Tab>('news')
@@ -106,6 +107,17 @@ export default function Home() {
               <span className="bg-orange-100 text-orange-700 text-[11px] font-bold px-1.5 py-0.5 rounded-full">
                 {latestBubble.overallRisk}
               </span>
+            </button>
+            <button
+              onClick={() => setTab('signals')}
+              className={`flex items-center gap-1.5 px-4 py-2.5 text-sm font-semibold border-b-2 transition-all ${
+                tab === 'signals'
+                  ? 'border-emerald-600 text-emerald-700'
+                  : 'border-transparent text-slate-500'
+              }`}
+            >
+              <Activity size={14} />
+              市場訊號
             </button>
           </div>
         </div>
@@ -274,6 +286,9 @@ export default function Home() {
 
         {tab === 'bubble' && (
           <BubbleMonitor data={latestBubble} history={bubbles} />
+        )}
+        {tab === 'signals' && (
+          <MarketSignals />
         )}
 
         <div className="text-center text-slate-400 text-[11px] mt-8 pb-6">
