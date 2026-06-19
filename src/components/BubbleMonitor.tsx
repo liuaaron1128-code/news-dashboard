@@ -368,7 +368,7 @@ export default function BubbleMonitor({ data, history }: { data: BubbleSnapshot;
       </div>
 
       <div className="text-center text-slate-400 text-xs pb-2">
-        每日 07:00 自動更新 · 資料來源：FRED、Multpl、CNN Fear&Greed
+        每日 04:00 自動更新 · 資料來源：FRED、Multpl、CNN Fear&Greed
       </div>
     </div>
   )

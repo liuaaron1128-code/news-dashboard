@@ -58,7 +58,7 @@ export default function MarketSignals() {
         <div className="mb-4 rounded-xl p-3 border bg-amber-50 border-amber-200 flex items-start gap-2">
           <Info size={14} className="text-amber-600 mt-0.5 flex-shrink-0" />
           <div className="text-[12px] text-amber-800 leading-relaxed">
-            目前顯示為初始化資料，等待每日自動更新（07:00）首次抓取後將替換為即時數據。
+            目前顯示為初始化資料，等待每日自動更新（04:00）首次抓取後將替換為即時數據。
           </div>
         </div>
       )}
@@ -177,7 +177,7 @@ export default function MarketSignals() {
       )}
 
       <div className="text-center text-slate-400 text-[11px] mt-4">
-        每日 07:00 由 GitHub Actions 自動抓取 · 非投資建議
+        每日 04:00 由 GitHub Actions 自動抓取 · 非投資建議
       </div>
     </div>
   )

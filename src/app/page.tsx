@@ -292,7 +292,7 @@ export default function Home() {
         )}
 
         <div className="text-center text-slate-400 text-[11px] mt-8 pb-6">
-          每日 07:00 自動更新 · AI 情報顧問生成
+          每日 04:00 自動更新 · AI 情報顧問生成
         </div>
       </div>
     </div>
