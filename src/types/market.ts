@@ -60,9 +60,18 @@ export interface SynthesisPoint {
   text: string
 }
 
+export interface SynthesisScenario {
+  name: string
+  text: string
+}
+
 export interface Synthesis {
+  engine?: 'ai' | 'rule'
   regime: { label: string; tone: RegimeTone; summary: string }
   points: SynthesisPoint[]
+  scenarios?: SynthesisScenario[]
+  positioning?: string[]
+  watch?: string[]
 }
 
 export interface MarketSignals {

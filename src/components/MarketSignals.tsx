@@ -155,6 +155,46 @@ export default function MarketSignals() {
               </div>
             ))}
           </div>
+
+          {signals.synthesis.scenarios && signals.synthesis.scenarios.length > 0 && (
+            <div className="mt-3">
+              <div className="text-[12px] font-bold text-slate-700 mb-1.5">情境推演</div>
+              <div className="space-y-2">
+                {signals.synthesis.scenarios.map((s) => (
+                  <div key={s.name} className="bg-white/70 rounded-xl px-3 py-2">
+                    <div className="text-[12px] font-bold text-slate-700 mb-0.5">{s.name}</div>
+                    <div className="text-[12px] text-slate-600 leading-relaxed">{s.text}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {signals.synthesis.positioning && signals.synthesis.positioning.length > 0 && (
+            <div className="mt-3 bg-white/70 rounded-xl px-3 py-2">
+              <div className="text-[12px] font-bold text-slate-700 mb-1">💡 配置意涵</div>
+              <ul className="list-disc pl-4 space-y-1">
+                {signals.synthesis.positioning.map((t, i) => (
+                  <li key={i} className="text-[12px] text-slate-600 leading-relaxed">{t}</li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+          {signals.synthesis.watch && signals.synthesis.watch.length > 0 && (
+            <div className="mt-3 bg-white/70 rounded-xl px-3 py-2">
+              <div className="text-[12px] font-bold text-slate-700 mb-1">🔭 緊盯訊號</div>
+              <ul className="list-disc pl-4 space-y-1">
+                {signals.synthesis.watch.map((t, i) => (
+                  <li key={i} className="text-[12px] text-slate-600 leading-relaxed">{t}</li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+          <div className="text-[10px] text-slate-400 mt-3 text-right">
+            {signals.synthesis.engine === 'ai' ? 'AI 深度研判' : '規則式研判'} · 非投資建議
+          </div>
         </div>
       )}
 

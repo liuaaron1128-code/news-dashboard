@@ -17,6 +17,8 @@ import { fileURLToPath, pathToFileURL } from 'node:url'
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const OUT = join(__dirname, '..', 'src', 'data', 'market_signals.json')
 const FRED_KEY = process.env.FRED_API_KEY
+const ANTHROPIC_KEY = process.env.ANTHROPIC_API_KEY
+const SYNTH_MODEL = process.env.MARKET_SIGNALS_MODEL || 'claude-opus-4-8'
 
 const UA =
   'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36'
@@ -442,7 +444,20 @@ async function main() {
   if (spx && spx.cagr5y != null) headline.push({ id: 'spx5y', icon: '📈', title: 'S&P 500 近 5 年年化報酬', value: `${spx.cagr5y >= 0 ? '+' : ''}${spx.cagr5y}%`, tag: spx.cagr5y >= 10 ? '高於長期均值' : spx.cagr5y >= 0 ? '正報酬' : '負報酬', tagLevel: spx.cagr5y >= 0 ? 'high' : 'low', detail: `美股大盤近 5 年年化 ${spx.cagr5y}%、近 1 年 ${spx.return1y ?? '—'}%。` })
   if (gold && gold.return1y != null) headline.push({ id: 'gold', icon: '🥇', title: '黃金近 1 年報酬', value: `${gold.return1y >= 0 ? '+' : ''}${gold.return1y}%`, tag: gold.return1y >= 0 ? '避險需求' : '回落', tagLevel: gold.return1y >= 0 ? 'high' : 'low', detail: `黃金近 1 年 ${gold.return1y}%、近 5 年年化 ${gold.cagr5y ?? '—'}%，常反映通膨與避險情緒。` })
 
-  const synthesis = buildSynthesis({ bondYields, relativeValue, riskIndicators, macro, equityReturns, sectors })
+  const synthInput = { bondYields, relativeValue, riskIndicators, macro, globalYields, policyRates, equityReturns, sectors, otherAssets }
+  let synthesis
+  if (ANTHROPIC_KEY) {
+    try {
+      synthesis = await buildLLMSynthesis(synthInput)
+      console.log('synthesis: AI (deep)')
+    } catch (e) {
+      console.warn(`LLM synthesis failed, using rule-based: ${e.message}`)
+      synthesis = buildSynthesis(synthInput)
+    }
+  } else {
+    synthesis = buildSynthesis(synthInput)
+    console.log('synthesis: rule-based (no ANTHROPIC_API_KEY)')
+  }
 
   const now = new Date()
   const out = {
@@ -465,9 +480,59 @@ async function main() {
   )
 }
 
+// Calls the Claude Messages API (raw HTTP — no SDK dep). Returns the text.
+async function callClaude(system, user) {
+  const res = await fetch('https://api.anthropic.com/v1/messages', {
+    method: 'POST',
+    headers: {
+      'content-type': 'application/json',
+      'x-api-key': ANTHROPIC_KEY,
+      'anthropic-version': '2023-06-01',
+    },
+    body: JSON.stringify({ model: SYNTH_MODEL, max_tokens: 4000, system, messages: [{ role: 'user', content: user }] }),
+  })
+  if (!res.ok) throw new Error(`Anthropic HTTP ${res.status}: ${(await res.text()).slice(0, 300)}`)
+  const json = await res.json()
+  if (json.stop_reason === 'refusal') throw new Error('Anthropic refusal')
+  return (json.content || []).filter((b) => b.type === 'text').map((b) => b.text).join('')
+}
+
+// AI-generated deep market read. Reads all signals, asks Claude for an
+// institutional-grade synthesis as strict JSON. Throws on any failure so the
+// caller can fall back to the rule-based buildSynthesis.
+async function buildLLMSynthesis(d) {
+  const system =
+    '你是一位資深的跨資產宏觀策略師，為一位高資產投資人撰寫每日市場研判。' +
+    '只根據使用者提供的數據推論，不要編造數據。用繁體中文。語氣專業、精煉、有觀點，像機構級報告。' +
+    '嚴格只輸出一個 JSON 物件，不要任何前後說明或 markdown 圍欄。JSON schema：\n' +
+    '{"regime":{"label":"一句話定調(含 risk-on/晚週期 等)","tone":"risk-on|risk-off|caution|neutral",' +
+    '"summary":"3-5 句總述，點出當前格局與核心矛盾"},' +
+    '"points":[{"theme":"主題(如 利率環境/通膨與就業/風險胃納/股市與輪動/股債相對價值/全球與匯率)","text":"2-4 句深入解讀，務必引用具體數字並做跨資產連結"}](5-7 個),' +
+    '"scenarios":[{"name":"基準情境","text":"..."},{"name":"樂觀情境","text":"..."},{"name":"風險情境","text":"..."}],' +
+    '"positioning":["3-5 條可執行的配置/投資意涵，具體到資產類別"],' +
+    '"watch":["3-4 個接下來要緊盯的數據或訊號與其門檻"]}'
+  const user = '以下是今日全球市場數據（JSON）：\n' + JSON.stringify(d)
+  const raw = await callClaude(system, user)
+  const start = raw.indexOf('{')
+  const end = raw.lastIndexOf('}')
+  if (start < 0 || end < 0) throw new Error('no JSON in response')
+  const parsed = JSON.parse(raw.slice(start, end + 1))
+  if (!parsed.regime || !Array.isArray(parsed.points)) throw new Error('malformed synthesis')
+  const tones = ['risk-on', 'risk-off', 'caution', 'neutral']
+  if (!tones.includes(parsed.regime.tone)) parsed.regime.tone = 'neutral'
+  return {
+    engine: 'ai',
+    regime: { label: String(parsed.regime.label || '市場研判'), tone: parsed.regime.tone, summary: String(parsed.regime.summary || '') },
+    points: parsed.points.filter((p) => p && p.theme && p.text).map((p) => ({ theme: String(p.theme), text: String(p.text) })),
+    scenarios: Array.isArray(parsed.scenarios) ? parsed.scenarios.filter((s) => s && s.name && s.text).map((s) => ({ name: String(s.name), text: String(s.text) })) : [],
+    positioning: Array.isArray(parsed.positioning) ? parsed.positioning.map(String) : [],
+    watch: Array.isArray(parsed.watch) ? parsed.watch.map(String) : [],
+  }
+}
+
 // Turns the assembled signals into a plain-language market read: an overall
 // regime label + themed interpretations. Pure function (no I/O) so it is unit
-// testable and deterministic.
+// testable and deterministic. Used as the fallback when no AI key is present.
 export function buildSynthesis(d) {
   const find = (arr, id) => (arr || []).find((x) => x.id === id)
   const val = (arr, id) => { const m = find(arr, id); return m && m.value != null ? m.value : null }
@@ -548,7 +613,7 @@ export function buildSynthesis(d) {
   if (inverted) parts.push('殖利率曲線倒掛為衰退警訊')
   const summary = parts.join('，') + '。整體屬「報酬靠風險資產推動、但底層利率與估值已偏緊」的格局。'
 
-  return { regime: { label, tone, summary }, points }
+  return { engine: 'rule', regime: { label, tone, summary }, points }
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
