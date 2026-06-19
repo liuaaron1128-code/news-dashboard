@@ -1,11 +1,14 @@
 // Builds src/data/business.json — business & entrepreneurship content for the
-// daily briefing tab. Combines:
-//   1. Real startup/tech items from Hacker News (Algolia API, free, no key)
-//   2. Chinese summaries + AI-curated founder story / business-model breakdown /
-//      industry reads via GitHub Models (free, built-in GITHUB_TOKEN)
+// daily briefing tab. Every item shares ONE structure (標題/摘要/影響/行動建議),
+// identical to a news item — only `kind` tags the source.
 //
-// Degrades gracefully at every step: HN failure keeps previous stories; missing
-// GITHUB_TOKEN keeps English titles and the previous AI content. Never fatal.
+// Sources:
+//   1. Real startup/tech items from Hacker News (Algolia API, free, no key)
+//   2. Chinese 標題/摘要/影響/行動建議 for each story, plus AI-curated 創業故事 /
+//      商業模式拆解 / 產業動態, all via GitHub Models (free, built-in GITHUB_TOKEN)
+//
+// Degrades gracefully: HN failure keeps previous items; missing/failed GitHub
+// Models keeps the previous enriched items (never blanks them). Never fatal.
 // No npm deps — Node 20+ global fetch.
 
 import { readFileSync, writeFileSync } from 'node:fs'
@@ -31,6 +34,7 @@ const readJson = (p, fallback) => {
   }
 }
 const today = () => new Date().toISOString().slice(0, 10)
+const str = (v) => (v == null ? '' : String(v))
 
 // ---- Hacker News (Algolia) ----
 async function hn(url) {
@@ -59,42 +63,40 @@ async function fetchStories() {
     hits
       .filter((h) => h.title && h.url)
       .sort((a, b2) => (b2.points || 0) - (a.points || 0))
-      .slice(0, b.take * 3)
       .forEach((h) => {
         const key = (h.title || '').toLowerCase().trim()
         if (seen.has(h.objectID) || seen.has(key)) return
-        if (out.filter((s) => s.kind === b.kind).length >= b.take) return
+        if (out.filter((s) => s.bucket === b.kind).length >= b.take) return
         seen.add(h.objectID)
         seen.add(key)
-        out.push({ id: h.objectID, title: h.title, url: h.url, points: h.points || 0, kind: b.kind })
+        out.push({ id: String(h.objectID), title: h.title, url: h.url, points: h.points || 0, bucket: b.kind })
       })
   }
   return out.slice(0, 8)
 }
 
 // ---- GitHub Models (free) ----
+// Every leaf has the same four fields: title / summary / impact / action.
 async function enrich(stories, industries) {
-  const schema = {
-    stories: '[{ "id": "對應輸入的 id", "titleZh": "中文標題", "takeaway": "一句話商業重點" }]',
-    founderStory:
-      '{ "title": "標題", "body": "150-220字的創業故事或創辦人心法，可取材真實知名案例", "takeaways": ["重點1", "重點2"] }',
-    caseStudy:
-      '{ "company": "公司名", "title": "標題", "body": "150-220字的商業模式拆解", "points": ["關鍵1", "關鍵2", "關鍵3"] }',
-    industryInsights:
-      '[{ "industry": "產業名", "text": "80-140字該產業近期的商業動態與意涵" }]（每個指定產業一則）',
-  }
   const system =
-    '你是一位商業與創業分析師，為企業董事長撰寫繁體中文的商業情報。內容要白話、有觀點、可行動，避免空泛口號。' +
-    '只輸出一個 JSON 物件，欄位與格式如下（值的說明在括號內，實際請填內容）：\n' +
-    JSON.stringify(schema, null, 2) +
-    '\nstories 陣列請依輸入的每則新聞各產一筆並帶回相同 id。不要輸出 JSON 以外的文字。'
+    '你是一位商業與創業分析師，為企業董事長撰寫繁體中文情報。內容白話、有觀點、可行動，避免空泛口號。\n' +
+    '每一筆內容都必須有相同的四個欄位：title(標題)、summary(摘要：發生了什麼)、impact(影響：為什麼重要)、action(行動建議)。\n' +
+    '嚴格只輸出「一個 JSON 物件」，不要 markdown、不要多餘文字，結構與型別完全如下：\n' +
+    '{\n' +
+    '  "stories": [ { "id": "對應輸入的 id 字串", "title": "中文標題", "summary": "...", "impact": "...", "action": "..." } ],\n' +
+    '  "founderStory": { "title": "...", "summary": "...", "impact": "...", "action": "..." },\n' +
+    '  "caseStudy": { "company": "公司名", "title": "...", "summary": "...", "impact": "...", "action": "..." },\n' +
+    '  "industryInsights": [ { "industry": "產業名", "title": "...", "summary": "...", "impact": "...", "action": "..." } ]\n' +
+    '}\n' +
+    '"stories" 必須是陣列，對「輸入的每一則新聞」各一筆並帶回相同 id。' +
+    '"industryInsights" 對「每一個指定產業」各一則。所有 summary/impact/action 都要有實質內容。'
 
   const user =
-    '【需翻譯/摘要的 Hacker News 新聞】\n' +
-    JSON.stringify(stories.map((s) => ({ id: s.id, title: s.title, kind: s.kind })), null, 2) +
+    '【需中文化並補上 摘要/影響/行動建議 的 Hacker News 新聞】\n' +
+    JSON.stringify(stories.map((s) => ({ id: s.id, title: s.title, kind: s.bucket })), null, 2) +
     '\n\n【董事長關注的產業】\n' +
     JSON.stringify(industries) +
-    '\n\n請產出今日商業/創業內容。'
+    '\n\n請依上述 JSON 結構產出今日商業/創業內容。'
 
   const res = await fetch(ENDPOINT, {
     method: 'POST',
@@ -106,7 +108,7 @@ async function enrich(stories, industries) {
     body: JSON.stringify({
       model: MODEL,
       temperature: 0.6,
-      max_tokens: 2000,
+      max_tokens: 4000,
       response_format: { type: 'json_object' },
       messages: [
         { role: 'system', content: system },
@@ -121,8 +123,10 @@ async function enrich(stories, industries) {
   return JSON.parse(content)
 }
 
+const leaf = (v) => ({ title: str(v?.title), summary: str(v?.summary), impact: str(v?.impact), action: str(v?.action) })
+
 async function main() {
-  const prev = readJson(OUT, {})
+  const prev = readJson(OUT, { items: [] })
   const config = readJson(join(DATA, 'business_config.json'), { industries: [] })
   const industries = config.industries || []
 
@@ -132,45 +136,58 @@ async function main() {
     console.log(`HN: ${stories.length} stories`)
   } catch (e) {
     console.warn(`HN fetch failed: ${e.message}`)
-    stories = prev.stories || []
   }
 
-  let founderStory = prev.founderStory || null
-  let caseStudy = prev.caseStudy || null
-  let industryInsights = prev.industryInsights || []
+  let items = []
   let placeholder = true
 
   if (TOKEN && stories.length) {
     try {
       const ai = await enrich(stories, industries)
-      const byId = new Map((ai.stories || []).map((s) => [String(s.id), s]))
-      stories = stories.map((s) => {
-        const e = byId.get(String(s.id))
-        return e ? { ...s, titleZh: e.titleZh, takeaway: e.takeaway } : s
+      const byId = new Map((Array.isArray(ai.stories) ? ai.stories : []).map((s) => [String(s.id), s]))
+
+      // Curated items first (founder story, business model, industries), then real dynamics.
+      if (ai.founderStory && typeof ai.founderStory === 'object') {
+        items.push({ id: 'founder', kind: '創業故事', ...leaf(ai.founderStory) })
+      }
+      if (ai.caseStudy && typeof ai.caseStudy === 'object') {
+        const c = leaf(ai.caseStudy)
+        const company = str(ai.caseStudy.company)
+        items.push({ id: 'case', kind: '商業模式', ...c, title: company && company !== '—' ? `${company}：${c.title}` : c.title })
+      }
+      ;(Array.isArray(ai.industryInsights) ? ai.industryInsights : []).forEach((ins, i) => {
+        const l = leaf(ins)
+        const ind = str(ins.industry)
+        items.push({ id: `industry-${i}`, kind: '產業動態', ...l, title: ind ? `${ind}：${l.title}` : l.title })
       })
-      if (ai.founderStory) founderStory = ai.founderStory
-      if (ai.caseStudy) caseStudy = ai.caseStudy
-      if (Array.isArray(ai.industryInsights)) industryInsights = ai.industryInsights
+      stories.forEach((s) => {
+        const e = byId.get(String(s.id))
+        const l = e ? leaf(e) : { title: s.title, summary: '', impact: '', action: '' }
+        items.push({ id: s.id, kind: '創業動態', ...l, title: l.title || s.title, url: s.url, source: 'Hacker News' })
+      })
+
       placeholder = false
-      console.log('GitHub Models enrichment OK')
+      console.log(`GitHub Models enrichment OK — ${items.length} items`)
     } catch (e) {
-      console.warn(`enrichment failed (keeping previous AI content): ${e.message}`)
+      console.warn(`enrichment failed (keeping previous items): ${e.message}`)
+      items = prev.items || []
+      placeholder = prev.placeholder ?? true
     }
-  } else if (!TOKEN) {
-    console.warn('GITHUB_TOKEN not set — stories kept with original titles, AI content unchanged.')
+  } else {
+    // No token, or no stories: keep previous enriched items if any; otherwise
+    // surface raw stories with empty analysis so the section isn't empty.
+    if ((prev.items || []).length) {
+      items = prev.items
+      placeholder = prev.placeholder ?? true
+    } else {
+      items = stories.map((s) => ({ id: s.id, kind: '創業動態', title: s.title, summary: '', impact: '', action: '', url: s.url, source: 'Hacker News' }))
+    }
+    if (!TOKEN) console.warn('GITHUB_TOKEN not set — items not enriched.')
   }
 
-  const out = {
-    asOf: today(),
-    source: 'Hacker News + GitHub Models',
-    stories,
-    founderStory,
-    caseStudy,
-    industryInsights,
-    placeholder,
-  }
+  const out = { asOf: today(), source: 'Hacker News + GitHub Models', items, placeholder }
   writeFileSync(OUT, JSON.stringify(out, null, 2) + '\n')
-  console.log(`Wrote business.json: ${stories.length} stories, placeholder=${placeholder}.`)
+  console.log(`Wrote business.json: ${items.length} items, placeholder=${placeholder}.`)
 }
 
 main()

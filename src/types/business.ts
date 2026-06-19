@@ -1,43 +1,26 @@
 // Business & entrepreneurship content shown inside the daily briefing tab.
-// Produced by scripts/fetch-business.mjs: real startup/tech items from Hacker
-// News, plus AI-curated founder stories, business-model breakdowns and
-// industry reads (GitHub Models — free, built-in token).
+// Every item — whether a real Hacker News story, a founder story, a business
+// model breakdown, or an industry read — uses the SAME structure as a news
+// item: 標題 / 摘要 / 影響 / 行動建議. The `kind` only tags where it came from;
+// it never changes the shape.
 
-export interface BusinessStory {
+export type BusinessKind = '創業動態' | '創業故事' | '商業模式' | '產業動態'
+
+export interface BusinessItem {
   id: string
-  title: string // original (usually English)
-  titleZh?: string // Chinese title, if summarized
-  takeaway?: string // one-line business takeaway in Chinese
-  url: string
-  points?: number
-  kind?: 'launch' | 'show' | 'funding' | 'top'
-}
-
-export interface FounderStory {
-  title: string
-  body: string
-  takeaways: string[]
-}
-
-export interface CaseStudy {
-  company: string
-  title: string
-  body: string
-  points: string[]
-}
-
-export interface IndustryInsight {
-  industry: string
-  text: string
+  kind: BusinessKind
+  title: string // 標題
+  summary: string // 摘要（發生了什麼）
+  impact: string // 影響（為什麼重要）
+  action: string // 行動建議
+  url?: string // 原文連結（真實動態才有）
+  source?: string // 來源
 }
 
 export interface BusinessDigest {
   asOf: string
   source: string
-  stories: BusinessStory[]
-  founderStory?: FounderStory | null
-  caseStudy?: CaseStudy | null
-  industryInsights: IndustryInsight[]
+  items: BusinessItem[]
   placeholder?: boolean
 }
 

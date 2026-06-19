@@ -1,20 +1,92 @@
 'use client'
 
-import { Briefcase, Rocket, Lightbulb, Factory, ExternalLink, ArrowUpRight } from 'lucide-react'
+import { useState } from 'react'
+import { Briefcase, ChevronDown, ChevronUp, ExternalLink } from 'lucide-react'
 import businessData from '@/data/business.json'
-import { BusinessDigest as BusinessDigestType } from '@/types/business'
+import { BusinessDigest as BusinessDigestType, BusinessItem, BusinessKind } from '@/types/business'
 
 const data = businessData as BusinessDigestType
 
-const KIND_LABEL: Record<string, string> = {
-  launch: 'Launch HN',
-  show: 'Show HN',
-  funding: '募資',
-  top: '熱門',
+const KIND_STYLE: Record<BusinessKind, { border: string; badge: string }> = {
+  創業動態: { border: 'border-l-cyan-500', badge: 'bg-cyan-100 text-cyan-700' },
+  創業故事: { border: 'border-l-amber-400', badge: 'bg-amber-100 text-amber-700' },
+  商業模式: { border: 'border-l-indigo-500', badge: 'bg-indigo-100 text-indigo-700' },
+  產業動態: { border: 'border-l-teal-500', badge: 'bg-teal-100 text-teal-700' },
+}
+
+function SectionLabel({ children }: { children: React.ReactNode }) {
+  return <div className="text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-1.5">{children}</div>
+}
+
+function BusinessCard({ item }: { item: BusinessItem }) {
+  const [expanded, setExpanded] = useState(false)
+  const cfg = KIND_STYLE[item.kind] || KIND_STYLE['創業動態']
+  const hasDetail = !!(item.summary || item.impact || item.action)
+
+  return (
+    <div className={`bg-white rounded-xl overflow-hidden shadow-sm mb-3 border border-slate-200 border-l-4 ${cfg.border}`}>
+      <div className="px-4 pt-3.5 pb-3 cursor-pointer" onClick={() => hasDetail && setExpanded(!expanded)}>
+        <div className="flex flex-wrap items-center gap-1.5 mb-2">
+          <span className={`text-[11px] font-bold px-2 py-0.5 rounded-full ${cfg.badge}`}>{item.kind}</span>
+          {item.source && <span className="text-[11px] text-slate-400">{item.source}</span>}
+        </div>
+
+        <h3 className="text-slate-900 font-bold text-[15px] leading-snug mb-2">{item.title}</h3>
+
+        {!expanded && item.summary && (
+          <p className="text-slate-500 text-sm leading-relaxed line-clamp-2">{item.summary}</p>
+        )}
+
+        <div className="flex items-center justify-between mt-2.5">
+          {item.url ? (
+            <a
+              href={item.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => e.stopPropagation()}
+              className="text-[11px] text-blue-500 flex items-center gap-1"
+            >
+              原文 <ExternalLink size={11} />
+            </a>
+          ) : (
+            <span />
+          )}
+          {hasDetail && (
+            <span className={`text-xs font-semibold flex items-center gap-0.5 ${expanded ? 'text-slate-400' : 'text-blue-500'}`}>
+              {expanded ? (<><ChevronUp size={13} /> 收合</>) : (<>展開分析 <ChevronDown size={13} /></>)}
+            </span>
+          )}
+        </div>
+      </div>
+
+      {expanded && hasDetail && (
+        <div className="border-t border-slate-100 px-4 py-4 space-y-4 bg-slate-50/50">
+          {item.summary && (
+            <div>
+              <SectionLabel>摘要</SectionLabel>
+              <p className="text-slate-800 text-sm leading-relaxed font-medium">{item.summary}</p>
+            </div>
+          )}
+          {item.impact && (
+            <div>
+              <SectionLabel>影響</SectionLabel>
+              <p className="text-slate-800 text-sm leading-relaxed">{item.impact}</p>
+            </div>
+          )}
+          {item.action && (
+            <div className="bg-emerald-50 border border-emerald-100 rounded-xl p-3.5">
+              <div className="text-xs font-bold text-emerald-600 mb-1.5">📌 行動建議</div>
+              <p className="text-slate-700 text-sm leading-relaxed">{item.action}</p>
+            </div>
+          )}
+        </div>
+      )}
+    </div>
+  )
 }
 
 export default function BusinessDigest() {
-  const { stories, founderStory, caseStudy, industryInsights } = data
+  const items = data.items || []
 
   return (
     <div className="mt-5">
@@ -24,114 +96,16 @@ export default function BusinessDigest() {
         <span className="text-[10px] text-slate-400 ml-auto">{data.asOf} · {data.source}</span>
       </div>
 
-      {/* Founder story */}
-      {founderStory && (
-        <div className="bg-gradient-to-br from-amber-50 to-white border border-amber-100 rounded-xl p-4 shadow-sm mb-3">
-          <div className="flex items-center gap-1.5 mb-1.5">
-            <Rocket size={14} className="text-amber-500" />
-            <span className="text-sm font-bold text-slate-800">創業故事・創辦人心法</span>
-          </div>
-          <div className="text-[13px] font-semibold text-slate-900 mb-1">{founderStory.title}</div>
-          <p className="text-[12.5px] text-slate-700 leading-relaxed">{founderStory.body}</p>
-          {founderStory.takeaways?.length > 0 && (
-            <ul className="mt-2 space-y-1">
-              {founderStory.takeaways.map((t, i) => (
-                <li key={i} className="flex gap-2 text-[12px] text-amber-800">
-                  <span className="text-amber-400 flex-shrink-0">▍</span>
-                  <span>{t}</span>
-                </li>
-              ))}
-            </ul>
-          )}
+      {items.length === 0 ? (
+        <div className="text-center text-slate-400 py-10 bg-white rounded-xl border border-slate-200 text-sm">
+          商業/創業內容於每日由 Hacker News + GitHub Models 自動更新。
         </div>
+      ) : (
+        items.map((item) => <BusinessCard key={item.id} item={item} />)
       )}
 
-      {/* Business-model breakdown */}
-      {caseStudy && (
-        <div className="bg-white border border-slate-200 rounded-xl p-4 shadow-sm mb-3">
-          <div className="flex items-center gap-1.5 mb-1.5">
-            <Lightbulb size={14} className="text-indigo-500" />
-            <span className="text-sm font-bold text-slate-800">商業模式拆解</span>
-            {caseStudy.company && caseStudy.company !== '—' && (
-              <span className="text-[10px] font-bold px-1.5 py-0.5 rounded-full bg-indigo-100 text-indigo-700">{caseStudy.company}</span>
-            )}
-          </div>
-          <div className="text-[13px] font-semibold text-slate-900 mb-1">{caseStudy.title}</div>
-          <p className="text-[12.5px] text-slate-700 leading-relaxed">{caseStudy.body}</p>
-          {caseStudy.points?.length > 0 && (
-            <ul className="mt-2 space-y-1">
-              {caseStudy.points.map((t, i) => (
-                <li key={i} className="flex gap-2 text-[12px] text-slate-600">
-                  <span className="text-indigo-400 flex-shrink-0">•</span>
-                  <span>{t}</span>
-                </li>
-              ))}
-            </ul>
-          )}
-        </div>
-      )}
-
-      {/* Industry insights */}
-      {industryInsights?.length > 0 && (
-        <div className="bg-white border border-slate-200 rounded-xl p-4 shadow-sm mb-3">
-          <div className="flex items-center gap-1.5 mb-2">
-            <Factory size={14} className="text-slate-500" />
-            <span className="text-sm font-bold text-slate-800">關注產業動態</span>
-          </div>
-          <div className="space-y-2.5">
-            {industryInsights.map((ins, i) => (
-              <div key={i}>
-                <div className="text-[12.5px] font-bold text-slate-700">{ins.industry}</div>
-                <p className="text-[12px] text-slate-600 leading-relaxed mt-0.5">{ins.text}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      )}
-
-      {/* Real startup/tech stories */}
-      {stories?.length > 0 && (
-        <div className="bg-white border border-slate-200 rounded-xl shadow-sm divide-y divide-slate-100">
-          <div className="px-4 py-2.5 flex items-center gap-1.5">
-            <ArrowUpRight size={14} className="text-slate-500" />
-            <span className="text-sm font-bold text-slate-800">創業・科技真實動態</span>
-            <span className="text-[10px] text-slate-400 ml-auto">Hacker News</span>
-          </div>
-          {stories.map((s) => (
-            <a
-              key={s.id}
-              href={s.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block px-4 py-3 hover:bg-slate-50 transition"
-            >
-              <div className="flex items-start justify-between gap-2">
-                <div className="min-w-0">
-                  <div className="text-[13px] font-semibold text-slate-900 leading-snug">
-                    {s.titleZh || s.title}
-                  </div>
-                  {s.titleZh && <div className="text-[11px] text-slate-400 mt-0.5 leading-snug">{s.title}</div>}
-                  {s.takeaway && <div className="text-[12px] text-slate-600 mt-1 leading-relaxed">{s.takeaway}</div>}
-                </div>
-                <ExternalLink size={13} className="text-slate-300 mt-0.5 flex-shrink-0" />
-              </div>
-              <div className="flex items-center gap-2 mt-1.5">
-                {s.kind && (
-                  <span className="text-[10px] font-bold px-1.5 py-0.5 rounded-full bg-slate-100 text-slate-500">
-                    {KIND_LABEL[s.kind] || s.kind}
-                  </span>
-                )}
-                {s.points != null && <span className="text-[10px] text-slate-400">▲ {s.points}</span>}
-              </div>
-            </a>
-          ))}
-        </div>
-      )}
-
-      {data.placeholder && (
-        <div className="text-[10px] text-slate-400 mt-2">
-          商業/創業內容於每日 04:00 由 Hacker News + GitHub Models 自動更新（免費、免額外金鑰）。
-        </div>
+      {data.placeholder && items.length > 0 && (
+        <div className="text-[10px] text-slate-400 mt-1">部分內容尚待每日自動補齊（摘要/影響/行動建議）。</div>
       )}
     </div>
   )
