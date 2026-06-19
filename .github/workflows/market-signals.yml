@@ -5,6 +5,13 @@ on:
     # 20:00 UTC == 04:00 台北 (UTC+8)
     - cron: '0 20 * * *'
   workflow_dispatch:
+  # Also refresh data on every code deploy to main. The bot's own data commit is
+  # made with GITHUB_TOKEN, which does not re-trigger workflows (no loop); the
+  # paths-ignore is belt-and-suspenders for any data-only push.
+  push:
+    branches: [main]
+    paths-ignore:
+      - 'src/data/**'
 
 permissions:
   contents: write
