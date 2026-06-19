@@ -14,6 +14,10 @@
       "detail": "處於近 5 年區間高檔，無風險年化報酬偏高，股票須提供更高的預期報酬才划算。（首次自動更新後將替換為即時數據）"
     }
   ],
+  "relativeValue": [],
+  "riskIndicators": [],
+  "globalYields": [],
+  "policyRates": [],
   "bondYields": [
     { "id": "us3m", "region": "美國", "name": "3 個月國庫券", "yield": 5.0, "changeBps": 0, "percentile5y": 90, "signal": "極高" },
     { "id": "us5y", "region": "美國", "name": "5 年期公債", "yield": 4.3, "changeBps": 0, "percentile5y": 80, "signal": "偏高" },

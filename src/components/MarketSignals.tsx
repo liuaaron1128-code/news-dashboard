@@ -2,7 +2,7 @@
 
 import { TrendingUp, TrendingDown, RefreshCw, Info } from 'lucide-react'
 import signalsData from '@/data/market_signals.json'
-import { MarketSignals as MarketSignalsType, SignalLevel } from '@/types/market'
+import { MarketSignals as MarketSignalsType, SignalLevel, Metric } from '@/types/market'
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const signals = (signalsData as any) as MarketSignalsType
@@ -33,6 +33,47 @@ function ReturnCell({ label, value }: { label: string; value: number | null }) {
     <div className="bg-slate-50 rounded-lg px-2 py-1.5 text-center">
       <div className="text-[10px] text-slate-400 mb-0.5">{label}</div>
       <div className={`text-[12px] font-bold ${retColor(value)}`}>{fmtPct(value)}</div>
+    </div>
+  )
+}
+
+const SIGNAL_BADGE: Record<SignalLevel, string> = {
+  high: 'bg-red-100 text-red-700',
+  low: 'bg-blue-100 text-blue-700',
+  neutral: 'bg-slate-100 text-slate-600',
+}
+
+function MetricList({ items }: { items: Metric[] }) {
+  return (
+    <div className="bg-white border border-slate-200 rounded-2xl shadow-sm divide-y divide-slate-100">
+      {items.map((m) => (
+        <div key={m.id} className="px-4 py-3">
+          <div className="flex items-center justify-between">
+            <div className="text-[13px] font-semibold text-slate-800 pr-2">{m.label}</div>
+            <div className="flex items-center gap-2 flex-shrink-0">
+              <span className="text-[16px] font-bold text-slate-900">
+                {m.value === null ? '—' : `${m.value}${m.unit}`}
+              </span>
+              {m.signal && (
+                <span className={`text-[11px] font-bold px-2 py-0.5 rounded-full ${SIGNAL_BADGE[m.signalLevel || 'neutral']}`}>
+                  {m.signal}
+                </span>
+              )}
+            </div>
+          </div>
+          {m.note && <div className="text-[11px] text-slate-400 mt-1 leading-relaxed">{m.note}</div>}
+        </div>
+      ))}
+    </div>
+  )
+}
+
+function Section({ title, subtitle, children }: { title: string; subtitle?: string; children: React.ReactNode }) {
+  return (
+    <div className="mb-5">
+      <div className="text-sm font-bold text-slate-800 mb-1">{title}</div>
+      {subtitle && <p className="text-[11px] text-slate-400 mb-3">{subtitle}</p>}
+      {children}
     </div>
   )
 }
@@ -85,6 +126,20 @@ export default function MarketSignals() {
         </div>
       )}
 
+      {/* Relative value */}
+      {signals.relativeValue.length > 0 && (
+        <Section title="股債相對價值" subtitle="判斷現在該抱股還是抱債、利率高是否真的緊縮。">
+          <MetricList items={signals.relativeValue} />
+        </Section>
+      )}
+
+      {/* Risk indicators */}
+      {signals.riskIndicators.length > 0 && (
+        <Section title="風險 · 壓力指標" subtitle="市場情緒與信用壓力的領先訊號。">
+          <MetricList items={signals.riskIndicators} />
+        </Section>
+      )}
+
       {/* Bond yields */}
       {signals.bondYields.length > 0 && (
         <div className="mb-5">
@@ -115,6 +170,20 @@ export default function MarketSignals() {
             ))}
           </div>
         </div>
+      )}
+
+      {/* Global sovereign yields */}
+      {signals.globalYields.length > 0 && (
+        <Section title="全球公債殖利率（10Y）" subtitle="其他主要經濟體的無風險年化報酬。">
+          <MetricList items={signals.globalYields} />
+        </Section>
+      )}
+
+      {/* Policy rates */}
+      {signals.policyRates.length > 0 && (
+        <Section title="主要央行政策利率" subtitle="驅動全球利率與資產定價的源頭。">
+          <MetricList items={signals.policyRates} />
+        </Section>
       )}
 
       {/* Equity annualized returns */}

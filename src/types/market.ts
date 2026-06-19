@@ -41,13 +41,29 @@ export interface OtherAsset {
   cagr5y: number | null
 }
 
+// Generic single-number indicator used by relative-value, risk, policy-rate
+// and global-yield sections.
+export interface Metric {
+  id: string
+  label: string
+  value: number | null
+  unit: string
+  signal?: string
+  signalLevel?: SignalLevel
+  note?: string
+}
+
 export interface MarketSignals {
   generatedAt: string
   asOf: string
   source: string
   placeholder?: boolean
   headline: SignalHeadline[]
+  relativeValue: Metric[]
+  riskIndicators: Metric[]
   bondYields: BondYield[]
+  globalYields: Metric[]
+  policyRates: Metric[]
   equityReturns: EquityReturn[]
   otherAssets: OtherAsset[]
 }

@@ -26,6 +26,8 @@ jobs:
 
       - name: Fetch market signals
         run: node scripts/fetch-market-signals.mjs
+        env:
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
 
       - name: Commit if changed
         run: |
