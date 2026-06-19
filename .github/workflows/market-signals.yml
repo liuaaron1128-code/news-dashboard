@@ -29,6 +29,7 @@ jobs:
         run: node scripts/fetch-market-signals.mjs
         env:
           FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
 
       - name: Append signal history
         run: node scripts/append-history.mjs

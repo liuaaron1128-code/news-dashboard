@@ -53,11 +53,33 @@ export interface Metric {
   note?: string
 }
 
+export type RegimeTone = 'risk-on' | 'risk-off' | 'caution' | 'neutral'
+
+export interface SynthesisPoint {
+  theme: string
+  text: string
+}
+
+export interface SynthesisScenario {
+  name: string
+  text: string
+}
+
+export interface Synthesis {
+  engine?: 'ai' | 'rule'
+  regime: { label: string; tone: RegimeTone; summary: string }
+  points: SynthesisPoint[]
+  scenarios?: SynthesisScenario[]
+  positioning?: string[]
+  watch?: string[]
+}
+
 export interface MarketSignals {
   generatedAt: string
   asOf: string
   source: string
   placeholder?: boolean
+  synthesis?: Synthesis | null
   headline: SignalHeadline[]
   relativeValue: Metric[]
   riskIndicators: Metric[]

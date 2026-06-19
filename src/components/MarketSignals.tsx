@@ -38,6 +38,13 @@ function ReturnCell({ label, value }: { label: string; value: number | null }) {
   )
 }
 
+const TONE_STYLE: Record<string, { bg: string; border: string; text: string; chip: string; label: string }> = {
+  'risk-on': { bg: '#ECFDF5', border: '#A7F3D0', text: '#047857', chip: 'bg-emerald-600', label: '🟢' },
+  caution: { bg: '#FFFBEB', border: '#FDE68A', text: '#B45309', chip: 'bg-amber-500', label: '🟡' },
+  'risk-off': { bg: '#FEF2F2', border: '#FECACA', text: '#B91C1C', chip: 'bg-red-600', label: '🔴' },
+  neutral: { bg: '#F8FAFC', border: '#E2E8F0', text: '#334155', chip: 'bg-slate-500', label: '⚪️' },
+}
+
 const SIGNAL_BADGE: Record<SignalLevel, string> = {
   high: 'bg-red-100 text-red-700',
   low: 'bg-blue-100 text-blue-700',
@@ -124,6 +131,70 @@ export default function MarketSignals() {
           <Info size={14} className="text-amber-600 mt-0.5 flex-shrink-0" />
           <div className="text-[12px] text-amber-800 leading-relaxed">
             目前顯示為初始化資料，等待每日自動更新（04:00）首次抓取後將替換為即時數據。
+          </div>
+        </div>
+      )}
+
+      {/* Synthesis — the data turned into a read */}
+      {signals.synthesis && (
+        <div className="mb-5 rounded-2xl p-4 border" style={{ background: (TONE_STYLE[signals.synthesis.regime.tone] || TONE_STYLE.neutral).bg, borderColor: (TONE_STYLE[signals.synthesis.regime.tone] || TONE_STYLE.neutral).border }}>
+          <div className="flex items-center gap-2 mb-2">
+            <span className="text-base">🧭</span>
+            <span className="text-sm font-bold text-slate-800">今日市場研判</span>
+            <span className={`text-[11px] font-bold text-white px-2 py-0.5 rounded-full ml-auto ${(TONE_STYLE[signals.synthesis.regime.tone] || TONE_STYLE.neutral).chip}`}>
+              {signals.synthesis.regime.label}
+            </span>
+          </div>
+          <p className="text-[13px] font-medium leading-relaxed mb-3" style={{ color: (TONE_STYLE[signals.synthesis.regime.tone] || TONE_STYLE.neutral).text }}>
+            {signals.synthesis.regime.summary}
+          </p>
+          <div className="space-y-2">
+            {signals.synthesis.points.map((p) => (
+              <div key={p.theme} className="bg-white/70 rounded-xl px-3 py-2">
+                <div className="text-[12px] font-bold text-slate-700 mb-0.5">{p.theme}</div>
+                <div className="text-[12px] text-slate-600 leading-relaxed">{p.text}</div>
+              </div>
+            ))}
+          </div>
+
+          {signals.synthesis.scenarios && signals.synthesis.scenarios.length > 0 && (
+            <div className="mt-3">
+              <div className="text-[12px] font-bold text-slate-700 mb-1.5">情境推演</div>
+              <div className="space-y-2">
+                {signals.synthesis.scenarios.map((s) => (
+                  <div key={s.name} className="bg-white/70 rounded-xl px-3 py-2">
+                    <div className="text-[12px] font-bold text-slate-700 mb-0.5">{s.name}</div>
+                    <div className="text-[12px] text-slate-600 leading-relaxed">{s.text}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {signals.synthesis.positioning && signals.synthesis.positioning.length > 0 && (
+            <div className="mt-3 bg-white/70 rounded-xl px-3 py-2">
+              <div className="text-[12px] font-bold text-slate-700 mb-1">💡 配置意涵</div>
+              <ul className="list-disc pl-4 space-y-1">
+                {signals.synthesis.positioning.map((t, i) => (
+                  <li key={i} className="text-[12px] text-slate-600 leading-relaxed">{t}</li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+          {signals.synthesis.watch && signals.synthesis.watch.length > 0 && (
+            <div className="mt-3 bg-white/70 rounded-xl px-3 py-2">
+              <div className="text-[12px] font-bold text-slate-700 mb-1">🔭 緊盯訊號</div>
+              <ul className="list-disc pl-4 space-y-1">
+                {signals.synthesis.watch.map((t, i) => (
+                  <li key={i} className="text-[12px] text-slate-600 leading-relaxed">{t}</li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+          <div className="text-[10px] text-slate-400 mt-3 text-right">
+            {signals.synthesis.engine === 'ai' ? 'AI 深度研判' : '規則式研判'} · 非投資建議
           </div>
         </div>
       )}
