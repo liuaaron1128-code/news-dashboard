@@ -12,7 +12,7 @@
 
 import { writeFileSync, mkdirSync } from 'node:fs'
 import { dirname, join } from 'node:path'
-import { fileURLToPath } from 'node:url'
+import { fileURLToPath, pathToFileURL } from 'node:url'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const OUT = join(__dirname, '..', 'src', 'data', 'market_signals.json')
@@ -151,7 +151,8 @@ function returnsFor(series) {
   const c1y = closeNearest(series, yearsAgo(latest.date, 1))
   const c3y = closeNearest(series, yearsAgo(latest.date, 3))
   const c5y = closeNearest(series, yearsAgo(latest.date, 5))
-  const hasYears = (n) => series[0].date <= yearsAgo(latest.date, n - 0.1)
+  const spanYears = (latest.date.getTime() - series[0].date.getTime()) / (365.25 * 86400000)
+  const hasYears = (n) => spanYears >= n - 0.15
   return {
     price: round(latest.close, latest.close < 50 ? 4 : 2),
     prevClose: prev.close,
@@ -317,13 +318,25 @@ async function main() {
   }
   // ERP & valuation via multpl
   let erp = null, pe = null, divYield = null
+  // multpl puts "Current S&P 500 PE Ratio is 30.42 ..." in the page text; anchor
+  // on "Ratio is"/"Yield is" so the "500" in "S&P 500" doesn't break the match.
   try {
     const res = await fetch('https://www.multpl.com/s-p-500-pe-ratio', { headers: { 'User-Agent': UA } })
-    if (res.ok) { const m = (await res.text()).match(/Current[^0-9]*([0-9]+\.[0-9]+)/); pe = m ? Number(m[1]) : null }
+    if (res.ok) {
+      const html = await res.text()
+      const m = html.match(/PE Ratio is[:\s]*([0-9]+(?:\.[0-9]+)?)/i)
+      pe = m ? Number(m[1]) : null
+      console.log(`multpl PE: ${pe}`)
+    } else console.warn(`multpl PE HTTP ${res.status}`)
   } catch (e) { console.warn(`multpl PE failed: ${e.message}`) }
   try {
     const res = await fetch('https://www.multpl.com/s-p-500-dividend-yield', { headers: { 'User-Agent': UA } })
-    if (res.ok) { const m = (await res.text()).match(/Current[^0-9]*([0-9]+\.[0-9]+)/); divYield = m ? Number(m[1]) : null }
+    if (res.ok) {
+      const html = await res.text()
+      const m = html.match(/Dividend Yield is[:\s]*([0-9]+(?:\.[0-9]+)?)/i)
+      divYield = m ? Number(m[1]) : null
+      console.log(`multpl div: ${divYield}`)
+    } else console.warn(`multpl div HTTP ${res.status}`)
   } catch (e) { console.warn(`multpl div failed: ${e.message}`) }
   if (pe && usYield.us10y != null) {
     const ey = 100 / pe
@@ -360,11 +373,12 @@ async function main() {
 
   // ---- Policy rates ----
   const policyRates = []
+  // Only Fed and ECB have reliable, current, daily policy-rate series on FRED.
+  // BOE (IRSTCB01GBM156N) 400s and BOJ's OECD series is stale (stopped 2023),
+  // so they're omitted rather than shown with misleading values.
   const POLICY = [
     { id: 'fed', label: '美國 Fed 基準利率 (上限)', series: 'DFEDTARU' },
     { id: 'ecb', label: '歐洲央行 ECB 存款利率', series: 'ECBDFR' },
-    { id: 'boe', label: '英國央行 BOE 政策利率', series: 'IRSTCB01GBM156N' },
-    { id: 'boj', label: '日本央行 BOJ 政策利率', series: 'IRSTCB01JPM156N' },
   ]
   for (const r of POLICY) {
     try {
@@ -428,11 +442,14 @@ async function main() {
   if (spx && spx.cagr5y != null) headline.push({ id: 'spx5y', icon: '📈', title: 'S&P 500 近 5 年年化報酬', value: `${spx.cagr5y >= 0 ? '+' : ''}${spx.cagr5y}%`, tag: spx.cagr5y >= 10 ? '高於長期均值' : spx.cagr5y >= 0 ? '正報酬' : '負報酬', tagLevel: spx.cagr5y >= 0 ? 'high' : 'low', detail: `美股大盤近 5 年年化 ${spx.cagr5y}%、近 1 年 ${spx.return1y ?? '—'}%。` })
   if (gold && gold.return1y != null) headline.push({ id: 'gold', icon: '🥇', title: '黃金近 1 年報酬', value: `${gold.return1y >= 0 ? '+' : ''}${gold.return1y}%`, tag: gold.return1y >= 0 ? '避險需求' : '回落', tagLevel: gold.return1y >= 0 ? 'high' : 'low', detail: `黃金近 1 年 ${gold.return1y}%、近 5 年年化 ${gold.cagr5y ?? '—'}%，常反映通膨與避險情緒。` })
 
+  const synthesis = buildSynthesis({ bondYields, relativeValue, riskIndicators, macro, equityReturns, sectors })
+
   const now = new Date()
   const out = {
     generatedAt: now.toISOString(),
     asOf: now.toISOString().slice(0, 10),
     source: FRED_KEY ? 'Yahoo Finance + FRED' : 'Yahoo Finance（未設 FRED 金鑰，部分指標略過）',
+    synthesis,
     headline: headline.slice(0, 5),
     relativeValue, riskIndicators, macro,
     bondYields, globalYields, policyRates,
@@ -448,4 +465,92 @@ async function main() {
   )
 }
 
-main().catch((e) => { console.error(e); process.exit(1) })
+// Turns the assembled signals into a plain-language market read: an overall
+// regime label + themed interpretations. Pure function (no I/O) so it is unit
+// testable and deterministic.
+export function buildSynthesis(d) {
+  const find = (arr, id) => (arr || []).find((x) => x.id === id)
+  const val = (arr, id) => { const m = find(arr, id); return m && m.value != null ? m.value : null }
+  const us10 = find(d.bondYields, 'us10y')
+  const real10 = val(d.relativeValue, 'real10y')
+  const curve = val(d.relativeValue, 'curve10y2y')
+  const erp = val(d.relativeValue, 'erp')
+  const pe = val(d.relativeValue, 'pe')
+  const divy = val(d.relativeValue, 'divy')
+  const vix = val(d.riskIndicators, 'vix')
+  const hy = find(d.riskIndicators, 'hyoas')
+  const stress = val(d.riskIndicators, 'stress')
+  const cpi = val(d.macro, 'cpi')
+  const corepce = val(d.macro, 'corepce')
+  const unrate = val(d.macro, 'unrate')
+
+  const points = []
+  if (us10) {
+    let t = `美 10Y 公債 ${us10.yield}%（近 5 年第 ${us10.percentile5y} 百分位）`
+    if (real10 != null) t += `，實質利率 ${real10}%${real10 >= 2 ? '（偏高、屬限制性，壓抑長天期與成長股）' : ''}`
+    if (curve != null) t += `；曲線 10Y−2Y ${curve > 0 ? '+' : ''}${curve}%${curve < 0 ? '（倒掛、衰退警訊）' : curve < 0.5 ? '（偏平）' : '（正斜率）'}`
+    points.push({ theme: '利率環境', text: t + '。' })
+  }
+  if (cpi != null || corepce != null) {
+    const sticky = corepce != null && corepce > 2.5
+    points.push({
+      theme: '通膨與就業',
+      text:
+        `${cpi != null ? `CPI ${cpi}%、` : ''}${corepce != null ? `核心 PCE ${corepce}%` : ''}` +
+        `${sticky ? '，仍明顯高於 Fed 2% 目標、通膨黏著，降息空間受限' : '，逐步回落'}` +
+        `${unrate != null ? `；失業率 ${unrate}%` : ''}。`,
+    })
+  }
+  if (vix != null || hy) {
+    const calm = vix != null && vix < 20 && hy && hy.signalLevel === 'low'
+    let t = ''
+    if (vix != null) t += `VIX ${vix}${vix < 15 ? '（極低）' : vix < 20 ? '（平穩）' : vix < 30 ? '（偏緊張）' : '（恐慌）'}`
+    if (hy) t += `${t ? '、' : ''}高收益債利差 ${hy.value}%（${hy.signal}）`
+    if (stress != null) t += `、金融壓力 ${stress}`
+    points.push({ theme: '風險胃納', text: t + (calm ? ' → 信用與波動極度平穩、無系統性壓力，偏 risk-on。' : ' → 風險指標升溫，留意。') })
+  }
+  if (d.equityReturns && d.equityReturns.length) {
+    const byY = [...d.equityReturns].filter((e) => e.return1y != null).sort((a, b) => b.return1y - a.return1y)
+    const top = byY.slice(0, 3).map((e) => `${e.name} +${e.return1y}%`).join('、')
+    const bot = byY.slice(-2).map((e) => `${e.name} ${e.return1y}%`).join('、')
+    let t = `近 1 年領先 ${top}；落後 ${bot}`
+    if (d.sectors && d.sectors.length) {
+      const s = [...d.sectors].filter((x) => x.return1y != null).sort((a, b) => b.return1y - a.return1y)
+      const clean = (n) => n.replace(/\s*\(.*\)/, '')
+      if (s.length) t += `。美股由 ${clean(s[0].name)} 領軍、${clean(s[s.length - 1].name)} 墊後`
+    }
+    points.push({ theme: '股市與輪動', text: t + '。' })
+  }
+  {
+    let t = ''
+    if (erp != null) t += `ERP 股債溢酬 ${erp}%${erp <= 1 ? '（偏低、股票相對債券不划算）' : erp >= 3 ? '（偏高、股票相對便宜）' : '（中性）'}`
+    if (pe != null) t += `${t ? '；' : ''}S&P500 本益比 ${pe} 倍`
+    if (divy != null) t += `${t ? '、' : ''}股息殖利率 ${divy}%`
+    if (t) {
+      if (real10 != null && real10 >= 2) t += '。高實質利率下，偏貴的股市估值承壓'
+      points.push({ theme: '股債相對價值', text: t + '。' })
+    }
+  }
+
+  const inverted = curve != null && curve < 0
+  const stressed = stress != null && stress > 0.5
+  const riskOn = vix != null && vix < 20 && hy && hy.signalLevel === 'low' && (stress == null || stress < 0)
+  const tight = real10 != null && real10 >= 2
+  let tone = 'neutral'
+  let label = '中性'
+  if (inverted || stressed) { tone = 'risk-off'; label = 'Risk-off／留意衰退訊號' }
+  else if (riskOn) { tone = tight ? 'caution' : 'risk-on'; label = tight ? 'Risk-on，但屬晚週期（高實質利率）' : 'Risk-on（風險偏好高）' }
+
+  const parts = []
+  parts.push(riskOn ? '市場風險胃納高、信用利差與波動極度平穩' : '風險指標尚未轉極端')
+  if (tight) parts.push('但實質利率偏高、估值不便宜')
+  if (corepce != null && corepce > 2.5) parts.push('通膨仍黏著、壓縮降息空間')
+  if (inverted) parts.push('殖利率曲線倒掛為衰退警訊')
+  const summary = parts.join('，') + '。整體屬「報酬靠風險資產推動、但底層利率與估值已偏緊」的格局。'
+
+  return { regime: { label, tone, summary }, points }
+}
+
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+  main().catch((e) => { console.error(e); process.exit(1) })
+}
