@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T15:21:32.432Z",
+  "generatedAt": "2026-06-19T15:29:25.815Z",
   "asOf": "2026-06-19",
   "source": "Yahoo Finance + FRED",
   "synthesis": {
@@ -20,7 +20,7 @@
       },
       {
         "theme": "風險胃納",
-        "text": "VIX 16.76（平穩）、高收益債利差 2.63%（偏低）、金融壓力 -0.77 → 信用與波動極度平穩、無系統性壓力，偏 risk-on。"
+        "text": "VIX 16.73（平穩）、高收益債利差 2.63%（偏低）、金融壓力 -0.77 → 信用與波動極度平穩、無系統性壓力，偏 risk-on。"
       },
       {
         "theme": "股市與輪動",
@@ -153,7 +153,7 @@
     {
       "id": "vix",
       "label": "VIX 波動率指數",
-      "value": 16.76,
+      "value": 16.73,
       "unit": "",
       "signal": "中性",
       "signalLevel": "neutral",
@@ -472,7 +472,7 @@
       "id": "sx5e",
       "region": "歐元區",
       "name": "Euro Stoxx 50",
-      "price": 6314.03,
+      "price": 6313.33,
       "ytd": 6.6,
       "return1y": 21.5,
       "cagr3y": 13.1,
@@ -482,8 +482,8 @@
       "id": "dax",
       "region": "德國",
       "name": "DAX",
-      "price": 25033.94,
-      "ytd": 2,
+      "price": 25049.56,
+      "ytd": 2.1,
       "return1y": 8.6,
       "cagr3y": 15.6,
       "cagr5y": 9.9
@@ -492,8 +492,8 @@
       "id": "ftse",
       "region": "英國",
       "name": "FTSE 100",
-      "price": 10361.97,
-      "ytd": 4.1,
+      "price": 10364.24,
+      "ytd": 4.2,
       "return1y": 17.9,
       "cagr3y": 10.9,
       "cagr5y": 8
@@ -502,9 +502,9 @@
       "id": "cac",
       "region": "法國",
       "name": "CAC 40",
-      "price": 8440.97,
+      "price": 8442.57,
       "ytd": 3,
-      "return1y": 11.7,
+      "return1y": 11.8,
       "cagr3y": 4.9,
       "cagr5y": 5
     },
@@ -512,19 +512,19 @@
       "id": "ibex",
       "region": "西班牙",
       "name": "IBEX 35",
-      "price": 19396,
-      "ytd": 10.9,
-      "return1y": 41.1,
-      "cagr3y": 27.2,
-      "cagr5y": 16.5
+      "price": 19382.7,
+      "ytd": 10.8,
+      "return1y": 41,
+      "cagr3y": 27.1,
+      "cagr5y": 16.4
     },
     {
       "id": "aex",
       "region": "荷蘭",
       "name": "AEX",
-      "price": 1079.97,
+      "price": 1079.66,
       "ytd": 11.6,
-      "return1y": 18.8,
+      "return1y": 18.7,
       "cagr3y": 12,
       "cagr5y": 8.3
     },
@@ -532,7 +532,7 @@
       "id": "smi",
       "region": "瑞士",
       "name": "SMI",
-      "price": 13766.14,
+      "price": 13769.65,
       "ytd": 3.9,
       "return1y": 16,
       "cagr3y": 6.8,
@@ -632,9 +632,9 @@
       "id": "tsx",
       "region": "加拿大",
       "name": "S&P/TSX",
-      "price": 34940.9,
+      "price": 34946.39,
       "ytd": 9.6,
-      "return1y": 31.8,
+      "return1y": 31.9,
       "cagr3y": 20.6,
       "cagr5y": 11.6
     },
@@ -642,7 +642,7 @@
       "id": "mxx",
       "region": "墨西哥",
       "name": "IPC",
-      "price": 67619.41,
+      "price": 67634.34,
       "ytd": 5.4,
       "return1y": 20.6,
       "cagr3y": 7.2,
@@ -652,8 +652,8 @@
       "id": "bvsp",
       "region": "巴西",
       "name": "Bovespa",
-      "price": 168479.19,
-      "ytd": 4.9,
+      "price": 168534.86,
+      "ytd": 5,
       "return1y": 21.5,
       "cagr3y": 12,
       "cagr5y": 5.4
@@ -776,7 +776,7 @@
       "id": "gold",
       "name": "黃金",
       "icon": "🥇",
-      "price": 4169.8,
+      "price": 4168.5,
       "ytd": -3.4,
       "return1y": 23.8,
       "cagr5y": 18.5
@@ -803,8 +803,8 @@
       "id": "wti",
       "name": "WTI 原油",
       "icon": "🛢️",
-      "price": 76.25,
-      "ytd": 33,
+      "price": 76.27,
+      "ytd": 33.1,
       "return1y": 1.8,
       "cagr5y": 0.7
     },
@@ -812,16 +812,16 @@
       "id": "brent",
       "name": "Brent 原油",
       "icon": "🛢️",
-      "price": 80.12,
-      "ytd": 31.9,
-      "return1y": 4,
+      "price": 80.25,
+      "ytd": 32.1,
+      "return1y": 4.2,
       "cagr5y": 1.4
     },
     {
       "id": "natgas",
       "name": "天然氣",
       "icon": "🔥",
-      "price": 3.217,
+      "price": 3.218,
       "ytd": -11.1,
       "return1y": -16.4,
       "cagr5y": 0.2
@@ -830,8 +830,8 @@
       "id": "btc",
       "name": "比特幣",
       "icon": "₿",
-      "price": 63050.13,
-      "ytd": -28.9,
+      "price": 63000.83,
+      "ytd": -29,
       "return1y": -39.8,
       "cagr5y": 12.1
     },
@@ -839,16 +839,16 @@
       "id": "eth",
       "name": "以太幣",
       "icon": "Ξ",
-      "price": 1702.08,
-      "ytd": -43.3,
-      "return1y": -32.5,
-      "cagr5y": -4.8
+      "price": 1697.69,
+      "ytd": -43.4,
+      "return1y": -32.7,
+      "cagr5y": -4.9
     },
     {
       "id": "dxy",
       "name": "美元指數",
       "icon": "💵",
-      "price": 100.75,
+      "price": 100.77,
       "ytd": 2.4,
       "return1y": 2.1,
       "cagr5y": 1.9
@@ -857,8 +857,8 @@
       "id": "eurusd",
       "name": "歐元/美元",
       "icon": "🇪🇺",
-      "price": 1.1474,
-      "ytd": -2.3,
+      "price": 1.1473,
+      "ytd": -2.4,
       "return1y": -0.3,
       "cagr5y": -0.7
     },
@@ -866,7 +866,7 @@
       "id": "usdjpy",
       "name": "美元/日圓",
       "icon": "🇯🇵",
-      "price": 161.23,
+      "price": 161.25,
       "ytd": 2.9,
       "return1y": 11,
       "cagr5y": 7.9
@@ -875,7 +875,7 @@
       "id": "gbpusd",
       "name": "英鎊/美元",
       "icon": "🇬🇧",
-      "price": 1.323,
+      "price": 1.3228,
       "ytd": -1.8,
       "return1y": -1.8,
       "cagr5y": -0.9
@@ -893,7 +893,7 @@
       "id": "usdtwd",
       "name": "美元/台幣",
       "icon": "🇹🇼",
-      "price": 31.626,
+      "price": 31.612,
       "ytd": 1,
       "return1y": 6.9,
       "cagr5y": 2.6
