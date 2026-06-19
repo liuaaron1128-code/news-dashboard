@@ -1,0 +1,35 @@
+{
+  "asOf": "2026-06-19",
+  "items": [
+    {
+      "id": "tsmc",
+      "symbol": "2330.TW",
+      "name": "台積電",
+      "thesis": "AI 與先進製程龍頭，台股權值核心。",
+      "addedDate": "2026-06-19",
+      "beta": 1.1,
+      "duration": 0,
+      "weight": 0.4
+    },
+    {
+      "id": "nvda",
+      "symbol": "NVDA",
+      "name": "NVIDIA",
+      "thesis": "AI 算力需求主軸，觀察估值與資本支出循環。",
+      "addedDate": "2026-06-19",
+      "beta": 1.6,
+      "duration": 0,
+      "weight": 0.3
+    },
+    {
+      "id": "tlt",
+      "symbol": "TLT",
+      "name": "20年期美債 ETF",
+      "thesis": "長天期利率部位，對降息敏感、可分散股票風險。",
+      "addedDate": "2026-06-19",
+      "beta": -0.2,
+      "duration": 17,
+      "weight": 0.3
+    }
+  ]
+}

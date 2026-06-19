@@ -1,0 +1,8 @@
+[
+  { "date": "2026-06-23", "title": "美國 5 月新屋銷售", "region": "美國", "importance": "low", "note": "觀察利率對房市的傳導。" },
+  { "date": "2026-06-26", "title": "美國 5 月 PCE 物價指數", "region": "美國", "importance": "high", "note": "Fed 最看重的通膨指標，牽動降息路徑。" },
+  { "date": "2026-07-04", "title": "美國 6 月非農就業", "region": "美國", "importance": "high", "note": "就業強弱左右 Fed 與美債殖利率。" },
+  { "date": "2026-07-15", "title": "美國 6 月 CPI", "region": "美國", "importance": "high", "note": "通膨年增率走勢，影響市場降息預期。" },
+  { "date": "2026-07-17", "title": "台積電法說會", "region": "台灣", "importance": "high", "note": "AI 需求與資本支出指引，牽動台股權值。" },
+  { "date": "2026-07-29", "title": "FOMC 利率決議", "region": "美國", "importance": "high", "note": "點陣圖與會後談話為市場焦點。" }
+]

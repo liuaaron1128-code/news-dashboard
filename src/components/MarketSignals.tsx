@@ -3,6 +3,7 @@
 import { TrendingUp, TrendingDown, RefreshCw, Info } from 'lucide-react'
 import signalsData from '@/data/market_signals.json'
 import { MarketSignals as MarketSignalsType, SignalLevel, Metric } from '@/types/market'
+import SignalAnalysis from './SignalAnalysis'
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const signals = (signalsData as any) as MarketSignalsType
@@ -126,6 +127,9 @@ export default function MarketSignals() {
           </div>
         </div>
       )}
+
+      {/* Analysis: divergences, sentiment, Taiwan flows, trend charts */}
+      <SignalAnalysis />
 
       {/* Headline signals */}
       {signals.headline.length > 0 && (

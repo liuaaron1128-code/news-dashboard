@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useMemo } from 'react'
-import { Search, Calendar, ChevronLeft, ChevronRight, Newspaper, BarChart2, Activity, X } from 'lucide-react'
+import { Search, Calendar, ChevronLeft, ChevronRight, Newspaper, BarChart2, Activity, Target, X } from 'lucide-react'
 import briefingsData from '@/data/briefings.json'
 import bubbleData from '@/data/bubble.json'
 import { DailyBriefing, Grade, Category, NewsItem } from '@/types/news'
@@ -10,6 +10,8 @@ import MarketSnapshot from '@/components/MarketSnapshot'
 import NewsCard from '@/components/NewsCard'
 import BubbleMonitor from '@/components/BubbleMonitor'
 import MarketSignals from '@/components/MarketSignals'
+import MorningCard from '@/components/MorningCard'
+import DecisionPanel from '@/components/DecisionPanel'
 
 const briefings = briefingsData as DailyBriefing[]
 const bubbles = bubbleData as BubbleSnapshot[]
@@ -33,7 +35,7 @@ const CATEGORIES: { label: string; value: Category | 'all' }[] = [
   { label: '🏭 客戶產業', value: '客戶產業' },
 ]
 
-type Tab = 'news' | 'bubble' | 'signals'
+type Tab = 'news' | 'bubble' | 'signals' | 'decision'
 
 export default function Home() {
   const [tab, setTab] = useState<Tab>('news')
@@ -82,7 +84,7 @@ export default function Home() {
           </div>
 
           {/* Tab Navigation */}
-          <div className="flex gap-1">
+          <div className="flex gap-1 overflow-x-auto no-scrollbar">
             <button
               onClick={() => setTab('news')}
               className={`flex items-center gap-1.5 px-4 py-2.5 text-sm font-semibold border-b-2 transition-all ${
@@ -119,6 +121,17 @@ export default function Home() {
               <Activity size={14} />
               市場訊號
             </button>
+            <button
+              onClick={() => setTab('decision')}
+              className={`flex items-center gap-1.5 px-4 py-2.5 text-sm font-semibold border-b-2 transition-all whitespace-nowrap ${
+                tab === 'decision'
+                  ? 'border-indigo-600 text-indigo-700'
+                  : 'border-transparent text-slate-500'
+              }`}
+            >
+              <Target size={14} />
+              決策
+            </button>
           </div>
         </div>
       </div>
@@ -126,6 +139,9 @@ export default function Home() {
       <div className="max-w-2xl mx-auto px-4 py-4">
         {tab === 'news' && (
           <>
+            {/* AI commentary + macro calendar */}
+            <MorningCard />
+
             {/* Date Selector */}
             <div className="flex items-center gap-2 mb-4 bg-white rounded-xl border border-slate-200 shadow-sm p-2">
               <button
@@ -289,6 +305,9 @@ export default function Home() {
         )}
         {tab === 'signals' && (
           <MarketSignals />
+        )}
+        {tab === 'decision' && (
+          <DecisionPanel />
         )}
 
         <div className="text-center text-slate-400 text-[11px] mt-8 pb-6">
