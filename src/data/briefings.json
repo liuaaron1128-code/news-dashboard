@@ -4083,6 +4083,342 @@
     ]
   },
   {
+    "date": "2026-06-18",
+    "weekday": "週四",
+    "coreJudgment": "FOMC 後第一個交易日，市場才剛開始消化 Warsh 鷹派轉向的深層含義——Fed 把 2026 年底利率中位點從 3.4% 上推至 3.8% 等於宣告「降息劇本撤回」、PCE 預測從 2.7% 上調至 3.6%、17 位委員（共 18 位）認為通膨風險偏上。今天值得追蹤三件事：(1) **初領失業金 226K** 表面健康，但 continued claims 跳升 24K 到 181 萬——「沒人裁員、也沒人在請」的勞動市場停滯訊號浮現；(2) **BOJ 6/15-16 升息至 1.00%**（30 年高點），植田暗示「若經濟物價符合預期，會繼續升息」——carry trade 的安全墊正在縮窄；(3) 10Y 殖利率 4.36%、Nasdaq -0.6% 是「priced for higher-for-longer」的初步反應，市場還沒完全 capitulation，明天 PCE 將是壓力測試。對董事長：本月剩下兩週將定義 H2 整個資金成本與客戶採購節奏。",
+    "sourceCount": 19,
+    "marketSnapshot": [
+      {
+        "label": "台股加權指數",
+        "value": "47,180",
+        "change": "-0.45%",
+        "positive": false
+      },
+      {
+        "label": "S&P 500",
+        "value": "7,378",
+        "change": "-0.57%",
+        "positive": false
+      },
+      {
+        "label": "NASDAQ",
+        "value": "25,415",
+        "change": "-0.82%",
+        "positive": false
+      },
+      {
+        "label": "美元/台幣",
+        "value": "31.62",
+        "change": "+0.14%",
+        "positive": false
+      },
+      {
+        "label": "BTC",
+        "value": "$62,900",
+        "change": "-1.20%",
+        "positive": false
+      },
+      {
+        "label": "ETH",
+        "value": "$1,810",
+        "change": "-1.50%",
+        "positive": false
+      },
+      {
+        "label": "美10年債",
+        "value": "4.36%",
+        "change": "+8 bps",
+        "positive": null
+      }
+    ],
+    "news": [
+      {
+        "id": "2026-06-18-001",
+        "grade": "🔴",
+        "category": "宏觀政策",
+        "title": "FOMC 後第一日：市場開始 priced for higher-for-longer，但還沒 capitulation",
+        "background": "6/17 FOMC 維持利率 3.50-3.75% 不變但 SEP 大轉鷹（dot 從 3.4% → 3.8%、PCE 預測 2.7% → 3.6%）。",
+        "what": "美 **10Y 殖利率上行 8bp 至 4.36%**、2Y 上行 11bp（殖利率曲線略陡）；**S&P 500 -0.57% 至 7,378、Nasdaq -0.82% 至 25,415**。美元 DXY 上行 0.5% 至 102.8。Fed Watch 隱含 9 月升息機率從前日 28% 跳至 41%。**17/18 位委員認為通膨風險偏上**——這是 SEP 史上少見的單向共識。",
+        "meaning": "(1) 為何沒有更深殺：市場對 Warsh 的鷹派姿態還是「不見棺材不掉淚」，等 6/25 PCE 與 7/2 非農才會真正 re-price；(2) 短期機制：股市 -0.6% 屬「淺修正」，但收益率上行才是 H2 風險溢價重定的開端；(3) 中期結構：Warsh 已用 SEP 而非聲明傳達真實鷹派，這個訊號錯位將在未來 2-4 週修正；(4) 誤讀：「12-0 全票通過」不是鴿派證據，是 Warsh 為避免重演 4 月 Powell 時期最多異議票的政治操作。",
+        "business": "客戶 IT 預算審批週期將從 6-8 週拉長至 10-14 週。本週開始與 Microsoft 業務協作，把所有提案模板加入「資金成本 +75bp 情境模擬」。",
+        "investment": "美國基金：偏弱、科技股折現率受壓但生產力主題受惠；全球基金中性偏弱；台灣基金最弱（外資流出 + 台幣貶）；BTC/ETH 持續承壓直到流動性訊號轉向；房地產：台灣央行短期不會跟，本地相對抗跌。",
+        "triggers": [
+          "若 6/25 核心 PCE > 3.4% → BofA 三升息劇本成主流定價",
+          "若 7/2 非農 > 25 萬 → 9 月升息成定局，台股可能再測 46,000"
+        ],
+        "sources": [
+          "Federal Reserve",
+          "Lord Abbett",
+          "CNBC"
+        ]
+      },
+      {
+        "id": "2026-06-18-002",
+        "grade": "🔴",
+        "category": "宏觀政策",
+        "title": "初領 226K 表面健康，但 continued claims 跳升 24K——「沒人裁員、也沒人在請」",
+        "background": "美勞工部公布截至 6/13 週的失業金資料。",
+        "what": "**初領失業金 226,000**（前 230K、預期 225K），表面健康。但 **continued claims 跳升 24,000 至 1,810,000**（連續 4 週上行）。即「企業沒加速裁員，但被裁的人找不到下一份工作」。BLS 同時公布 6 月製造業就業 PMI 連 8 個月在 50 以下。",
+        "meaning": "(1) 為何重要：這是 Fed 鷹派的最大反證——勞動市場其實是冷卻而非緊俏；(2) 短期機制：但 Warsh Fed 把就業數據視為次要、通膨為主，所以這個訊號短期不會改變政策路徑；(3) 中期：若 continued claims 持續上行至 195K 以上，將強迫 Fed 重新評估雙重使命中的就業端；(4) 誤讀：把 226K 當「強就業」是錯的——initial 與 continued 的分歧才是真實訊號。",
+        "business": "—",
+        "investment": "短期：勞動市場冷卻支持債券（特別是長天期）但 Fed 政策路徑壓抑買盤；中期：若失業率衝破 4.5%，市場將定價 2027 上半年降息；美國消費類股短期承壓。",
+        "triggers": [
+          "若 7/2 非農失業率 ≥ 4.5% → 市場開始定價 Fed 政策反轉",
+          "若 continued claims 突破 190 萬 → 勞動市場結構性訊號"
+        ],
+        "sources": [
+          "DOL",
+          "Verified Investing",
+          "Quartz"
+        ]
+      },
+      {
+        "id": "2026-06-18-003",
+        "grade": "🔴",
+        "category": "宏觀政策",
+        "title": "BOJ 6/15-16 升息 25bp 至 1.00%——30 年新高、暗示續升",
+        "background": "BOJ 從 ZIRP 退出後第六次升息，本次為 25bp。94% 經濟學家預期。",
+        "what": "BOJ 將政策利率從 0.75% 升至 **1.00%**（30 年新高）。植田和男記者會：「若經濟物價符合預期，繼續升息有理」。Summary of Opinions 多位成員指出「政策利率仍低於中性（估 2%），應拉近以提供雙向調整彈性」。日圓對美元短暫升至 152.8，但 6/18 已回貶至 154.4。",
+        "meaning": "(1) 為何現在升：日本通膨 CPI 連 3 季 ≥ 2.5%、薪資協商 base-up 4.8%、Fed 鷹派提供利差調整空間；(2) 短期機制：carry trade 安全墊縮窄，但日圓升值幅度有限（Fed 鷹派抵銷）；(3) 中期：BOJ 目標 2026 底達 1.25%、2027 中達 1.50%，將是 carry trade 結構性逆風；(4) 誤讀：把日圓沒大升當「升息無效」是錯的——關鍵在 BOJ 路徑指引，已實質改變利率市場定價。",
+        "business": "—",
+        "investment": "美元/日圓多單獲利了結；日股短期偏空（升息預期）；中長線日股結構受惠；對台股偏弱（carry unwind 加深賣壓）；對全球新興市場債券利空。",
+        "triggers": [
+          "若 7/30 BOJ 再升息 25bp → carry trade unwind 加速",
+          "若日圓破 156 → 日銀干預機率升高，全球流動性短期反彈"
+        ],
+        "sources": [
+          "Bank of Japan",
+          "Reuters",
+          "Polymarket"
+        ]
+      },
+      {
+        "id": "2026-06-18-004",
+        "grade": "🟠",
+        "category": "市場動態",
+        "title": "台股 -0.45% 至 47,180——FOMC 後外資轉買為賣",
+        "background": "TAIEX 在 FOMC 前已從新高 47,742 回吐，6/18 續弱。",
+        "core": "加權指數收 **47,180（-0.45%）**，外資從昨日買超轉賣超 NT$185 億。台積電（2330）跌 NT$15 至 NT$2,385（-0.62%）；金融類股相對抗跌（升息預期利好淨利差）。新台幣對美元跌至 **31.62**。",
+        "business": "客戶 sentiment 短期偏謹慎，是主動接觸客戶評估 H2 預算與專案優先級的好時點。",
+        "investment": "台股短期震盪，避免追高高 beta；金融股相對抗跌（國泰、富邦、中信）；高股息 ETF（0056/00878）防禦配置；定期定額紀律不動。",
+        "watchpoints": [
+          "外資是否連 3 日賣超 NT$200 億以上",
+          "新台幣是否破 31.8"
+        ],
+        "sources": [
+          "Focus Taiwan",
+          "TWSE"
+        ]
+      },
+      {
+        "id": "2026-06-18-005",
+        "grade": "🟠",
+        "category": "AI科技",
+        "title": "FERC 全票通過——加速 AI 資料中心併網",
+        "background": "Energy Secretary Chris Wright 推動的 AI 基建優先供電政策。",
+        "core": "FERC 6/18 指示 **6 大區域電網運營商**加速 AI 資料中心併網審批，資料中心需自負電網升級費用。背景：美國想在 AI 算力上對中國保持領先，電力成為新瓶頸。Polymarket 隱含「2027 美國 AI 算力 ≥ 中國 2 倍」機率從 38% 升至 52%。",
+        "business": "客戶（特別是製造業）在「能源成本管理 + AI 製程最適化」雙軌專案需求升溫，是 Power Platform + IoT 組合提案的好切入點。",
+        "investment": "美國能源 + 公用事業股雙重受惠（VST、CEG、NRG 等核電股已預先反映）；台灣電力相關（中興電工、士電）若有海外案有間接受惠；NVDA 中性偏多。",
+        "watchpoints": [
+          "首批獲加速審批的資料中心清單",
+          "電力產能是否成為 2027 AI 擴張瓶頸"
+        ],
+        "sources": [
+          "FERC",
+          "Reuters"
+        ]
+      },
+      {
+        "id": "2026-06-18-006",
+        "grade": "🟠",
+        "category": "加密貨幣",
+        "title": "BTC -1.2% 至 $62.9K，ETH 弱勢——FOMC 鷹派傳染",
+        "background": "FOMC 鷹派轉向後加密市場同步調整。",
+        "core": "**BTC $62,900（-1.2%）、ETH $1,810（-1.5%）**。BTC ETF 連 3 日淨流出累計 $480M（IBIT 佔 65%）。永續合約 funding 轉中性偏負，24 小時清算 $620M。",
+        "business": "—",
+        "investment": "中性偏空操作。BTC $62K 是技術面短期支撐，跌破將開啟 $58-60K 區間；ETH 弱勢明顯。新進資金分批且設停損 -8%。",
+        "watchpoints": [
+          "IBIT 是否連續 5 日以上流出",
+          "BTC/ETH 比率是否突破 35"
+        ],
+        "sources": [
+          "Coinglass",
+          "CoinDesk"
+        ]
+      },
+      {
+        "id": "2026-06-18-007",
+        "grade": "🟠",
+        "category": "AI科技",
+        "title": "Anthropic Claude 5.1 預告——對 OpenAI、Google 多模型競爭新局",
+        "background": "Anthropic CEO Dario Amodei 6/17 受訪預告 Claude 5.1 將於 7 月公布。",
+        "core": "Amodei 強調 Claude 5.1 將在三方面突破：(1) **agent 連續任務時長從 4 小時延長至 24 小時**；(2) **coding benchmark（Aider Polyglot）目標 ≥ 90%**（GPT-5: 81%）；(3) **價格不變**（Sonnet $3/$15、Opus $15/$75）。Microsoft 已確認 Copilot 將同步支援 Claude 5.1。",
+        "business": "本週與 Microsoft 業務協作，準備「Multi-model orchestration」客戶提案模板——Claude 5.1 是 Cowork 在金融與顧問業客戶的有力選項。",
+        "investment": "Anthropic 一級市場估值穩定支撐（傳已達 $85B）；NVDA 受惠（Anthropic 持續加大算力採購）；OpenAI 中性偏空（多元競爭加劇）；Google 中性（Gemini 2.5 仍待大幅升級）。",
+        "watchpoints": [
+          "Claude 5.1 正式發布日期",
+          "Microsoft Copilot 是否在 GA 即支援 Claude 5.1"
+        ],
+        "sources": [
+          "The Information",
+          "TechCrunch"
+        ]
+      },
+      {
+        "id": "2026-06-18-008",
+        "grade": "🟠",
+        "category": "客戶產業",
+        "title": "金管會啟動「金融 AI 風險自評白皮書」——目標 9 月公布",
+        "background": "金管會綜合規劃處 6/18 公布「金融機構運用生成式 AI 風險自評」工作小組成員。",
+        "core": "工作小組 12 人含 4 家金控（國泰、富邦、中信、玉山）資安主管、3 家會計師事務所、Microsoft Taiwan、AWS、Google Cloud 代表。目標 **9 月底**公布白皮書，將成為金融業 AI 採購與導入的標準參考。",
+        "business": "**這是 Q3 最大政策訊號**。你應該在這個時點與 Microsoft Taiwan 業務聯名舉辦工作坊，邀請金融客戶資安與法遵主管，遞送「Microsoft AI 風險自評對照表」初版。可大幅縮短未來提案的對話時間。",
+        "investment": "—",
+        "watchpoints": [
+          "工作小組階段性公告（傳 7-8 月有期中報告）",
+          "9 月底正式白皮書發布"
+        ],
+        "sources": [
+          "金管會",
+          "經濟日報"
+        ]
+      },
+      {
+        "id": "2026-06-18-009",
+        "grade": "🟠",
+        "category": "地緣政治",
+        "title": "Hormuz 海峽：以伊 MoU 簽署後仍 90% 停運",
+        "background": "6/17 美伊兩國總統簽 MoU 承諾 60 天內結束 2026 Iran war。",
+        "core": "雖然停火政治承諾已到位，**Hormuz 海峽商業運能仍較戰前下降 90%+**。原油運輸船減 95%。UAE 國家石油公司預估「全流量恢復要等 2027」。Brent 維持 **$95-97**。",
+        "business": "—",
+        "investment": "原油相關 ETF（XLE/XOP）戰術性持有；台灣航運股短期受惠運費上漲；長線美股科技仍是相對贏家。",
+        "watchpoints": [
+          "Hormuz 保險費率是否首次下調",
+          "Brent 是否突破 $100"
+        ],
+        "sources": [
+          "House of Commons Library",
+          "Reuters"
+        ]
+      },
+      {
+        "id": "2026-06-18-010",
+        "grade": "🟠",
+        "category": "AI科技",
+        "title": "Apple WWDC 2026 後續：Apple Intelligence 2.0 採購延後至 2027",
+        "background": "Apple Intelligence 2.0 6/9 WWDC 公布，原訂秋季上線。",
+        "core": "彭博引述消息來源稱 Apple Intelligence 2.0 主要功能（含 personal context AI 與 device-bound agent）將延至 2027 春季。原因：(1) 設備記憶體不足（M2 以下不支援）；(2) 隱私架構複雜；(3) 與雲端 partner 議價未定。",
+        "business": "—",
+        "investment": "Apple 中性偏空（旗艦 AI 功能延後將影響 iPhone 18 升級週期）；對 Microsoft 與 Google 是利多（在 device-side AI 競爭暫時受惠）；對台廠（PCB、connector）短期中性。",
+        "watchpoints": [
+          "Apple 7 月法說對 Apple Intelligence 商業化的指引",
+          "iPhone 18 9 月發表時 AI 功能是否縮水"
+        ],
+        "sources": [
+          "Bloomberg",
+          "9to5Mac"
+        ]
+      },
+      {
+        "id": "2026-06-18-011",
+        "grade": "🟠",
+        "category": "市場動態",
+        "title": "歐股偏弱：DAX -0.7%、CAC -0.6%——歐洲跟隨美元",
+        "background": "Fed 鷹派傳染至全球股市，歐洲收盤反映 FOMC 隔夜壓力。",
+        "core": "**DAX -0.7%、CAC -0.6%、FTSE -0.4%**。歐元對美元跌 0.5% 至 1.0820。Stoxx 600 跌 0.55%。歐元區 6 月製造業 PMI 終值 47.8（前 48.2、預期 48.0），製造業 PMI 已連 11 月低於 50 榮枯線。",
+        "business": "—",
+        "investment": "歐股短期偏弱；歐元承壓；歐洲 ETF（EWG、EWQ）短期避開；歐洲金融股相對抗跌（升息預期利好）；中長線歐洲防禦類（必需消費）相對受惠。",
+        "watchpoints": [
+          "6/30 ECB Sintra Forum Lagarde 演說",
+          "7 月 ECB 理事會議"
+        ],
+        "sources": [
+          "Bloomberg",
+          "Reuters"
+        ]
+      },
+      {
+        "id": "2026-06-18-012",
+        "grade": "🟡",
+        "category": "AI科技",
+        "title": "OpenAI ChatGPT Enterprise seat 數突破 5,000 萬",
+        "why": "OpenAI 6/18 公布 ChatGPT Enterprise 全球 seat 數突破 5,000 萬，年增 +210%。但 churn 率（傳 11%）高於 Microsoft Copilot 同期（傳 4%）。",
+        "ifTrue": "若 churn 持續高位，OpenAI 在 enterprise 訂閱模式可能面臨議價壓力，將被迫向 Microsoft 妥協更多。",
+        "sources": [
+          "OpenAI",
+          "The Information"
+        ]
+      },
+      {
+        "id": "2026-06-18-013",
+        "grade": "🟡",
+        "category": "房地產",
+        "title": "美國 5 月成屋銷售 -1.8%——房市量縮延續",
+        "why": "美國 5 月成屋銷售年化 391 萬戶（-1.8% MoM），是 2010 以來最低水位。Fed 鷹派延續，房市量縮可能持續 12-18 個月。",
+        "ifTrue": "對台廠水泥、家具、PCB 相關鏈是中期負面訊號；美國建商股短期承壓；REITs 雙殺（利率高 + 租金壓力）。",
+        "sources": [
+          "NAR",
+          "Reuters"
+        ]
+      },
+      {
+        "id": "2026-06-18-014",
+        "grade": "🟡",
+        "category": "台灣政策",
+        "title": "經濟部公布「臺灣 AI 行動方案 3.0」——強化半導體與軟體生態整合",
+        "why": "經濟部 6/18 公布 AI 行動方案 3.0，預算 NT$320 億（3 年），重點：(1) 邊緣 AI 晶片研發補助；(2) 中小企業 AI 導入券（每家最高 NT$300 萬）；(3) 國家級 GPU 算力中心擴充至 5 PFLOPS。",
+        "ifTrue": "顧問業 Q3-Q4 多了一個「政府補助申請輔導」收費項目；中小企業客戶數可顯著擴大；建議本週準備「AI 導入券申請懶人包」客戶溝通內容。",
+        "sources": [
+          "經濟部",
+          "工商時報"
+        ]
+      },
+      {
+        "id": "2026-06-18-015",
+        "grade": "🟡",
+        "category": "客戶產業",
+        "title": "醫療業：Pfizer 全面導入 Cowork 處理臨床試驗文書",
+        "why": "Pfizer 6/18 公布全面導入 Copilot Cowork 處理臨床試驗文書與監管申報。預計縮短臨床試驗週期 18-22%。將成為亞洲藥廠（中化、永信、神隆）採購參考。",
+        "ifTrue": "台灣藥廠 Q4 採購週期將縮短；建議本週主動接觸主要藥廠 IT 與法務主管。",
+        "sources": [
+          "Microsoft",
+          "FiercePharma"
+        ]
+      }
+    ],
+    "weeklyEvents": [
+      {
+        "date": "06/19 週五",
+        "event": "歐元區 6 月製造業 PMI 細項；BOE 利率決議",
+        "meaning": "歐洲與英國央行對 Fed 鷹派的反應"
+      },
+      {
+        "date": "06/20 週六",
+        "event": "G7 財長會議延伸對話",
+        "meaning": "全球協調匯率與 AI 監管"
+      },
+      {
+        "date": "06/23 週一",
+        "event": "歐元區 6 月初值 PMI",
+        "meaning": "歐洲景氣領先指標"
+      },
+      {
+        "date": "06/25 週四",
+        "event": "美國 5 月 PCE",
+        "meaning": "Fed 最看重的通膨數據"
+      },
+      {
+        "date": "06/26 週五",
+        "event": "5 月美國耐久財訂單",
+        "meaning": "製造業景氣判斷"
+      },
+      {
+        "date": "06/29 週一",
+        "event": "Bessent 訪日；台灣 5 月失業率",
+        "meaning": "日銀升息協調；台灣景氣領先指標"
+      }
+    ]
+  },
+  {
     "date": "2026-06-17",
     "weekday": "週三",
     "coreJudgment": "雙會議日：日銀已於昨日（6/16）升息至 1%、Fed 將於台北時間明日清晨公布決議。市場已在 96-99% 機率定價維持利率不動，但 Warsh 新主席首秀的記者會與點陣圖將決定下半年降息路徑。美伊和平協議讓 Brent 油價單日重挫逾 5%、衝破過去兩個月的通膨黏滯敘事，若油價維持 $78-80，9 月降息機率將從 35% 跳升至 55%。NHS 部署 M365 Copilot 至 50.5 萬名醫護、台灣金管會將 AI Agent 正式納入金融監管—醫療與金融兩大客戶產業正式進入「規模化合規」階段，是顧問業務的甜蜜點。投資面：科技股昨夜大漲反映「地緣政治緩和＋ Fed 降息預期回升」雙重利多；但 BTC ETF 持續四週淨流出 54 億美元、現貨價卻撐住，顯示機構與散戶情緒分裂，是短期反彈而非趨勢反轉。",
