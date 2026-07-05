@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useMemo } from 'react'
+import Link from 'next/link'
 import { Search, Calendar, ChevronLeft, ChevronRight, Newspaper, BarChart2, Activity, Target, X } from 'lucide-react'
 import briefingsData from '@/data/briefings.json'
 import bubbleData from '@/data/bubble.json'
@@ -79,6 +80,9 @@ export default function Home() {
               <p className="text-[11px] text-slate-400">董事長 AI 情報助理</p>
             </div>
             <div className="text-right">
+              <Link href="/generate" className="inline-flex items-center gap-1 text-[11px] font-bold text-indigo-600 mb-0.5">
+                ✦ AI 簡報產生器
+              </Link>
               <div className="text-sm font-semibold text-slate-700">{current.date}</div>
               <div className="text-[11px] text-slate-400">{current.weekday}</div>
             </div>

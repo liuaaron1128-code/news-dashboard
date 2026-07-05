@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "title": "季度營運回顧與下半年策略佈局",
+    "subtitle": "市場動能、核心指標與三大優先事項",
+    "author": "董事長 AI 助理",
+    "date": "2026-07-05",
+    "theme": "executive",
+    "templateId": "executive"
+  },
+  "slides": [
+    {
+      "id": "s1",
+      "layout": "cover",
+      "eyebrow": "2026 第二季 · 營運簡報",
+      "title": "季度營運回顧與下半年策略佈局",
+      "subtitle": "市場動能、核心指標與三大優先事項一次掌握"
+    },
+    {
+      "id": "s2",
+      "layout": "agenda",
+      "title": "本場議程",
+      "items": ["季度核心指標", "營收結構與趨勢", "市場與競爭態勢", "下半年三大優先事項"]
+    },
+    {
+      "id": "s3",
+      "layout": "kpi-grid",
+      "title": "季度核心指標",
+      "kpis": [
+        { "label": "季營收", "value": "$4.82B", "delta": "▲ 12.4%", "positive": true },
+        { "label": "毛利率", "value": "38.1%", "delta": "▲ 1.8pt", "positive": true },
+        { "label": "營業利益", "value": "$0.91B", "delta": "▲ 9.2%", "positive": true },
+        { "label": "現金水位", "value": "$2.30B", "delta": "▼ 4.1%", "positive": false }
+      ]
+    },
+    {
+      "id": "s4",
+      "layout": "section",
+      "index": "01",
+      "title": "營收結構與趨勢",
+      "subtitle": "四個季度的成長軌跡與產品線佔比變化"
+    },
+    {
+      "id": "s5",
+      "layout": "chart",
+      "title": "近四季營收與營業利益",
+      "chart": {
+        "type": "bar",
+        "categories": ["Q3'25", "Q4'25", "Q1'26", "Q2'26"],
+        "series": [
+          { "name": "營收", "data": [3.8, 4.2, 4.5, 4.82] },
+          { "name": "營業利益", "data": [0.62, 0.71, 0.83, 0.91] }
+        ]
+      },
+      "caption": "單位：十億美元"
+    },
+    {
+      "id": "s6",
+      "layout": "bullets",
+      "title": "市場與競爭態勢",
+      "points": [
+        {
+          "text": "高階產品需求續強，帶動整體毛利結構上移",
+          "emphasis": true,
+          "sub": ["Q2 高階佔比升至 41%，較去年同期 +6pt"]
+        },
+        { "text": "主要對手在中階市場祭出降價，短期壓縮我方訂單能見度" },
+        { "text": "新台幣走勢對出口報價形成逆風，需以避險與訂價節奏因應" }
+      ],
+      "takeaway": "守住高階、以價值取代價格戰，同時鎖定匯率避險窗口。"
+    },
+    {
+      "id": "s7",
+      "layout": "two-column",
+      "title": "下半年：機會與風險",
+      "left": {
+        "heading": "機會",
+        "points": ["高階擴產如期放量", "新通路夥伴貢獻營收", "供應鏈成本回穩"]
+      },
+      "right": {
+        "heading": "風險",
+        "points": ["匯率波動", "對手價格戰延燒", "地緣政治不確定性"]
+      }
+    },
+    {
+      "id": "s8",
+      "layout": "closing",
+      "title": "三大優先事項，一個目標",
+      "subtitle": "高階擴產 · 通路深化 · 現金紀律 —— 全年營收成長目標 15%",
+      "contact": "董事長 AI 助理 · 每日 04:00 自動更新情報"
+    }
+  ]
+}
