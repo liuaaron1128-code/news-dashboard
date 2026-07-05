@@ -294,7 +294,7 @@ async function writeCore(items, snapshot, dateInfo) {
     '\n任務：根據今日已完成的簡報條目與市場快照，寫出：' +
     '\n1. coreJudgment：4-6 句今日核心判斷，涵蓋市場基調、最大宏觀驅動力、業務面關鍵訊息、投資面方向性結論。要有觀點、引用具體數字。' +
     '\n2. weeklyEvents：3-5 個未來一至四週的關鍵觀察事件（已知：7 月中台積電法說會、07/28-29 FOMC 利率決議；可依材料補充其他）。' +
-    '\n嚴格只輸出 {"coreJudgment":"...","weeklyEvents":[{"date":"MM/DD 或描述","event":"...","meaning":"一句話意義"}]}'
+    '\n嚴格只輸出一個 JSON 物件：{"coreJudgment":"...","weeklyEvents":[{"date":"MM/DD 或描述","event":"...","meaning":"一句話意義"}]}'
   const user =
     `今天是 ${dateInfo.date}（${dateInfo.weekday}）。\n\n【市場快照】\n` +
     JSON.stringify(snapshot) +
