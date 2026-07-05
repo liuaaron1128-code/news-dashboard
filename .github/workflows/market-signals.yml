@@ -58,6 +58,9 @@ jobs:
         run: node scripts/fetch-briefing.mjs
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Code deploys regenerate today's entry so pipeline improvements take
+          # effect same-day; scheduled runs create the new day anyway.
+          FORCE_BRIEFING: ${{ github.event_name == 'push' && '1' || '' }}
 
       - name: Commit if changed
         run: |
