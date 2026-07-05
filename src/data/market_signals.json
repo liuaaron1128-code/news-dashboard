@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-04T20:42:39.711Z",
-  "asOf": "2026-07-04",
+  "generatedAt": "2026-07-05T08:37:18.302Z",
+  "asOf": "2026-07-05",
   "source": "Yahoo Finance + FRED",
   "synthesis": {
     "engine": "rule",
@@ -830,19 +830,19 @@
       "id": "btc",
       "name": "比特幣",
       "icon": "₿",
-      "price": 63209.99,
-      "ytd": -28.8,
-      "return1y": -41.5,
-      "cagr5y": 12.4
+      "price": 62870.96,
+      "ytd": -29.1,
+      "return1y": -41.9,
+      "cagr5y": 13.3
     },
     {
       "id": "eth",
       "name": "以太幣",
       "icon": "Ξ",
-      "price": 1787.8,
-      "ytd": -40.4,
-      "return1y": -28.7,
-      "cagr5y": -5.1
+      "price": 1766.03,
+      "ytd": -41.1,
+      "return1y": -29.8,
+      "cagr5y": -4.3
     },
     {
       "id": "dxy",
@@ -850,7 +850,7 @@
       "icon": "💵",
       "price": 100.86,
       "ytd": 2.5,
-      "return1y": 3.8,
+      "return1y": 4.2,
       "cagr5y": 1.7
     },
     {
