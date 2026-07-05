@@ -79,7 +79,8 @@ const PROFILE_SPEC =
   '\n- scoreReason：1-2 句評分理由。'
 
 const EXCLUSIONS =
-  '排除：法人研究機構（工研院、金屬中心、資策會等）；主業是 AI/軟體/雲端/系統整合服務的同業；沒有實質台灣營運的外商。'
+  '排除：法人研究機構（工研院、金屬中心、資策會等）；主業是 AI/軟體/雲端/系統整合服務的同業；' +
+  '微軟（Microsoft）本身與其分公司、Google/AWS/OpenAI 等雲端與 AI 原廠（他們是供應商或夥伴，不是客戶）；沒有實質台灣營運的外商。'
 
 // ---------- GitHub Models ----------
 async function chat(messages, { maxTokens = 4000, temperature = 0.4 } = {}) {
@@ -131,6 +132,19 @@ const PRODUCT_NAMES = new Set([
   'Azure ML',
 ])
 
+// Vendors/partners are suppliers, not prospects — never let them onto the list.
+const BLOCKLIST = ['微軟', 'microsoft', 'google', '谷歌', 'aws', 'amazon', 'openai', 'nvidia', '輝達', 'meta', 'anthropic']
+const isBlocked = (norm) => BLOCKLIST.some((b) => norm.includes(b))
+
+// Model may return approach steps as objects or with their own "(1)" prefixes.
+function coerceStep(item) {
+  let text
+  if (typeof item === 'string') text = item
+  else if (item && typeof item === 'object') text = Object.values(item).map(String).filter(Boolean).join('：')
+  else text = str(item)
+  return text.replace(/^\s*[\(（]?\d+[\)）.、:：]?\s*/, '').trim()
+}
+
 function applyProfile(lead, p) {
   lead.industry = str(p.industry) || lead.industry || '其他'
   lead.isCoreIndustry = CORE_INDUSTRIES.has(lead.industry)
@@ -140,7 +154,7 @@ function applyProfile(lead, p) {
     .map((x) => ({ name: str(x.name), use: str(x.use) }))
     .filter((x) => PRODUCT_NAMES.has(x.name) && x.use)
     .slice(0, 3)
-  lead.approach = (Array.isArray(p.approach) ? p.approach : []).map(String).filter(Boolean).slice(0, 4)
+  lead.approach = (Array.isArray(p.approach) ? p.approach : []).map(coerceStep).filter(Boolean).slice(0, 4)
   const site = str(p.website)
   if (/^https?:\/\/[\w.-]+/.test(site)) lead.website = site
   const base = Math.max(0, Math.min(90, Number(p.score) || 0))
@@ -149,7 +163,15 @@ function applyProfile(lead, p) {
   return lead
 }
 
-const solid = (l) => l.company && l.brief && l.whyNow.length >= 30 && l.products.length >= 1 && l.approach.length >= 2 && l.score > 0
+const solid = (l) =>
+  l.company &&
+  !isBlocked(normName(l.company)) &&
+  l.brief &&
+  l.whyNow.length >= 30 &&
+  l.products.length >= 1 &&
+  l.approach.length >= 2 &&
+  !l.approach.some((a) => a.includes('object Object')) &&
+  l.score > 0
 
 // ---------- SEED track ----------
 const SEED_FOCI = [
@@ -273,7 +295,7 @@ async function extractSignals(material) {
 async function profileNewsLeads(leads) {
   const system =
     IDENTITY +
-    '\n任務：以下公司剛在新聞中出現 AI 導入機會訊號，請為每家補齊完整的業務開發檔案。' +
+    '\n任務：為以下公司補齊（或修復）完整的業務開發檔案；部分公司附有新聞訊號，請整合進 whyNow。' +
      EXCLUSIONS +
     '\n' +
     PROFILE_SPEC +
@@ -309,7 +331,12 @@ async function main() {
   }
 
   const date = today()
-  const byNorm = new Map(existing.map((l) => [normName(l.company), l]))
+  const cleaned = existing.filter((l) => !isBlocked(normName(l.company)))
+  if (cleaned.length !== existing.length) console.log(`dropped ${existing.length - cleaned.length} blocked vendor leads`)
+  const byNorm = new Map(cleaned.map((l) => [normName(l.company), l]))
+  // leads whose approach was corrupted by an earlier run need a re-profile
+  const needsRepair = cleaned.filter((l) => (l.approach || []).some((a) => String(a).includes('object Object')) || (l.approach || []).length < 2)
+  if (needsRepair.length) console.log(`${needsRepair.length} leads need profile repair`)
 
   // ---- SEED ----
   const seedCount = () => [...byNorm.values()].filter((l) => l.origin === 'seed').length
@@ -391,9 +418,10 @@ async function main() {
           if (lead.score > 0 && !touchedNew.includes(lead)) lead.score = Math.min(100, lead.score + 5)
         }
       }
-      // full profile for brand-new news leads
-      for (let i = 0; i < touchedNew.length; i += 8) {
-        const batch = touchedNew.slice(i, i + 8)
+      // full profile for brand-new news leads + repairs of corrupted profiles
+      const toProfile = [...touchedNew, ...needsRepair.filter((l) => !touchedNew.includes(l))]
+      for (let i = 0; i < toProfile.length; i += 8) {
+        const batch = toProfile.slice(i, i + 8)
         try {
           const profiles = await profileNewsLeads(batch)
           for (const p of profiles) {
