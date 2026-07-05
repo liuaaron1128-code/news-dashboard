@@ -60,6 +60,18 @@ const normName = (n) =>
     .toLowerCase()
 const slugify = (n) => normName(n).replace(/[^\p{L}\p{N}]+/gu, '-') || 'lead'
 
+// Model outputs often shorten names (廣達電腦 vs 廣達電腦股份有限公司(廣達)) —
+// match by containment either way, preferring exact.
+function fuzzyGet(byNorm, name) {
+  const norm = normName(name)
+  if (!norm) return undefined
+  if (byNorm.has(norm)) return byNorm.get(norm)
+  for (const [k, v] of byNorm) {
+    if (k.includes(norm) || norm.includes(k)) return v
+  }
+  return undefined
+}
+
 // ---------- shared prompt fragments ----------
 const IDENTITY =
   '你是一位替「台灣 AI 顧問公司」做業務開發的資深顧問。這家公司是 Microsoft 核心夥伴' +
@@ -68,7 +80,8 @@ const IDENTITY =
 
 const PROFILE_SPEC =
   '每家公司輸出以下欄位（全部繁體中文，具體、可執行、禁空話）：' +
-  '\n- company：公司正式簡稱（例：國泰金控、長庚醫療體系、中鋼）。' +
+  '\n- company：公司正式簡稱（例：國泰金控、長庚醫療體系、中鋼）。**只列你能確定真實存在的公司**——上市櫃公司請在 brief 開頭附股票代號（例：2330 台積電）；' +
+  '未上市者必須是全國知名的醫院/集團/機構。名稱含糊、你不確定是否存在的公司，寧可不列。' +
   '\n- industry：從「金融、醫療、製造、零售電商、物流、政府公部門、營建不動產、餐飲觀光、教育、能源、農業、其他」選一。' +
   '\n- brief：一句話——這家公司做什麼、規模量級（員工數/營收/分店數等你確定的公開事實）。' +
   '\n- whyNow：推薦原因，2-3 句——為什麼「現在」可能需要 AI 導入：引用它已公開的數位轉型作為、產業痛點（缺工/法遵/良率）、或競爭壓力。必須具體到這家公司，不能是產業通論。' +
@@ -133,7 +146,9 @@ const PRODUCT_NAMES = new Set([
 ])
 
 // Vendors/partners are suppliers, not prospects — never let them onto the list.
-const BLOCKLIST = ['微軟', 'microsoft', 'google', '谷歌', 'aws', 'amazon', 'openai', 'nvidia', '輝達', 'meta', 'anthropic']
+const BLOCKLIST = ['微軟', 'microsoft', 'google', '谷歌', 'aws', 'amazon', 'openai', 'nvidia', '輝達', 'meta', 'anthropic',
+  // generic/fabricated names that slipped through earlier runs
+  '台灣醫學中心', '健保醫療科技', '台灣醫療器材', '安克醫療科技']
 const isBlocked = (norm) => BLOCKLIST.some((b) => norm.includes(b))
 
 // Model may return approach steps as objects or with their own "(1)" prefixes.
@@ -340,7 +355,11 @@ async function main() {
 
   // ---- SEED ----
   const seedCount = () => [...byNorm.values()].filter((l) => l.origin === 'seed').length
-  const batchesToRun = existing.length === 0 ? SEED_FOCI : seedCount() < SEED_TARGET ? [SEED_FOCI[existing.length % SEED_FOCI.length]] : []
+  const bucketOf = (l) => (l.industry === '金融' ? 0 : l.industry === '醫療' ? 1 : l.industry === '製造' ? 2 : 3)
+  const bucketCounts = [0, 0, 0, 0]
+  for (const l of byNorm.values()) bucketCounts[bucketOf(l)]++
+  const thinnest = bucketCounts.indexOf(Math.min(...bucketCounts))
+  const batchesToRun = existing.length === 0 ? SEED_FOCI : seedCount() < SEED_TARGET ? [SEED_FOCI[thinnest]] : []
   for (const focus of batchesToRun) {
     try {
       const raw = await seedBatch(focus, [...byNorm.values()].map((l) => l.company))
@@ -425,14 +444,15 @@ async function main() {
         try {
           const profiles = await profileNewsLeads(batch)
           for (const p of profiles) {
-            const lead = byNorm.get(normName(p.company))
+            const lead = fuzzyGet(byNorm, p.company)
             if (!lead) continue
+            const key = normName(lead.company)
             if (p.skip) {
-              byNorm.delete(normName(p.company))
+              byNorm.delete(key)
               continue
             }
             applyProfile(lead, p)
-            if (!solid(lead)) byNorm.delete(normName(p.company))
+            if (!solid(lead)) byNorm.delete(key)
           }
         } catch (e) {
           console.warn(`profile-news batch failed: ${e.message}`)
