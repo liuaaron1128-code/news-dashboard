@@ -1,6 +1,47 @@
 {
   "asOf": "2026-07-05",
   "source": "台灣商業媒體 RSS + GitHub Models",
-  "leads": [],
-  "placeholder": true
+  "leads": [
+    {
+      "id": "金屬中心",
+      "company": "金屬中心",
+      "industry": "製造",
+      "isCoreIndustry": true,
+      "score": 85,
+      "scoreReason": "金屬中心啟用半導體檢測實驗室並與業界合作，顯示出對AI技術的需求，且有明確的轉型意圖。",
+      "pitch": "可以利用Power Platform來建立一個數據分析平台，協助金屬中心整合檢測數據，提升檢測效率。第一步接觸點是提供一個簡單的數據整合示範，展示如何利用Power Platform進行數據可視化與分析。",
+      "signals": [
+        {
+          "date": "2026-07-05",
+          "type": "轉型意圖",
+          "text": "金屬中心啟用半導體檢測實驗室，並與SEMI、日立先端簽署MOU，旨在強化南台灣檢測能量，協助在地產業升級，顯示出對AI技術的需求。",
+          "source": "INSIDE",
+          "url": "https://www.inside.com.tw/article/41732-SEMI"
+        }
+      ],
+      "firstSeen": "2026-07-05",
+      "lastSeen": "2026-07-05"
+    },
+    {
+      "id": "台水",
+      "company": "台水",
+      "industry": "能源",
+      "isCoreIndustry": false,
+      "score": 80,
+      "scoreReason": "台水的轉型意圖明確，推動AI監測漏水，顯示出對AI技術的需求與潛力，且計畫為期7年，顯示長期投入。",
+      "pitch": "建議利用Azure OpenAI來分析漏水數據，提升監測準確率與效率。第一步接觸點可以是提供一個AI模型的初步示範，展示如何透過數據分析優化漏水檢測流程。",
+      "signals": [
+        {
+          "date": "2026-07-05",
+          "type": "轉型意圖",
+          "text": "台水推動為期7年的降低漏水率計畫，透過AI監測判定漏水區域，準確率達9成，提升查漏效率，顯示出導入AI的需求與潛力。",
+          "source": "中央社財經",
+          "url": "https://www.cna.com.tw/news/afe/202607050066.aspx"
+        }
+      ],
+      "firstSeen": "2026-07-05",
+      "lastSeen": "2026-07-05"
+    }
+  ],
+  "placeholder": false
 }
