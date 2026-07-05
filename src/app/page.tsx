@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useMemo } from 'react'
-import { Search, Calendar, ChevronLeft, ChevronRight, Newspaper, BarChart2, Activity, Target, X } from 'lucide-react'
+import { Search, Calendar, ChevronLeft, ChevronRight, Newspaper, BarChart2, Activity, Target, Radar, X } from 'lucide-react'
 import briefingsData from '@/data/briefings.json'
 import bubbleData from '@/data/bubble.json'
 import { DailyBriefing, Grade, Category, NewsItem } from '@/types/news'
@@ -12,6 +12,7 @@ import BubbleMonitor from '@/components/BubbleMonitor'
 import MarketSignals from '@/components/MarketSignals'
 import MorningCard from '@/components/MorningCard'
 import DecisionPanel from '@/components/DecisionPanel'
+import LeadsRadar from '@/components/LeadsRadar'
 import BusinessDigest from '@/components/BusinessDigest'
 
 const briefings = briefingsData as DailyBriefing[]
@@ -36,7 +37,7 @@ const CATEGORIES: { label: string; value: Category | 'all' }[] = [
   { label: '🏭 客戶產業', value: '客戶產業' },
 ]
 
-type Tab = 'news' | 'bubble' | 'signals' | 'decision'
+type Tab = 'news' | 'bubble' | 'signals' | 'decision' | 'leads'
 
 export default function Home() {
   const [tab, setTab] = useState<Tab>('news')
@@ -132,6 +133,17 @@ export default function Home() {
             >
               <Target size={14} />
               決策
+            </button>
+            <button
+              onClick={() => setTab('leads')}
+              className={`flex items-center gap-1.5 px-4 py-2.5 text-sm font-semibold border-b-2 transition-all whitespace-nowrap ${
+                tab === 'leads'
+                  ? 'border-cyan-600 text-cyan-700'
+                  : 'border-transparent text-slate-500'
+              }`}
+            >
+              <Radar size={14} />
+              潛在客戶
             </button>
           </div>
         </div>
@@ -312,6 +324,9 @@ export default function Home() {
         )}
         {tab === 'decision' && (
           <DecisionPanel />
+        )}
+        {tab === 'leads' && (
+          <LeadsRadar />
         )}
 
         <div className="text-center text-slate-400 text-[11px] mt-8 pb-6">

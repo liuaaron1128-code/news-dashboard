@@ -54,6 +54,11 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Scan AI-adoption leads (Taiwan business RSS + GitHub Models)
+        run: node scripts/fetch-leads.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Generate daily news briefing (RSS + GitHub Models)
         run: node scripts/fetch-briefing.mjs
         env:
@@ -69,7 +74,7 @@ jobs:
           git add src/data/market_signals.json src/data/signals_history.json \
                   src/data/taiwan_flows.json src/data/sentiment.json \
                   src/data/commentary.json src/data/business.json \
-                  src/data/briefings.json
+                  src/data/briefings.json src/data/leads.json
           if git diff --staged --quiet; then
             echo "No changes to commit."
           else
