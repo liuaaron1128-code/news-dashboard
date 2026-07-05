@@ -2,7 +2,7 @@
 // AI produces this JSON; the web renderer (and future PDF/PPTX exporters) consume it.
 // See docs/presentation-generator-design.md.
 
-export type ThemeName = 'executive' | 'briefing' | 'minimal'
+export type ThemeName = 'medus' | 'executive' | 'briefing' | 'minimal'
 
 export type SlideLayout =
   | 'cover'

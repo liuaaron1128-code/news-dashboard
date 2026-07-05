@@ -15,7 +15,7 @@ const LAYOUTS: SlideLayout[] = [
   'kpi-grid', 'chart', 'quote', 'timeline', 'closing',
 ]
 
-const THEMES: ThemeName[] = ['executive', 'briefing', 'minimal']
+const THEMES: ThemeName[] = ['medus', 'executive', 'briefing', 'minimal']
 
 function str(v: unknown, fallback = ''): string {
   return typeof v === 'string' ? v : fallback

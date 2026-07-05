@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "title": "杏碩資訊 AI 應用平台建置案",
+    "subtitle": "從 PoC 到落地的一站式 AI 解決方案",
+    "author": "杏碩資訊 Medus Technology Inc.",
+    "date": "2026-07-05",
+    "theme": "medus",
+    "templateId": "medus"
+  },
+  "slides": [
+    {
+      "id": "s1",
+      "layout": "cover",
+      "eyebrow": "AI 解決方案簡報",
+      "title": "AI 應用平台與圖像識別建置案",
+      "subtitle": "從 PoC 到落地的一站式 AI 解決方案"
+    },
+    {
+      "id": "s2",
+      "layout": "agenda",
+      "title": "Topic",
+      "items": [
+        "廠商基本能力與實績",
+        "解決方案完整性與架構設計",
+        "平台功能與核心項目",
+        "專案管理與支援",
+        "資訊安全"
+      ]
+    },
+    {
+      "id": "s3",
+      "layout": "section",
+      "index": "01",
+      "title": "廠商基本能力與實績",
+      "subtitle": "公司背景、開發能量與技術專長"
+    },
+    {
+      "id": "s4",
+      "layout": "bullets",
+      "title": "1.1 廠商穩定性：公司介紹",
+      "points": [
+        {
+          "text": "杏碩資訊為華碩電腦 100% 持股的子公司",
+          "emphasis": true,
+          "sub": [
+            "對外服務人員依客戶需求自華碩「智能數據開發中心」動態調撥",
+            "智能數據開發中心全球員工約 400 名，組織職掌完整"
+          ]
+        },
+        {
+          "text": "團隊涵蓋 AI 模型架構師、系統架構師、資料科學家、軟體工程師與資安專家",
+          "sub": ["專精 GAI / AI / ML、Copilot Studio、HyperAutomation、數據分析與 Azure 雲端服務"]
+        },
+        { "text": "為 Microsoft ISV Partner，能第一時間掌握最新技術資訊並取得原廠支援" }
+      ],
+      "takeaway": "以華碩集團資源為後盾，依專案規格動態組建最合適的專家團隊。"
+    },
+    {
+      "id": "s5",
+      "layout": "kpi-grid",
+      "title": "1.2 核心量能",
+      "kpis": [
+        { "label": "華碩電腦持股", "value": "100%", "positive": null },
+        { "label": "智能數據開發中心", "value": "400 名", "positive": null },
+        { "label": "原廠夥伴關係", "value": "MS ISV", "positive": null },
+        { "label": "AI 專案交付", "value": "50+", "positive": true, "delta": "持續累積" }
+      ]
+    },
+    {
+      "id": "s6",
+      "layout": "two-column",
+      "title": "1.3 技術專長與服務範疇",
+      "left": {
+        "heading": "技術專長",
+        "points": ["生成式 AI 與 LLM 應用", "圖像識別與電腦視覺", "HyperAutomation 流程自動化", "資料分析與預測模型"]
+      },
+      "right": {
+        "heading": "服務範疇",
+        "points": ["需求訪談與 PoC 驗證", "平台架構設計與建置", "模型調校與上線部署", "維運支援與教育訓練"]
+      }
+    },
+    {
+      "id": "s7",
+      "layout": "section",
+      "index": "02",
+      "title": "平台功能與核心項目",
+      "subtitle": "AI 應用平台的關鍵能力"
+    },
+    {
+      "id": "s8",
+      "layout": "bullets",
+      "title": "3.1 平台核心功能",
+      "points": [
+        { "text": "統一入口整合多模型與多工作流，降低導入門檻", "emphasis": true },
+        { "text": "圖像識別模組支援瑕疵檢測、物件辨識與 OCR" },
+        { "text": "以角色權限與稽核紀錄確保企業級資訊安全" }
+      ],
+      "takeaway": "一套平台涵蓋 AI 應用、圖像識別與治理，可依場景彈性擴充。"
+    },
+    {
+      "id": "s9",
+      "layout": "closing",
+      "title": "問題回覆",
+      "subtitle": "感謝聆聽，歡迎進一步討論合作細節",
+      "contact": "杏碩資訊 Medus Technology Inc."
+    }
+  ]
+}

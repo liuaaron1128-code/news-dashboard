@@ -32,7 +32,7 @@ export function buildUserPrompt(raw: string, theme: ThemeName, title?: string): 
   return [
     `主題名稱（若有）：${title || '（請你依內容自訂）'}`,
     `主題風格 theme：${theme}`,
-    `templateId：executive`,
+    `templateId：${theme}`,
     '',
     '原始資料：',
     '"""',

@@ -7,7 +7,7 @@ import { ThemeName } from '@/types/deck'
 
 export const runtime = 'nodejs'
 
-const THEMES: ThemeName[] = ['executive', 'briefing', 'minimal']
+const THEMES: ThemeName[] = ['medus', 'executive', 'briefing', 'minimal']
 
 export async function POST(request: NextRequest) {
   let body: { text?: unknown; title?: unknown; theme?: unknown }

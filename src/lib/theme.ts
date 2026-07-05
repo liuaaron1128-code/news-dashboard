@@ -18,6 +18,19 @@ export interface ThemeTokens {
 }
 
 export const themes: Record<ThemeName, ThemeTokens> = {
+  // 杏碩資訊 / Medus Technology — extracted from the company's own decks.
+  medus: {
+    bg: '#F2F3F5', // cool off-white
+    surface: '#FFFFFF',
+    ink: '#1F2A44',
+    muted: '#5A6478',
+    line: '#E3E7EE',
+    accent: '#1F3A6D', // navy — primary
+    accent2: '#2E5BAA', // royal blue
+    good: '#059669',
+    warn: '#DC2626',
+    radius: 14,
+  },
   executive: {
     bg: '#F1F5F9', // slate-100 — matches --background
     surface: '#FFFFFF',

@@ -118,22 +118,28 @@ export function heuristicDeck(input: GenerateInput, theme: ThemeName): Deck {
   return normalizeDeck({ meta: { title, theme, templateId: 'executive' }, slides }, theme)
 }
 
+// Force the user-selected template to win, even if the model echoed a different
+// theme in meta — the renderer routes styling off meta.theme.
+function enforceTheme(deck: Deck, theme: ThemeName): Deck {
+  return { ...deck, meta: { ...deck.meta, theme, templateId: theme } }
+}
+
 export async function generateDeck(input: GenerateInput): Promise<GenerateResult> {
-  const theme: ThemeName = input.theme || 'executive'
+  const theme: ThemeName = input.theme || 'medus'
 
   if (process.env.ANTHROPIC_API_KEY) {
     try {
-      return { deck: await viaAnthropic(input, theme), provider: 'anthropic' }
+      return { deck: enforceTheme(await viaAnthropic(input, theme), theme), provider: 'anthropic' }
     } catch (e) {
       console.error('Anthropic generation failed, falling back:', (e as Error).message)
     }
   }
   if (process.env.GITHUB_TOKEN) {
     try {
-      return { deck: await viaGitHubModels(input, theme), provider: 'github-models' }
+      return { deck: enforceTheme(await viaGitHubModels(input, theme), theme), provider: 'github-models' }
     } catch (e) {
       console.error('GitHub Models generation failed, falling back:', (e as Error).message)
     }
   }
-  return { deck: heuristicDeck(input, theme), provider: 'local' }
+  return { deck: enforceTheme(heuristicDeck(input, theme), theme), provider: 'local' }
 }

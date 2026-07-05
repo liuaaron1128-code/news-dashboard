@@ -4,10 +4,12 @@ import { ArrowLeft, Sparkles } from 'lucide-react'
 import DeckViewer from '@/components/deck/DeckViewer'
 import { Deck } from '@/types/deck'
 import sampleDeck from '@/data/decks/sample.json'
+import medusDeck from '@/data/decks/medus.json'
 
 // Bundled demo decks. Generated decks are previewed live on /generate (MVP has no
 // server-side persistence yet — see the roadmap in the design doc).
 const DECKS: Record<string, Deck> = {
+  medus: medusDeck as Deck,
   sample: sampleDeck as Deck,
 }
 

@@ -4,13 +4,19 @@ import { useCallback, useEffect, useState } from 'react'
 import { ChevronLeft, ChevronRight, Download } from 'lucide-react'
 import { Deck } from '@/types/deck'
 import SlideView from './SlideView'
+import MedusSlideView from './MedusSlideView'
 
 // Interactive web-slide viewer: a 16:9 stage, keyboard/nav paging, and a dot
 // navigator. Same component drives both the sample deck page and live previews.
 
 export default function DeckViewer({ deck }: { deck: Deck }) {
-  const [i, setI] = useState(0)
   const count = deck.slides.length
+  // Deep-link support: /deck/x#3 opens on slide 3.
+  const [i, setI] = useState(() => {
+    if (typeof window === 'undefined') return 0
+    const h = parseInt(window.location.hash.replace('#', ''), 10)
+    return Number.isFinite(h) ? Math.min(Math.max(h - 1, 0), count - 1) : 0
+  })
 
   const go = useCallback(
     (n: number) => setI(Math.max(0, Math.min(count - 1, n))),
@@ -35,17 +41,24 @@ export default function DeckViewer({ deck }: { deck: Deck }) {
   }
 
   const slide = deck.slides[i]
+  const isMedus = deck.meta.theme === 'medus'
 
   return (
     <div>
       {/* Stage */}
       <div className="relative w-full aspect-[16/9] bg-white border border-slate-200 rounded-2xl shadow-lg overflow-hidden">
-        <div className="absolute inset-0 p-6 sm:p-10 md:p-14">
-          <SlideView slide={slide} index={i} />
-        </div>
-        <div className="absolute bottom-3 right-4 text-[10px] text-slate-300 font-medium">
-          {deck.meta.title}
-        </div>
+        {isMedus ? (
+          <MedusSlideView slide={slide} index={i} />
+        ) : (
+          <>
+            <div className="absolute inset-0 p-6 sm:p-10 md:p-14">
+              <SlideView slide={slide} index={i} />
+            </div>
+            <div className="absolute bottom-3 right-4 text-[10px] text-slate-300 font-medium">
+              {deck.meta.title}
+            </div>
+          </>
+        )}
       </div>
 
       {/* Nav */}
