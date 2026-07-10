@@ -1,38 +1,8 @@
 {
   "version": 2,
-  "asOf": "2026-07-10",
+  "asOf": "2026-07-11",
   "source": "知識庫名單 + 台灣商業媒體 RSS + GitHub Models",
   "leads": [
-    {
-      "id": "國泰金控",
-      "company": "國泰金控",
-      "industry": "金融",
-      "isCoreIndustry": true,
-      "brief": "國泰金控是台灣最大的金融控股公司之一，擁有多家銀行及保險公司。",
-      "whyNow": "國泰金控正在推動數位化轉型，尤其在客戶服務及風險管理上，AI技術能有效提升服務效率及風險預測能力。",
-      "products": [
-        {
-          "name": "Azure AI Search",
-          "use": "用於提升客戶查詢及服務的效率"
-        },
-        {
-          "name": "Power BI",
-          "use": "用於風險管理數據分析"
-        }
-      ],
-      "approach": [
-        "對口單位/職稱：數位轉型部門經理",
-        "首次接觸的具體方式：數位轉型工作坊邀請",
-        "建議 Demo/POC 的具體題目：客戶服務AI助手"
-      ],
-      "origin": "seed",
-      "score": 100,
-      "scoreReason": "國泰金控對數位轉型的需求迫切，且預算充足，與我們的解決方案高度契合。",
-      "signals": [],
-      "firstSeen": "2026-07-05",
-      "lastSeen": "2026-07-05",
-      "website": "https://www.cathayholdings.com"
-    },
     {
       "id": "長庚醫療體系",
       "company": "長庚醫療體系",
@@ -64,34 +34,34 @@
       "website": "https://www.cgmh.org.tw"
     },
     {
-      "id": "台灣大學醫學院附設醫院",
-      "company": "台灣大學醫學院附設醫院",
-      "industry": "醫療",
+      "id": "國泰金控",
+      "company": "國泰金控",
+      "industry": "金融",
       "isCoreIndustry": true,
-      "brief": "台灣大學醫學院附設醫院是台灣最大的醫學中心之一，擁有超過5000名員工，提供多種醫療服務。",
-      "whyNow": "該醫院正在推動數位轉型，特別是在病歷管理與病患排程方面，面對人力資源不足的挑戰。",
+      "brief": "國泰金控是台灣最大的金融控股公司之一，擁有多家銀行及保險公司。",
+      "whyNow": "國泰金控正在推動數位化轉型，尤其在客戶服務及風險管理上，AI技術能有效提升服務效率及風險預測能力。",
       "products": [
         {
-          "name": "M365 Copilot",
-          "use": "用於提升醫療行政人員的工作效率，協助文件處理與排程管理。"
+          "name": "Azure AI Search",
+          "use": "用於提升客戶查詢及服務的效率"
         },
         {
-          "name": "Power Platform",
-          "use": "用於醫療服務流程的自動化，提升效率。"
+          "name": "Power BI",
+          "use": "用於風險管理數據分析"
         }
       ],
       "approach": [
-        "對口單位/職稱：資訊長、數位轉型專案負責人",
-        "首次接觸的具體方式：邀請參加數位轉型研討會",
-        "建議 Demo/POC 的具體題目：病歷管理系統的自動化流程"
+        "對口單位/職稱：數位轉型部門經理",
+        "首次接觸的具體方式：數位轉型工作坊邀請",
+        "建議 Demo/POC 的具體題目：客戶服務AI助手"
       ],
       "origin": "seed",
-      "score": 98,
-      "scoreReason": "該醫院具備強烈的數位化需求，且預算能見度高。",
+      "score": 100,
+      "scoreReason": "國泰金控對數位轉型的需求迫切，且預算充足，與我們的解決方案高度契合。",
       "signals": [],
       "firstSeen": "2026-07-05",
       "lastSeen": "2026-07-05",
-      "website": "https://www.ntuh.gov.tw/"
+      "website": "https://www.cathayholdings.com"
     },
     {
       "id": "中國信託金控",
@@ -122,6 +92,36 @@
       "firstSeen": "2026-07-05",
       "lastSeen": "2026-07-05",
       "website": "https://www.ctbc.com.tw"
+    },
+    {
+      "id": "台灣大學醫學院附設醫院",
+      "company": "台灣大學醫學院附設醫院",
+      "industry": "醫療",
+      "isCoreIndustry": true,
+      "brief": "台灣大學醫學院附設醫院是台灣最大的醫學中心之一，擁有超過5000名員工，提供多種醫療服務。",
+      "whyNow": "該醫院正在推動數位轉型，特別是在病歷管理與病患排程方面，面對人力資源不足的挑戰。",
+      "products": [
+        {
+          "name": "M365 Copilot",
+          "use": "用於提升醫療行政人員的工作效率，協助文件處理與排程管理。"
+        },
+        {
+          "name": "Power Platform",
+          "use": "用於醫療服務流程的自動化，提升效率。"
+        }
+      ],
+      "approach": [
+        "對口單位/職稱：資訊長、數位轉型專案負責人",
+        "首次接觸的具體方式：邀請參加數位轉型研討會",
+        "建議 Demo/POC 的具體題目：病歷管理系統的自動化流程"
+      ],
+      "origin": "seed",
+      "score": 98,
+      "scoreReason": "該醫院具備強烈的數位化需求，且預算能見度高。",
+      "signals": [],
+      "firstSeen": "2026-07-05",
+      "lastSeen": "2026-07-05",
+      "website": "https://www.ntuh.gov.tw/"
     },
     {
       "id": "富邦金控",
@@ -256,40 +256,6 @@
       "website": "https://www.sdmic.com.tw"
     },
     {
-      "id": "台中榮民總醫院",
-      "company": "台中榮民總醫院",
-      "industry": "醫療",
-      "isCoreIndustry": true,
-      "brief": "台中榮民總醫院是台灣中部重要的醫學中心，擁有超過3,000名員工，提供全面的醫療服務，並積極參與醫學研究與教育。",
-      "whyNow": "醫療行業正面臨人力資源不足與效率提升的壓力，台中榮總近年來積極推動智慧醫療與數位轉型，導入 AI 可協助病歷摘要、患者排程與行政流程自動化。",
-      "products": [
-        {
-          "name": "Azure OpenAI Service",
-          "use": "病歷摘要與患者數據分析"
-        },
-        {
-          "name": "M365 Copilot",
-          "use": "醫院行政與文件處理自動化"
-        },
-        {
-          "name": "Azure AI Search",
-          "use": "提升病患查詢與醫療資料檢索效率"
-        }
-      ],
-      "approach": [
-        "對口單位/職稱：資訊管理處或智慧醫療推動部門",
-        "首次接觸方式：舉辦智慧醫療解決方案研討會邀請該院參與",
-        "Demo/POC 題目：利用 Azure OpenAI Service 進行病歷摘要自動化的概念驗證"
-      ],
-      "origin": "seed",
-      "score": 95,
-      "scoreReason": "台中榮總已展現對智慧醫療的高度興趣，且具備導入 AI 解決方案的資源與需求。",
-      "signals": [],
-      "firstSeen": "2026-07-07",
-      "lastSeen": "2026-07-07",
-      "website": "https://www.vghtc.gov.tw/"
-    },
-    {
       "id": "智邦科技",
       "company": "智邦科技",
       "industry": "製造",
@@ -332,6 +298,74 @@
       "website": "https://www.zyxel.com"
     },
     {
+      "id": "台中榮民總醫院",
+      "company": "台中榮民總醫院",
+      "industry": "醫療",
+      "isCoreIndustry": true,
+      "brief": "台中榮民總醫院是台灣中部重要的醫學中心，擁有超過3,000名員工，提供全面的醫療服務，並積極參與醫學研究與教育。",
+      "whyNow": "醫療行業正面臨人力資源不足與效率提升的壓力，台中榮總近年來積極推動智慧醫療與數位轉型，導入 AI 可協助病歷摘要、患者排程與行政流程自動化。",
+      "products": [
+        {
+          "name": "Azure OpenAI Service",
+          "use": "病歷摘要與患者數據分析"
+        },
+        {
+          "name": "M365 Copilot",
+          "use": "醫院行政與文件處理自動化"
+        },
+        {
+          "name": "Azure AI Search",
+          "use": "提升病患查詢與醫療資料檢索效率"
+        }
+      ],
+      "approach": [
+        "對口單位/職稱：資訊管理處或智慧醫療推動部門",
+        "首次接觸方式：舉辦智慧醫療解決方案研討會邀請該院參與",
+        "Demo/POC 題目：利用 Azure OpenAI Service 進行病歷摘要自動化的概念驗證"
+      ],
+      "origin": "seed",
+      "score": 95,
+      "scoreReason": "台中榮總已展現對智慧醫療的高度興趣，且具備導入 AI 解決方案的資源與需求。",
+      "signals": [],
+      "firstSeen": "2026-07-07",
+      "lastSeen": "2026-07-07",
+      "website": "https://www.vghtc.gov.tw/"
+    },
+    {
+      "id": "永豐金控",
+      "company": "永豐金控",
+      "industry": "金融",
+      "isCoreIndustry": true,
+      "brief": "永豐金控（2886）是一家提供全面金融服務的金控公司，擁有銀行、證券及保險等多元業務，員工人數超過5000人。",
+      "whyNow": "永豐金控正積極推進數位轉型，以提升客戶體驗和合規效率，面對金融科技競爭壓力，急需透過AI解決法遵與客服問題。",
+      "products": [
+        {
+          "name": "Azure OpenAI Service",
+          "use": "用於提升客戶服務自動化和智能化的聊天機器人"
+        },
+        {
+          "name": "Power BI",
+          "use": "用於數據分析和報告，幫助決策者了解業務表現"
+        },
+        {
+          "name": "M365 Copilot",
+          "use": "用於提升內部協作效率，簡化日常業務流程"
+        }
+      ],
+      "approach": [
+        "對口單位/職稱：數位轉型部門經理或資訊處長",
+        "首次接觸的具體方式：邀請參加數位轉型研討會",
+        "建議 Demo/POC 的具體題目：基於客戶數據的智能客服系統"
+      ],
+      "origin": "seed",
+      "score": 95,
+      "scoreReason": "永豐金控在數位轉型上已有明確規劃，且對AI解決方案有需求。",
+      "signals": [],
+      "firstSeen": "2026-07-06",
+      "lastSeen": "2026-07-06",
+      "website": "https://www.sgb.com.tw"
+    },
+    {
       "id": "鴻海",
       "company": "鴻海",
       "industry": "製造",
@@ -370,188 +404,30 @@
       "website": "https://www.foxconn.com"
     },
     {
-      "id": "永豐金控",
-      "company": "永豐金控",
-      "industry": "金融",
-      "isCoreIndustry": true,
-      "brief": "永豐金控（2886）是一家提供全面金融服務的金控公司，擁有銀行、證券及保險等多元業務，員工人數超過5000人。",
-      "whyNow": "永豐金控正積極推進數位轉型，以提升客戶體驗和合規效率，面對金融科技競爭壓力，急需透過AI解決法遵與客服問題。",
-      "products": [
-        {
-          "name": "Azure OpenAI Service",
-          "use": "用於提升客戶服務自動化和智能化的聊天機器人"
-        },
-        {
-          "name": "Power BI",
-          "use": "用於數據分析和報告，幫助決策者了解業務表現"
-        },
-        {
-          "name": "M365 Copilot",
-          "use": "用於提升內部協作效率，簡化日常業務流程"
-        }
-      ],
-      "approach": [
-        "對口單位/職稱：數位轉型部門經理或資訊處長",
-        "首次接觸的具體方式：邀請參加數位轉型研討會",
-        "建議 Demo/POC 的具體題目：基於客戶數據的智能客服系統"
-      ],
-      "origin": "seed",
-      "score": 95,
-      "scoreReason": "永豐金控在數位轉型上已有明確規劃，且對AI解決方案有需求。",
-      "signals": [],
-      "firstSeen": "2026-07-06",
-      "lastSeen": "2026-07-06",
-      "website": "https://www.sgb.com.tw"
-    },
-    {
-      "id": "台北醫學大學附設醫院",
-      "company": "台北醫學大學附設醫院",
-      "industry": "醫療",
-      "isCoreIndustry": true,
-      "brief": "台北醫學大學附設醫院為台灣知名醫學中心，擁有超過3000名員工，提供全方位醫療服務。",
-      "whyNow": "該醫院正在進行數位轉型，提升病歷管理與排程系統的效率，面臨醫療人力短缺的挑戰，亟需自動化解決方案。",
-      "products": [
-        {
-          "name": "Azure OpenAI Service",
-          "use": "用於病歷摘要自動化，提升醫療人員的工作效率。"
-        },
-        {
-          "name": "Power Platform",
-          "use": "用於行政流程自動化，減少人為錯誤與時間浪費。"
-        }
-      ],
-      "approach": [
-        "對口單位/職稱：資訊處長、數位轉型專案負責人",
-        "首次接觸的具體方式：邀請參加數位轉型研討會",
-        "建議 Demo/POC 的具體題目：病歷摘要自動化的實作範例"
-      ],
-      "origin": "seed",
-      "score": 95,
-      "scoreReason": "醫療行業面臨數位轉型需求，且具備相對明確的預算與需求。",
-      "signals": [],
-      "firstSeen": "2026-07-05",
-      "lastSeen": "2026-07-05",
-      "website": "https://www.tmu.edu.tw/"
-    },
-    {
-      "id": "中鋼-中鋼-",
-      "company": "中鋼股份有限公司 (中鋼)",
+      "id": "南亞科技-南亞科技-",
+      "company": "南亞科技股份有限公司 (南亞科技)",
       "industry": "製造",
       "isCoreIndustry": true,
-      "brief": "中鋼是台灣最大的鋼鐵製造商，員工數超過10,000人。",
-      "whyNow": "中鋼面臨生產效率提升及環保要求，AI技術可助其優化生產流程及減少能源消耗，符合產業趨勢。",
+      "brief": "南亞科技專注於半導體及電子元件的製造，員工數超過7000人，年營收約新台幣500億元。",
+      "whyNow": "南亞科技面臨半導體市場競爭加劇及良率提升的壓力，數位轉型成為提高效率及降低成本的關鍵。近期已提出數位化策略，急需導入AI技術以加速轉型。",
       "products": [
         {
           "name": "Azure OpenAI Service",
-          "use": "用於生產數據智能分析"
-        },
-        {
-          "name": "Power BI",
-          "use": "用於生產報告及數據可視化"
+          "use": "用於提升製造流程中的良率分析及預測"
         }
       ],
       "approach": [
-        "對口單位/職稱：生產部門經理",
-        "首次接觸的具體方式：邀請參加製造業數位轉型研討會",
-        "建議 Demo/POC 的具體題目：生產流程優化分析"
+        "對口單位/職稱：數位轉型部門負責人",
+        "首次接觸的具體方式：邀請參加數位轉型研討會",
+        "建議 Demo/POC 的具體題目：製造過程中的AI良率預測模型"
       ],
       "origin": "seed",
       "score": 95,
-      "scoreReason": "中鋼在數位轉型上有明確需求，且預算能見度高，與我們的客群相近。",
+      "scoreReason": "南亞科技在半導體製造領域具有強烈的數位轉型需求，且預算能見度高。",
       "signals": [],
       "firstSeen": "2026-07-05",
       "lastSeen": "2026-07-05",
-      "website": "https://www.csc.com.tw"
-    },
-    {
-      "id": "台塑生醫",
-      "company": "台塑生醫",
-      "industry": "醫療",
-      "isCoreIndustry": true,
-      "brief": "台塑生醫是台塑集團旗下的醫療健康事業，專注於醫療器材、健康食品及醫學美容產品，年營收達數十億元。",
-      "whyNow": "台塑生醫近年來積極推動數位化，並強調智慧醫療的應用，特別是在醫療器材與健康管理領域，AI 技術能幫助其提升產品研發效率和客戶服務體驗。",
-      "products": [
-        {
-          "name": "Azure OpenAI Service",
-          "use": "用於醫療器材的創新設計與臨床數據分析，加速產品開發流程"
-        },
-        {
-          "name": "Power BI",
-          "use": "整合銷售與市場數據，提供即時的業務洞察"
-        }
-      ],
-      "approach": [
-        "(1) 對口單位：數位轉型部門/資訊處",
-        "(2) 首次接觸方式：邀請參加智慧醫療相關的研討會",
-        "(3) 建議 Demo/POC 題目：利用 Azure OpenAI Service 進行醫療器材開發相關數據分析"
-      ],
-      "origin": "seed",
-      "score": 95,
-      "scoreReason": "台塑生醫在醫療領域具備高市場地位，且已有數位轉型需求，與我們的解決方案高度契合。",
-      "signals": [],
-      "firstSeen": "2026-07-05",
-      "lastSeen": "2026-07-05",
-      "website": "https://www.fpg.com.tw"
-    },
-    {
-      "id": "台灣羅氏",
-      "company": "台灣羅氏",
-      "industry": "醫療",
-      "isCoreIndustry": true,
-      "brief": "台灣羅氏是全球知名的製藥與診斷公司羅氏（Roche）的台灣分公司，專注於癌症、免疫學等領域的藥品與診斷產品，年營收規模龐大。",
-      "whyNow": "台灣羅氏已經在全球範圍內積極推動數位化轉型，AI 可進一步協助其在台灣市場中實現更高效的臨床試驗管理與病患數據分析。",
-      "products": [
-        {
-          "name": "Azure OpenAI Service",
-          "use": "輔助臨床試驗數據分析與報告生成"
-        },
-        {
-          "name": "Power Platform",
-          "use": "開發內部自動化工作流程與數據管理工具"
-        }
-      ],
-      "approach": [
-        "(1) 對口單位：數位轉型部門/臨床研究部門",
-        "(2) 首次接觸方式：針對製藥業的數位轉型需求進行專題簡報",
-        "(3) 建議 Demo/POC 題目：利用 Azure OpenAI Service 自動生成臨床試驗報告"
-      ],
-      "origin": "seed",
-      "score": 95,
-      "scoreReason": "台灣羅氏具備強大的資源與國際化視野，對 AI 技術的接受度高，且具備明確的數位轉型需求。",
-      "signals": [],
-      "firstSeen": "2026-07-05",
-      "lastSeen": "2026-07-05",
-      "website": "https://www.roche.com.tw"
-    },
-    {
-      "id": "國泰醫院",
-      "company": "國泰醫院",
-      "industry": "醫療",
-      "isCoreIndustry": true,
-      "brief": "國泰醫院是國泰集團旗下的大型醫療機構，提供多元化的醫療服務，並設有多家分院與專科中心。",
-      "whyNow": "國泰醫院在智慧醫療領域有明確的發展目標，且面臨病患人數增加與醫療資源分配的挑戰，AI 技術可協助提升病患管理與醫療效率。",
-      "products": [
-        {
-          "name": "M365 Copilot",
-          "use": "提升醫療團隊的行政效率與協作能力"
-        },
-        {
-          "name": "Power Platform",
-          "use": "開發病患排程與資源調度的自動化解決方案"
-        }
-      ],
-      "approach": [
-        "(1) 對口單位：醫療資訊部門/院務處",
-        "(2) 首次接觸方式：與國泰金控接洽，探討醫療與金融數據整合的可能性",
-        "(3) 建議 Demo/POC 題目：利用 Power Platform 開發病患排程系統"
-      ],
-      "origin": "seed",
-      "score": 95,
-      "scoreReason": "國泰醫院隸屬國泰集團，與現有客戶國泰金控有合作潛力，且智慧醫療需求明確。",
-      "signals": [],
-      "firstSeen": "2026-07-05",
-      "lastSeen": "2026-07-05",
-      "website": "https://www.cgh.org.tw"
+      "website": "https://www.nanya.com/"
     },
     {
       "id": "鴻海精密工業-鴻海-",
@@ -584,30 +460,154 @@
       "website": "https://www.foxconn.com"
     },
     {
-      "id": "南亞科技-南亞科技-",
-      "company": "南亞科技股份有限公司 (南亞科技)",
-      "industry": "製造",
+      "id": "國泰醫院",
+      "company": "國泰醫院",
+      "industry": "醫療",
       "isCoreIndustry": true,
-      "brief": "南亞科技專注於半導體及電子元件的製造，員工數超過7000人，年營收約新台幣500億元。",
-      "whyNow": "南亞科技面臨半導體市場競爭加劇及良率提升的壓力，數位轉型成為提高效率及降低成本的關鍵。近期已提出數位化策略，急需導入AI技術以加速轉型。",
+      "brief": "國泰醫院是國泰集團旗下的大型醫療機構，提供多元化的醫療服務，並設有多家分院與專科中心。",
+      "whyNow": "國泰醫院在智慧醫療領域有明確的發展目標，且面臨病患人數增加與醫療資源分配的挑戰，AI 技術可協助提升病患管理與醫療效率。",
       "products": [
         {
-          "name": "Azure OpenAI Service",
-          "use": "用於提升製造流程中的良率分析及預測"
+          "name": "M365 Copilot",
+          "use": "提升醫療團隊的行政效率與協作能力"
+        },
+        {
+          "name": "Power Platform",
+          "use": "開發病患排程與資源調度的自動化解決方案"
         }
       ],
       "approach": [
-        "對口單位/職稱：數位轉型部門負責人",
-        "首次接觸的具體方式：邀請參加數位轉型研討會",
-        "建議 Demo/POC 的具體題目：製造過程中的AI良率預測模型"
+        "(1) 對口單位：醫療資訊部門/院務處",
+        "(2) 首次接觸方式：與國泰金控接洽，探討醫療與金融數據整合的可能性",
+        "(3) 建議 Demo/POC 題目：利用 Power Platform 開發病患排程系統"
       ],
       "origin": "seed",
       "score": 95,
-      "scoreReason": "南亞科技在半導體製造領域具有強烈的數位轉型需求，且預算能見度高。",
+      "scoreReason": "國泰醫院隸屬國泰集團，與現有客戶國泰金控有合作潛力，且智慧醫療需求明確。",
       "signals": [],
       "firstSeen": "2026-07-05",
       "lastSeen": "2026-07-05",
-      "website": "https://www.nanya.com/"
+      "website": "https://www.cgh.org.tw"
+    },
+    {
+      "id": "台灣羅氏",
+      "company": "台灣羅氏",
+      "industry": "醫療",
+      "isCoreIndustry": true,
+      "brief": "台灣羅氏是全球知名的製藥與診斷公司羅氏（Roche）的台灣分公司，專注於癌症、免疫學等領域的藥品與診斷產品，年營收規模龐大。",
+      "whyNow": "台灣羅氏已經在全球範圍內積極推動數位化轉型，AI 可進一步協助其在台灣市場中實現更高效的臨床試驗管理與病患數據分析。",
+      "products": [
+        {
+          "name": "Azure OpenAI Service",
+          "use": "輔助臨床試驗數據分析與報告生成"
+        },
+        {
+          "name": "Power Platform",
+          "use": "開發內部自動化工作流程與數據管理工具"
+        }
+      ],
+      "approach": [
+        "(1) 對口單位：數位轉型部門/臨床研究部門",
+        "(2) 首次接觸方式：針對製藥業的數位轉型需求進行專題簡報",
+        "(3) 建議 Demo/POC 題目：利用 Azure OpenAI Service 自動生成臨床試驗報告"
+      ],
+      "origin": "seed",
+      "score": 95,
+      "scoreReason": "台灣羅氏具備強大的資源與國際化視野，對 AI 技術的接受度高，且具備明確的數位轉型需求。",
+      "signals": [],
+      "firstSeen": "2026-07-05",
+      "lastSeen": "2026-07-05",
+      "website": "https://www.roche.com.tw"
+    },
+    {
+      "id": "台塑生醫",
+      "company": "台塑生醫",
+      "industry": "醫療",
+      "isCoreIndustry": true,
+      "brief": "台塑生醫是台塑集團旗下的醫療健康事業，專注於醫療器材、健康食品及醫學美容產品，年營收達數十億元。",
+      "whyNow": "台塑生醫近年來積極推動數位化，並強調智慧醫療的應用，特別是在醫療器材與健康管理領域，AI 技術能幫助其提升產品研發效率和客戶服務體驗。",
+      "products": [
+        {
+          "name": "Azure OpenAI Service",
+          "use": "用於醫療器材的創新設計與臨床數據分析，加速產品開發流程"
+        },
+        {
+          "name": "Power BI",
+          "use": "整合銷售與市場數據，提供即時的業務洞察"
+        }
+      ],
+      "approach": [
+        "(1) 對口單位：數位轉型部門/資訊處",
+        "(2) 首次接觸方式：邀請參加智慧醫療相關的研討會",
+        "(3) 建議 Demo/POC 題目：利用 Azure OpenAI Service 進行醫療器材開發相關數據分析"
+      ],
+      "origin": "seed",
+      "score": 95,
+      "scoreReason": "台塑生醫在醫療領域具備高市場地位，且已有數位轉型需求，與我們的解決方案高度契合。",
+      "signals": [],
+      "firstSeen": "2026-07-05",
+      "lastSeen": "2026-07-05",
+      "website": "https://www.fpg.com.tw"
+    },
+    {
+      "id": "中鋼-中鋼-",
+      "company": "中鋼股份有限公司 (中鋼)",
+      "industry": "製造",
+      "isCoreIndustry": true,
+      "brief": "中鋼是台灣最大的鋼鐵製造商，員工數超過10,000人。",
+      "whyNow": "中鋼面臨生產效率提升及環保要求，AI技術可助其優化生產流程及減少能源消耗，符合產業趨勢。",
+      "products": [
+        {
+          "name": "Azure OpenAI Service",
+          "use": "用於生產數據智能分析"
+        },
+        {
+          "name": "Power BI",
+          "use": "用於生產報告及數據可視化"
+        }
+      ],
+      "approach": [
+        "對口單位/職稱：生產部門經理",
+        "首次接觸的具體方式：邀請參加製造業數位轉型研討會",
+        "建議 Demo/POC 的具體題目：生產流程優化分析"
+      ],
+      "origin": "seed",
+      "score": 95,
+      "scoreReason": "中鋼在數位轉型上有明確需求，且預算能見度高，與我們的客群相近。",
+      "signals": [],
+      "firstSeen": "2026-07-05",
+      "lastSeen": "2026-07-05",
+      "website": "https://www.csc.com.tw"
+    },
+    {
+      "id": "台北醫學大學附設醫院",
+      "company": "台北醫學大學附設醫院",
+      "industry": "醫療",
+      "isCoreIndustry": true,
+      "brief": "台北醫學大學附設醫院為台灣知名醫學中心，擁有超過3000名員工，提供全方位醫療服務。",
+      "whyNow": "該醫院正在進行數位轉型，提升病歷管理與排程系統的效率，面臨醫療人力短缺的挑戰，亟需自動化解決方案。",
+      "products": [
+        {
+          "name": "Azure OpenAI Service",
+          "use": "用於病歷摘要自動化，提升醫療人員的工作效率。"
+        },
+        {
+          "name": "Power Platform",
+          "use": "用於行政流程自動化，減少人為錯誤與時間浪費。"
+        }
+      ],
+      "approach": [
+        "對口單位/職稱：資訊處長、數位轉型專案負責人",
+        "首次接觸的具體方式：邀請參加數位轉型研討會",
+        "建議 Demo/POC 的具體題目：病歷摘要自動化的實作範例"
+      ],
+      "origin": "seed",
+      "score": 95,
+      "scoreReason": "醫療行業面臨數位轉型需求，且具備相對明確的預算與需求。",
+      "signals": [],
+      "firstSeen": "2026-07-05",
+      "lastSeen": "2026-07-05",
+      "website": "https://www.tmu.edu.tw/"
     },
     {
       "id": "大立光電-大立光-",
@@ -640,36 +640,6 @@
       "website": "https://www.largan.com.tw"
     },
     {
-      "id": "台新金控",
-      "company": "台新金控",
-      "industry": "金融",
-      "isCoreIndustry": true,
-      "brief": "台新金控是台灣主要的金融控股公司，提供多元化的金融服務。",
-      "whyNow": "台新金控正積極推動數位轉型，AI技術能協助提升客戶服務及內部運作效率，應對市場競爭壓力。",
-      "products": [
-        {
-          "name": "Power Platform",
-          "use": "用於自動化內部流程"
-        },
-        {
-          "name": "Azure AI Search",
-          "use": "用於提升客戶查詢效率"
-        }
-      ],
-      "approach": [
-        "對口單位/職稱：數位轉型部門經理",
-        "首次接觸的具體方式：數位轉型工作坊邀請",
-        "建議 Demo/POC 的具體題目：智能客服系統"
-      ],
-      "origin": "seed",
-      "score": 94,
-      "scoreReason": "台新金控對AI導入的需求明確，且有充足的預算支持相關計畫。",
-      "signals": [],
-      "firstSeen": "2026-07-05",
-      "lastSeen": "2026-07-05",
-      "website": "https://www.taishinbank.com.tw"
-    },
-    {
       "id": "台達電子工業-台達電-",
       "company": "台達電子工業股份有限公司 (台達電)",
       "industry": "製造",
@@ -698,6 +668,36 @@
       "firstSeen": "2026-07-05",
       "lastSeen": "2026-07-05",
       "website": "https://www.delta.com.tw"
+    },
+    {
+      "id": "台新金控",
+      "company": "台新金控",
+      "industry": "金融",
+      "isCoreIndustry": true,
+      "brief": "台新金控是台灣主要的金融控股公司，提供多元化的金融服務。",
+      "whyNow": "台新金控正積極推動數位轉型，AI技術能協助提升客戶服務及內部運作效率，應對市場競爭壓力。",
+      "products": [
+        {
+          "name": "Power Platform",
+          "use": "用於自動化內部流程"
+        },
+        {
+          "name": "Azure AI Search",
+          "use": "用於提升客戶查詢效率"
+        }
+      ],
+      "approach": [
+        "對口單位/職稱：數位轉型部門經理",
+        "首次接觸的具體方式：數位轉型工作坊邀請",
+        "建議 Demo/POC 的具體題目：智能客服系統"
+      ],
+      "origin": "seed",
+      "score": 94,
+      "scoreReason": "台新金控對AI導入的需求明確，且有充足的預算支持相關計畫。",
+      "signals": [],
+      "firstSeen": "2026-07-05",
+      "lastSeen": "2026-07-05",
+      "website": "https://www.taishinbank.com.tw"
     },
     {
       "id": "國光生技",
@@ -870,38 +870,45 @@
       "website": "https://www.chianchung.com.tw"
     },
     {
-      "id": "台灣拜耳",
-      "company": "台灣拜耳",
-      "industry": "醫療",
+      "id": "晶碩",
+      "company": "晶碩",
+      "industry": "製造",
       "isCoreIndustry": true,
-      "brief": "台灣拜耳是全球知名藥廠拜耳（Bayer）在台分公司，專注於藥品、醫療保健產品及農業科學，致力於創新和數位化轉型。",
-      "whyNow": "拜耳近期積極推動數位化轉型，並公開表示對 AI 技術的興趣，可利用 AI 提升藥物研發效率及內部流程自動化，進一步優化供應鏈管理。",
+      "brief": "晶碩是一家專注於隱形眼鏡生產的公司，受惠於海外市場需求及矽水膠產品成長，6月營收創單月次高。",
+      "whyNow": "晶碩業務受海外市場需求帶動，矽水膠產品成長顯示其擴張潛力。導入AI技術可提升供應鏈管理效率及市場分析能力，支援其業務擴張。",
       "products": [
         {
-          "name": "Azure OpenAI Service",
-          "use": "輔助藥物研發數據分析"
-        },
-        {
           "name": "Power BI",
-          "use": "藥品銷售數據的可視化分析"
+          "use": "用於市場需求分析與銷售數據可視化，支援全球市場策略。"
         },
         {
-          "name": "M365 Copilot",
-          "use": "內部行政流程自動化"
+          "name": "Azure OpenAI Service",
+          "use": "用於供應鏈預測模型，提升原料採購與生產排程效率。"
+        },
+        {
+          "name": "Copilot Studio",
+          "use": "用於內部流程自動化，減少重複性工作並提升效率。"
         }
       ],
       "approach": [
-        "對口單位/職稱：數位轉型部門或資訊長",
-        "首次接觸方式：邀請參加專為藥廠設計的 AI 解決方案工作坊",
-        "Demo/POC 題目：利用 Power BI 進行銷售數據分析的實際案例展示"
+        "對口單位：營運管理部門或供應鏈管理部門主管。",
+        "首次接觸方式：提供免費的供應鏈AI應用健檢工作坊，或邀請參與製造業AI應用研討會。",
+        "建議Demo/POC題目：供應鏈預測與優化模型，或市場需求分析平台。"
       ],
-      "origin": "seed",
+      "origin": "news",
       "score": 90,
-      "scoreReason": "台灣拜耳在數位化轉型方面積極投入，且藥廠對數據分析與管理的需求明顯，與現有解決方案契合度高。",
-      "signals": [],
+      "scoreReason": "晶碩的業務擴張潛力與供應鏈需求明確，且與公司現有製造業客戶相近，適合導入相關AI解決方案。",
+      "signals": [
+        {
+          "date": "2026-07-07",
+          "type": "擴張",
+          "text": "隱形眼鏡廠晶碩6月營收創單月次高，受惠於海外市場需求及矽水膠產品成長，顯示其業務擴張潛力，可能需要AI技術提升供應鏈管理與市場分析能力。",
+          "source": "中央社財經",
+          "url": "https://www.cna.com.tw/news/afe/202607060331.aspx"
+        }
+      ],
       "firstSeen": "2026-07-07",
-      "lastSeen": "2026-07-07",
-      "website": "https://www.bayer.com.tw/"
+      "lastSeen": "2026-07-07"
     },
     {
       "id": "望隼",
@@ -945,45 +952,72 @@
       "lastSeen": "2026-07-07"
     },
     {
-      "id": "晶碩",
-      "company": "晶碩",
-      "industry": "製造",
+      "id": "台灣拜耳",
+      "company": "台灣拜耳",
+      "industry": "醫療",
       "isCoreIndustry": true,
-      "brief": "晶碩是一家專注於隱形眼鏡生產的公司，受惠於海外市場需求及矽水膠產品成長，6月營收創單月次高。",
-      "whyNow": "晶碩業務受海外市場需求帶動，矽水膠產品成長顯示其擴張潛力。導入AI技術可提升供應鏈管理效率及市場分析能力，支援其業務擴張。",
+      "brief": "台灣拜耳是全球知名藥廠拜耳（Bayer）在台分公司，專注於藥品、醫療保健產品及農業科學，致力於創新和數位化轉型。",
+      "whyNow": "拜耳近期積極推動數位化轉型，並公開表示對 AI 技術的興趣，可利用 AI 提升藥物研發效率及內部流程自動化，進一步優化供應鏈管理。",
       "products": [
         {
-          "name": "Power BI",
-          "use": "用於市場需求分析與銷售數據可視化，支援全球市場策略。"
-        },
-        {
           "name": "Azure OpenAI Service",
-          "use": "用於供應鏈預測模型，提升原料採購與生產排程效率。"
+          "use": "輔助藥物研發數據分析"
         },
         {
-          "name": "Copilot Studio",
-          "use": "用於內部流程自動化，減少重複性工作並提升效率。"
+          "name": "Power BI",
+          "use": "藥品銷售數據的可視化分析"
+        },
+        {
+          "name": "M365 Copilot",
+          "use": "內部行政流程自動化"
         }
       ],
       "approach": [
-        "對口單位：營運管理部門或供應鏈管理部門主管。",
-        "首次接觸方式：提供免費的供應鏈AI應用健檢工作坊，或邀請參與製造業AI應用研討會。",
-        "建議Demo/POC題目：供應鏈預測與優化模型，或市場需求分析平台。"
+        "對口單位/職稱：數位轉型部門或資訊長",
+        "首次接觸方式：邀請參加專為藥廠設計的 AI 解決方案工作坊",
+        "Demo/POC 題目：利用 Power BI 進行銷售數據分析的實際案例展示"
       ],
-      "origin": "news",
+      "origin": "seed",
       "score": 90,
-      "scoreReason": "晶碩的業務擴張潛力與供應鏈需求明確，且與公司現有製造業客戶相近，適合導入相關AI解決方案。",
-      "signals": [
+      "scoreReason": "台灣拜耳在數位化轉型方面積極投入，且藥廠對數據分析與管理的需求明顯，與現有解決方案契合度高。",
+      "signals": [],
+      "firstSeen": "2026-07-07",
+      "lastSeen": "2026-07-07",
+      "website": "https://www.bayer.com.tw/"
+    },
+    {
+      "id": "台灣銀行",
+      "company": "台灣銀行",
+      "industry": "金融",
+      "isCoreIndustry": true,
+      "brief": "台灣銀行（2801）是台灣歷史最悠久的銀行之一，提供全面的金融服務，擁有超過200家分行，員工數量接近8000人。",
+      "whyNow": "在法遵及數位轉型的壓力下，台灣銀行需要透過AI技術強化反洗錢及客戶身份驗證(KYC)的效率。",
+      "products": [
         {
-          "date": "2026-07-07",
-          "type": "擴張",
-          "text": "隱形眼鏡廠晶碩6月營收創單月次高，受惠於海外市場需求及矽水膠產品成長，顯示其業務擴張潛力，可能需要AI技術提升供應鏈管理與市場分析能力。",
-          "source": "中央社財經",
-          "url": "https://www.cna.com.tw/news/afe/202607060331.aspx"
+          "name": "Azure AI Search",
+          "use": "用於提升客戶查詢及服務的效率"
+        },
+        {
+          "name": "Power Platform",
+          "use": "用於自動化內部流程，提升工作效率"
+        },
+        {
+          "name": "M365 Copilot",
+          "use": "用於改善文書處理和內部溝通"
         }
       ],
-      "firstSeen": "2026-07-07",
-      "lastSeen": "2026-07-07"
+      "approach": [
+        "對口單位/職稱：法遵部門經理或資訊部門負責人",
+        "首次接觸的具體方式：邀請參加AI應用研討會",
+        "建議 Demo/POC 的具體題目：AI在KYC流程中的應用"
+      ],
+      "origin": "seed",
+      "score": 90,
+      "scoreReason": "台灣銀行面對法遵壓力，對AI解決方案需求明確。",
+      "signals": [],
+      "firstSeen": "2026-07-06",
+      "lastSeen": "2026-07-06",
+      "website": "https://www.bankchb.com"
     },
     {
       "id": "愛普",
@@ -1024,218 +1058,34 @@
       "website": "https://www.eip.com.tw"
     },
     {
-      "id": "台灣銀行",
-      "company": "台灣銀行",
-      "industry": "金融",
-      "isCoreIndustry": true,
-      "brief": "台灣銀行（2801）是台灣歷史最悠久的銀行之一，提供全面的金融服務，擁有超過200家分行，員工數量接近8000人。",
-      "whyNow": "在法遵及數位轉型的壓力下，台灣銀行需要透過AI技術強化反洗錢及客戶身份驗證(KYC)的效率。",
-      "products": [
-        {
-          "name": "Azure AI Search",
-          "use": "用於提升客戶查詢及服務的效率"
-        },
-        {
-          "name": "Power Platform",
-          "use": "用於自動化內部流程，提升工作效率"
-        },
-        {
-          "name": "M365 Copilot",
-          "use": "用於改善文書處理和內部溝通"
-        }
-      ],
-      "approach": [
-        "對口單位/職稱：法遵部門經理或資訊部門負責人",
-        "首次接觸的具體方式：邀請參加AI應用研討會",
-        "建議 Demo/POC 的具體題目：AI在KYC流程中的應用"
-      ],
-      "origin": "seed",
-      "score": 90,
-      "scoreReason": "台灣銀行面對法遵壓力，對AI解決方案需求明確。",
-      "signals": [],
-      "firstSeen": "2026-07-06",
-      "lastSeen": "2026-07-06",
-      "website": "https://www.bankchb.com"
-    },
-    {
-      "id": "衛福部桃園醫院",
-      "company": "衛福部桃園醫院",
-      "industry": "醫療",
-      "isCoreIndustry": true,
-      "brief": "衛福部桃園醫院為桃園地區的主要醫療機構，員工約1500人，提供綜合性醫療服務。",
-      "whyNow": "該醫院正在推動智慧醫療，提升病歷管理與排程系統的效率，面臨人力資源不足的挑戰。",
-      "products": [
-        {
-          "name": "Azure AI Search",
-          "use": "用於病歷資料的快速檢索，提升醫療效率。"
-        },
-        {
-          "name": "Power Platform",
-          "use": "用於行政流程自動化，減少人為錯誤與時間浪費。"
-        }
-      ],
-      "approach": [
-        "對口單位/職稱：資訊部門、行政部門",
-        "首次接觸的具體方式：免費健檢工作坊",
-        "建議 Demo/POC 的具體題目：病歷資料檢索系統的自動化示範"
-      ],
-      "origin": "seed",
-      "score": 90,
-      "scoreReason": "醫療機構對數位化轉型需求強烈，且具備相對明確的預算。",
-      "signals": [],
-      "firstSeen": "2026-07-05",
-      "lastSeen": "2026-07-05",
-      "website": "https://www.tyh.gov.tw/"
-    },
-    {
-      "id": "高雄醫學大學附設醫院",
-      "company": "高雄醫學大學附設醫院",
-      "industry": "醫療",
-      "isCoreIndustry": true,
-      "brief": "高雄醫學大學附設醫院是南部重要的醫學中心，擁有超過4000名員工，提供多元化的醫療服務。",
-      "whyNow": "該醫院在推動數位醫療服務，尤其在病歷管理與排程上需要提升效率，並應對人力資源不足的挑戰。",
-      "products": [
-        {
-          "name": "M365 Copilot",
-          "use": "用於提升醫療行政人員的工作效率，協助文件處理與排程管理。"
-        },
-        {
-          "name": "Power BI",
-          "use": "用於分析病患數據與醫療服務效率，幫助決策。"
-        }
-      ],
-      "approach": [
-        "對口單位/職稱：數位轉型部門、行政部門",
-        "首次接觸的具體方式：免費健檢工作坊",
-        "建議 Demo/POC 的具體題目：病患數據分析報告的自動化生成"
-      ],
-      "origin": "seed",
-      "score": 90,
-      "scoreReason": "醫療行業對數位化需求強烈，且已有相關預算規劃。",
-      "signals": [],
-      "firstSeen": "2026-07-05",
-      "lastSeen": "2026-07-05",
-      "website": "https://www.kmuh.org.tw/"
-    },
-    {
-      "id": "第一金控",
-      "company": "第一金控",
-      "industry": "金融",
-      "isCoreIndustry": true,
-      "brief": "第一金控是一家大型金融控股公司，旗下擁有多家銀行及保險公司，員工數超過5000人。",
-      "whyNow": "隨著金融科技的快速發展，第一金控面臨著數位轉型的壓力，特別是在提升客戶服務效率及風險管理方面。AI 技術可以幫助他們優化客戶互動及風險評估流程，提升競爭力。",
-      "products": [
-        {
-          "name": "Azure OpenAI Service",
-          "use": "用於客戶服務自動化及智能客服系統的建置"
-        },
-        {
-          "name": "Power BI",
-          "use": "用於金融數據分析及報表生成，提升決策效率"
-        }
-      ],
-      "approach": [
-        "對口單位/職稱：數位轉型部門、資訊處",
-        "首次接觸的具體方式：邀請參加金融科技研討會",
-        "建議 Demo/POC 的具體題目：智能客服系統的建置與數據分析報告的自動化生成"
-      ],
-      "origin": "seed",
-      "score": 90,
-      "scoreReason": "第一金控在數位轉型上有明確需求，且擁有相對穩定的預算支持數位科技的導入。",
-      "signals": [],
-      "firstSeen": "2026-07-05",
-      "lastSeen": "2026-07-05",
-      "website": "https://www.first.com.tw"
-    },
-    {
-      "id": "台灣大塚製藥",
-      "company": "台灣大塚製藥",
-      "industry": "醫療",
-      "isCoreIndustry": true,
-      "brief": "台灣大塚製藥是日本大塚製藥的台灣分公司，專注於醫藥品、營養保健品的研發與銷售，年營收超過 50 億新台幣。",
-      "whyNow": "製藥業對於藥品研發的效率與合規需求日益提高，台灣大塚製藥作為國際製藥企業在台分支，有潛在需求導入 AI 技術進行藥物研發與市場分析。",
-      "products": [
-        {
-          "name": "Azure ML",
-          "use": "用於藥物研發過程中的數據分析與模型訓練"
-        },
-        {
-          "name": "Power BI",
-          "use": "用於市場數據分析與銷售預測"
-        }
-      ],
-      "approach": [
-        "(1) 對口單位：研發部門/資訊科技部",
-        "(2) 首次接觸方式：提供免費的 AI 技術應用健檢服務",
-        "(3) 建議 Demo/POC 題目：利用 Azure ML 進行藥物研發數據建模與預測"
-      ],
-      "origin": "seed",
-      "score": 90,
-      "scoreReason": "製藥業對數據分析需求高，且台灣大塚製藥有國際背景，對新技術的接受度較高。",
-      "signals": [],
-      "firstSeen": "2026-07-05",
-      "lastSeen": "2026-07-05",
-      "website": "https://www.otsuka.com.tw"
-    },
-    {
-      "id": "台灣積體電路製造-台積電-",
-      "company": "台灣積體電路製造股份有限公司 (台積電)",
+      "id": "台灣塑膠工業-台塑-",
+      "company": "台灣塑膠工業股份有限公司 (台塑)",
       "industry": "製造",
       "isCoreIndustry": true,
-      "brief": "台積電是全球最大的晶圓代工廠，市值超過 5000 億美元，雇用超過 50,000 名員工。",
-      "whyNow": "台積電在製造流程中需要大量的數據分析與製程優化，AI 技術可進一步提升其生產效率與良率，特別是在先進製程的應用中。",
+      "brief": "台塑為台灣最大的塑膠製造商，員工數超過2萬人，年營收約新台幣6000億元。",
+      "whyNow": "隨著環保法規日益嚴格，台塑面臨生產流程的法遵壓力，急需導入AI技術以提升排程效率和降低生產成本。",
       "products": [
         {
-          "name": "Azure ML",
-          "use": "用於製程數據分析與良率預測"
+          "name": "Power BI",
+          "use": "用於生產數據的可視化分析及報告"
         },
         {
-          "name": "Power BI",
-          "use": "即時監控生產數據，提供決策支持"
+          "name": "Azure AI Search",
+          "use": "用於優化內部知識管理系統"
         }
       ],
       "approach": [
-        "(1) 對口單位：製程技術開發部門/資訊科技部",
-        "(2) 首次接觸方式：提供免費的製程數據分析工作坊",
-        "(3) 建議 Demo/POC 題目：利用 Azure ML 模型進行製程良率的預測與優化"
+        "對口單位/職稱：資訊處長",
+        "首次接觸的具體方式：提供免費健檢工作坊",
+        "建議 Demo/POC 的具體題目：生產數據分析儀表板設計"
       ],
       "origin": "seed",
       "score": 90,
-      "scoreReason": "台積電對數據分析與 AI 技術的需求極高，且預算充足，與現有客群有一定相似性。",
+      "scoreReason": "台塑在製造業擁有龐大的數據資源，且對數位轉型有明確需求。",
       "signals": [],
       "firstSeen": "2026-07-05",
       "lastSeen": "2026-07-05",
-      "website": "https://www.tsmc.com"
-    },
-    {
-      "id": "台灣東洋藥品",
-      "company": "台灣東洋藥品",
-      "industry": "醫療",
-      "isCoreIndustry": true,
-      "brief": "台灣東洋藥品是一家專注於藥品製造與銷售的上市公司，年營收超過 100 億新台幣，產品涵蓋抗癌藥物、抗生素等。",
-      "whyNow": "藥品製造業面臨嚴格的法規要求與高研發成本壓力，台灣東洋藥品可透過 AI 技術提升合規效率與藥品研發速度。",
-      "products": [
-        {
-          "name": "Azure ML",
-          "use": "用於藥物研發過程中的數據建模與模擬實驗"
-        },
-        {
-          "name": "Power BI",
-          "use": "用於市場需求分析與銷售數據洞察"
-        }
-      ],
-      "approach": [
-        "(1) 對口單位：研發部門/法規事務部門",
-        "(2) 首次接觸方式：邀請參加製藥業 AI 應用研討會",
-        "(3) 建議 Demo/POC 題目：利用 Azure ML 模擬新藥物的效果與市場反應"
-      ],
-      "origin": "seed",
-      "score": 90,
-      "scoreReason": "台灣東洋藥品具有高研發需求，且面臨法規挑戰，AI 技術能有效協助解決痛點。",
-      "signals": [],
-      "firstSeen": "2026-07-05",
-      "lastSeen": "2026-07-05",
-      "website": "https://www.twy.com.tw"
+      "website": "https://www.fpcc.com.tw/"
     },
     {
       "id": "統一超商",
@@ -1268,34 +1118,184 @@
       "website": "https://www.7-11.com.tw"
     },
     {
-      "id": "台灣塑膠工業-台塑-",
-      "company": "台灣塑膠工業股份有限公司 (台塑)",
-      "industry": "製造",
+      "id": "台灣東洋藥品",
+      "company": "台灣東洋藥品",
+      "industry": "醫療",
       "isCoreIndustry": true,
-      "brief": "台塑為台灣最大的塑膠製造商，員工數超過2萬人，年營收約新台幣6000億元。",
-      "whyNow": "隨著環保法規日益嚴格，台塑面臨生產流程的法遵壓力，急需導入AI技術以提升排程效率和降低生產成本。",
+      "brief": "台灣東洋藥品是一家專注於藥品製造與銷售的上市公司，年營收超過 100 億新台幣，產品涵蓋抗癌藥物、抗生素等。",
+      "whyNow": "藥品製造業面臨嚴格的法規要求與高研發成本壓力，台灣東洋藥品可透過 AI 技術提升合規效率與藥品研發速度。",
       "products": [
         {
-          "name": "Power BI",
-          "use": "用於生產數據的可視化分析及報告"
+          "name": "Azure ML",
+          "use": "用於藥物研發過程中的數據建模與模擬實驗"
         },
         {
-          "name": "Azure AI Search",
-          "use": "用於優化內部知識管理系統"
+          "name": "Power BI",
+          "use": "用於市場需求分析與銷售數據洞察"
         }
       ],
       "approach": [
-        "對口單位/職稱：資訊處長",
-        "首次接觸的具體方式：提供免費健檢工作坊",
-        "建議 Demo/POC 的具體題目：生產數據分析儀表板設計"
+        "(1) 對口單位：研發部門/法規事務部門",
+        "(2) 首次接觸方式：邀請參加製藥業 AI 應用研討會",
+        "(3) 建議 Demo/POC 題目：利用 Azure ML 模擬新藥物的效果與市場反應"
       ],
       "origin": "seed",
       "score": 90,
-      "scoreReason": "台塑在製造業擁有龐大的數據資源，且對數位轉型有明確需求。",
+      "scoreReason": "台灣東洋藥品具有高研發需求，且面臨法規挑戰，AI 技術能有效協助解決痛點。",
       "signals": [],
       "firstSeen": "2026-07-05",
       "lastSeen": "2026-07-05",
-      "website": "https://www.fpcc.com.tw/"
+      "website": "https://www.twy.com.tw"
+    },
+    {
+      "id": "台灣積體電路製造-台積電-",
+      "company": "台灣積體電路製造股份有限公司 (台積電)",
+      "industry": "製造",
+      "isCoreIndustry": true,
+      "brief": "台積電是全球最大的晶圓代工廠，市值超過 5000 億美元，雇用超過 50,000 名員工。",
+      "whyNow": "台積電在製造流程中需要大量的數據分析與製程優化，AI 技術可進一步提升其生產效率與良率，特別是在先進製程的應用中。",
+      "products": [
+        {
+          "name": "Azure ML",
+          "use": "用於製程數據分析與良率預測"
+        },
+        {
+          "name": "Power BI",
+          "use": "即時監控生產數據，提供決策支持"
+        }
+      ],
+      "approach": [
+        "(1) 對口單位：製程技術開發部門/資訊科技部",
+        "(2) 首次接觸方式：提供免費的製程數據分析工作坊",
+        "(3) 建議 Demo/POC 題目：利用 Azure ML 模型進行製程良率的預測與優化"
+      ],
+      "origin": "seed",
+      "score": 90,
+      "scoreReason": "台積電對數據分析與 AI 技術的需求極高，且預算充足，與現有客群有一定相似性。",
+      "signals": [],
+      "firstSeen": "2026-07-05",
+      "lastSeen": "2026-07-05",
+      "website": "https://www.tsmc.com"
+    },
+    {
+      "id": "台灣大塚製藥",
+      "company": "台灣大塚製藥",
+      "industry": "醫療",
+      "isCoreIndustry": true,
+      "brief": "台灣大塚製藥是日本大塚製藥的台灣分公司，專注於醫藥品、營養保健品的研發與銷售，年營收超過 50 億新台幣。",
+      "whyNow": "製藥業對於藥品研發的效率與合規需求日益提高，台灣大塚製藥作為國際製藥企業在台分支，有潛在需求導入 AI 技術進行藥物研發與市場分析。",
+      "products": [
+        {
+          "name": "Azure ML",
+          "use": "用於藥物研發過程中的數據分析與模型訓練"
+        },
+        {
+          "name": "Power BI",
+          "use": "用於市場數據分析與銷售預測"
+        }
+      ],
+      "approach": [
+        "(1) 對口單位：研發部門/資訊科技部",
+        "(2) 首次接觸方式：提供免費的 AI 技術應用健檢服務",
+        "(3) 建議 Demo/POC 題目：利用 Azure ML 進行藥物研發數據建模與預測"
+      ],
+      "origin": "seed",
+      "score": 90,
+      "scoreReason": "製藥業對數據分析需求高，且台灣大塚製藥有國際背景，對新技術的接受度較高。",
+      "signals": [],
+      "firstSeen": "2026-07-05",
+      "lastSeen": "2026-07-05",
+      "website": "https://www.otsuka.com.tw"
+    },
+    {
+      "id": "第一金控",
+      "company": "第一金控",
+      "industry": "金融",
+      "isCoreIndustry": true,
+      "brief": "第一金控是一家大型金融控股公司，旗下擁有多家銀行及保險公司，員工數超過5000人。",
+      "whyNow": "隨著金融科技的快速發展，第一金控面臨著數位轉型的壓力，特別是在提升客戶服務效率及風險管理方面。AI 技術可以幫助他們優化客戶互動及風險評估流程，提升競爭力。",
+      "products": [
+        {
+          "name": "Azure OpenAI Service",
+          "use": "用於客戶服務自動化及智能客服系統的建置"
+        },
+        {
+          "name": "Power BI",
+          "use": "用於金融數據分析及報表生成，提升決策效率"
+        }
+      ],
+      "approach": [
+        "對口單位/職稱：數位轉型部門、資訊處",
+        "首次接觸的具體方式：邀請參加金融科技研討會",
+        "建議 Demo/POC 的具體題目：智能客服系統的建置與數據分析報告的自動化生成"
+      ],
+      "origin": "seed",
+      "score": 90,
+      "scoreReason": "第一金控在數位轉型上有明確需求，且擁有相對穩定的預算支持數位科技的導入。",
+      "signals": [],
+      "firstSeen": "2026-07-05",
+      "lastSeen": "2026-07-05",
+      "website": "https://www.first.com.tw"
+    },
+    {
+      "id": "高雄醫學大學附設醫院",
+      "company": "高雄醫學大學附設醫院",
+      "industry": "醫療",
+      "isCoreIndustry": true,
+      "brief": "高雄醫學大學附設醫院是南部重要的醫學中心，擁有超過4000名員工，提供多元化的醫療服務。",
+      "whyNow": "該醫院在推動數位醫療服務，尤其在病歷管理與排程上需要提升效率，並應對人力資源不足的挑戰。",
+      "products": [
+        {
+          "name": "M365 Copilot",
+          "use": "用於提升醫療行政人員的工作效率，協助文件處理與排程管理。"
+        },
+        {
+          "name": "Power BI",
+          "use": "用於分析病患數據與醫療服務效率，幫助決策。"
+        }
+      ],
+      "approach": [
+        "對口單位/職稱：數位轉型部門、行政部門",
+        "首次接觸的具體方式：免費健檢工作坊",
+        "建議 Demo/POC 的具體題目：病患數據分析報告的自動化生成"
+      ],
+      "origin": "seed",
+      "score": 90,
+      "scoreReason": "醫療行業對數位化需求強烈，且已有相關預算規劃。",
+      "signals": [],
+      "firstSeen": "2026-07-05",
+      "lastSeen": "2026-07-05",
+      "website": "https://www.kmuh.org.tw/"
+    },
+    {
+      "id": "衛福部桃園醫院",
+      "company": "衛福部桃園醫院",
+      "industry": "醫療",
+      "isCoreIndustry": true,
+      "brief": "衛福部桃園醫院為桃園地區的主要醫療機構，員工約1500人，提供綜合性醫療服務。",
+      "whyNow": "該醫院正在推動智慧醫療，提升病歷管理與排程系統的效率，面臨人力資源不足的挑戰。",
+      "products": [
+        {
+          "name": "Azure AI Search",
+          "use": "用於病歷資料的快速檢索，提升醫療效率。"
+        },
+        {
+          "name": "Power Platform",
+          "use": "用於行政流程自動化，減少人為錯誤與時間浪費。"
+        }
+      ],
+      "approach": [
+        "對口單位/職稱：資訊部門、行政部門",
+        "首次接觸的具體方式：免費健檢工作坊",
+        "建議 Demo/POC 的具體題目：病歷資料檢索系統的自動化示範"
+      ],
+      "origin": "seed",
+      "score": 90,
+      "scoreReason": "醫療機構對數位化轉型需求強烈，且具備相對明確的預算。",
+      "signals": [],
+      "firstSeen": "2026-07-05",
+      "lastSeen": "2026-07-05",
+      "website": "https://www.tyh.gov.tw/"
     },
     {
       "id": "合作金庫",
@@ -1558,64 +1558,34 @@
       "website": "https://www.post.gov.tw"
     },
     {
-      "id": "全家便利商店",
-      "company": "全家便利商店",
-      "industry": "零售電商",
-      "isCoreIndustry": false,
-      "brief": "全家便利商店是台灣第二大連鎖便利商店品牌，擁有超過4,000家門市，年營收超過千億元。",
-      "whyNow": "全家積極推動數位化轉型，已推出行動支付、會員APP等服務，並且在智慧化門市運營上有需求，例如供應鏈效率提升和顧客服務優化。",
+      "id": "台灣金屬製品-台金-",
+      "company": "台灣金屬製品股份有限公司 (台金)",
+      "industry": "製造",
+      "isCoreIndustry": true,
+      "brief": "台金專注於金屬加工及製造，擁有超過3000名員工，年營收約新台幣150億元。",
+      "whyNow": "面對人力資源短缺及生產效率問題，台金亟需透過AI技術改善排程及提升生產流程的自動化程度。",
       "products": [
         {
-          "name": "Azure OpenAI Service",
-          "use": "用於客服系統，提升顧客問題回覆效率"
+          "name": "M365 Copilot",
+          "use": "用於提升內部文件管理及知識分享效率"
         },
         {
-          "name": "Power BI",
-          "use": "用於分析門市銷售數據，優化商品配置"
+          "name": "Power Platform",
+          "use": "用於自動化日常業務流程"
         }
       ],
       "approach": [
-        "(1) 對口單位：資訊部、行銷部",
-        "(2) 首次接觸方式：邀請參加零售業數位化專題研討會",
-        "(3) 建議 Demo/POC 題目：基於銷售數據的智慧商品推薦系統"
+        "對口單位/職稱：生產部門經理",
+        "首次接觸的具體方式：舉辦數位轉型研討會",
+        "建議 Demo/POC 的具體題目：生產排程自動化解決方案"
       ],
       "origin": "seed",
       "score": 85,
-      "scoreReason": "全家在數位化上已有基礎，且有明確的需求場景，預算能見度高。",
+      "scoreReason": "台金在製造業中面臨明確的排程及人力資源挑戰，具備導入AI的潛力。",
       "signals": [],
       "firstSeen": "2026-07-05",
       "lastSeen": "2026-07-05",
-      "website": "https://www.family.com.tw"
-    },
-    {
-      "id": "王品",
-      "company": "王品集團",
-      "industry": "餐飲觀光",
-      "isCoreIndustry": false,
-      "brief": "王品集團是台灣知名餐飲集團，旗下擁有超過20個品牌及百家餐廳，年營收逾百億元。",
-      "whyNow": "王品集團面臨人力短缺及顧客體驗提升的需求，已經開始導入數位化技術，未來可進一步應用AI進行菜單設計、顧客分析及服務優化。",
-      "products": [
-        {
-          "name": "Copilot Studio",
-          "use": "用於智慧菜單設計及顧客行為分析"
-        },
-        {
-          "name": "Power BI",
-          "use": "用於分析顧客滿意度及餐廳營運效率"
-        }
-      ],
-      "approach": [
-        "(1) 對口單位：行銷部、資訊部",
-        "(2) 首次接觸方式：邀請參加餐飲業數位化專題研討會",
-        "(3) 建議 Demo/POC 題目：基於顧客偏好的智慧菜單設計工具"
-      ],
-      "origin": "seed",
-      "score": 85,
-      "scoreReason": "王品集團的規模及數位化需求明確，且具備高預算能見度，與現有客群相近。",
-      "signals": [],
-      "firstSeen": "2026-07-05",
-      "lastSeen": "2026-07-05",
-      "website": "https://www.wanggroup.com.tw"
+      "website": "https://www.taiwanmetal.com.tw/"
     },
     {
       "id": "台水",
@@ -1663,34 +1633,64 @@
       "website": "https://www.tw-waters.gov.tw/"
     },
     {
-      "id": "台灣金屬製品-台金-",
-      "company": "台灣金屬製品股份有限公司 (台金)",
-      "industry": "製造",
-      "isCoreIndustry": true,
-      "brief": "台金專注於金屬加工及製造，擁有超過3000名員工，年營收約新台幣150億元。",
-      "whyNow": "面對人力資源短缺及生產效率問題，台金亟需透過AI技術改善排程及提升生產流程的自動化程度。",
+      "id": "王品",
+      "company": "王品集團",
+      "industry": "餐飲觀光",
+      "isCoreIndustry": false,
+      "brief": "王品集團是台灣知名餐飲集團，旗下擁有超過20個品牌及百家餐廳，年營收逾百億元。",
+      "whyNow": "王品集團面臨人力短缺及顧客體驗提升的需求，已經開始導入數位化技術，未來可進一步應用AI進行菜單設計、顧客分析及服務優化。",
       "products": [
         {
-          "name": "M365 Copilot",
-          "use": "用於提升內部文件管理及知識分享效率"
+          "name": "Copilot Studio",
+          "use": "用於智慧菜單設計及顧客行為分析"
         },
         {
-          "name": "Power Platform",
-          "use": "用於自動化日常業務流程"
+          "name": "Power BI",
+          "use": "用於分析顧客滿意度及餐廳營運效率"
         }
       ],
       "approach": [
-        "對口單位/職稱：生產部門經理",
-        "首次接觸的具體方式：舉辦數位轉型研討會",
-        "建議 Demo/POC 的具體題目：生產排程自動化解決方案"
+        "(1) 對口單位：行銷部、資訊部",
+        "(2) 首次接觸方式：邀請參加餐飲業數位化專題研討會",
+        "(3) 建議 Demo/POC 題目：基於顧客偏好的智慧菜單設計工具"
       ],
       "origin": "seed",
       "score": 85,
-      "scoreReason": "台金在製造業中面臨明確的排程及人力資源挑戰，具備導入AI的潛力。",
+      "scoreReason": "王品集團的規模及數位化需求明確，且具備高預算能見度，與現有客群相近。",
       "signals": [],
       "firstSeen": "2026-07-05",
       "lastSeen": "2026-07-05",
-      "website": "https://www.taiwanmetal.com.tw/"
+      "website": "https://www.wanggroup.com.tw"
+    },
+    {
+      "id": "全家便利商店",
+      "company": "全家便利商店",
+      "industry": "零售電商",
+      "isCoreIndustry": false,
+      "brief": "全家便利商店是台灣第二大連鎖便利商店品牌，擁有超過4,000家門市，年營收超過千億元。",
+      "whyNow": "全家積極推動數位化轉型，已推出行動支付、會員APP等服務，並且在智慧化門市運營上有需求，例如供應鏈效率提升和顧客服務優化。",
+      "products": [
+        {
+          "name": "Azure OpenAI Service",
+          "use": "用於客服系統，提升顧客問題回覆效率"
+        },
+        {
+          "name": "Power BI",
+          "use": "用於分析門市銷售數據，優化商品配置"
+        }
+      ],
+      "approach": [
+        "(1) 對口單位：資訊部、行銷部",
+        "(2) 首次接觸方式：邀請參加零售業數位化專題研討會",
+        "(3) 建議 Demo/POC 題目：基於銷售數據的智慧商品推薦系統"
+      ],
+      "origin": "seed",
+      "score": 85,
+      "scoreReason": "全家在數位化上已有基礎，且有明確的需求場景，預算能見度高。",
+      "signals": [],
+      "firstSeen": "2026-07-05",
+      "lastSeen": "2026-07-05",
+      "website": "https://www.family.com.tw"
     },
     {
       "id": "瑞昱半導體-瑞昱-",
@@ -1881,34 +1881,34 @@
       "website": "https://www.hncb.com.tw"
     },
     {
-      "id": "大潤發",
-      "company": "大潤發",
-      "industry": "零售電商",
+      "id": "雲朗觀光",
+      "company": "雲朗觀光",
+      "industry": "餐飲觀光",
       "isCoreIndustry": false,
-      "brief": "大潤發是台灣大型量販店連鎖品牌，擁有超過20家大型門市，年營收超過500億元。",
-      "whyNow": "大潤發面臨零售業競爭加劇的挑戰，亟需提升線上線下整合能力及供應鏈效率，並進一步優化顧客服務。",
+      "brief": "雲朗觀光是台灣知名的旅遊及飯店集團，旗下擁有多家高端飯店，包括君品酒店及翰品酒店。",
+      "whyNow": "雲朗觀光面臨旅遊業競爭加劇及顧客體驗提升的需求，AI技術可協助其優化訂房系統及顧客服務流程。",
       "products": [
         {
-          "name": "M365 Copilot",
-          "use": "用於內部文件管理及跨部門協作，提升工作效率"
+          "name": "Azure OpenAI Service",
+          "use": "用於客服系統，提供即時回覆及訂房協助"
         },
         {
           "name": "Power BI",
-          "use": "用於分析消費者行為，制定促銷策略"
+          "use": "用於分析旅客偏好及營收數據，制定行銷策略"
         }
       ],
       "approach": [
-        "(1) 對口單位：資訊部、行銷部",
-        "(2) 首次接觸方式：邀請參加零售業大數據應用研討會",
-        "(3) 建議 Demo/POC 題目：基於消費數據的智慧促銷策略設計"
+        "(1) 對口單位：行銷部、資訊部",
+        "(2) 首次接觸方式：邀請參加旅遊業數位化專題研討會",
+        "(3) 建議 Demo/POC 題目：智慧化訂房推薦系統"
       ],
       "origin": "seed",
       "score": 80,
-      "scoreReason": "大潤發的規模及零售業競爭壓力使其具備明確需求，但數位化程度可能低於便利商店品牌。",
+      "scoreReason": "雲朗觀光在高端旅遊市場有明確的需求，但預算能見度可能低於零售業巨頭。",
       "signals": [],
       "firstSeen": "2026-07-05",
       "lastSeen": "2026-07-05",
-      "website": "https://www.rt-mart.com.tw"
+      "website": "https://www.cloudh.com.tw"
     },
     {
       "id": "台灣高鐵",
@@ -1941,34 +1941,34 @@
       "website": "https://www.thsrc.com.tw"
     },
     {
-      "id": "雲朗觀光",
-      "company": "雲朗觀光",
-      "industry": "餐飲觀光",
+      "id": "大潤發",
+      "company": "大潤發",
+      "industry": "零售電商",
       "isCoreIndustry": false,
-      "brief": "雲朗觀光是台灣知名的旅遊及飯店集團，旗下擁有多家高端飯店，包括君品酒店及翰品酒店。",
-      "whyNow": "雲朗觀光面臨旅遊業競爭加劇及顧客體驗提升的需求，AI技術可協助其優化訂房系統及顧客服務流程。",
+      "brief": "大潤發是台灣大型量販店連鎖品牌，擁有超過20家大型門市，年營收超過500億元。",
+      "whyNow": "大潤發面臨零售業競爭加劇的挑戰，亟需提升線上線下整合能力及供應鏈效率，並進一步優化顧客服務。",
       "products": [
         {
-          "name": "Azure OpenAI Service",
-          "use": "用於客服系統，提供即時回覆及訂房協助"
+          "name": "M365 Copilot",
+          "use": "用於內部文件管理及跨部門協作，提升工作效率"
         },
         {
           "name": "Power BI",
-          "use": "用於分析旅客偏好及營收數據，制定行銷策略"
+          "use": "用於分析消費者行為，制定促銷策略"
         }
       ],
       "approach": [
-        "(1) 對口單位：行銷部、資訊部",
-        "(2) 首次接觸方式：邀請參加旅遊業數位化專題研討會",
-        "(3) 建議 Demo/POC 題目：智慧化訂房推薦系統"
+        "(1) 對口單位：資訊部、行銷部",
+        "(2) 首次接觸方式：邀請參加零售業大數據應用研討會",
+        "(3) 建議 Demo/POC 題目：基於消費數據的智慧促銷策略設計"
       ],
       "origin": "seed",
       "score": 80,
-      "scoreReason": "雲朗觀光在高端旅遊市場有明確的需求，但預算能見度可能低於零售業巨頭。",
+      "scoreReason": "大潤發的規模及零售業競爭壓力使其具備明確需求，但數位化程度可能低於便利商店品牌。",
       "signals": [],
       "firstSeen": "2026-07-05",
       "lastSeen": "2026-07-05",
-      "website": "https://www.cloudh.com.tw"
+      "website": "https://www.rt-mart.com.tw"
     },
     {
       "id": "台灣虎航",
@@ -2125,36 +2125,6 @@
       "website": "https://www.asia-excellence.com.tw"
     },
     {
-      "id": "台灣宅配通",
-      "company": "台灣宅配通",
-      "industry": "物流",
-      "isCoreIndustry": false,
-      "brief": "台灣宅配通是台灣知名物流公司，專注於包裹配送及倉儲服務，擁有全台超過300個營運據點。",
-      "whyNow": "物流業面臨人力短缺及配送效率提升的需求，宅配通已在部分流程中導入數位化，未來可進一步應用AI技術優化路線規劃及客服系統。",
-      "products": [
-        {
-          "name": "Azure OpenAI Service",
-          "use": "用於客服系統，提供即時回覆及問題解決"
-        },
-        {
-          "name": "Azure ML",
-          "use": "用於智慧路線規劃，提升物流配送效率"
-        }
-      ],
-      "approach": [
-        "(1) 對口單位：資訊部、物流運營部",
-        "(2) 首次接觸方式：補助案協作，探討AI在物流業的應用",
-        "(3) 建議 Demo/POC 題目：基於歷史配送數據的智慧路線規劃模型"
-      ],
-      "origin": "seed",
-      "score": 75,
-      "scoreReason": "物流業數位化需求明確，但宅配通的預算能見度可能低於零售業巨頭。",
-      "signals": [],
-      "firstSeen": "2026-07-05",
-      "lastSeen": "2026-07-05",
-      "website": "https://www.t-cat.com.tw"
-    },
-    {
       "id": "遠雄",
       "company": "遠雄集團",
       "industry": "營建不動產",
@@ -2183,6 +2153,36 @@
       "firstSeen": "2026-07-05",
       "lastSeen": "2026-07-05",
       "website": "https://www.farglory.com.tw"
+    },
+    {
+      "id": "台灣宅配通",
+      "company": "台灣宅配通",
+      "industry": "物流",
+      "isCoreIndustry": false,
+      "brief": "台灣宅配通是台灣知名物流公司，專注於包裹配送及倉儲服務，擁有全台超過300個營運據點。",
+      "whyNow": "物流業面臨人力短缺及配送效率提升的需求，宅配通已在部分流程中導入數位化，未來可進一步應用AI技術優化路線規劃及客服系統。",
+      "products": [
+        {
+          "name": "Azure OpenAI Service",
+          "use": "用於客服系統，提供即時回覆及問題解決"
+        },
+        {
+          "name": "Azure ML",
+          "use": "用於智慧路線規劃，提升物流配送效率"
+        }
+      ],
+      "approach": [
+        "(1) 對口單位：資訊部、物流運營部",
+        "(2) 首次接觸方式：補助案協作，探討AI在物流業的應用",
+        "(3) 建議 Demo/POC 題目：基於歷史配送數據的智慧路線規劃模型"
+      ],
+      "origin": "seed",
+      "score": 75,
+      "scoreReason": "物流業數位化需求明確，但宅配通的預算能見度可能低於零售業巨頭。",
+      "signals": [],
+      "firstSeen": "2026-07-05",
+      "lastSeen": "2026-07-05",
+      "website": "https://www.t-cat.com.tw"
     },
     {
       "id": "台灣產業經濟研究院",
