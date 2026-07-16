@@ -1,106 +1,126 @@
 {
-  "asOf": "2026-07-16",
+  "asOf": "2026-07-17",
   "source": "商業媒體 RSS + Hacker News + GitHub Models",
   "items": [
     {
       "id": "founder",
       "kind": "創業故事",
-      "title": "Emergent: 從創業到獨角獸的快速崛起",
-      "summary": "Emergent 的創辦人是一位印度工程師，他於 2025 年底創立了這家專注於 AI 驅動的程式碼生成與開發工具的初創公司。創辦人敏銳地洞察到，傳統軟體開發流程的效率瓶頸是工程師手動編寫重複性代碼，於是他將目標瞄準於利用生成式 AI 自動化這一過程。創業初期，團隊專注於開發能夠直接與主流 IDE（如 Visual Studio Code）無縫整合的插件，並迅速獲得了全球開發者社群的青睞。僅一年時間，Emergent 的年化收入已達到 **1.2 億美元**，擁有超過 **20 萬付費用戶**，並在 2026 年完成了 **1.3 億美元的 C 輪融資**，正式成為獨角獸。創辦人堅持專注於核心產品的易用性和開發者體驗，並採取訂閱制商業模式，確保穩定的現金流。這一策略使得公司在短時間內吸引了大量用戶，並實現了快速增長。",
-      "impact": "Emergent 的成功證明了生成式 AI 在傳統編程工作流程中的顛覆性潛力，這對於您作為 Azure OpenAI 的核心合作夥伴具有直接啟發意義。特別是在製造業和金融業的數位轉型中，類似的自動化工具可顯著提升開發效率，並降低人力成本。同時，Emergent 的迅速崛起也顯示出這一領域的市場需求旺盛，可能成為未來投資的關鍵方向。",
-      "action": "立即組織內部團隊研究 Emergent 的插件整合策略，評估是否可在現有 Copilot 解決方案中加入類似功能。並密切關注 Emergent 的後續融資與市場拓展動態，評估其是否為潛在投資標的。"
+      "title": "Nico Varano：從顧客到 CEO，SweatHouz 的擴張動力",
+      "summary": "Nico Varano 的故事始於一次意外的轉折。在成為 SweatHouz 的 CEO 之前，他是一名專業的商業評估師。一次拳擊受傷讓他接觸到 SweatHouz 的私人桑拿房，這次體驗徹底改變了他的生活。他不僅被其健康益處深深吸引，還看到了這個品牌的潛力。當時 SweatHouz 還是一家小型公司，但 Varano 敏銳地察覺到市場對健康生活方式的需求日益增長。他決定加入並接管這家公司，並迅速推動其擴展，如今 SweatHouz 已經在全球擁有超過 100 家門店。Varano 的成功秘訣在於，他將自己的親身經歷轉化為商業願景，並利用自身的商業評估專業知識，建立起一個以健康為核心的生活品牌。",
+      "impact": "這個故事對於您作為 AI 顧問和投資人具有啟發意義。Varano 的經驗表明，個人對產品的深刻體驗和洞察可以成為開創新業務的核心驅動力。這為 AI 顧問業務提供了啟示，即在為客戶設計解決方案時，應更加關注用戶體驗，並考慮如何將技術轉化為切實的價值主張。對於投資佈局而言，健康生活方式市場的快速增長可能值得進一步關注，特別是那些能結合科技提供個性化健康解決方案的創新業務。",
+      "action": "分析 SweatHouz 的成功模式，評估是否有可能將 AI 技術應用於類似的健康生活方式產業中，並考慮是否有相關投資機會值得介入。與團隊討論如何在現有 Microsoft 生態系統中引入更以用戶體驗為核心的 AI 解決方案。"
     },
     {
       "id": "case",
       "kind": "商業模式",
-      "title": "Whatnot：結合直播購物與 AI 推薦的電商新模式",
-      "summary": "Whatnot 是一家專注於直播購物的電商平台，通過結合直播互動與 AI 推薦技術，創造出新型態的消費體驗。該公司近期收購了 AI 初創公司 Shaped，後者專注於即時推薦與搜尋技術。這項收購將進一步提升 Whatnot 的個性化推薦和產品發現功能，並助力其進軍更多產品類別。Whatnot 的核心商業模式基於直播購物，通過即時互動與 AI 驅動的個性化推薦提升轉化率，並從每筆交易中抽取佣金。此外，平台還提供廣告和增值服務，進一步擴大收入來源。Whatnot 的護城河在於其直播社群的高參與度以及不斷提升的 AI 驅動推薦技術，但其最大的風險在於直播購物市場的競爭激烈，以及過度依賴特定的消費者行為模式。",
-      "impact": "Whatnot 的成功模式表明，AI 驅動的推薦系統與即時互動的結合，正在改變消費者的購物習慣。這對於您在製造業和零售業的客戶來說，可能是一個值得探索的方向，通過引入類似的技術，可以提升產品銷售的轉化率。此外，該案例也表明，AI 技術在消費者行為分析和個性化體驗中的應用，將在未來的電商市場中扮演越來越重要的角色。",
-      "action": "讓團隊研究 Whatnot 的直播與推薦系統，評估是否可以將類似技術整合至 Power Platform 的零售解決方案中。關注 Whatnot 在拓展新產品類別上的進展，判斷其未來是否有進一步投資的價值。"
+      "title": "IM8：以非股權融資模式撬動 10 億美元資金，重塑健康飲品市場",
+      "summary": "IM8 是由知名足球明星大衛·貝克漢（David Beckham）創辦的健康飲品品牌，主打延壽維他命飲品。該公司近期從 General Catalyst 的 Customer Value Fund（CVF）獲得了 **10 億美元**的資金支持，這筆資金並非股權投資，而是基於 CVF 獨特的非股權融資模式。這種模式允許 IM8 保持完全的股權控制，同時獲得資金支持來快速擴展業務。CVF 的策略是通過共享收入的方式獲得回報，而非傳統的股權分成。這種模式特別適合像 IM8 這樣的消費品初創公司，因為它們可以利用大規模資金來快速擴展，而不必稀釋創始團隊的控制權。",
+      "impact": "IM8 的非股權融資模式為您的投資策略提供了一個創新選項，特別是在尋求高增長但不希望稀釋股權的初創公司中。對於 AI 顧問業務，這種模式可能啟發如何設計與金融業或其他客戶合作的創新商業模式，例如基於成果的收入分享模型，可能吸引更多對 AI 解決方案感興趣的客戶。",
+      "action": "讓投資團隊研究 General Catalyst 的 Customer Value Fund 模式，評估是否可以在台灣或其他市場複製類似的非股權融資模式。與金融業客戶討論，是否有機會利用 AI 技術優化類似的收入分享模型。"
     },
     {
       "id": "industry-0",
       "kind": "產業動態",
-      "title": "半導體：本日無重大公開動態",
-      "summary": "今日並無關於半導體產業的重大公開動態。但該產業的近期焦點仍然圍繞在晶片短缺的緩解進展、AI 訓練晶片的需求增長，以及地緣政治對供應鏈的影響。",
-      "impact": "半導體是台灣經濟的重要支柱，該產業的任何波動都將直接影響到國內相關企業的表現。作為一名投資人，需特別留意全球晶片需求的變化，尤其是 AI 訓練晶片的需求趨勢，這將是未來重要的成長驅動力。",
-      "action": "密切追蹤 NVIDIA、台積電等主要公司在 AI 晶片產能擴張方面的最新動態，並觀察晶片價格走勢，作為判斷投資時機的指標。"
+      "title": "半導體：台積電受 AI 需求驅動，Q2 營收增長超過 40%",
+      "summary": "台積電在 2026 年第二季的營運表現亮眼，受 AI 需求強勁推動，單季營收增長超過 **40%**，並賺進超過 **2.7 個股本**。第三季展望依然樂觀，法說會透露 AI 應用將持續拉動高效能運算晶片的需求。此外，李長榮先進材料在中科動土，計劃於 2027 年供應 **6 萬噸**高階材料，進一步滿足 AI 和高效能運算的市場需求。",
+      "impact": "AI 需求正在成為半導體產業的關鍵增長動力，台積電的強勁表現顯示出晶片製造業的高景氣度。對於您的 AI 顧問業務，這意味著客戶可能會對高效能運算解決方案有更高需求，特別是在金融和製造業領域。投資方面，台積電的業績表現可能進一步推動台股半導體板塊的表現。",
+      "action": "與製造業和金融業客戶討論如何利用台積電等晶片供應商的技術進一步提升 AI 應用性能。密切關注台積電第三季財報，若股價因市場波動出現回調，可考慮增持。"
     },
     {
       "id": "industry-1",
       "kind": "產業動態",
-      "title": "AI 應用：Emergent 成為獨角獸，Neko Health 募資 $7 億美元，AWS 宣布代理型 AI 元年",
-      "summary": "印度的 Emergent 在成立一年後即完成 **1.3 億美元的 C 輪融資**，達成獨角獸地位，並實現 **1.2 億美元的年化收入**，證明了 AI 驅動的程式碼生成工具市場的潛力。同時，Neko Health 剛完成 **7 億美元的融資**，專注於結合身體掃描與血液檢測的健康評估技術。此外，AWS 將 2026 年定調為「代理型 AI」元年，並推出相關策略與工具，推動企業將 AI 代理人（Agent）整合至核心業務流程。",
-      "impact": "Emergent 和 Neko Health 的成功顯示，AI 在開發工具和健康科技領域的應用潛力巨大，這可能為您在金融、醫療和製造業的客戶帶來全新解決方案機會。AWS 的「代理型 AI」策略則可能對 Azure 生態系統構成競爭壓力，需提前應對。",
-      "action": "研究 AWS 代理型 AI 的具體技術與工具，並探討如何在 Azure OpenAI 的產品中提供類似功能。與醫療業客戶討論 Neko Health 的技術應用場景，評估合作或導入可能性。"
+      "title": "AI 應用：AI 旅遊公司 Fora 獲 6000 萬美元 D 輪融資，估值達 10 億美元",
+      "summary": "AI 驅動的旅遊公司 Fora 宣布完成 **6000 萬美元** D 輪融資，由 Forerunner 和 Tactile Ventures 領投，公司估值達到 **10 億美元**，成為新晉獨角獸。Fora 主要提供基於 AI 的旅遊規劃和預訂服務，專注於個性化推薦和用戶體驗的優化，迎合了消費者對高效旅遊計劃的需求。",
+      "impact": "Fora 的成功表明，AI 在旅遊行業的應用潛力巨大，特別是在個性化和效率方面。對於您的 AI 顧問業務，這可能啟發如何將類似的 AI 技術應用於其他服務行業，例如金融或醫療，提供更貼合用戶需求的解決方案。投資方面，這也顯示出旅遊科技領域的吸引力，值得進一步關注相關初創企業。",
+      "action": "與團隊討論是否可以開發基於 Azure OpenAI 的個性化推薦解決方案，並在醫療或金融領域進行試點。關注旅遊科技領域的其他融資案例，尋找潛在的投資機會。"
     },
     {
       "id": "industry-2",
       "kind": "產業動態",
-      "title": "電動車與儲能：Toyota 推動零件標準化，Lucid 面臨破產傳聞",
-      "summary": "Toyota 副會長佐藤恒治倡議日本七大車廠推動零件標準化，以降低成本並應對中國車廠的競爭，並計劃加大對軟體和電動化的資源投入。另一方面，Lucid 因破產傳聞導致股價一度重挫 **56%**，雖然公司迅速否認，仍無法完全消除市場對其財務狀況的疑慮。",
-      "impact": "Toyota 的舉措可能加速全球電動車行業的標準化進程，這對於您在製造業的客戶可能帶來供應鏈成本優化的機會。Lucid 的財務困境則提醒投資人注意電動車新創公司的財務健康，特別是那些尚未實現盈利的公司。",
-      "action": "與製造業客戶探討零件標準化可能帶來的成本優化潛力，並評估其對供應鏈的影響。對於 Lucid，若股價持續低迷且無重大利好消息，考慮減碼或重新評估投資組合。"
+      "title": "電動車與儲能：Tesla Model 3 電池供應商差異導致健康度 5% 差距",
+      "summary": "數據顯示，同款 Tesla Model 3 在行駛超過 **10 萬公里**後，使用 LFP 電池的健康度 (SOH) 較 NMC/NCA 電池高出 **5 個百分點**。這種差異歸因於 LFP 電池的化學穩定性和更寬容的充電習慣，顯示出電池技術對電動車性能和壽命的關鍵影響。",
+      "impact": "電池技術的進步對電動車市場的競爭力至關重要，這對於投資電動車和儲能相關企業具有重要意義。對於 AI 顧問業務，這也可能啟發如何利用 AI 技術優化電池性能監控和壽命管理，為電動車製造商提供附加價值。",
+      "action": "考慮與製造業客戶探討如何利用 AI 技術進一步優化電池的健康監控和壽命預測。關注 LFP 電池供應鏈的相關企業，評估其投資潛力。"
     },
     {
       "id": "dyn-0",
       "kind": "創業動態",
-      "title": "Neko Health Raises $700M, AI Drug Discovery Startup Valued at $2B",
-      "summary": "Neko Health, co-founded by Spotify's Daniel Ek, secured **$700M** in funding to expand its AI-driven body-scanning and health assessment platform. Concurrently, OpenAI researcher Miles Wang is in talks to launch an AI drug discovery startup with a potential **$2B** valuation, underscoring investor enthusiasm for AI applications in healthcare.",
-      "impact": "The surge in health tech funding highlights a growing market for AI-driven healthcare solutions, particularly in diagnostics and drug discovery. For your Microsoft AI consulting business, this signals an opportunity to explore Azure OpenAI integrations for healthcare clients, especially in predictive analytics and personalized medicine. As an investor, the trend suggests potential high-growth opportunities in health tech startups utilizing AI.",
-      "action": "Task your team to identify healthcare clients who could benefit from body-scanning or drug discovery AI solutions, and evaluate Azure OpenAI's capabilities in these areas. For investments, monitor early-stage health tech startups leveraging AI for diagnostics or pharmaceuticals.",
-      "url": "https://techcrunch.com/2026/07/15/daniel-eks-body-scanning-startup-neko-health-raises-another-700m/",
+      "title": "Fora 成為獨角獸，AI 驅動旅遊業轉型",
+      "summary": "AI 驅動的旅遊代理商 Fora 宣布完成 **6000 萬美元**的 D 輪融資，由 Forerunner 和 Tactile Ventures 領投，公司估值達到 **10 億美元**，正式成為獨角獸。",
+      "impact": "Fora 的成功顯示 AI 在旅遊業的應用潛力，特別是在行程規劃與個性化推薦方面，可成為台灣旅遊業者數位轉型的參考範例。對於 Azure OpenAI 的應用，這類解決方案可結合 Power Platform 提供更智能的旅遊管理工具，吸引金融與保險業者進行聯名合作。",
+      "action": "讓團隊研究 Fora 的技術架構與核心功能，評估是否能與 Azure OpenAI 整合，並制定針對台灣旅遊業者的數位轉型提案。",
+      "url": "https://techcrunch.com/2026/07/16/ai-powered-travel-agency-fora-hits-unicorn-status-raises-60m/",
       "source": "TechCrunch Startups"
     },
     {
       "id": "dyn-1",
       "kind": "創業動態",
-      "title": "Whatnot Acquires Shaped to Enhance AI-Driven Shopping Recommendations",
-      "summary": "Livestream shopping platform Whatnot has acquired Shaped, an AI startup specializing in real-time recommendations and search. This acquisition aims to enhance Whatnot's personalization and discovery features as it expands into new product categories.",
-      "impact": "This move highlights the increasing importance of AI in retail personalization, a trend that could be relevant for manufacturing clients exploring AI-driven customer engagement. For your investment strategy, it underscores the potential of AI-powered e-commerce platforms as a growth sector.",
-      "action": "Evaluate the feasibility of integrating real-time recommendation engines into existing Power Platform solutions for retail or manufacturing clients. As an investor, consider tracking AI-driven e-commerce platforms for potential investment opportunities.",
-      "url": "https://techcrunch.com/2026/07/15/whatnot-acquires-shaped-to-power-real-time-live-shopping-recommendations/",
+      "title": "Sheryl Sandberg 投資 1000 萬美元於 AI 車輛檢測服務",
+      "summary": "Sheryl Sandberg 領投 **1000 萬美元**於一家成立於 2021 年的 AI 車輛檢測初創公司，該公司利用智能手機掃描車輛損傷，目標客戶為企業用戶。",
+      "impact": "此投資顯示 AI 在汽車後市場的應用價值，尤其是車輛檢測與維修效率提升的潛力。對於製造業客戶，這類技術可應用於車輛維修保養流程，降低成本並提升客戶滿意度。對投資組合而言，AI 在汽車後市場的應用仍處於早期階段，但成長空間巨大。",
+      "action": "分析該公司商業模式，探索是否能將其技術納入 Azure 平台，並與製造業客戶討論其在車輛維修流程中的應用潛力。",
+      "url": "https://techcrunch.com/2026/07/16/sheryl-sandberg-leads-10-million-investment-in-ai-powered-vehicle-inspection-service/",
       "source": "TechCrunch Startups"
     },
     {
       "id": "dyn-2",
       "kind": "創業動態",
-      "title": "Indian AI Coding Startup Emergent Becomes Unicorn with $120M Revenue Run Rate",
-      "summary": "Emergent, an Indian AI coding startup, achieved unicorn status with a **$130M Series C** funding round. The company boasts a **$120M annualized revenue run rate** and serves over **200,000 paying customers**, just over a year after its launch.",
-      "impact": "Emergent's rapid growth underscores the rising demand for AI coding solutions, a trend directly aligned with Microsoft's Copilot and Power Platform offerings. This also highlights India's growing prominence in the global AI ecosystem, presenting potential partnership or investment opportunities.",
-      "action": "Analyze Emergent's business model and product offerings for insights into scaling AI coding solutions. Consider exploring partnerships or competitive analysis to enhance your Copilot-related services. For investments, monitor India's AI startup ecosystem for high-growth opportunities.",
-      "url": "https://techcrunch.com/2026/07/15/reelfuls-ai-turns-your-camera-roll-into-short-form-videos-for-social-media/",
-      "source": "TechCrunch Startups"
+      "title": "OpenAI 研究員計畫創立估值 20 億美元的 AI 藥物研發公司",
+      "summary": "OpenAI 研究員 Miles Wang 正在籌備創立一家專注於 AI 藥物研發的初創公司，目標估值達 **20 億美元**，吸引了投資者對生命科學突破的濃厚興趣。",
+      "impact": "AI 在醫藥領域的投資熱潮顯示出該行業的巨大潛力，這對於台灣醫療產業客戶來說是重要的趨勢信號。結合 Azure OpenAI 技術，醫療機構可探索基於 AI 的藥物研發解決方案，提升創新能力。投資方面，這類公司可能成為未來的高增長標的。",
+      "action": "安排技術團隊研究 AI 在藥物研發的應用案例，並與醫療客戶探討是否能導入相關解決方案；同時關注該公司後續融資進展，評估投資機會。",
+      "url": "https://techcrunch.com/2026/07/14/openai-researcher-miles-wang-in-talks-to-launch-ai-drug-discovery-startup-valued-at-2b/",
+      "source": "TechCrunch Venture"
     },
     {
       "id": "dyn-3",
       "kind": "創業動態",
-      "title": "Elon Musk Buys Gas Turbines for xAI, Toyota Pushes for Parts Standardization",
-      "summary": "Elon Musk's xAI has acquired APR Energy's mobile gas turbines to power its data centers, marking a shift from clean energy to fossil fuels. Meanwhile, Toyota is advocating for parts standardization among Japan's seven automakers to cut costs and compete with Chinese EV makers.",
-      "impact": "Musk's pivot to fossil fuels may signal challenges in scaling renewable energy for AI data centers, relevant for your Azure cloud clients in energy-intensive industries. Toyota's push for standardization could impact manufacturing clients by driving cost efficiencies and accelerating EV adoption, creating opportunities for AI-driven supply chain optimization.",
-      "action": "Engage with manufacturing clients to explore AI solutions for parts standardization and supply chain management. For energy-intensive clients, evaluate the feasibility of hybrid energy solutions combining fossil fuels and renewables for AI workloads.",
-      "url": "https://www.inside.com.tw/article/41834-musk-says-solar-will-save-the-world-but-buys-gas-turbines",
+      "title": "Tesla Model 3 電池供應商差異導致健康度相差 5%",
+      "summary": "研究顯示，行駛超過 **10 萬公里**後，Tesla Model 3 使用 LFP 電池的健康度比 NMC/NCA 電池高出 **5 個百分點**，原因在於其化學穩定性與建議充電習慣的不同。",
+      "impact": "電池技術對電動車性能的長期影響顯著，這對製造業客戶尤為重要，尤其是電池供應鏈管理與技術選型。對投資組合而言，LFP 電池相關供應商可能成為值得關注的標的。",
+      "action": "整理 LFP 與 NMC/NCA 電池的技術與供應商清單，與製造業客戶探討電池技術選型的優劣；同時關注 LFP 電池供應商的市場動態，評估投資機會。",
+      "url": "https://www.inside.com.tw/article/41839-tesla-model-3-same-car-different-battery-supplier-5-point-health-gap-at-100000-km",
       "source": "INSIDE"
     },
     {
       "id": "dyn-4",
       "kind": "創業動態",
-      "title": "Lucid 股價因破產傳聞一度重挫 56%，公司急澄清",
-      "summary": "一篇匿名報導指稱 Lucid 正評估破產可能性，導致其股價盤中重挫 **56%**，甚至觸發熔斷機制。雖然 Lucid 隨後否認傳聞並強調流動性充足，但市場對其持續虧損與營運前景的信心明顯不足。",
-      "impact": "此事件反映電動車市場的高波動性與投資風險，可能影響您在 EV 領域的投資策略。對於 AI 顧問業務，金融客戶可能會更加關注市場風險管理與預測模型，這為 Azure AI 和 Copilot 的風險評估工具提供了潛在需求。",
-      "action": "本週內與投資團隊討論是否需調整 EV 領域的投資配置，特別是對 Lucid 的持倉策略；同時評估是否能為金融業客戶設計基於 Azure AI 的市場風險預測解決方案。",
-      "url": "https://www.inside.com.tw/article/41828-lucid-bankruptcy-rumor-stock-plunges-56-percent-lucid-denies",
+      "title": "微軟 AI 資料中心碳排放激增 25%，永續挑戰浮現",
+      "summary": "微軟因應 AI 需求擴張資料中心，導致碳排放在一年內激增 **25%**，對其減碳承諾構成壓力。此現象反映 AI 技術發展對能源消耗和永續目標的衝擊，業界正尋求更實質的減碳策略。",
+      "impact": "AI 資料中心的高能耗問題可能成為金融、醫療和製造業客戶採用 AI 解決方案時的主要顧慮，尤其是在 ESG（環境、社會、治理）合規要求日益嚴格的情況下。這對 Azure OpenAI 的推廣可能帶來挑戰，同時為低能耗 AI 解決方案創造市場機會。",
+      "action": "本週內召開內部會議，評估是否能將低碳 AI 基礎設施納入 Azure OpenAI 提案中，並針對 ESG 敏感客戶設計專屬解決方案。",
+      "url": "https://www.inside.com.tw/article/41840-tech-giants-face-the-energy-cost-of-ai-as-microsoft-carbon-emissions-jump-25-percent-in-a-single-year",
       "source": "INSIDE"
     },
     {
       "id": "dyn-5",
       "kind": "創業動態",
-      "title": "AWS 宣布 2026 為代理型 AI 元年，推動企業核心流程 AI 化",
-      "summary": "AWS 在台北峰會上宣布 2026 年為「代理型 AI」元年，並推出相關策略與工具，鼓勵企業將 AI 深度整合至核心業務流程。AWS 強調台灣在晶片與生態系中的重要角色，呼籲企業抓住轉型機遇。",
-      "impact": "AWS 的戰略方向可能加速企業對 AI 工具的需求，這對您的 AI 顧問業務是一個信號，特別是針對製造業和金融業的核心流程自動化需求。同時，這也可能推動相關技術供應鏈的投資機會，例如 AI 晶片和雲端基礎設施。",
-      "action": "安排團隊深入研究 AWS 的代理型 AI 工具，評估是否能整合到 Azure OpenAI 或 Power Platform 提案中；同時關注台灣 AI 晶片供應鏈的投資機會，特別是與 AWS 合作的本地廠商。",
-      "url": "https://www.inside.com.tw/article/41829-aws-summit-taipei-2026-agentic-ai",
-      "source": "INSIDE"
+      "title": "Uber 以 148 億美元收購 Delivery Hero，外送市場整併升溫",
+      "summary": "Uber 宣布以 **148 億美元**股權價值收購 Delivery Hero，此舉可能引發全球外送市場的整併潮。交易需通過多國監管審查，可能影響台灣外送市場格局。",
+      "impact": "外送市場整併可能進一步壓縮台灣本地平台的競爭空間，進而影響金融和製造業對外送服務的供應鏈依賴。同時，Uber 的全球擴張或為其 AI 驅動的物流優化技術帶來更大市場需求，這可能是 Azure AI 的潛在合作機會。",
+      "action": "指派團隊研究 Uber 的 AI 技術應用模式，評估是否有機會將其納入 Copilot 或 Power Platform 的合作案例中，並持續追蹤台灣外送市場的競爭變化。",
+      "url": "https://finance.technews.tw/2026/07/17/uber-announces-acquisition-offer-for-delivery-hero/",
+      "source": "TechNews"
+    },
+    {
+      "id": "dyn-6",
+      "kind": "創業動態",
+      "title": "台積電受 AI 需求推動，營收增長超過 40%",
+      "summary": "台積電因 AI 和高效能運算需求強勁，第二季營收增長超過 **40%**，單季賺進超過 2.7 個股本，第三季展望依然樂觀，凸顯其在半導體業的核心地位。",
+      "impact": "台積電的成長顯示 AI 對半導體需求的強大拉動力，這對金融和製造業客戶的 AI 導入進程提供了信心。同時，台積電的技術進步可能促進 Azure AI 解決方案的性能提升，進一步鞏固 Microsoft 生態系的優勢。",
+      "action": "立即檢視台積電相關供應鏈的投資組合，並與客戶討論如何利用台積電的技術優勢提升其 AI 專案的效能，特別是在製造業領域。",
+      "url": "https://finance.technews.tw/2026/07/16/tsmc-earnings-call-26q2/",
+      "source": "TechNews"
+    },
+    {
+      "id": "dyn-7",
+      "kind": "創業動態",
+      "title": "李長榮先進材料擴線，因應 AI 與高效能運算需求",
+      "summary": "李長榮先進材料在中科廠區進行擴線動土，計劃到 **2027 年**供應 **6 萬噸**高階材料，以滿足 AI 和高效能運算的需求。此舉顯示材料科技在 AI 時代的重要性。",
+      "impact": "高階材料的供應增長將直接影響 AI 和高效能運算硬體的成本結構，對製造業客戶的 AI 設備採購策略產生影響。同時，這也可能為 Azure AI 的硬體合作夥伴帶來更穩定的供應鏈支持。",
+      "action": "與製造業客戶討論李長榮的擴線計畫對其 AI 硬體採購的潛在影響，並評估是否能將相關供應鏈資訊整合到 Copilot 的供應鏈管理模組中。",
+      "url": "https://finance.technews.tw/2026/07/16/zhongke-high-end-capacity/",
+      "source": "TechNews"
     }
   ],
   "placeholder": false
