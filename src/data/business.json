@@ -1,124 +1,124 @@
 {
-  "asOf": "2026-07-18",
+  "asOf": "2026-07-19",
   "source": "商業媒體 RSS + Hacker News + GitHub Models",
   "items": [
     {
       "id": "founder",
       "kind": "創業故事",
-      "title": "Alexandre LeBrun：專注於實際應用的 AI 哲學",
-      "summary": "Alexandre LeBrun，現為 AMI Labs 的 CEO，也是 Yann LeCun 的世界模型（World Model）研究團隊的核心人物。他拒絕將 AMI Labs 的 AI 稱為 AGI（人工通用智能）或超級智能，認為這些術語過於誇大且容易誤導。他的哲學根基於「務實應用」，強調 AI 的真正價值在於解決當前的實際問題，而非追求科幻般的未來願景。這一理念源於他早年在 Nuance Communications 的經驗，當時他領導團隊開發語音識別技術，並成功將其應用於醫療記錄與金融服務等領域。他的這種務實態度也影響了 AMI Labs 的技術路線，專注於開發能夠解釋和模仿世界的 AI 模型，尤其在醫療影像分析和製造業的異常檢測等領域。他的堅持為 AMI Labs 贏得了業界的尊重，也吸引了來自 Microsoft 等大企業的合作機會。",
-      "impact": "LeBrun 的務實哲學與專注於應用的策略，為台灣的 AI 顧問業務提供了啟發，尤其是在金融、醫療和製造業的 AI 部署中。這種方法強調解決具體問題，避免追求過度理想化的技術，與 Azure OpenAI 的產品定位高度契合。",
-      "action": "建議本週內分析 AMI Labs 的案例，提煉其應用導向的技術開發模式，並將其納入公司內部的客戶提案模板，強調實際商業價值的創造。"
+      "title": "Ryan Beiermeister：從 OpenAI 到 Founders Fund的分析力進化",
+      "summary": "Ryan Beiermeister 的職業生涯以其在 OpenAI 的技術與分析能力為基礎，進一步拓展到風險投資領域。她在 OpenAI 時期，專注於人工智慧模型的開發與應用，培養了對技術趨勢的敏銳洞察力，並在公司內部建立了數據驅動決策的文化。這些經驗為她後來進入 Founders Fund 打下了堅實基礎。2026 年，Ryan 加入 Founders Fund 成為合夥人，並迅速展現其價值。在 YouTube 系列節目《Mafia》中，她以冷靜的分析能力和對投資機會的獨到見解，贏得了業界的高度評價。她的核心心法是將技術專業知識與戰略性投資決策結合，並善於識別具有潛力的創新技術，這讓她在風險投資領域脫穎而出。",
+      "impact": "Ryan Beiermeister 的職業軌跡表明，將技術專長與投資洞察結合的能力是未來創投領域的核心競爭力。對於專注於 AI 解決方案的顧問業務，這意味著需要更加注重技術與商業價值的結合，特別是在 AI 驅動的應用場景中，幫助客戶實現投資回報最大化。",
+      "action": "分析 Founders Fund 最新投資案例，特別是其在 AI 領域的佈局，評估與 Microsoft 生態系統的合作潛力。安排內部會議，探討如何在 AI 顧問業務中強化技術與投資洞察的結合，形成新的服務優勢。"
     },
     {
       "id": "case",
       "kind": "商業模式",
-      "title": "現代收購 Boston Dynamics 全部股權，2028 鎖定 Atlas 商業化",
-      "summary": "現代集團以 **3.25 億美元** 完全收購 Boston Dynamics，獲得該公司的 100% 控制權，並計劃於 **2028 年** 將人形機器人 Atlas 量產，進一步拓展至「實體 AI」市場。Boston Dynamics 以其先進的機器人技術聞名，曾開發出 Spot 和 Stretch 等商用機器人，但其高昂的開發成本與商業化挑戰一直是其痛點。現代的進入為其商業化提供了資金與產業資源，尤其在製造業與物流領域，Atlas 的應用有望成為下一個關鍵增長點。",
-      "impact": "Boston Dynamics 的轉型標誌著實體 AI 的商業化進程加速，這可能改變製造業和物流業的自動化進程，對台灣的製造業客戶是一個值得關注的趨勢。若 Atlas 成功量產，將成為 AI 與機器人的整合典範，也可能帶動對 Azure AI 與 Power Platform 的需求增長。",
-      "action": "建議立即追蹤 Boston Dynamics 與現代在 Atlas 商業化上的進展，特別是其在製造業與物流業的應用案例，並評估是否能作為 Azure OpenAI 的整合案例。"
+      "title": "Databricks 如何成功轉型為 AI 平台，估值達 1880 億美元",
+      "summary": "Databricks 起初專注於數據分析和大數據處理，通過其基於 Apache Spark 的數據平台為企業提供服務。隨著 AI 技術的興起，該公司成功轉型為 AI 平台，並專注於開放權重 AI 模型的研究和應用。2026 年，Databricks 公布了一項研究，展示了開源 AI 模型在編碼方面的成本節省，進一步鞏固了其作為 AI 領域領導者的地位。這一轉型使其估值達到 **1880 億美元**，成為全球最具價值的 AI 公司之一。",
+      "impact": "Databricks 的成功轉型突顯了 AI 平台在商業應用中的巨大潛力，特別是在開源技術的推廣和應用方面。對於專注於 Microsoft 生態系統的 AI 顧問業務，這是一個重要的信號，表明企業客戶對開放性和成本效益的解決方案需求增加。這也可能影響 Azure 的 AI 服務策略，尤其是在與開源模型整合的方向上。",
+      "action": "研究 Databricks 在開源 AI 模型上的技術與商業策略，評估這些模型是否可以與 Azure OpenAI 服務整合。與客戶探討開源模型的應用場景，特別是在製造業和金融業中可能的成本節省與效率提升。"
     },
     {
       "id": "industry-0",
       "kind": "產業動態",
-      "title": "美股半導體類股拋售，亞股跌勢延續",
-      "summary": "近期投資人對 AI 驅動的市場漲勢進行重新評估，導致美股半導體類股大範圍拋售，亞洲市場也受到影響。英特爾前執行長 Pat Gelsinger 再次警告全球對台灣晶片供應的過度依賴風險，強調應由具技術背景的人士領導晶片產業。",
-      "impact": "半導體市場的波動可能影響 AI 基礎設施的成本，進一步波及 Azure OpenAI 的部署成本。此外，對台灣晶片供應的依賴問題也可能成為地緣政治風險的觸發點，需密切關注台積電等關鍵供應商的動態。",
-      "action": "建議本週內與團隊討論是否需要調整 Azure AI 部署的成本模型，並密切追蹤台積電的供應鏈穩定性，特別是其在地緣政治風險中的應對策略。"
+      "title": "半導體：中國開源模型 Kimi K3 引發矽谷與美國政府關注",
+      "summary": "中國新創公司月之暗面（Moonshot AI）於 2026 年 7 月 17 日推出開源 AI 模型 Kimi K3，該模型在多項基準測試中接近或超越 Anthropic 與 OpenAI 的閉源模型。此舉不僅引發全球開發者社群的熱烈討論，也使美中 AI 技術競賽進一步升級。此外，中國政府宣布進一步收緊稀土礦物出口，導致氧化釔價格飆升 150 倍，對西方半導體供應鏈構成重大威脅。",
+      "impact": "Kimi K3 的表現可能對 OpenAI 等西方 AI 領導者構成挑戰，特別是在開源模型的競爭中。對於專注於 Microsoft 生態系統的顧問業務，這意味著需要密切關注中國開源模型的技術進展及其對 Azure OpenAI 的潛在影響。同時，稀土供應鏈的中斷可能對半導體行業造成成本壓力，進一步影響製造業客戶的數位轉型計劃。",
+      "action": "密切追蹤 Kimi K3 的技術細節與應用案例，評估其對 Azure OpenAI 的競爭威脅。針對稀土供應鏈問題，與製造業客戶討論可能的應對方案，例如供應鏈多元化或技術替代策略。"
     },
     {
       "id": "industry-1",
       "kind": "產業動態",
-      "title": "AI 應用：AI 驅動的旅遊平台 Fora 獲得 10 億美元估值",
-      "summary": "AI 驅動的旅遊平台 Fora 宣布完成 **6000 萬美元** D 輪融資，由 Forerunner 和 Tactile Ventures 領投，公司估值達 **10 億美元**，正式晉升為獨角獸企業。Fora 利用 AI 技術提升旅遊規劃效率，提供個性化建議與即時行程調整服務。",
-      "impact": "Fora 的成功證明了 AI 在垂直領域應用的巨大潛力，尤其是結合消費者數據與即時反應的能力。這對台灣的 AI 顧問業務是啟發，特別是針對金融和醫療行業的客製化解決方案。此外，其估值的快速增長顯示，AI 驅動的 B2C 平台仍有巨大投資潛力。",
-      "action": "建議團隊研究 Fora 的 AI 技術架構，探討其個性化推薦系統是否適用於金融或醫療場景，並評估是否有類似的投資機會可納入投資組合。"
+      "title": "Databricks 與 Fora 的成功凸顯 AI 應用商業化新機遇",
+      "summary": "Databricks 透過轉型為 AI 平台，估值達到 **1880 億美元**，其研究表明開源 AI 模型在降低成本方面的潛力。同時，AI 驅動的旅遊代理公司 Fora 宣布完成 **6000 萬美元的 D 輪融資**，公司估值達到 **10 億美元**，成為新晉獨角獸。這表明 AI 技術在多個行業的應用場景持續擴展，特別是在數據密集型與服務型產業。",
+      "impact": "AI 應用的商業化進一步加速，特別是在數據處理與服務業領域。對於 AI 顧問業務，這意味著需要更積極地探索新興應用場景，例如旅遊、醫療和製造業中的 AI 解決方案。投資方面，AI 驅動的垂直應用企業可能成為下一波增長的關鍵機會。",
+      "action": "分析 Fora 的商業模式，評估類似的垂直 AI 應用是否適合台灣市場，並與現有客戶探討相關應用場景。加強對 Databricks 開源模型成本效益研究的理解，並將其作為與潛在客戶溝通的案例。"
     },
     {
       "id": "industry-2",
       "kind": "產業動態",
-      "title": "電動車與儲能：Toyota、BMW 與 Repsol 測試可再生汽油",
-      "summary": "Toyota、BMW 與 Repsol 在西班牙聯手測試可再生汽油 Nexa 95，使用 20 輛汽車進行實驗，驗證其作為現有內燃引擎車輛替代燃料的可行性與減碳效益。這項測試旨在應對未來更嚴格的排放法規，為內燃機車輛提供一種過渡解決方案。",
-      "impact": "這項測試顯示傳統車企在減碳領域的創新努力，可能減緩電動車全面取代內燃機車的進程。對於電動車與儲能市場的投資佈局，這是一個需要持續關注的變數，可能影響相關產業鏈的成長速度。",
-      "action": "建議密切關注 Toyota 與 BMW 在可再生燃料上的進展，並評估這是否會影響電動車市場的需求增長預期。如果可再生燃料技術獲得廣泛應用，需重新評估電動車相關投資的風險與回報。"
+      "title": "電動車與儲能：現代以 3.25 億美元全資收購 Boston Dynamics，2028 年量產 Atlas 機器人",
+      "summary": "現代集團宣布以 **3.25 億美元**收購軟銀持有的 Boston Dynamics 最後股份，實現 100% 控股。現代計劃於 2028 年量產人形機器人 Atlas，進軍實體 AI 領域。此舉標誌著現代從電動車與儲能領域進一步擴展至機器人技術，並可能在物流、製造與醫療等領域實現新突破。",
+      "impact": "現代的佈局顯示，傳統製造業巨頭正在積極進軍實體 AI 領域，這可能改變製造業自動化的競爭格局。對於專注於製造業客戶的 AI 顧問業務，這是一個信號，表明未來的解決方案需要考慮將 AI 融入到機器人和自動化系統中。",
+      "action": "評估現代與 Boston Dynamics 的合作對製造業自動化的潛在影響，並探討是否有機會將 Copilot 或 Power Platform 整合到類似的機器人系統中。與製造業客戶分享 Atlas 項目進展，幫助其提前規劃相關技術的採用路線圖。"
     },
     {
       "id": "dyn-0",
       "kind": "創業動態",
-      "title": "Valar Atomics 以 60 億美元估值籌資，核能技術投資熱潮升溫",
-      "summary": "核能新創 Valar Atomics 正在進行新一輪融資，目標估值達 **60 億美元**。該公司專注於核能技術，反映出能源轉型背景下，投資者對核能的高度興趣和資金湧入趨勢。",
-      "impact": "核能技術的資金湧入可能對製造業產生深遠影響，尤其是能源密集型行業。這對 AI 顧問業務是一個機會，可考慮開發基於 Azure 的能源優化解決方案，協助製造業客戶應對能源轉型挑戰。此外，核能技術的崛起可能成為新投資標的，值得密切追蹤相關企業的成長。",
-      "action": "安排團隊研究核能技術與 AI 的整合應用，例如如何利用 Copilot 優化核能設施運營；同時關注 Valar Atomics 的融資進展，評估是否有投資機會。",
-      "url": "https://techcrunch.com/2026/07/17/nuclear-startup-valar-atomics-in-talks-to-raise-new-funding-at-6b-valuation/",
+      "title": "Databricks 估值飆升至 1880 億美元，成為 AI 數據分析領域領跑者",
+      "summary": "Databricks 的估值已達 **1880 億美元**，該公司成功轉型為 AI 驅動的數據分析平台，並發布了關於開源 AI 模型在程式碼生成中節省成本的研究成果。",
+      "impact": "Databricks 的成功顯示 AI 驅動的數據分析平台市場需求旺盛，對於金融、製造業等數據密集型產業的潛在應用尤為重要。作為 Microsoft 核心夥伴，這可能是 Azure Synapse Analytics 和 Copilot 整合的潛在競爭對手或合作機會，值得密切關注其商業模式和技術創新。",
+      "action": "安排技術團隊研究 Databricks 的 AI 模型與 Azure Synapse 的差異，評估是否可整合其開源技術於現有方案中，並與金融和製造業客戶探討其應用潛力。",
+      "url": "https://techcrunch.com/2026/07/17/databricks-hits-188b-valuation-extending-its-run-as-ais-favorite-second-act/",
       "source": "TechCrunch Startups"
     },
     {
       "id": "dyn-1",
       "kind": "創業動態",
-      "title": "AI 旅遊平台 Fora 獲 6000 萬美元 D 輪融資，估值達 10 億美元",
-      "summary": "AI 驅動的旅遊平台 Fora 宣布完成 **6000 萬美元** D 輪融資，由 Forerunner 和 Tactile Ventures 領投，公司估值達到 **10 億美元**，正式成為獨角獸。",
-      "impact": "Fora 的成功顯示 AI 在傳統服務業的顛覆潛力，尤其是旅遊業的個性化服務和效率提升。這為 AI 顧問業務提供了靈感，可考慮將 Copilot 和 Power Platform 應用於金融和醫療行業的客製化服務，提升客戶體驗。此外，Fora 的成長也表明 AI 平台型企業的投資價值，值得關注。",
-      "action": "組織內部討論，評估如何將 AI 驅動的個性化服務模式引入現有客戶業務；同時密切關注 Fora 的業務模式，尋找類似的投資機會。",
-      "url": "https://techcrunch.com/2026/07/16/ai-powered-travel-agency-fora-hits-unicorn-status-raises-60m/",
+      "title": "Valar Atomics 以 60 億美元估值籌資，核能新創進入資本市場焦點",
+      "summary": "核能初創公司 Valar Atomics 正在以 **60 億美元**估值籌資，反映出核能技術在能源轉型中的投資熱度。該公司採用多階段複雜融資結構，可能隱藏實際進入價格。",
+      "impact": "核能作為清潔能源的核心技術之一，對製造業客戶的可持續能源供應有潛在影響。若核能技術進一步成熟，可能降低製造業能源成本，並推動 ESG 投資機會。",
+      "action": "密切追蹤 Valar Atomics 的技術進展及其對能源行業的影響，並評估是否有機會在台灣製造業客戶中引入核能解決方案。",
+      "url": "https://techcrunch.com/2026/07/17/nuclear-startup-valar-atomics-in-talks-to-raise-new-funding-at-6b-valuation/",
       "source": "TechCrunch Startups"
     },
     {
       "id": "dyn-2",
       "kind": "創業動態",
-      "title": "Sheryl Sandberg 投資 1000 萬美元於 AI 車輛檢測服務",
-      "summary": "Sheryl Sandberg 領投 **1000 萬美元**，支持一家成立於 2021 年的 AI 車輛檢測服務新創。該公司允許企業用戶通過智慧型手機掃描車輛並檢測損傷，顯示自動化技術在汽車維修市場的潛力。",
-      "impact": "AI 車輛檢測技術可能對製造業和汽車產業的維修與保養流程帶來革命性變化，降低成本並提升效率。對 AI 顧問業務而言，這是一個將 Azure AI 和 Power Platform 整合到汽車維修解決方案中的新方向。對個人投資來說，這類技術的市場需求將持續增長，值得關注相關初創企業。",
-      "action": "讓技術團隊研究 AI 車輛檢測技術的應用場景，並評估是否能融入現有製造業客戶的解決方案；同時追蹤該新創的發展，考慮未來的投資可能性。",
-      "url": "https://techcrunch.com/2026/07/16/sheryl-sandberg-leads-10-million-investment-in-ai-powered-vehicle-inspection-service/",
+      "title": "AI 旅遊代理公司 Fora 獲 6000 萬美元 D 輪融資，估值達 10 億美元",
+      "summary": "AI 驅動的旅遊代理公司 Fora 宣布完成 **6000 萬美元** D 輪融資，由 Forerunner 和 Tactile Ventures 領投，公司估值達到 **10 億美元**，正式成為獨角獸。",
+      "impact": "Fora 的成功展示 AI 在傳統服務業的應用潛力，尤其是在高度依賴個性化服務的行業。這對於台灣金融和醫療行業的客戶具有啟發意義，AI 可用於提升客戶體驗與服務效率。",
+      "action": "讓團隊研究 Fora 的 AI 技術如何實現個性化服務，並探討其應用於金融和醫療行業的可能性，制定相關解決方案提案。",
+      "url": "https://techcrunch.com/2026/07/16/ai-powered-travel-agency-fora-hits-unicorn-status-raises-60m/",
       "source": "TechCrunch Startups"
     },
     {
       "id": "dyn-3",
       "kind": "創業動態",
-      "title": "OpenAI 研究員計劃創建估值 20 億美元的 AI 藥物研發新創",
-      "summary": "OpenAI 研究員 Miles Wang 正在籌劃創建一家專注於 AI 藥物研發的新創公司，估值達 **20 億美元**。此舉顯示投資者對 AI 在生命科學領域的突破性應用抱有高度期待。",
-      "impact": "AI 在藥物研發中的應用可能對醫療行業帶來顛覆性影響，縮短藥物開發週期並降低成本。這對 AI 顧問業務是一個重要機會，可考慮與醫療客戶合作，開發基於 Azure OpenAI 的藥物研發解決方案。對投資佈局而言，AI 醫藥新創的高估值顯示該領域是未來的高成長市場。",
-      "action": "立即與醫療客戶探討 AI 在藥物研發中的應用需求，並制定相關解決方案；同時追蹤該新創的籌資進展，評估是否有參與投資的可能性。",
-      "url": "https://techcrunch.com/2026/07/14/openai-researcher-miles-wang-in-talks-to-launch-ai-drug-discovery-startup-valued-at-2b/",
-      "source": "TechCrunch Venture"
+      "title": "中國開源 AI 模型 Kimi K3 性能接近 OpenAI 和 Anthropic，挑戰全球競爭格局",
+      "summary": "中國 Moonshot AI 發布開源模型 Kimi K3，該模型在多項基準測試中接近甚至局部超越 OpenAI 和 Anthropic 的頂尖閉源模型，吸引全球開發者和美國政府高度關注。",
+      "impact": "Kimi K3 的出現可能改變全球 AI 技術競爭格局，對 Microsoft Azure OpenAI 的市場地位構成潛在威脅。若中國持續推動開源模型，可能降低全球 AI 技術的進入門檻，對台灣 AI 顧問業務和美國科技股投資帶來不確定性。",
+      "action": "與技術團隊分析 Kimi K3 的技術細節和潛在應用，並評估是否對金融、醫療和製造業客戶的現有解決方案構成威脅；同時密切關注美國半導體類股的波動，適時調整投資組合。",
+      "url": "https://www.inside.com.tw/article/41850-moonshot-ai-kimi-k3",
+      "source": "INSIDE"
     },
     {
       "id": "dyn-4",
       "kind": "創業動態",
-      "title": "現代汽車以 3.25 億美元收購 Boston Dynamics 全部股權，2028 年量產 Atlas 機器人",
-      "summary": "現代汽車宣布以 **3.25 億美元**收購軟銀持有的 Boston Dynamics 剩餘股權，成為該公司的唯一股東。現代計劃於 **2028 年**量產 Atlas 人形機器人，進一步推進實體 AI 的商業化應用。",
-      "impact": "現代的全資收購與 Atlas 的量產計畫，標誌著實體 AI 領域的快速發展，可能對製造業的自動化與勞動力結構帶來深遠影響。對於金融與醫療領域，這類機器人未來可能在物流、自動化處理與病患照護等場景中創造新商機，值得密切關注其技術成熟度與應用進展。",
-      "action": "指派團隊研究 Boston Dynamics 的 Atlas 技術進展，評估其在製造與醫療場景中的應用潛力，並探討是否可與 Microsoft 的 Azure AI 或 Power Platform 整合。",
-      "url": "https://www.inside.com.tw/article/41845-hyundai-fully-acquires-boston-dynamics-atlas-humanoid-2028-physical-ai",
+      "title": "台灣修法放寬低軌衛星外資限制，Starlink 或進入市場",
+      "summary": "台灣修訂《電信管理法》，放寬低軌衛星業者的外資限制，以應對地緣政治風險並強化通訊基礎設施韌性。中華電信表態願意與 Starlink 合作，可能引入該公司服務作為備援通訊方案。",
+      "impact": "Starlink 進入台灣市場將改變通訊基礎設施格局，並可能成為金融、醫療等高敏感行業的關鍵備援通訊方案。作為 Microsoft 核心夥伴，這為 Azure 與 Starlink 的潛在整合提供了新機會，尤其是在邊緣運算與全球連接解決方案上。",
+      "action": "安排團隊研究 Starlink 的 API 與 Azure 的整合可能性，並評估是否可在金融或醫療客戶的備援方案中引入該技術。",
+      "url": "https://www.inside.com.tw/article/41846-starlink-moves-closer-to-taiwan-as-telecommunications-management-act-amendments-may-ease-restrictions-and-chunghwa-telecom-signals-interest-in-partnership",
       "source": "INSIDE"
     },
     {
       "id": "dyn-5",
       "kind": "創業動態",
-      "title": "蘋果攜手阿里巴巴，將通義千問生成式 AI 整合至 iOS 系統",
-      "summary": "蘋果宣布與阿里巴巴合作，將中國本地生成式 AI 模型「通義千問」整合至 iOS 系統，並已獲中國網信辦核准。此舉旨在符合中國監管要求，並加強蘋果在中國市場的競爭力。",
-      "impact": "蘋果與阿里巴巴的合作顯示全球科技巨頭在中國市場的本地化策略需求，可能促使更多跨國企業採用中國本地 AI 解決方案。這對 Microsoft Azure OpenAI 在中國市場的競爭力提出挑戰，需考慮如何因應當地監管與市場需求。",
-      "action": "安排團隊研究中國生成式 AI 市場的監管要求，並評估是否能在 Azure OpenAI 服務中與中國本地模型合作，提升市場滲透率。",
-      "url": "https://www.inside.com.tw/article/41847-apple-intelligence-china-alibaba-qwen-approval",
+      "title": "現代汽車 3.25 億美元全資收購 Boston Dynamics，2028 年量產 Atlas 機器人",
+      "summary": "現代汽車集團以 **3.25 億美元**收購 Boston Dynamics 剩餘股權，成為全資擁有者，並計劃於 **2028 年**量產 Atlas 人形機器人，進一步推進實體 AI 的商業化應用。",
+      "impact": "Atlas 的量產將顛覆製造業和物流業，可能影響台灣製造業客戶的自動化需求。作為 AI 顧問，這是導入 Microsoft AI 工具（如 Copilot）與機器人協作的契機。此外，現代的投資也顯示實體 AI 領域的潛力，值得關注相關供應鏈與投資機會。",
+      "action": "安排分析現代汽車與 Boston Dynamics 的技術路線，並研究 Atlas 與製造業自動化的潛在應用，為製造業客戶提供整合建議。",
+      "url": "https://www.inside.com.tw/article/41845-hyundai-fully-acquires-boston-dynamics-atlas-humanoid-2028-physical-ai",
       "source": "INSIDE"
     },
     {
       "id": "dyn-6",
       "kind": "創業動態",
-      "title": "一卡通推出 iPASS Connect+，進軍零工經濟與公益捐款市場",
-      "summary": "一卡通啟動「iPASS Connect+」計畫，與新創公司 flexii 和 Oen 合作，將 iPASS Money 服務拓展至零工經濟與公益捐款生態圈，進一步擴大支付應用場景。",
-      "impact": "iPASS 的新計畫顯示支付平台正積極拓展多元場景，特別是零工經濟與公益領域，這可能對金融科技與支付解決方案的需求產生新的增長點。作為 Microsoft 生態的合作夥伴，可考慮如何將 Power Platform 或其他工具整合進這類支付生態。",
-      "action": "與 iPASS 團隊接洽，探討是否有機會將 Microsoft 的 AI 或 Power Platform 技術應用於其支付生態的擴展計畫中，特別是在零工經濟與捐款管理的數據分析與自動化上。",
-      "url": "https://www.inside.com.tw/article/41848-ipass-money-expands-its-payment-ecosystem-by-partnering-with-startups-to-grow-public-welfare-job-matching-and-lifestyle-services",
-      "source": "INSIDE"
+      "title": "中國稀土出口禁令推高氧化釔價格 150 倍，衝擊西方半導體與軍工供應鏈",
+      "summary": "中國因地緣政治緊張局勢，進一步收緊稀土出口管制，導致氧化釔價格飆升 **150 倍**，對西方半導體和軍工產業供應鏈構成重大挑戰。",
+      "impact": "稀土價格飆升可能推高半導體成本，進一步影響台灣的晶圓代工業務，對金融與製造業客戶的供應鏈穩定性構成壓力。此外，這可能促使美國與其他國家加速發展稀土替代技術，為相關投資提供機會。",
+      "action": "密切關注稀土價格變化與美國稀土替代技術進展，並與製造業客戶討論供應鏈風險應對方案，優先探索替代材料的技術合作機會。",
+      "url": "https://technews.tw/2026/07/18/china-rare-earth-controls-tighten/",
+      "source": "TechNews"
     },
     {
       "id": "dyn-7",
       "kind": "創業動態",
-      "title": "微軟報告：AI 數據中心導致碳排放增加 25%",
-      "summary": "微軟最新報告顯示，其 AI 數據中心的擴張導致碳排放量增加 **25%**，凸顯 AI 技術發展對能源消耗與可持續性帶來的挑戰。",
-      "impact": "AI 技術的能源成本與碳排放問題可能成為未來商業應用的關鍵挑戰，特別是在金融與製造業等高能耗行業中。對於 Azure OpenAI 的推廣，需考慮如何通過更高效的數據中心設計或碳補償計畫來減少對客戶 ESG 目標的潛在影響。",
-      "action": "安排技術團隊研究微軟數據中心的能源效率與碳排放策略，並評估是否能將相關解決方案整合至客戶的 AI 導入計畫中，以提升其 ESG 合規性。",
+      "title": "微軟報告：AI 數據中心碳排放增加 25%，環境影響引發關注",
+      "summary": "微軟最新報告顯示，AI 數據中心的擴張導致其碳排放量增加 **25%**，凸顯 AI 技術在環境可持續性方面的挑戰。",
+      "impact": "AI 數據中心的高碳排放可能對 Microsoft 的市場形象和客戶選擇造成影響，尤其是對金融與醫療行業中越來越重視 ESG 的客戶。這也為台灣 AI 顧問公司提供了機會，推動更綠色的 AI 解決方案，結合 Azure 的可持續性功能。",
+      "action": "立即組織團隊探索 Microsoft 可持續性工具（如 Azure Sustainability Calculator），並設計針對金融與醫療行業的低碳 AI 解決方案，吸引 ESG 驅動的客戶。",
       "url": "https://www.windowscentral.com/microsoft/dropping-greenwashing-credits-and-expanding-ai-datacenters-caused-microsofts-25-percent-emissions-jump",
       "source": "Hacker News"
     }
