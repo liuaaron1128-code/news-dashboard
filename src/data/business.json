@@ -1,126 +1,126 @@
 {
-  "asOf": "2026-07-27",
+  "asOf": "2026-07-29",
   "source": "商業媒體 RSS + Hacker News + GitHub Models",
   "items": [
     {
       "id": "founder",
       "kind": "創業故事",
-      "title": "Reid Hoffman 與 Mark Pincus：從創業者到 Prentis AI 實驗室的領航者",
-      "summary": "Reid Hoffman（LinkedIn 創辦人）與 Mark Pincus（Zynga 創辦人）在多年創業後，於 2026 年共同創立 AI 實驗室 Prentis，專注於自動化日常電腦任務。他們的轉型源於對 AI 潛力的深刻洞察：Hoffman 早在 LinkedIn 時期就意識到數據與網絡效應的重要性，Pincus 則在 Zynga 的遊戲開發中體會到用戶行為數據的價值。兩人認為，AI 的下一個主戰場將從模型開發轉向應用層，尤其是提升生產力的自動化工具。Prentis 致力於開發能取代手動操作的自動化解決方案，並已開始籌集 **1 億美元** 資金。他們的核心理念是「解放時間」，即讓人類從重複性任務中解脫，專注於創造性工作。",
-      "impact": "Prentis 的方向與 Azure OpenAI 的應用策略高度契合，特別是在 Copilot 與 Power Platform 的自動化應用上。這也表明，未來 AI 市場中更大的價值可能來自於應用層，而非基礎模型的開發，這對您服務的製造業與金融業客戶有直接啟發，尤其是流程自動化的潛力。",
-      "action": "讓團隊研究 Prentis 的產品定位，並評估是否能與 Copilot 或 Power Platform 的導入方案結合。本週內與製造與金融客戶討論其內部流程的自動化需求，尋找合作機會。"
+      "title": "移民創業者如何打造幫助個人創業的高收入平台",
+      "summary": "這位移民創業者在異鄉從零開始，創建了一個幫助人們成為「自己的老闆」的數位平台，並吸引了高收入用戶。其中，一位用戶每月營收高達 **26 萬美元**，另一位則達到 **7 萬美元**。創業者專注於抓住利基市場，提供工具和資源，讓個人創業者能快速上手並擴展業務。他的策略包括深刻了解目標用戶的需求，設計出直觀且功能強大的平台，並透過成功案例建立信任，吸引更多高潛力創業者加入。這個故事展示了如何以小眾市場為起點，通過專注和精準執行，打造一個能夠改變用戶生活的商業模式。",
+      "impact": "該案例對於專注於 Microsoft 生態圈的 AI 顧問業務有啟發，特別是如何利用 Azure OpenAI 和 Power Platform 幫助客戶打造類似的利基市場平台。對個人投資人而言，這類平台的高收入潛力可能是未來投資的方向，尤其是在加密貨幣和創業者生態系統的交集領域。",
+      "action": "本週內研究 Azure OpenAI 是否能用於快速構建類似平台的 MVP（最小可行產品），並分析其對台灣中小企業主的吸引力。若此類平台出現相關 IPO 或募資機會，應列入觀察清單。"
     },
     {
       "id": "case",
       "kind": "商業模式",
-      "title": "OpenRouter 如何成為 Stripe 的 AI 基礎設施拼圖",
-      "summary": "OpenRouter 是一家專注於 AI 模型路由的公司，提供統一的 API 平台，讓企業能夠在多個 AI 模型間高效管理推論請求與價值流動。其核心商業模式是透過收取交易費用與 API 使用費，將自身定位為 AI 經濟中的基礎設施提供者。Stripe 計劃以 **100 億美元** 收購 OpenRouter，目的是將其支付業務擴展至 AI 領域，藉由掌握 AI 模型間的交易流動，進一步壟斷新興的數字經濟交易層。這筆交易也代表 Stripe 進一步進軍 AI 基礎設施，填補其在支付與數據流動整合中的空白。",
-      "impact": "OpenRouter 的模式顯示，AI 模型之間的路由與交易管理已成為新興市場，這對 Azure 的 AI 生態系是一個警示，可能需要提升對多模型整合的支持。同時，Stripe 的佈局表明，支付與 AI 的結合將成為下一波浪潮，對您服務的金融業客戶有直接相關性。",
-      "action": "分析 Stripe 的 OpenRouter 收購案，研究其 API 路由模式是否能與 Azure 的 AI 服務整合。本週內向金融業客戶推廣多模型整合與交易管理的解決方案，搶先布局。"
+      "title": "Tesla 的 19.5 億美元 AI 硬體收購案：隱藏的技術方向與戰略",
+      "summary": "Tesla 在最新的 10-Q 文件中披露了一筆 **19.5 億美元**的 AI 硬體收購案，並以股票支付。然而，該交易綁定的部署里程碑被認定為「不太可能達成」，使得多數股權獎勵無法兌現。收購對象和技術細節均未公開，但外界推測可能與 Tesla 的自動駕駛技術或能源管理系統相關。這類收購顯示 Tesla 正積極布局 AI 硬體領域，並可能試圖進一步鞏固其在電動車與能源市場的地位。",
+      "impact": "對 AI 顧問業務而言，Tesla 的收購案可能預示著自動駕駛和能源管理技術的整合需求上升，值得關注是否會帶動 Azure 或 Copilot 在該領域的應用增加。對投資人來說，Tesla 的技術方向不明確可能帶來短期波動，但長期看來這筆收購可能強化其核心競爭力，影響其股價走勢。",
+      "action": "本週讓技術團隊分析 Tesla 的 AI 硬體需求是否能與 Azure AI 服務整合，並評估是否能在製造業客戶中推廣類似應用。若 Tesla 股價因技術不透明性出現回調，可考慮分批進場。"
     },
     {
       "id": "industry-0",
       "kind": "產業動態",
-      "title": "半導體：TSMC 預計 2027 年調漲晶圓代工價格最高 25%",
-      "summary": "根據報導，TSMC 計劃在 2027 年將晶圓代工價格調漲最高 **25%**，其中先進製程的基礎價格將提升 **5%-10%**。這反映了高端製程需求的持續增長以及供應鏈成本壓力的上升。TSMC 的調價策略可能進一步鞏固其在全球市場的定價權，但也可能影響下游客戶的成本結構。",
-      "impact": "半導體價格上漲將直接影響 AI 基礎設施的硬體成本，特別是伺服器與 GPU 的價格，這對金融與製造業的大規模 AI 部署帶來挑戰。同時，這也可能推動雲服務供應商提高定價，對 Azure 的競爭力產生間接影響。",
-      "action": "密切關注 TSMC 的價格調整進展，並與硬體供應商討論長期採購協議以鎖定成本。本週內與客戶討論可能的價格上漲影響，提前調整 AI 部署預算。"
+      "title": "半導體：中國國產 DUV 消息引發市場震盪，緯創美國廠成長機會",
+      "summary": "中國一家未具名的國家支持企業成功製造國產 DUV（深紫外光刻機），引發市場對中國半導體技術突破的擔憂，導致國際半導體股價下跌。同時，緯創在德州的首座美國工廠開始量產輝達的 GB300 晶片，並有望翻倍營收，成為 AI 半導體供應鏈的重要黑馬。",
+      "impact": "DUV 的突破可能影響全球半導體市場的競爭格局，對台灣製造業的供應鏈構成挑戰。緯創的成功則顯示出 AI 晶片製造的巨大潛力，可能為台灣製造業帶來新的成長機會。",
+      "action": "密切關注中國 DUV 技術的進一步發展，以及是否會影響台積電的競爭力。對於緯創，若其股價未反映 GB300 的成長潛力，可考慮增持。"
     },
     {
       "id": "industry-1",
       "kind": "產業動態",
-      "title": "AI 應用：Anthropic 推出 Claude Opus 5，強調成本效益成為新競爭點",
-      "summary": "Anthropic 發布其最新的 Claude Opus 5，該模型以一半成本提供接近旗艦 Fable 5 的效能，並引入「effort」參數，允許用戶根據需求調節運算強度，實現成本與品質的平衡。此舉反映出 AI 市場競爭正從單純追求效能轉向成本效益，並為更廣泛的商業應用鋪路。同時，Anthropic 也在為今年的 IPO 做準備，顯示其資本市場的野心。",
-      "impact": "成本效益的競爭對 Azure OpenAI 的定價策略提出挑戰，尤其是在中小型企業市場。這也表明，您的金融與醫療客戶可能更關注 AI 解決方案的性價比，而非單純的技術先進性。",
-      "action": "研究 Claude Opus 5 的技術與定價策略，並與 Azure 團隊討論如何優化定價模型。本週內與客戶溝通 AI 解決方案的成本效益，強調 Azure 在整合性上的優勢。"
+      "title": "AI 應用：OpenAI 歐盟總部落腳都柏林，擴大商業化布局",
+      "summary": "OpenAI 宣布在都柏林設立歐盟總部，並計劃增聘 **250 名**員工，專注於市場開發與法規遵循。此舉旨在將龐大的用戶基數轉化為穩定營收，並應對歐盟日益嚴格的 AI 法規。同時，Anthropic 也在都柏林加碼投資，使該城市成為 AI 業者競逐歐洲市場的前線。",
+      "impact": "OpenAI 的擴張可能帶動 Copilot 和 Power Platform 在歐洲的採用率上升，為顧問業務提供更多進入市場的機會。對投資人而言，AI 公司在歐洲的競爭加劇，可能影響相關企業的估值與市場份額。",
+      "action": "分析歐洲市場對 Copilot 的需求，並評估是否能與 OpenAI 在都柏林的布局合作。若 OpenAI 或 Anthropic 有相關募資機會，可考慮參與。"
     },
     {
       "id": "industry-2",
       "kind": "產業動態",
-      "title": "電動車與儲能：Tesla 宣布開源 Model S/X 設計，實質內容引發質疑",
-      "summary": "Tesla 宣布開源其 Model S 和 Model X 的設計，但未提供正式的開源授權或專利，僅釋出部分資料並附帶免責聲明。參考其早期的 Roadster 開源案例，外界對這次開源的誠意與實際影響存疑，認為這可能更多是市場行銷策略而非真正的開放創新。",
-      "impact": "Tesla 的行動顯示出電動車產業對開放設計的探索，但其有限的開源方式可能無法對產業供應鏈或技術創新帶來顯著影響。對於以 AI 驅動的電動車解決方案，這並未改變核心技術的封閉性，對於您投資的電動車相關標的影響有限。",
-      "action": "不需立即調整電動車投資佈局，但建議持續追蹤 Tesla 是否進一步釋出更多實質內容。本週內與團隊討論 AI 在電動車應用中的商業化機會，特別是與 Azure 平台的整合可能性。"
+      "title": "電動車與儲能：Tesla 收購案與台灣電池災情回應的市場影響",
+      "summary": "Tesla 在台灣針對近期的電池災情發表聲明，承諾未來原廠收購價格不因年份或電池狀況改變。同時，其 **19.5 億美元**的 AI 硬體收購案可能與其電池管理或能源儲存技術相關，顯示出 Tesla 在能源領域的野心。",
+      "impact": "Tesla 的動向可能影響台灣電池供應鏈的穩定性，並帶動儲能技術的進一步發展。對於投資人而言，Tesla 的能源布局可能提升其長期價值，但短期內需關注電池問題是否會影響市場信心。",
+      "action": "與製造業客戶探討是否能引入 Azure AI 技術以優化能源管理系統。若 Tesla 因電池問題導致股價回調，可視情況進行短線操作。"
     },
     {
       "id": "dyn-0",
       "kind": "創業動態",
-      "title": "Prentis 計劃募資 $1 億美元，聚焦自動化日常電腦任務",
-      "summary": "由 Reid Hoffman 和 Mark Pincus 聯合創辦的 AI 實驗室 Prentis 正在籌集 **$1 億美元**，目標是將自動化日常電腦任務作為 AI 的主要應用場景，並認為其市場潛力將超越編程自動化。",
-      "impact": "Prentis 的技術方向可能對 Microsoft Copilot 和 Power Platform 的應用場景形成競爭或補充，尤其是在金融和製造業中需要高效處理日常電腦操作的領域。該趨勢也可能吸引更多企業將資源投入此類應用，改變客戶的技術採購偏好。",
-      "action": "安排團隊分析 Prentis 的技術定位，評估其是否可作為 Azure OpenAI 的潛在合作夥伴，並探索如何將其自動化能力整合至現有客戶解決方案中。",
-      "url": "https://techcrunch.com/2026/07/24/prentis-new-ai-lab-co-founded-by-reid-hoffman-mark-pincus-in-talks-to-raise-100m/",
+      "title": "Antares 獲 4.7 億美元資金，專注美國軍方小型核反應爐",
+      "summary": "Antares 獲得 **4.7 億美元** 資金，用於建造功率介於 100 kW 至 1 MW 的小型模組化核反應爐，主要供應美國空軍基地。",
+      "impact": "此舉顯示軍事與能源技術融合的投資熱點，可能帶動核能技術在製造業（如高耗能產業）及能源管理領域的應用興趣。對 Azure OpenAI 的客戶來說，這類技術可能需要 AI 驅動的能源優化解決方案，為顧問業務帶來新機會。",
+      "action": "讓團隊研究小型核反應爐的能源管理需求，評估是否可將相關 AI 解決方案納入製造業客戶提案。",
+      "url": "https://techcrunch.com/2026/07/27/antares-raises-470m-to-build-nuclear-reactors-for-the-u-s-military/",
       "source": "TechCrunch Startups"
     },
     {
       "id": "dyn-1",
       "kind": "創業動態",
-      "title": "Elon Musk 的 Boring Company 以 $200 億估值籌資，專注基礎設施創新",
-      "summary": "Elon Musk 的隧道建設公司 Boring Company 正以 **$200 億美元**估值進行新一輪融資，凸顯基礎設施創新仍具有吸引高資本的能力，並可能改變未來城市交通與規劃模式。",
-      "impact": "Boring Company 的技術進展可能對智慧城市和交通基礎設施的 AI 解決方案需求產生影響，尤其是製造業和物流業的客戶可能需要重新評估其供應鏈和運輸策略。這也可能為 Azure IoT 和 AI 技術在基礎設施領域的應用開啟新機會。",
-      "action": "讓市場研究團隊密切關注 Boring Company 的融資進展，並分析其技術對智慧城市和交通相關 AI 解決方案的潛在需求變化，制定相應的產品策略。",
-      "url": "https://techcrunch.com/2026/07/25/elon-musks-boring-company-reportedly-raising-funding-at-a-20-billion-valuation/",
-      "source": "TechCrunch Venture"
+      "title": "Safe Superintelligence 與 Nvidia 建立長期合作，推進 AI 研究",
+      "summary": "Ilya Sutskever 創辦的 Safe Superintelligence 宣布與 Nvidia 建立長期合作關係，進一步擴展其 AI 研究基礎設施。",
+      "impact": "此合作強調 AI 計算能力的重要性，可能加速生成式 AI 和其他尖端技術的進展。對 Azure OpenAI 的應用來說，這可能促進 AI 模型在金融與醫療領域的更深層應用，但也可能帶來更激烈的競爭。",
+      "action": "密切關注 Safe Superintelligence 在 AI 研究的突破，特別是與 Nvidia 的技術整合，評估是否有合作或競爭威脅。",
+      "url": "https://techcrunch.com/2026/07/27/ilya-sutskevers-safe-superintelligence-partners-with-nvidia-to-scale-its-ai-research/",
+      "source": "TechCrunch Startups"
     },
     {
       "id": "dyn-2",
       "kind": "創業動態",
-      "title": "Travis Kalanick 的 Atoms 獲 $17 億融資，聚焦工業機器人",
-      "summary": "Travis Kalanick 的機器人公司 Atoms 獲得 **$17 億美元**融資，由 a16z 領投，Uber 也參與投資。Atoms 計劃利用工業 AI 技術現代化物流與製造業。",
-      "impact": "Atoms 的融資成功反映出工業機器人和 AI 在製造業的巨大潛力，這可能與您現有的製造業客戶需求高度契合。該公司若技術落地，可能成為 Azure AI 和 Power Platform 的潛在競爭者或合作夥伴。",
-      "action": "立即安排技術團隊研究 Atoms 的工業 AI 解決方案，評估其對現有製造業客戶的影響，並探索是否需要調整相關產品策略以應對競爭或尋求合作。",
-      "url": "https://techcrunch.com/2026/07/22/travis-kalanicks-robotics-company-raises-1-7b-led-by-a16z/",
+      "title": "Elon Musk 的 Boring Company 擬以 200 億美元估值籌資",
+      "summary": "Elon Musk 的 Boring Company 擬以 **200 億美元** 估值進行新一輪融資，為隧道技術與基礎建設注入更多資金。",
+      "impact": "隧道技術的發展可能對智慧城市與製造業物流產生深遠影響。對 Microsoft 生態系統來說，這可能帶動對智慧基建管理平台（如 Azure IoT）的需求，形成潛在商機。",
+      "action": "讓團隊分析 Boring Company 的技術與基建應用，探索 Azure IoT 與 Power Platform 是否能提供相關解決方案。",
+      "url": "https://techcrunch.com/2026/07/25/elon-musks-boring-company-reportedly-raising-funding-at-a-20-billion-valuation/",
       "source": "TechCrunch Venture"
     },
     {
       "id": "dyn-3",
       "kind": "創業動態",
-      "title": "Anthropic 推出 Claude Opus 5，計劃 IPO，聚焦成本效益與參數調節",
-      "summary": "Anthropic 推出新一代 AI 模型 Claude Opus 5，該模型以一半成本提供接近旗艦 Fable 5 的效能，並引入「effort」參數，允許用戶調節運算強度以平衡成本與品質。同時，Anthropic 正在籌備今年的 IPO。",
-      "impact": "Claude Opus 5 的成本效益設計可能對 Azure OpenAI 的定價策略構成壓力，尤其是在金融和醫療等對成本敏感的行業。其「effort」參數的創新設計也可能改變用戶對 AI 解決方案的需求偏好，促使市場更關注靈活性和性價比。",
-      "action": "指派產品團隊研究 Anthropic 的「effort」參數設計，評估是否可以納入 Copilot 或其他 Azure AI 產品，並密切追蹤其 IPO 進展以判斷市場對其技術的接受度。",
-      "url": "https://www.inside.com.tw/article/41917-anthropic-preps-for-ipo-as-claude-opus-5-launches",
+      "title": "Tesla 以 19.5 億美元完成 AI 硬體收購案，細節未公開",
+      "summary": "Tesla 以 **19.5 億美元** 完成 AI 硬體收購案，交易全以股票支付，但收購對象與技術細節未公開。",
+      "impact": "此收購可能與 Tesla 的自駕與能源管理技術有關，顯示 AI 硬體在智慧交通與能源領域的重要性。對 AI 顧問業務來說，這可能帶動相關技術需求，特別是製造業與能源管理的 AI 解決方案。",
+      "action": "追蹤 Tesla 收購案的後續技術應用，特別是 AI 硬體如何影響能源與交通領域，評估是否能為製造業客戶提供類似解決方案。",
+      "url": "https://www.inside.com.tw/article/41950-tesla-completes-nearly-2-billion-ai-acquisition-but-wont-name-the-company",
       "source": "INSIDE"
     },
     {
       "id": "dyn-4",
       "kind": "創業動態",
-      "title": "Stripe 傳洽購 OpenRouter，估值達 100 億美元",
-      "summary": "支付巨頭 Stripe 傳出正洽談以 **100 億美元** 收購 AI 模型路由層 OpenRouter，這將是創辦人 Alex Atallah 繼 OpenSea 後的第二個百億美元級公司。OpenRouter 提供統一 API，管理多模型推論請求與價值流動，目標是整合支付與 AI 基礎設施。",
-      "impact": "若交易完成，Stripe 有望成為 AI 模型商業化價值鏈中的關鍵節點，可能對 Azure OpenAI 的商業化模式帶來競爭壓力。對於金融與醫療業務中的支付與 AI 整合需求，Stripe 的佈局可能成為新參考標準，影響客戶對解決方案的期待。",
-      "action": "立即分析 OpenRouter 的技術優勢與 Stripe 的支付整合策略，評估是否需要在 Azure OpenAI 解決方案中加入類似的模型路由功能，並與 Microsoft 進一步探討合作可能性。",
-      "url": "https://www.inside.com.tw/article/41915-openrouter-reportedly-acquired-by-stripe-for-10-billion-alex-atallahs-second-10-billion-company-in-two-years",
+      "title": "OpenAI 在都柏林設立歐盟總部並增聘 250 人",
+      "summary": "OpenAI 宣布於都柏林設立歐盟總部，並計劃增聘 **250 人**，重點在市場開發與法規合規。此舉旨在推動歐洲市場變現並應對歐盟日益嚴格的 AI 法規。同時，Anthropic 也在都柏林擴展業務，使該城市成為 AI 業者競逐歐洲市場的戰略前線。",
+      "impact": "OpenAI 的歐洲擴張表明，生成式 AI 的商業化進程正在加速，尤其是在法規挑戰嚴峻的市場。對於您作為 Azure OpenAI 的核心夥伴，這可能帶來與歐洲企業合作的新機會，特別是在法規合規與市場開發的解決方案需求上。對投資而言，歐洲市場的 AI 成長潛力可能提升相關科技股的吸引力。",
+      "action": "讓團隊研究 OpenAI 在歐洲市場的商業模式，評估是否能將其法規合規方案整合進 Copilot 或 Power Platform 提案中；同時密切關注 Anthropic 的歐洲動向，尋找合作或競爭機會。",
+      "url": "https://www.inside.com.tw/article/41945-openai-dublin-eu-hq-250-jobs-europe-revenue",
       "source": "INSIDE"
     },
     {
       "id": "dyn-5",
       "kind": "創業動態",
-      "title": "TSMC 計劃 2027 年晶片代工價格上調 25%",
-      "summary": "TSMC 計劃在 **2027 年**將晶片代工價格提高 **25%**，其中先進製程的基準價格將逐步上漲 **5%-10%**。此舉可能重塑全球半導體供應鏈的成本結構，對下游廠商的定價策略帶來重大影響。",
-      "impact": "晶片成本上升將推高 AI 硬體與雲端運算基礎設施的價格，進一步影響 Azure 的定價與競爭力。此外，製造業客戶可能面臨更高的設備與 IoT 解決方案成本，需提前預測其採購需求與預算壓力。",
-      "action": "讓團隊研究 TSMC 價格上調對 Azure 雲端成本的間接影響，並與製造業客戶討論是否需提前鎖定硬體採購合約，以避免未來成本上漲風險。",
-      "url": "https://www.tomshardware.com/tech-industry/semiconductors/tsmc-eyes-price-hikes-of-up-to-25-percent-on-chip-production-services-in-2027-report-claims-plans-to-raise-baseline-prices-by-5-percent-to-10-percent-on-advanced-nodes",
-      "source": "Hacker News"
+      "title": "緯創德州廠量產 Nvidia GB300，營收翻倍",
+      "summary": "緯創在美國德州沃斯堡的首座工廠正式啟用，專注於量產 Nvidia GB300 Grace Blackwell Ultra Superchip，並使其營收實現翻倍增長。此舉使緯創成功躋身《財富》500 大企業，成為 AI 硬體供應鏈中的關鍵角色。",
+      "impact": "緯創的成功顯示 AI 硬體需求的爆發性增長，對製造業客戶來說，這可能帶來更多高效能 AI 硬體的需求，進一步推動 Azure AI 解決方案的整合需求。對投資而言，AI 硬體供應鏈的相關公司（如緯創和 Nvidia）可能成為長期增長標的。",
+      "action": "分析緯創的 AI 硬體供應鏈角色，評估是否能與其合作開發針對製造業的 AI 解決方案；同時檢視 Nvidia 相關供應鏈股票，考慮是否加碼投資。",
+      "url": "https://finance.technews.tw/2026/07/28/how-wistrons-early-nvidia-bet-made-it-an-unsung-winner-of-the-ai-boom/",
+      "source": "TechNews"
     },
     {
       "id": "dyn-6",
       "kind": "創業動態",
-      "title": "Tesla 宣稱開源 Model S/X 設計但缺乏實質授權",
-      "summary": "Tesla 宣稱開源 Model S 和 Model X 設計，但未提供正式授權或專利，僅釋出部分資料，且缺乏關鍵原始碼。外界質疑這更像是一種營銷策略，而非真正的技術共享。",
-      "impact": "Tesla 的策略可能引發市場對開源與專利授權的關注，進一步影響 AI 驅動的汽車供應鏈生態。對於 Microsoft 的 Copilot 及 AI 解決方案，這類「開源但不完全」的模式或成未來趨勢，需評估其對產業合作的影響。",
-      "action": "讓團隊分析 Tesla 的開源策略對 AI 產業的潛在影響，並與 Microsoft 探討如何在 Copilot 的授權與開源策略中避免類似爭議，增強市場信任。",
-      "url": "https://www.inside.com.tw/article/41919-tesla-says-open-source-model-s-and-model-x-but-no-license-no-patent-no-rights",
-      "source": "INSIDE"
+      "title": "TSMC 計劃 2027 年將晶片代工價格上調 25%",
+      "summary": "TSMC 計劃於 **2027 年**將晶片代工價格上調 **25%**，其中先進製程的價格將在此期間逐步提升 **5%-10%**。此舉可能對全球半導體供應鏈的價格結構產生深遠影響，並進一步推高終端產品成本。",
+      "impact": "TSMC 的價格上調可能推動 AI 硬體成本上升，進而影響 Azure AI 解決方案的硬體採購成本，對金融與製造業客戶的 IT 預算造成壓力。對投資而言，半導體產業的利潤率可能因此提升，但也需警惕需求放緩的風險。",
+      "action": "與製造業客戶討論可能的成本影響，提前規劃硬體採購策略；同時關注 TSMC 股價走勢，若有回調可考慮逢低布局。",
+      "url": "https://www.tomshardware.com/tech-industry/semiconductors/tsmc-eyes-price-hikes-of-up-to-25-percent-on-chip-production-services-in-2027-report-claims-plans-to-raise-baseline-prices-by-5-percent-to-10-percent-on-advanced-nodes",
+      "source": "Hacker News"
     },
     {
       "id": "dyn-7",
       "kind": "創業動態",
-      "title": "神雲科技採用 AMD 第六代 EPYC 進軍代理式 AI 基礎架構",
-      "summary": "神達控股旗下神雲科技宣布搭載 AMD 第六代 EPYC 伺服器處理器，推進代理式 AI 基礎架構。此產品專注於高效能與節能，旨在滿足日益增長的 AI 計算需求。",
-      "impact": "AMD 的高效能硬體創新為 AI 基礎設施提供了新的選擇，可能對 Azure 的雲端運算服務形成間接競爭。對於製造與醫療行業的客戶，這類硬體升級可能成為推動其 AI 部署的關鍵因素，需密切關注市場採用情況。",
-      "action": "安排技術團隊評估 AMD 第六代 EPYC 的性能與成本效益，並與 Microsoft 探討是否將其納入 Azure 雲端基礎設施的硬體選項，為客戶提供更具競爭力的解決方案。",
-      "url": "https://technews.tw/2026/07/26/mitac-gen6-amd-epyc-server/",
-      "source": "TechNews"
+      "title": "Ollama 獲得 6500 萬美元融資，專注開放模型加速",
+      "summary": "生成式 AI 公司 Ollama 宣布完成 **6500 萬美元**融資，資金將用於加速開放模型的開發與應用。此舉反映了生成式 AI 領域的資本熱潮，並顯示市場對開放模型技術的高度期待。",
+      "impact": "Ollama 的融資表明開放模型正在成為生成式 AI 的重要方向，對 Azure OpenAI 的競爭策略可能構成挑戰。對投資而言，開放模型相關初創公司可能成為下一波資本追逐的熱點，值得密切關注。",
+      "action": "研究 Ollama 的開放模型技術，評估是否能與 Azure OpenAI 形成互補或競爭；同時觀察相關初創公司的融資動態，尋找潛在投資機會。",
+      "url": "https://ollama.com/blog/all-aboard-open-models",
+      "source": "Hacker News"
     }
   ],
   "placeholder": false
