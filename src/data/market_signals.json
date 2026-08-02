@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-01T20:40:02.530Z",
-  "asOf": "2026-08-01",
+  "generatedAt": "2026-08-02T20:42:14.683Z",
+  "asOf": "2026-08-02",
   "source": "Yahoo Finance + FRED",
   "synthesis": {
     "engine": "rule",
@@ -64,10 +64,10 @@
       "id": "gold",
       "icon": "🥇",
       "title": "黃金近 1 年報酬",
-      "value": "+23%",
+      "value": "+24.7%",
       "tag": "避險需求",
       "tagLevel": "high",
-      "detail": "黃金近 1 年 23%、近 5 年年化 17.4%，常反映通膨與避險情緒。"
+      "detail": "黃金近 1 年 24.7%、近 5 年年化 17.7%，常反映通膨與避險情緒。"
     }
   ],
   "relativeValue": [
@@ -417,7 +417,7 @@
       "label": "美國 Fed 基準利率 (上限)",
       "value": 3.75,
       "unit": "%",
-      "note": "更新於 2026-08-01"
+      "note": "更新於 2026-08-02"
     },
     {
       "id": "ecb",
@@ -776,28 +776,28 @@
       "id": "gold",
       "name": "黃金",
       "icon": "🥇",
-      "price": 4049.1,
-      "ytd": -6.1,
-      "return1y": 23,
-      "cagr5y": 17.4
+      "price": 4107,
+      "ytd": -4.8,
+      "return1y": 24.7,
+      "cagr5y": 17.7
     },
     {
       "id": "silver",
       "name": "白銀",
       "icon": "🥈",
-      "price": 57.59,
-      "ytd": -18.4,
-      "return1y": 57.6,
-      "cagr5y": 17.6
+      "price": 57.79,
+      "ytd": -18.1,
+      "return1y": 58.1,
+      "cagr5y": 17.7
     },
     {
       "id": "copper",
       "name": "銅",
       "icon": "🟤",
-      "price": 6.436,
-      "ytd": 14.1,
-      "return1y": 48.6,
-      "cagr5y": 7.7
+      "price": 6.4655,
+      "ytd": 14.6,
+      "return1y": 49.3,
+      "cagr5y": 7.8
     },
     {
       "id": "wti",
@@ -830,19 +830,19 @@
       "id": "btc",
       "name": "比特幣",
       "icon": "₿",
-      "price": 62512.89,
-      "ytd": -29.5,
-      "return1y": -44.8,
-      "cagr5y": 9.4
+      "price": 63354.64,
+      "ytd": -28.6,
+      "return1y": -43.7,
+      "cagr5y": 10.1
     },
     {
       "id": "eth",
       "name": "以太幣",
       "icon": "Ξ",
-      "price": 1831.92,
-      "ytd": -38.9,
-      "return1y": -47.5,
-      "cagr5y": -6.5
+      "price": 1879.48,
+      "ytd": -37.4,
+      "return1y": -44.6,
+      "cagr5y": -6.4
     },
     {
       "id": "dxy",
@@ -857,27 +857,27 @@
       "id": "eurusd",
       "name": "歐元/美元",
       "icon": "🇪🇺",
-      "price": 1.1527,
-      "ytd": -1.9,
-      "return1y": 0.9,
-      "cagr5y": -0.6
+      "price": 1.1555,
+      "ytd": -1.7,
+      "return1y": -0.3,
+      "cagr5y": -0.5
     },
     {
       "id": "usdjpy",
       "name": "美元/日圓",
       "icon": "🇯🇵",
-      "price": 157.4,
-      "ytd": 0.4,
-      "return1y": 4.4,
+      "price": 157.05,
+      "ytd": 0.2,
+      "return1y": 6.6,
       "cagr5y": 7.5
     },
     {
       "id": "gbpusd",
       "name": "英鎊/美元",
       "icon": "🇬🇧",
-      "price": 1.3482,
-      "ytd": 0.1,
-      "return1y": 2.1,
+      "price": 1.3495,
+      "ytd": 0.2,
+      "return1y": 1.5,
       "cagr5y": -0.6
     },
     {
@@ -886,7 +886,7 @@
       "icon": "🇨🇳",
       "price": 6.7448,
       "ytd": -3.6,
-      "return1y": -6.3,
+      "return1y": -6.5,
       "cagr5y": 0.9
     },
     {
