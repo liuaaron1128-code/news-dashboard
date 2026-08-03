@@ -32,10 +32,10 @@ const OUT = join(DATA, 'leads.json')
 const UA =
   'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36'
 const ENDPOINT =
-  process.env.GITHUB_MODELS_ENDPOINT || 'https://models.github.ai/inference/chat/completions'
-const MODEL_PRIMARY = process.env.GITHUB_MODELS_MODEL || 'openai/gpt-4o'
-const MODEL_FALLBACK = 'openai/gpt-4o-mini'
-const TOKEN = process.env.GITHUB_TOKEN
+  process.env.LLM_ENDPOINT || 'https://generativelanguage.googleapis.com/v1beta/openai/chat/completions'
+const MODEL_PRIMARY = process.env.LLM_MODEL || 'gemini-2.0-flash'
+const MODEL_FALLBACK = 'gemini-1.5-flash'
+const TOKEN = process.env.GEMINI_API_KEY
 
 const LIST_VERSION = 2
 const MAX_LEADS = 100
@@ -341,7 +341,7 @@ async function main() {
   if (prev.version !== LIST_VERSION) console.log('list version changed — starting fresh')
 
   if (!TOKEN) {
-    console.warn('GITHUB_TOKEN not set — keeping previous leads.json.')
+    console.warn('GEMINI_API_KEY not set — keeping previous leads.json.')
     return
   }
 

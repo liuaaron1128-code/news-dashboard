@@ -19,9 +19,9 @@ const OUT = join(DATA, 'commentary.json')
 
 // GitHub Models config (overridable via env).
 const ENDPOINT =
-  process.env.GITHUB_MODELS_ENDPOINT || 'https://models.github.ai/inference/chat/completions'
-const MODEL = process.env.GITHUB_MODELS_MODEL || 'openai/gpt-4o-mini'
-const TOKEN = process.env.GITHUB_TOKEN
+  process.env.LLM_ENDPOINT || 'https://generativelanguage.googleapis.com/v1beta/openai/chat/completions'
+const MODEL = process.env.LLM_MODEL || 'gemini-2.0-flash'
+const TOKEN = process.env.GEMINI_API_KEY
 
 const readJson = (p, fallback) => {
   try {
@@ -106,7 +106,7 @@ async function callModel(summary) {
 
 async function main() {
   if (!TOKEN) {
-    console.warn('GITHUB_TOKEN not set — keeping existing commentary.json.')
+    console.warn('GEMINI_API_KEY not set — keeping existing commentary.json.')
     return
   }
   const summary = buildSummary()
