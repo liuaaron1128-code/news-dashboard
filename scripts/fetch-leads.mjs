@@ -16,7 +16,7 @@
 //   appends them to existing leads (score boost) or creates new leads that then
 //   get the same full sales profile.
 //
-// Model: GitHub Models gpt-4o (mini fallback), free via GITHUB_TOKEN. Websites
+// Model: Claude via ANTHROPIC_API_KEY (previously GitHub Models, now retired). Websites
 // are only emitted when the model is confident; the UI adds constructed lookup
 // links (Google/104) so contact info never depends on hallucination. Any stage
 // failure keeps the previous file. Capped at 100 leads. No npm deps.
@@ -24,6 +24,7 @@
 import { readFileSync, writeFileSync } from 'node:fs'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { chat as llmChat, parseJson, hasLLM, LLM_MODEL } from './lib/llm.mjs'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const DATA = join(__dirname, '..', 'src', 'data')
@@ -31,11 +32,6 @@ const OUT = join(DATA, 'leads.json')
 
 const UA =
   'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36'
-const ENDPOINT =
-  process.env.GITHUB_MODELS_ENDPOINT || 'https://models.github.ai/inference/chat/completions'
-const MODEL_PRIMARY = process.env.GITHUB_MODELS_MODEL || 'openai/gpt-4o'
-const MODEL_FALLBACK = 'openai/gpt-4o-mini'
-const TOKEN = process.env.GITHUB_TOKEN
 
 const LIST_VERSION = 2
 const MAX_LEADS = 100
@@ -95,41 +91,12 @@ const EXCLUSIONS =
   '排除：法人研究機構（工研院、金屬中心、資策會等）；主業是 AI/軟體/雲端/系統整合服務的同業；' +
   '微軟（Microsoft）本身與其分公司、Google/AWS/OpenAI 等雲端與 AI 原廠（他們是供應商或夥伴，不是客戶）；沒有實質台灣營運的外商。'
 
-// ---------- GitHub Models ----------
-async function chat(messages, { maxTokens = 4000, temperature = 0.4 } = {}) {
-  const models = [...new Set([MODEL_PRIMARY, MODEL_FALLBACK])]
-  let lastErr
-  for (const model of models) {
-    for (let attempt = 1; attempt <= 2; attempt++) {
-      try {
-        const res = await fetch(ENDPOINT, {
-          method: 'POST',
-          headers: { 'content-type': 'application/json', authorization: `Bearer ${TOKEN}`, accept: 'application/json' },
-          body: JSON.stringify({ model, temperature, max_tokens: maxTokens, response_format: { type: 'json_object' }, messages }),
-          signal: AbortSignal.timeout(120000),
-        })
-        if (!res.ok) {
-          const body = (await res.text()).slice(0, 200)
-          const retryable = res.status === 429 || res.status >= 500
-          const err = new Error(`HTTP ${res.status}: ${body}`)
-          if (!retryable) {
-            lastErr = err
-            break
-          }
-          throw err
-        }
-        const json = await res.json()
-        const content = json?.choices?.[0]?.message?.content
-        if (!content) throw new Error('no content')
-        return { data: JSON.parse(content), model }
-      } catch (e) {
-        lastErr = e
-        await sleep(4000)
-      }
-    }
-    console.warn(`model ${model} failed: ${lastErr?.message}`)
-  }
-  throw lastErr
+// ---------- Claude chat (via shared Anthropic helper) ----------
+// GitHub Models was retired (HTTP 410); this now calls Claude with the
+// ANTHROPIC_API_KEY secret. Returns { data, model } to keep the callers unchanged.
+async function chat(messages, { maxTokens = 4000 } = {}) {
+  const text = await llmChat(messages, { maxTokens })
+  return { data: parseJson(text), model: LLM_MODEL }
 }
 
 // ---------- normalize a model-produced profile onto a lead ----------
@@ -340,8 +307,8 @@ async function main() {
   const existing = prev.version === LIST_VERSION && Array.isArray(prev.leads) ? prev.leads : []
   if (prev.version !== LIST_VERSION) console.log('list version changed — starting fresh')
 
-  if (!TOKEN) {
-    console.warn('GITHUB_TOKEN not set — keeping previous leads.json.')
+  if (!hasLLM()) {
+    console.warn('ANTHROPIC_API_KEY not set — keeping previous leads.json.')
     return
   }
 

@@ -1,27 +1,23 @@
 // Generates src/data/commentary.json — an AI daily read of the dashboard.
 //
-// Uses GitHub Models (free, OpenAI-compatible) authenticated with the workflow's
-// built-in GITHUB_TOKEN — no separate API key to manage. Reads that day's news +
-// bubble + market-signal data and writes structured commentary.
+// Uses Claude via the shared LLM helper (ANTHROPIC_API_KEY). Reads that day's
+// news + bubble + market-signal data and writes structured commentary.
+// (Previously GitHub Models, which was retired — its endpoint now 410s.)
 //
-// Degrades gracefully: if GITHUB_TOKEN is unset or the call fails, the existing
-// commentary.json is left untouched and the script exits 0 (never breaks the
-// daily workflow). Raw HTTPS (global fetch), no npm dependencies — matching
-// fetch-market-signals.mjs.
+// Degrades gracefully: if ANTHROPIC_API_KEY is unset or the call fails, the
+// existing commentary.json is left untouched and the script exits 0 (never
+// breaks the daily workflow). Raw HTTPS (global fetch), no npm dependencies —
+// matching fetch-market-signals.mjs.
 
 import { readFileSync, writeFileSync } from 'node:fs'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { chat, parseJson, hasLLM, LLM_MODEL } from './lib/llm.mjs'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const DATA = join(__dirname, '..', 'src', 'data')
 const OUT = join(DATA, 'commentary.json')
 
-// GitHub Models config (overridable via env).
-const ENDPOINT =
-  process.env.GITHUB_MODELS_ENDPOINT || 'https://models.github.ai/inference/chat/completions'
-const MODEL = process.env.GITHUB_MODELS_MODEL || 'openai/gpt-4o-mini'
-const TOKEN = process.env.GITHUB_TOKEN
 
 const readJson = (p, fallback) => {
   try {
@@ -70,12 +66,8 @@ async function callModel(summary) {
     'bullets (string 陣列，3-4 點)、crossSignals (string 陣列，0-3 點)、' +
     'confidence ("high"|"medium"|"low")。不要輸出任何其他文字。'
 
-  const body = {
-    model: MODEL,
-    temperature: 0.4,
-    max_tokens: 1200,
-    response_format: { type: 'json_object' },
-    messages: [
+  const text = await chat(
+    [
       { role: 'system', content: system },
       {
         role: 'user',
@@ -85,28 +77,14 @@ async function callModel(summary) {
           '\n\n請依規定的 JSON 格式產出今日解讀。',
       },
     ],
-  }
-
-  const res = await fetch(ENDPOINT, {
-    method: 'POST',
-    headers: {
-      'content-type': 'application/json',
-      authorization: `Bearer ${TOKEN}`,
-      accept: 'application/json',
-    },
-    body: JSON.stringify(body),
-  })
-
-  if (!res.ok) throw new Error(`HTTP ${res.status}: ${await res.text()}`)
-  const json = await res.json()
-  const content = json?.choices?.[0]?.message?.content
-  if (!content) throw new Error('no content in response')
-  return JSON.parse(content)
+    { maxTokens: 1200 },
+  )
+  return parseJson(text)
 }
 
 async function main() {
-  if (!TOKEN) {
-    console.warn('GITHUB_TOKEN not set — keeping existing commentary.json.')
+  if (!hasLLM()) {
+    console.warn('ANTHROPIC_API_KEY not set — keeping existing commentary.json.')
     return
   }
   const summary = buildSummary()
@@ -115,7 +93,7 @@ async function main() {
     const out = {
       date: summary.date,
       generatedAt: new Date().toISOString(),
-      model: `GitHub Models (${MODEL})`,
+      model: `Claude (${LLM_MODEL})`,
       headline: parsed.headline || '',
       topConcern: parsed.topConcern || '',
       bullets: Array.isArray(parsed.bullets) ? parsed.bullets : [],
@@ -123,7 +101,7 @@ async function main() {
       confidence: ['high', 'medium', 'low'].includes(parsed.confidence) ? parsed.confidence : 'medium',
     }
     writeFileSync(OUT, JSON.stringify(out, null, 2) + '\n')
-    console.log(`Wrote commentary for ${out.date} via ${MODEL}.`)
+    console.log(`Wrote commentary for ${out.date} via ${LLM_MODEL}.`)
   } catch (e) {
     console.error(`Commentary generation failed (keeping previous): ${e.message}`)
     // Non-fatal: leave the previous commentary in place.

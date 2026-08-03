@@ -44,25 +44,25 @@ jobs:
       - name: Fetch supplementary sources (Taiwan flows, sentiment)
         run: node scripts/fetch-extras.mjs
 
-      - name: Generate AI commentary (GitHub Models — free, built-in token)
+      - name: Generate AI commentary (Claude)
         run: node scripts/generate-commentary.mjs
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
 
-      - name: Fetch business & startup digest (Hacker News + GitHub Models)
+      - name: Fetch business & startup digest (Hacker News + Claude)
         run: node scripts/fetch-business.mjs
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
 
-      - name: Scan AI-adoption leads (Taiwan business RSS + GitHub Models)
+      - name: Scan AI-adoption leads (Taiwan business RSS + Claude)
         run: node scripts/fetch-leads.mjs
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
 
-      - name: Generate daily news briefing (RSS + GitHub Models)
+      - name: Generate daily news briefing (RSS + Claude)
         run: node scripts/fetch-briefing.mjs
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           # Code deploys regenerate today's entry so pipeline improvements take
           # effect same-day; scheduled runs create the new day anyway.
           FORCE_BRIEFING: ${{ github.event_name == 'push' && '1' || '' }}

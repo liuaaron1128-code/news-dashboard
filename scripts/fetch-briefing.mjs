@@ -4,8 +4,8 @@
 //   - Market snapshot: real numbers from market_signals.json + signals_history.json
 //     (already fetched earlier in the workflow).
 //   - News: ~20 free RSS feeds (global markets / macro / geopolitics / tech /
-//     crypto / Taiwan), then a multi-stage GitHub Models pipeline (built-in
-//     GITHUB_TOKEN, free):
+//     crypto / Taiwan), then a multi-stage Claude pipeline (ANTHROPIC_API_KEY;
+//     previously GitHub Models, which was retired and now returns HTTP 410):
 //       stage 1  select & grade the 12-14 stories that matter to this reader
 //       stage 2  write each story IN DEPTH in small batches (fits output limits)
 //       stage 3  core judgment + weekly events
@@ -23,6 +23,7 @@
 import { readFileSync, writeFileSync } from 'node:fs'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { chat as llmChat, parseJson, hasLLM, LLM_MODEL } from './lib/llm.mjs'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const DATA = join(__dirname, '..', 'src', 'data')
@@ -30,11 +31,6 @@ const OUT = join(DATA, 'briefings.json')
 
 const UA =
   'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36'
-const ENDPOINT =
-  process.env.GITHUB_MODELS_ENDPOINT || 'https://models.github.ai/inference/chat/completions'
-const MODEL_PRIMARY = process.env.GITHUB_MODELS_MODEL || 'openai/gpt-4o'
-const MODEL_FALLBACK = 'openai/gpt-4o-mini'
-const TOKEN = process.env.GITHUB_TOKEN
 const FORCE = process.env.FORCE_BRIEFING === '1'
 
 const readJson = (p, fb) => {
@@ -170,47 +166,12 @@ async function fetchHeadlines() {
   return all.slice(0, 80)
 }
 
-// ---- GitHub Models chat with model fallback ----
-async function chat(messages, { maxTokens = 4000, temperature = 0.4 } = {}) {
-  const models = [...new Set([MODEL_PRIMARY, MODEL_FALLBACK])]
-  let lastErr
-  for (const model of models) {
-    for (let attempt = 1; attempt <= 2; attempt++) {
-      try {
-        const res = await fetch(ENDPOINT, {
-          method: 'POST',
-          headers: { 'content-type': 'application/json', authorization: `Bearer ${TOKEN}`, accept: 'application/json' },
-          body: JSON.stringify({
-            model,
-            temperature,
-            max_tokens: maxTokens,
-            response_format: { type: 'json_object' },
-            messages,
-          }),
-          signal: AbortSignal.timeout(120000),
-        })
-        if (!res.ok) {
-          const body = (await res.text()).slice(0, 200)
-          const retryable = res.status === 429 || res.status >= 500
-          const err = new Error(`HTTP ${res.status}: ${body}`)
-          if (!retryable) {
-            lastErr = err
-            break // this model won't work — try the fallback model
-          }
-          throw err
-        }
-        const json = await res.json()
-        const content = json?.choices?.[0]?.message?.content
-        if (!content) throw new Error('no content')
-        return { data: JSON.parse(content), model }
-      } catch (e) {
-        lastErr = e
-        await sleep(4000)
-      }
-    }
-    console.warn(`model ${model} failed: ${lastErr?.message}`)
-  }
-  throw lastErr
+// ---- Claude chat (via shared Anthropic helper) ----
+// GitHub Models was retired (HTTP 410); this now calls Claude with the
+// ANTHROPIC_API_KEY secret. Returns { data, model } to keep the callers unchanged.
+async function chat(messages, { maxTokens = 4000 } = {}) {
+  const text = await llmChat(messages, { maxTokens })
+  return { data: parseJson(text), model: LLM_MODEL }
 }
 
 const CATS = ['宏觀政策', '地緣政治', '市場動態', 'AI科技', '台灣政策', '加密貨幣', '房地產', '客戶產業']
@@ -321,8 +282,8 @@ async function main() {
     console.log(`Briefing for ${date} already present (${existing.news.length} items) — skipping (set FORCE_BRIEFING=1 to regenerate).`)
     return
   }
-  if (!TOKEN) {
-    console.warn('GITHUB_TOKEN not set — skipping briefing generation.')
+  if (!hasLLM()) {
+    console.warn('ANTHROPIC_API_KEY not set — skipping briefing generation.')
     return
   }
 

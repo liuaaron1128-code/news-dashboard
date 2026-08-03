@@ -8,7 +8,7 @@
 //   - Hacker News (Algolia): recent front page, recent Show HN (date-filtered —
 //     NOT all-time top), recent funding stories
 //
-// Pipeline (GitHub Models, built-in GITHUB_TOKEN, gpt-4o with mini fallback):
+// Pipeline (Claude via ANTHROPIC_API_KEY; previously GitHub Models, now retired):
 //   stage 1  select 6-8 real startup/business dynamics + pick the day's founder
 //            story subject + business-model breakdown company + per-industry refs
 //   stage 2  write dynamics in batches of 4 at full depth
@@ -25,6 +25,7 @@
 import { readFileSync, writeFileSync } from 'node:fs'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { chat as llmChat, parseJson, hasLLM, LLM_MODEL } from './lib/llm.mjs'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const DATA = join(__dirname, '..', 'src', 'data')
@@ -32,11 +33,6 @@ const OUT = join(DATA, 'business.json')
 
 const UA =
   'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36'
-const ENDPOINT =
-  process.env.GITHUB_MODELS_ENDPOINT || 'https://models.github.ai/inference/chat/completions'
-const MODEL_PRIMARY = process.env.GITHUB_MODELS_MODEL || 'openai/gpt-4o'
-const MODEL_FALLBACK = 'openai/gpt-4o-mini'
-const TOKEN = process.env.GITHUB_TOKEN
 
 const readJson = (p, fb) => {
   try {
@@ -139,41 +135,12 @@ async function fetchMaterial() {
   }).slice(0, 60)
 }
 
-// ---- GitHub Models chat with model fallback ----
-async function chat(messages, { maxTokens = 4000, temperature = 0.4 } = {}) {
-  const models = [...new Set([MODEL_PRIMARY, MODEL_FALLBACK])]
-  let lastErr
-  for (const model of models) {
-    for (let attempt = 1; attempt <= 2; attempt++) {
-      try {
-        const res = await fetch(ENDPOINT, {
-          method: 'POST',
-          headers: { 'content-type': 'application/json', authorization: `Bearer ${TOKEN}`, accept: 'application/json' },
-          body: JSON.stringify({ model, temperature, max_tokens: maxTokens, response_format: { type: 'json_object' }, messages }),
-          signal: AbortSignal.timeout(120000),
-        })
-        if (!res.ok) {
-          const body = (await res.text()).slice(0, 200)
-          const retryable = res.status === 429 || res.status >= 500
-          const err = new Error(`HTTP ${res.status}: ${body}`)
-          if (!retryable) {
-            lastErr = err
-            break
-          }
-          throw err
-        }
-        const json = await res.json()
-        const content = json?.choices?.[0]?.message?.content
-        if (!content) throw new Error('no content')
-        return { data: JSON.parse(content), model }
-      } catch (e) {
-        lastErr = e
-        await sleep(4000)
-      }
-    }
-    console.warn(`model ${model} failed: ${lastErr?.message}`)
-  }
-  throw lastErr
+// ---- Claude chat (via shared Anthropic helper) ----
+// GitHub Models was retired (HTTP 410); this now calls Claude with the
+// ANTHROPIC_API_KEY secret. Returns { data, model } to keep the callers unchanged.
+async function chat(messages, { maxTokens = 4000 } = {}) {
+  const text = await llmChat(messages, { maxTokens })
+  return { data: parseJson(text), model: LLM_MODEL }
 }
 
 const AUDIENCE =
@@ -300,8 +267,8 @@ async function main() {
   const config = readJson(join(DATA, 'business_config.json'), { industries: [] })
   const industries = config.industries || []
 
-  if (!TOKEN) {
-    console.warn('GITHUB_TOKEN not set — keeping previous business.json.')
+  if (!hasLLM()) {
+    console.warn('ANTHROPIC_API_KEY not set — keeping previous business.json.')
     return
   }
 
