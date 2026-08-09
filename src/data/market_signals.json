@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-08T20:17:38.139Z",
-  "asOf": "2026-08-08",
+  "generatedAt": "2026-08-09T20:19:03.291Z",
+  "asOf": "2026-08-09",
   "source": "Yahoo Finance + FRED",
   "synthesis": {
     "engine": "rule",
@@ -64,10 +64,10 @@
       "id": "gold",
       "icon": "🥇",
       "title": "黃金近 1 年報酬",
-      "value": "+27.7%",
+      "value": "+29.4%",
       "tag": "避險需求",
       "tagLevel": "high",
-      "detail": "黃金近 1 年 27.7%、近 5 年年化 20.3%，常反映通膨與避險情緒。"
+      "detail": "黃金近 1 年 29.4%、近 5 年年化 20.6%，常反映通膨與避險情緒。"
     }
   ],
   "relativeValue": [
@@ -417,7 +417,7 @@
       "label": "美國 Fed 基準利率 (上限)",
       "value": 3.75,
       "unit": "%",
-      "note": "更新於 2026-08-08"
+      "note": "更新於 2026-08-09"
     },
     {
       "id": "ecb",
@@ -776,28 +776,28 @@
       "id": "gold",
       "name": "黃金",
       "icon": "🥇",
-      "price": 4340.7,
-      "ytd": 0.6,
-      "return1y": 27.7,
-      "cagr5y": 20.3
+      "price": 4399.7,
+      "ytd": 2,
+      "return1y": 29.4,
+      "cagr5y": 20.6
     },
     {
       "id": "silver",
       "name": "白銀",
       "icon": "🥈",
-      "price": 63.33,
-      "ytd": -10.2,
-      "return1y": 66,
-      "cagr5y": 22.2
+      "price": 63.5,
+      "ytd": -10,
+      "return1y": 66.4,
+      "cagr5y": 22.3
     },
     {
       "id": "copper",
       "name": "銅",
       "icon": "🟤",
-      "price": 6.5705,
-      "ytd": 16.5,
-      "return1y": 50.1,
-      "cagr5y": 8.9
+      "price": 6.591,
+      "ytd": 16.9,
+      "return1y": 50.5,
+      "cagr5y": 9
     },
     {
       "id": "wti",
@@ -830,19 +830,19 @@
       "id": "btc",
       "name": "比特幣",
       "icon": "₿",
-      "price": 65037.91,
+      "price": 65069.5,
       "ytd": -26.7,
-      "return1y": -44.3,
-      "cagr5y": 8.2
+      "return1y": -44.1,
+      "cagr5y": 7
     },
     {
       "id": "eth",
       "name": "以太幣",
       "icon": "Ξ",
-      "price": 1919.16,
-      "ytd": -36,
-      "return1y": -52.1,
-      "cagr5y": -8.6
+      "price": 1917.97,
+      "ytd": -36.1,
+      "return1y": -55,
+      "cagr5y": -9.5
     },
     {
       "id": "dxy",
@@ -866,18 +866,18 @@
       "id": "usdjpy",
       "name": "美元/日圓",
       "icon": "🇯🇵",
-      "price": 157.74,
-      "ytd": 0.6,
-      "return1y": 7.4,
+      "price": 157.82,
+      "ytd": 0.7,
+      "return1y": 6.9,
       "cagr5y": 7.4
     },
     {
       "id": "gbpusd",
       "name": "英鎊/美元",
       "icon": "🇬🇧",
-      "price": 1.3492,
-      "ytd": 0.1,
-      "return1y": 0.3,
+      "price": 1.3495,
+      "ytd": 0.2,
+      "return1y": 0.4,
       "cagr5y": -0.5
     },
     {
@@ -895,7 +895,7 @@
       "icon": "🇹🇼",
       "price": 32.235,
       "ytd": 3,
-      "return1y": 8.1,
+      "return1y": 8,
       "cagr5y": 3
     }
   ]
