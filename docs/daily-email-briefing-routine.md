@@ -131,6 +131,20 @@ schema 見 src/types/news.ts，務必完全符合，否則 next build 會失敗�
   ※ grade 與 category 只能用上列值，用別的會編譯失敗。
   ※ 同日期已存在就覆蓋該筆，不要新增重複日期。
 
+同時更新另外兩個檔案，否則首頁最上方會顯示過期內容：
+
+  src/data/commentary.json —— 首頁最上方的「AI 每日解讀」。
+    { date, generatedAt, model, headline, topConcern,
+      bullets: string[3-4], crossSignals: string[0-3],
+      confidence: "high"|"medium"|"low" }
+    ※ date 必須是今天。超過 2 天畫面會自動標示為過期。
+
+  src/data/events.json —— 總經行事曆，只放<未來>事件。
+    [{ date, title,
+       region: 美國|台灣|全球|歐元區|中國|日本,
+       importance: "high"|"medium"|"low", note? }]
+    ※ 已過期的事件要移除；日期若為推估請在 note 標「預定日期」。
+
 寫完後執行 `npx next build` 確認編譯通過（TypeScript 會驗證型別）。
 通過才 commit。commit message 用繁體中文說明當日重點。
 

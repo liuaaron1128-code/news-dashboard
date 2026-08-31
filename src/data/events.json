@@ -1,8 +1,7 @@
 [
-  { "date": "2026-06-23", "title": "美國 5 月新屋銷售", "region": "美國", "importance": "low", "note": "觀察利率對房市的傳導。" },
-  { "date": "2026-06-26", "title": "美國 5 月 PCE 物價指數", "region": "美國", "importance": "high", "note": "Fed 最看重的通膨指標，牽動降息路徑。" },
-  { "date": "2026-07-04", "title": "美國 6 月非農就業", "region": "美國", "importance": "high", "note": "就業強弱左右 Fed 與美債殖利率。" },
-  { "date": "2026-07-15", "title": "美國 6 月 CPI", "region": "美國", "importance": "high", "note": "通膨年增率走勢，影響市場降息預期。" },
-  { "date": "2026-07-17", "title": "台積電法說會", "region": "台灣", "importance": "high", "note": "AI 需求與資本支出指引，牽動台股權值。" },
-  { "date": "2026-07-29", "title": "FOMC 利率決議", "region": "美國", "importance": "high", "note": "點陣圖與會後談話為市場焦點。" }
+  { "date": "2026-09-04", "title": "美國 8 月非農就業", "region": "美國", "importance": "high", "note": "就業強弱決定 Fed 是否真的在 9 月升息（預定日期）。" },
+  { "date": "2026-09-10", "title": "台積電 8 月營收", "region": "台灣", "importance": "high", "note": "驗證 AI 實體需求是否延續（預定日期）。" },
+  { "date": "2026-09-11", "title": "美國 8 月 CPI", "region": "美國", "importance": "high", "note": "能源價格是否透過二輪效應滲入核心通膨（預定日期）。" },
+  { "date": "2026-09-16", "title": "FOMC 利率決議", "region": "美國", "importance": "high", "note": "本波最關鍵。升息機率已達 57%，決定整條 AI 槓桿鏈的資金成本。" },
+  { "date": "2026-09-30", "title": "記憶體 Q3 合約價定案", "region": "全球", "importance": "high", "note": "直接決定台廠 Q3/Q4 毛利，是目前最該盯、且仍有議價空間的單一數字。" }
 ]

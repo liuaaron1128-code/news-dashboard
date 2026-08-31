@@ -1,6 +1,7 @@
 'use client'
 
-import { Sparkles, AlertTriangle, CalendarClock } from 'lucide-react'
+import { useSyncExternalStore } from 'react'
+import { Sparkles, AlertTriangle, CalendarClock, Clock } from 'lucide-react'
 import commentaryData from '@/data/commentary.json'
 import eventsData from '@/data/events.json'
 import { DailyCommentary } from '@/types/commentary'
@@ -21,9 +22,35 @@ const IMPORTANCE: Record<string, string> = {
   low: 'bg-slate-100 text-slate-500',
 }
 
+// How many days before a commentary is treated as stale rather than today's read.
+const STALE_AFTER_DAYS = 2
+
+const daysApart = (from: string, to: string) =>
+  Math.round((Date.parse(to) - Date.parse(from)) / 86_400_000)
+
+// The reader's calendar date is external state, so it is read through
+// useSyncExternalStore: the server snapshot is null and the page prerenders
+// without it, then the client fills it in on hydration. The date only matters
+// for staleness and filtering, so the store never needs to notify of changes.
+const subscribeToDate = () => () => {}
+const getServerDate = () => null
+const getLocalDate = () => {
+  const d = new Date()
+  const pad = (n: number) => String(n).padStart(2, '0')
+  return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`
+}
+
 export default function MorningCard() {
   const conf = CONFIDENCE[commentary.confidence] || CONFIDENCE.low
-  const upcoming = [...events].sort((a, b) => (a.date < b.date ? -1 : 1)).slice(0, 5)
+
+  const today = useSyncExternalStore(subscribeToDate, getLocalDate, getServerDate)
+
+  const staleDays = today ? daysApart(commentary.date, today) : 0
+  const isStale = staleDays > STALE_AFTER_DAYS
+
+  // Past events are not a forward calendar; drop them once the date is known.
+  const sorted = [...events].sort((a, b) => (a.date < b.date ? -1 : 1))
+  const upcoming = (today ? sorted.filter((e) => e.date >= today) : sorted).slice(0, 5)
 
   return (
     <div className="mb-4 space-y-3">
@@ -33,9 +60,22 @@ export default function MorningCard() {
           <div className="flex items-center gap-1.5">
             <Sparkles size={15} className="text-indigo-500" />
             <span className="text-sm font-bold text-slate-800">AI 每日解讀</span>
+            <span className="text-[11px] text-slate-400 font-medium">{commentary.date}</span>
           </div>
-          <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full ${conf.cls}`}>{conf.label}</span>
+          {!isStale && (
+            <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full ${conf.cls}`}>{conf.label}</span>
+          )}
         </div>
+
+        {isStale && (
+          <div className="flex items-start gap-1.5 bg-slate-100 border border-slate-200 rounded-lg px-2.5 py-2 mb-2.5">
+            <Clock size={13} className="text-slate-500 mt-0.5 flex-shrink-0" />
+            <span className="text-[12px] text-slate-600 leading-relaxed">
+              這則解讀是 <span className="font-bold">{staleDays} 天前</span>（{commentary.date}）產生的，
+              並非今日觀點，請以下方各日新聞為準。
+            </span>
+          </div>
+        )}
 
         <p className="text-[15px] font-bold text-slate-900 leading-snug mb-2">{commentary.headline}</p>
 
@@ -67,17 +107,19 @@ export default function MorningCard() {
         )}
 
         {commentary.placeholder && (
-          <div className="text-[10px] text-slate-400 mt-2">尚未生成即時解讀（每日 04:00 由 GitHub Models 自動更新）</div>
+          <div className="text-[10px] text-slate-400 mt-2">尚未生成即時解讀。</div>
         )}
       </div>
 
       {/* Macro calendar */}
-      {upcoming.length > 0 && (
-        <div className="bg-white border border-slate-200 rounded-xl p-4 shadow-sm">
+      <div className="bg-white border border-slate-200 rounded-xl p-4 shadow-sm">
           <div className="flex items-center gap-1.5 mb-2.5">
             <CalendarClock size={14} className="text-slate-500" />
             <span className="text-sm font-bold text-slate-800">總經行事曆</span>
           </div>
+          {upcoming.length === 0 ? (
+            <div className="text-[12px] text-slate-400">目前沒有排定的未來事件。</div>
+          ) : (
           <div className="space-y-2">
             {upcoming.map((ev, i) => (
               <div key={i} className="flex items-start gap-2.5">
@@ -92,8 +134,8 @@ export default function MorningCard() {
               </div>
             ))}
           </div>
-        </div>
-      )}
+          )}
+      </div>
     </div>
   )
 }
