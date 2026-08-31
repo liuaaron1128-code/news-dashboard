@@ -1,0 +1,1784 @@
+[
+ {
+  "no": 1,
+  "name": "Bloomberg",
+  "url": "https://www.bloomberg.com/",
+  "region": "全球",
+  "stype": "新聞媒體",
+  "itype": "財經市場",
+  "cadence": "即時／每日"
+ },
+ {
+  "no": 2,
+  "name": "Reuters",
+  "url": "https://www.reuters.com/",
+  "region": "全球",
+  "stype": "新聞媒體",
+  "itype": "綜合新聞",
+  "cadence": "即時"
+ },
+ {
+  "no": 3,
+  "name": "Wall Street Journal",
+  "url": "https://www.wsj.com/",
+  "region": "全球",
+  "stype": "新聞媒體",
+  "itype": "財經市場",
+  "cadence": "即時／每日"
+ },
+ {
+  "no": 4,
+  "name": "CNN",
+  "url": "https://edition.cnn.com/",
+  "region": "美國",
+  "stype": "新聞媒體",
+  "itype": "綜合新聞",
+  "cadence": "即時／每日"
+ },
+ {
+  "no": 5,
+  "name": "BBC",
+  "url": "https://www.bbc.com/news",
+  "region": "全球",
+  "stype": "新聞媒體",
+  "itype": "綜合新聞",
+  "cadence": "即時／每日"
+ },
+ {
+  "no": 6,
+  "name": "Barron's",
+  "url": "https://www.barrons.com/",
+  "region": "美國",
+  "stype": "新聞媒體",
+  "itype": "財經市場",
+  "cadence": "每日／每週"
+ },
+ {
+  "no": 7,
+  "name": "MarketWatch",
+  "url": "https://www.marketwatch.com/",
+  "region": "美國",
+  "stype": "新聞媒體",
+  "itype": "財經市場",
+  "cadence": "即時／每日"
+ },
+ {
+  "no": 8,
+  "name": "Yahoo Finance",
+  "url": "https://finance.yahoo.com/",
+  "region": "全球",
+  "stype": "數據／資訊平台",
+  "itype": "財經市場",
+  "cadence": "即時"
+ },
+ {
+  "no": 9,
+  "name": "Financial Times",
+  "url": "https://www.ft.com/",
+  "region": "全球",
+  "stype": "新聞媒體",
+  "itype": "財經市場",
+  "cadence": "即時／每日"
+ },
+ {
+  "no": 10,
+  "name": "The Economist",
+  "url": "https://www.economist.com/",
+  "region": "全球",
+  "stype": "新聞媒體",
+  "itype": "政經政策",
+  "cadence": "每週／不定期線上"
+ },
+ {
+  "no": 11,
+  "name": "Economist Intelligence Unit",
+  "url": "https://www.eiu.com/",
+  "region": "全球",
+  "stype": "研究機構／智庫",
+  "itype": "數據／研究／揭露",
+  "cadence": "月／季／年＋不定期"
+ },
+ {
+  "no": 12,
+  "name": "The New York Times",
+  "url": "https://www.nytimes.com/",
+  "region": "美國",
+  "stype": "新聞媒體",
+  "itype": "綜合新聞",
+  "cadence": "即時／每日"
+ },
+ {
+  "no": 13,
+  "name": "CNBC",
+  "url": "https://www.cnbc.com/world/?region=world",
+  "region": "美國",
+  "stype": "新聞媒體",
+  "itype": "財經市場",
+  "cadence": "即時／每日"
+ },
+ {
+  "no": 14,
+  "name": "The Washington Post",
+  "url": "https://www.washingtonpost.com/",
+  "region": "美國",
+  "stype": "新聞媒體",
+  "itype": "綜合新聞",
+  "cadence": "即時／每日"
+ },
+ {
+  "no": 15,
+  "name": "Politico",
+  "url": "https://www.politico.com/",
+  "region": "美國",
+  "stype": "新聞媒體",
+  "itype": "政經政策",
+  "cadence": "即時／每日"
+ },
+ {
+  "no": 16,
+  "name": "Fox News",
+  "url": "https://www.foxnews.com/",
+  "region": "美國",
+  "stype": "新聞媒體",
+  "itype": "綜合新聞",
+  "cadence": "即時／每日"
+ },
+ {
+  "no": 17,
+  "name": "AP News（Associated Press）",
+  "url": "https://apnews.com/",
+  "region": "全球",
+  "stype": "新聞媒體",
+  "itype": "綜合新聞",
+  "cadence": "即時"
+ },
+ {
+  "no": 18,
+  "name": "CBS News",
+  "url": "https://www.cbsnews.com/",
+  "region": "美國",
+  "stype": "新聞媒體",
+  "itype": "綜合新聞",
+  "cadence": "即時／每日"
+ },
+ {
+  "no": 19,
+  "name": "Axios",
+  "url": "https://www.axios.com/",
+  "region": "美國",
+  "stype": "新聞媒體",
+  "itype": "政經政策",
+  "cadence": "即時／每日"
+ },
+ {
+  "no": 20,
+  "name": "The Globe and Mail",
+  "url": "https://www.theglobeandmail.com/",
+  "region": "全球",
+  "stype": "新聞媒體",
+  "itype": "財經市場",
+  "cadence": "即時／每日"
+ },
+ {
+  "no": 21,
+  "name": "Euronews",
+  "url": "https://www.euronews.com/",
+  "region": "歐洲",
+  "stype": "新聞媒體",
+  "itype": "綜合新聞",
+  "cadence": "即時／每日"
+ },
+ {
+  "no": 22,
+  "name": "EUobserver",
+  "url": "https://euobserver.com/",
+  "region": "歐洲",
+  "stype": "新聞媒體",
+  "itype": "政經政策",
+  "cadence": "每日"
+ },
+ {
+  "no": 23,
+  "name": "The Local",
+  "url": "https://www.thelocal.com/",
+  "region": "歐洲",
+  "stype": "新聞媒體",
+  "itype": "綜合新聞",
+  "cadence": "每日"
+ },
+ {
+  "no": 24,
+  "name": "EURACTIV",
+  "url": "https://www.euractiv.com/",
+  "region": "歐洲",
+  "stype": "新聞媒體",
+  "itype": "政經政策",
+  "cadence": "每日"
+ },
+ {
+  "no": 25,
+  "name": "The Guardian",
+  "url": "https://www.theguardian.com/international",
+  "region": "歐洲",
+  "stype": "新聞媒體",
+  "itype": "綜合新聞",
+  "cadence": "即時／每日"
+ },
+ {
+  "no": 26,
+  "name": "The Independent",
+  "url": "https://www.independent.co.uk/",
+  "region": "歐洲",
+  "stype": "新聞媒體",
+  "itype": "綜合新聞",
+  "cadence": "即時／每日"
+ },
+ {
+  "no": 27,
+  "name": "Handelsblatt",
+  "url": "https://www.handelsblatt.com/",
+  "region": "歐洲",
+  "stype": "新聞媒體",
+  "itype": "財經市場",
+  "cadence": "每日"
+ },
+ {
+  "no": 28,
+  "name": "DW News",
+  "url": "https://www.dw.com/en",
+  "region": "歐洲",
+  "stype": "新聞媒體",
+  "itype": "綜合新聞",
+  "cadence": "即時／每日"
+ },
+ {
+  "no": 29,
+  "name": "Der Spiegel",
+  "url": "https://www.spiegel.de/international/",
+  "region": "歐洲",
+  "stype": "新聞媒體",
+  "itype": "綜合新聞",
+  "cadence": "每日／每週"
+ },
+ {
+  "no": 30,
+  "name": "Le Monde",
+  "url": "https://www.lemonde.fr/en/",
+  "region": "歐洲",
+  "stype": "新聞媒體",
+  "itype": "綜合新聞",
+  "cadence": "每日"
+ },
+ {
+  "no": 31,
+  "name": "Les Échos",
+  "url": "https://www.lesechos.fr/",
+  "region": "歐洲",
+  "stype": "新聞媒體",
+  "itype": "財經市場",
+  "cadence": "每日"
+ },
+ {
+  "no": 32,
+  "name": "AFP",
+  "url": "https://www.afp.com/en",
+  "region": "全球",
+  "stype": "新聞媒體",
+  "itype": "綜合新聞",
+  "cadence": "即時"
+ },
+ {
+  "no": 33,
+  "name": "RFI",
+  "url": "https://www.rfi.fr/tw/",
+  "region": "歐洲",
+  "stype": "新聞媒體",
+  "itype": "綜合新聞",
+  "cadence": "即時／每日"
+ },
+ {
+  "no": 34,
+  "name": "ANSA",
+  "url": "https://www.ansa.it/",
+  "region": "歐洲",
+  "stype": "新聞媒體",
+  "itype": "綜合新聞",
+  "cadence": "即時"
+ },
+ {
+  "no": 35,
+  "name": "El Mundo",
+  "url": "https://www.elmundo.es/",
+  "region": "歐洲",
+  "stype": "新聞媒體",
+  "itype": "綜合新聞",
+  "cadence": "每日"
+ },
+ {
+  "no": 36,
+  "name": "El País",
+  "url": "https://elpais.com/",
+  "region": "歐洲",
+  "stype": "新聞媒體",
+  "itype": "綜合新聞",
+  "cadence": "每日"
+ },
+ {
+  "no": 37,
+  "name": "荷蘭國家通訊社(ANP)",
+  "url": "https://www.anp.nl/",
+  "region": "歐洲",
+  "stype": "新聞媒體",
+  "itype": "綜合新聞",
+  "cadence": "即時"
+ },
+ {
+  "no": 38,
+  "name": "奧地利國家通訊社(APA)",
+  "url": "https://apa.at/",
+  "region": "歐洲",
+  "stype": "新聞媒體",
+  "itype": "綜合新聞",
+  "cadence": "即時"
+ },
+ {
+  "no": 39,
+  "name": "歐華網",
+  "url": "http://www.ouhua.info/",
+  "region": "其他",
+  "stype": "新聞媒體",
+  "itype": "綜合新聞",
+  "cadence": "每日／不定期"
+ },
+ {
+  "no": 40,
+  "name": "Al Jazeera",
+  "url": "https://www.aljazeera.com/",
+  "region": "全球",
+  "stype": "新聞媒體",
+  "itype": "綜合新聞",
+  "cadence": "即時／每日"
+ },
+ {
+  "no": 41,
+  "name": "Nikkei Asia",
+  "url": "https://asia.nikkei.com/",
+  "region": "其他",
+  "stype": "新聞媒體",
+  "itype": "財經市場",
+  "cadence": "每日"
+ },
+ {
+  "no": 42,
+  "name": "日本經濟新聞",
+  "url": "https://www.nikkei.com/",
+  "region": "日本",
+  "stype": "新聞媒體",
+  "itype": "財經市場",
+  "cadence": "即時／每日"
+ },
+ {
+  "no": 43,
+  "name": "NHK World",
+  "url": "https://www3.nhk.or.jp/nhkworld/",
+  "region": "日本",
+  "stype": "新聞媒體",
+  "itype": "綜合新聞",
+  "cadence": "即時／每日"
+ },
+ {
+  "no": 44,
+  "name": "朝日新聞",
+  "url": "https://www.asahi.com/",
+  "region": "日本",
+  "stype": "新聞媒體",
+  "itype": "綜合新聞",
+  "cadence": "每日"
+ },
+ {
+  "no": 45,
+  "name": "日本共同通信社",
+  "url": "https://www.kyodo.co.jp/",
+  "region": "日本",
+  "stype": "新聞媒體",
+  "itype": "綜合新聞",
+  "cadence": "即時"
+ },
+ {
+  "no": 46,
+  "name": "日本時事通訊社",
+  "url": "https://www.jiji.com/",
+  "region": "日本",
+  "stype": "新聞媒體",
+  "itype": "綜合新聞",
+  "cadence": "即時"
+ },
+ {
+  "no": 47,
+  "name": "韓聯社（Yonhap News）",
+  "url": "https://english.yna.co.kr/",
+  "region": "其他",
+  "stype": "新聞媒體",
+  "itype": "綜合新聞",
+  "cadence": "即時"
+ },
+ {
+  "no": 48,
+  "name": "財新網",
+  "url": "https://www.caixin.com/",
+  "region": "中國",
+  "stype": "新聞媒體",
+  "itype": "財經市場",
+  "cadence": "每日"
+ },
+ {
+  "no": 49,
+  "name": "Caixin Global",
+  "url": "https://www.caixinglobal.com/",
+  "region": "中國",
+  "stype": "新聞媒體",
+  "itype": "財經市場",
+  "cadence": "每日"
+ },
+ {
+  "no": 50,
+  "name": "South China Morning Post",
+  "url": "https://www.scmp.com/",
+  "region": "中國",
+  "stype": "新聞媒體",
+  "itype": "財經市場",
+  "cadence": "每日"
+ },
+ {
+  "no": 51,
+  "name": "新華社",
+  "url": "https://english.news.cn/",
+  "region": "中國",
+  "stype": "新聞媒體",
+  "itype": "綜合新聞",
+  "cadence": "即時"
+ },
+ {
+  "no": 52,
+  "name": "香港經濟日報（HKET）",
+  "url": "https://www.hket.com/",
+  "region": "中國",
+  "stype": "新聞媒體",
+  "itype": "財經市場",
+  "cadence": "每日"
+ },
+ {
+  "no": 53,
+  "name": "華爾街見聞",
+  "url": "https://wallstreetcn.com/",
+  "region": "中國",
+  "stype": "數據／資訊平台",
+  "itype": "財經市場",
+  "cadence": "即時"
+ },
+ {
+  "no": 54,
+  "name": "金十數據",
+  "url": "https://www.jin10.com/",
+  "region": "中國",
+  "stype": "數據／資訊平台",
+  "itype": "財經市場",
+  "cadence": "即時"
+ },
+ {
+  "no": 55,
+  "name": "The Straits Times",
+  "url": "https://www.straitstimes.com/",
+  "region": "其他",
+  "stype": "新聞媒體",
+  "itype": "綜合新聞",
+  "cadence": "每日"
+ },
+ {
+  "no": 56,
+  "name": "New Straits Times",
+  "url": "https://www.nst.com.my/",
+  "region": "其他",
+  "stype": "新聞媒體",
+  "itype": "綜合新聞",
+  "cadence": "每日"
+ },
+ {
+  "no": 57,
+  "name": "The Business Times",
+  "url": "https://www.businesstimes.com.sg/",
+  "region": "其他",
+  "stype": "新聞媒體",
+  "itype": "財經市場",
+  "cadence": "每日"
+ },
+ {
+  "no": 58,
+  "name": "Channel NewsAsia (CNA)",
+  "url": "https://www.channelnewsasia.com/",
+  "region": "其他",
+  "stype": "新聞媒體",
+  "itype": "綜合新聞",
+  "cadence": "即時／每日"
+ },
+ {
+  "no": 59,
+  "name": "The Jakarta Post",
+  "url": "https://www.thejakartapost.com/",
+  "region": "其他",
+  "stype": "新聞媒體",
+  "itype": "綜合新聞",
+  "cadence": "每日"
+ },
+ {
+  "no": 60,
+  "name": "羅盤報(Kompas)",
+  "url": "https://www.kompas.com/",
+  "region": "其他",
+  "stype": "新聞媒體",
+  "itype": "綜合新聞",
+  "cadence": "每日"
+ },
+ {
+  "no": 61,
+  "name": "Bangkok Post",
+  "url": "https://www.bangkokpost.com/",
+  "region": "其他",
+  "stype": "新聞媒體",
+  "itype": "綜合新聞",
+  "cadence": "每日"
+ },
+ {
+  "no": 62,
+  "name": "Thai Rath",
+  "url": "https://www.thairath.co.th/",
+  "region": "其他",
+  "stype": "新聞媒體",
+  "itype": "綜合新聞",
+  "cadence": "每日"
+ },
+ {
+  "no": 63,
+  "name": "Philippine Daily Inquirer",
+  "url": "https://www.inquirer.net/",
+  "region": "其他",
+  "stype": "新聞媒體",
+  "itype": "綜合新聞",
+  "cadence": "每日"
+ },
+ {
+  "no": 64,
+  "name": "越南人民報網",
+  "url": "https://cn.nhandan.vn/",
+  "region": "其他",
+  "stype": "官方／國際組織",
+  "itype": "綜合新聞",
+  "cadence": "每日"
+ },
+ {
+  "no": 65,
+  "name": "The Hindu",
+  "url": "https://www.thehindu.com/",
+  "region": "其他",
+  "stype": "新聞媒體",
+  "itype": "綜合新聞",
+  "cadence": "每日"
+ },
+ {
+  "no": 66,
+  "name": "Business Standard",
+  "url": "https://www.business-standard.com/",
+  "region": "其他",
+  "stype": "新聞媒體",
+  "itype": "財經市場",
+  "cadence": "每日"
+ },
+ {
+  "no": 67,
+  "name": "El Financiero (Mexico)",
+  "url": "https://www.elfinanciero.com.mx/",
+  "region": "其他",
+  "stype": "新聞媒體",
+  "itype": "財經市場",
+  "cadence": "每日"
+ },
+ {
+  "no": 68,
+  "name": "鉅亨網",
+  "url": "https://www.cnyes.com/",
+  "region": "台灣",
+  "stype": "數據／資訊平台",
+  "itype": "財經市場",
+  "cadence": "即時／每日"
+ },
+ {
+  "no": 69,
+  "name": "工商時報",
+  "url": "https://www.ctee.com.tw/",
+  "region": "台灣",
+  "stype": "新聞媒體",
+  "itype": "財經市場",
+  "cadence": "每日"
+ },
+ {
+  "no": 70,
+  "name": "經濟日報",
+  "url": "https://money.udn.com/",
+  "region": "台灣",
+  "stype": "新聞媒體",
+  "itype": "財經市場",
+  "cadence": "每日"
+ },
+ {
+  "no": 71,
+  "name": "MoneyDJ理財網",
+  "url": "https://www.moneydj.com/",
+  "region": "台灣",
+  "stype": "數據／資訊平台",
+  "itype": "財經市場",
+  "cadence": "即時／每日"
+ },
+ {
+  "no": 72,
+  "name": "中央通訊社（CNA）",
+  "url": "https://www.cna.com.tw/",
+  "region": "台灣",
+  "stype": "新聞媒體",
+  "itype": "綜合新聞",
+  "cadence": "即時"
+ },
+ {
+  "no": 73,
+  "name": "聯合新聞網",
+  "url": "https://udn.com/news/index",
+  "region": "台灣",
+  "stype": "新聞媒體",
+  "itype": "綜合新聞",
+  "cadence": "即時／每日"
+ },
+ {
+  "no": 74,
+  "name": "財訊",
+  "url": "https://www.wealth.com.tw/",
+  "region": "台灣",
+  "stype": "新聞媒體",
+  "itype": "財經市場",
+  "cadence": "每日線上／雙週或專刊"
+ },
+ {
+  "no": 75,
+  "name": "天下雜誌",
+  "url": "https://www.cw.com.tw/",
+  "region": "台灣",
+  "stype": "新聞媒體",
+  "itype": "財經市場",
+  "cadence": "每日線上／定期出刊"
+ },
+ {
+  "no": 76,
+  "name": "今周刊",
+  "url": "https://www.businesstoday.com.tw/",
+  "region": "台灣",
+  "stype": "新聞媒體",
+  "itype": "財經市場",
+  "cadence": "每日線上／每週"
+ },
+ {
+  "no": 77,
+  "name": "商業週刊",
+  "url": "https://www.businessweekly.com.tw/",
+  "region": "台灣",
+  "stype": "新聞媒體",
+  "itype": "財經市場",
+  "cadence": "每日線上／每週"
+ },
+ {
+  "no": 78,
+  "name": "遠見雜誌",
+  "url": "https://www.gvm.com.tw/",
+  "region": "台灣",
+  "stype": "新聞媒體",
+  "itype": "政經政策",
+  "cadence": "每日線上／每月"
+ },
+ {
+  "no": 79,
+  "name": "凱基證券債券市場",
+  "url": "https://www.kgi.com.tw/zh-tw/product-overview/investment/bonds/bonds-market",
+  "region": "台灣",
+  "stype": "新聞媒體",
+  "itype": "財經市場",
+  "cadence": "每日／每週／不定期"
+ },
+ {
+  "no": 80,
+  "name": "元大證券債市評論",
+  "url": "https://www.yuanta.com.tw/eYuanta/bond/StockPaper?MainId=00403&C1=2018031400708884&C2=&Level=1",
+  "region": "台灣",
+  "stype": "新聞媒體",
+  "itype": "財經市場",
+  "cadence": "每日／每週／不定期"
+ },
+ {
+  "no": 81,
+  "name": "DIGITIMES",
+  "url": "https://www.digitimes.com.tw/",
+  "region": "台灣",
+  "stype": "新聞媒體",
+  "itype": "產業情報",
+  "cadence": "每日／週期性報告"
+ },
+ {
+  "no": 82,
+  "name": "住展",
+  "url": "https://www.myhousing.com.tw",
+  "region": "台灣",
+  "stype": "新聞媒體",
+  "itype": "產業情報",
+  "cadence": "每日線上／每月"
+ },
+ {
+  "no": 83,
+  "name": "科技新報（TechNews）",
+  "url": "https://technews.tw/",
+  "region": "台灣",
+  "stype": "新聞媒體",
+  "itype": "產業情報",
+  "cadence": "每日"
+ },
+ {
+  "no": 84,
+  "name": "優分析（UAnalyze）",
+  "url": "https://uanalyze.com.tw/",
+  "region": "台灣",
+  "stype": "數據／資訊平台",
+  "itype": "財經市場",
+  "cadence": "每日／依財報與事件"
+ },
+ {
+  "no": 85,
+  "name": "財經M平方（MacroMicro）",
+  "url": "https://www.macromicro.me/",
+  "region": "台灣",
+  "stype": "新聞媒體",
+  "itype": "數據／研究／揭露",
+  "cadence": "依數據發布／週月更新"
+ },
+ {
+  "no": 86,
+  "name": "經濟部國際貿易署－全球商機資訊",
+  "url": "https://www.trade.gov.tw/World/ListWorld.aspx?code=7020&nodeID=45",
+  "region": "台灣",
+  "stype": "新聞媒體",
+  "itype": "綜合新聞",
+  "cadence": "依事件／每日"
+ },
+ {
+  "no": 87,
+  "name": "中華經濟研究院",
+  "url": "https://www.cier.edu.tw/",
+  "region": "台灣",
+  "stype": "研究機構／智庫",
+  "itype": "數據／研究／揭露",
+  "cadence": "月／季／年＋不定期"
+ },
+ {
+  "no": 88,
+  "name": "台灣經濟研究院",
+  "url": "https://www.tier.org.tw/",
+  "region": "台灣",
+  "stype": "研究機構／智庫",
+  "itype": "數據／研究／揭露",
+  "cadence": "月／季／年＋不定期"
+ },
+ {
+  "no": 89,
+  "name": "TRADING ECONOMICS",
+  "url": "https://tradingeconomics.com/",
+  "region": "全球",
+  "stype": "數據／資訊平台",
+  "itype": "數據／研究／揭露",
+  "cadence": "依各國數據發布即時更新"
+ },
+ {
+  "no": 90,
+  "name": "Investing.com",
+  "url": "https://www.investing.com/",
+  "region": "全球",
+  "stype": "數據／資訊平台",
+  "itype": "財經市場",
+  "cadence": "即時"
+ },
+ {
+  "no": 91,
+  "name": "Moody's",
+  "url": "https://www.moodys.com/",
+  "region": "全球",
+  "stype": "研究機構／智庫",
+  "itype": "數據／研究／揭露",
+  "cadence": "依評等事件／月季年展望"
+ },
+ {
+  "no": 92,
+  "name": "S&P Global",
+  "url": "https://www.spglobal.com/ratings/en/",
+  "region": "全球",
+  "stype": "研究機構／智庫",
+  "itype": "數據／研究／揭露",
+  "cadence": "依評等事件／月季年展望"
+ },
+ {
+  "no": 93,
+  "name": "Fitch Ratings",
+  "url": "https://www.fitchratings.com/",
+  "region": "全球",
+  "stype": "研究機構／智庫",
+  "itype": "數據／研究／揭露",
+  "cadence": "依評等事件／月季年展望"
+ },
+ {
+  "no": 94,
+  "name": "華爾街日報中文網",
+  "url": "https://cn.wsj.com/",
+  "region": "全球",
+  "stype": "新聞媒體",
+  "itype": "財經市場",
+  "cadence": "每日"
+ },
+ {
+  "no": 95,
+  "name": "IEK產業情報網",
+  "url": "https://ieknet.iek.org.tw/",
+  "region": "台灣",
+  "stype": "研究機構／智庫",
+  "itype": "產業情報",
+  "cadence": "週／月／季＋不定期"
+ },
+ {
+  "no": 96,
+  "name": "資策會產業情報研究所（MIC）",
+  "url": "https://mic.iii.org.tw/",
+  "region": "台灣",
+  "stype": "研究機構／智庫",
+  "itype": "產業情報",
+  "cadence": "月／季／年＋不定期"
+ },
+ {
+  "no": 97,
+  "name": "公開資訊觀測站（MOPS）",
+  "url": "https://mops.twse.com.tw/mops/web/index",
+  "region": "台灣",
+  "stype": "交易所／揭露平台",
+  "itype": "數據／研究／揭露",
+  "cadence": "依事件與法定申報期限"
+ },
+ {
+  "no": 98,
+  "name": "未來流通研究所",
+  "url": "https://www.mirai.com.tw/",
+  "region": "台灣",
+  "stype": "研究機構／智庫",
+  "itype": "產業情報",
+  "cadence": "月／季／不定期"
+ },
+ {
+  "no": 99,
+  "name": "MII金屬情報網",
+  "url": "https://mii.mirdc.org.tw/",
+  "region": "台灣",
+  "stype": "研究機構／智庫",
+  "itype": "產業情報",
+  "cadence": "日／週／月＋不定期"
+ },
+ {
+  "no": 100,
+  "name": "經濟部投資審議司",
+  "url": "https://www.moea.gov.tw/Mns/dir/home/Home.aspx",
+  "region": "台灣",
+  "stype": "新聞媒體",
+  "itype": "政經政策",
+  "cadence": "依事件／月／季"
+ },
+ {
+  "no": 101,
+  "name": "中華民國中央銀行",
+  "url": "https://www.cbc.gov.tw/",
+  "region": "台灣",
+  "stype": "官方／國際組織",
+  "itype": "政經政策",
+  "cadence": "依理監事會／月／季"
+ },
+ {
+  "no": 102,
+  "name": "行政院國家發展委員會",
+  "url": "https://www.ndc.gov.tw/",
+  "region": "台灣",
+  "stype": "官方／國際組織",
+  "itype": "綜合新聞",
+  "cadence": "月／季＋依事件"
+ },
+ {
+  "no": 103,
+  "name": "行政院主計總處",
+  "url": "https://www.dgbas.gov.tw/",
+  "region": "台灣",
+  "stype": "官方／國際組織",
+  "itype": "數據／研究／揭露",
+  "cadence": "月／季／年"
+ },
+ {
+  "no": 104,
+  "name": "經濟部",
+  "url": "https://www.moea.gov.tw/",
+  "region": "台灣",
+  "stype": "官方／國際組織",
+  "itype": "政經政策",
+  "cadence": "依事件／月／季"
+ },
+ {
+  "no": 105,
+  "name": "財政部",
+  "url": "https://www.mof.gov.tw/",
+  "region": "台灣",
+  "stype": "官方／國際組織",
+  "itype": "政經政策",
+  "cadence": "依事件／月／年"
+ },
+ {
+  "no": 106,
+  "name": "金融監督管理委員會",
+  "url": "https://www.fsc.gov.tw/",
+  "region": "台灣",
+  "stype": "官方／國際組織",
+  "itype": "政經政策",
+  "cadence": "依事件／月／季"
+ },
+ {
+  "no": 107,
+  "name": "臺灣證券交易所",
+  "url": "https://www.twse.com.tw/",
+  "region": "台灣",
+  "stype": "交易所／揭露平台",
+  "itype": "數據／研究／揭露",
+  "cadence": "即時／每日"
+ },
+ {
+  "no": 108,
+  "name": "證券櫃檯買賣中心",
+  "url": "https://www.tpex.org.tw/",
+  "region": "台灣",
+  "stype": "交易所／揭露平台",
+  "itype": "數據／研究／揭露",
+  "cadence": "即時／每日"
+ },
+ {
+  "no": 109,
+  "name": "美國聯邦準備理事會（Federal Reserve）",
+  "url": "https://www.federalreserve.gov/",
+  "region": "美國",
+  "stype": "官方／國際組織",
+  "itype": "政經政策",
+  "cadence": "依 FOMC／週／月／季"
+ },
+ {
+  "no": 110,
+  "name": "美國財政部（U.S. Treasury）",
+  "url": "https://home.treasury.gov/",
+  "region": "美國",
+  "stype": "官方／國際組織",
+  "itype": "政經政策",
+  "cadence": "依事件／每日／月"
+ },
+ {
+  "no": 111,
+  "name": "美國商務部（U.S. Department of Commerce）",
+  "url": "https://www.commerce.gov/",
+  "region": "美國",
+  "stype": "官方／國際組織",
+  "itype": "政經政策",
+  "cadence": "依事件／月／季"
+ },
+ {
+  "no": 112,
+  "name": "美國勞工部（U.S. Department of Labor）",
+  "url": "https://www.dol.gov/",
+  "region": "美國",
+  "stype": "官方／國際組織",
+  "itype": "政經政策",
+  "cadence": "依事件／月"
+ },
+ {
+  "no": 113,
+  "name": "美國經濟分析局（BEA）",
+  "url": "https://www.bea.gov/",
+  "region": "美國",
+  "stype": "官方／國際組織",
+  "itype": "數據／研究／揭露",
+  "cadence": "月／季／年"
+ },
+ {
+  "no": 114,
+  "name": "美國勞工統計局（BLS）",
+  "url": "https://www.bls.gov/",
+  "region": "美國",
+  "stype": "官方／國際組織",
+  "itype": "數據／研究／揭露",
+  "cadence": "月／季／年"
+ },
+ {
+  "no": 115,
+  "name": "美國 SEC EDGAR",
+  "url": "https://www.sec.gov/edgar/search/",
+  "region": "美國",
+  "stype": "交易所／揭露平台",
+  "itype": "數據／研究／揭露",
+  "cadence": "依事件與申報期限"
+ },
+ {
+  "no": 116,
+  "name": "FRED 經濟資料庫",
+  "url": "https://fred.stlouisfed.org/",
+  "region": "美國",
+  "stype": "數據／資訊平台",
+  "itype": "數據／研究／揭露",
+  "cadence": "依資料發布即時更新"
+ },
+ {
+  "no": 117,
+  "name": "歐洲中央銀行（ECB）",
+  "url": "https://www.ecb.europa.eu/",
+  "region": "歐洲",
+  "stype": "官方／國際組織",
+  "itype": "政經政策",
+  "cadence": "依利率會議／月／季"
+ },
+ {
+  "no": 118,
+  "name": "歐盟執委會（European Commission）",
+  "url": "https://commission.europa.eu/",
+  "region": "歐洲",
+  "stype": "官方／國際組織",
+  "itype": "政經政策",
+  "cadence": "依事件／每日"
+ },
+ {
+  "no": 119,
+  "name": "歐元集團（Eurogroup）",
+  "url": "https://www.consilium.europa.eu/en/council-eu/eurogroup/",
+  "region": "歐洲",
+  "stype": "官方／國際組織",
+  "itype": "政經政策",
+  "cadence": "依會議／不定期"
+ },
+ {
+  "no": 120,
+  "name": "Eurostat 歐盟統計局",
+  "url": "https://ec.europa.eu/eurostat/",
+  "region": "歐洲",
+  "stype": "官方／國際組織",
+  "itype": "數據／研究／揭露",
+  "cadence": "月／季／年"
+ },
+ {
+  "no": 121,
+  "name": "日本銀行（Bank of Japan）",
+  "url": "https://www.boj.or.jp/en/",
+  "region": "日本",
+  "stype": "官方／國際組織",
+  "itype": "政經政策",
+  "cadence": "依政策會議／月／季"
+ },
+ {
+  "no": 122,
+  "name": "日本內閣府",
+  "url": "https://www.cao.go.jp/index-e.html",
+  "region": "日本",
+  "stype": "官方／國際組織",
+  "itype": "政經政策",
+  "cadence": "月／季＋依事件"
+ },
+ {
+  "no": 123,
+  "name": "日本財務省",
+  "url": "https://www.mof.go.jp/english/index.htm",
+  "region": "日本",
+  "stype": "官方／國際組織",
+  "itype": "政經政策",
+  "cadence": "依事件／月／年"
+ },
+ {
+  "no": 124,
+  "name": "日本總務省統計局",
+  "url": "https://www.stat.go.jp/english/",
+  "region": "日本",
+  "stype": "官方／國際組織",
+  "itype": "數據／研究／揭露",
+  "cadence": "月／季／年"
+ },
+ {
+  "no": 125,
+  "name": "日本經濟產業省（METI）",
+  "url": "https://www.meti.go.jp/english/",
+  "region": "日本",
+  "stype": "官方／國際組織",
+  "itype": "綜合新聞",
+  "cadence": "依事件／月／季"
+ },
+ {
+  "no": 126,
+  "name": "日本 EDINET",
+  "url": "https://disclosure2.edinet-fsa.go.jp/",
+  "region": "日本",
+  "stype": "交易所／揭露平台",
+  "itype": "數據／研究／揭露",
+  "cadence": "依事件與申報期限"
+ },
+ {
+  "no": 127,
+  "name": "中國人民銀行",
+  "url": "http://www.pbc.gov.cn/",
+  "region": "中國",
+  "stype": "官方／國際組織",
+  "itype": "政經政策",
+  "cadence": "依事件／月／季"
+ },
+ {
+  "no": 128,
+  "name": "中國國務院",
+  "url": "https://www.gov.cn/",
+  "region": "中國",
+  "stype": "官方／國際組織",
+  "itype": "政經政策",
+  "cadence": "依事件／每日"
+ },
+ {
+  "no": 129,
+  "name": "中國國家發展和改革委員會（NDRC）",
+  "url": "https://www.ndrc.gov.cn/",
+  "region": "中國",
+  "stype": "官方／國際組織",
+  "itype": "政經政策",
+  "cadence": "依事件／月／季"
+ },
+ {
+  "no": 130,
+  "name": "中國國家統計局",
+  "url": "https://www.stats.gov.cn/",
+  "region": "中國",
+  "stype": "官方／國際組織",
+  "itype": "數據／研究／揭露",
+  "cadence": "月／季／年"
+ },
+ {
+  "no": 131,
+  "name": "中國財政部",
+  "url": "https://www.mof.gov.cn/",
+  "region": "中國",
+  "stype": "官方／國際組織",
+  "itype": "政經政策",
+  "cadence": "依事件／月／年"
+ },
+ {
+  "no": 132,
+  "name": "中國證券監督管理委員會",
+  "url": "http://www.csrc.gov.cn/",
+  "region": "中國",
+  "stype": "官方／國際組織",
+  "itype": "綜合新聞",
+  "cadence": "依事件／每日"
+ },
+ {
+  "no": 133,
+  "name": "上海證券交易所",
+  "url": "https://www.sse.com.cn/",
+  "region": "中國",
+  "stype": "交易所／揭露平台",
+  "itype": "數據／研究／揭露",
+  "cadence": "即時／每日"
+ },
+ {
+  "no": 134,
+  "name": "深圳證券交易所",
+  "url": "https://www.szse.cn/",
+  "region": "中國",
+  "stype": "交易所／揭露平台",
+  "itype": "數據／研究／揭露",
+  "cadence": "即時／每日"
+ },
+ {
+  "no": 135,
+  "name": "HKEXnews 香港交易所披露易",
+  "url": "https://www.hkexnews.hk/",
+  "region": "中國",
+  "stype": "交易所／揭露平台",
+  "itype": "數據／研究／揭露",
+  "cadence": "依事件與申報期限"
+ },
+ {
+  "no": 136,
+  "name": "國際貨幣基金組織（IMF）",
+  "url": "https://www.imf.org/",
+  "region": "全球",
+  "stype": "官方／國際組織",
+  "itype": "政經政策",
+  "cadence": "月／季／半年／年"
+ },
+ {
+  "no": 137,
+  "name": "世界銀行（World Bank）",
+  "url": "https://www.worldbank.org/",
+  "region": "全球",
+  "stype": "研究機構／智庫",
+  "itype": "數據／研究／揭露",
+  "cadence": "季／半年／年＋不定期"
+ },
+ {
+  "no": 138,
+  "name": "經濟合作暨發展組織（OECD）",
+  "url": "https://www.oecd.org/",
+  "region": "全球",
+  "stype": "官方／國際組織",
+  "itype": "政經政策",
+  "cadence": "月／季／半年／年"
+ },
+ {
+  "no": 139,
+  "name": "世界貿易組織（WTO）",
+  "url": "https://www.wto.org/",
+  "region": "全球",
+  "stype": "官方／國際組織",
+  "itype": "政經政策",
+  "cadence": "依事件／季／年"
+ },
+ {
+  "no": 140,
+  "name": "聯合國貿易和發展會議（UNCTAD）",
+  "url": "https://unctad.org/",
+  "region": "全球",
+  "stype": "官方／國際組織",
+  "itype": "政經政策",
+  "cadence": "季／年＋不定期"
+ },
+ {
+  "no": 141,
+  "name": "國際金融協會（IIF）",
+  "url": "https://www.iif.com/",
+  "region": "全球",
+  "stype": "研究機構／智庫",
+  "itype": "數據／研究／揭露",
+  "cadence": "週／月／季＋不定期"
+ },
+ {
+  "no": 142,
+  "name": "Yahoo奇摩股市",
+  "url": "https://tw.stock.yahoo.com/",
+  "region": "台灣",
+  "stype": "數據／資訊平台",
+  "itype": "財經市場",
+  "cadence": "即時／每日"
+ },
+ {
+  "no": 143,
+  "name": "NPR",
+  "url": "https://www.npr.org/",
+  "region": "美國",
+  "stype": "新聞媒體",
+  "itype": "綜合新聞",
+  "cadence": "每日"
+ },
+ {
+  "no": 144,
+  "name": "財報狗",
+  "url": "https://statementdog.com/",
+  "region": "台灣",
+  "stype": "新聞媒體",
+  "itype": "財經市場",
+  "cadence": "依財報／每日／不定期"
+ },
+ {
+  "no": 145,
+  "name": "綠角財經筆記",
+  "url": "https://greenhornfinancefootnote.blogspot.com/",
+  "region": "台灣",
+  "stype": "專家／個人",
+  "itype": "財經市場",
+  "cadence": "不定期"
+ },
+ {
+  "no": 146,
+  "name": "Mr.Market 市場先生",
+  "url": "https://rich01.com/",
+  "region": "台灣",
+  "stype": "專家／個人",
+  "itype": "財經市場",
+  "cadence": "每日／不定期"
+ },
+ {
+  "no": 147,
+  "name": "股感 StockFeel",
+  "url": "https://www.stockfeel.com.tw/",
+  "region": "台灣",
+  "stype": "新聞媒體",
+  "itype": "財經市場",
+  "cadence": "每日／不定期"
+ },
+ {
+  "no": 148,
+  "name": "Martin Wolf",
+  "url": "https://www.ft.com/martin-wolf",
+  "region": "全球",
+  "stype": "專家／個人",
+  "itype": "經濟學家觀點",
+  "cadence": "每週／不定期"
+ },
+ {
+  "no": 149,
+  "name": "Mohamed El-Erian",
+  "url": "https://x.com/elerianm",
+  "region": "美國",
+  "stype": "專家／個人",
+  "itype": "經濟學家觀點",
+  "cadence": "每日／依事件"
+ },
+ {
+  "no": 150,
+  "name": "Paul Krugman",
+  "url": "https://paulkrugman.substack.com/",
+  "region": "美國",
+  "stype": "專家／個人",
+  "itype": "經濟學家觀點",
+  "cadence": "每週／不定期"
+ },
+ {
+  "no": 151,
+  "name": "Joseph Stiglitz",
+  "url": "https://www.josephstiglitz.com/",
+  "region": "美國",
+  "stype": "專家／個人",
+  "itype": "經濟學家觀點",
+  "cadence": "不定期"
+ },
+ {
+  "no": 152,
+  "name": "Nouriel Roubini",
+  "url": "https://nourielroubini.com/",
+  "region": "美國",
+  "stype": "專家／個人",
+  "itype": "經濟學家觀點",
+  "cadence": "不定期／依事件"
+ },
+ {
+  "no": 153,
+  "name": "Noah Smith",
+  "url": "https://www.noahpinion.blog/",
+  "region": "美國",
+  "stype": "專家／個人",
+  "itype": "經濟學家觀點",
+  "cadence": "每週／高頻"
+ },
+ {
+  "no": 154,
+  "name": "Aswath Damodaran",
+  "url": "https://aswathdamodaran.blogspot.com/",
+  "region": "美國",
+  "stype": "專家／個人",
+  "itype": "財經市場",
+  "cadence": "不定期"
+ },
+ {
+  "no": 155,
+  "name": "Kenneth Rogoff",
+  "url": "https://rogoff.scholars.harvard.edu/",
+  "region": "美國",
+  "stype": "專家／個人",
+  "itype": "經濟學家觀點",
+  "cadence": "不定期"
+ },
+ {
+  "no": 156,
+  "name": "Howard Marks",
+  "url": "https://www.oaktreecapital.com/insights",
+  "region": "美國",
+  "stype": "專家／個人",
+  "itype": "財經市場",
+  "cadence": "不定期／依事件"
+ },
+ {
+  "no": 157,
+  "name": "Kazuo Ueda（植田和男）",
+  "url": "https://www.boj.or.jp/en/about/press/koen_speaker/gv_ueda/index.htm",
+  "region": "日本",
+  "stype": "專家／個人",
+  "itype": "經濟學家觀點",
+  "cadence": "依會議／不定期"
+ },
+ {
+  "no": 158,
+  "name": "Raghuram Rajan",
+  "url": "https://www.chicagobooth.edu/faculty/directory/r/raghuram-g-rajan",
+  "region": "其他",
+  "stype": "專家／個人",
+  "itype": "經濟學家觀點",
+  "cadence": "不定期"
+ },
+ {
+  "no": 159,
+  "name": "Alicia García-Herrero",
+  "url": "https://www.bruegel.org/people/alicia-garcia-herrero",
+  "region": "全球",
+  "stype": "專家／個人",
+  "itype": "經濟學家觀點",
+  "cadence": "不定期／依事件"
+ },
+ {
+  "no": 160,
+  "name": "Richard Koo",
+  "url": "https://www.ineteconomics.org/research/experts/rkoo",
+  "region": "日本",
+  "stype": "專家／個人",
+  "itype": "經濟學家觀點",
+  "cadence": "不定期"
+ },
+ {
+  "no": 161,
+  "name": "林毅夫（Justin Yifu Lin）",
+  "url": "https://en.nsd.pku.edu.cn/faculty/fulltime/l/239509.htm",
+  "region": "中國",
+  "stype": "專家／個人",
+  "itype": "經濟學家觀點",
+  "cadence": "不定期"
+ },
+ {
+  "no": 162,
+  "name": "Stephen Roach",
+  "url": "https://stephenroachauthor.com/",
+  "region": "美國",
+  "stype": "專家／個人",
+  "itype": "經濟學家觀點",
+  "cadence": "不定期"
+ },
+ {
+  "no": 163,
+  "name": "Chetan Ahya",
+  "url": "https://www.morganstanley.com/ideas/thoughts-on-the-market-asia-equities",
+  "region": "其他",
+  "stype": "專家／個人",
+  "itype": "經濟學家觀點",
+  "cadence": "不定期／依事件"
+ },
+ {
+  "no": 164,
+  "name": "陸挺（Ting Lu）",
+  "url": "https://www.nomuraconnects.com/search/results?q=Ting%20Lu",
+  "region": "中國",
+  "stype": "專家／個人",
+  "itype": "經濟學家觀點",
+  "cadence": "不定期／依事件"
+ },
+ {
+  "no": 165,
+  "name": "Sonal Varma",
+  "url": "https://www.nomuraconnects.com/search/results?q=Sonal%20Varma",
+  "region": "其他",
+  "stype": "專家／個人",
+  "itype": "經濟學家觀點",
+  "cadence": "不定期／依事件"
+ },
+ {
+  "no": 166,
+  "name": "Frederic Neumann",
+  "url": "https://www.bruegel.org/people/frederic-neumann",
+  "region": "其他",
+  "stype": "專家／個人",
+  "itype": "經濟學家觀點",
+  "cadence": "不定期／依事件"
+ },
+ {
+  "no": 167,
+  "name": "日本金融廳（JFSA）",
+  "url": "https://www.fsa.go.jp/en/",
+  "region": "日本",
+  "stype": "官方／國際組織",
+  "itype": "政經政策",
+  "cadence": "依事件／每日"
+ },
+ {
+  "no": 168,
+  "name": "日本交易所集團（JPX）",
+  "url": "https://www.jpx.co.jp/english/",
+  "region": "日本",
+  "stype": "交易所／揭露平台",
+  "itype": "數據／研究／揭露",
+  "cadence": "即時／每日"
+ },
+ {
+  "no": 169,
+  "name": "日本貿易振興機構（JETRO）",
+  "url": "https://www.jetro.go.jp/en/",
+  "region": "日本",
+  "stype": "官方／國際組織",
+  "itype": "政經政策",
+  "cadence": "每日／月／季＋不定期"
+ },
+ {
+  "no": 170,
+  "name": "日本海關",
+  "url": "https://www.customs.go.jp/english/",
+  "region": "日本",
+  "stype": "官方／國際組織",
+  "itype": "綜合新聞",
+  "cadence": "月／依事件"
+ },
+ {
+  "no": 171,
+  "name": "東洋經濟 Online",
+  "url": "https://toyokeizai.net/",
+  "region": "日本",
+  "stype": "新聞媒體",
+  "itype": "財經市場",
+  "cadence": "每日"
+ },
+ {
+  "no": 172,
+  "name": "Diamond Online",
+  "url": "https://diamond.jp/",
+  "region": "日本",
+  "stype": "新聞媒體",
+  "itype": "財經市場",
+  "cadence": "每日"
+ },
+ {
+  "no": 173,
+  "name": "ITmedia NEWS",
+  "url": "https://www.itmedia.co.jp/news/",
+  "region": "日本",
+  "stype": "新聞媒體",
+  "itype": "產業情報",
+  "cadence": "每日"
+ },
+ {
+  "no": 174,
+  "name": "日經 Cross Tech",
+  "url": "https://xtech.nikkei.com/",
+  "region": "日本",
+  "stype": "新聞媒體",
+  "itype": "產業情報",
+  "cadence": "每日／週期性"
+ },
+ {
+  "no": 175,
+  "name": "NewsPicks",
+  "url": "https://newspicks.com/",
+  "region": "日本",
+  "stype": "新聞媒體",
+  "itype": "財經市場",
+  "cadence": "即時／每日"
+ },
+ {
+  "no": 176,
+  "name": "The Japan Times",
+  "url": "https://www.japantimes.co.jp/",
+  "region": "日本",
+  "stype": "新聞媒體",
+  "itype": "財經市場",
+  "cadence": "每日"
+ },
+ {
+  "no": 177,
+  "name": "韓國金融監督院 DART",
+  "url": "https://englishdart.fss.or.kr/",
+  "region": "其他",
+  "stype": "交易所／揭露平台",
+  "itype": "數據／研究／揭露",
+  "cadence": "依事件與申報期限"
+ },
+ {
+  "no": 178,
+  "name": "韓國交易所（KRX）",
+  "url": "https://global.krx.co.kr/",
+  "region": "其他",
+  "stype": "交易所／揭露平台",
+  "itype": "數據／研究／揭露",
+  "cadence": "即時／每日"
+ },
+ {
+  "no": 179,
+  "name": "韓國統計廳 KOSIS",
+  "url": "https://kosis.kr/eng/",
+  "region": "其他",
+  "stype": "官方／國際組織",
+  "itype": "數據／研究／揭露",
+  "cadence": "月／季／年"
+ },
+ {
+  "no": 180,
+  "name": "KED Global",
+  "url": "https://www.kedglobal.com/",
+  "region": "其他",
+  "stype": "新聞媒體",
+  "itype": "財經市場",
+  "cadence": "每日"
+ },
+ {
+  "no": 181,
+  "name": "Pulse by Maeil Business",
+  "url": "https://pulse.mk.co.kr/",
+  "region": "其他",
+  "stype": "新聞媒體",
+  "itype": "財經市場",
+  "cadence": "每日／即時"
+ },
+ {
+  "no": 182,
+  "name": "BusinessKorea",
+  "url": "https://www.businesskorea.co.kr/",
+  "region": "其他",
+  "stype": "新聞媒體",
+  "itype": "產業情報",
+  "cadence": "每日"
+ },
+ {
+  "no": 183,
+  "name": "Seoul Economic Daily",
+  "url": "https://en.sedaily.com/",
+  "region": "其他",
+  "stype": "新聞媒體",
+  "itype": "財經市場",
+  "cadence": "每日"
+ },
+ {
+  "no": 184,
+  "name": "The Elec",
+  "url": "https://www.thelec.net/",
+  "region": "其他",
+  "stype": "新聞媒體",
+  "itype": "產業情報",
+  "cadence": "每日"
+ },
+ {
+  "no": 185,
+  "name": "香港金融管理局（HKMA）",
+  "url": "https://www.hkma.gov.hk/eng/",
+  "region": "中國",
+  "stype": "官方／國際組織",
+  "itype": "政經政策",
+  "cadence": "依事件／月／季"
+ },
+ {
+  "no": 186,
+  "name": "香港政府統計處",
+  "url": "https://www.censtatd.gov.hk/en/",
+  "region": "中國",
+  "stype": "官方／國際組織",
+  "itype": "數據／研究／揭露",
+  "cadence": "月／季／年"
+ },
+ {
+  "no": 187,
+  "name": "新加坡金融管理局（MAS）",
+  "url": "https://www.mas.gov.sg/",
+  "region": "其他",
+  "stype": "官方／國際組織",
+  "itype": "政經政策",
+  "cadence": "依事件／月／季"
+ },
+ {
+  "no": 188,
+  "name": "新加坡交易所（SGX）",
+  "url": "https://www.sgx.com/",
+  "region": "其他",
+  "stype": "交易所／揭露平台",
+  "itype": "數據／研究／揭露",
+  "cadence": "即時／每日"
+ },
+ {
+  "no": 189,
+  "name": "ASEAN 東協官方網站",
+  "url": "https://asean.org/",
+  "region": "其他",
+  "stype": "官方／國際組織",
+  "itype": "政經政策",
+  "cadence": "依會議／不定期"
+ },
+ {
+  "no": 190,
+  "name": "The Edge Malaysia",
+  "url": "https://theedgemalaysia.com/",
+  "region": "其他",
+  "stype": "新聞媒體",
+  "itype": "財經市場",
+  "cadence": "每日"
+ },
+ {
+  "no": 191,
+  "name": "Bursa Malaysia",
+  "url": "https://www.bursamalaysia.com/",
+  "region": "其他",
+  "stype": "交易所／揭露平台",
+  "itype": "數據／研究／揭露",
+  "cadence": "即時／每日"
+ },
+ {
+  "no": 192,
+  "name": "印尼證券交易所（IDX）",
+  "url": "https://www.idx.co.id/en",
+  "region": "其他",
+  "stype": "交易所／揭露平台",
+  "itype": "數據／研究／揭露",
+  "cadence": "即時／每日"
+ },
+ {
+  "no": 193,
+  "name": "泰國證券交易所（SET）",
+  "url": "https://www.set.or.th/en/home",
+  "region": "其他",
+  "stype": "交易所／揭露平台",
+  "itype": "數據／研究／揭露",
+  "cadence": "即時／每日"
+ },
+ {
+  "no": 194,
+  "name": "Philippine Stock Exchange EDGE",
+  "url": "https://edge.pse.com.ph/",
+  "region": "其他",
+  "stype": "交易所／揭露平台",
+  "itype": "數據／研究／揭露",
+  "cadence": "依事件與申報期限"
+ },
+ {
+  "no": 195,
+  "name": "印度儲備銀行（RBI）",
+  "url": "https://www.rbi.org.in/",
+  "region": "其他",
+  "stype": "官方／國際組織",
+  "itype": "政經政策",
+  "cadence": "依政策會議／月／季"
+ },
+ {
+  "no": 196,
+  "name": "印度國家證券交易所（NSE）",
+  "url": "https://www.nseindia.com/",
+  "region": "其他",
+  "stype": "交易所／揭露平台",
+  "itype": "數據／研究／揭露",
+  "cadence": "即時／每日"
+ },
+ {
+  "no": 197,
+  "name": "Mint",
+  "url": "https://www.livemint.com/",
+  "region": "其他",
+  "stype": "新聞媒體",
+  "itype": "財經市場",
+  "cadence": "每日"
+ },
+ {
+  "no": 198,
+  "name": "The Economic Times",
+  "url": "https://economictimes.indiatimes.com/",
+  "region": "其他",
+  "stype": "新聞媒體",
+  "itype": "財經市場",
+  "cadence": "即時／每日"
+ }
+]
