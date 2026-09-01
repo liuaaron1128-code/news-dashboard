@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useMemo } from 'react'
-import { Search, Calendar, ChevronLeft, ChevronRight, Newspaper, BarChart2, Activity, Target, Radar, X } from 'lucide-react'
+import { Search, Calendar, ChevronLeft, ChevronRight, Newspaper, BarChart2, Activity, Target, Radar, X, SlidersHorizontal } from 'lucide-react'
 import briefingsData from '@/data/briefings.json'
 import bubbleData from '@/data/bubble.json'
 import { DailyBriefing, Grade, Category, NewsItem } from '@/types/news'
@@ -10,7 +10,7 @@ import MarketSnapshot from '@/components/MarketSnapshot'
 import NewsCard from '@/components/NewsCard'
 import BubbleMonitor from '@/components/BubbleMonitor'
 import MarketSignals from '@/components/MarketSignals'
-import MorningCard from '@/components/MorningCard'
+import MorningCard, { MacroCalendar } from '@/components/MorningCard'
 import DecisionPanel from '@/components/DecisionPanel'
 import LeadsRadar from '@/components/LeadsRadar'
 import BusinessDigest from '@/components/BusinessDigest'
@@ -46,6 +46,7 @@ export default function Home() {
   const [category, setCategory] = useState<Category | 'all'>('all')
   const [search, setSearch] = useState('')
   const [showSearch, setShowSearch] = useState(false)
+  const [showFilters, setShowFilters] = useState(false)
 
   const current = briefings[selectedDateIdx]
   const latestBubble = bubbles[0]
@@ -68,6 +69,7 @@ export default function Home() {
   }, [current, grade, category, search])
 
   const isFiltered = grade !== 'all' || category !== 'all' || search !== ''
+  const activeFilters = (grade !== 'all' ? 1 : 0) + (category !== 'all' ? 1 : 0)
 
   return (
     <div className="min-h-screen bg-slate-100">
@@ -201,9 +203,9 @@ export default function Home() {
               <p className="text-slate-700 text-sm leading-relaxed">{current.coreJudgment}</p>
             </div>
 
-            {/* Filters */}
-            <div className="mb-4 space-y-2">
-              {/* Search row */}
+            {/* Filters — one row by default; the chips only appear when asked
+                for, so the feed is not pushed down by controls nobody is using. */}
+            <div className="mb-4">
               <div className="flex items-center gap-2">
                 {showSearch ? (
                   <div className="relative flex-1">
@@ -214,7 +216,7 @@ export default function Home() {
                       placeholder="搜尋標題、內容..."
                       value={search}
                       onChange={(e) => setSearch(e.target.value)}
-                      className="w-full bg-white border border-blue-300 rounded-xl pl-9 pr-9 py-2.5 text-sm text-slate-900 placeholder-slate-400 focus:outline-none shadow-sm"
+                      className="w-full bg-white border border-blue-300 rounded-xl pl-9 pr-9 py-2.5 text-sm text-slate-900 placeholder-slate-400 focus:outline-none"
                     />
                     {search && (
                       <button onClick={() => setSearch('')} className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400">
@@ -223,22 +225,37 @@ export default function Home() {
                     )}
                   </div>
                 ) : (
-                  <div className="flex-1 flex items-center gap-2 overflow-x-auto no-scrollbar">
-                    {GRADES.map((g) => (
+                  <>
+                    <button
+                      onClick={() => setShowFilters(!showFilters)}
+                      className={`flex items-center gap-1.5 px-3 py-2 rounded-xl text-sm font-semibold transition ${
+                        showFilters || activeFilters > 0
+                          ? 'bg-slate-800 text-white'
+                          : 'bg-white text-slate-600 border border-slate-200'
+                      }`}
+                    >
+                      <SlidersHorizontal size={14} /> 篩選
+                      {activeFilters > 0 && (
+                        <span className="bg-white/25 rounded-full px-1.5 text-[11px]">{activeFilters}</span>
+                      )}
+                    </button>
+
+                    {isFiltered && (
                       <button
-                        key={g.value}
-                        onClick={() => setGrade(g.value)}
-                        className={`flex-shrink-0 px-3.5 py-2 rounded-xl text-sm font-semibold transition ${
-                          grade === g.value
-                            ? 'bg-blue-600 text-white shadow-sm'
-                            : 'bg-white text-slate-600 border border-slate-200'
-                        }`}
+                        onClick={() => { setGrade('all'); setCategory('all'); setSearch('') }}
+                        className="text-xs text-blue-500 font-medium flex items-center gap-1"
                       >
-                        {g.label}
+                        <X size={11} /> 清除
                       </button>
-                    ))}
-                  </div>
+                    )}
+
+                    <span className="ml-auto text-xs text-slate-400 whitespace-nowrap">
+                      {isFiltered ? `${filtered.length} / ${current.news.length}` : `${current.news.length} 則`}
+                      {' · '}{current.sourceCount} 來源
+                    </span>
+                  </>
                 )}
+
                 <button
                   onClick={() => { setShowSearch(!showSearch); setSearch('') }}
                   className={`flex-shrink-0 p-2.5 rounded-xl border transition ${showSearch ? 'bg-blue-600 text-white border-blue-600' : 'bg-white border-slate-200 text-slate-500'}`}
@@ -247,38 +264,35 @@ export default function Home() {
                 </button>
               </div>
 
-              {/* Category filter - horizontal scroll */}
-              {!showSearch && (
-                <div className="flex gap-2 overflow-x-auto no-scrollbar -mx-4 px-4">
-                  {CATEGORIES.map((c) => (
-                    <button
-                      key={c.value}
-                      onClick={() => setCategory(c.value)}
-                      className={`flex-shrink-0 px-3 py-1.5 rounded-xl text-xs font-semibold transition ${
-                        category === c.value
-                          ? 'bg-slate-800 text-white shadow-sm'
-                          : 'bg-white text-slate-600 border border-slate-200'
-                      }`}
-                    >
-                      {c.label}
-                    </button>
-                  ))}
+              {showFilters && !showSearch && (
+                <div className="mt-2.5 space-y-2">
+                  <div className="flex gap-2 overflow-x-auto no-scrollbar">
+                    {GRADES.map((g) => (
+                      <button
+                        key={g.value}
+                        onClick={() => setGrade(g.value)}
+                        className={`flex-shrink-0 px-3 py-1.5 rounded-xl text-xs font-semibold transition ${
+                          grade === g.value ? 'bg-blue-600 text-white' : 'bg-white text-slate-600 border border-slate-200'
+                        }`}
+                      >
+                        {g.label}
+                      </button>
+                    ))}
+                  </div>
+                  <div className="flex gap-2 overflow-x-auto no-scrollbar -mx-4 px-4">
+                    {CATEGORIES.map((c) => (
+                      <button
+                        key={c.value}
+                        onClick={() => setCategory(c.value)}
+                        className={`flex-shrink-0 px-3 py-1.5 rounded-xl text-xs font-semibold transition ${
+                          category === c.value ? 'bg-slate-800 text-white' : 'bg-white text-slate-600 border border-slate-200'
+                        }`}
+                      >
+                        {c.label}
+                      </button>
+                    ))}
+                  </div>
                 </div>
-              )}
-            </div>
-
-            {/* Count + clear filters */}
-            <div className="flex items-center justify-between mb-3">
-              <div className="text-xs text-slate-400">
-                {filtered.length} / {current.news.length} 則 · {current.sourceCount} 個來源
-              </div>
-              {isFiltered && (
-                <button
-                  onClick={() => { setGrade('all'); setCategory('all'); setSearch('') }}
-                  className="text-xs text-blue-500 font-medium flex items-center gap-1"
-                >
-                  <X size={11} /> 清除篩選
-                </button>
               )}
             </div>
 
@@ -293,26 +307,32 @@ export default function Home() {
               )}
             </div>
 
-            {/* Weekly Events */}
-            {current.weeklyEvents.length > 0 && (
-              <div className="mt-5 bg-white rounded-xl border border-slate-200 shadow-sm p-4">
-                <h2 className="text-sm font-bold text-slate-800 mb-3">📅 本週關鍵觀察點</h2>
-                <div className="space-y-3">
-                  {current.weeklyEvents.map((ev, i) => (
-                    <div key={i} className="flex gap-3 pb-3 border-b border-slate-100 last:border-0 last:pb-0">
-                      <span className="text-blue-600 font-bold text-xs flex-shrink-0 w-16 pt-0.5">{ev.date}</span>
-                      <div>
-                        <div className="text-sm font-semibold text-slate-800 leading-snug">{ev.event}</div>
-                        <div className="text-xs text-slate-500 mt-1 leading-relaxed">{ev.meaning}</div>
+            {/* One calendar block. The day's watchpoints and the macro diary
+                used to sit in separate cards at opposite ends of the page. */}
+            <div className="mt-6 bg-white rounded-xl border border-slate-200 p-4">
+              {current.weeklyEvents.length > 0 && (
+                <div className="mb-5 pb-5 border-b border-slate-100">
+                  <h2 className="text-sm font-bold text-slate-800 mb-3">📅 本週關鍵觀察點</h2>
+                  <div className="space-y-3">
+                    {current.weeklyEvents.map((ev, i) => (
+                      <div key={i} className="flex items-start gap-3">
+                        <span className="text-blue-600 font-bold text-[11px] flex-shrink-0 w-16 pt-0.5">{ev.date}</span>
+                        <div className="flex-1 min-w-0">
+                          <div className="text-[12.5px] font-semibold text-slate-800 leading-snug">{ev.event}</div>
+                          <div className="text-[11px] text-slate-400 mt-0.5 leading-relaxed">{ev.meaning}</div>
+                        </div>
                       </div>
-                    </div>
-                  ))}
+                    ))}
+                  </div>
                 </div>
-              </div>
-            )}
+              )}
+              <MacroCalendar />
+            </div>
 
             {/* Business & entrepreneurship */}
-            <BusinessDigest />
+            <div className="mt-6">
+              <BusinessDigest />
+            </div>
           </>
         )}
 

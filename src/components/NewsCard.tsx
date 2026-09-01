@@ -38,7 +38,7 @@ export default function NewsCard({ item }: { item: NewsItem }) {
     (item.grade === '🟡' && ((item.business && item.business !== '—') || (item.investment && item.investment !== '—')))
 
   return (
-    <div className={`bg-white rounded-xl overflow-hidden shadow-sm mb-3 border border-slate-200 border-l-4 ${cfg.leftBorder}`}>
+    <div className={`bg-white rounded-xl overflow-hidden mb-2.5 border border-slate-200 border-l-4 ${cfg.leftBorder}`}>
       {/* Card Header — always visible */}
       <div className="px-4 pt-3.5 pb-3 cursor-pointer" onClick={() => setExpanded(!expanded)}>
         <div className="flex items-start gap-3">
@@ -62,10 +62,7 @@ export default function NewsCard({ item }: { item: NewsItem }) {
             )}
 
             {/* Footer row */}
-            <div className="flex items-center justify-between mt-2.5">
-              <span className="text-[11px] text-slate-400 truncate max-w-[60%]">
-                {item.sources.slice(0, 2).join('、')}{item.sources.length > 2 ? ' 等' : ''}
-              </span>
+            <div className="flex items-center justify-end mt-2">
               <span className={`text-xs font-semibold flex items-center gap-0.5 ${expanded ? 'text-slate-400' : 'text-blue-500'}`}>
                 {expanded ? (<><ChevronUp size={13} /> 收合</>) : (<>展開分析 <ChevronDown size={13} /></>)}
               </span>
@@ -99,16 +96,16 @@ export default function NewsCard({ item }: { item: NewsItem }) {
           )}
 
           {showPerspectives && (
-            <div className="grid grid-cols-1 gap-2.5">
+            <div className="grid grid-cols-1 gap-4">
               {item.business && item.business !== '—' && (
-                <div className="bg-blue-50 border border-blue-100 rounded-xl p-3.5">
-                  <div className="text-xs font-bold text-blue-600 mb-1.5">🏢 業務視角</div>
+                <div className="border-l-2 border-blue-300 pl-3">
+                  <div className="text-xs font-bold text-blue-600 mb-1">🏢 業務視角</div>
                   <p className="text-slate-700 text-sm leading-relaxed">{item.business}</p>
                 </div>
               )}
               {item.investment && item.investment !== '—' && (
-                <div className="bg-emerald-50 border border-emerald-100 rounded-xl p-3.5">
-                  <div className="text-xs font-bold text-emerald-600 mb-1.5">📈 投資視角</div>
+                <div className="border-l-2 border-emerald-300 pl-3">
+                  <div className="text-xs font-bold text-emerald-600 mb-1">📈 投資視角</div>
                   <p className="text-slate-700 text-sm leading-relaxed">{item.investment}</p>
                 </div>
               )}
@@ -116,8 +113,8 @@ export default function NewsCard({ item }: { item: NewsItem }) {
           )}
 
           {item.triggers && item.triggers.length > 0 && (
-            <div className="bg-amber-50 border border-amber-100 rounded-xl p-3.5">
-              <div className="text-xs font-bold text-amber-700 mb-2">⚡ 觸發條件</div>
+            <div className="border-l-2 border-amber-300 pl-3">
+              <div className="text-xs font-bold text-amber-700 mb-1.5">⚡ 觸發條件</div>
               <ul className="space-y-1.5">
                 {item.triggers.map((t, i) => (
                   <li key={i} className="text-sm text-slate-700 flex gap-2">
