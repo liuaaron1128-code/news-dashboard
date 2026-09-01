@@ -1,0 +1,78 @@
+name: Daily briefing
+
+# Writes the day's briefing into src/data and pushes, so the site updates and
+# the date picker gains another entry. Runs after the market-data workflow
+# (20:00 UTC) so the numbers it reads are already current.
+#
+# Auth: CLAUDE_CODE_OAUTH_TOKEN, generated with `claude setup-token`. That
+# authenticates against an existing Claude subscription — it is not a paid API
+# key, and no other secret is needed.
+#
+# This produces the website half only. The Gmail connector is not available to
+# a GitHub runner, so nothing is emailed from here; see
+# docs/daily-email-briefing-routine.md for the routine that does both.
+
+on:
+  schedule:
+    # 21:20 UTC == 05:20 台北 (UTC+8)
+    - cron: '20 21 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  id-token: write
+
+concurrency:
+  group: daily-briefing
+  cancel-in-progress: false
+
+jobs:
+  briefing:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      # next build is run by the agent to type-check the JSON it writes, so the
+      # dependencies have to be present before the agent step.
+      - name: Install dependencies
+        run: npm ci --no-audit --no-fund
+
+      - uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          prompt: |
+            執行今天的每日財經簡報，並更新這個 repo 的網站資料。
+
+            完整規格見 docs/daily-email-briefing-routine.md 的「Routine 提示詞」
+            區塊，請完整照做，但有兩點調整：
+
+            1. 跳過第 7 步（寄信）—— GitHub Actions 環境沒有 Gmail 連結器。
+            2. 第 6 步的推送：直接 commit 到目前的分支即可，不要自己 git push，
+               workflow 之後的步驟會處理推送。
+
+            務必遵守的重點：
+            - 先用 `date` 確認今天日期（台北時區），不要從搜尋結果推斷。
+            - 七大地區都要掃過，六大資訊類型每類至少查一輪。
+            - 一定要做第二輪追查，找出影響鏈與共同上游原因。
+            - 寫進 src/data/briefings.json、commentary.json、events.json，
+              schema 必須完全符合 src/types/ 的定義。
+            - 寫完務必執行 `npx next build` 確認編譯通過才 commit；
+              grade 或 category 用了範圍外的值會讓整個網站編譯失敗。
+          claude_args: |
+            --model claude-opus-4-8
+            --max-turns 60
+            --allowedTools "WebSearch,WebFetch,Read,Write,Edit,Bash"
+
+      - name: Push if the agent committed anything
+        run: |
+          if [ -n "$(git log origin/${GITHUB_REF_NAME}..HEAD --oneline)" ]; then
+            git push origin HEAD:${GITHUB_REF_NAME}
+            echo "Pushed the day's briefing."
+          else
+            echo "The agent made no commit; nothing to push."
+          fi

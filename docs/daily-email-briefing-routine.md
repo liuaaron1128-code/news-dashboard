@@ -18,6 +18,31 @@
 已於 2026-09-01 刪除（無 workflow 呼叫、且都需要不會設定的金鑰）。
 需要時可從 git 歷史取回：`git log --diff-filter=D -- scripts/`。
 
+## 兩條自動化路徑，擇一或並用
+
+| | **A. Claude Routine** | **B. GitHub Actions**（已建好） |
+|---|---|---|
+| 更新網站 | ✅ | ✅ |
+| 寄信到信箱 | ✅ | ❌ runner 上沒有 Gmail 連結器 |
+| 需要的憑證 | 無 | `CLAUDE_CODE_OAUTH_TOKEN` 一個 secret |
+| 那是付費 API 金鑰嗎 | — | **不是**，用你現有的 Claude 訂閱認證 |
+| 誰能建 | **只有你**（web session 內無法建立） | 已寫好並提交，你只要加 secret |
+| 檔案 | 本文件的提示詞 | `.github/workflows/daily-briefing.yml` |
+
+**路徑 B 的一次性設定**：
+
+1. 在本機終端機執行 `claude setup-token`，複製產生的 token
+   （這是用你的 Claude 訂閱換的長效 token，不是 Console 的付費 API key）
+2. 到 GitHub repo → Settings → Secrets and variables → Actions → New secret
+3. 名稱填 `CLAUDE_CODE_OAUTH_TOKEN`，值貼上剛才的 token
+4. 到 Actions 分頁 → Daily briefing → **Run workflow** 測試一次
+
+之後每天 05:20（台北）自動跑，寫進 `briefings.json` 並推上 main，Vercel 自動部署。
+
+> 排程只會從預設分支執行，所以這個 workflow 必須在 `main` 上才會生效。
+> 若想同時要 email，再依下面步驟建 Routine —— 兩者可並用，但要避免同一天
+> 各寫一次（Routine 的提示詞已要求「同日期覆蓋，不新增重複」，所以安全）。
+
 ## 三個管道各自的角色
 
 | 用途 | 位置 | 說明 |
