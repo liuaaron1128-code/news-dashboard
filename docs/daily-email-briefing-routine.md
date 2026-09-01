@@ -177,6 +177,19 @@ schema 見 src/types/news.ts，務必完全符合，否則 next build 會失敗�
 - **價值在研判不在轉述。** 每則都要回答「所以呢？對我有什麼影響？」
 - **商業內容不可被行情擠掉。** 董事長要的是經營決策情報，不只是盤勢。
 
+## 目前無人維護的兩個分頁
+
+`market-signals.yml` 原本還有 `fetch-business.mjs` 與 `fetch-leads.mjs` 兩步，
+同樣因 GitHub Models 退役而每天靜默失敗，已一併從 workflow 移除。
+
+因此 **商業摘要（business.json）與 leads（leads.json）不再更新**，
+停在 2026-07-30。兩者的元件都會在畫面上顯示自己的 `asOf` 日期，
+所以不會誤導讀者，但內容確實是舊的。
+
+若要一併恢復，把它們加進上面第 6 步的寫回清單即可
+（schema 見 `src/types/`）。目前刻意不加，是為了讓每日 Routine 保持
+單一焦點、不要因為範圍過大而降低研判品質。
+
 ## 備註
 
 - 收件人固定為 `liuaaron1128@gmail.com`；要改對象或時間，直接改 Routine 設定。
