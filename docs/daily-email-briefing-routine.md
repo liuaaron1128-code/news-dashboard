@@ -14,6 +14,10 @@
 金鑰未設定，自 2026-07-30 起停止更新。這個 Routine 改由 **Claude 本身**
 擔任那個 LLM 角色，所以不受該 pipeline 卡關影響。
 
+該腳本與 `fetch-business.mjs`、`fetch-leads.mjs`、`generate-commentary.mjs`
+已於 2026-09-01 刪除（無 workflow 呼叫、且都需要不會設定的金鑰）。
+需要時可從 git 歷史取回：`git log --diff-filter=D -- scripts/`。
+
 ## 三個管道各自的角色
 
 | 用途 | 位置 | 說明 |
@@ -180,7 +184,7 @@ schema 見 src/types/news.ts，務必完全符合，否則 next build 會失敗�
 ## 目前無人維護的兩個分頁
 
 `market-signals.yml` 原本還有 `fetch-business.mjs` 與 `fetch-leads.mjs` 兩步，
-同樣因 GitHub Models 退役而每天靜默失敗，已一併從 workflow 移除。
+同樣因 GitHub Models 退役而每天靜默失敗，已從 workflow 移除，腳本亦已刪除。
 
 因此 **商業摘要（business.json）與 leads（leads.json）不再更新**，
 停在 2026-07-30。兩者的元件都會在畫面上顯示自己的 `asOf` 日期，

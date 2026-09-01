@@ -2,7 +2,7 @@
 // companies for the AI consulting business. Two tracks merged into one list:
 //   seed  — knowledge-curated concrete companies (上市櫃/知名企業/醫院集團)
 //   news  — companies surfaced by daily media signals (accumulated over time)
-// Built by scripts/fetch-leads.mjs.
+// No longer generated; see docs/daily-email-briefing-routine.md.
 
 export type SignalType = '轉型意圖' | '擴張' | '痛點' | '政府補助/標案'
 

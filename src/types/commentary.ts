@@ -1,5 +1,5 @@
-// AI-generated daily commentary, produced by scripts/generate-commentary.mjs
-// (Claude API) from that day's news + bubble + market-signal data.
+// The day's read, shown at the top of the news tab.
+// Written by the daily Claude routine; see docs/daily-email-briefing-routine.md.
 
 export interface DailyCommentary {
   date: string
