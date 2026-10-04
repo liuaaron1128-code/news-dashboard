@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-03T22:31:37.269Z",
-  "asOf": "2026-10-03",
+  "generatedAt": "2026-10-04T22:36:02.386Z",
+  "asOf": "2026-10-04",
   "source": "Yahoo Finance + FRED",
   "synthesis": {
     "engine": "rule",
@@ -64,10 +64,10 @@
       "id": "gold",
       "icon": "🥇",
       "title": "黃金近 1 年報酬",
-      "value": "+7.6%",
+      "value": "+4.8%",
       "tag": "避險需求",
       "tagLevel": "high",
-      "detail": "黃金近 1 年 7.6%、近 5 年年化 18.7%，常反映通膨與避險情緒。"
+      "detail": "黃金近 1 年 4.8%、近 5 年年化 18.8%，常反映通膨與避險情緒。"
     }
   ],
   "relativeValue": [
@@ -417,7 +417,7 @@
       "label": "美國 Fed 基準利率 (上限)",
       "value": 4,
       "unit": "%",
-      "note": "更新於 2026-10-03"
+      "note": "更新於 2026-10-04"
     },
     {
       "id": "ecb",
@@ -776,127 +776,127 @@
       "id": "gold",
       "name": "黃金",
       "icon": "🥇",
-      "price": 4162.3,
-      "ytd": -3.9,
-      "return1y": 7.6,
-      "cagr5y": 18.7
+      "price": 4167.6,
+      "ytd": -3.7,
+      "return1y": 4.8,
+      "cagr5y": 18.8
     },
     {
       "id": "silver",
       "name": "白銀",
       "icon": "🥈",
-      "price": 59.98,
-      "ytd": -15,
-      "return1y": 30.4,
-      "cagr5y": 21.5
+      "price": 60.97,
+      "ytd": -13.6,
+      "return1y": 26.8,
+      "cagr5y": 22
     },
     {
       "id": "copper",
       "name": "銅",
       "icon": "🟤",
-      "price": 6.492,
-      "ytd": 15.1,
-      "return1y": 32.5,
-      "cagr5y": 8.9
+      "price": 6.585,
+      "ytd": 16.8,
+      "return1y": 32,
+      "cagr5y": 9.4
     },
     {
       "id": "wti",
       "name": "WTI 原油",
       "icon": "🛢️",
-      "price": 91.11,
-      "ytd": 58.9,
-      "return1y": 50.6,
-      "cagr5y": 3.3
+      "price": 91.35,
+      "ytd": 59.4,
+      "return1y": 48.1,
+      "cagr5y": 3
     },
     {
       "id": "brent",
       "name": "Brent 原油",
       "icon": "🛢️",
-      "price": 102.25,
-      "ytd": 68.3,
-      "return1y": 59.5,
-      "cagr5y": 4.7
+      "price": 102.95,
+      "ytd": 69.5,
+      "return1y": 57.2,
+      "cagr5y": 4.5
     },
     {
       "id": "natgas",
       "name": "天然氣",
       "icon": "🔥",
-      "price": 3.035,
-      "ytd": -16.1,
-      "return1y": -11.8,
-      "cagr5y": -12
+      "price": 3.007,
+      "ytd": -16.9,
+      "return1y": -10.4,
+      "cagr5y": -13.8
     },
     {
       "id": "btc",
       "name": "比特幣",
       "icon": "₿",
-      "price": 84765.41,
-      "ytd": -4.5,
-      "return1y": -30.7,
+      "price": 86433.08,
+      "ytd": -2.6,
+      "return1y": -29.4,
       "cagr5y": 12
     },
     {
       "id": "eth",
       "name": "以太幣",
       "icon": "Ξ",
-      "price": 2687.15,
-      "ytd": -10.4,
-      "return1y": -40.5,
-      "cagr5y": -4.7
+      "price": 2727.45,
+      "ytd": -9.1,
+      "return1y": -39.2,
+      "cagr5y": -4.2
     },
     {
       "id": "dxy",
       "name": "美元指數",
       "icon": "💵",
-      "price": 101.93,
-      "ytd": 3.6,
-      "return1y": 4.2,
+      "price": 101.88,
+      "ytd": 3.5,
+      "return1y": 4.3,
       "cagr5y": 1.7
     },
     {
       "id": "eurusd",
       "name": "歐元/美元",
       "icon": "🇪🇺",
-      "price": 1.1257,
+      "price": 1.1263,
       "ytd": -4.2,
-      "return1y": -4,
+      "return1y": -3.8,
       "cagr5y": -0.6
     },
     {
       "id": "usdjpy",
       "name": "美元/日圓",
       "icon": "🇯🇵",
-      "price": 157.83,
+      "price": 157.78,
       "ytd": 0.7,
-      "return1y": 7.3,
+      "return1y": 5.5,
       "cagr5y": 7.3
     },
     {
       "id": "gbpusd",
       "name": "英鎊/美元",
       "icon": "🇬🇧",
-      "price": 1.324,
+      "price": 1.325,
       "ytd": -1.7,
-      "return1y": -1.5,
+      "return1y": -1.4,
       "cagr5y": -0.5
     },
     {
       "id": "usdcny",
       "name": "美元/人民幣",
       "icon": "🇨🇳",
-      "price": 6.6987,
-      "ytd": -4.3,
-      "return1y": -5.9,
+      "price": 6.704,
+      "ytd": -4.2,
+      "return1y": -5.8,
       "cagr5y": 0.8
     },
     {
       "id": "usdtwd",
       "name": "美元/台幣",
       "icon": "🇹🇼",
-      "price": 31.796,
+      "price": 31.798,
       "ytd": 1.6,
-      "return1y": 4.4,
-      "cagr5y": 2.8
+      "return1y": 4.5,
+      "cagr5y": 2.7
     }
   ]
 }
