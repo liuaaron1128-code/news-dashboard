@@ -1,5 +1,408 @@
 [
   {
+    "date": "2026-10-08",
+    "weekday": "週四",
+    "coreJudgment": "今日市場基調從『等降息』切換為『怕升息』。Fed 9月雖降息25bp至3.75–4.00%，但隔夜紀要揭露委員會鷹派分裂——多數委員認為年內仍可能再升一次，直接把美10年期殖利率推上24年新高5.35%、油價重返100美元附近，風險資產全面承壓：道瓊−451點、BTC/ETH兩位數跌幅。對美國基金是盈餘倍數壓縮的開端；對加密與房地產是最直接受害的兩類；對台股，昨日剛創歷史新高49,822的TAIEX今日已回落。業務面，Microsoft FY26 Q4 Azure年化破千億、Copilot 30M席位是重啟Agentic AI導入提案的最強錨點。",
+    "sourceCount": 28,
+    "marketSnapshot": [
+      {
+        "label": "台股加權指數",
+        "value": "49,730.13",
+        "change": "−0.19%",
+        "positive": false
+      },
+      {
+        "label": "S&P 500",
+        "value": "7,801.77",
+        "change": "−0.22%",
+        "positive": false
+      },
+      {
+        "label": "NASDAQ",
+        "value": "27,538.69",
+        "change": "−0.22%",
+        "positive": false
+      },
+      {
+        "label": "美元/台幣",
+        "value": "~31.80",
+        "change": "—",
+        "positive": null
+      },
+      {
+        "label": "BTC",
+        "value": "$83,742",
+        "change": "−2.10%",
+        "positive": false
+      },
+      {
+        "label": "ETH",
+        "value": "$2,578",
+        "change": "−4.36%",
+        "positive": false
+      },
+      {
+        "label": "美10年債",
+        "value": "5.286%",
+        "change": "+1 bp（峰5.35%）",
+        "positive": null
+      }
+    ],
+    "news": [
+      {
+        "id": "2026-10-08-001",
+        "grade": "🔴",
+        "category": "宏觀政策",
+        "title": "Fed 9月會議紀要揭露鷹派分裂，10年期殖利率衝上24年新高",
+        "background": "Fed於9月15–16日會議以12-0投票降息25bp至3.75–4.00%，為自2023年7月以來首次重啟寬鬆，但新主席Warsh的鷹派記者會已讓市場起疑。",
+        "what": "10/7紀要顯示委員會對後續路徑嚴重分歧；點陣圖隱含2027年底聯邦基金利率中位數4.1–4.4%。10年期殖利率盤中衝上5.350%（2002年4月以來最高）；原油同步衝回100美元；S&P 500/NASDAQ雙雙−0.22%，道瓊−0.66%、Russell 2000−1.31%。10月再升一次機率從>30%退到22%。",
+        "meaning": "(1)鷹派分裂時點關鍵——核心PCE仍在2.8%上方、油價剛從70反彈到100、Warsh公開否決SEP路徑，是「要在通膨再加速前先堵住」的政治訊號。(2)短期機制：殖利率透過折現率全面壓縮風險資產估值，高本益比AI/半導體與長久期科技首當其衝。(3)中期：Fed新reaction function意味10年期難回4%以下，房地產與長久期科技要重新定價。(4)最大錯誤解讀：把它當一次性恐慌——更像一個新的鷹派底盤正在形成。",
+        "business": "銀行與保險客戶的ALM情境需立即重跑；壽險新單責任準備金壓力減緩但投資型商品與房貸證券化部位需壓力測試。AI導入提案應從「成本降低」切換到「風險管理（反詐、信用模型）」切角——升息環境下ROI審批通過率更高。",
+        "investment": "美國基金：減碼長久期科技與無獲利成長股、加碼大型價值股與金融股；若10年期維持5%+，S&P 500合理本益比上緣應從24x下調至21–22x，約5–7%下行空間。全球基金：歐日相對受惠但美元走強侵蝕本幣報酬。房地產：壓垮台灣房市最直接變數。",
+        "triggers": [
+          "若10/14公布9月CPI核心年增率超過3.1% → 需重新評估年底升息機率，10年期可能測試5.5%",
+          "若Fed 10/28聲明出現『data-dependent, but risk of underdoing』 → 市場將從『跳過10月』切回『12月必升』"
+        ],
+        "watchpoints": [],
+        "sources": [
+          "CNBC",
+          "FXStreet",
+          "MUFG Research",
+          "Chase",
+          "Raisin",
+          "KPMG"
+        ]
+      },
+      {
+        "id": "2026-10-08-002",
+        "grade": "🔴",
+        "category": "加密貨幣",
+        "title": "加密市場同步重挫，BTC跌破84,000、ETH回落2,580",
+        "background": "10/5 BTC在9月非農就業疲軟後反彈至86,513；三天內因Fed紀要預期逆轉，連跌兩日。",
+        "what": "10/7美東早盤BTC報$83,742（−2.10%）、ETH報$2,578（−4.36%），較前日大跌超過$2,500。美國Bitcoin ETF 9/28–10/2當週淨流入$82.9M但Ethereum ETF卻淨流出$118M。BTC現價較一年前低了約$37,630。",
+        "meaning": "(1)加密對Fed流動性極為敏感的結構沒變——10年期每升50bp，BTC歷史上平均壓縮15–20%，這次只跌10%意味市場尚未完全定價。(2)穩定幣規模若因殖利率誘因回流美債，流動性抽水將放大跌幅。(3)SEC 10/1公布加密託管提案（60天評論期），機構進場法規門檻正在被打平。(4)錯誤解讀：把跌勢當牛市回檔——若Fed 12月再升一次，BTC可能測試75,000。",
+        "business": "—（短期與核心客戶直接相關性較低；若金管會虛擬資產子法最快明年Q1公布，有加密託管需求的金控客戶可提前備案）",
+        "investment": "加密部位：短期維持中性，不要在Fed 10/28前加碼；若BTC跌破83,000不急著承接，技術面下一支撐78,000–80,000。中期若ETF法規落地+Fed轉向，建議BTC為主、ETH為輔的70/30配置重建部位。",
+        "triggers": [
+          "若BTC日收跌破$80,000 → 需重新評估加密部位是否被動停損20%，技術面進入熊市確認",
+          "若SEC託管規則草案於11月初正式刊登Federal Register → 機構配置意願回溫，為加密中期多頭佈局信號"
+        ],
+        "watchpoints": [],
+        "sources": [
+          "Fortune",
+          "The Block",
+          "Crypto Times",
+          "Goldman Sachs",
+          "Cryptonomist"
+        ]
+      },
+      {
+        "id": "2026-10-08-003",
+        "grade": "🟠",
+        "category": "市場動態",
+        "title": "台股昨日創歷史收盤新高49,822，今日盤中回檔，外資持續集中TSMC",
+        "background": "TSMC Q2美元營收$402億（YoY+33.7%）、EPS 27.25、毛利率67.7%，均創歷史新高。",
+        "what": "TAIEX 10/6收盤49,822.55（+0.22%）寫下歷史新高；盤中最高49,968.92。TSMC現占TAIEX權重44%左右，Q2宣布亞利桑那加碼1,000億美元（累計2,650億），全年美元營收成長上修至>40%，CoWoS 2022–2027年CAGR預估>80%。10/7 Fed紀要公布後盤中回落92點至49,730（−0.19%）。",
+        "meaning": "",
+        "business": "製造業客戶對AI導入預算在上修——TSMC CapEx規模等於整個台灣供應鏈都處在產能擴張週期；向伺服器、ODM、PCB客戶推Azure OpenAI + Power Platform的「AI良率預測+智能排程」組合，是現在最有決策加速度的切角。",
+        "investment": "台灣基金：短期中性略加碼，但TSMC 44%集中度風險在殖利率衝高時放大波動；若TAIEX跌破48,500（約2.5%回檔）才是技術性加碼點。全球基金：半導體權重相對受惠。",
+        "triggers": [],
+        "watchpoints": [
+          "TSMC 10月中旬Q3法說會——Q3財測指引（446–458億美元）是否再上修",
+          "10月下旬外資賣超連續天數——若單週累積賣超超過NT$500億，警訊"
+        ],
+        "sources": [
+          "Yahoo股市",
+          "維基百科",
+          "技術新聞",
+          "TVBS",
+          "台積電法說"
+        ]
+      },
+      {
+        "id": "2026-10-08-004",
+        "grade": "🟠",
+        "category": "地緣政治",
+        "title": "台灣擬擴大對中AI晶片出口管制，對齊美國限制",
+        "background": "台灣現行僅12類戰略性高科技貨品禁運中國，且未將未經授權的AI晶片出口定罪。",
+        "what": "Bloomberg 6月報導台北考慮大幅擴充AI晶片對中出口管制，直接對齊美國措施，國安會與經濟部已在評估擴增限制清單與執法工具；若落地，TSMC、聯發科、瑞昱等客戶對中出貨流程將全面重整。",
+        "meaning": "",
+        "business": "金融與製造客戶的「出口合規AI」提案窗口打開——客戶名單篩查、紅旗交易識別、End-use verification流程數位化，Microsoft Purview + Power Automate是現成可打的方案。",
+        "investment": "台灣基金：半導體權值股短期中性，但次線IC設計（對中銷售比重高者）需審視受影響程度。全球基金：若規則落地，北美晶片商與日本材料商相對受惠。",
+        "triggers": [],
+        "watchpoints": [
+          "經濟部國貿署10–11月是否預告新戰略性高科技貨品清單",
+          "北京是否以稀土、鎵、鍺出口為反制"
+        ],
+        "sources": [
+          "Bloomberg",
+          "Intellinews",
+          "OECD.ai"
+        ]
+      },
+      {
+        "id": "2026-10-08-005",
+        "grade": "🟠",
+        "category": "AI科技",
+        "title": "Microsoft FY26 Q4 Azure年化破千億、Copilot 30M席位、Agent 365兩月40M agents",
+        "background": "Microsoft 7/31公布FY26 Q4，營收$900億（YoY+18%），Azure Q4年增43%。",
+        "what": "Azure年化收入首次突破$1,000億、Microsoft 365 Copilot付費席位超過3,000萬（Accenture單案74萬席位），Agent 365推出兩個月已累積40M agents註冊、分布在數萬家企業。下季Azure指引約45%固定匯率成長。",
+        "meaning": "",
+        "business": "核心武器庫更新——向金融客戶可直接以「Accenture 74萬席位、Agent 365 40M agents兩個月」作為治理成熟度證明；向醫療客戶則以Purview + Copilot Studio為資料主權切入點。10月底Microsoft Ignite前後是提案黃金窗。",
+        "investment": "美國基金：MSFT權重可維持；但若10年期維持5%+，大型科技股整體估值壓縮；逢Ignite前後正面消息，是減碼點而非加碼點。",
+        "triggers": [],
+        "watchpoints": [
+          "MSFT 10/29預計Q1 FY27法說——Azure成長是否連三季維持>40%",
+          "Microsoft Ignite（11月中）發表的Agent 365 governance新功能"
+        ],
+        "sources": [
+          "Futurum Group",
+          "US Cloud",
+          "Microsoft News"
+        ]
+      },
+      {
+        "id": "2026-10-08-006",
+        "grade": "🟠",
+        "category": "宏觀政策",
+        "title": "中國9月官方製造業PMI 50.1重返擴張，財政刺激開始見效",
+        "background": "8月官方PMI 49.8、連兩月收縮；9/22國務院加碼8,000億元政策性金融工具。",
+        "what": "國家統計局10/1公布9月官方製造業PMI 50.1（+0.3）；生產分項51.7、新訂單50.5；RatingDog（S&P Global編製）製造業PMI升至五個月高點52.1。消費品製造業PMI從49.0跳至50.7。",
+        "meaning": "",
+        "business": "台商製造客戶（長三角、珠三角布局者）訂單能見度短期回升——AI導入提案可從「成本中性」切成「產能擴張配套」切角，但需警示客戶中國需求恢復可能是政策性而非結構性。",
+        "investment": "全球基金：中國/港股權重上調的時點，但不宜重押；若人行同步降準，則確認政策底部。台灣基金：對中出口比重高的傳產族群短期受惠。",
+        "triggers": [],
+        "watchpoints": [
+          "10月下旬公布Q3 GDP與9月零售、工業生產",
+          "人行LPR 10/20是否降息"
+        ],
+        "sources": [
+          "The Star",
+          "ING Think",
+          "NBS"
+        ]
+      },
+      {
+        "id": "2026-10-08-007",
+        "grade": "🟠",
+        "category": "房地產",
+        "title": "台灣央行第七波選擇性信用管制維持不動，房市量縮價緩跌",
+        "background": "央行2024年9月第七波起，第二戶LTV 50%、第三戶/豪宅30%、取消寬限期；2026年3月微調第二戶LTV回60%。",
+        "what": "央行最新態度：短期不再加碼緊縮，但也未全面鬆綁；首購房貸利率仍普遍2.5%以上。永慶2026 Q1七都房價指數轉為「緩跌整理」；民調顯示68%消費者支持第七波延續至2026。若美10年期維持5%+、台債殖利率跟升，房貸利率在2季內可能再上行15–25bp。",
+        "meaning": "",
+        "business": "金融客戶（本國銀行、壽險）對房貸風控AI需求上升——建議以「違約前兆識別+擔保品動態估值」為提案主題。",
+        "investment": "房地產：短期維持減碼至中性，不加碼；若美10年期回落至4.5%以下、央行同步鬆綁，才是重新評估時點，目前時間窗至少6–12個月。",
+        "triggers": [],
+        "watchpoints": [
+          "央行12月理監事會議是否調整第七波內容",
+          "內政部10月實價登錄月報的交易量YoY"
+        ],
+        "sources": [
+          "工商時報",
+          "技術新聞",
+          "永慶調查",
+          "央行報告"
+        ]
+      },
+      {
+        "id": "2026-10-08-008",
+        "grade": "🟠",
+        "category": "台灣政策",
+        "title": "金管會：虛擬資產子法最快2027 Q1公布；AI六大核心原則落地推進",
+        "background": "《虛擬資產服務法》2026年6月立法，另有9項子法在制定中；AI基本法2026年1月施行。",
+        "what": "主委彭金隆於10/2 FinTechOn 2026 & AFA峰會表態：虛擬資產子法最快2027年Q1公布實施；金管會2026年FinTech推廣主軸鎖定「區塊鏈+AI雙主軸」；金融業運用AI六大核心原則已完成，正在輔導業者對接數位部的風險分級框架。",
+        "meaning": "",
+        "business": "金融客戶的AI治理合規專案視窗正式打開——建議以「六大核心原則Gap Assessment + 風險分級配適」為切入；FinLLM、AI反詐、可程式化治理三大子題是政策明確鼓勵方向，提案成功率高。",
+        "investment": "台灣基金：金融股（金控、純網銀）在合規投資擴大下短期中性；若與加密託管、穩定幣業務掛鉤者，長期受惠。",
+        "triggers": [],
+        "watchpoints": [
+          "10/23–24 FinTech Taipei彭金隆主旨演講內容",
+          "金管會是否Q4預告AI應用新bulletin（強制性vs指引）"
+        ],
+        "sources": [
+          "聯合報",
+          "工商時報",
+          "金管會新聞稿",
+          "Digital Policy Alert"
+        ]
+      },
+      {
+        "id": "2026-10-08-009",
+        "grade": "🟠",
+        "category": "AI科技",
+        "title": "Anthropic企業市占率40%首次超越OpenAI，傳10月IPO、估值$600億+",
+        "background": "Menlo Ventures統計：Anthropic企業LLM市占40%（+8pp vs 7月）、OpenAI 27%（vs 2023年的50%）、Google Gemini 21%。",
+        "what": "Anthropic 9/22推出Claude Opus 5.5，年化收入估已超$44B。傳Anthropic最快2026年10月IPO、目標估值>$600億。若IPO落實，Microsoft與OpenAI的獨家合作「盾牌」價值會下降，Azure可能加速把Claude納入Bedrock式的多模型路由。",
+        "meaning": "",
+        "business": "提案時要為客戶預留「多模型路由」彈性——即使現在以Azure OpenAI為主軸，架構層應預留Claude/Gemini的切換能力，這是對客戶的誠信訊號，也是你差異化顧問價值。",
+        "investment": "美國基金：Anthropic若IPO，私募股市估值溢價會回歸公開市場，可能壓抑MSFT、GOOGL短線情緒；二級市場建議觀察IPO當週訂價區間作為估值錨。",
+        "triggers": [],
+        "watchpoints": [
+          "Anthropic是否於10月中旬正式提交S-1",
+          "Opus 5.5在benchmark與企業PoC的實際勝率"
+        ],
+        "sources": [
+          "TechCrunch",
+          "Menlo Ventures",
+          "The Signal Substack"
+        ]
+      },
+      {
+        "id": "2026-10-08-010",
+        "grade": "🟡",
+        "category": "AI科技",
+        "title": "EU AI Act 8/2全面可執行，GPAI違規可罰全球營收3%，台廠出口歐盟準備不足",
+        "background": "2026年8月2日起歐盟AI辦公室對GPAI供應商具正式執法權。",
+        "what": "罰款上限為全球年營收3%或€1,500萬（取高者）；禁止類違規可達7%或€3,500萬。超過75%歐盟企業自評尚未準備好；106個企業AI系統研究顯示40%分類不清。",
+        "meaning": "台灣客戶在歐盟營運者（金融業歐陸子公司、製造業歐洲工廠）需在6個月內完成AI清點、角色定位、風險分級；是明年Q1具體提案題材，顧問費額度中大型。合規專案時間窗：11月開案、2027年2月前完工。",
+        "business": "",
+        "investment": "",
+        "triggers": [],
+        "watchpoints": [],
+        "sources": [
+          "Beam.ai",
+          "Jaggaer",
+          "Nomtek"
+        ]
+      },
+      {
+        "id": "2026-10-08-011",
+        "grade": "🟡",
+        "category": "客戶產業",
+        "title": "台灣醫療AI應用超過50項獲核准，國際輸出模式成形",
+        "background": "衛福部智慧醫療框架「3-3-3」啟動；MediCloud即時資料平台擴建。",
+        "what": "超過50項醫療AI產品獲核准；Yun-Phoenix數位病理AI同時擁US FDA與EU IVDR雙認證。這代表台灣醫療AI從「單點導入」進入「平台外銷」的拐點。",
+        "meaning": "醫療客戶的「資料平台+AI模型託管」需求加速——Azure Health Data Services + Copilot Studio + Purview是現成組合；提案時間窗為2027全年，單案金額NT$3,000萬至1.5億級。",
+        "business": "",
+        "investment": "",
+        "triggers": [],
+        "watchpoints": [],
+        "sources": [
+          "MOHW",
+          "CIO Taiwan",
+          "技術新聞"
+        ]
+      },
+      {
+        "id": "2026-10-08-012",
+        "grade": "🟡",
+        "category": "宏觀政策",
+        "title": "油價重返100美元附近，若延續將反噬Fed降息路徑",
+        "background": "10/7盤中油價一度重返100美元附近，年初以來WTI已漲20%。",
+        "what": "CNBC將油價與10年期殖利率60bp升幅並列為通膨黏性兩大跡象。若100美元站穩，核心CPI翹尾效應將推遲降息至少一季。",
+        "meaning": "整個「科技+加密」組合的多頭敘事會中斷至少到2027 Q2；房地產與公用事業將先走弱；可能把2026年底升息機率從22%推升回40%以上。",
+        "business": "",
+        "investment": "",
+        "triggers": [],
+        "watchpoints": [],
+        "sources": [
+          "CNBC",
+          "Yahoo Finance",
+          "The Street"
+        ]
+      },
+      {
+        "id": "2026-10-08-013",
+        "grade": "🟡",
+        "category": "加密貨幣",
+        "title": "美國Bitcoin ETF單週淨流入$82.9M、Ethereum ETF淨流出$118M",
+        "background": "機構資金在風險偏好轉差時優先棄ETH保BTC。",
+        "what": "9/28–10/2 BTC ETF淨流入$82.9M、ETH ETF淨流出$118M；Q2整體機構BTC ETF持倉上升7.5%至535,723 BTC（即使BTC當季跌14.2%），機構正在逆勢加碼。",
+        "meaning": "明年若Fed轉向、SEC託管規則落地，BTC相對ETH的機構溢價會進一步擴大；配置建議偏重BTC的70/30配比在2027年前仍適用。",
+        "business": "",
+        "investment": "",
+        "triggers": [],
+        "watchpoints": [],
+        "sources": [
+          "Cryptonomist",
+          "Goldman Sachs"
+        ]
+      },
+      {
+        "id": "2026-10-08-014",
+        "grade": "🟡",
+        "category": "市場動態",
+        "title": "美國道瓊重挫451點、Russell 2000下跌1.31%，風險輪動信號明確",
+        "background": "10/7美股主要指數全線收黑。",
+        "what": "道瓊收51,179.87（−0.66%）、Russell 2000小型股收2,793.36（−1.31%），跌幅深於S&P 500/NASDAQ的−0.22%，顯示資金從小型股、週期股撤離，流向大型防禦性類股。",
+        "meaning": "小型股對信用環境與殖利率最敏感，Russell領跌是「真實經濟承壓」的早期訊號。若延續，Q4製造業PMI、消費信心、企業發債成本都會惡化。",
+        "business": "",
+        "investment": "",
+        "triggers": [],
+        "watchpoints": [],
+        "sources": [
+          "TheStreet",
+          "Yahoo Finance"
+        ]
+      },
+      {
+        "id": "2026-10-08-015",
+        "grade": "🟡",
+        "category": "AI科技",
+        "title": "Nvidia Blackwell已出貨600萬顆，數據中心資本支出到2030年預估$3–4兆",
+        "background": "Jensen Huang重申Blackwell + Vera Rubin累積營收至2027年至少$1兆。",
+        "what": "過去四季Blackwell GPU累計出貨600萬顆、Blackwell+Rubin合計目標$500B營收；Nvidia預估全球數據中心資本支出將從2025年的$600B增至2030年的$3–4兆。分析師警告Nvidia獲利率可能在2025年見頂（受hyperscaler ASIC與AMD競爭影響）。",
+        "meaning": "即使Fed鷹派、估值壓力，AI基礎設施需求的結構性擴張沒有被改變；對台灣供應鏈（CoWoS、HBM、PCB）是中長期多頭訊號。",
+        "business": "",
+        "investment": "",
+        "triggers": [],
+        "watchpoints": [],
+        "sources": [
+          "Benzinga",
+          "Bloomberg",
+          "Barchart"
+        ]
+      }
+    ],
+    "weeklyEvents": [
+      {
+        "date": "10/08 週四",
+        "event": "市場消化Fed鷹派紀要第二日反應",
+        "meaning": "觀察10年期是否站上5.3%、BTC是否失守83,000"
+      },
+      {
+        "date": "10/13 週一",
+        "event": "美大型行Q3財報開跑（JPM、GS、WFC、C）",
+        "meaning": "淨利息收入在升息預期下應有超預期機會，加碼金融股訊號窗"
+      },
+      {
+        "date": "10/14 週二",
+        "event": "BAC、MS、BLK Q3財報",
+        "meaning": "BLK的ETF流量數據＝加密與固收資金轉向最直接訊號"
+      },
+      {
+        "date": "10/14 週三",
+        "event": "美9月CPI",
+        "meaning": "核心CPI >3.1%將確認Fed鷹派分裂，10年期衝5.5%"
+      },
+      {
+        "date": "10/15–16 週四五",
+        "event": "美PPI、零售、工業生產",
+        "meaning": "總體盤面壓力測試週"
+      },
+      {
+        "date": "10/20 週一",
+        "event": "中國LPR、Q3 GDP、9月經濟數據",
+        "meaning": "PMI回暖是否被數據確認；傳產/原物料股中線訊號"
+      },
+      {
+        "date": "10/23–24 週五六",
+        "event": "FinTech Taipei 2026",
+        "meaning": "金管會AI、虛擬資產新方向最直接訊號窗"
+      },
+      {
+        "date": "10/27–28 週二三",
+        "event": "FOMC會議（無SEP）",
+        "meaning": "市場目前pricing升息機率22%；若升，各資產類別全面重估"
+      },
+      {
+        "date": "10月中旬",
+        "event": "TSMC Q3法說會",
+        "meaning": "AI相關CoWoS、Arizona進度將影響台股權值股定價"
+      }
+    ]
+  },
+  {
     "date": "2026-09-16",
     "weekday": "週三",
     "coreJudgment": "今天全球市場定調只有一件事：Fed 三年來首度升息幾成定局，聯邦資金利率將從 3.50-3.75% 拉高至 3.75-4.00%，Warsh 主席將公開與川普政府決裂。10 年美債殖利率飆至 5.01%（2007年來最高），本身就是所有資產訂價的重錘。台股單日下殺 351 點、外資連四賣提款 626 億、累計逾 2200 億，訊號很清楚：AI 高估值 + 流動性收縮 + 央行 9/17 房市決議，三根壓力柱同時壓下來。核心動作：今晚 Fed 決議 + 點陣圖 + Warsh 記者會，是全季度最重要觀察窗；業務端，Microsoft AI 業務年化 370 億美元 +123%，是最強銷售籌碼，但 OpenAI-Nvidia 1000 億美元、10GW 合作案已重塑競局，客戶對「單一雲鎖定」疑慮會被放大。加密與台幣資產短期都在「等風暴過」位置，不宜加碼也不必倉皇撤退。",
@@ -10431,183 +10834,6 @@
         "date": "本週",
         "event": "美國 6 月 CPI / PCE",
         "meaning": "通膨數據決定升息預期與美債殖利率方向"
-      }
-    ]
-  },
-  {
-    "date": "2026-07-02",
-    "weekday": "週四",
-    "coreJudgment": "假期前美股內部分歧：道瓊再創新高（+595 點），但 Nasdaq 科技走弱（約 -0.8%）、S&P 持平，資金持續由高本益比 AI 轉向傳產與價值。台股在月底自 6/26 重挫（-3.6%）後回穩，7/2 收 46,744 點、上漲 0.58%，權值台積電 AI 邏輯續撐。加密面，6 月比特幣現貨 ETF 創史上最大單月流出 45 億美元後，BTC 反彈至約 6.1 萬。市場屏息等待隔日（7/3）美國 6 月非農，美 10Y 殖利率升至 4.48%。",
-    "sourceCount": 10,
-    "marketSnapshot": [
-      {
-        "label": "台股加權指數",
-        "value": "46,744",
-        "change": "+0.58%",
-        "positive": true
-      },
-      {
-        "label": "S&P 500",
-        "value": "7,483",
-        "change": "約持平",
-        "positive": null
-      },
-      {
-        "label": "NASDAQ",
-        "value": "—",
-        "change": "-0.8%",
-        "positive": false
-      },
-      {
-        "label": "美元/台幣",
-        "value": "—",
-        "change": "—",
-        "positive": null
-      },
-      {
-        "label": "BTC",
-        "value": "$61,385",
-        "change": "+1.8%",
-        "positive": true
-      },
-      {
-        "label": "ETH",
-        "value": "$1,656",
-        "change": "+2.4%",
-        "positive": true
-      },
-      {
-        "label": "美10年債",
-        "value": "4.48%",
-        "change": "+4 bps",
-        "positive": null
-      }
-    ],
-    "news": [
-      {
-        "id": "2026-07-02-001",
-        "grade": "🔴",
-        "category": "市場動態",
-        "title": "假期前美股分歧：道瓊創高、科技走弱，市場等非農",
-        "background": "獨立紀念日連假前，市場觀望 7/3 就業數據。",
-        "what": "7/2 道瓊漲 **595 點**創新高，但 **Nasdaq 約 -0.8%**、S&P 持平，資金由 AI 科技轉向傳產。",
-        "meaning": "輪動而非全面上攻，指數新高的『品質』比點位重要；高本益比科技出現獲利了結；非農結果將定調短期方向。",
-        "business": "—",
-        "investment": "AI/科技部位偏集中者留意輪動風險，可適度分散；等非農再決定加減碼。",
-        "triggers": [
-          "若非農遠低於預期 → 升息預期降溫、風險資產反彈",
-          "若 Nasdaq 跌破 200 日均線 → 修正擴散"
-        ],
-        "watchpoints": [
-          "7/3 美國 6 月非農",
-          "費半 SOX"
-        ],
-        "sources": [
-          "TheStreet",
-          "MarketWatch"
-        ]
-      },
-      {
-        "id": "2026-07-02-002",
-        "grade": "🔴",
-        "category": "台灣政策",
-        "title": "台股收 46,744 點漲 0.58%，自月底低點回穩",
-        "background": "台股 6/26 單日重挫逾 3.6%、失守 45,000，為史上第三大跌點後回穩。",
-        "what": "加權指數 7/2 收 **46,744.16 點**、上漲 **274.83 點（+0.58%）**，權值台積電領軍回穩。",
-        "meaning": "指數自恐慌低點反彈，但仍在高檔震盪；外資動向與台幣走勢是關鍵籌碼變數；與 Nasdaq 科技連動需留意。",
-        "business": "—",
-        "investment": "台股中長多不變，高檔宜分批；台積電法說（7 月中）為下一方向指標。",
-        "triggers": [
-          "若外資回補 → 指數再攻",
-          "若外資續賣 → 高檔回檔"
-        ],
-        "watchpoints": [
-          "外資買賣超",
-          "台幣匯率"
-        ],
-        "sources": [
-          "鉅亨網",
-          "Yahoo 股市"
-        ]
-      },
-      {
-        "id": "2026-07-02-003",
-        "grade": "🟠",
-        "category": "AI科技",
-        "title": "Nvidia 與台積電把 AI 導入晶圓廠，台積電 5 月營收年增 30%",
-        "background": "AI 資本支出循環延續，先進製程需求強勁。",
-        "what": "Nvidia 6/1 宣布與台積電合作，把 AI 導入晶片設計與製造；台積電 5 月營收 **年增 30.1%**、2026 全年估成長 **逾 30%**，HPC 占 Q1 營收 61%。",
-        "meaning": "AI 需求是全球市場最強結構性支柱，台積電最直接受益；『用 AI 造 AI』拉大護城河；營收結構已從手機轉向 AI/資料中心。",
-        "business": "製造/半導體客戶導入 AI 於良率、檢測的需求明確，是你顧問業務的切入點。",
-        "investment": "台積電與 AI 鏈中長多不變，估值高宜分批；留意台積電法說資本支出指引。",
-        "triggers": [
-          "若台積電法說上修資本支出 → AI 鏈續強",
-          "若 AI 資本支出見頂 → 全鏈評價下修"
-        ],
-        "watchpoints": [
-          "台積電法說（7 月中）",
-          "北美雲端資本支出"
-        ],
-        "sources": [
-          "NVIDIA Newsroom",
-          "TSMC SEC 6-K"
-        ]
-      },
-      {
-        "id": "2026-07-02-004",
-        "grade": "🟠",
-        "category": "加密貨幣",
-        "title": "6 月比特幣現貨 ETF 史上最大流出 45 億美元，Citi 下修目標",
-        "background": "Warsh 首場 FOMC 轉鷹，降息預期消退。",
-        "what": "6 月美國比特幣現貨 ETF **淨流出 45 億美元**創紀錄，IBIT 占 79%；Citi 12 個月 BTC 目標由 **11.2 萬** 下修至 **8.2 萬美元**。BTC 7/2 反彈至約 **6.1 萬**。",
-        "meaning": "短線反彈但機構退潮是結構訊號；加密與利率預期高度連動，7/28-29 FOMC 為關鍵。",
-        "business": "—",
-        "investment": "反彈不宜視為趨勢反轉，控制曝險；BTC 失守 6 萬留意去槓桿。",
-        "triggers": [
-          "若 FOMC 偏鷹 → BTC 承壓",
-          "若加密立法有進展 → 資金回流"
-        ],
-        "watchpoints": [
-          "ETF 每日淨流",
-          "7/28-29 FOMC"
-        ],
-        "sources": [
-          "CoinDesk",
-          "Yahoo Finance"
-        ]
-      },
-      {
-        "id": "2026-07-02-005",
-        "grade": "🟡",
-        "category": "客戶產業",
-        "title": "蘋果因記憶體漲價調升 MacBook、iPad 售價",
-        "background": "記憶體晶片供給吃緊、成本飆升。",
-        "what": "蘋果宣布因記憶體成本上升，調升 **MacBook 與 iPad** 價格。",
-        "meaning": "記憶體超級循環把成本壓力傳導到終端；硬體漲價可能壓抑換機需求，卻利多記憶體與供應鏈上游。",
-        "business": "硬體採購成本上升，客戶 IT 預算配置將更看重雲端與 AI 軟體 ROI。",
-        "investment": "利多記憶體/半導體上游；留意消費性電子需求受價格壓抑。",
-        "triggers": [
-          "若記憶體續漲 → 更多品牌跟進調價"
-        ],
-        "watchpoints": [
-          "DRAM/NAND 現貨價",
-          "消費性電子出貨"
-        ],
-        "sources": [
-          "Reuters"
-        ]
-      }
-    ],
-    "weeklyEvents": [
-      {
-        "date": "07/03",
-        "event": "美國 6 月非農就業",
-        "meaning": "決定短期升息預期與風險資產方向"
-      },
-      {
-        "date": "07/28-29",
-        "event": "FOMC 利率決議",
-        "meaning": "Warsh 偏鷹，點陣圖為關鍵轉折"
       }
     ]
   }
