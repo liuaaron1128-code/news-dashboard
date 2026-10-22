@@ -1,61 +1,150 @@
 {
-  "generatedAt": "2026-10-21T22:52:41.845Z",
-  "asOf": "2026-10-21",
+  "generatedAt": "2026-10-22T22:51:04.460Z",
+  "asOf": "2026-10-22",
   "source": "Yahoo Finance + FRED",
   "synthesis": {
     "engine": "rule",
     "regime": {
       "label": "中性",
       "tone": "neutral",
-      "summary": "風險指標尚未轉極端。整體屬「報酬靠風險資產推動、但底層利率與估值已偏緊」的格局。"
+      "summary": "風險指標尚未轉極端，但實質利率偏高、估值不便宜，通膨仍黏著、壓縮降息空間。整體屬「報酬靠風險資產推動、但底層利率與估值已偏緊」的格局。"
     },
     "points": [
       {
+        "theme": "利率環境",
+        "text": "美 10Y 公債 5.13%（近 5 年第 99 百分位），實質利率 2.76%（偏高、屬限制性，壓抑長天期與成長股）；曲線 10Y−2Y +0.31%（偏平）。"
+      },
+      {
+        "theme": "通膨與就業",
+        "text": "CPI 4.02%、核心 PCE 3.01%，仍明顯高於 Fed 2% 目標、通膨黏著，降息空間受限；失業率 4.2%。"
+      },
+      {
         "theme": "風險胃納",
-        "text": "VIX 16.68（平穩） → 風險指標升溫，留意。"
+        "text": "VIX 19.03（平穩）、高收益債利差 3.27%（偏高）、金融壓力 -0.63 → 風險指標升溫，留意。"
       },
       {
         "theme": "股市與輪動",
-        "text": "近 1 年領先 台股加權 +67.2%、KOSPI +45.6%、Bovespa +43.3%；落後 Sensex -12.5%、IDX Composite -34.7%。美股由 能源 領軍、公用事業 墊後。"
+        "text": "近 1 年領先 台股加權 +69%、KOSPI +50%、Bovespa +40.9%；落後 Sensex -12.7%、IDX Composite -35.3%。美股由 能源 領軍、通訊服務 墊後。"
       },
       {
         "theme": "股債相對價值",
-        "text": "S&P500 本益比 26.5 倍、股息殖利率 1.05%。"
+        "text": "ERP 股債溢酬 -1.31%（偏低、股票相對債券不划算）；S&P500 本益比 26.2 倍、股息殖利率 1.06%。高實質利率下，偏貴的股市估值承壓。"
       }
     ]
   },
   "headline": [
     {
+      "id": "us10y",
+      "icon": "🏦",
+      "title": "美國 10 年期公債殖利率",
+      "value": "5.13%",
+      "tag": "極高",
+      "tagLevel": "high",
+      "detail": "處於近 5 年區間第 99 百分位，無風險年化報酬偏高。股票須提供更高的預期報酬才划算，對成長股與長天期資產形成壓力。"
+    },
+    {
+      "id": "erp",
+      "icon": "⚖️",
+      "title": "股債風險溢酬 (ERP)",
+      "value": "-1.31%",
+      "tag": "無溢酬",
+      "tagLevel": "high",
+      "detail": "S&P500 盈餘殖利率 3.8% − 10Y 5.1%；越低代表股票相對債券越不划算"
+    },
+    {
       "id": "spx5y",
       "icon": "📈",
       "title": "S&P 500 近 5 年年化報酬",
-      "value": "+11.3%",
+      "value": "+10.9%",
       "tag": "高於長期均值",
       "tagLevel": "high",
-      "detail": "美股大盤近 5 年年化 11.3%、近 1 年 15.2%。"
+      "detail": "美股大盤近 5 年年化 10.9%、近 1 年 14.4%。"
     },
     {
       "id": "gold",
       "icon": "🥇",
       "title": "黃金近 1 年報酬",
-      "value": "+1%",
-      "tag": "避險需求",
-      "tagLevel": "high",
-      "detail": "黃金近 1 年 1%、近 5 年年化 18.4%，常反映通膨與避險情緒。"
+      "value": "-0.5%",
+      "tag": "回落",
+      "tagLevel": "low",
+      "detail": "黃金近 1 年 -0.5%、近 5 年年化 17.6%，常反映通膨與避險情緒。"
     }
   ],
   "relativeValue": [
     {
+      "id": "erp",
+      "label": "股債風險溢酬 (ERP)",
+      "value": -1.31,
+      "unit": "%",
+      "signal": "無溢酬",
+      "signalLevel": "high",
+      "note": "S&P500 盈餘殖利率 3.8% − 10Y 5.1%；越低代表股票相對債券越不划算"
+    },
+    {
+      "id": "real10y",
+      "label": "10Y 實質殖利率 (TIPS)",
+      "value": 2.76,
+      "unit": "%",
+      "signal": "偏高(緊縮)",
+      "signalLevel": "high",
+      "note": "扣除通膨後的無風險年化報酬；>2% 對成長股與黃金不利"
+    },
+    {
+      "id": "real5y",
+      "label": "5Y 實質殖利率 (TIPS)",
+      "value": 2.55,
+      "unit": "%",
+      "signal": "偏高",
+      "signalLevel": "high",
+      "note": "中天期實質利率"
+    },
+    {
+      "id": "be10y",
+      "label": "10Y 通膨預期 (breakeven)",
+      "value": 2.32,
+      "unit": "%",
+      "signal": "接近目標",
+      "signalLevel": "neutral",
+      "note": "市場對未來 10 年平均通膨的定價；Fed 目標約 2%"
+    },
+    {
+      "id": "be5y5y",
+      "label": "5y5y 遠期通膨預期",
+      "value": 2.19,
+      "unit": "%",
+      "signal": "接近目標",
+      "signalLevel": "neutral",
+      "note": "Fed 最看重的長期通膨預期指標"
+    },
+    {
+      "id": "curve10y2y",
+      "label": "殖利率曲線 10Y−2Y",
+      "value": 0.31,
+      "unit": "%",
+      "signal": "偏平",
+      "signalLevel": "neutral",
+      "note": "負值(倒掛)是經典的衰退領先訊號"
+    },
+    {
+      "id": "curve10y3mF",
+      "label": "殖利率曲線 10Y−3M",
+      "value": 0.74,
+      "unit": "%",
+      "signal": "正常",
+      "signalLevel": "low",
+      "note": "Fed 偏好的衰退指標；負值代表倒掛"
+    },
+    {
       "id": "pe",
       "label": "S&P 500 本益比 (trailing)",
-      "value": 26.5,
+      "value": 26.2,
       "unit": "倍",
       "note": "越高代表股市估值越貴"
     },
     {
       "id": "divy",
       "label": "S&P 500 股息殖利率",
-      "value": 1.05,
+      "value": 1.06,
       "unit": "%",
       "note": "大盤的現金流年化報酬"
     }
@@ -64,16 +153,256 @@
     {
       "id": "vix",
       "label": "VIX 波動率指數",
-      "value": 16.68,
+      "value": 19.03,
       "unit": "",
       "signal": "中性",
       "signalLevel": "neutral",
       "note": "股市恐慌情緒；>20 偏緊張、<13 自滿"
+    },
+    {
+      "id": "hyoas",
+      "label": "高收益債信用利差 (HY OAS)",
+      "value": 3.27,
+      "unit": "%",
+      "signal": "偏高",
+      "signalLevel": "high",
+      "note": "走闊代表市場壓力升高；近 5 年第 79 百分位"
+    },
+    {
+      "id": "igoas",
+      "label": "投資級債信用利差 (IG OAS)",
+      "value": 0.88,
+      "unit": "%",
+      "signal": "中性",
+      "signalLevel": "neutral",
+      "note": "投資級企業債的風險溢酬；近 5 年第 59 百分位"
+    },
+    {
+      "id": "stress",
+      "label": "聖路易聯儲金融壓力指數",
+      "value": -0.63,
+      "unit": "",
+      "signal": "偏低",
+      "signalLevel": "low",
+      "note": "0 為平均水準，正值代表壓力高於平均"
     }
   ],
-  "macro": [],
-  "bondYields": [],
+  "macro": [
+    {
+      "id": "cpi",
+      "label": "美國 CPI 年增率",
+      "value": 4.02,
+      "unit": "%",
+      "note": "資料月份 2026-09"
+    },
+    {
+      "id": "corecpi",
+      "label": "核心 CPI 年增率",
+      "value": 2.79,
+      "unit": "%",
+      "note": "資料月份 2026-09"
+    },
+    {
+      "id": "corepce",
+      "label": "核心 PCE 年增率（Fed 關注）",
+      "value": 3.01,
+      "unit": "%",
+      "note": "資料月份 2026-08"
+    },
+    {
+      "id": "unrate",
+      "label": "美國失業率",
+      "value": 4.2,
+      "unit": "%",
+      "note": "資料 2026-09-01"
+    },
+    {
+      "id": "gdp",
+      "label": "實質 GDP 季增年率",
+      "value": 2.2,
+      "unit": "%",
+      "note": "資料 2026-04（季）"
+    },
+    {
+      "id": "payrolls",
+      "label": "非農就業月增",
+      "value": 29,
+      "unit": " 千人",
+      "note": "資料 2026-09-01"
+    },
+    {
+      "id": "claims",
+      "label": "初領失業金人數",
+      "value": 194,
+      "unit": " 千人",
+      "note": "資料 2026-10-17"
+    },
+    {
+      "id": "walcl",
+      "label": "Fed 資產負債表",
+      "value": 6.75,
+      "unit": " 兆美元",
+      "note": "資料 2026-10-21"
+    }
+  ],
+  "bondYields": [
+    {
+      "id": "us1m",
+      "region": "美國",
+      "name": "1 個月",
+      "yield": 4.09,
+      "changeBps": -1,
+      "percentile5y": 43,
+      "signal": "中性"
+    },
+    {
+      "id": "us3m",
+      "region": "美國",
+      "name": "3 個月",
+      "yield": 4.25,
+      "changeBps": -1,
+      "percentile5y": 43,
+      "signal": "中性"
+    },
+    {
+      "id": "us6m",
+      "region": "美國",
+      "name": "6 個月",
+      "yield": 4.35,
+      "changeBps": -1,
+      "percentile5y": 56,
+      "signal": "中性"
+    },
+    {
+      "id": "us1y",
+      "region": "美國",
+      "name": "1 年期",
+      "yield": 4.52,
+      "changeBps": 1,
+      "percentile5y": 65,
+      "signal": "中性"
+    },
+    {
+      "id": "us2y",
+      "region": "美國",
+      "name": "2 年期",
+      "yield": 4.81,
+      "changeBps": 2,
+      "percentile5y": 89,
+      "signal": "偏高"
+    },
+    {
+      "id": "us3y",
+      "region": "美國",
+      "name": "3 年期",
+      "yield": 4.89,
+      "changeBps": 3,
+      "percentile5y": 98,
+      "signal": "極高"
+    },
+    {
+      "id": "us5y",
+      "region": "美國",
+      "name": "5 年期",
+      "yield": 4.95,
+      "changeBps": 1,
+      "percentile5y": 99,
+      "signal": "極高"
+    },
+    {
+      "id": "us7y",
+      "region": "美國",
+      "name": "7 年期",
+      "yield": 5.03,
+      "changeBps": 1,
+      "percentile5y": 99,
+      "signal": "極高"
+    },
+    {
+      "id": "us10y",
+      "region": "美國",
+      "name": "10 年期",
+      "yield": 5.13,
+      "changeBps": 1,
+      "percentile5y": 99,
+      "signal": "極高"
+    },
+    {
+      "id": "us20y",
+      "region": "美國",
+      "name": "20 年期",
+      "yield": 5.47,
+      "changeBps": 0,
+      "percentile5y": 99,
+      "signal": "極高"
+    },
+    {
+      "id": "us30y",
+      "region": "美國",
+      "name": "30 年期",
+      "yield": 5.42,
+      "changeBps": 0,
+      "percentile5y": 99,
+      "signal": "極高"
+    }
+  ],
   "globalYields": [
+    {
+      "id": "de10y",
+      "label": "德國 10Y 公債",
+      "value": 3.47,
+      "unit": "%",
+      "note": "資料月份 2026-09（OECD 月頻）"
+    },
+    {
+      "id": "fr10y",
+      "label": "法國 10Y 公債",
+      "value": 4.48,
+      "unit": "%",
+      "note": "資料月份 2026-09（OECD 月頻）"
+    },
+    {
+      "id": "it10y",
+      "label": "義大利 10Y 公債",
+      "value": 3.99,
+      "unit": "%",
+      "note": "資料月份 2026-08（OECD 月頻）"
+    },
+    {
+      "id": "gb10y",
+      "label": "英國 10Y 公債",
+      "value": 5.24,
+      "unit": "%",
+      "note": "資料月份 2026-09（OECD 月頻）"
+    },
+    {
+      "id": "jp10y",
+      "label": "日本 10Y 公債",
+      "value": 3.05,
+      "unit": "%",
+      "note": "資料月份 2026-09（OECD 月頻）"
+    },
+    {
+      "id": "ca10y",
+      "label": "加拿大 10Y 公債",
+      "value": 3.88,
+      "unit": "%",
+      "note": "資料月份 2026-09（OECD 月頻）"
+    },
+    {
+      "id": "au10y",
+      "label": "澳洲 10Y 公債",
+      "value": 5.28,
+      "unit": "%",
+      "note": "資料月份 2026-09（OECD 月頻）"
+    },
+    {
+      "id": "kr10y",
+      "label": "南韓 10Y 公債",
+      "value": 4.45,
+      "unit": "%",
+      "note": "資料月份 2026-09（OECD 月頻）"
+    },
     {
       "id": "tw10y",
       "label": "台灣 10Y 公債",
@@ -82,236 +411,251 @@
       "note": "官方源未能自動抓取，待補"
     }
   ],
-  "policyRates": [],
+  "policyRates": [
+    {
+      "id": "fed",
+      "label": "美國 Fed 基準利率 (上限)",
+      "value": 4,
+      "unit": "%",
+      "note": "更新於 2026-10-22"
+    },
+    {
+      "id": "ecb",
+      "label": "歐洲央行 ECB 存款利率",
+      "value": 2.5,
+      "unit": "%",
+      "note": "更新於 2026-10-22"
+    }
+  ],
   "equityReturns": [
     {
       "id": "spx",
       "region": "美國",
       "name": "S&P 500",
-      "price": 7757.17,
-      "ytd": 13.1,
-      "return1y": 15.2,
-      "cagr3y": 22.5,
-      "cagr5y": 11.3
+      "price": 7663.43,
+      "ytd": 11.7,
+      "return1y": 14.4,
+      "cagr3y": 22,
+      "cagr5y": 10.9
     },
     {
       "id": "ndq",
       "region": "美國",
       "name": "Nasdaq",
-      "price": 26702.86,
-      "ytd": 14.9,
-      "return1y": 16.3,
-      "cagr3y": 27.2,
-      "cagr5y": 12.1
+      "price": 26008.86,
+      "ytd": 11.9,
+      "return1y": 14.4,
+      "cagr3y": 25.9,
+      "cagr5y": 11.3
     },
     {
       "id": "dji",
       "region": "美國",
       "name": "道瓊工業",
-      "price": 52856.09,
-      "ytd": 9.2,
-      "return1y": 12.6,
-      "cagr3y": 16.9,
-      "cagr5y": 8.2
+      "price": 52867.98,
+      "ytd": 9.3,
+      "return1y": 13.5,
+      "cagr3y": 17.1,
+      "cagr5y": 8.1
     },
     {
       "id": "rut",
       "region": "美國",
       "name": "Russell 2000",
-      "price": 2781.02,
-      "ytd": 10.9,
-      "return1y": 11.8,
-      "cagr3y": 18.3,
-      "cagr5y": 4
+      "price": 2784.03,
+      "ytd": 11,
+      "return1y": 13.6,
+      "cagr3y": 18.7,
+      "cagr5y": 3.8
     },
     {
       "id": "sx5e",
       "region": "歐元區",
       "name": "Euro Stoxx 50",
-      "price": 6121.66,
-      "ytd": 3.3,
-      "return1y": 7.8,
-      "cagr3y": 15,
-      "cagr5y": 8.1
+      "price": 6207.52,
+      "ytd": 4.8,
+      "return1y": 9.2,
+      "cagr3y": 15.5,
+      "cagr5y": 8.2
     },
     {
       "id": "dax",
       "region": "德國",
       "name": "DAX",
-      "price": 25304.42,
-      "ytd": 3.1,
-      "return1y": 4.3,
-      "cagr3y": 19.6,
-      "cagr5y": 10.3
+      "price": 25645.04,
+      "ytd": 4.5,
+      "return1y": 5.4,
+      "cagr3y": 20.1,
+      "cagr5y": 10.5
     },
     {
       "id": "ftse",
       "region": "英國",
       "name": "FTSE 100",
-      "price": 10752.88,
-      "ytd": 8.1,
-      "return1y": 14.1,
+      "price": 10725.03,
+      "ytd": 7.8,
+      "return1y": 12.7,
       "cagr3y": 13.3,
-      "cagr5y": 8.4
+      "cagr5y": 8.3
     },
     {
       "id": "cac",
       "region": "法國",
       "name": "CAC 40",
-      "price": 7838.49,
-      "ytd": -4.4,
-      "return1y": -4.5,
-      "cagr3y": 4.8,
-      "cagr5y": 3.2
+      "price": 7921.68,
+      "ytd": -3.3,
+      "return1y": -4.1,
+      "cagr3y": 5.1,
+      "cagr5y": 3.3
     },
     {
       "id": "ibex",
       "region": "西班牙",
       "name": "IBEX 35",
-      "price": 19092.4,
-      "ytd": 9.1,
-      "return1y": 20.6,
-      "cagr3y": 28.4,
-      "cagr5y": 16.4
+      "price": 19323.5,
+      "ytd": 10.5,
+      "return1y": 22.6,
+      "cagr3y": 28.9,
+      "cagr5y": 16.8
     },
     {
       "id": "aex",
       "region": "荷蘭",
       "name": "AEX",
-      "price": 1133.59,
-      "ytd": 17.2,
-      "return1y": 17.3,
-      "cagr3y": 16.5,
+      "price": 1142.3,
+      "ytd": 18.1,
+      "return1y": 18.2,
+      "cagr3y": 16.8,
       "cagr5y": 7
     },
     {
       "id": "smi",
       "region": "瑞士",
       "name": "SMI",
-      "price": 14478.37,
-      "ytd": 9.3,
-      "return1y": 14.6,
-      "cagr3y": 11.8,
+      "price": 14552.39,
+      "ytd": 9.9,
+      "return1y": 15.3,
+      "cagr3y": 12,
       "cagr5y": 3.8
     },
     {
       "id": "n225",
       "region": "日本",
       "name": "日經 225",
-      "price": 64075.42,
-      "ytd": 23.6,
-      "return1y": 30.3,
-      "cagr3y": 27,
-      "cagr5y": 17.4
+      "price": 64621.24,
+      "ytd": 24.7,
+      "return1y": 31,
+      "cagr3y": 27.4,
+      "cagr5y": 17.5
     },
     {
       "id": "hsi",
       "region": "香港",
       "name": "恒生指數",
-      "price": 23867.74,
-      "ytd": -9.4,
-      "return1y": -7.7,
-      "cagr3y": 11.6,
-      "cagr5y": -1.7
+      "price": 23651.87,
+      "ytd": -10.2,
+      "return1y": -9.1,
+      "cagr3y": 11.3,
+      "cagr5y": -2
     },
     {
       "id": "ssec",
       "region": "中國",
       "name": "上證綜指",
-      "price": 3735.37,
-      "ytd": -7.2,
-      "return1y": -3.3,
-      "cagr3y": 7.8,
-      "cagr5y": 0.8
+      "price": 3713.03,
+      "ytd": -7.7,
+      "return1y": -5.2,
+      "cagr3y": 7.6,
+      "cagr5y": 0.7
     },
     {
       "id": "twii",
       "region": "台灣",
       "name": "台股加權",
-      "price": 46292.93,
-      "ytd": 57.7,
-      "return1y": 67.2,
-      "cagr3y": 41.2,
-      "cagr5y": 22.3
+      "price": 46887.77,
+      "ytd": 59.8,
+      "return1y": 69,
+      "cagr3y": 41.8,
+      "cagr5y": 22.7
     },
     {
       "id": "kospi",
       "region": "南韓",
       "name": "KOSPI",
-      "price": 5552.74,
-      "ytd": 28.8,
-      "return1y": 45.6,
-      "cagr3y": 32.7,
-      "cagr5y": 13
+      "price": 5735.66,
+      "ytd": 33.1,
+      "return1y": 50,
+      "cagr3y": 34.2,
+      "cagr5y": 13.8
     },
     {
       "id": "sensex",
       "region": "印度",
       "name": "Sensex",
-      "price": 73852.9,
-      "ytd": -13.3,
-      "return1y": -12.5,
-      "cagr3y": 4,
+      "price": 73709.69,
+      "ytd": -13.5,
+      "return1y": -12.7,
+      "cagr3y": 4.1,
       "cagr5y": 3.9
     },
     {
       "id": "jkse",
       "region": "印尼",
       "name": "IDX Composite",
-      "price": 5278.89,
-      "ytd": -39.7,
-      "return1y": -34.7,
-      "cagr3y": -8.3,
-      "cagr5y": -4.5
+      "price": 5328.36,
+      "ytd": -39.1,
+      "return1y": -35.3,
+      "cagr3y": -8,
+      "cagr5y": -4.3
     },
     {
       "id": "sti",
       "region": "新加坡",
       "name": "STI",
-      "price": 5404.02,
-      "ytd": 16.1,
-      "return1y": 23.3,
-      "cagr3y": 20.7,
-      "cagr5y": 11.1
+      "price": 5437.99,
+      "ytd": 16.8,
+      "return1y": 24.1,
+      "cagr3y": 20.9,
+      "cagr5y": 11.2
     },
     {
       "id": "asx",
       "region": "澳洲",
       "name": "ASX 200",
-      "price": 8831.3,
-      "ytd": 1.2,
-      "return1y": -2.9,
-      "cagr3y": 8.6,
-      "cagr5y": 3.6
+      "price": 8793.2,
+      "ytd": 0.7,
+      "return1y": -2.6,
+      "cagr3y": 8.7,
+      "cagr5y": 3.5
     },
     {
       "id": "tsx",
       "region": "加拿大",
       "name": "S&P/TSX",
-      "price": 36324.99,
-      "ytd": 13.9,
-      "return1y": 21.5,
-      "cagr3y": 23.9,
-      "cagr5y": 11.4
+      "price": 35973.45,
+      "ytd": 12.8,
+      "return1y": 20,
+      "cagr3y": 23.6,
+      "cagr5y": 11.1
     },
     {
       "id": "mxx",
       "region": "墨西哥",
       "name": "IPC",
-      "price": 70249.54,
-      "ytd": 9.5,
-      "return1y": 15.6,
-      "cagr3y": 13.3,
-      "cagr5y": 6.2
+      "price": 69889.73,
+      "ytd": 9,
+      "return1y": 14,
+      "cagr3y": 13.2,
+      "cagr5y": 6.1
     },
     {
       "id": "bvsp",
       "region": "巴西",
       "name": "Bovespa",
-      "price": 206495.23,
-      "ytd": 28.6,
-      "return1y": 43.3,
-      "cagr3y": 22.2,
+      "price": 204120.13,
+      "ytd": 27.1,
+      "return1y": 40.9,
+      "cagr3y": 21.9,
       "cagr5y": 13.9
     }
   ],
@@ -320,111 +664,111 @@
       "id": "xlk",
       "region": "科技",
       "name": "科技 (XLK)",
-      "price": 188.54,
-      "ytd": 30.7,
-      "return1y": 30.8,
-      "cagr3y": 32,
-      "cagr5y": 18.9
+      "price": 182.34,
+      "ytd": 26.4,
+      "return1y": 27.7,
+      "cagr3y": 30.5,
+      "cagr5y": 18.1
     },
     {
       "id": "xlc",
       "region": "通訊",
       "name": "通訊服務 (XLC)",
-      "price": 108.97,
-      "ytd": -6.8,
-      "return1y": -6.6,
-      "cagr3y": 17.9,
-      "cagr5y": 6.3
+      "price": 107.42,
+      "ytd": -8.1,
+      "return1y": -7.1,
+      "cagr3y": 17.1,
+      "cagr5y": 5.9
     },
     {
       "id": "xly",
       "region": "非必需消費",
       "name": "非必需消費 (XLY)",
-      "price": 115.53,
-      "ytd": -2.4,
-      "return1y": -3.4,
-      "cagr3y": 15.1,
-      "cagr5y": 3.7
+      "price": 115.01,
+      "ytd": -2.8,
+      "return1y": -3.1,
+      "cagr3y": 14.8,
+      "cagr5y": 3.1
     },
     {
       "id": "xlp",
       "region": "必需消費",
       "name": "必需消費 (XLP)",
-      "price": 87.11,
-      "ytd": 12.1,
-      "return1y": 9.9,
-      "cagr3y": 9,
-      "cagr5y": 4.1
+      "price": 89.99,
+      "ytd": 15.8,
+      "return1y": 12.9,
+      "cagr3y": 10.3,
+      "cagr5y": 4.8
     },
     {
       "id": "xlf",
       "region": "金融",
       "name": "金融 (XLF)",
-      "price": 56.04,
-      "ytd": 2,
-      "return1y": 6.3,
-      "cagr3y": 20.3,
-      "cagr5y": 6.6
+      "price": 56.65,
+      "ytd": 3.1,
+      "return1y": 8,
+      "cagr3y": 21,
+      "cagr5y": 6.9
     },
     {
       "id": "xlv",
       "region": "醫療",
       "name": "醫療保健 (XLV)",
-      "price": 178.94,
-      "ytd": 15.1,
-      "return1y": 23.3,
-      "cagr3y": 11.8,
-      "cagr5y": 6.3
+      "price": 181.3,
+      "ytd": 16.6,
+      "return1y": 24.2,
+      "cagr3y": 12.5,
+      "cagr5y": 6.6
     },
     {
       "id": "xli",
       "region": "工業",
       "name": "工業 (XLI)",
-      "price": 168.31,
-      "ytd": 6.5,
-      "return1y": 8.7,
-      "cagr3y": 19.5,
-      "cagr5y": 9.9
+      "price": 166.73,
+      "ytd": 5.5,
+      "return1y": 9.1,
+      "cagr3y": 19.3,
+      "cagr5y": 9.7
     },
     {
       "id": "xle",
       "region": "能源",
       "name": "能源 (XLE)",
-      "price": 68.16,
-      "ytd": 49.3,
-      "return1y": 57.2,
-      "cagr3y": 14.7,
-      "cagr5y": 18.7
+      "price": 67.57,
+      "ytd": 48,
+      "return1y": 53.9,
+      "cagr3y": 15,
+      "cagr5y": 18.1
     },
     {
       "id": "xlb",
       "region": "原物料",
       "name": "原物料 (XLB)",
-      "price": 51.32,
-      "ytd": 11.3,
-      "return1y": 15.9,
-      "cagr3y": 10.9,
-      "cagr5y": 3.9
+      "price": 51.69,
+      "ytd": 12.1,
+      "return1y": 17.1,
+      "cagr3y": 11.6,
+      "cagr5y": 3.8
     },
     {
       "id": "xlu",
       "region": "公用",
       "name": "公用事業 (XLU)",
-      "price": 42,
-      "ytd": -2.7,
-      "return1y": -7.3,
-      "cagr3y": 13.1,
-      "cagr5y": 4.5
+      "price": 42.87,
+      "ytd": -0.7,
+      "return1y": -5.2,
+      "cagr3y": 14.2,
+      "cagr5y": 5.1
     },
     {
       "id": "xlre",
       "region": "房地產",
       "name": "房地產 (XLRE)",
-      "price": 42.06,
-      "ytd": 4.2,
-      "return1y": -0.7,
-      "cagr3y": 8.7,
-      "cagr5y": -2.5
+      "price": 42.52,
+      "ytd": 5.3,
+      "return1y": 0,
+      "cagr3y": 9.4,
+      "cagr5y": -2.3
     }
   ],
   "otherAssets": [
@@ -432,127 +776,127 @@
       "id": "gold",
       "name": "黃金",
       "icon": "🥇",
-      "price": 4150.3,
-      "ytd": -4.1,
-      "return1y": 1,
-      "cagr5y": 18.4
+      "price": 4046.3,
+      "ytd": -6.5,
+      "return1y": -0.5,
+      "cagr5y": 17.6
     },
     {
       "id": "silver",
       "name": "白銀",
       "icon": "🥈",
-      "price": 57.85,
-      "ytd": -18,
-      "return1y": 21.9,
-      "cagr5y": 19.1
+      "price": 54.63,
+      "ytd": -22.6,
+      "return1y": 15.1,
+      "cagr5y": 17.5
     },
     {
       "id": "copper",
       "name": "銅",
       "icon": "🟤",
-      "price": 6.5565,
-      "ytd": 16.3,
-      "return1y": 33,
-      "cagr5y": 7.4
+      "price": 6.4025,
+      "ytd": 13.5,
+      "return1y": 29.1,
+      "cagr5y": 7.2
     },
     {
       "id": "wti",
       "name": "WTI 原油",
       "icon": "🛢️",
-      "price": 97.99,
-      "ytd": 71,
-      "return1y": 69.5,
-      "cagr5y": 3.5
+      "price": 98.85,
+      "ytd": 72.5,
+      "return1y": 69,
+      "cagr5y": 3.4
     },
     {
       "id": "brent",
       "name": "Brent 原油",
       "icon": "🛢️",
-      "price": 109.97,
-      "ytd": 81,
-      "return1y": 79.3,
-      "cagr5y": 5.4
+      "price": 112.98,
+      "ytd": 86,
+      "return1y": 80.5,
+      "cagr5y": 5.7
     },
     {
       "id": "natgas",
       "name": "天然氣",
       "icon": "🔥",
-      "price": 2.776,
-      "ytd": -23.3,
-      "return1y": -20.1,
-      "cagr5y": -11.5
+      "price": 2.78,
+      "ytd": -23.2,
+      "return1y": -19.4,
+      "cagr5y": -12
     },
     {
       "id": "btc",
       "name": "比特幣",
       "icon": "₿",
-      "price": 84435.34,
-      "ytd": -4.8,
-      "return1y": -22.2,
-      "cagr5y": 6.3
+      "price": 81247.71,
+      "ytd": -8.4,
+      "return1y": -24.6,
+      "cagr5y": 6
     },
     {
       "id": "eth",
       "name": "以太幣",
       "icon": "Ξ",
-      "price": 2483.78,
-      "ytd": -17.2,
-      "return1y": -35.9,
-      "cagr5y": -9.3
+      "price": 2381.88,
+      "ytd": -20.6,
+      "return1y": -37.5,
+      "cagr5y": -9.7
     },
     {
       "id": "dxy",
       "name": "美元指數",
       "icon": "💵",
-      "price": 101.69,
-      "ytd": 3.3,
-      "return1y": 2.8,
-      "cagr5y": 1.6
+      "price": 101.62,
+      "ytd": 3.2,
+      "return1y": 2.7,
+      "cagr5y": 1.7
     },
     {
       "id": "eurusd",
       "name": "歐元/美元",
       "icon": "🇪🇺",
-      "price": 1.1233,
-      "ytd": -4.4,
-      "return1y": -3.2,
+      "price": 1.1223,
+      "ytd": -4.5,
+      "return1y": -3.3,
       "cagr5y": -0.7
     },
     {
       "id": "usdjpy",
       "name": "美元/日圓",
       "icon": "🇯🇵",
-      "price": 158.16,
-      "ytd": 0.9,
-      "return1y": 4.1,
-      "cagr5y": 6.8
+      "price": 156.65,
+      "ytd": 0,
+      "return1y": 3.1,
+      "cagr5y": 6.6
     },
     {
       "id": "gbpusd",
       "name": "英鎊/美元",
       "icon": "🇬🇧",
-      "price": 1.3392,
-      "ytd": -0.6,
-      "return1y": 0.2,
+      "price": 1.3402,
+      "ytd": -0.5,
+      "return1y": 0.4,
       "cagr5y": -0.6
     },
     {
       "id": "usdcny",
       "name": "美元/人民幣",
       "icon": "🇨🇳",
-      "price": 6.6653,
+      "price": 6.6651,
       "ytd": -4.7,
-      "return1y": -6.4,
+      "return1y": -6.5,
       "cagr5y": 0.8
     },
     {
       "id": "usdtwd",
       "name": "美元/台幣",
       "icon": "🇹🇼",
-      "price": 32.392,
-      "ytd": 3.5,
-      "return1y": 5.6,
-      "cagr5y": 3.1
+      "price": 32.597,
+      "ytd": 4.1,
+      "return1y": 6,
+      "cagr5y": 3.2
     }
   ]
 }
